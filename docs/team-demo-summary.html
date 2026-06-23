@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Kitaboo Authoring Tests — Team Demo Summary</title>
+<style>
+  @page { size: A4; margin: 14mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #0f172a;
+    background: #fff;
+  }
+  .cover {
+    background: linear-gradient(135deg, #3730a3 0%, #4f46e5 55%, #818cf8 100%);
+    color: #fff;
+    padding: 28px 32px 32px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  .cover-label {
+    font-size: 9pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .85;
+    margin-bottom: 10px;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -.5px;
+  }
+  .cover p { font-size: 11pt; opacity: .9; max-width: 520px; }
+  .cover-meta {
+    margin-top: 18px;
+    font-size: 9pt;
+    opacity: .75;
+  }
+  h2 {
+    font-size: 13pt;
+    color: #4f46e5;
+    margin: 22px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  h3 { font-size: 11pt; color: #3730a3; margin: 14px 0 8px; }
+  p { margin-bottom: 10px; }
+  ul, ol { margin: 0 0 12px 20px; }
+  li { margin-bottom: 6px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 16px;
+    font-size: 10pt;
+  }
+  th, td {
+    border: 1px solid #e2e8f0;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f5f3ff; color: #3730a3; font-weight: 700; }
+  .tag {
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 99px;
+    margin-right: 4px;
+  }
+  .tag-pass { background: #d1fae5; color: #065f46; }
+  .tag-warn { background: #fef3c7; color: #92400e; }
+  .tag-info { background: #e0f2fe; color: #0369a1; }
+  .box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #4f46e5;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+  .box strong { color: #3730a3; }
+  .steps { counter-reset: step; list-style: none; margin-left: 0; }
+  .steps li {
+    counter-increment: step;
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: #4f46e5;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    text-align: center;
+  }
+  .footer-note {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 9pt;
+    color: #64748b;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media print {
+    .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-label">Carnegie Learning · Closify</div>
+  <h1>Kitaboo Authoring Test Runner</h1>
+  <p>Team demo summary — what it is, how it works, and how to present it to stakeholders.</p>
+  <div class="cover-meta">Folder: closify/authoring-tests · June 2026</div>
+</div>
+
+<h2>What is it?</h2>
+<p>
+  <strong>authoring-tests</strong> is a standalone <strong>automation suite + web dashboard</strong> for the
+  <strong>Kitaboo Authoring Tool</strong>. It runs <strong>Cypress</strong> tests against a real staging authoring URL,
+  shows <strong>live progress and screenshots</strong>, and organizes tests by <strong>module</strong> (ELA, World Languages, Math)
+  and <strong>component category</strong> (Activity Creation, Assessment Widgets, Layouts, and more).
+</p>
+
+<div class="box">
+  <strong>One-line pitch:</strong> Select module → select component → run → watch live → download report.
+</div>
+
+<h2>Why we built it</h2>
+<ul>
+  <li>Manual QC for dozens of authoring components is slow and inconsistent.</li>
+  <li>QC test cases live in PDFs — we mapped them in a <strong>component registry</strong>.</li>
+  <li>Each run is isolated: logs, HTML/PDF report, screenshots, and video per run.</li>
+  <li>Users sign in; run history is stored in <strong>MySQL</strong>.</li>
+</ul>
+
+<h2>How it works (step by step)</h2>
+<ol class="steps">
+  <li>Start the server: <code>npm start</code> in <code>authoring-tests</code> → open <code>http://localhost:4321</code></li>
+  <li><strong>Log in</strong> (demo user or your account).</li>
+  <li>On the <strong>dashboard</strong>, paste a <strong>launch URL</strong> (staging link with <code>courseId</code> and <code>userToken</code>).</li>
+  <li>Choose an <strong>Authoring Module</strong>: ELA, WL, or Math.</li>
+  <li>Pick <strong>Test Mode</strong>: Full E2E (all spec files) or <strong>Component Test</strong> (selected widgets).</li>
+  <li>Use the <strong>category dropdown</strong> to filter components (e.g. Assessment Widgets).</li>
+  <li>Click components to select them; for one deep component, the <strong>8-step test flow</strong> appears.</li>
+  <li>Click <strong>Run Component Tests</strong> (or Run E2E Suite).</li>
+  <li><strong>Cypress</strong> automates the real authoring app; the dashboard streams logs and progress.</li>
+  <li>Right panel: <strong>live preview</strong> — flow checklist + screenshots during the run.</li>
+  <li>When finished: pass/fail summary, reports, video, and <strong>run history</strong>.</li>
+</ol>
+
+<h2>5-minute demo script</h2>
+<ol>
+  <li><strong>Problem</strong> — “We need repeatable QC on authoring widgets, not only manual testing.”</li>
+  <li><strong>Solution</strong> — “Node server + Cypress + dashboard in <code>authoring-tests</code>.”</li>
+  <li><strong>Modules</strong> — “Tests mirror the product: ELA / WL / Math and categories like Assessment Widgets.”</li>
+  <li><strong>Live run</strong> — ELA → Assessment Widgets → Fill in the Blank → Run → show progress + preview.</li>
+  <li><strong>Status</strong> — FIB deep is most complete; others are basic smoke or planned from QC PDFs.</li>
+</ol>
+
+<h2>Automation status (today)</h2>
+<table>
+  <thead>
+    <tr><th>Status</th><th>Meaning</th><th>Examples</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="tag tag-pass">Verified</span></td>
+      <td>Deep spec runs end-to-end in Component Test mode</td>
+      <td><strong>Fill in the Blank (FIB)</strong> — 59 TCs, live preview</td>
+    </tr>
+    <tr>
+      <td><span class="tag tag-warn">In progress</span></td>
+      <td>Deep spec files exist, not fully verified</td>
+      <td>MCQ, MCQ Multiple</td>
+    </tr>
+    <tr>
+      <td><span class="tag tag-info">Basic smoke</span></td>
+      <td>Drop on canvas + settings panel checks</td>
+      <td>Layouts, elements, widgets (specs 06–09)</td>
+    </tr>
+    <tr>
+      <td><span class="tag tag-info">Planned</span></td>
+      <td>In QC registry; automation not built yet</td>
+      <td>Remaining platform/widget suites</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>ELA component categories (dashboard)</h2>
+<div class="two-col">
+  <ul>
+    <li>Activity Creation</li>
+    <li>Interactive Steps</li>
+    <li>Assessment Widgets</li>
+    <li>Layouts</li>
+  </ul>
+  <ul>
+    <li>Elements &amp; Sidebar</li>
+    <li>Non-Interactive Steps</li>
+    <li>Offline Steps</li>
+    <li>Sample Layer</li>
+  </ul>
+</div>
+
+<h2>Technology stack</h2>
+<table>
+  <thead><tr><th>Layer</th><th>Technology</th></tr></thead>
+  <tbody>
+    <tr><td>Automation</td><td>Cypress 12 + TypeScript</td></tr>
+    <tr><td>Dashboard API</td><td>Node.js / Express</td></tr>
+    <tr><td>Live updates</td><td>Server-Sent Events (SSE)</td></tr>
+    <tr><td>Auth &amp; history</td><td>MySQL (XAMPP), bcrypt sessions</td></tr>
+    <tr><td>Target app</td><td>Kitaboo Authoring (AngularJS) on staging</td></tr>
+  </tbody>
+</table>
+
+<h2>Important folders</h2>
+<ul>
+  <li><code>e2e/</code> — Cypress test specs (01 session … 13 FIB deep)</li>
+  <li><code>fixtures/</code> — test registry, module JSON (ELA/WL/Math), flows</li>
+  <li><code>public/dashboard.html</code> — main UI for demos</li>
+  <li><code>server.js</code> — starts runs and serves the dashboard</li>
+  <li><code>docs/</code> — architecture, FIB guide, QC catalog</li>
+</ul>
+
+<h2>Demo tips</h2>
+<ul>
+  <li>Use a <strong>fresh launch URL</strong> — <code>userToken</code> expires quickly.</li>
+  <li>For <strong>FIB deep QC</strong>, select <strong>only</strong> “Fill in the Blank”.</li>
+  <li>Hard refresh the dashboard (<kbd>Ctrl+Shift+R</kbd>) if a selected card looks hidden.</li>
+  <li>Runs use <strong>headless Chrome</strong>; video shows the authoring app only.</li>
+</ul>
+
+<div class="footer-note">
+  Generated for internal team presentation · Kitaboo Authoring Test Runner · closify/authoring-tests
+</div>
+
+</body>
+</html>

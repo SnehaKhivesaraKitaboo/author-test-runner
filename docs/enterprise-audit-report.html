@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Kitaboo Authoring Automation — Enterprise Audit &amp; Upgrade Plan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #0f172a;
+    line-height: 1.55;
+    font-size: 11pt;
+    background: #fff;
+    padding: 0;
+  }
+  .cover {
+    background: linear-gradient(135deg, #3730a3 0%, #4f46e5 50%, #818cf8 100%);
+    color: #fff;
+    padding: 56px 48px;
+    page-break-after: always;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cover-label {
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: .85;
+    margin-bottom: 16px;
+  }
+  .cover h1 { font-size: 28pt; font-weight: 800; margin-bottom: 12px; line-height: 1.2; }
+  .cover-sub { font-size: 13pt; opacity: .9; max-width: 520px; margin-bottom: 32px; }
+  .cover-meta { font-size: 10pt; opacity: .75; }
+  .page { padding: 40px 48px; }
+  h2 {
+    font-size: 16pt;
+    font-weight: 800;
+    color: #3730a3;
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e2e8f0;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 18px 0 8px;
+    page-break-after: avoid;
+  }
+  p { margin-bottom: 10px; color: #334155; }
+  ul, ol { margin: 8px 0 14px 22px; color: #334155; }
+  li { margin-bottom: 4px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 9pt;
+    page-break-inside: avoid;
+  }
+  th {
+    background: #3730a3;
+    color: #fff;
+    text-align: left;
+    padding: 8px 10px;
+    font-weight: 600;
+  }
+  td {
+    border: 1px solid #e2e8f0;
+    padding: 7px 10px;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f8fafc; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 8pt;
+    font-weight: 700;
+  }
+  .p0 { background: #fee2e2; color: #991b1b; }
+  .p1 { background: #fef3c7; color: #92400e; }
+  .p2 { background: #dbeafe; color: #1e40af; }
+  .p3 { background: #f1f5f9; color: #475569; }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .summary-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px;
+    background: #f8fafc;
+  }
+  .summary-card strong { display: block; font-size: 10pt; color: #3730a3; margin-bottom: 4px; }
+  pre, code {
+    font-family: 'Courier New', monospace;
+    font-size: 8.5pt;
+    background: #f1f5f9;
+    border-radius: 6px;
+  }
+  pre {
+    padding: 12px 14px;
+    overflow-x: auto;
+    margin: 10px 0 16px;
+    border: 1px solid #e2e8f0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  code { padding: 1px 5px; }
+  .footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 9pt;
+    color: #64748b;
+    text-align: center;
+  }
+  .keep { page-break-inside: avoid; }
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 32px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-label">Enterprise QA Platform Audit</div>
+  <h1>Kitaboo Authoring Automation Framework</h1>
+  <p class="cover-sub">Full project audit, gap analysis, and incremental upgrade plan — transforming authoring-tests into a scalable enterprise-grade internal QA automation platform.</p>
+  <p class="cover-meta">Project: authoring-tests &nbsp;|&nbsp; Reference: kitaboo-auto-tester &nbsp;|&nbsp; Generated: May 26, 2026</p>
+</div>
+
+<div class="page">
+
+<h2>1. Executive Summary</h2>
+<p>The <strong>Authoring Automation Framework</strong> (<code>authoring-tests</code>) is already a functional local test runner with a custom dashboard, SSE live logs, PDF reports, and component-wise testing. Compared to <code>kitaboo-auto-tester</code>, it leads on authoring-specific depth (12 specs, live preview, component registry) but lags on DevOps, stability patterns, and enterprise reporting/analytics.</p>
+
+<table>
+  <tr><th>Dimension</th><th>Current</th><th>Enterprise Target</th></tr>
+  <tr><td>Test execution &amp; dashboard</td><td>Good (7/10)</td><td>Premium QA portal</td></tr>
+  <tr><td>Reporting (HTML/PDF)</td><td>Good (7/10)</td><td>Rich analytics + Allure</td></tr>
+  <tr><td>Architecture</td><td>Moderate (5/10)</td><td>POM + utilities + config layers</td></tr>
+  <tr><td>Stability / flake handling</td><td>Weak (4/10)</td><td>Retries, smart waits, isolation</td></tr>
+  <tr><td>CI/CD &amp; Docker</td><td>Missing (1/10)</td><td>GitHub Actions + Docker</td></tr>
+  <tr><td>Scalability</td><td>Moderate (5/10)</td><td>Sharding, parallel, persistent history</td></tr>
+  <tr><td>Security</td><td>Weak (3/10)</td><td>Env-based secrets, no hardcoded tokens</td></tr>
+</table>
+
+<h3>Strengths to Preserve</h3>
+<ul>
+  <li>Express orchestrator + per-run artifact isolation (<code>runs/run-&lt;id&gt;/</code>)</li>
+  <li>Custom HTML/PDF pipeline (<code>cypress.config.ts</code> + Puppeteer)</li>
+  <li>Live dashboard (SSE, screenshot preview, component picker)</li>
+  <li>Deep authoring coverage (specs 09–12, 47 components)</li>
+  <li>Angular scope injection pattern (reliable for drag-drop)</li>
+</ul>
+
+<h3>Critical Gaps</h3>
+<ul>
+  <li>No Docker, CI, notifications, or Allure</li>
+  <li>No Page Object Model / centralized locators</li>
+  <li><code>testIsolation: false</code>, heavy <code>cy.wait()</code>, duplicated registries</li>
+  <li>Hardcoded userToken in UI + fixtures</li>
+  <li>In-memory history (lost on server restart)</li>
+  <li><code>test-registry.json</code> (3,231 manual TCs) is never wired to code</li>
+</ul>
+
+<h2>2. Current Project Analysis</h2>
+<h3>Project Structure</h3>
+<pre>authoring-tests/
+├── server.js              # Orchestrator, SSE, PDF, API
+├── cypress.config.ts      # Config + custom HTML/JSON reporter
+├── public/index.html      # Dashboard SPA (~1,850 lines)
+├── support/
+│   ├── commands.ts        # De-facto "page layer" (~402 lines)
+│   └── index.ts           # Exception suppression only
+├── fixtures/
+│   ├── authoring-config.json
+│   └── test-registry.json # 47 components, 3231 TCs — UNUSED
+└── e2e/                   # 12 spec files (01–12)</pre>
+
+<h3>Architecture Patterns</h3>
+<table>
+  <tr><th>Pattern</th><th>Status</th><th>Risk</th></tr>
+  <tr><td>Page Object Model</td><td>Missing</td><td>Selectors scattered across 12 specs</td></tr>
+  <tr><td>Command layer</td><td>Present</td><td>Good base — extend, don't replace</td></tr>
+  <tr><td>Central config</td><td>Partial</td><td>Only launchUrl; no env profiles</td></tr>
+  <tr><td>Registry source of truth</td><td>Fragmented</td><td>4 duplicate component lists</td></tr>
+  <tr><td>Reporting pipeline</td><td>Custom HTML/PDF</td><td>No Allure; no screenshot embed in PDF</td></tr>
+  <tr><td>Run isolation</td><td>Per-run dirs</td><td>Good</td></tr>
+  <tr><td>Progress tracking</td><td>Heuristic</td><td>Parses stdout, not real test counts</td></tr>
+</table>
+
+<h3>Code Duplication</h3>
+<table>
+  <tr><th>Duplicated Logic</th><th>Locations</th></tr>
+  <tr><td>Component lists</td><td>06, 07, 08, 09-component-deep.spec.ts, test-registry.json</td></tr>
+  <tr><td>dropComponent</td><td>commands.ts vs local copy in 09</td></tr>
+  <tr><td>Step creation flow</td><td>commands.ts, 10, 11, 12</td></tr>
+  <tr><td>MCQ deep structure</td><td>11-mcq-deep vs 12-mcq-multiple-deep (~80% overlap)</td></tr>
+</table>
+
+<h3>Unstable Patterns</h3>
+<ol>
+  <li><code>testIsolation: false</code> — tests share session; failures cascade</li>
+  <li>100+ <code>cy.wait(ms)</code> — timing-based, not assertion-based</li>
+  <li><code>{ force: true }</code> everywhere — hides real UI blockers</li>
+  <li>Broad exception suppression in support/index.ts</li>
+  <li>Expired tokens — hardcoded in index.html + fixtures</li>
+  <li>09 re-opens app per component — slow, amplifies flake</li>
+</ol>
+
+<h3>Comparison vs kitaboo-auto-tester</h3>
+<table>
+  <tr><th>Feature</th><th>kitaboo-auto-tester</th><th>authoring-tests</th></tr>
+  <tr><td>Docker</td><td>Yes</td><td>No</td></tr>
+  <tr><td>Accurate progress (✓/✗ count)</td><td>Yes</td><td>No</td></tr>
+  <tr><td>/api/test-cases/:suite</td><td>Yes</td><td>No</td></tr>
+  <tr><td>Disk-persisted history</td><td>Yes</td><td>No (in-memory)</td></tr>
+  <tr><td>Live screenshot preview</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Split spec files (01–12)</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Premium report design</td><td>Basic</td><td>Better</td></tr>
+  <tr><td>Component registry API</td><td>No</td><td>Yes</td></tr>
+</table>
+
+<h2>3. Gap Analysis Report</h2>
+<table>
+  <tr><th>#</th><th>Existing</th><th>Missing / Weak</th><th>Recommendation</th><th>Priority</th><th>Complexity</th></tr>
+  <tr><td>1</td><td>HTML/PDF reports</td><td>Screenshot/video in reports</td><td>Extend buildHtml() with artifact paths</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>2</td><td>Live SSE dashboard</td><td>Accurate test counter</td><td>Port parseProgressFromLine from kitaboo</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>3</td><td>In-memory history</td><td>Persistent history</td><td>Scan runs/ on startup; runs/index.json</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>4</td><td>Component picker</td><td>Single registry</td><td>Wire test-registry.json everywhere</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>5</td><td>Custom commands</td><td>Page Object Model</td><td>Extract pages/ from commands</td><td><span class="badge p1">P1</span></td><td>L</td></tr>
+  <tr><td>6</td><td>Hardcoded URL/token</td><td>Environment config</td><td>.env + config/environments.json</td><td><span class="badge p0">P0</span></td><td>S</td></tr>
+  <tr><td>7</td><td>Chrome-only</td><td>Cross-browser reporting</td><td>--browser param in server</td><td><span class="badge p2">P2</span></td><td>M</td></tr>
+  <tr><td>8</td><td>No retries</td><td>Retry mechanisms</td><td>retries: { runMode: 2 } + wrapper</td><td><span class="badge p1">P1</span></td><td>S</td></tr>
+  <tr><td>9</td><td>cy.wait(ms)</td><td>Smart wait utilities</td><td>waitForLoaderGone(), waitForAngular()</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>10</td><td>testIsolation: false</td><td>Test isolation</td><td>Enable per spec; canvas reset</td><td><span class="badge p1">P1</span></td><td>L</td></tr>
+  <tr><td>11</td><td>No Allure</td><td>Allure reporting</td><td>allure-cypress plugin</td><td><span class="badge p2">P2</span></td><td>M</td></tr>
+  <tr><td>12</td><td>No Docker</td><td>Containerized runner</td><td>Adapt kitaboo Dockerfile</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>13</td><td>No CI/CD</td><td>GitHub Actions</td><td>Workflow + artifact upload</td><td><span class="badge p1">P1</span></td><td>M</td></tr>
+  <tr><td>14</td><td>No notifications</td><td>Slack/email</td><td>Webhook on done event</td><td><span class="badge p2">P2</span></td><td>S</td></tr>
+  <tr><td>15</td><td>Serial execution</td><td>Parallel sharding</td><td>CI matrix by category</td><td><span class="badge p2">P2</span></td><td>L</td></tr>
+  <tr><td>16</td><td>Basic dashboard</td><td>Enterprise UI</td><td>Charts, filters, dark mode</td><td><span class="badge p2">P2</span></td><td>L</td></tr>
+  <tr><td>17</td><td>No analytics</td><td>Pass/fail trends</td><td>/api/analytics endpoint</td><td><span class="badge p2">P2</span></td><td>M</td></tr>
+  <tr><td>18</td><td>No TC picker</td><td>Per-TC selection</td><td>/api/test-cases/:spec</td><td><span class="badge p2">P2</span></td><td>M</td></tr>
+  <tr><td>19</td><td>Static locators</td><td>Auto-healing locators</td><td>resolveLocator() fallback chains</td><td><span class="badge p3">P3</span></td><td>L</td></tr>
+  <tr><td>20</td><td>No docs</td><td>Onboarding</td><td>README + ARCHITECTURE.md</td><td><span class="badge p1">P1</span></td><td>S</td></tr>
+</table>
+<p><strong>Priority:</strong> P0 = security/blocker, P1 = foundation, P2 = enterprise features, P3 = polish</p>
+
+<h2>4. Target Enterprise Architecture</h2>
+<pre>authoring-tests/
+├── config/           environments.json, cypress.base.ts, suites.json
+├── lib/              run-orchestrator, history-store, progress-parser, notifications
+├── pages/            BasePage, EditorPage, AddPanelPage, SettingsPanelPage, TocPanelPage
+├── support/utils/    waits.ts, retry.ts, locators.ts, api-helpers.ts
+├── fixtures/         test-registry.json (SINGLE source of truth)
+├── reporting/        html-builder, pdf-generator, allure-config
+├── public/           css/, js/ (modular dashboard)
+├── scripts/          shard-specs.js, scan-runs-history.js
+├── .github/workflows/authoring-tests.yml
+├── Dockerfile, docker-compose.yml, .env.example</pre>
+
+<h2>5. Phased Migration Plan</h2>
+
+<h3>Phase 0 — Security &amp; Stability (Week 1)</h3>
+<ul>
+  <li>Remove hardcoded tokens → .env + dashboard input only</li>
+  <li>Add Cypress retries: <code>retries: { runMode: 2 }</code></li>
+  <li>Fix exception handler — fail on unknown errors</li>
+  <li>Accurate progress — port kitaboo progress parser</li>
+  <li>Persistent history — scan runs/ on server start</li>
+</ul>
+
+<h3>Phase 1 — Architecture Foundation (Week 2–3)</h3>
+<ul>
+  <li>Single registry — test-registry.json drives specs 06–09 + /api/registry</li>
+  <li>Extract lib/ modules from server.js (no API changes)</li>
+  <li>Create pages/ — EditorPage, AddPanelPage (commands delegate to pages)</li>
+  <li>Smart waits utility — replace top 20 cy.wait() calls</li>
+  <li>Docker — adapt kitaboo Dockerfile (port 4321)</li>
+  <li>GitHub Actions — CI workflow + artifact upload</li>
+</ul>
+
+<h3>Phase 2 — Reporting &amp; Dashboard (Week 4–5)</h3>
+<ul>
+  <li>Embed screenshots/videos in HTML/PDF reports</li>
+  <li>Failure analysis section (stack trace, browser, env)</li>
+  <li>Dashboard: Chart.js trends, module filter, dark/light mode</li>
+  <li>/api/test-cases/:spec for MCQ deep TC picker</li>
+  <li>Allure plugin (optional parallel reporter)</li>
+</ul>
+
+<h3>Phase 3 — Enterprise Scale (Week 6–8)</h3>
+<ul>
+  <li>CI matrix sharding (layouts / elements / widgets / deep)</li>
+  <li>Slack webhook on failure</li>
+  <li>Auto-healing locator chains for top 10 flaky selectors</li>
+  <li>testIsolation: true rollout spec-by-spec</li>
+  <li>Analytics API + execution timeline</li>
+  <li>ESLint + strict TypeScript (incremental)</li>
+</ul>
+
+<h2>6. Dashboard Upgrade Spec</h2>
+<h3>Left Panel (keep + enhance)</h3>
+<ul>
+  <li>Configure run, live progress, logs (existing)</li>
+  <li>Add: module/browser filter chips, search in run history</li>
+</ul>
+<h3>Right Panel — Live Preview (existing, enhance)</h3>
+<ul>
+  <li>App View / Test Run View (existing)</li>
+  <li>Add: step timeline scrubber synced to screenshots</li>
+</ul>
+<h3>New Analytics Bar</h3>
+<ul>
+  <li>Summary cards: Total / Passed / Failed / Skipped / Duration</li>
+  <li>Donut chart: pass rate; Line chart: 7-day trend</li>
+  <li>Browser breakdown when multi-browser enabled</li>
+  <li>Glassmorphism UI, dark/light theme, responsive design</li>
+</ul>
+
+<h2>7. Reporting Improvements</h2>
+<table>
+  <tr><th>Feature</th><th>Current</th><th>Target</th></tr>
+  <tr><td>HTML pass/fail breakdown</td><td>Yes</td><td>+ embedded screenshots</td></tr>
+  <tr><td>PDF generation</td><td>Puppeteer</td><td>+ failure screenshots inline</td></tr>
+  <tr><td>JSON output</td><td>Yes</td><td>+ env, browser, git SHA</td></tr>
+  <tr><td>Video links in report</td><td>No</td><td>Per-spec video section</td></tr>
+  <tr><td>Error stack traces</td><td>Partial</td><td>Full displayError blocks</td></tr>
+  <tr><td>Analytics summary</td><td>No</td><td>Pass rate trend, flaky list</td></tr>
+  <tr><td>Allure</td><td>No</td><td>Optional dual output</td></tr>
+  <tr><td>Export</td><td>PDF/HTML</td><td>+ CSV export</td></tr>
+</table>
+
+<h2>8. Stability Improvements</h2>
+<ul>
+  <li>Replace cy.wait(N) with should() assertions</li>
+  <li>Remove duplicate dropComponent in 09 — use cy.dropComponent()</li>
+  <li>One before() per spec file, not per component in 09</li>
+  <li>Canvas cleanup afterEach in specs 06–08</li>
+  <li>Token refresh helper or env-injected token at run time</li>
+  <li>Global retries: <code>retries: { runMode: 2, openMode: 0 }</code></li>
+  <li>Smart waits: waitForEditorReady(), waitForLoaderGone()</li>
+</ul>
+
+<h2>9. What NOT to Rewrite</h2>
+<table>
+  <tr><th>Keep As-Is</th><th>Reason</th></tr>
+  <tr><td>server.js API surface</td><td>Dashboard depends on it — refactor internals only</td></tr>
+  <tr><td>cypress.config.ts reporter</td><td>Works well — extend, don't replace</td></tr>
+  <tr><td>12 spec file numbering</td><td>Clear suite organization</td></tr>
+  <tr><td>Angular scope injection drops</td><td>Proven reliable for authoring</td></tr>
+  <tr><td>Per-run runs/ isolation</td><td>Enterprise-grade pattern</td></tr>
+  <tr><td>Live preview panel</td><td>Already ahead of kitaboo reference</td></tr>
+  <tr><td>Component Test mode UI</td><td>Unique authoring value</td></tr>
+</table>
+
+<h2>10. Execution Commands (Target)</h2>
+<pre># Local
+npm start                          # Dashboard at :4321
+npm run cypress:run                # CLI full suite
+npm run cypress:run -- --spec e2e/09-component-deep.spec.ts
+
+# Docker
+docker compose up authoring-tests
+
+# CI
+gh workflow run authoring-tests.yml -f env=staging</pre>
+
+<h2>11. Recommended Next Steps</h2>
+<ol>
+  <li><strong>Security:</strong> Remove hardcoded token → .env</li>
+  <li><strong>Stability:</strong> Add global Cypress retries + fix progress parser</li>
+  <li><strong>Registry:</strong> Wire test-registry.json as single source of truth</li>
+  <li><strong>DevOps:</strong> Docker + GitHub Actions from kitaboo-auto-tester</li>
+  <li><strong>Architecture:</strong> Extract first 2 page objects (EditorPage, AddPanelPage)</li>
+</ol>
+
+<div class="footer">
+  Kitaboo Authoring Automation Framework — Enterprise Audit &amp; Upgrade Plan<br>
+  Generated May 26, 2026 &nbsp;|&nbsp; authoring-tests &nbsp;|&nbsp; Confidential — Internal QA Use
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "description": "Expected automation flow per component — maps to QC PDFs in D:/Author_Test_cases/",
+    "qcFolder": "D:/Author_Test_cases"
+  },
+  "fill-in-the-blank": {
+    "displayName": "Fill in the Blank",
+    "pdfFile": "Author Test Cases - FIB test cases.pdf",
+    "deepSpecFile": "13-fib-deep.spec.ts",
+    "dropTarget": "generic-step",
+    "tcCount": 59,
+    "setupFlow": [
+      "Open launch URL — authoring editor loads",
+      "TOC → + Add → Add New Step",
+      "Select Generic Step → fill metadata wizard → Save",
+      "New Generic Step page appears in TOC — click to activate",
+      "Prepare Generic Step column for FIB drop (assessment zone)",
+      "Drop FIB into Generic Step column via scope.onDropComplete",
+      "Enter header + sentence dummy text on canvas",
+      "Open #fib-settings-panel — run deep TC assertions"
+    ]
+  },
+  "multiple-choice-template": {
+    "displayName": "Multiple Choice",
+    "pdfFile": "Author Test Cases - MCQ .pdf",
+    "deepSpecFile": "11-mcq-deep.spec.ts",
+    "dropTarget": "generic-step",
+    "tcCount": 0,
+    "setupFlow": [
+      "Open launch URL",
+      "Create Generic Step via TOC + Add New Step",
+      "Activate new step in TOC",
+      "Drop Multiple Choice into Generic Step column",
+      "Configure MCQ options and settings"
+    ]
+  },
+  "mcq-multiple": {
+    "displayName": "MCQ Multiple",
+    "pdfFile": "Author Test Cases - MCQ Multiple.pdf",
+    "deepSpecFile": "12-mcq-multiple-deep.spec.ts",
+    "dropTarget": "generic-step",
+    "tcCount": 0,
+    "setupFlow": [
+      "Open launch URL",
+      "Create Generic Step",
+      "Drop MCQ Multiple into Generic Step column",
+      "Configure multi-select options and feedback"
+    ]
+  }
+}

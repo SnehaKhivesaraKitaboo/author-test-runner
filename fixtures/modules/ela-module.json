@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "id": "ela",
+    "label": "Lenses on Literature",
+    "shortLabel": "ELA",
+    "description": "English Language Arts — interactive literature authoring",
+    "activityCreation": "ELA Activity Creation",
+    "source": "CL Author Automation Plan - Modules.pdf"
+  },
+  "categories": [
+    {
+      "id": "activity-creation",
+      "label": "Activity Creation",
+      "description": "Core ELA step and lesson setup",
+      "items": [
+        { "registryId": "generic-step" },
+        { "registryId": "ela-multipart" },
+        { "registryId": "lesson-opener" }
+      ]
+    },
+    {
+      "id": "interactive-steps",
+      "label": "Interactive Steps",
+      "description": "Annotation, graphic organizers, reveal, flashcard, HTML",
+      "items": [
+        { "registryId": "annotation" },
+        { "registryId": "graphic-organizer" },
+        { "registryId": "click-to-reveal" },
+        { "registryId": "flashcard" },
+        { "registryId": "html-interactivity" },
+        { "registryId": "highlighter" }
+      ]
+    },
+    {
+      "id": "assessment-widgets",
+      "label": "Assessment Widgets",
+      "description": "MCQ, FIB, extended response, true/false, pairs, categorize",
+      "items": [
+        { "registryId": "mcq" },
+        { "registryId": "mcq-multiple" },
+        { "registryId": "fib" },
+        { "registryId": "fib-media" },
+        { "registryId": "extended-response" },
+        { "registryId": "extended-response-media" },
+        { "registryId": "true-false" },
+        { "name": "Match The Pairs", "dataType": "match-the-pairs", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "name": "MTP Multiple", "dataType": "mtp-multiple", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "name": "Categorize", "dataType": "sorting", "section": "Widgets", "category": "Widget", "automationStatus": "basic" }
+      ]
+    },
+    {
+      "id": "layouts",
+      "label": "Layouts",
+      "description": "Custom center, left, right, multi-column",
+      "items": [
+        { "registryId": "custom-center" },
+        { "registryId": "left-layout" },
+        { "registryId": "right-layout" },
+        { "registryId": "four-column" },
+        { "name": "Three Column", "dataType": "layout-5", "section": "Layout", "category": "Layout", "automationStatus": "basic", "specFile": "06-layout-components.spec.ts" }
+      ]
+    },
+    {
+      "id": "elements-sidebar",
+      "label": "Elements & Sidebar",
+      "description": "Sidebar, callout, table, text, image",
+      "items": [
+        { "name": "Sidebar", "dataType": "aside-bar", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "registryId": "callout" },
+        { "registryId": "table" },
+        { "registryId": "text" },
+        { "registryId": "image" }
+      ]
+    },
+    {
+      "id": "non-interactive-steps",
+      "label": "Non-Interactive Steps",
+      "description": "Video, carousel, thumbcard",
+      "items": [
+        { "registryId": "video" },
+        { "registryId": "carousel" },
+        { "registryId": "thumbcard" }
+      ]
+    },
+    {
+      "id": "offline-steps",
+      "label": "Offline Steps",
+      "description": "Printable / offline activity steps",
+      "items": [
+        { "registryId": "offline-step" }
+      ]
+    },
+    {
+      "id": "sample-layer",
+      "label": "Sample Layer",
+      "description": "Sample answer layer and TIG panel",
+      "items": [
+        { "registryId": "sample-layer" },
+        { "registryId": "lod-annotation" }
+      ]
+    }
+  ]
+}

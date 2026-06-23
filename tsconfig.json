@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES6", "DOM"],
+    "types": ["cypress", "node"],
+    "strict": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "e2e/**/*.ts",
+    "support/**/*.ts",
+    "cypress.config.ts"
+  ]
+}

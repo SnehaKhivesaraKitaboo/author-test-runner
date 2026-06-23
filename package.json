@@ -1,0 +1,30 @@
+{
+  "name": "epub-automation-tester",
+  "version": "1.0.0",
+  "description": "Standalone EPUB Automation Tester — Cypress Authoring Test Runner dashboard + EPUB Performance Test tool. Extracted from Closify; runs independently.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cypress:run": "npx cypress run --config-file cypress.config.ts",
+    "cypress:open": "npx cypress open --config-file cypress.config.ts",
+    "db:setup": "node scripts/setup-database.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.11.5",
+    "ffmpeg-static": "^5.3.0",
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "cypress": "^12.17.4",
+    "nodemon": "^3.1.14",
+    "typescript": "~4.2.3"
+  }
+}

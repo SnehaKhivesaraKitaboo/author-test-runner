@@ -1,0 +1,15 @@
+{
+  "launchUrl": "",
+  "testMode": "e2e",
+  "targetComponent": "",
+  "suites": {
+    "01-session": true,
+    "02-editor-shell": true,
+    "03-toolbar": true,
+    "04-left-panel": true,
+    "05-toc-navigation": true,
+    "06-layouts": true,
+    "07-elements": true,
+    "08-widgets": true
+  }
+}

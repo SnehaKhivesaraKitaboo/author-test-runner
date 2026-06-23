@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Per-run artifacts (reports, videos, screenshots, PDFs)
+runs/
+e2e/videos/
+e2e/screenshots/
+e2e/reports/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Generated reports
+*.pdf
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "id": "wl",
+    "label": "World Languages",
+    "shortLabel": "WL",
+    "description": "World Languages — single-page WL activity authoring",
+    "activityCreation": "WL Activity Creation",
+    "source": "CL Author Automation Plan - Modules.pdf"
+  },
+  "categories": [
+    {
+      "id": "activity-creation",
+      "label": "Activity Creation",
+      "description": "WL multipart and generic step setup",
+      "items": [
+        { "registryId": "generic-step" },
+        { "registryId": "wl-multipart" }
+      ]
+    },
+    {
+      "id": "assessment-widgets",
+      "label": "Assessment Widgets",
+      "description": "MCQ, FIB, extended response, true/false, pairs, categorize",
+      "items": [
+        { "registryId": "wl-multipart" },
+        { "registryId": "mcq" },
+        { "registryId": "mcq-multiple" },
+        { "registryId": "fib" },
+        { "registryId": "fib-media" },
+        { "registryId": "extended-response" },
+        { "registryId": "extended-response-media" },
+        { "registryId": "true-false" },
+        { "name": "Match The Pairs", "dataType": "match-the-pairs", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "name": "MTP Multiple", "dataType": "mtp-multiple", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "name": "Categorize", "dataType": "sorting", "section": "Widgets", "category": "Widget", "automationStatus": "basic" }
+      ]
+    },
+    {
+      "id": "non-interactive-steps",
+      "label": "Non-Interactive Steps",
+      "description": "Video and carousel content steps",
+      "items": [
+        { "registryId": "video" },
+        { "registryId": "carousel" }
+      ]
+    },
+    {
+      "id": "offline-steps",
+      "label": "Offline Steps",
+      "description": "Printable / offline activity steps",
+      "items": [
+        { "registryId": "offline-step" }
+      ]
+    },
+    {
+      "id": "generic-step-elements",
+      "label": "Generic Step Elements",
+      "description": "Text, table, image, MCQ, FIB for generic step columns",
+      "items": [
+        { "registryId": "text" },
+        { "registryId": "table" },
+        { "registryId": "image" },
+        { "registryId": "mcq" },
+        { "registryId": "mcq-multiple" },
+        { "registryId": "fib" },
+        { "registryId": "fib-media" },
+        { "registryId": "extended-response" },
+        { "registryId": "extended-response-media" }
+      ]
+    },
+    {
+      "id": "sample-layer",
+      "label": "Sample Layer",
+      "description": "Sample answer layer and image GO",
+      "items": [
+        { "registryId": "sample-layer" },
+        { "registryId": "graphic-organizer" },
+        { "registryId": "lod-annotation" }
+      ]
+    }
+  ]
+}

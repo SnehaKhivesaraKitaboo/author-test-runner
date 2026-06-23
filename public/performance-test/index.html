@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPUB Performance Test — KITABOO Author</title>
+  <link rel="stylesheet" href="css/performance-test.css">
+</head>
+<body>
+  <header class="pt-hero">
+    <h1>EPUB Performance Test</h1>
+    <p>Analyze author EPUB structure and performance — LoD, paragraphs, annotations, glossary, and load metrics.</p>
+  </header>
+
+  <main class="pt-shell">
+    <section class="pt-card pt-card-primary">
+      <label class="pt-label" for="pt-authorUrl">Authoring URL</label>
+      <textarea id="pt-authorUrl" class="pt-input-lg" rows="2" placeholder="https://stagingauthor.kitaboo.com/html_authoring2_carnegie/index.html?courseId=...&amp;userToken=..."></textarea>
+
+      <label class="pt-label" for="pt-platform">API environment</label>
+      <select id="pt-platform" class="pt-select">
+        <option value="auto" selected>Auto-detect (try prod + staging)</option>
+        <option value="prod">Production — create.kitaboo.com</option>
+        <option value="stag">Staging — qacreate1.kitaboo.com</option>
+      </select>
+      <p class="pt-hint">Must match <code>config/services.js</code> (staging = <code>services_stag.js</code>). Tokens with <code>sneha.stag@</code> need <strong>Staging</strong> or Auto-detect — not Production.</p>
+
+      <div id="pt-platform-status" class="pt-platform-status" hidden></div>
+
+      <div class="pt-action-row">
+        <button type="button" class="pt-btn" id="pt-validate-url">Validate URL</button>
+        <button type="button" class="pt-btn pt-btn-primary pt-btn-xl" id="pt-analyze-epub">Analyze EPUB</button>
+        <span id="pt-run-status" class="pt-badge" data-state="idle">Ready</span>
+      </div>
+      <details class="pt-advanced">
+        <summary>Live authoring tab (optional)</summary>
+        <div class="pt-action-row">
+          <button type="button" class="pt-btn" id="pt-open-tab">Open tab</button>
+          <button type="button" class="pt-btn" id="pt-collect">Collect live metrics</button>
+          <label class="pt-check-inline"><input type="checkbox" id="pt-automation"> automation=true</label>
+        </div>
+      </details>
+    </section>
+
+    <section class="pt-card pt-results-panel" id="pt-results-card">
+      <div class="pt-results-head">
+        <h2>EPUB performance report</h2>
+        <button type="button" class="pt-btn pt-btn-ghost" id="pt-export">Export JSON</button>
+      </div>
+      <p id="pt-empty-state" class="pt-empty">Click <strong>Analyze EPUB</strong> to generate the report.</p>
+
+      <div id="pt-loader" class="pt-loader" hidden role="status" aria-live="polite">
+        <span class="pt-loader-spinner" aria-hidden="true"></span>
+        <span class="pt-loader-text">Analyzing EPUB… fetching course, TOC and pages</span>
+      </div>
+
+      <div id="pt-course-bar" class="pt-course-bar" hidden></div>
+
+      <h3 class="pt-section-title">Component totals (whole EPUB)</h3>
+      <div class="pt-totals-grid" id="pt-totals-grid"></div>
+
+      <h3 class="pt-section-title">Other metrics</h3>
+      <div class="pt-metrics" id="pt-metrics"></div>
+
+      <h3 class="pt-section-title">Findings</h3>
+      <div id="pt-issues" class="pt-issues"></div>
+
+      <h3 class="pt-section-title">Per-page breakdown</h3>
+      <div class="pt-table-wrap">
+        <table class="pt-table pt-table-sticky">
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>#</th>
+              <th>All</th>
+              <th>LoD</th>
+              <th>Paragraph</th>
+              <th>Annotation</th>
+              <th>Glossary</th>
+              <th>Children</th>
+              <th>KB</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody id="pt-pages-body"></tbody>
+        </table>
+      </div>
+
+      <details class="pt-advanced" id="pt-live-details" hidden>
+        <summary>Live network (authoring tab)</summary>
+        <div class="pt-table-wrap">
+          <table class="pt-table">
+            <thead><tr><th>Type</th><th>Count</th><th>Avg ms</th></tr></thead>
+            <tbody id="pt-network-body"></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section class="pt-card">
+      <h2 class="pt-log-title">Log</h2>
+      <pre class="pt-log" id="pt-log"></pre>
+    </section>
+  </main>
+
+  <script src="js/perf-platforms.js"></script>
+  <script src="js/perf-analyze-utils.js"></script>
+  <script src="js/performance-dashboard.js"></script>
+</body>
+</html>

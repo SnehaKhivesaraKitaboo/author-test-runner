@@ -1,0 +1,15 @@
+node_modules
+runs
+logs
+.env
+.env.*
+!.env.staging.example
+!.env.example
+.git
+*.log
+e2e/videos
+e2e/screenshots
+e2e/reports
+*.pdf
+.DS_Store
+Thumbs.db

@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "id": "math",
+    "label": "Math",
+    "shortLabel": "Math",
+    "description": "Math activity authoring — CLIC, layouts, and assessment widgets",
+    "activityCreation": "MATH Activity Creation",
+    "source": "CL Author Automation Plan - Modules.pdf"
+  },
+  "categories": [
+    {
+      "id": "activity-creation",
+      "label": "Activity Creation",
+      "description": "Math activity and generic step setup",
+      "items": [
+        { "registryId": "generic-step" }
+      ]
+    },
+    {
+      "id": "clic",
+      "label": "CLIC Component",
+      "description": "Sketch pad / CLIC drawing responses",
+      "items": [
+        { "registryId": "clic" }
+      ]
+    },
+    {
+      "id": "layouts",
+      "label": "Layouts",
+      "description": "Left, center, right, flexi, multi-column",
+      "items": [
+        { "registryId": "left-layout" },
+        { "registryId": "center-layout" },
+        { "registryId": "right-layout" },
+        { "registryId": "flexi-layout" },
+        { "registryId": "four-column" },
+        { "registryId": "custom-center" },
+        { "name": "Three Column", "dataType": "layout-5", "section": "Layout", "category": "Layout", "automationStatus": "basic", "specFile": "06-layout-components.spec.ts" }
+      ]
+    },
+    {
+      "id": "assessment-widgets",
+      "label": "Assessment Widgets",
+      "description": "MCQ, FIB, extended response, true/false, pairs, categorize",
+      "items": [
+        { "registryId": "mcq" },
+        { "registryId": "mcq-multiple" },
+        { "registryId": "fib" },
+        { "registryId": "fib-media" },
+        { "registryId": "extended-response" },
+        { "registryId": "extended-response-media" },
+        { "registryId": "true-false" },
+        { "name": "Match The Pairs", "dataType": "match-the-pairs", "section": "Widgets", "category": "Widget", "automationStatus": "basic" },
+        { "name": "Categorize", "dataType": "sorting", "section": "Widgets", "category": "Widget", "automationStatus": "basic" }
+      ]
+    },
+    {
+      "id": "elements",
+      "label": "Elements",
+      "description": "Text, image, video, audio, table, callout, situation",
+      "items": [
+        { "registryId": "text" },
+        { "registryId": "image" },
+        { "registryId": "video" },
+        { "name": "Audio", "dataType": "audio", "section": "Elements", "category": "Element", "automationStatus": "basic", "specFile": "07-element-components.spec.ts" },
+        { "registryId": "table" },
+        { "registryId": "callout" },
+        { "registryId": "situation-header" }
+      ]
+    },
+    {
+      "id": "html-interactivity",
+      "label": "HTML Interactivity",
+      "description": "Custom HTML embed widget",
+      "items": [
+        { "registryId": "html-interactivity" }
+      ]
+    },
+    {
+      "id": "multipart-thumbcard",
+      "label": "Multipart & Thumbcard",
+      "description": "Multipart worked examples and thumbcard",
+      "items": [
+        { "registryId": "ela-multipart" },
+        { "registryId": "thumbcard" }
+      ]
+    },
+    {
+      "id": "sample-layer",
+      "label": "Sample Layer",
+      "description": "Sample answer layer with layout elements",
+      "items": [
+        { "registryId": "sample-layer" },
+        { "registryId": "lod-annotation" }
+      ]
+    }
+  ]
+}
