@@ -1,0 +1,29 @@
+{
+  "name": "Fill in the Blank (FIB)",
+  "slug": "fib",
+  "dataType": "fill-in-the-blank",
+  "module": "ela",
+  "dropTarget": "generic-step-column",
+  "spec": "13-fib-deep.spec.ts",
+  "qcPdf": "Author Test Cases - FIB test cases.pdf",
+  "qcPdfPath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - FIB test cases.pdf",
+  "architectureNote": "Standard FIB (templates/fib/) — assessment widget dropped into a Generic Step column. dataType 'fill-in-the-blank'. Distinct from FIB Media (fibWithImage mode). Reusable FIB commands live in support/commands.ts (cy.ensureFibDeepSetup, cy.openFibSettings, cy.insertFibBlank, etc.) and are shared with this component suite.",
+  "source": {
+    "auth": "closify/KITABOO_Authoring/templates/fib/fib.html",
+    "settings": "closify/KITABOO_Authoring/templates/fib/fib-settings-panel.html"
+  },
+  "rules": {
+    "maxDropdownOptions": 20,
+    "defaultLabelType": "primary",
+    "styleCount": 7,
+    "noMediaControls": true
+  },
+  "coverage": {
+    "qcTotal": 59,
+    "automated": 30,
+    "deferred": 29,
+    "note": "30 QC IDs mapped to authoring-side automation (some it() blocks cover 2 QC IDs); 29 deferred (Preview/Reader, persistence, a11y, file-picker, runtime caps).",
+    "lastVerified": null,
+    "status": "generated-unverified"
+  }
+}
