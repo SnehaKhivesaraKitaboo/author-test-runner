@@ -1,0 +1,329 @@
+{
+  "generatedAt": "2026-06-23T12:36:03.083Z",
+  "qcDir": "D:/ELA/Author_Test_cases/Author_Test_cases",
+  "components": [
+    {
+      "slug": "mcq",
+      "file": "Author Test Cases - MCQ .pdf",
+      "status": "OK",
+      "count": 105,
+      "pages": 3,
+      "note": "hand-curated, preserved"
+    },
+    {
+      "slug": "mcq-multiple",
+      "file": "Author Test Cases - MCQ Multiple.pdf",
+      "status": "OK",
+      "count": 108,
+      "pages": 3
+    },
+    {
+      "slug": "true-false",
+      "file": "Author Test Cases - True or False.pdf",
+      "status": "OK",
+      "count": 90,
+      "pages": 3
+    },
+    {
+      "slug": "fib",
+      "file": "Author Test Cases - FIB test cases.pdf",
+      "status": "OK",
+      "count": 59,
+      "pages": 6
+    },
+    {
+      "slug": "fib-media",
+      "file": "Author Test Cases - FIBMedia test cases.pdf",
+      "status": "OK",
+      "count": 43,
+      "pages": 4
+    },
+    {
+      "slug": "extended-response",
+      "file": "Author Test Cases - Extended Response.pdf",
+      "status": "OK",
+      "count": 46,
+      "pages": 5
+    },
+    {
+      "slug": "extended-response-media",
+      "file": "Author Test Cases - Extended Response About Media.pdf",
+      "status": "OK",
+      "count": 159,
+      "pages": 7
+    },
+    {
+      "slug": "ela-multipart",
+      "file": "Author Test Cases - ELA- Multipart.pdf",
+      "status": "OK",
+      "count": 155,
+      "pages": 3
+    },
+    {
+      "slug": "wl-multipart",
+      "file": "Author Test Cases - WL - Multipart.pdf",
+      "status": "OK",
+      "count": 205,
+      "pages": 3
+    },
+    {
+      "slug": "left-layout",
+      "file": "Author Test Cases - Left Layout.pdf",
+      "status": "OK",
+      "count": 67,
+      "pages": 5
+    },
+    {
+      "slug": "center-layout",
+      "file": "Author Test Cases - Center Layout.pdf",
+      "status": "OK",
+      "count": 67,
+      "pages": 5
+    },
+    {
+      "slug": "right-layout",
+      "file": "Author Test Cases - Right Layout.pdf",
+      "status": "OK",
+      "count": 67,
+      "pages": 5
+    },
+    {
+      "slug": "four-column",
+      "file": "Author Test Cases - Four column.pdf",
+      "status": "OK",
+      "count": 67,
+      "pages": 8
+    },
+    {
+      "slug": "custom-center",
+      "file": "Author Test Cases - Custom Center.pdf",
+      "status": "OK",
+      "count": 67,
+      "pages": 10
+    },
+    {
+      "slug": "flexi-layout",
+      "file": "Author Test Cases - Flexi Layout.pdf",
+      "status": "OK",
+      "count": 87,
+      "pages": 13
+    },
+    {
+      "slug": "text",
+      "file": "Author Test Cases - Text.pdf",
+      "status": "OK",
+      "count": 40,
+      "pages": 1
+    },
+    {
+      "slug": "image",
+      "file": "Author Test Cases - Image.pdf",
+      "status": "OK",
+      "count": 25,
+      "pages": 1
+    },
+    {
+      "slug": "video",
+      "file": "Author Test Cases - Video.pdf",
+      "status": "OK",
+      "count": 69,
+      "pages": 2
+    },
+    {
+      "slug": "table",
+      "file": "Author Test Cases - Table.pdf",
+      "status": "OK",
+      "count": 88,
+      "pages": 3
+    },
+    {
+      "slug": "callout",
+      "file": "Author Test Cases - Callout.pdf",
+      "status": "OK",
+      "count": 110,
+      "pages": 2
+    },
+    {
+      "slug": "situation-header",
+      "file": "Author Test Cases - Situation Header.pdf",
+      "status": "OK",
+      "count": 54,
+      "pages": 3
+    },
+    {
+      "slug": "instruction-student",
+      "file": "Author Test Cases -  Instruction for Student.pdf",
+      "status": "OK",
+      "count": 19,
+      "pages": 1
+    },
+    {
+      "slug": "instruction-teacher",
+      "file": "Author Test Cases - Instruction for Teacher.pdf",
+      "status": "OK",
+      "count": 19,
+      "pages": 1
+    },
+    {
+      "slug": "annotation",
+      "file": "Author Test Cases - Annotation.pdf",
+      "status": "OK",
+      "count": 29,
+      "pages": 1
+    },
+    {
+      "slug": "carousel",
+      "file": "Author Test Cases - Carousel.pdf",
+      "status": "OK",
+      "count": 101,
+      "pages": 2
+    },
+    {
+      "slug": "click-to-reveal",
+      "file": "Author Test Cases - Click to Reveal.pdf",
+      "status": "OK",
+      "count": 113,
+      "pages": 5
+    },
+    {
+      "slug": "clic",
+      "file": "Author Test Cases - CLIC.pdf",
+      "status": "OK",
+      "count": 33,
+      "pages": 1
+    },
+    {
+      "slug": "correction",
+      "file": "Author Test Cases - Correction.pdf",
+      "status": "OK",
+      "count": 29,
+      "pages": 2
+    },
+    {
+      "slug": "flashcard",
+      "file": "Author Test Cases - Flashcard.pdf",
+      "status": "OK",
+      "count": 41,
+      "pages": 2
+    },
+    {
+      "slug": "graphic-organizer",
+      "file": "Author Test Cases - Graphic Organizer (Image-based) .pdf",
+      "status": "OK",
+      "count": 77,
+      "pages": 14
+    },
+    {
+      "slug": "highlighter",
+      "file": "Author Test Cases - Highlighter.pdf",
+      "status": "OK",
+      "count": 45,
+      "pages": 4
+    },
+    {
+      "slug": "image-labeling",
+      "file": "Author Test Cases - Image labeling.pdf",
+      "status": "OK",
+      "count": 12,
+      "pages": 1
+    },
+    {
+      "slug": "wordsearch",
+      "file": "Author Test Cases - Wordsearch.pdf",
+      "status": "OK",
+      "count": 33,
+      "pages": 2
+    },
+    {
+      "slug": "html-interactivity",
+      "file": "Author Test Cases - HTML Interactivity.pdf",
+      "status": "OK",
+      "count": 32,
+      "pages": 3
+    },
+    {
+      "slug": "thumbcard",
+      "file": "Author Test Cases - Thumbcard.pdf",
+      "status": "OK",
+      "count": 38,
+      "pages": 2
+    },
+    {
+      "slug": "lod-annotation-cue",
+      "file": "Author Test Cases - LoD and Annottaion cue.pdf",
+      "status": "OK",
+      "count": 144,
+      "pages": 3
+    },
+    {
+      "slug": "sample-layer-tig",
+      "file": "Author Test Cases - Sample Layer _TIG Panel.pdf",
+      "status": "OK",
+      "count": 108,
+      "pages": 24
+    },
+    {
+      "slug": "generic-step",
+      "file": "Author Test Cases - Generic Step.pdf",
+      "status": "OK",
+      "count": 113,
+      "pages": 11
+    },
+    {
+      "slug": "copy-paste",
+      "file": "Author Test Cases - Copy and Paste.pdf",
+      "status": "OK",
+      "count": 18,
+      "pages": 1
+    },
+    {
+      "slug": "edit-metadata",
+      "file": "Author Test Cases - Edit metadata.pdf",
+      "status": "OK",
+      "count": 34,
+      "pages": 1
+    },
+    {
+      "slug": "steps-cloning",
+      "file": "Author Test Cases - Steps Cloning.pdf",
+      "status": "OK",
+      "count": 77,
+      "pages": 2
+    },
+    {
+      "slug": "internal-cumulation",
+      "file": "Author Test Cases - Internal Cumulation.pdf",
+      "status": "OK",
+      "count": 70,
+      "pages": 2
+    },
+    {
+      "slug": "external-cumulation",
+      "file": "Author Test Cases - External Cumulation.pdf",
+      "status": "OK",
+      "count": 47,
+      "pages": 2
+    },
+    {
+      "slug": "offline-step",
+      "file": "Author Test Cases - Offline step.pdf",
+      "status": "OK",
+      "count": 43,
+      "pages": 1
+    },
+    {
+      "slug": "lesson-opener",
+      "file": "Author Test Cases - Lesson Opener.pdf",
+      "status": "OK",
+      "count": 150,
+      "pages": 7
+    },
+    {
+      "slug": "jodit-editor",
+      "file": "Author Test Cases - Jodit Editor Test Cases.pdf",
+      "status": "OK",
+      "count": 51,
+      "pages": 3
+    }
+  ]
+}

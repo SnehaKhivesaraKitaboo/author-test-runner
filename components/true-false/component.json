@@ -1,0 +1,42 @@
+{
+  "name": "True or False",
+  "slug": "true-false",
+  "dataType": "true-false-template",
+  "directiveAttr": "true-false-data",
+  "module": "ela",
+  "dropTarget": "generic-step-column",
+  "spec": "13-true-false-deep.spec.ts",
+  "qcPdf": "Author Test Cases - True or False.pdf",
+  "qcPdfPath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - True or False.pdf",
+  "source": {
+    "settings": "closify/KITABOO_Authoring/templates/truefalse/truefalse-template-settings.html",
+    "auth": "closify/KITABOO_Authoring/templates/truefalse/truefalse-template-auth.html",
+    "default": "closify/KITABOO_Authoring/templates/truefalse/default/truefalse.json"
+  },
+  "rules": {
+    "minOptions": 2,
+    "defaultOptions": 2,
+    "defaultAnswerType": "single-select",
+    "hasAddOptionButton": false,
+    "hasAnswerTypeRadios": false,
+    "hasStyleCards": false,
+    "hasLabelTypes": false,
+    "hasActionAssetsColor": false,
+    "feedbackRequiresShowMe": true,
+    "resetUsesDedicatedId": true
+  },
+  "sourceNotes": [
+    "Canvas wrapper reuses .multiple-choice and adds .true-false.",
+    "Settings panel reuses id #mcq-settings-panel.",
+    "Answer-type radios, style cards, label types and action-assets colour are COMMENTED OUT in source — not rendered; related QC cases are deferred.",
+    "No Add Option button — fixed at 2 options (A/B); delete disabled at <=2.",
+    "Reset uses dedicated id=\"reset\" (MCQ reused add-show-me id)."
+  ],
+  "coverage": {
+    "qcTotal": 90,
+    "automated": 30,
+    "deferred": 60,
+    "lastVerified": null,
+    "status": "generated-unverified"
+  }
+}

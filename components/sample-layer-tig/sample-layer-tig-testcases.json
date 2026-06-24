@@ -1,0 +1,876 @@
+{
+  "component": "Sample Layer / TIG Panel",
+  "slug": "sample-layer-tig",
+  "dataType": "sample-layer",
+  "source": "Author Test Cases - Sample Layer _TIG Panel.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Sample Layer _TIG Panel.pdf",
+  "pages": 24,
+  "extractedCount": 108,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "StudioVerify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Sample Layer / TIGUI and FunctionalityStudioVerify if user able to launch the URL Launch the Studio URL \"https: //qapartnerportal.kitaboo.com/reader/CL- ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if the user is able to view the activity Listing dashboard",
+      "expected": "Click on activity Should be redirect to activity listing dashboard page",
+      "raw": "TC_02Sample Layer / TIGUI and FunctionalityStudio Verify if the user is able to view the activity Listing dashboard 1. Launch the URL and Login with valid credentials 2.Click on activity Should be redirect to activity listing dashboard page"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if the user is able to create new activity",
+      "expected": "",
+      "raw": "TC_03Sample Layer / TIGUI and FunctionalityStudio Verify if the user is able to create new activity"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if user able to enter datas in all mandatory fields below 1.Activity Title 2.Activity Type 3.Course 4.Level 5.Subject Tpe 6.Prompt 7.Language of text 8.Category 9.Auidence 10.Score possible 11.Allow Teacher",
+      "expected": "Enter data's for all manadatory fields Next button should be enabled and clickable",
+      "raw": "TC_04Sample Layer / TIGUI and FunctionalityStudio Verify if user able to enter datas in all mandatory fields below 1.Activity Title 2.Activity Type 3.Course 4.Level 5.Subject Tpe 6.Prompt 7.Language of text 8.Category 9.Auidence 10.Score possible 11.Allow Teacher to Override Grade? 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields Next button should be enabled and clickable"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if user is landing on Activity info page",
+      "expected": "Click on next button Activity info page should display",
+      "raw": "TC_05Sample Layer / TIGUI and FunctionalityStudio Verify if user is landing on Activity info page 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button Activity info page should display"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI and Functionality",
+      "description": "Studio Verify that 1.Selected Level of support 2.Selected authorities are displaying along with \"+\"icon",
+      "expected": "Selected authorities are displaying along with \"+\"icon",
+      "raw": "TC_06Sample Layer / TIGUI and FunctionalityStudio Verify that 1.Selected Level of support 2.Selected authorities are displaying along with \"+\"icon 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The Activity info page should display with the below options 1.Selected Level of support 2.Selected authorities are displaying along with \"+\"icon"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI and Functionality",
+      "description": "Studio Verify the pop up opened with 1.LOS 2.Authority options",
+      "expected": "Authority options",
+      "raw": "TC_07Sample Layer / TIGUI and FunctionalityStudio Verify the pop up opened with 1.LOS 2.Authority options 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The pop up should display with 1.LOS 2.Authority options"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI and Functionality",
+      "description": "Studio Verify that the LOS is defaulty selected as\" Core\"",
+      "expected": "Click on next buttonThe default Los should be Core",
+      "raw": "TC_08Sample Layer / TIGUI and FunctionalityStudio Verify that the LOS is defaulty selected as\" Core\" 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonThe default Los should be Core"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI and Functionality",
+      "description": "Studio Verify that the user is able to multiple options in Authority field 1.CL 2.FL 3.N/A",
+      "expected": "Click on next buttonUser should able to select multiple options",
+      "raw": "TC_09Sample Layer / TIGUI and FunctionalityStudio Verify that the user is able to multiple options in Authority field 1.CL 2.FL 3.N/A 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonUser should able to select multiple options"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if user is able to click the activity info pop options 1.Cancel 2.Add",
+      "expected": "Click on next button USer should able to click the activity info pop up options",
+      "raw": "TC_10Sample Layer / TIGUI and FunctionalityStudio Verify if user is able to click the activity info pop options 1.Cancel 2.Add 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button USer should able to click the activity info pop up options"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Studio Verify if user is clicking on add below Jodit editor options is added 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors",
+      "expected": "Student Look-Fors",
+      "raw": "TC_11Sample Layer / TIGUI and FunctionalityStudio Verify if user is clicking on add below Jodit editor options is added 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The activity info page should display with default prompt options 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI and Functionality",
+      "description": "Studio Verify the activity info displayed with below Jodit editor options and editable 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors",
+      "expected": "Student Look-Fors",
+      "raw": "TC_12Sample Layer / TIGUI and FunctionalityStudio Verify the activity info displayed with below Jodit editor options and editable 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The activity info page with the below options should be editable 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "StudioVerify if user is able to click on \"Add new\"",
+      "expected": "Click on next buttonNew Jodit editor prompt should be added",
+      "raw": "TC_13Sample Layer / TIGFunctionalityStudioVerify if user is able to click on \"Add new\" 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonNew Jodit editor prompt should be added"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to enter title and text in the newly added prompt space",
+      "expected": "Click on next button The activity label title and prompt description should be accessible and empty by default",
+      "raw": "TC_14Sample Layer / TIGFunctionalityStudio Verify if user is able to enter title and text in the newly added prompt space 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The activity label title and prompt description should be accessible and empty by default"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to delete the newly added prompt editor",
+      "expected": "Click on next buttonThe prompt should be deleteable",
+      "raw": "TC_15Sample Layer / TIGFunctionalityStudio Verify if user is able to delete the newly added prompt editor 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonThe prompt should be deleteable"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to delete the below editor options 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors",
+      "expected": "Student Look-Fors",
+      "raw": "TC_16Sample Layer / TIGFunctionalityStudio Verify if user is able to delete the below editor options 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The below prompt options should be deleteable 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Studio Verify if the next button is enabled and clickable in activity info screen",
+      "expected": "Click on next button The next button should be enable in activity info screen",
+      "raw": "TC_17Sample Layer / TIGFunctionalityStudio Verify if the next button is enabled and clickable in activity info screen 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The next button should be enable in activity info screen"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Studio Verify if the next button is enabled without filling the editor options 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors",
+      "expected": "Click on next button The next button should be enable in activity info screen",
+      "raw": "TC_18Sample Layer / TIGFunctionalityStudio Verify if the next button is enabled without filling the editor options 1.Prepare 2.Activity Steps 3.Language Link 4.Student Look-Fors 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button The next button should be enable in activity info screen"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to use all the formatting options available in the editor",
+      "expected": "Click on next buttonThe Formatting option should be accessible",
+      "raw": "TC_19Sample Layer / TIGFunctionalityStudio Verify if user is able to use all the formatting options available in the editor 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonThe Formatting option should be accessible"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to move to next page without adding the activity labels",
+      "expected": "Click on next buttonUser should move to the next page",
+      "raw": "TC_20Sample Layer / TIGFunctionalityStudio Verify if user is able to move to next page without adding the activity labels 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonUser should move to the next page"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Studio Verify if user able to move to the next page without adding the prompt",
+      "expected": "Click on next buttonUser should move to the next page",
+      "raw": "TC_21Sample Layer / TIGFunctionalityStudio Verify if user able to move to the next page without adding the prompt 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next buttonUser should move to the next page"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Studio Verify if user is able to start authoring from link text page",
+      "expected": "Click on next button Start authoring should be enabled and accesible",
+      "raw": "TC_22Sample Layer / TIGFunctionalityStudio Verify if user is able to start authoring from link text page 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button Start authoring should be enabled and accesible"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "AuthorVerify if user is able to add Generic step",
+      "expected": "click on start authoringUser should able to add generic step",
+      "raw": "TC_23Sample Layer / TIGFunctionalityAuthorVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoringUser should able to add generic step"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add \" Basic info\" and next is enabled",
+      "expected": "Add generic stepUser should able to add the step title",
+      "raw": "TC_24Sample Layer / TIGFunctionalityAuthor Verify if user is able to add \" Basic info\" and next is enabled 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic stepUser should able to add the step title"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to view the levels info and next is enabled",
+      "expected": "Add generic step The level info should be auto populated and next should be enabled",
+      "raw": "TC_25Sample Layer / TIGFunctionalityAuthor Verify if user is able to view the levels info and next is enabled 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step The level info should be auto populated and next should be enabled"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add student and teacher instructions",
+      "expected": "Add generic step User sould add student and teacher instructions",
+      "raw": "TC_26Sample Layer / TIGFunctionalityAuthor Verify if user is able to add student and teacher instructions 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User sould add student and teacher instructions"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add Support Content 1.Purposeful Question 2.Differential Strategy",
+      "expected": "Add generic stepUser should add the support content data's",
+      "raw": "TC_27Sample Layer / TIGFunctionalityAuthor Verify if user is able to add Support Content 1.Purposeful Question 2.Differential Strategy 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic stepUser should add the support content data's"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add purposeful question 1.Gathering 2.Probing 3.Seeing Structure 4.Reflecting & Justifying",
+      "expected": "Reflecting & Justifying",
+      "raw": "TC_28Sample Layer / TIGFunctionalityAuthor Verify if user is able to add purposeful question 1.Gathering 2.Probing 3.Seeing Structure 4.Reflecting & Justifying 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to add the add purposeful question 1.Gathering 2.Probing 3.Seeing Structure 4.Reflecting & Justifying"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add new section under purposeful question",
+      "expected": "Add generic step User should able to add new purposeful question",
+      "raw": "TC_29Sample Layer / TIGFunctionalityAuthor Verify if user is able to add new section under purposeful question 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to add new purposeful question"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to delete section under purposeful question",
+      "expected": "Add generic step User should able to delete purposeful question",
+      "raw": "TC_30Sample Layer / TIGFunctionalityAuthor Verify if user is able to delete section under purposeful question 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to delete purposeful question"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add Differential Strategy 1.Assistence for All 2.Just in Time Support",
+      "expected": "Just in Time Support",
+      "raw": "TC_31Sample Layer / TIGFunctionalityAuthor Verify if user is able to add Differential Strategy 1.Assistence for All 2.Just in Time Support 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to add the Differential Strategy 1.Assistence for All 2.Just in Time Support"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add new section under Differential Strategy",
+      "expected": "Add generic step User should able to add new Differential Strategy",
+      "raw": "TC_32Sample Layer / TIGFunctionalityAuthor Verify if user is able to add new section under Differential Strategy 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to add new Differential Strategy"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add delete section under Differential Strategy",
+      "expected": "Add generic step User should able to delete Differential Strategy",
+      "raw": "TC_33Sample Layer / TIGFunctionalityAuthor Verify if user is able to add delete section under Differential Strategy 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to delete Differential Strategy"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to use all the formatting options available in the jovid editor for the purposeful question and Differential Strategy",
+      "expected": "Add generic stepThe Formatting option should be accessible",
+      "raw": "TC_34Sample Layer / TIGFunctionalityAuthor Verify if user is able to use all the formatting options available in the jovid editor for the purposeful question and Differential Strategy 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic stepThe Formatting option should be accessible"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Author Verify if user is able to add Extended Response, Table, Exteneded response about media under the Generic step",
+      "expected": "Add generic step User should able to add Extended Response, Table, Exteneded response about media under the Generic step",
+      "raw": "TC_35Sample Layer / TIGFunctionalityAuthor Verify if user is able to add Extended Response, Table, Exteneded response about media under the Generic step 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7.Click on next button 8. click on start authoring 9. Add generic step User should able to add Extended Response, Table, Exteneded response about media under the Generic step"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add sample layer inside the generic step",
+      "expected": "Enter data's for all manadatory fields User should add sample layer inside the generic step",
+      "raw": "TC_36Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add sample layer inside the generic step 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields User should add sample layer inside the generic step"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add the below components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO",
+      "expected": "Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO All listed components should be successfully added into the samp",
+      "raw": "TC_37Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add the below components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO All listed components shoul"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to paste the below components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO",
+      "expected": "Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO All copied components (Table, Extended Response, Extended Respon",
+      "raw": "TC_38Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to paste the below components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO All copied components (Ta"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to edit the pasted components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO",
+      "expected": "Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO Each pasted component should allow editing and retain its correc",
+      "raw": "TC_39Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to edit the pasted components inside the sample layer 1.Table 2.Extended response 3.Exteneded response about media 4.FIB 5.FIB Image 6.Image GO 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO Each pasted component sho"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the Flexi Layouts inside the sample layer",
+      "expected": "Paste the components The Flexi Layout should be duplicated in the sample layer with all its properties intact",
+      "raw": "TC_40Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the Flexi Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The Flexi Layout should be duplicated "
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the four column Layouts inside the sample layer",
+      "expected": "Paste the components The four column Layout should be duplicated and appear correctly with four columns as in the original",
+      "raw": "TC_41Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the four column Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The four column Layout should be"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the three column Layouts inside the sample layer",
+      "expected": "Paste the components The three column Layout should be duplicated and appear correctly with three columns",
+      "raw": "TC_42Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the three column Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The three column Layout should "
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the custom center Layouts inside the sample layer",
+      "expected": "Paste the components The custom center Layout should copy and paste correctly preserving its center alignment and formatting",
+      "raw": "TC_43Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the custom center Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The custom center Layout shoul"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the center Layouts inside the sample layer",
+      "expected": "Paste the components The center Layout should be duplicated, displaying as centered in the sample layer",
+      "raw": "TC_44Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the center Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The center Layout should be duplicate"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the left Layouts inside the sample layer",
+      "expected": "Paste the components The left Layout should be duplicated and remain left-aligned",
+      "raw": "TC_45Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the left Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The left Layout should be duplicated an"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to copy and paste the Right Layouts inside the sample layer",
+      "expected": "Paste the components The right Layout should be duplicated and remain right-aligned",
+      "raw": "TC_46Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to copy and paste the Right Layouts inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The right Layout should be duplicated "
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to Copy and paste the layouts inside the layouts",
+      "expected": "Paste the components The layout should be duplicated within the same container maintaining its original properties",
+      "raw": "TC_47Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to Copy and paste the layouts inside the layouts 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The layout should be duplicated within the same c"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to Copy and paste the layouts inside the layouts in sample layer",
+      "expected": "Paste the components The layout should be copied and pasted correctly inside the layouts container",
+      "raw": "TC_48Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to Copy and paste the layouts inside the layouts in sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The layout should be copied and p"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add multiple sample layer",
+      "expected": "Paste the components Multiple sample layers should be created and displayed in the authoring area without errors",
+      "raw": "TC_49Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add multiple sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components Multiple sample layers should be created and displayed in the authori"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify that the sample layer is displaying in author preview",
+      "expected": "Paste the components The sample layer should display correctly in the author preview mode, identical to what is seen during authoring",
+      "raw": "TC_50Sample Layer / TIGFunctionality Author - Sample Layer Verify that the sample layer is displaying in author preview 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The sample layer should display correctly in the author prev"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify that user is able to sample layer outside the generic step",
+      "expected": "Paste the components The sample layer should display and function correctly even when added outside a generic step",
+      "raw": "TC_51Sample Layer / TIGFunctionality Author - Sample Layer Verify that user is able to sample layer outside the generic step 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Use the \"Add Component\" option and add the following: Table, Extended Response, Extended Response about Media, FIB, FIB Image, Image GO 9. Copy a set of components from one location 10. Paste the components The sample layer should display and function correctly "
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify that the sample layer is displaying in author preview when it's added outside the generic step",
+      "expected": "Click on save and preview The sample layer should be visible and render as expected in the preview, confirming its consistency across placements",
+      "raw": "TC_52Sample Layer / TIGFunctionality Author - Sample Layer Verify that the sample layer is displaying in author preview when it's added outside the generic step 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8.Click on save and preview The sample layer should be visible and render as expected in the preview, confirming its consistency across placements"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add sample layer for the individual steps",
+      "expected": "",
+      "raw": "TC_53Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add sample layer for the individual steps 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. The sample layer should be successfully added to individual steps and be visible for editing and preview"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify that the Sample layer UI is displaying as per figma",
+      "expected": "",
+      "raw": "TC_54Sample Layer / TIGFunctionality Author - Sample Layer Verify that the Sample layer UI is displaying as per figma 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. The sample layer UI should match the Figma design in terms of layout, spacing, typography, and overall style"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify that the sample layer setting panel is displaying as per figma",
+      "expected": "",
+      "raw": "TC_55Sample Layer / TIGFunctionality Author - Sample Layer Verify that the sample layer setting panel is displaying as per figma 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. The settings panel should display correctly and match the design details provided in Figma"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add sample layer inside the generic step multipart",
+      "expected": "",
+      "raw": "TC_56Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add sample layer inside the generic step multipart 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. Sample layer is added successfully inside the generic step multipart"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to add other components inside the sample layer",
+      "expected": "",
+      "raw": "TC_57Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to add other components inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) Components are added successfully inside the sample layer"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if user is able to publish the sample layer added activity",
+      "expected": "Publish the activity Activity is published successfully with the sample layer",
+      "raw": "TC_58Sample Layer / TIGFunctionality Author - Sample Layer Verify if user is able to publish the sample layer added activity 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity Activity is published successfully with the sample layer"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Author - Sample Layer Verify if the sample layer is displaying for the student",
+      "expected": "Launch the activity in saltire as studentSample layer is visible in the student view",
+      "raw": "TC_59Sample Layer / TIGFunctionality Author - Sample Layer Verify if the sample layer is displaying for the student 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as studentSample layer is visible in the student view"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "CLP Verify if the sample layer is displaying for the teacher preview",
+      "expected": "Launch the activity in saltire as studentSample layer is visible in teacher preview",
+      "raw": "TC_60Sample Layer / TIGFunctionalityCLP Verify if the sample layer is displaying for the teacher preview 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as studentSample layer is visible in teacher preview"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "CLP Verify if the sample layer is displaying for the teacher review",
+      "expected": "Launch the activity in saltire as teacher review Sample layer is visible in teacher review mode",
+      "raw": "TC_61Sample Layer / TIGFunctionalityCLP Verify if the sample layer is displaying for the teacher review 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample layer is visible in teacher review mode"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "CLP Verify if theTIG panel is displaying for the teacher Review mode",
+      "expected": "Launch the activity in saltire as teacher reviewTIG panel is displayed",
+      "raw": "TC_62Sample Layer / TIGFunctionalityCLP Verify if theTIG panel is displaying for the teacher Review mode 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewTIG panel is displayed"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "CLP Verify if the Sample layer on/off toggle is displaying in teacher review",
+      "expected": "Launch the activity in saltire as teacher reviewSample layer ON/OFF toggle is visible",
+      "raw": "TC_63Sample Layer / TIGFunctionalityCLP Verify if the Sample layer on/off toggle is displaying in teacher review 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewSample layer ON/OFF toggle is visible"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "CLP Verify if the sample answers are displaying when sample layer is on",
+      "expected": "Launch the activity in saltire as teacher review Sample answers are displayed when toggle is ON",
+      "raw": "TC_64Sample Layer / TIGFunctionalityCLP Verify if the sample answers are displaying when sample layer is on 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample answers are displayed when toggle is ON"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "CLP Verify if the sample answers is not displaying when sample layer is OFF",
+      "expected": "Launch the activity in saltire as teacher review Sample answers are hidden when toggle is OFF",
+      "raw": "TC_65Sample Layer / TIGFunctionalityCLP Verify if the sample answers is not displaying when sample layer is OFF 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample answers are hidden when toggle is OFF"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "CLP Verify if the \" Show TIG Panel\" is enabled by default in teacher preview mode",
+      "expected": "Launch the activity in saltire as teacher review\"Show TIG Panel\" is enabled by default",
+      "raw": "TC_66Sample Layer / TIGFunctionalityCLP Verify if the \" Show TIG Panel\" is enabled by default in teacher preview mode 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review\"Show TIG Panel\" is enabled by default"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "CLP Verify that the\"Activity info\" details are displaying in TIG panel",
+      "expected": "Launch the activity in saltire as teacher reviewActivity Info content is displayed correctly",
+      "raw": "TC_67Sample Layer / TIGFunctionalityCLP Verify that the\"Activity info\" details are displaying in TIG panel 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewActivity Info content is displayed correctly"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "CLP Verify that the\"Support content\" details are displaying in TIG panel",
+      "expected": "Launch the activity in saltire as teacher reviewSupport Content section is displayed",
+      "raw": "TC_68Sample Layer / TIGFunctionalityCLP Verify that the\"Support content\" details are displaying in TIG panel 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewSupport Content section is displayed"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "CLP Verify that the \" Purposeful Question\" content is displaying under support content",
+      "expected": "Launch the activity in saltire as teacher review\"Purposeful Question\" is listed and displayed",
+      "raw": "TC_69Sample Layer / TIGFunctionalityCLP Verify that the \" Purposeful Question\" content is displaying under support content 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review\"Purposeful Question\" is listed and displayed"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functionality",
+      "description": "CLP Verify that the \" Differentiation Strategy\" content is displaying under support content",
+      "expected": "Launch the activity in saltire as teacher review \"Differentiation Strategy\" is listed and displayed",
+      "raw": "TC_70Sample Layer / TIGFunctionalityCLP Verify that the \" Differentiation Strategy\" content is displaying under support content 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review \"Differentiation Strategy\" is listed and displayed"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "CLP Verify that the newly added title is displaying under \"support content\"",
+      "expected": "Launch the activity in saltire as teacher review Newly added title appears in the Support Content list",
+      "raw": "TC_71Sample Layer / TIGFunctionalityCLP Verify that the newly added title is displaying under \"support content\" 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Newly added title appears in the Support Content list"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "CLP Verify that the drop down option is displaying for the \"support content\" options",
+      "expected": "Launch the activity in saltire as teacher reviewDropdown options are displayed",
+      "raw": "TC_72Sample Layer / TIGFunctionalityCLP Verify that the drop down option is displaying for the \"support content\" options 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewDropdown options are displayed"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functionality",
+      "description": "CLP Veify that the all the sub-options are displaying under the support content",
+      "expected": "Launch the activity in saltire as teacher reviewAll expected sub-options are listed",
+      "raw": "TC_73Sample Layer / TIGFunctionalityCLP Veify that the all the sub-options are displaying under the support content 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewAll expected sub-options are listed"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "CLP Verify that the support content is displaying with proper formatting options",
+      "expected": "Launch the activity in saltire as teacher reviewSupport Content is well-formatted",
+      "raw": "TC_74Sample Layer / TIGFunctionalityCLP Verify that the support content is displaying with proper formatting options 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewSupport Content is well-formatted"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functionality",
+      "description": "CLP Verify that the contents are displaying fully in the support content",
+      "expected": "Launch the activity in saltire as teacher reviewFull content is visible without truncation",
+      "raw": "TC_75Sample Layer / TIGFunctionalityCLP Verify that the contents are displaying fully in the support content 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewFull content is visible without truncation"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functionality",
+      "description": "CLP Verify that the Activity info content is displaying as per the formatting styles applied",
+      "expected": "Launch the activity in saltire as teacher review Formatted content appears as applied",
+      "raw": "TC_76Sample Layer / TIGFunctionalityCLP Verify that the Activity info content is displaying as per the formatting styles applied 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Formatted content appears as applied"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functionality",
+      "description": "CLP Verify if the Activity info sub- category options are displaying properly",
+      "expected": "Launch the activity in saltire as teacher reviewAll expected sub-category options are visible",
+      "raw": "TC_77Sample Layer / TIGFunctionalityCLP Verify if the Activity info sub- category options are displaying properly 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewAll expected sub-category options are visible"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functionality",
+      "description": "CLP Verify that the sample answers are enabled with pink color outline",
+      "expected": "Launch the activity in saltire as teacher reviewSample answer fields are outlined in pink",
+      "raw": "TC_78Sample Layer / TIGFunctionalityCLP Verify that the sample answers are enabled with pink color outline 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewSample answer fields are outlined in pink"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functionality",
+      "description": "CLP Verify that the sample answers are displaying fully in the sample layer",
+      "expected": "Launch the activity in saltire as teacher review Sample answers are fully visible without truncation",
+      "raw": "TC_79Sample Layer / TIGFunctionalityCLP Verify that the sample answers are displaying fully in the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample answers are fully visible without truncation"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functionality",
+      "description": "CLP Verify if the user is able to scroll and see the entire/ full answers",
+      "expected": "Launch the activity in saltire as teacher reviewUser can scroll to see full answers",
+      "raw": "TC_80Sample Layer / TIGFunctionalityCLP Verify if the user is able to scroll and see the entire/ full answers 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewUser can scroll to see full answers"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functionality",
+      "description": "CLP Verify that the sample answers are disabled when the sample layer is turned off",
+      "expected": "Launch the activity in saltire as teacher review Sample answer fields become non-editable and hidden if required",
+      "raw": "TC_81Sample Layer / TIGFunctionalityCLP Verify that the sample answers are disabled when the sample layer is turned off 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample answer fields become non-editable and hidden if required"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functionality",
+      "description": "CLP Verify if the user is not able to enter any inputs in the sample answers",
+      "expected": "Launch the activity in saltire as teacher reviewInput fields are disabled; user cannot type",
+      "raw": "TC_82Sample Layer / TIGFunctionalityCLP Verify if the user is not able to enter any inputs in the sample answers 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewInput fields are disabled; user cannot type"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functionality",
+      "description": "CLP Verify if the all the sample answer field is disabled",
+      "expected": "Launch the activity in saltire as teacher reviewAll fields are greyed out or locked",
+      "raw": "TC_83Sample Layer / TIGFunctionalityCLP Verify if the all the sample answer field is disabled 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewAll fields are greyed out or locked"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functionality",
+      "description": "CLP Verify that user is able to edit the answers, when the sample answers is enabled",
+      "expected": "Launch the activity in saltire as teacher review Sample answers are editable in enabled state",
+      "raw": "TC_84Sample Layer / TIGFunctionalityCLP Verify that user is able to edit the answers, when the sample answers is enabled 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample answers are editable in enabled state"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to edit the metadata for the math activity",
+      "expected": "Launch the activity in saltire as teacher review Metadata updates successfully and reflects changes",
+      "raw": "TC_85Sample Layer / TIGFunctionalityCLP Verify if user is able to edit the metadata for the math activity 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Metadata updates successfully and reflects changes"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to edit the metadata for Activity info",
+      "expected": "Launch the activity in saltire as teacher reviewMetadata is editable and updates are saved",
+      "raw": "TC_86Sample Layer / TIGFunctionalityCLP Verify if user is able to edit the metadata for Activity info 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewMetadata is editable and updates are saved"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to add new categories in the activity",
+      "expected": "Launch the activity in saltire as teacher reviewNew category appears in the list",
+      "raw": "TC_87Sample Layer / TIGFunctionalityCLP Verify if user is able to add new categories in the activity 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewNew category appears in the list"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to edit the support content under the \"Purposeful Question\" and \"Differentiation Strategy\"",
+      "expected": "Launch the activity in saltire as teacher reviewEdited content is saved and displayed",
+      "raw": "TC_88Sample Layer / TIGFunctionalityCLP Verify if user is able to edit the support content under the \"Purposeful Question\" and \"Differentiation Strategy\" 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewEdited content is saved and displayed"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to delete the support content under the \"Purposeful Question\" and \"Differentiation Strategy\"",
+      "expected": "Launch the activity in saltire as teacher reviewDeleted content is removed successfully",
+      "raw": "TC_89Sample Layer / TIGFunctionalityCLP Verify if user is able to delete the support content under the \"Purposeful Question\" and \"Differentiation Strategy\" 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher reviewDeleted content is removed successfully"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to add sample layer, once the activity is published",
+      "expected": "Launch the activity in saltire as teacher review Sample layer is added successfully to a published activity",
+      "raw": "TC_90Sample Layer / TIGFunctionalityCLP Verify if user is able to add sample layer, once the activity is published 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Sample layer is added successfully to a published activity"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to add new steps with sample layer",
+      "expected": "Launch the activity in saltire as teacher review New steps are added and sample layer is included without issues",
+      "raw": "TC_91Sample Layer / TIGFunctionalityCLP Verify if user is able to add new steps with sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review New steps are added and sample layer is included without issues"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to republish the activity",
+      "expected": "Launch the activity in saltire as teacher review Activity republishes successfully without errors",
+      "raw": "TC_92Sample Layer / TIGFunctionalityCLP Verify if user is able to republish the activity 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Activity republishes successfully without errors"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to view the new steps with sample layer in author preview",
+      "expected": "Launch the activity in saltire as teacher review New steps and sample layers are visible in author preview",
+      "raw": "TC_93Sample Layer / TIGFunctionalityCLP Verify if user is able to view the new steps with sample layer in author preview 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review New steps and sample layers are visible in author preview"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functionality",
+      "description": "CLP Verify if user is able to view the new steps with sample layer in teacher review mode",
+      "expected": "Launch the activity in saltire as teacher review New steps and sample layers are displayed properly in teacher review mode",
+      "raw": "TC_94Sample Layer / TIGFunctionalityCLP Verify if user is able to view the new steps with sample layer in teacher review mode 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review New steps and sample layers are displayed properly in teacher review mode"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functionality",
+      "description": "Verify able to copy and paste math equations inside sample layer",
+      "expected": "Launch the activity in saltire as teacher review Math equations should display inside the sample layer",
+      "raw": "TC_95Sample Layer / TIGFunctionality Verify able to copy and paste math equations inside sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Math equations should display inside the sample layer"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functionality",
+      "description": "CLP Verify math equations color inside the sample layer in CLP",
+      "expected": "Launch the activity in saltire as teacher review Math equations should display inside the sample layer with pink color",
+      "raw": "TC_96Sample Layer / TIGFunctionalityCLP Verify math equations color inside the sample layer in CLP 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Math equations should display inside the sample layer with pink color"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the extended response sample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_97Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the extended response sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the extended response media short sample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_98Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the extended response media short sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the extended response media RTEsample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_99Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the extended response media RTEsample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the FIB Text sample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_100Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the FIB Text sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "Functionality",
+      "description": "CLP Verify the layouts outline when added inside the sample layer",
+      "expected": "Launch the activity in saltire as teacher review The outline shouldn't display",
+      "raw": "TC_101Sample Layer / TIGFunctionalityCLP Verify the layouts outline when added inside the sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review The outline shouldn't display"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the Image Go sample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_102Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the Image Go sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functionality",
+      "description": "CLP Verify the scroll bar is accessible inside the Table sample layer",
+      "expected": "Launch the activity in saltire as teacher review User should able to scroll",
+      "raw": "TC_103Sample Layer / TIGFunctionalityCLP Verify the scroll bar is accessible inside the Table sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review User should able to scroll"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functionality",
+      "description": "CLP Verify the sample layer in reader when formattings are applied for the answer - Extended response",
+      "expected": "Launch the activity in saltire as teacher review Text should display inside the sample layer with pink color",
+      "raw": "TC_104Sample Layer / TIGFunctionalityCLP Verify the sample layer in reader when formattings are applied for the answer - Extended response 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review Text should display inside the sample layer with pink color"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "Functionality",
+      "description": "Verify the Flexi layout which contains multipart that can be added in sample layer",
+      "expected": "Launch the activity in saltire as teacher review The outline shouldn't display",
+      "raw": "TC_105Sample Layer / TIGFunctionality Verify the Flexi layout which contains multipart that can be added in sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review The outline shouldn't display"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Functionality",
+      "description": "Veriy that layouts which contains elements that can be added in sample layer",
+      "expected": "Launch the activity in saltire as teacher review The outline shouldn't display",
+      "raw": "TC_106Sample Layer / TIGFunctionality Veriy that layouts which contains elements that can be added in sample layer 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review The outline shouldn't display"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Functionality",
+      "description": "CLP Verify the Flexi layout which contains multipart in sample layer in CLP",
+      "expected": "Launch the activity in saltire as teacher review The outline shouldn't display",
+      "raw": "TC_107Sample Layer / TIGFunctionalityCLP Verify the Flexi layout which contains multipart in sample layer in CLP 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review The outline shouldn't display"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "Functionality",
+      "description": "CLP Veriy that layouts which contains elements in sample layer in CLP",
+      "expected": "Launch the activity in saltire as teacher review The outline shouldn't display",
+      "raw": "TC_108Sample Layer / TIGFunctionalityCLP Veriy that layouts which contains elements in sample layer in CLP 1. Launch the URL and Login with valid credentials 2.Click on activity 3. Click on create new 4. Choose \"Math\" 5. Select \"Activity \" from task list 6. Enter data's for all manadatory fields 7. Add sample layer. 8. Inside sample layer, try adding components (text/image/etc.) 9.Publish the activity 10.Launch the activity in saltire as teacher review The outline shouldn't display"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "component": "Offline Step",
+  "slug": "offline-step",
+  "dataType": "offline-step",
+  "identifier": "offlineStep",
+  "module": "step (step chooser 'Non-interactive Step' category + shared metadata wizard; standard editor canvas, printable content only)",
+  "spec": "50-offline-step-deep.spec.ts",
+  "qcSource": "Author Test Cases - Offline step.pdf",
+  "qcCount": 43,
+  "automated": 9,
+  "deferred": 34,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/js/page-tray.js",
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/editor/ngcontroller.js"
+  ],
+  "architectureNotes": [
+    "Offline Step is a STEP TYPE (not a dropped widget). It is registered in js/page-tray.js under the 'Non-interactive Step' category: { identifier: 'offlineStep', stepName: 'Offline Step', name: 'Offline Step', imgSrc: 'assets/image_library/step-modal/OfflineStep.svg', disable: false, tooltip: 'Create your offline step' }.",
+    "The step chooser (#widget-popup) renders cards dynamically via ng-repeat 'step in obj.list' → .hover-div/.step-div/.step-text (p shows step.name). The card's ng-click is pageType(step.identifier, step.stepName). The legacy static .step-block markup for offlineStep in index.html (lines ~1276) is inside a commented-out block and is NOT the active chooser — the dynamic page-tray list is the source of truth.",
+    "The metadata wizard (#formsModal) is SHARED across all step types: Step Title (#title, ng-model stepTitle) is mandatory — #nextBtn carries ng-class disabledBtn while !stepTitle. Instructions for Students (#studentDesc, ng-model stuDesc, placeholder 'Instructions for Students', 10000-char budget) and Instructions for Teachers (#teacherDesc, ng-model tecDesc). Buttons: Back (#prevBtn), Change Step (#backPageTray → backPage()), Cancel (#cancelBtn → cancelAndReset()), Next (#nextBtn → pageNextPrev(1)), Submit (#subBtn). pageType('offlineStep','Offline Step') also pushes 'Offline Step' into the keyword tag list (tagItem).",
+    "There is NO dedicated offline-step template/JSON: editor/ngcontroller.js case 'offlineStep' calls resolve() with no jsonPath (unlike GenericStep → templates/generic-step/default/generic-step.json). The offline step therefore reuses the standard #desktop_view editor canvas. Its identity is the config gating, NOT a unique canvas DOM.",
+    "NO-INTERACTIVE-WIDGETS RULE (config/config.js offlineStep object): all multi-column layouts (layout-1..layout-7) = false; interactive assessment widgets (multiple-choice-template, fill-in-the-blank, match-the-pairs, mtp-multiple, highlight, correction, sorting, imagelabelling, group-interactivity-template, clickToReveal, wordsearch, shortLongAns, flashcard, Categorize, true-false-template, tableGO, identify-the-clip, graphicOrganizerImageHotSpot, annotationHighlightOutline, lessonOpenerComponent) = false; printable / non-interactive content (header, paragraph, poetry, image, video, audio, html-interactivity, tablesNew, sidebarComponent, slideshow, situationbox, sketchpad, chapter-headingNew-h1, aside-bar) = true. This is asserted both from the live scope gating map (when exposed) and via the right-rail tray (no blocked interactive widget data-types).",
+    "Per-step TOC kebab menu (.tocMenuDiv → .tocPageIconMenu) is shared: Clone New Level (tocSectionClonePopup), Edit Metadata (tocSectionEditPopup → wizard edit mode), Delete (tocSectionDeletePopup, gated by canDeletePage). ngcontroller.js also treats pageType==='offlineStep' like customTask when suppressing the default-component delete icon.",
+    "QC AMBIGUITY: the Offline Step QC PDF (TC_10–TC_28) narrates a rich drag/drop authoring surface — Header/Title/Text/Image/Audio/Video/HTML/Table/Callout/Situation Header elements and CLIC/Carousel/Sidebar widgets — and Preview/Reader/Publish flows (TC_32–TC_38). These per-element/per-widget interactions, media uploads (OS file picker), RTE/table/callout formatting, undo/redo, and Preview/Reader/CLP/persistence are runtime behaviors outside the step-creation DOM and are deferred as it.skip(). The automated set focuses on what is deterministically verifiable for the STEP itself: chooser add, wizard (title/instructions/cancel/change-step), the source-derived no-interactive rule, the standard canvas, and TOC edit/delete + security.",
+    "TC_10 is split: its 'right panel shows enabled elements + widgets' assertion is approximated by the RULE suite (no blocked interactive widget data-types in the tray) but the FULL enabled-tray render is deferred as runtime."
+  ],
+  "notYetLiveVerified": true
+}

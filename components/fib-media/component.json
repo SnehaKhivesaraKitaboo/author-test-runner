@@ -1,0 +1,26 @@
+{
+  "name": "FIB Media (Fill in the Blank with Image)",
+  "slug": "fib-media",
+  "dataType": "fib-media",
+  "module": "ela",
+  "dropTarget": "generic-step-column",
+  "spec": "14-fib-media-deep.spec.ts",
+  "qcPdf": "Author Test Cases - FIBMedia test cases.pdf",
+  "qcPdfPath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - FIBMedia test cases.pdf",
+  "architectureNote": "FIB Media is the FIB template (templates/fib/) in 'FIB with Image' mode (currSettings.fibWithImage). Reuses FIB drop/setup infra. The QC suite is dominated by file-picker uploads, resize, autosave/refresh, network/quota and Reader rendering, which are not assertable in the authoring DOM with Cypress alone — hence a high deferred ratio.",
+  "source": {
+    "auth": "closify/KITABOO_Authoring/templates/fib/fib.html",
+    "settings": "closify/KITABOO_Authoring/templates/fib/fib-settings-panel.html"
+  },
+  "rules": {
+    "imageOnlyMedia": true,
+    "placementInlineDisallowed": true
+  },
+  "coverage": {
+    "qcTotal": 43,
+    "automated": 8,
+    "deferred": 38,
+    "lastVerified": null,
+    "status": "generated-unverified"
+  }
+}

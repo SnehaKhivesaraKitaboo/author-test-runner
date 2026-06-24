@@ -1,0 +1,1212 @@
+{
+  "component": "Lesson Opener",
+  "slug": "lesson-opener",
+  "dataType": "lesson-opener",
+  "source": "Author Test Cases - Lesson Opener.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Lesson Opener.pdf",
+  "pages": 7,
+  "extractedCount": 150,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Key TermsVerify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Lesson Opener UI and FunctionalityKey TermsVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Key TermsVerify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Lesson Opener FunctionalityKey TermsVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Key TermsVerify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03 Lesson Opener FunctionalityKey TermsVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI",
+      "description": "Key Terms Verify Key Terms component is visible in Lesson Opener styles tray",
+      "expected": "",
+      "raw": "TC_04 Lesson Opener UI Key Terms Verify Key Terms component is visible in Lesson Opener styles tray 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Key Terms component should be listed under Lesson Opener components."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "Key Terms Verify Key Terms component is visible in Lesson Opener styles tray",
+      "expected": "",
+      "raw": "TC_05 Lesson Opener UI Key Terms Verify Key Terms component is visible in Lesson Opener styles tray 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Key Terms component should be listed under Lesson Opener components."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Key Terms Verify author can drag Key Terms component into Generic Step",
+      "expected": "",
+      "raw": "TC_06 Lesson Opener Functionality Key Terms Verify author can drag Key Terms component into Generic Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Component is successfully added to the step layout."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Key Terms Verify Key Terms component can be used in Flexi Layout",
+      "expected": "",
+      "raw": "TC_07 Lesson Opener Functionality Key Terms Verify Key Terms component can be used in Flexi Layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Component displays properly across layouts."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI",
+      "description": "Key Terms Verify default fixed title and icon",
+      "expected": "",
+      "raw": "TC_08 Lesson Opener UI Key Terms Verify default fixed title and icon 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Title \"Key Terms\" and icon are visible and non-editable."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI",
+      "description": "Key Terms Verify UI matches design with Figma",
+      "expected": "",
+      "raw": "TC_09 Lesson Opener UI Key Terms Verify UI matches design with Figma 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Background color, font size, and style match Figma design."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Key Terms Verify usage of all RTE features",
+      "expected": "",
+      "raw": "TC_10 Lesson Opener Functionality Key Terms Verify usage of all RTE features 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Formatting applied correctly and visible."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Key Terms Verify addition of math text and special characters",
+      "expected": "",
+      "raw": "TC_11 Lesson Opener Functionality Key Terms Verify addition of math text and special characters 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Math and special characters render clearly."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Key Terms Verify glossary term can be added",
+      "expected": "",
+      "raw": "TC_12 Lesson Opener Functionality Key Terms Verify glossary term can be added 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Glossary linked and displays in CLP."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction on editing title, font, and color",
+      "expected": "",
+      "raw": "TC_13 Lesson Opener Functionality Key Terms Verify restriction on editing title, font, and color 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Edit actions are disabled."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Key Terms Verify component content can be saved",
+      "expected": "",
+      "raw": "TC_14 Lesson Opener Functionality Key Terms Verify component content can be saved 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Content persists after saving."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI",
+      "description": "Key Terms Verify preview in desktop, tablet, mobile",
+      "expected": "",
+      "raw": "TC_15 Lesson Opener UI Key Terms Verify preview in desktop, tablet, mobile 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Layout adapts and displays well in all modes."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Key Terms Verify activity with Key Terms can be published",
+      "expected": "",
+      "raw": "TC_16 Lesson Opener Functionality Key Terms Verify activity with Key Terms can be published 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Activity publishes successfully with component."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Key Terms Verify content can be edited and re-published",
+      "expected": "",
+      "raw": "TC_17 Lesson Opener Functionality Key Terms Verify content can be edited and re-published 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Updates saved and visible in CLP."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Key Terms Verify glossary is viewable in CLP as student",
+      "expected": "",
+      "raw": "TC_18 Lesson Opener Functionality Key Terms Verify glossary is viewable in CLP as student 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Glossary opens correctly."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Key Terms Verify component appears as expected for teacher",
+      "expected": "",
+      "raw": "TC_19 Lesson Opener Functionality Key Terms Verify component appears as expected for teacher 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Component matches student experience."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "Key Terms Verify no scrollbars appear with long content",
+      "expected": "",
+      "raw": "TC_20 Lesson Opener UI Key Terms Verify no scrollbars appear with long content 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Content fits in box without scrollbars."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction on using outside Generic Step",
+      "expected": "",
+      "raw": "TC_21 Lesson Opener Functionality Key Terms Verify restriction on using outside Generic Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" System disallows adding component."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functional",
+      "description": "Lesson Opener Compatibility Key Terms Verify browser compatibility - Chrome",
+      "expected": "",
+      "raw": "TC_22 Lesson Opener Compatibility Key Terms Verify browser compatibility - Chrome 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" All functions work without issues."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functional",
+      "description": "Lesson Opener Compatibility Key Terms Verify browser compatibility - Safari",
+      "expected": "",
+      "raw": "TC_23 Lesson Opener Compatibility Key Terms Verify browser compatibility - Safari 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" All functions work without issues."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Key Terms Verify component can be added to older activities",
+      "expected": "",
+      "raw": "TC_24 Lesson Opener Functionality Key Terms Verify component can be added to older activities 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Component adds and functions as expected."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI",
+      "description": "Key Terms Verify UI matches Figma",
+      "expected": "",
+      "raw": "TC_25 Lesson Opener UI Key Terms Verify UI matches Figma 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Full visual match."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Key Terms Verify creation of static Lesson Opener",
+      "expected": "",
+      "raw": "TC_26 Lesson Opener Functionality Key Terms Verify creation of static Lesson Opener 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Static layout without interaction."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI",
+      "description": "Key Terms Verify selection of correct Lesson Opener style",
+      "expected": "",
+      "raw": "TC_27 Lesson Opener UI Key Terms Verify selection of correct Lesson Opener style 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Selected style loads with proper layout."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Key Terms Verify static behavior of lesson opener",
+      "expected": "",
+      "raw": "TC_28 Lesson Opener Functionality Key Terms Verify static behavior of lesson opener 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" No interactivity in content."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction of Lesson Opener to Generic Step",
+      "expected": "",
+      "raw": "TC_29 Lesson Opener Functionality Key Terms Verify restriction of Lesson Opener to Generic Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Not allowed."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Key Terms Verify multilingual content support",
+      "expected": "",
+      "raw": "TC_30 Lesson Opener Functionality Key Terms Verify multilingual content support 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" All languages render correctly."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Key Terms Verify math support in Lesson Opener",
+      "expected": "",
+      "raw": "TC_31 Lesson Opener Functionality Key Terms Verify math support in Lesson Opener 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Equations display as expected."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI",
+      "description": "Key Terms Verify responsive behavior for Lesson Opener",
+      "expected": "",
+      "raw": "TC_32 Lesson Opener UI Key Terms Verify responsive behavior for Lesson Opener 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Components adjust to screen size."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction on dragging Key Terms into unsupported step",
+      "expected": "",
+      "raw": "TC_33 Lesson Opener Functionality Key Terms Verify restriction on dragging Key Terms into unsupported step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Action blocked or warning shown."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Key Terms Verify inability to edit title of Key Terms",
+      "expected": "",
+      "raw": "TC_34 Lesson Opener Functionality Key Terms Verify inability to edit title of Key Terms 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Edit not allowed or reverted."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "UI",
+      "description": "Key Terms Verify restriction on changing background color",
+      "expected": "",
+      "raw": "TC_35 Lesson Opener UI Key Terms Verify restriction on changing background color 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Color remains fixed."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction on adding unsupported components inside Key Terms",
+      "expected": "",
+      "raw": "TC_36 Lesson Opener Functionality Key Terms Verify restriction on adding unsupported components inside Key Terms 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Action rejected."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Key Terms Verify restriction on adding Key Terms outside Lesson Opener",
+      "expected": "",
+      "raw": "TC_37 Lesson Opener Functionality Key Terms Verify restriction on adding Key Terms outside Lesson Opener 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Component not available or addition fails."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Key Terms Verify save action with empty content",
+      "expected": "",
+      "raw": "TC_38 Lesson Opener Functionality Key Terms Verify save action with empty content 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Warning or save disabled."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Key Terms Verify behavior with broken glossary link",
+      "expected": "",
+      "raw": "TC_39 Lesson Opener Functionality Key Terms Verify behavior with broken glossary link 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Glossary doesn't appear or throws error."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functional",
+      "description": "Lesson Opener Compatibility Key Terms Verify unsupported browser behavior",
+      "expected": "",
+      "raw": "TC_40 Lesson Opener Compatibility Key Terms Verify unsupported browser behavior 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Display issues or layout breaks."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Key Terms Verify UI with conflicting RTE usage",
+      "expected": "",
+      "raw": "TC_41 Lesson Opener Functionality Key Terms Verify UI with conflicting RTE usage 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Misaligned text or formatting issues."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI",
+      "description": "Key Terms Verify long glossary term UI overflow",
+      "expected": "",
+      "raw": "TC_42 Lesson Opener UI Key Terms Verify long glossary term UI overflow 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" Glossary misaligns or overflows UI."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Key Terms Verify math text and symbols can be added",
+      "expected": "",
+      "raw": "TC_43 Lesson Opener Functionality Key Terms Verify math text and symbols can be added 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" 7.Insert math formula (e.g., x2+y2=z2)Math is rendered correctly"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Key Terms Verify math equation is saved and previewed",
+      "expected": "Add ∫x2dx, previewRenders correctly in preview",
+      "raw": "TC_44 Lesson Opener Functionality Key Terms Verify math equation is saved and previewed 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" 7.Add ∫x2dx, previewRenders correctly in preview"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Key Terms Verify multiple languages supported",
+      "expected": "Add ∫x2dx, previewContent renders in all",
+      "raw": "TC_45 Lesson Opener Functionality Key Terms Verify multiple languages supported 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Key Terms\" 7.Add ∫x2dx, previewContent renders in all"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "UI",
+      "description": "Make a Connection Verify \"Make a Connection\" component is visible under Styles in Lesson Opener settings",
+      "expected": "Select the style as \"Make Connection\" \"Make a Connection\" style should be listed under Lesson Opener styles",
+      "raw": "TC_46 Lesson Opener UIMake a Connection Verify \"Make a Connection\" component is visible under Styles in Lesson Opener settings 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" \"Make a Connection\" style should be listed under Lesson Opener styles"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Make a Connection Verify author can drag and drop \"Make a Connection\" component into Generic Step",
+      "expected": "Select the style as \"Make Connection\" Component should appear in the layout after dropping",
+      "raw": "TC_47 Lesson Opener FunctionalityMake a Connection Verify author can drag and drop \"Make a Connection\" component into Generic Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should appear in the layout after dropping"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify component is restricted to Generic step only",
+      "expected": "Select the style as \"Make Connection\" Component should be disabled or unavailable in unsupported step types",
+      "raw": "TC_48 Lesson Opener FunctionalityMake a ConnectionVerify component is restricted to Generic step only 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should be disabled or unavailable in unsupported step types"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "UI",
+      "description": "Make a ConnectionVerify component UI matches Figma design",
+      "expected": "",
+      "raw": "TC_49 Lesson Opener UIMake a ConnectionVerify component UI matches Figma design 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Background color, font size, icon, and layout should match the design spec in Fig. 1"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify title and arrow icon are fixed",
+      "expected": "Select the style as \"Make Connection\" Title and icon should be uneditable",
+      "raw": "TC_50 Lesson Opener FunctionalityMake a ConnectionVerify title and arrow icon are fixed 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Title and icon should be uneditable"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify RTE supports basic formatting",
+      "expected": "Select the style as \"Make Connection\" Formatting should be applied and displayed as entered",
+      "raw": "TC_51 Lesson Opener FunctionalityMake a ConnectionVerify RTE supports basic formatting 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Formatting should be applied and displayed as entered"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Make a Connection Verify addition of math equations and special characters",
+      "expected": "Select the style as \"Make Connection\" Math equations and special characters should render correctly in authoring and preview",
+      "raw": "TC_52 Lesson Opener FunctionalityMake a Connection Verify addition of math equations and special characters 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Math equations and special characters should render correctly in authoring and preview"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify content can be saved after adding",
+      "expected": "Select the style as \"Make Connection\" Previously added content should be retained after save and reload",
+      "raw": "TC_53 Lesson Opener FunctionalityMake a ConnectionVerify content can be saved after adding 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Previously added content should be retained after save and reload"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "UI",
+      "description": "Make a ConnectionVerify component preview works across all modes",
+      "expected": "Select the style as \"Make Connection\" Component should display without layout issues in all preview modes",
+      "raw": "TC_54 Lesson Opener UIMake a ConnectionVerify component preview works across all modes 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should display without layout issues in all preview modes"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Make a Connection Verify activity can be published with this component",
+      "expected": "Select the style as \"Make Connection\" Activity should publish successfully with the component included",
+      "raw": "TC_55 Lesson Opener FunctionalityMake a Connection Verify activity can be published with this component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Activity should publish successfully with the component included"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Make a Connection Verify published activity displays component in CLP",
+      "expected": "Select the style as \"Make Connection\" Component should appear correctly and display full content",
+      "raw": "TC_56 Lesson Opener FunctionalityMake a Connection Verify published activity displays component in CLP 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should appear correctly and display full content"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Make a Connection Verify component content can be edited and republished",
+      "expected": "Select the style as \"Make Connection\" Edited content should be updated and reflected after republish",
+      "raw": "TC_57 Lesson Opener FunctionalityMake a Connection Verify component content can be edited and republished 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Edited content should be updated and reflected after republish"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify component behaves as static on CLP",
+      "expected": "Select the style as \"Make Connection\" Component should be static and non- interactive",
+      "raw": "TC_58 Lesson Opener FunctionalityMake a ConnectionVerify component behaves as static on CLP 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should be static and non- interactive"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functional",
+      "description": "Lesson Opener CompatibilityMake a ConnectionVerify Chrome browser compatibility",
+      "expected": "Select the style as \"Make Connection\" Component should function consistently in Chrome",
+      "raw": "TC_59 Lesson Opener CompatibilityMake a ConnectionVerify Chrome browser compatibility 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should function consistently in Chrome"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functional",
+      "description": "Lesson Opener CompatibilityMake a ConnectionVerify Safari browser compatibility",
+      "expected": "Select the style as \"Make Connection\" Component should function consistently in Safari",
+      "raw": "TC_60 Lesson Opener CompatibilityMake a ConnectionVerify Safari browser compatibility 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should function consistently in Safari"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Make a Connection Verify existing activity accepts \"Make a Connection\" component",
+      "expected": "Select the style as \"Make Connection\" Component should be added and function normally",
+      "raw": "TC_61 Lesson Opener FunctionalityMake a Connection Verify existing activity accepts \"Make a Connection\" component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should be added and function normally"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify multilingual content support",
+      "expected": "Select the style as \"Make Connection\" Content in different languages should render correctly",
+      "raw": "TC_62 Lesson Opener FunctionalityMake a ConnectionVerify multilingual content support 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Content in different languages should render correctly"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "UI",
+      "description": "Make a ConnectionVerify long content does not add scrollbars",
+      "expected": "Select the style as \"Make Connection\" Content should wrap properly without triggering scrollbars",
+      "raw": "TC_63 Lesson Opener UIMake a ConnectionVerify long content does not add scrollbars 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Content should wrap properly without triggering scrollbars"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify math equation saves and re-renders",
+      "expected": "Select the style as \"Make Connection\" Math content should persist and render correctly across sessions",
+      "raw": "TC_64 Lesson Opener FunctionalityMake a ConnectionVerify math equation saves and re-renders 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Math content should persist and render correctly across sessions"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Make a Connection Verify component cannot be added to Multipart or interactive steps",
+      "expected": "Select the style as \"Make Connection\" System should block or display a warning to prevent drop",
+      "raw": "TC_65 Lesson Opener FunctionalityMake a Connection Verify component cannot be added to Multipart or interactive steps 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" System should block or display a warning to prevent drop"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify author cannot edit fixed title",
+      "expected": "Select the style as \"Make Connection\" The title should remain fixed and not editable",
+      "raw": "TC_66 Lesson Opener FunctionalityMake a ConnectionVerify author cannot edit fixed title 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" The title should remain fixed and not editable"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "UI",
+      "description": "Make a ConnectionVerify background and font settings are restricted",
+      "expected": "Select the style as \"Make Connection\" Changes should not apply; controls should be disabled or ignored",
+      "raw": "TC_67 Lesson Opener UIMake a ConnectionVerify background and font settings are restricted 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Changes should not apply; controls should be disabled or ignored"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Make a Connection Verify component is not available outside Lesson Opener context",
+      "expected": "Select the style as \"Make Connection\" Component should not be visible or accessible",
+      "raw": "TC_68 Lesson Opener FunctionalityMake a Connection Verify component is not available outside Lesson Opener context 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should not be visible or accessible"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Make a Connection Verify saving empty component does not allow publish",
+      "expected": "Select the style as \"Make Connection\" Author should see a validation message and block publish",
+      "raw": "TC_69 Lesson Opener FunctionalityMake a Connection Verify saving empty component does not allow publish 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Author should see a validation message and block publish"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "UI",
+      "description": "Make a ConnectionVerify formatting conflicts do not break RTE",
+      "expected": "Select the style as \"Make Connection\" Formatting should apply without breaking layout or editor",
+      "raw": "TC_70 Lesson Opener UIMake a ConnectionVerify formatting conflicts do not break RTE 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Formatting should apply without breaking layout or editor"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "Make a Connection Verify math equation with syntax error fails gracefully",
+      "expected": "Select the style as \"Make Connection\" Component should show an error message or ignore invalid input",
+      "raw": "TC_71 Lesson Opener FunctionalityMake a Connection Verify math equation with syntax error fails gracefully 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Component should show an error message or ignore invalid input"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "Make a Connection Verify glossary or hyperlinks are not available in this component",
+      "expected": "Select the style as \"Make Connection\" Glossary tools should not be accessible",
+      "raw": "TC_72 Lesson Opener FunctionalityMake a Connection Verify glossary or hyperlinks are not available in this component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Glossary tools should not be accessible"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "UI",
+      "description": "Make a ConnectionVerify overflow of long text does not distort layout",
+      "expected": "Select the style as \"Make Connection\" Text should wrap or truncate without breaking layout",
+      "raw": "TC_73 Lesson Opener UIMake a ConnectionVerify overflow of long text does not distort layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Text should wrap or truncate without breaking layout"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "Make a ConnectionVerify corrupted save does not cause data loss",
+      "expected": "Select the style as \"Make Connection\" Authoring system should retry or preserve unsaved input temporarily",
+      "raw": "TC_74 Lesson Opener FunctionalityMake a ConnectionVerify corrupted save does not cause data loss 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as \"Make Connection\" Authoring system should retry or preserve unsaved input temporarily"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "UI",
+      "description": "My Learning Goals Verify the presence of \"My Learning Goals\" component in the Styles dropdown \"1.",
+      "expected": "Select the style as My Learning Goals \"My Learning Goals\" style is listed in dropdown",
+      "raw": "TC_75 Lesson Opener UIMy Learning Goals Verify the presence of \"My Learning Goals\" component in the Styles dropdown \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals \"My Learning Goals\" style is listed in dropdown"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "UI",
+      "description": "My Learning GoalsVerify component availability only in Generic step \"1.",
+      "expected": "Select the style as My Learning Goals Component available only for Generic step",
+      "raw": "TC_76 Lesson Opener UIMy Learning GoalsVerify component availability only in Generic step \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Component available only for Generic step"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "UI",
+      "description": "My Learning Goals Verify drag-and-drop of component in all layout sections, especially Flexi \"1.",
+      "expected": "Select the style as My Learning Goals Component is successfully dropped in Flexi layout section",
+      "raw": "TC_77 Lesson Opener UIMy Learning Goals Verify drag-and-drop of component in all layout sections, especially Flexi \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Component is successfully dropped in Flexi layout section"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "UI",
+      "description": "My Learning Goals Verify header title \"My Learning Goals\" is fixed and non-editable \"1.",
+      "expected": "Select the style as My Learning GoalsTitle is fixed and cannot be edited",
+      "raw": "TC_78 Lesson Opener UIMy Learning Goals Verify header title \"My Learning Goals\" is fixed and non-editable \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning GoalsTitle is fixed and cannot be edited"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "UI",
+      "description": "My Learning Goals Verify header title style matches Figma (font, color, icon) \"1.",
+      "expected": "Select the style as My Learning Goals Title style, font size, arrow icon, background match Figma",
+      "raw": "TC_79 Lesson Opener UIMy Learning Goals Verify header title style matches Figma (font, color, icon) \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Title style, font size, arrow icon, background match Figma"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "UI",
+      "description": "My Learning Goals Verify overall component background and colors match Figma \"1.",
+      "expected": "Select the style as My Learning Goals UI background and font color match Figma",
+      "raw": "TC_80 Lesson Opener UIMy Learning Goals Verify overall component background and colors match Figma \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals UI background and font color match Figma"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functionality",
+      "description": "My Learning Goals Verify RTE options (Bold, Italic, Underline, Bulleted List, Numbered List) work \"1.",
+      "expected": "Select the style as My Learning Goals Content appears with correct formatting",
+      "raw": "TC_81 Lesson Opener FunctionalityMy Learning Goals Verify RTE options (Bold, Italic, Underline, Bulleted List, Numbered List) work \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Content appears with correct formatting"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify math text entry using math keyboard \"1.",
+      "expected": "Select the style as My Learning Goals Equation is correctly rendered in component",
+      "raw": "TC_82 Lesson Opener FunctionalityMy Learning GoalsVerify math text entry using math keyboard \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Equation is correctly rendered in component"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify long math equations render without UI break \"1.",
+      "expected": "Select the style as My Learning Goals Component adjusts layout to display equation",
+      "raw": "TC_83 Lesson Opener FunctionalityMy Learning GoalsVerify long math equations render without UI break \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Component adjusts layout to display equation"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify math text is saved after saving the activity \"1.",
+      "expected": "Select the style as My Learning GoalsMath content is preserved",
+      "raw": "TC_84 Lesson Opener FunctionalityMy Learning GoalsVerify math text is saved after saving the activity \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning GoalsMath content is preserved"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify content is saved correctly in backend \"1.",
+      "expected": "Select the style as My Learning GoalsAll content remains after page reload",
+      "raw": "TC_85 Lesson Opener FunctionalityMy Learning GoalsVerify content is saved correctly in backend \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning GoalsAll content remains after page reload"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functionality",
+      "description": "My Learning Goals Verify content is shown in all three author preview modes \"1.",
+      "expected": "Select the style as My Learning Goals Content appears the same across modes",
+      "raw": "TC_86 Lesson Opener FunctionalityMy Learning Goals Verify content is shown in all three author preview modes \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Content appears the same across modes"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify published activity displays content correctly \"1.",
+      "expected": "Select the style as My Learning Goals Component with content appears on CLP",
+      "raw": "TC_87 Lesson Opener FunctionalityMy Learning GoalsVerify published activity displays content correctly \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals Component with content appears on CLP"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify republishing preserves edited content \"1.",
+      "expected": "RepublishEdited content appears as expected",
+      "raw": "TC_88 Lesson Opener FunctionalityMy Learning GoalsVerify republishing preserves edited content \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. RepublishEdited content appears as expected"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify student sees read-only content on CLP1. Login as student2. Launch activityContent is visible, but not editable",
+      "expected": "Launch activityContent is visible, but not editable",
+      "raw": "TC_89 Lesson Opener FunctionalityMy Learning GoalsVerify student sees read-only content on CLP1. Login as student2. Launch activityContent is visible, but not editable"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functionality",
+      "description": "My Learning Goals Verify teacher sees content in teacher preview/review mode1. Login as teacher2. Open preview/review Component displays content as expected",
+      "expected": "Open preview/review Component displays content as expected",
+      "raw": "TC_90 Lesson Opener FunctionalityMy Learning Goals Verify teacher sees content in teacher preview/review mode1. Login as teacher2. Open preview/review Component displays content as expected"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functional",
+      "description": "Lesson Opener Data IntegrityMy Learning Goals Verify no data loss on reloading or relaunching authoring1. Add content2. Save and reloadAll added content is still visible",
+      "expected": "Save and reloadAll added content is still visible",
+      "raw": "TC_91 Lesson Opener Data IntegrityMy Learning Goals Verify no data loss on reloading or relaunching authoring1. Add content2. Save and reloadAll added content is still visible"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify compatibility on Chrome browser",
+      "expected": "Complete end-to-end authoring and viewing flowAll functions work without issue",
+      "raw": "TC_92 Lesson Opener FunctionalityMy Learning GoalsVerify compatibility on Chrome browser 1. Complete end-to-end authoring and viewing flowAll functions work without issue"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functionality",
+      "description": "My Learning GoalsVerify compatibility on Safari browser",
+      "expected": "Complete end-to-end authoring and viewing flowAll functions work as expected",
+      "raw": "TC_93 Lesson Opener FunctionalityMy Learning GoalsVerify compatibility on Safari browser 1. Complete end-to-end authoring and viewing flowAll functions work as expected"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functional",
+      "description": "My Learning Goals Verify editing previously created activity works correctly",
+      "expected": "Add content and publish Content saves and publishes without issues",
+      "raw": "TC_94 Lesson Opener FunctionalMy Learning Goals Verify editing previously created activity works correctly 1. Add component to old activity2. Add content and publish Content saves and publishes without issues"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functional",
+      "description": "My Learning GoalsVerify launching published activity via saLTIre1. Launch via saLTIreActivity opens correctly",
+      "expected": "Launch via saLTIreActivity opens correctly",
+      "raw": "TC_95 Lesson Opener FunctionalMy Learning GoalsVerify launching published activity via saLTIre1. Launch via saLTIreActivity opens correctly"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functional",
+      "description": "My Learning Goals Verify long text + math equations can be entered and rendered \"1.",
+      "expected": "RepublishAll text and math are rendered clearly",
+      "raw": "TC_96 Lesson Opener FunctionalMy Learning Goals Verify long text + math equations can be entered and rendered \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. RepublishAll text and math are rendered clearly"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functional",
+      "description": "My Learning GoalsVerify equation inside list or formatted text \"1.",
+      "expected": "RepublishEquation renders inline inside list",
+      "raw": "TC_97 Lesson Opener FunctionalMy Learning GoalsVerify equation inside list or formatted text \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. RepublishEquation renders inline inside list"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functional",
+      "description": "My Learning GoalsTry editing fixed title and verify it is blocked \"1.",
+      "expected": "RepublishTitle remains unchanged",
+      "raw": "TC_98 Lesson Opener FunctionalMy Learning GoalsTry editing fixed title and verify it is blocked \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. RepublishTitle remains unchanged"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functional",
+      "description": "My Learning GoalsAdd invalid LaTeX/MathML syntax \"1.",
+      "expected": "RepublishError or ignored input shown",
+      "raw": "TC_99 Lesson Opener FunctionalMy Learning GoalsAdd invalid LaTeX/MathML syntax \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. RepublishError or ignored input shown"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functional",
+      "description": "My Learning GoalsAdd unsupported symbols or content \"1.",
+      "expected": "Republish Unsupported content is ignored or sanitized",
+      "raw": "TC_100 Lesson Opener FunctionalMy Learning GoalsAdd unsupported symbols or content \"1. Launch the URL and Login with valid credentials 2.Click on \"\"create new\"\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as My Learning Goals 7.Edit content after publish 8. Republish Unsupported content is ignored or sanitized"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "UI",
+      "description": "Learning Prompt Verify “Lesson Opener Components” is visible in the elements tray",
+      "expected": "Select the style as Learning Prompt Lesson Opener Components option should be listed",
+      "raw": "TC_101 Lesson Opener UILearning Prompt Verify “Lesson Opener Components” is visible in the elements tray 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Lesson Opener Components option should be listed"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "UI",
+      "description": "/FunctionalLearning Prompt Verify “Lesson Opener Components” appears only in Generic Step",
+      "expected": "Select the style as Learning Prompt Component should NOT be visible in non-generic steps",
+      "raw": "TC_102 Lesson Opener UI/FunctionalLearning Prompt Verify “Lesson Opener Components” appears only in Generic Step 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Component should NOT be visible in non-generic steps"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify drag and drop of Lesson Opener component into Vertical Flexi layout",
+      "expected": "Select the style as Learning Prompt Component should be added to layout",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify drag and drop of Lesson Opener component into Vertical Flexi layout 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Component should be added to layout"
+    },
+    {
+      "id": "TC_103__2",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning Prompt Verify the default style \"Learning Prompt\" is applied on adding component",
+      "expected": "Select the style as Learning Prompt Component should display with bulb icon and fixed title “Learning Prompt”",
+      "raw": "TC_103 Lesson Opener UILearning Prompt Verify the default style \"Learning Prompt\" is applied on adding component 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Component should display with bulb icon and fixed title “Learning Prompt”"
+    },
+    {
+      "id": "TC_103__3",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify title text and icon are fixed and non-editable",
+      "expected": "Select the style as Learning PromptTitle and icon should not be editable",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify title text and icon are fixed and non-editable 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptTitle and icon should not be editable"
+    },
+    {
+      "id": "TC_103__4",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning Prompt Verify fixed background color, font size, and font color",
+      "expected": "Select the style as Learning Prompt Styles should match design provided in Figma",
+      "raw": "TC_103 Lesson Opener UILearning Prompt Verify fixed background color, font size, and font color 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Styles should match design provided in Figma"
+    },
+    {
+      "id": "TC_103__5",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify authoring RTE - bulleted list",
+      "expected": "Select the style as Learning PromptBulleted list appears correctly",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify authoring RTE - bulleted list 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptBulleted list appears correctly"
+    },
+    {
+      "id": "TC_103__6",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify authoring RTE - numbered list",
+      "expected": "Select the style as Learning PromptNumbered list appears correctly",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify authoring RTE - numbered list 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptNumbered list appears correctly"
+    },
+    {
+      "id": "TC_103__7",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify authoring RTE - bold, italic, underline",
+      "expected": "Select the style as Learning Prompt Text appears as bold/italic/underline accordingly",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify authoring RTE - bold, italic, underline 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Text appears as bold/italic/underline accordingly"
+    },
+    {
+      "id": "TC_103__8",
+      "num": 103,
+      "type": "Functional",
+      "description": "/MathLearning PromptVerify author can add math equations using RTE",
+      "expected": "Select the style as Learning PromptEquation renders properly",
+      "raw": "TC_103 Lesson Opener Functional/MathLearning PromptVerify author can add math equations using RTE 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptEquation renders properly"
+    },
+    {
+      "id": "TC_103__9",
+      "num": 103,
+      "type": "Functional",
+      "description": "/MathLearning PromptVerify long text + math equation together",
+      "expected": "Select the style as Learning PromptBoth appear properly and are saved",
+      "raw": "TC_103 Lesson Opener Functional/MathLearning PromptVerify long text + math equation together 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptBoth appear properly and are saved"
+    },
+    {
+      "id": "TC_103__10",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify Save button functionality",
+      "expected": "Select the style as Learning PromptData is saved successfully",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify Save button functionality 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptData is saved successfully"
+    },
+    {
+      "id": "TC_103__11",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify data persists after saving and reloading the activity",
+      "expected": "Select the style as Learning Prompt Previously entered data should be present",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify data persists after saving and reloading the activity 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Previously entered data should be present"
+    },
+    {
+      "id": "TC_103__12",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning PromptVerify authoring preview (desktop view)",
+      "expected": "Select the style as Learning PromptComponent displays as per design",
+      "raw": "TC_103 Lesson Opener UILearning PromptVerify authoring preview (desktop view) 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptComponent displays as per design"
+    },
+    {
+      "id": "TC_103__13",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning PromptVerify authoring preview (tablet view)",
+      "expected": "Select the style as Learning PromptLayout adjusts accordingly",
+      "raw": "TC_103 Lesson Opener UILearning PromptVerify authoring preview (tablet view) 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptLayout adjusts accordingly"
+    },
+    {
+      "id": "TC_103__14",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning PromptVerify authoring preview (mobile view)",
+      "expected": "Select the style as Learning Prompt Component should stack properly and text should remain readable",
+      "raw": "TC_103 Lesson Opener UILearning PromptVerify authoring preview (mobile view) 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Component should stack properly and text should remain readable"
+    },
+    {
+      "id": "TC_103__15",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning PromptVerify author can edit and re-preview",
+      "expected": "Select the style as Learning Prompt Updated content should reflect in preview",
+      "raw": "TC_103 Lesson Opener FunctionalLearning PromptVerify author can edit and re-preview 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Updated content should reflect in preview"
+    },
+    {
+      "id": "TC_103__16",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify published activity retains Learning Prompt content",
+      "expected": "Select the style as Learning Prompt Learning Prompt content appears for students",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify published activity retains Learning Prompt content 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Learning Prompt content appears for students"
+    },
+    {
+      "id": "TC_103__17",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify republish after editing retains updated content",
+      "expected": "Select the style as Learning PromptUpdated content appears correctly",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify republish after editing retains updated content 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptUpdated content appears correctly"
+    },
+    {
+      "id": "TC_103__18",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify no data loss during editing, saving, or publishing",
+      "expected": "Select the style as Learning PromptNo loss of previous content",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify no data loss during editing, saving, or publishing 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptNo loss of previous content"
+    },
+    {
+      "id": "TC_103__19",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify CLP student view – no interaction allowed with Learning Prompt",
+      "expected": "Select the style as Learning Prompt Content visible, but cannot be clicked or edited",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify CLP student view – no interaction allowed with Learning Prompt 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Content visible, but cannot be clicked or edited"
+    },
+    {
+      "id": "TC_103__20",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify CLP teacher view – component is readable, no editing",
+      "expected": "Select the style as Learning PromptComponent visible, non-editable",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify CLP teacher view – component is readable, no editing 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptComponent visible, non-editable"
+    },
+    {
+      "id": "TC_103__21",
+      "num": 103,
+      "type": "UI",
+      "description": "Learning Prompt Verify UI matches design from Figma (colors, spacing, alignment)",
+      "expected": "Select the style as Learning PromptMatches Figma exactly",
+      "raw": "TC_103 Lesson Opener UILearning Prompt Verify UI matches design from Figma (colors, spacing, alignment) 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptMatches Figma exactly"
+    },
+    {
+      "id": "TC_103__22",
+      "num": 103,
+      "type": "Functional",
+      "description": "Lesson Opener Cross-browserLearning PromptVerify component functionality in Chrome browser",
+      "expected": "Select the style as Learning PromptAll pass",
+      "raw": "TC_103 Lesson Opener Cross-browserLearning PromptVerify component functionality in Chrome browser 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptAll pass"
+    },
+    {
+      "id": "TC_103__23",
+      "num": 103,
+      "type": "Functional",
+      "description": "Lesson Opener Cross-browserLearning PromptVerify component functionality in Safari browser",
+      "expected": "Select the style as Learning PromptAll pass",
+      "raw": "TC_103 Lesson Opener Cross-browserLearning PromptVerify component functionality in Safari browser 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptAll pass"
+    },
+    {
+      "id": "TC_103__24",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Verify multiple Lesson Opener components can be added to one activity",
+      "expected": "Select the style as Learning Prompt All should be independently editable and saved",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Verify multiple Lesson Opener components can be added to one activity 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt All should be independently editable and saved"
+    },
+    {
+      "id": "TC_103__25",
+      "num": 103,
+      "type": "Functional",
+      "description": "Learning Prompt Try pasting script or unsupported tags in Learning Prompt",
+      "expected": "Select the style as Learning PromptInput should be sanitized",
+      "raw": "TC_103 Lesson Opener FunctionalLearning Prompt Try pasting script or unsupported tags in Learning Prompt 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning PromptInput should be sanitized"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functional",
+      "description": "Learning PromptTry leaving component blank and saving",
+      "expected": "Select the style as Learning Prompt Either warning should show, or allowed if optional",
+      "raw": "TC_104 Lesson Opener FunctionalLearning PromptTry leaving component blank and saving 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Either warning should show, or allowed if optional"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "Functional",
+      "description": "Learning PromptTry deleting component title using dev tools",
+      "expected": "Select the style as Learning Prompt Should re-render or ignore DOM changes",
+      "raw": "TC_105 Lesson Opener FunctionalLearning PromptTry deleting component title using dev tools 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Should re-render or ignore DOM changes"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Functional",
+      "description": "Learning PromptTry saving long math content that exceeds limit",
+      "expected": "Select the style as Learning Prompt Error/warning shown or content truncated appropriately",
+      "raw": "TC_106 Lesson Opener FunctionalLearning PromptTry saving long math content that exceeds limit 1. Launch the URL and Login with valid credentials 2.Click on create new 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Lesson Opener 6. Select the style as Learning Prompt Error/warning shown or content truncated appropriately"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Functional",
+      "description": "Lesson Opener Verify default style is \"Learning Prompt\" when the component is added",
+      "expected": "",
+      "raw": "TC_107 Lesson Opener FunctionalLesson Opener Verify default style is \"Learning Prompt\" when the component is added Drag and drop Lesson Opener Component into layout “Learning Prompt” style is shown by default with bulb icon"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "UI",
+      "description": "Lesson OpenerVerify style dropdown appears in settings panel",
+      "expected": "",
+      "raw": "TC_108 Lesson Opener UILesson OpenerVerify style dropdown appears in settings panelSelect component → Check settings panel Style dropdown (e.g. Learning Prompt, Make a Connection) is visible"
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "Functional",
+      "description": "Lesson Opener Switch from \"Learning Prompt\" to \"Make a Connection\" style Open settings panel →",
+      "expected": "",
+      "raw": "TC_109 Lesson Opener FunctionalLesson Opener Switch from \"Learning Prompt\" to \"Make a Connection\" style Open settings panel → Select \"Make a Connection\" style Component style changes to “Make a Connection” instantly"
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "Functional",
+      "description": "Lesson Opener Switch back from \"Make a Connection\" to \"Learning Prompt\" Reopen settings panel → Switch back to “Learning Prompt” Style reverts to Learning Prompt with default visuals",
+      "expected": "",
+      "raw": "TC_110 Lesson Opener FunctionalLesson Opener Switch back from \"Make a Connection\" to \"Learning Prompt\" Reopen settings panel → Switch back to “Learning Prompt” Style reverts to Learning Prompt with default visuals"
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "Functional",
+      "description": "Lesson Opener Verify style-specific content is preserved when switching styles Add text in Learning Prompt → switch to Make a Connection → switch backOriginal content is retained",
+      "expected": "",
+      "raw": "TC_111 Lesson Opener FunctionalLesson Opener Verify style-specific content is preserved when switching styles Add text in Learning Prompt → switch to Make a Connection → switch backOriginal content is retained"
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "Functional",
+      "description": "/MathLesson Opener Verify math equation is preserved while switching styles Add equation (e.g., x^2 + y^2 = z^2) in one style → switch to another Equation still appears correctly after switching",
+      "expected": "",
+      "raw": "TC_112 Lesson Opener Functional/MathLesson Opener Verify math equation is preserved while switching styles Add equation (e.g., x^2 + y^2 = z^2) in one style → switch to another Equation still appears correctly after switching"
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "Functional",
+      "description": "Lesson Opener Verify bulleted/numbered list is preserved after switching stylesAdd list → switch stylesList structure and formatting retained",
+      "expected": "",
+      "raw": "TC_113 Lesson Opener FunctionalLesson Opener Verify bulleted/numbered list is preserved after switching stylesAdd list → switch stylesList structure and formatting retained"
+    },
+    {
+      "id": "TC_114",
+      "num": 114,
+      "type": "UI",
+      "description": "Lesson Opener Verify style-specific UI updates properly when style is changed Observe component visual design before and after switch Color, font, icon change as per selected style",
+      "expected": "",
+      "raw": "TC_114 Lesson Opener UILesson Opener Verify style-specific UI updates properly when style is changed Observe component visual design before and after switch Color, font, icon change as per selected style"
+    },
+    {
+      "id": "TC_115",
+      "num": 115,
+      "type": "Functional",
+      "description": "Lesson Opener StabilityLesson Opener Verify switching styles multiple times (3–4 times) does not break the UI or crashRepeatedly switch between stylesComponent remains stable, no errors",
+      "expected": "",
+      "raw": "TC_115 Lesson Opener StabilityLesson Opener Verify switching styles multiple times (3–4 times) does not break the UI or crashRepeatedly switch between stylesComponent remains stable, no errors"
+    },
+    {
+      "id": "TC_116",
+      "num": 116,
+      "type": "Negative",
+      "description": "Lesson Opener Verify user cannot edit title/header text after switching stylesSwitch style → Try editing headerHeader remains uneditable",
+      "expected": "",
+      "raw": "TC_116 Lesson Opener NegativeLesson Opener Verify user cannot edit title/header text after switching stylesSwitch style → Try editing headerHeader remains uneditable"
+    },
+    {
+      "id": "TC_117",
+      "num": 117,
+      "type": "Functional",
+      "description": "Lesson OpenerVerify Save operation after switching the styleAdd content → Switch style → Save Content and new style are saved correctly",
+      "expected": "",
+      "raw": "TC_117 Lesson Opener FunctionalLesson OpenerVerify Save operation after switching the styleAdd content → Switch style → Save Content and new style are saved correctly"
+    },
+    {
+      "id": "TC_118",
+      "num": 118,
+      "type": "Functional",
+      "description": "Lesson OpenerVerify Publish operation after style switchSwitch style → Save → PublishPublished activity reflects new style",
+      "expected": "",
+      "raw": "TC_118 Lesson Opener FunctionalLesson OpenerVerify Publish operation after style switchSwitch style → Save → PublishPublished activity reflects new style"
+    },
+    {
+      "id": "TC_119",
+      "num": 119,
+      "type": "UI",
+      "description": "Lesson OpenerVerify Preview after switching stylesSwitch styles → Click Preview Preview shows updated style correctly",
+      "expected": "",
+      "raw": "TC_119 Lesson Opener Functional/UILesson OpenerVerify Preview after switching stylesSwitch styles → Click Preview Preview shows updated style correctly"
+    },
+    {
+      "id": "TC_120",
+      "num": 120,
+      "type": "Functional",
+      "description": "Lesson Opener Verify Edit → Re-preview after publishing with new style Edit after publishing → Switch style again → PreviewNew style is visible in preview",
+      "expected": "",
+      "raw": "TC_120 Lesson Opener FunctionalLesson Opener Verify Edit → Re-preview after publishing with new style Edit after publishing → Switch style again → PreviewNew style is visible in preview"
+    },
+    {
+      "id": "TC_121",
+      "num": 121,
+      "type": "Functional",
+      "description": "Lesson Opener Verify data loss does NOT occur during rapid style switching",
+      "expected": "",
+      "raw": "TC_121 Lesson Opener FunctionalLesson Opener Verify data loss does NOT occur during rapid style switchingEnter long content + math → rapidly switch stylesAll content remains intact"
+    },
+    {
+      "id": "TC_122",
+      "num": 122,
+      "type": "UI",
+      "description": "/ResponsiveLesson Opener Verify content appears as expected in responsive preview (mobile/tablet/desktop) after switching stylesSwitch style → Preview in all responsive views Content layout and style is responsive",
+      "expected": "",
+      "raw": "TC_122 Lesson Opener UI/ResponsiveLesson Opener Verify content appears as expected in responsive preview (mobile/tablet/desktop) after switching stylesSwitch style → Preview in all responsive views Content layout and style is responsive"
+    },
+    {
+      "id": "TC_123",
+      "num": 123,
+      "type": "Negative",
+      "description": "Lesson Opener Negative: Try switching style while leaving required fields emptyLeave text empty → Switch styles If validation exists, appropriate error shown; else silent switch",
+      "expected": "",
+      "raw": "TC_123 Lesson Opener NegativeLesson Opener Negative: Try switching style while leaving required fields emptyLeave text empty → Switch styles If validation exists, appropriate error shown; else silent switch"
+    },
+    {
+      "id": "TC_124",
+      "num": 124,
+      "type": "Regression",
+      "description": "Lesson Opener Verify switching styles in previously saved component Open existing activity with saved content → Switch style Should allow switching without data loss or design breaks",
+      "expected": "",
+      "raw": "TC_124 Lesson Opener RegressionLesson Opener Verify switching styles in previously saved component Open existing activity with saved content → Switch style Should allow switching without data loss or design breaks"
+    },
+    {
+      "id": "TC_125",
+      "num": 125,
+      "type": "Functional",
+      "description": "Lesson Opener Verify style change is reflected in CLP (student view) after publishTest Steps to be ExecutedCLP renders updated style",
+      "expected": "",
+      "raw": "TC_125 Lesson Opener FunctionalLesson Opener Verify style change is reflected in CLP (student view) after publishTest Steps to be ExecutedCLP renders updated style"
+    },
+    {
+      "id": "TC_126",
+      "num": 126,
+      "type": "Functional",
+      "description": "Lesson Opener Verify style change is reflected in CLP (teacher view) after publishSwitch → Save → Publish → Launch as teacher CLP teacher view reflects correct component style",
+      "expected": "",
+      "raw": "TC_126 Lesson Opener FunctionalLesson Opener Verify style change is reflected in CLP (teacher view) after publishSwitch → Save → Publish → Launch as teacher CLP teacher view reflects correct component style"
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "component": "Carousel",
+  "slug": "carousel",
+  "dataType": "carousel",
+  "source": "Author Test Cases - Carousel.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Carousel.pdf",
+  "pages": 2,
+  "extractedCount": 101,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Carousel UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Carousel FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Carousel FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Carousel FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Carousel FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Carousel Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Carousel Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Carousel Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Carousel Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify Auto Play checkbox functionality",
+      "expected": "Preview the slideSlides should auto-play when previewed",
+      "raw": "TC_10 Carousel FunctionalityVerify Auto Play checkbox functionality 1. Locate the Auto Play checkbox2. Check the checkbox3. Preview the slideSlides should auto-play when previewed"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify Auto Play uncheck behavior",
+      "expected": "Preview the slide Slides should not auto-play; manual navigation required",
+      "raw": "TC_11 Carousel FunctionalityVerify Auto Play uncheck behavior 1. Check the Auto Play checkbox2. Uncheck it again3. Preview the slide Slides should not auto-play; manual navigation required"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify Show Header checkbox enables header visibility1. Uncheck Show Header2. Preview the slideHeader Text should not be displayed",
+      "expected": "Preview the slideHeader Text should not be displayed",
+      "raw": "TC_12 Carousel Functionality Verify Show Header checkbox enables header visibility1. Uncheck Show Header2. Preview the slideHeader Text should not be displayed"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify Show Header checkbox disables header visibility1. Check Show Header2. Preview the slideHeader Text should be visible",
+      "expected": "Preview the slideHeader Text should be visible",
+      "raw": "TC_13 Carousel Functionality Verify Show Header checkbox disables header visibility1. Check Show Header2. Preview the slideHeader Text should be visible"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify Show Instruction checkbox enables instructions1. Uncheck Show Instruction2. Preview the slide Instructions (“Navigate slides to know more”) should not be displayed",
+      "expected": "Preview the slide Instructions (“Navigate slides to know more”) should not be displayed",
+      "raw": "TC_14 Carousel Functionality Verify Show Instruction checkbox enables instructions1. Uncheck Show Instruction2. Preview the slide Instructions (“Navigate slides to know more”) should not be displayed"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify Show Instruction checkbox disables instructions1. Check Show Instruction2. Preview the slideInstructions should be visible",
+      "expected": "Preview the slideInstructions should be visible",
+      "raw": "TC_15 Carousel Functionality Verify Show Instruction checkbox disables instructions1. Check Show Instruction2. Preview the slideInstructions should be visible"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify Show Slide Title enables slide title1. Uncheck Show Slide Title2. Preview the slideSlide Title should not be visible",
+      "expected": "Preview the slideSlide Title should not be visible",
+      "raw": "TC_16 Carousel FunctionalityVerify Show Slide Title enables slide title1. Uncheck Show Slide Title2. Preview the slideSlide Title should not be visible"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify Show Slide Title disables slide title1. Check Show Slide Title2. Preview the slideSlide Title should be visible",
+      "expected": "Preview the slideSlide Title should be visible",
+      "raw": "TC_17 Carousel FunctionalityVerify Show Slide Title disables slide title1. Check Show Slide Title2. Preview the slideSlide Title should be visible"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify Show Paragraph enables paragraph text",
+      "expected": "Preview the slide Paragraph text should appear below the slide title",
+      "raw": "TC_18 Carousel FunctionalityVerify Show Paragraph enables paragraph text 1. Check Show Paragraph2. Enter text in paragraph area if applicable3. Preview the slide Paragraph text should appear below the slide title"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify Show Paragraph disables paragraph text1. Uncheck Show Paragraph2. Preview the slideParagraph text area should not be visible",
+      "expected": "Preview the slideParagraph text area should not be visible",
+      "raw": "TC_19 Carousel FunctionalityVerify Show Paragraph disables paragraph text1. Uncheck Show Paragraph2. Preview the slideParagraph text area should not be visible"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify Vertical Layout selection1.",
+      "expected": "Preview the slideSlide layout should be vertical",
+      "raw": "TC_20 Carousel FunctionalityVerify Vertical Layout selection1. Select Vertical layout2. Preview the slideSlide layout should be vertical"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify Horizontal Layout selection1.",
+      "expected": "Preview the slideSlide layout should be horizontal",
+      "raw": "TC_21 Carousel FunctionalityVerify Horizontal Layout selection1. Select Horizontal layout2. Preview the slideSlide layout should be horizontal"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify Styles – No Outline applied1.",
+      "expected": "Preview the slide Slide area should render without an outline border",
+      "raw": "TC_22 Carousel FunctionalityVerify Styles – No Outline applied1. Select No Outline2. Preview the slide Slide area should render without an outline border"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify Styles – Outline applied1.",
+      "expected": "Preview the slideSlide area should render with an outline border",
+      "raw": "TC_23 Carousel FunctionalityVerify Styles – Outline applied1. Select Outline2. Preview the slideSlide area should render with an outline border"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify Action Assets color application",
+      "expected": "Save and preview the slide Navigation arrows and action elements should reflect the chosen color",
+      "raw": "TC_24 Carousel FunctionalityVerify Action Assets color application 1. Change the Action Asset color (e.g., to a different hex code)2. Save and preview the slide Navigation arrows and action elements should reflect the chosen color"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify Image/Video/Text selection for Slide Properties",
+      "expected": "Select Text and verify text entry area visibility Respective content placeholders should display appropriately",
+      "raw": "TC_25 Carousel Functionality Verify Image/Video/Text selection for Slide Properties 1. Select Image and check the placeholder2. Select Video and check placeholder3. Select Text and verify text entry area visibility Respective content placeholders should display appropriately"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify multiple checkboxes interaction consistency",
+      "expected": "Preview the slide No header, no instruction, no slide title, and no paragraph should be displayed",
+      "raw": "TC_26 Carousel FunctionalityVerify multiple checkboxes interaction consistency 1. Uncheck Show Header, Show Instruction, Show Slide Title, Show Paragraph all together2. Preview the slide No header, no instruction, no slide title, and no paragraph should be displayed"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify save and reload retains settings",
+      "expected": "Reload the editor pageAll checkbox states should persist as last saved",
+      "raw": "TC_27 Carousel FunctionalityVerify save and reload retains settings 1. Check or uncheck various checkboxes2. Save3. Reload the editor pageAll checkbox states should persist as last saved"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify preview reflects real-time checkbox changes",
+      "expected": "Click Preview Preview should reflect the most recent state of the checkboxes",
+      "raw": "TC_28 Carousel FunctionalityVerify preview reflects real-time checkbox changes 1. Toggle checkboxes on/off without saving2. Click Preview Preview should reflect the most recent state of the checkboxes"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify default state of checkboxes on new slide creation",
+      "expected": "Inspect the default checkbox states Show Header, Show Instruction, and Show Slide Title should be checked by default",
+      "raw": "TC_29 Carousel Functionality Verify default state of checkboxes on new slide creation 1. Create a new slide2. Inspect the default checkbox states Show Header, Show Instruction, and Show Slide Title should be checked by default"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify adding a new slideClick + Add Slide A new slide is created, appearing as the next slide with default content and numbering updated",
+      "expected": "",
+      "raw": "TC_30 Carousel FunctionalityVerify adding a new slideClick + Add Slide A new slide is created, appearing as the next slide with default content and numbering updated"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify deleting a slideClick Delete Slide on any slide The selected slide is removed and numbering is adjusted",
+      "expected": "",
+      "raw": "TC_31 Carousel FunctionalityVerify deleting a slideClick Delete Slide on any slide The selected slide is removed and numbering is adjusted"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify deleting the last remaining slide Delete all slides until only one remains, then try to delete Deletion should be disabled or prompt warning—must not allow zero slides",
+      "expected": "",
+      "raw": "TC_32 Carousel FunctionalityVerify deleting the last remaining slide Delete all slides until only one remains, then try to delete Deletion should be disabled or prompt warning—must not allow zero slides"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify adding slides up to maximum allowed Keep clicking + Add Slide until the maximum limit is reached No further slides can be added; a message or disable state should appear",
+      "expected": "",
+      "raw": "TC_33 Carousel FunctionalityVerify adding slides up to maximum allowed Keep clicking + Add Slide until the maximum limit is reached No further slides can be added; a message or disable state should appear"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify layout switching to Vertical",
+      "expected": "",
+      "raw": "TC_34 Carousel FunctionalityVerify layout switching to VerticalSelect Vertical layout, then previewSlide elements stack vertically"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify layout switching to Horizontal",
+      "expected": "",
+      "raw": "TC_35 Carousel FunctionalityVerify layout switching to HorizontalSelect Horizontal layout, then previewSlide elements are side by side"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify switching layout retains existing content Create slide with text, images, equations, switch layoutsAll content remains intact, only layout changes",
+      "expected": "",
+      "raw": "TC_36 Carousel FunctionalityVerify switching layout retains existing content Create slide with text, images, equations, switch layoutsAll content remains intact, only layout changes"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify adding text in Slide Title",
+      "expected": "",
+      "raw": "TC_37 Carousel FunctionalityVerify adding text in Slide TitleEnter text in Slide Title fieldText is saved and visible in preview"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify entering long text in Slide Title (edge case)",
+      "expected": "",
+      "raw": "TC_38 Carousel FunctionalityVerify entering long text in Slide Title (edge case)Enter extremely long text exceeding character limitText truncates gracefully or displays scrollbar"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify entering special characters in Slide Title",
+      "expected": "",
+      "raw": "TC_39 Carousel FunctionalityVerify entering special characters in Slide TitleEnter symbols and special charactersSpecial characters render correctly"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify applying formatting: BoldHighlight text, click BoldText appears bold in the editor and preview",
+      "expected": "",
+      "raw": "TC_40 Carousel FunctionalityVerify applying formatting: BoldHighlight text, click BoldText appears bold in the editor and preview"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify applying formatting: ItalicHighlight text, click ItalicText appears italicized",
+      "expected": "",
+      "raw": "TC_41 Carousel FunctionalityVerify applying formatting: ItalicHighlight text, click ItalicText appears italicized"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify applying formatting: UnderlineHighlight text, click UnderlineText appears underlined",
+      "expected": "",
+      "raw": "TC_42 Carousel FunctionalityVerify applying formatting: UnderlineHighlight text, click UnderlineText appears underlined"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify clearing formattingApply formatting, then use Clear FormattingText reverts to default style",
+      "expected": "",
+      "raw": "TC_43 Carousel FunctionalityVerify clearing formattingApply formatting, then use Clear FormattingText reverts to default style"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify adding a math equation Use the math equation button (∑ or fx), insert an equationEquation renders properly inside the editor",
+      "expected": "",
+      "raw": "TC_44 Carousel FunctionalityVerify adding a math equation Use the math equation button (∑ or fx), insert an equationEquation renders properly inside the editor"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify editing an existing equationClick into equation area, modify equationEquation updates correctly",
+      "expected": "",
+      "raw": "TC_45 Carousel FunctionalityVerify editing an existing equationClick into equation area, modify equationEquation updates correctly"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify deleting a math equation",
+      "expected": "",
+      "raw": "TC_46 Carousel FunctionalityVerify deleting a math equationSelect equation, press Delete Equation is removed without affecting surrounding text"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify entering only whitespace in text fields",
+      "expected": "",
+      "raw": "TC_47 Carousel FunctionalityVerify entering only whitespace in text fieldsEnter spaces in Title or ParagraphValidation prevents saving empty text"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify adding caption text",
+      "expected": "",
+      "raw": "TC_48 Carousel FunctionalityVerify adding caption textEnter text in Enter Caption Text HereCaption displays correctly below the media"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify toggling Show CaptionUncheck Show Caption, previewCaption area should be hidden",
+      "expected": "",
+      "raw": "TC_49 Carousel FunctionalityVerify toggling Show CaptionUncheck Show Caption, previewCaption area should be hidden"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify Undo/Redo functionality Make text changes, formatting, or insert/delete content; use Undo/RedoChanges are reverted/applied step by step",
+      "expected": "",
+      "raw": "TC_50 Carousel FunctionalityVerify Undo/Redo functionality Make text changes, formatting, or insert/delete content; use Undo/RedoChanges are reverted/applied step by step"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify deleting slide updates total slide count and navigationHave multiple slides, delete one in the middle Slide numbering updates (e.g., Slide 3 becomes Slide 2)",
+      "expected": "",
+      "raw": "TC_51 Carousel Functionality Verify deleting slide updates total slide count and navigationHave multiple slides, delete one in the middle Slide numbering updates (e.g., Slide 3 becomes Slide 2)"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify adding slides maintains order and data Add slides in sequence, enter different content per slideAll slides retain their unique content",
+      "expected": "",
+      "raw": "TC_52 Carousel FunctionalityVerify adding slides maintains order and data Add slides in sequence, enter different content per slideAll slides retain their unique content"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify preview reflects all current editsMake changes, click PreviewAll changes appear accurately",
+      "expected": "",
+      "raw": "TC_53 Carousel FunctionalityVerify preview reflects all current editsMake changes, click PreviewAll changes appear accurately"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify saving after edits retains all changes Make edits (text, layout, captions, equations), click Save, reload editorChanges persist after reload",
+      "expected": "",
+      "raw": "TC_54 Carousel FunctionalityVerify saving after edits retains all changes Make edits (text, layout, captions, equations), click Save, reload editorChanges persist after reload"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify discarding changes reverts to last saveMake edits, do not save, refresh editor Changes are discarded, last saved state is restored",
+      "expected": "",
+      "raw": "TC_55 Carousel FunctionalityVerify discarding changes reverts to last saveMake edits, do not save, refresh editor Changes are discarded, last saved state is restored"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify no duplicate slide IDs when adding and deleting repeatedlyRapidly add and delete slides No duplicate slide IDs; navigation works properly",
+      "expected": "",
+      "raw": "TC_56 Carousel Functionality Verify no duplicate slide IDs when adding and deleting repeatedlyRapidly add and delete slides No duplicate slide IDs; navigation works properly"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify adding media (image/video) updates placeholder",
+      "expected": "",
+      "raw": "TC_57 Carousel Functionality Verify adding media (image/video) updates placeholderSelect Image or VideoPlaceholder updates accordingly"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify switching slide type clears irrelevant content",
+      "expected": "",
+      "raw": "TC_58 Carousel FunctionalityVerify switching slide type clears irrelevant contentEnter text, switch to Video, previewText input area hides or clears appropriately"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify extremely large equationsInsert complex, multiline equations Equations render properly without overflowing container",
+      "expected": "",
+      "raw": "TC_59 Carousel FunctionalityVerify extremely large equationsInsert complex, multiline equations Equations render properly without overflowing container"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify rich formatting combined (bold, italic, underline)Apply multiple formatting options to same textAll styles are applied simultaneously",
+      "expected": "",
+      "raw": "TC_60 Carousel Functionality Verify rich formatting combined (bold, italic, underline)Apply multiple formatting options to same textAll styles are applied simultaneously"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify placeholder text guidanceCheck the default text in paragraph Placeholder text appears as guidance when no text entered",
+      "expected": "",
+      "raw": "TC_61 Carousel FunctionalityVerify placeholder text guidanceCheck the default text in paragraph Placeholder text appears as guidance when no text entered"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify text input in paragraph exceeds character limit",
+      "expected": "",
+      "raw": "TC_62 Carousel FunctionalityVerify text input in paragraph exceeds character limitEnter maximum allowed charactersText is accepted up to limit; no errors"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify text input in paragraph exceeding limitPaste very large text exceeding limitValidation error or truncation occurs gracefully",
+      "expected": "",
+      "raw": "TC_63 Carousel FunctionalityVerify text input in paragraph exceeding limitPaste very large text exceeding limitValidation error or truncation occurs gracefully"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify adding slide without any contentCreate new slide, leave fields blank Slide is saved as empty or validation prompts to add content",
+      "expected": "",
+      "raw": "TC_64 Carousel FunctionalityVerify adding slide without any contentCreate new slide, leave fields blank Slide is saved as empty or validation prompts to add content"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify preview with mixed content typesAdd image, text, equation, captionAll elements display correctly in preview",
+      "expected": "",
+      "raw": "TC_65 Carousel FunctionalityVerify preview with mixed content typesAdd image, text, equation, captionAll elements display correctly in preview"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify applying text color Highlight text in Title or Paragraph, click Text Color button, select a colorHighlighted text changes to the selected color",
+      "expected": "",
+      "raw": "TC_66 Carousel FunctionalityVerify applying text color Highlight text in Title or Paragraph, click Text Color button, select a colorHighlighted text changes to the selected color"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify resetting text color to default After applying a color, select the text again, choose default/black colorText reverts to default color",
+      "expected": "",
+      "raw": "TC_67 Carousel FunctionalityVerify resetting text color to default After applying a color, select the text again, choose default/black colorText reverts to default color"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Verify applying bullets to a paragraph",
+      "expected": "",
+      "raw": "TC_68 Carousel FunctionalityVerify applying bullets to a paragraphSelect text in Paragraph area, click Bullets buttonText is converted to a bulleted list"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Verify applying numbering to a paragraph",
+      "expected": "",
+      "raw": "TC_69 Carousel FunctionalityVerify applying numbering to a paragraphSelect text in Paragraph area, click Numbering buttonText is converted to a numbered list"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functionality",
+      "description": "Verify removing bullets Apply bullets, then click the Bullets button again to toggle off Bullets are removed; text reverts to plain paragraph",
+      "expected": "",
+      "raw": "TC_70 Carousel FunctionalityVerify removing bullets Apply bullets, then click the Bullets button again to toggle off Bullets are removed; text reverts to plain paragraph"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "Verify removing numbering Apply numbering, then click the Numbering button again to toggle off Numbering is removed; text reverts to plain paragraph",
+      "expected": "",
+      "raw": "TC_71 Carousel FunctionalityVerify removing numbering Apply numbering, then click the Numbering button again to toggle off Numbering is removed; text reverts to plain paragraph"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "Verify combining text color with bulletsApply bullets to text, then change the text colorBullet list remains intact, and text color updates",
+      "expected": "",
+      "raw": "TC_72 Carousel FunctionalityVerify combining text color with bulletsApply bullets to text, then change the text colorBullet list remains intact, and text color updates"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functionality",
+      "description": "Verify combining text color with numberingApply numbering, then change the text color Numbered list remains intact, and text color updates",
+      "expected": "",
+      "raw": "TC_73 Carousel FunctionalityVerify combining text color with numberingApply numbering, then change the text color Numbered list remains intact, and text color updates"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "Verify applying bullets to multiline text",
+      "expected": "",
+      "raw": "TC_74 Carousel FunctionalityVerify applying bullets to multiline text Enter multiple lines of text, select all lines, click Bullets All selected lines are converted into individual bullet items"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functionality",
+      "description": "Verify applying numbering to multiline text",
+      "expected": "",
+      "raw": "TC_75 Carousel FunctionalityVerify applying numbering to multiline text Enter multiple lines of text, select all lines, click Numbering All selected lines are converted into sequentially numbered items"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functionality",
+      "description": "Verify switching formatting while editing Apply bullets, then switch to numbering, then back to bullets Formatting switches correctly without duplicating list styles",
+      "expected": "",
+      "raw": "TC_76 Carousel FunctionalityVerify switching formatting while editing Apply bullets, then switch to numbering, then back to bullets Formatting switches correctly without duplicating list styles"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functionality",
+      "description": "Verify bullets with empty linesInsert empty lines between text items, apply bullets Empty lines are handled gracefully (no bullet or a blank bullet as appropriate)",
+      "expected": "",
+      "raw": "TC_77 Carousel FunctionalityVerify bullets with empty linesInsert empty lines between text items, apply bullets Empty lines are handled gracefully (no bullet or a blank bullet as appropriate)"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functionality",
+      "description": "Verify numbering with empty lines Insert empty lines between text items, apply numbering Empty lines are handled gracefully (no number or blank number as appropriate)",
+      "expected": "",
+      "raw": "TC_78 Carousel FunctionalityVerify numbering with empty lines Insert empty lines between text items, apply numbering Empty lines are handled gracefully (no number or blank number as appropriate)"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functionality",
+      "description": "Verify persistence of bullets and numbering after savingApply bullets/numbering, save and reload the editorList formatting persists after reload",
+      "expected": "",
+      "raw": "TC_79 Carousel Functionality Verify persistence of bullets and numbering after savingApply bullets/numbering, save and reload the editorList formatting persists after reload"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functionality",
+      "description": "Verify persistence of text color after savingChange text color, save and reload the editorText color remains applied",
+      "expected": "",
+      "raw": "TC_80 Carousel FunctionalityVerify persistence of text color after savingChange text color, save and reload the editorText color remains applied"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functionality",
+      "description": "Verify preview displays bullets and numbering correctlyApply bullets and numbering, click PreviewLists render properly in the preview mode",
+      "expected": "",
+      "raw": "TC_81 Carousel Functionality Verify preview displays bullets and numbering correctlyApply bullets and numbering, click PreviewLists render properly in the preview mode"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functionality",
+      "description": "Verify preview displays custom text colors correctlyChange text color, click PreviewText appears in the selected color",
+      "expected": "",
+      "raw": "TC_82 Carousel FunctionalityVerify preview displays custom text colors correctlyChange text color, click PreviewText appears in the selected color"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functionality",
+      "description": "Verify removing all formatting Apply bullets, numbering, and text color, then click Clear Formatting All formatting is removed (bullets/numbering revert to plain text, color reverts to default)",
+      "expected": "",
+      "raw": "TC_83 Carousel FunctionalityVerify removing all formatting Apply bullets, numbering, and text color, then click Clear Formatting All formatting is removed (bullets/numbering revert to plain text, color reverts to default)"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functionality",
+      "description": "Verify adding bullet/numbered list in Slide Title (negative)Try applying bullets or numbering to Slide Title field Feature should be disabled or show validation error if not supported in title",
+      "expected": "",
+      "raw": "TC_84 Carousel Functionality Verify adding bullet/numbered list in Slide Title (negative)Try applying bullets or numbering to Slide Title field Feature should be disabled or show validation error if not supported in title"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functionality",
+      "description": "Verify text color picker opens and closes properly Click Text Color button to open the color picker, then click outsideColor picker closes without applying any color",
+      "expected": "",
+      "raw": "TC_85 Carousel FunctionalityVerify text color picker opens and closes properly Click Text Color button to open the color picker, then click outsideColor picker closes without applying any color"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functionality",
+      "description": "Verify selecting unsupported colors (edge) Try selecting a color outside allowed palette (e.g., entering invalid hex)Validation error or fallback to default color",
+      "expected": "",
+      "raw": "TC_86 Carousel FunctionalityVerify selecting unsupported colors (edge) Try selecting a color outside allowed palette (e.g., entering invalid hex)Validation error or fallback to default color"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functionality",
+      "description": "Verify switching layouts retains text formatting Create bullets and text colors in Vertical layout, switch to Horizontal layout Text formatting remains intact after layout switch",
+      "expected": "",
+      "raw": "TC_87 Carousel FunctionalityVerify switching layouts retains text formatting Create bullets and text colors in Vertical layout, switch to Horizontal layout Text formatting remains intact after layout switch"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functionality",
+      "description": "Verify pasting preformatted text (bullets, colors) Copy text from external editor (e.g., Word) with bullets and color, paste into Paragraph Formatting is preserved or sanitized appropriately depending on allowed styles",
+      "expected": "",
+      "raw": "TC_88 Carousel FunctionalityVerify pasting preformatted text (bullets, colors) Copy text from external editor (e.g., Word) with bullets and color, paste into Paragraph Formatting is preserved or sanitized appropriately depending on allowed styles"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functionality",
+      "description": "Verify publishing the activityComplete slide setup, click Publish Publish confirmation message appears; activity status updates to Published",
+      "expected": "",
+      "raw": "TC_89 Carousel FunctionalityVerify publishing the activityComplete slide setup, click Publish Publish confirmation message appears; activity status updates to Published"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functionality",
+      "description": "Verify launching activity in ReaderAfter publishing, open Reader view All slides appear correctly formatted and navigable",
+      "expected": "",
+      "raw": "TC_90 Carousel FunctionalityVerify launching activity in ReaderAfter publishing, open Reader view All slides appear correctly formatted and navigable"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functionality",
+      "description": "Verify slide navigation in ReaderUse Next/Previous arrows or navigation dots Navigation works as intended; slides advance smoothly",
+      "expected": "",
+      "raw": "TC_91 Carousel FunctionalityVerify slide navigation in ReaderUse Next/Previous arrows or navigation dots Navigation works as intended; slides advance smoothly"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functionality",
+      "description": "Verify formatting consistency in Reader Confirm that text colors, formatting, bullets, numbering, and equations are identical to previewAll styles render correctly",
+      "expected": "",
+      "raw": "TC_92 Carousel FunctionalityVerify formatting consistency in Reader Confirm that text colors, formatting, bullets, numbering, and equations are identical to previewAll styles render correctly"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functionality",
+      "description": "Verify editing published activity Reopen published activity in editor, make changes (text/layout/images)Editor allows editing; updated content is visible",
+      "expected": "",
+      "raw": "TC_93 Carousel FunctionalityVerify editing published activity Reopen published activity in editor, make changes (text/layout/images)Editor allows editing; updated content is visible"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functionality",
+      "description": "Verify republishing after editingAfter edits, click RepublishChanges are saved and updated in Reader view",
+      "expected": "",
+      "raw": "TC_94 Carousel FunctionalityVerify republishing after editingAfter edits, click RepublishChanges are saved and updated in Reader view"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functionality",
+      "description": "Verify Reader shows updated content after republishingRefresh ReaderReader reflects all recent edits",
+      "expected": "",
+      "raw": "TC_95 Carousel Functionality Verify Reader shows updated content after republishingRefresh ReaderReader reflects all recent edits"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functionality",
+      "description": "Verify republishing without making changesClick Republish without any edits Republish completes without error; Reader remains unchanged",
+      "expected": "",
+      "raw": "TC_96 Carousel FunctionalityVerify republishing without making changesClick Republish without any edits Republish completes without error; Reader remains unchanged"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functionality",
+      "description": "Verify text formatting compatibility across slides Create multiple slides, apply different formatting (color, bullets, numbering)Each slide retains its unique formatting",
+      "expected": "",
+      "raw": "TC_97 Carousel FunctionalityVerify text formatting compatibility across slides Create multiple slides, apply different formatting (color, bullets, numbering)Each slide retains its unique formatting"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functionality",
+      "description": "Verify switching layout after applying bullets/numbering Create bullets/numbering, switch Vertical/Horizontal layoutList formatting remains intact",
+      "expected": "",
+      "raw": "TC_98 Carousel Functionality Verify switching layout after applying bullets/numbering Create bullets/numbering, switch Vertical/Horizontal layoutList formatting remains intact"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functionality",
+      "description": "Verify publishing with long text and listsUse long paragraphs and lists, publish Published Reader displays all content correctly with scrollbars if needed",
+      "expected": "",
+      "raw": "TC_99 Carousel FunctionalityVerify publishing with long text and listsUse long paragraphs and lists, publish Published Reader displays all content correctly with scrollbars if needed"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functionality",
+      "description": "Verify text color contrast in Reader Change text to light color on light background, publish Reader warns or enforces accessible contrast or displays as entered",
+      "expected": "",
+      "raw": "TC_100 Carousel FunctionalityVerify text color contrast in Reader Change text to light color on light background, publish Reader warns or enforces accessible contrast or displays as entered"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "Functionality",
+      "description": "Verify editing activity after Reader launchAfter launching Reader, return to editor, edit slidesEdits can be made seamlessly",
+      "expected": "",
+      "raw": "TC_101 Carousel FunctionalityVerify editing activity after Reader launchAfter launching Reader, return to editor, edit slidesEdits can be made seamlessly"
+    }
+  ]
+}

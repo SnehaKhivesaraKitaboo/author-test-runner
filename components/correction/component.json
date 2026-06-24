@@ -1,0 +1,36 @@
+{
+  "component": "Correction",
+  "slug": "correction",
+  "dataType": "correction",
+  "directive": "correction-template",
+  "widgetName": "Correction",
+  "module": "assessment-widget (Generic Step column)",
+  "spec": "32-correction-deep.spec.ts",
+  "qcSource": "Author Test Cases - Correction.pdf",
+  "qcCount": 29,
+  "automated": 17,
+  "deferred": 12,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/Correction/correction.html",
+    "closify/KITABOO_Authoring/templates/Correction/correction-settings.html",
+    "closify/KITABOO_Authoring/templates/Correction/default/correction.json",
+    "closify/KITABOO_Authoring/templates/Correction/scripts/correction.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Correction (widget name 'Correction', dataType 'correction') IS an assessment widget — 'correction' is present in support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to a Generic Step column. It drops via cy.dropComponentForModule('Correction', { dataType: 'correction' }), mirroring the Extended Response sibling.",
+    "Canvas wrapper is .canvas-wrap.correction[correction-template] (.component-holder). Header Text (.sc-intro, ng-model fieldData.introduction) and Instruction Text (.sc-instr, ng-model fieldData.instruction) are contenteditable — set via cy.setContentEditableOn, never cy.type().",
+    "Header & Instruction visibility default true (correction.json isHeaderVisible/isInstructionVisible) and are toggled by #header-visibility / #instr-visibility checkboxes; the canvas blocks switch displayBlock/displayNone via ng-class.",
+    "Settings panel class is .correction-settings-panel with title 'Correction' and icon .icon-Correction.",
+    "'Add Sentence' (span[data-ng-click=addSentenceClick]) pushes a Text Description into fieldData.settings.correctionInfo. correction.js enforces max_question=10 and min_question=1. Row delete (.row-delete) is .disabled when correctionInfo.length===1.",
+    "SOURCE AMBIGUITY: correction.html toggles a 'btn-disabled' CSS class on the Add Sentence label at correctionInfo.length>=6 (using a fieldData.TemplateData.correctionInfo path), but the active addSentenceClick handler still pushes rows up to max_question=10 (using fieldData.settings.correctionInfo). TC_18 asserts the script-enforced cap (<=10), which is the effective behaviour.",
+    "Outline radios value 'outline' (No Outline) / 'outlineBg' (Outline) bound to currSettings.outline (default 'outline'). Action Assets colour via .colorPickerButton + .colorPickerInputBox bound to currSettings.Appearance (default '#7eb1eb').",
+    "'Allow activity restart' (#add-activity-restart) and 'Add Show Me' (#add-show-me) render only when !currSettings.isGroupActivity — flag-gated, not asserted.",
+    "Tags use <tag-manager> inside .tagsContainer, rendered only when currSettings.showText (default true); spec degrades gracefully if absent.",
+    "Strikethrough + correct-answer markers (.correction-Popup / .correction-Popup1 with .correction-Strik + .popup-Delete) are present in the canvas DOM but are activated by word selection at runtime; the student find-and-fix outcome (red line + correct answer) is verified in Preview/Reader — DEFERRED.",
+    "Copy / Delete component controls come from the shared add-common-hover chrome rather than Correction markup; the spec uses best-effort selectors and logs+returns gracefully when the hover toolbar is not mounted in the headless DOM.",
+    "Preview/Reader find-and-fix, submit-validation, responsiveness, accessibility/screen-reader, network disconnect, copy success pop-up + lifecycle, and persistence-after-reload require flows outside the authoring DOM — DEFERRED.",
+    "NOT YET LIVE-VERIFIED: selectors are derived from source templates; they have not been executed against a running authoring instance (AUTHORING_LAUNCH_URL was not available)."
+  ]
+}

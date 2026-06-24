@@ -1,0 +1,32 @@
+{
+  "name": "MCQ (Single Choice)",
+  "slug": "mcq",
+  "dataType": "multiple-choice-template",
+  "module": "ela",
+  "dropTarget": "generic-step-column",
+  "spec": "11-mcq-deep.spec.ts",
+  "qcPdf": "Author Test Cases - MCQ .pdf",
+  "qcPdfPath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - MCQ .pdf",
+  "source": {
+    "settings": "closify/KITABOO_Authoring/templates/multiple-choice-template/multiple-choice-template-settings.html",
+    "auth": "closify/KITABOO_Authoring/templates/multiple-choice-template/multiple-choice-template-auth.html",
+    "default": "closify/KITABOO_Authoring/templates/multiple-choice-template/default/multiple-choice-template.json"
+  },
+  "rules": {
+    "minOptions": 2,
+    "maxOptions": 10,
+    "defaultOptions": 4,
+    "defaultCorrectChoice": "C",
+    "defaultStyle": "card-style1",
+    "labelTypesRequireShowMe": true,
+    "feedbackRequiresShowMe": true,
+    "resetReusesShowMeId": true
+  },
+  "coverage": {
+    "qcTotal": 128,
+    "automated": 38,
+    "deferred": 34,
+    "lastVerified": null,
+    "status": "generated-unverified"
+  }
+}

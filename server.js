@@ -78,7 +78,7 @@ function useAuth() {
 }
 
 const app  = express();
-const PORT = process.env.PORT || 4321;
+const PORT = process.env.PORT || 4200;
 
 // ---------------------------------------------------------------------------
 // Paths
@@ -86,6 +86,12 @@ const PORT = process.env.PORT || 4321;
 const ROOT          = __dirname;
 const RUNS_DIR      = path.join(ROOT, 'runs');
 const FIXTURE_TPL   = path.join(ROOT, 'fixtures', 'authoring-config.json');
+
+// When false (default), test results (pdf/html/video) are auto-downloaded to
+// the user's machine and the project copy is removed. Set to keep on-disk.
+const KEEP_RESULTS_IN_PROJECT = ['1', 'true', 'yes'].includes(
+  String(process.env.KEEP_RESULTS_IN_PROJECT || '').toLowerCase(),
+);
 // Invoke Cypress via node — avoids Windows shell splitting paths with spaces (e.g. "Carnegie Learning")
 const CYPRESS_CLI   = path.join(ROOT, 'node_modules', 'cypress', 'bin', 'cypress');
 
@@ -545,18 +551,31 @@ function spawnCypress(runId, config, spec) {
       finishedAt: new Date().toISOString(),
     };
 
-    await persistRunToDb(runId, metaPayload, state.userId);
-    historyStore.pruneOldRuns(runState);
+    // Only persist run/artifacts in the project when explicitly retained.
+    if (KEEP_RESULTS_IN_PROJECT) {
+      await persistRunToDb(runId, metaPayload, state.userId);
+      historyStore.pruneOldRuns(runState);
+    }
 
     broadcast(runId, {
       type: 'done',
+      runId,
       percent: 100,
       status: state.status,
       exitCode: code,
       summary: state.summary,
       pdfGenerated: pdfOk,
       files: state.files,
+      // Tell the client to save artifacts locally, then confirm cleanup.
+      autoDownload: !KEEP_RESULTS_IN_PROJECT,
     });
+
+    // Safety net: if the client never confirms the download (tab closed, etc.),
+    // remove the on-disk copy after a grace window.
+    if (!KEEP_RESULTS_IN_PROJECT) {
+      const graceMs = Number(process.env.RESULTS_CLEANUP_GRACE_MS || 5 * 60 * 1000);
+      setTimeout(() => cleanupRunArtifacts(runId, 'grace-period sweep'), graceMs).unref?.();
+    }
 
     releaseSlot();
     state.proc = null;
@@ -677,11 +696,14 @@ app.post('/api/run', useAuth(), async (req, res) => {
     const suite = getSuiteByName(compName);
     const { flows } = loadComponentFlows();
     const flow = suite ? flows[suite.dataType] : null;
+    // Prefer the real components/<slug>/*-deep.spec.ts the run will execute.
+    const componentSpec = suite ? require('./lib/registry').getComponentSpecIndex()[suite.id] : null;
+    const labelSpec = componentSpec || suite?.deepSpecFile || null;
     if (flow?.setupFlow?.length) {
       setupFlowPayload = {
         steps: flow.setupFlow,
-        suite: suite?.deepSpecFile
-          ? `Deep · ${compName} · ${path.basename(suite.deepSpecFile)}`
+        suite: labelSpec
+          ? `Deep · ${compName} · ${path.basename(labelSpec)}`
           : compName,
         component: compName,
       };
@@ -773,6 +795,31 @@ app.post('/api/stop/:runId', useAuth(), async (req, res) => {
   releaseSlot();
   state.proc = null;
   res.json({ ok: true });
+});
+
+// ---------------------------------------------------------------------------
+// POST /api/run/:runId/downloaded — client confirms it saved all artifacts to
+// the user's machine; the server removes its copy from the project (runs/<id>).
+//
+// Default behaviour: results live on the user's side (auto-downloaded), not in
+// the project. Set KEEP_RESULTS_IN_PROJECT=1 to retain the on-disk copies.
+// A grace-period sweep (below) also cleans up runs the client never confirmed.
+// ---------------------------------------------------------------------------
+function cleanupRunArtifacts(runId, reason) {
+  if (KEEP_RESULTS_IN_PROJECT) return false;
+  if (historyStore.isRunActive(runId, runState)) return false;
+  const removed = historyStore.deleteRunDir(runId);
+  if (removed) {
+    delete runState[runId];
+    console.log(`[${runId}] artifacts removed from project (${reason})`);
+  }
+  return removed;
+}
+
+app.post('/api/run/:runId/downloaded', useAuth(), (req, res) => {
+  const { runId } = req.params;
+  const removed = cleanupRunArtifacts(runId, 'client confirmed download');
+  res.json({ ok: true, removed });
 });
 
 // GET /api/history — list newest runs for signed-in user (MySQL + disk artifacts)
@@ -1022,14 +1069,21 @@ app.get('/api/component-plan', (req, res) => {
 
   const { _meta, flows } = loadComponentFlows();
   const flow = flows[suite.dataType] || null;
-  const deepSpec = suite.deepSpecFile
-    ? (suite.deepSpecFile.startsWith('e2e/') ? suite.deepSpecFile : `e2e/${suite.deepSpecFile}`)
-    : null;
+
+  // Prefer the real components/<slug>/*-deep.spec.ts when one exists; this is the
+  // spec the dashboard run will actually execute. Fall back to any e2e/ deepSpec.
+  const specIndex = require('./lib/registry').getComponentSpecIndex();
+  const componentSpec = specIndex[suite.id] || null;
+  const deepSpec = componentSpec
+    || (suite.deepSpecFile
+      ? (suite.deepSpecFile.startsWith('e2e/') ? suite.deepSpecFile : `e2e/${suite.deepSpecFile}`)
+      : null);
+  const automationStatus = componentSpec ? 'deep' : suite.automationStatus;
 
   res.json({
     name: suite.name,
     dataType: suite.dataType,
-    automationStatus: suite.automationStatus,
+    automationStatus,
     tcCount: suite.tcCount || 0,
     pdfFile: suite.pdfFile || flow?.pdfFile || null,
     qcPdfPath: flow?.pdfFile && _meta.qcFolder
@@ -1040,10 +1094,164 @@ app.get('/api/component-plan', (req, res) => {
     dropTarget: flow?.dropTarget || 'canvas',
     setupFlow: flow?.setupFlow || [
       'Open launch URL',
-      suite.automationStatus === 'deep' && deepSpec
+      automationStatus === 'deep' && deepSpec
         ? `Run deep spec: ${path.basename(deepSpec)}`
         : 'Run basic drop + settings check (09-component-deep)',
     ],
+  });
+});
+
+// ---------------------------------------------------------------------------
+// GET /api/coverage — QC ↔ automation coverage matrix for every component.
+//
+// Aggregates each components/<slug>/<slug>-mapping.json (+ component.json) into a
+// normalized shape the coverage page renders as a per-component accordion.
+// Handles two mapping schemas:
+//   1) Unified  : mappings[] entries carry status ("automated" | "deferred"),
+//                 it/reason/selectors per row.
+//   2) Legacy   : mappings[] are automated-only and deferred[] is a string array
+//                 of QC ids (used by the original MCQ build).
+// ---------------------------------------------------------------------------
+const COMPONENTS_DIR = path.join(ROOT, 'components');
+
+function readJsonSafe(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (_) {
+    return null;
+  }
+}
+
+function naturalCompareQc(a, b) {
+  // Sort QC ids naturally: numbered TC_* first (TC_2 < TC_10), then other
+  // prefixed/numbered groups (e.g. SL_TC_*), then non-numbered named ids
+  // (MAX, SEC) last.
+  const parse = (s) => {
+    const m = String(s).match(/^(.*?)(\d+)([^\d]*)$/);
+    if (!m) return { numbered: false, prefix: String(s), num: 0, suffix: '' };
+    return { numbered: true, prefix: m[1] || '', num: Number(m[2]), suffix: m[3] || '' };
+  };
+  // Prefix ranking: canonical "TC_" (and bare-number ids) lead, then other
+  // prefixes alphabetically (e.g. "SL_TC_"), keeping each group's numbers in order.
+  const prefixRank = (p) => (p === '' || p === 'TC_' ? 0 : 1);
+  const pa = parse(a);
+  const pb = parse(b);
+  if (pa.numbered !== pb.numbered) return pa.numbered ? -1 : 1; // numbered ids first
+  if (!pa.numbered) return String(a).localeCompare(String(b));
+  const ra = prefixRank(pa.prefix);
+  const rb = prefixRank(pb.prefix);
+  if (ra !== rb) return ra - rb;
+  if (pa.prefix !== pb.prefix) return pa.prefix < pb.prefix ? -1 : 1;
+  if (pa.num !== pb.num) return pa.num - pb.num;
+  return pa.suffix < pb.suffix ? -1 : pa.suffix > pb.suffix ? 1 : 0;
+}
+
+function normalizeMappingFile(slug, mapping, component) {
+  const rows = [];
+  const seen = new Set();
+
+  const pushRow = (row) => {
+    const qc = String(row.qc || '').trim();
+    if (!qc) return;
+    const key = qc + '|' + (row.it || row.reason || '');
+    if (seen.has(key)) return;
+    seen.add(key);
+    rows.push({
+      qc,
+      status: row.status || 'automated',
+      ourTest: row.it || null,
+      reason: row.reason || null,
+      selectors: Array.isArray(row.selectors)
+        ? row.selectors
+        : (row.selector ? [row.selector] : []),
+      note: row.note || null,
+    });
+  };
+
+  if (Array.isArray(mapping.mappings)) {
+    mapping.mappings.forEach((m) => {
+      // Legacy automated rows may use status "automated-implicit"/"automated-partial".
+      const status = m.status && /defer/i.test(m.status) ? 'deferred' : (m.status || 'automated');
+      pushRow({ ...m, status });
+    });
+  }
+
+  // Legacy split format: deferred is a bare array of QC ids.
+  if (Array.isArray(mapping.deferred)) {
+    mapping.deferred.forEach((qc) => {
+      pushRow({ qc: String(qc), status: 'deferred', reason: 'Deferred (see component docs)' });
+    });
+  }
+
+  rows.sort((a, b) => naturalCompareQc(a.qc, b.qc));
+
+  const automated = rows.filter((r) => r.status === 'automated').length;
+  const deferred = rows.filter((r) => r.status === 'deferred').length;
+  const total = rows.length;
+
+  const cov = (component && component.coverage) || {};
+  return {
+    slug,
+    component:
+      mapping.component || (component && component.name) || slug,
+    spec: mapping.spec || (component && component.spec) || null,
+    qcSource: mapping.qcSource || mapping.qcPdf || (component && component.qcPdf) || null,
+    dataType: (component && component.dataType) || mapping.dataType || null,
+    module: (component && component.module) || null,
+    legend: mapping.legend || null,
+    note: mapping.note || null,
+    notLiveVerified:
+      mapping.notLiveVerified === true ||
+      (cov.status ? cov.status !== 'verified' : true),
+    counts: {
+      // Prefer the QC total declared in metadata; fall back to mapped rows.
+      qcTotal: mapping.qcCount || cov.qcTotal || total,
+      mapped: total,
+      automated,
+      deferred,
+    },
+    rows,
+  };
+}
+
+app.get('/api/coverage', (_req, res) => {
+  let dirs = [];
+  try {
+    dirs = fs.readdirSync(COMPONENTS_DIR, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name);
+  } catch (err) {
+    return res.status(500).json({ error: `Cannot read components dir: ${err.message}` });
+  }
+
+  const components = [];
+  dirs.forEach((slug) => {
+    const mappingPath = path.join(COMPONENTS_DIR, slug, `${slug}-mapping.json`);
+    if (!fs.existsSync(mappingPath)) return;
+    const mapping = readJsonSafe(mappingPath);
+    if (!mapping) return;
+    const component = readJsonSafe(path.join(COMPONENTS_DIR, slug, 'component.json')) || {};
+    components.push(normalizeMappingFile(slug, mapping, component));
+  });
+
+  components.sort((a, b) => a.component.localeCompare(b.component));
+
+  const totals = components.reduce(
+    (acc, c) => {
+      acc.qcTotal += c.counts.qcTotal;
+      acc.mapped += c.counts.mapped;
+      acc.automated += c.counts.automated;
+      acc.deferred += c.counts.deferred;
+      return acc;
+    },
+    { qcTotal: 0, mapped: 0, automated: 0, deferred: 0 },
+  );
+
+  res.json({
+    generatedAt: new Date().toISOString(),
+    componentCount: components.length,
+    totals,
+    components,
   });
 });
 

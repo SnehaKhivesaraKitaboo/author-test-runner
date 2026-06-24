@@ -1,0 +1,548 @@
+{
+  "component": "Four Column",
+  "slug": "four-column",
+  "dataType": "layout-4",
+  "source": "Author Test Cases - Four column.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Four column.pdf",
+  "pages": 8,
+  "extractedCount": 67,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Four Column LayoutUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic infoActivity creation page should display with Basic info screen",
+      "raw": "TC_02 Four Column Layout FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic infoActivity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Four Column Layout FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Four Column Layout FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Four Column Layout FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Four Column Layout Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Four Column Layout Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Four Column Layout FunctionalityVerify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Four Column Layout FunctionalityVerify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify without entering \"Instructions for Students and teacher\" able to create steps",
+      "expected": "Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity",
+      "raw": "TC_10 Four Column Layout Functionality Verify without entering \"Instructions for Students and teacher\" able to create steps 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that all the Layouts, Elements and widgets are enabled and dragged",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets",
+      "raw": "TC_11 Four Column Layout Functionality Verify that all the Layouts, Elements and widgets are enabled and dragged 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Four Column layout inside the generic step",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should able to add Four layout inside generic step",
+      "raw": "TC_12 Four Column Layout Functionality Verify if user is able to add Four Column layout inside the generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should able to add Four layout inside generic step"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Elements inside the Four Column layouts",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should able to add Four layout inside generic step",
+      "raw": "TC_13 Four Column Layout Functionality Verify if user is able to add Elements inside the Four Column layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should able to add Four layout inside generic step"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Widgets inside the Four Column layouts",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add widgets inside the Four layout",
+      "raw": "TC_14 Four Column Layout Functionality Verify if user is able to add Widgets inside the Four Column layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add widgets inside the Four layout"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify if user is able to add layouts inside the Four Column layouts",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser shouldn't add layouts inside the Four layout",
+      "raw": "TC_15 Four Column Layout Functionality Verify if user is able to add layouts inside the Four Column layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser shouldn't add layouts inside the Four layout"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Multiple Elements in single column in the Layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User shouldn't add multiple elements inside the single column",
+      "raw": "TC_16 Four Column Layout Functionality Verify if user is able to add Multiple Elements in single column in the Layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User shouldn't add multiple elements inside the single column"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Multiple Widgets in single column in the Layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User shouldn't add multiple widgets inside the single column",
+      "raw": "TC_17 Four Column Layout Functionality Verify if user is able to add Multiple Widgets in single column in the Layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User shouldn't add multiple widgets inside the single column"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multiple layouts inside generic step",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add multiple layouts inside the generic step",
+      "raw": "TC_18 Four Column Layout Functionality Verify if user is able to add multiple layouts inside generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add multiple layouts inside the generic step"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify if user is able to add combination of widgets and elements inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User should add combination of widgets and elements inside the Four layout",
+      "raw": "TC_19 Four Column Layout Functionality Verify if user is able to add combination of widgets and elements inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User should add combination of widgets and elements inside the Four layout"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify if user is able to add combination of elements and widgets inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User should add combination of elements and widgets inside the Four layout",
+      "raw": "TC_20 Four Column Layout Functionality Verify if user is able to add combination of elements and widgets inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User should add combination of elements and widgets inside the Four layout"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify if user is able to add combination of both widgets inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User should add combination of both widgets inside the Four layout",
+      "raw": "TC_21 Four Column Layout Functionality Verify if user is able to add combination of both widgets inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User should add combination of both widgets inside the Four layout"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify if user is able to add combination of both Elements inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User should add combination of both Elements inside the Four layout",
+      "raw": "TC_22 Four Column Layout Functionality Verify if user is able to add combination of both Elements inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User should add combination of both Elements inside the Four layout"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the elements inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should delete elements inside the layout",
+      "raw": "TC_23 Four Column Layout Functionality Verify if user is able to delete the elements inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should delete elements inside the layout"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the widgets inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should delete widgets inside the layout",
+      "raw": "TC_24 Four Column Layout Functionality Verify if user is able to delete the widgets inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should delete widgets inside the layout"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should delete the layout",
+      "raw": "TC_25 Four Column Layout FunctionalityVerify if user is able to delete the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should delete the layout"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multipart inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add add multipart inside the Four layout",
+      "raw": "TC_26 Four Column Layout Functionality Verify if user is able to add multipart inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add add multipart inside the Four layout"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify if all the elements are fitting properly inside the columns",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableElements should fit properly inside the layout",
+      "raw": "TC_27 Four Column Layout Functionality Verify if all the elements are fitting properly inside the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableElements should fit properly inside the layout"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify if all the widgets are fitting properly inside the columns",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableWidgets should fit properly inside the layout",
+      "raw": "TC_28 Four Column Layout Functionality Verify if all the widgets are fitting properly inside the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableWidgets should fit properly inside the layout"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify if user is able to preview the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggablePreview should be loaded successfully",
+      "raw": "TC_29 Four Column Layout FunctionalityVerify if user is able to preview the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggablePreview should be loaded successfully"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify that Four COlumn layout is interactable in preview",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableLayout should be interactable",
+      "raw": "TC_30 Four Column Layout FunctionalityVerify that Four COlumn layout is interactable in preview 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableLayout should be interactable"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify if user is able to change the background color of the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser shouldn't change the background color",
+      "raw": "TC_31 Four Column Layout Functionality Verify if user is able to change the background color of the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser shouldn't change the background color"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when relaunching the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableData's shouldn't be lost",
+      "raw": "TC_32 Four Column Layout Functionality Verify if user is facing any data loss in layout when relaunching the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableData's shouldn't be lost"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when previewing the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss in author preview mode",
+      "raw": "TC_33 Four Column Layout Functionality Verify if user is facing any data loss in layout when previewing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss in author preview mode"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify if user is able to publish the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss when republishing",
+      "raw": "TC_34 Four Column Layout FunctionalityVerify if user is able to publish the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss when republishing"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss while republishing the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss when republishing and launching",
+      "raw": "TC_35 Four Column Layout Functionality Verify if user is facing any data loss while republishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableData's shouldn't loss when republishing and launching"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify if the components are collapsed after publishing the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe Data's inside the layout should display properly",
+      "raw": "TC_36 Four Column Layout Functionality Verify if the components are collapsed after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe Data's inside the layout should display properly"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Large tables(20*20) inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe Table should display properly",
+      "raw": "TC_37 Four Column Layout Functionality Verify if user is able to add Large tables(20*20) inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe Table should display properly"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Four COlumn layout- image",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should media inside the Four layout",
+      "raw": "TC_38 Four Column Layout Functionality Verify if user is able to add media in Four COlumn layout- image 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should media inside the Four layout"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Math equations inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add math equations inside the Four layout",
+      "raw": "TC_39 Four Column Layout Functionality Verify if user is able to add Math equations inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add math equations inside the Four layout"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify if user is able to add chinese and spanish languages",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User should add spanish and chinese languages inside the Four layout",
+      "raw": "TC_40 Four Column Layout FunctionalityVerify if user is able to add chinese and spanish languages 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User should add spanish and chinese languages inside the Four layout"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify if user is able to launch the Four COlumn layoutactivity on reader",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe activity should be launched successfully",
+      "raw": "TC_41 Four Column Layout Functionality Verify if user is able to launch the Four COlumn layoutactivity on reader 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe activity should be launched successfully"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Four COlumn layoutis interactable",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe components should interactable",
+      "raw": "TC_42 Four Column Layout Functionality Verify that in reader, components added inside the Four COlumn layoutis interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe components should interactable"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Four COlumn layoutare collapsed",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe components should display properly",
+      "raw": "TC_43 Four Column Layout Functionality Verify that in reader, components added inside the Four COlumn layoutare collapsed 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe components should display properly"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Four COlumn layoutare aligned properly",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe components should fit properly inside the layout",
+      "raw": "TC_44 Four Column Layout Functionality Verify that in reader, components added inside the Four COlumn layoutare aligned properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe components should fit properly inside the layout"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify that all the widgets are interactable",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe Widgets should be interactable",
+      "raw": "TC_45 Four Column Layout FunctionalityVerify that all the widgets are interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe Widgets should be interactable"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify if all elements are displaying properly inside the Custom Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe components should display properly",
+      "raw": "TC_46 Four Column Layout Functionality Verify if all elements are displaying properly inside the Custom Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe components should display properly"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify that Multipart component is displaying properly",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe Multipart should display properly",
+      "raw": "TC_47 Four Column Layout FunctionalityVerify that Multipart component is displaying properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe Multipart should display properly"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify that user is able to submit the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe activity should be submitted successfully",
+      "raw": "TC_48 Four Column Layout FunctionalityVerify that user is able to submit the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe activity should be submitted successfully"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity before submission",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe data's should get patched successfully",
+      "raw": "TC_49 Four Column Layout Functionality Verify that the data's are getting patched upon relaunching the activity before submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe data's should get patched successfully"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity after submission",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe data's should get patched successfully",
+      "raw": "TC_50 Four Column Layout Functionality Verify that the data's are getting patched upon relaunching the activity after submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe data's should get patched successfully"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify that the student is able to access the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableStudents should access the activity",
+      "raw": "TC_51 Four Column Layout FunctionalityVerify that the student is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableStudents should access the activity"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify that the Teacher is able to access the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableTeachers should access the activity",
+      "raw": "TC_52 Four Column Layout FunctionalityVerify that the Teacher is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableTeachers should access the activity"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify that the Four COlumn layoutoutline is displaying in CLP",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe outline should display",
+      "raw": "TC_53 Four Column Layout Functionality Verify that the Four COlumn layoutoutline is displaying in CLP 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe outline should display"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify that the Four COlumn layoutsepartor line is displaying between the columns",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe separator line shouldn't display",
+      "raw": "TC_54 Four Column Layout Functionality Verify that the Four COlumn layoutsepartor line is displaying between the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe separator line shouldn't display"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify that user is able to refresh the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should refresh the activity",
+      "raw": "TC_55 Four Column Layout FunctionalityVerify that user is able to refresh the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should refresh the activity"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify that data is cleared while refreshing the activity",
+      "expected": "",
+      "raw": "TC_56 Four Column Layout FunctionalityVerify that data is cleared while refreshing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe data's should be cleared when refreshing."
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify that the columns aligned are not collapsed while refreshing",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe data's should display properly",
+      "raw": "TC_57 Four Column Layout Functionality Verify that the columns aligned are not collapsed while refreshing 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe data's should display properly"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify that user is able to edit the published activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe activity should be editable",
+      "raw": "TC_58 Four Column Layout FunctionalityVerify that user is able to edit the published activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe activity should be editable"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the layout after publishing the activity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableThe Layouts should be editable",
+      "raw": "TC_59 Four Column Layout Functionality Verify if user is able to delete the layout after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableThe Layouts should be editable"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify if user is able to add new Four COlumn layoutinside the same Genneric step",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add new Four layout",
+      "raw": "TC_60 Four Column Layout Functionality Verify if user is able to add new Four COlumn layoutinside the same Genneric step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add new Four layout"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify if user is able to add other layouts inside the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser shouldn't add other layouts inside the layouts",
+      "raw": "TC_61 Four Column Layout Functionality Verify if user is able to add other layouts inside the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser shouldn't add other layouts inside the layouts"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify if user is able to add other layouts below /above the Four COlumn layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should add new layouts",
+      "raw": "TC_62 Four Column Layout Functionality Verify if user is able to add other layouts below /above the Four COlumn layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should add new layouts"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Four COlumn layout- Audio",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should media -audio inside the Four layout",
+      "raw": "TC_63 Four Column Layout Functionality Verify if user is able to add media in Four COlumn layout- Audio 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should media -audio inside the Four layout"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Four COlumn layout- video",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should media -video inside the Four layout",
+      "raw": "TC_64 Four Column Layout Functionality Verify if user is able to add media in Four COlumn layout- video 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should media -video inside the Four layout"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Four COlumn layout- video from URL",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should media -video from url inside the Four layout",
+      "raw": "TC_65 Four Column Layout Functionality Verify if user is able to add media in Four COlumn layout- video from URL 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should media -video from url inside the Four layout"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify if user is able to copy and paste text/ sentence inside the layout",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should copy and paste text inside the layouts",
+      "raw": "TC_66 Four Column Layout Functionality Verify if user is able to copy and paste text/ sentence inside the layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should copy and paste text inside the layouts"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify if user is able to upload the html interactivity",
+      "expected": "Click all the Layouts, Elements and widgets are DraggableUser should upload html interactivity package",
+      "raw": "TC_67 Four Column Layout FunctionalityVerify if user is able to upload the html interactivity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are DraggableUser should upload html interactivity package"
+    }
+  ]
+}

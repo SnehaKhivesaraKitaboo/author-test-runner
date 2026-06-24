@@ -1,0 +1,388 @@
+{
+  "component": "External Cumulation",
+  "slug": "external-cumulation",
+  "dataType": "external-cumulation",
+  "source": "Author Test Cases - External Cumulation.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - External Cumulation.pdf",
+  "pages": 2,
+  "extractedCount": 47,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 External CummalationUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 External Cummalation FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03 External Cummalation FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functional",
+      "description": "External Cummalation Verify if user able to create new step in ELA, WL and Math Activites",
+      "expected": "Add new stepAdd new step should be clickable",
+      "raw": "TC_04 External Cummalation Verify if user able to create new step in ELA, WL and Math Activites 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add new stepAdd new step should be clickable"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05 External Cummalation FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in step creation",
+      "expected": "click on cancel button The step creation pop up should be closed",
+      "raw": "TC_06 External Cummalation Functionality Verify that the cancel button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on cancel button The step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 External Cummalation Functionality Verify that the change step button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 External Cummalation Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 External Cummalation Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify author can open an existing activity to add a step from another activity",
+      "expected": "Open an activity with at least 1 existing step Activity opens with all steps visible in step list",
+      "raw": "TC_10 External CummalationPositive Verify author can open an existing activity to add a step from another activity 1. Login as Author 2. Navigate to “My Activities” 3. Open an activity with at least 1 existing step Activity opens with all steps visible in step list"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Verify “import” button is visible in the activity editor",
+      "expected": "Look for the “import” button in the toolbar“import” button is visible and enabled",
+      "raw": "TC_11 External CummalationPositive Verify “import” button is visible in the activity editor 1. Open an activity 2. Look for the “import” button in the toolbar“import” button is visible and enabled"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify clicking “import” opens the step library1. Click “import”",
+      "expected": "Observe modal or panel opens Step library opens with search options visible",
+      "raw": "TC_12 External CummalationPositive Verify clicking “import” opens the step library1. Click “import” 2. Observe modal or panel opens Step library opens with search options visible"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify current activity appears in step library list1. Check for current activity in list Current activity title and created date displayed correctly",
+      "expected": "Check for current activity in list Current activity title and created date displayed correctly",
+      "raw": "TC_13 External CummalationPositive Verify current activity appears in step library list1. Check for current activity in list Current activity title and created date displayed correctly"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify author can search for a different activity by exact title",
+      "expected": "SearchMatching activity appears in results",
+      "raw": "TC_14 External CummalationPositive Verify author can search for a different activity by exact title 1. In step library search, enter full title of another activity 2. SearchMatching activity appears in results"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify author can search for a different activity by partial title1.",
+      "expected": "Search All activities matching keyword displayed",
+      "raw": "TC_15 External CummalationPositive Verify author can search for a different activity by partial title1. Enter partial name of another activity 2. Search All activities matching keyword displayed"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify search results display correct metadata for each activity1. Search for activities",
+      "expected": "Observe results Title, created date, and owner displayed correctly",
+      "raw": "TC_16 External CummalationPositive Verify search results display correct metadata for each activity1. Search for activities 2. Observe results Title, created date, and owner displayed correctly"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify author can view steps from another activity1.",
+      "expected": "View its step list All steps for that activity displayed in correct order",
+      "raw": "TC_17 External CummalationPositive Verify author can view steps from another activity1. Select a different activity from results 2. View its step list All steps for that activity displayed in correct order"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify author can select and import a step from another activity1.",
+      "expected": "Click “Import” Step is copied into current activity as step (n+1)",
+      "raw": "TC_18 External CummalationPositive Verify author can select and import a step from another activity1. Select step from external activity 2. Click “Import” Step is copied into current activity as step (n+1)"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify imported step retains all original content1. Compare source and imported step All text, images, formatting, widgets match exactly",
+      "expected": "Compare source and imported step All text, images, formatting, widgets match exactly",
+      "raw": "TC_19 External CummalationPositive Verify imported step retains all original content1. Compare source and imported step All text, images, formatting, widgets match exactly"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify imported step retains formatting1. Compare formatting between both steps Font, bullet styles, numbering, and line breaks are preserved",
+      "expected": "Compare formatting between both steps Font, bullet styles, numbering, and line breaks are preserved",
+      "raw": "TC_20 External CummalationPositiveVerify imported step retains formatting1. Compare formatting between both steps Font, bullet styles, numbering, and line breaks are preserved"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify imported step metadata is editable1. Edit title, tags, scoring options",
+      "expected": "SaveChanges apply to imported step only",
+      "raw": "TC_21 External CummalationPositiveVerify imported step metadata is editable1. Edit title, tags, scoring options 2. SaveChanges apply to imported step only"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify user can edit content of imported step1. Open imported step",
+      "expected": "SaveChanges are saved successfully",
+      "raw": "TC_22 External CummalationPositive Verify user can edit content of imported step1. Open imported step 2. Edit content 3. SaveChanges are saved successfully"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify user can save and preview imported step1. Click “Save”",
+      "expected": "Click “Preview” Step displays in preview mode exactly as in editor",
+      "raw": "TC_23 External CummalationPositive Verify user can save and preview imported step1. Click “Save” 2. Click “Preview” Step displays in preview mode exactly as in editor"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify imported step appears in correct order in navigation1. View step sequence Imported step placed immediately after current step or at end (as per design)",
+      "expected": "View step sequence Imported step placed immediately after current step or at end (as per design)",
+      "raw": "TC_24 External CummalationPositive Verify imported step appears in correct order in navigation1. View step sequence Imported step placed immediately after current step or at end (as per design)"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify undo/cancel import action works1. Start importing step",
+      "expected": "Click “Cancel”No step is added",
+      "raw": "TC_25 External CummalationPositiveVerify undo/cancel import action works1. Start importing step 2. Click “Cancel”No step is added"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Negative",
+      "description": "Verify importing is blocked when no step is selected1. Try importing without selecting stepError: “Please select a step to import”",
+      "expected": "Try importing without selecting stepError: “Please select a step to import”",
+      "raw": "TC_26 External CummalationNegative Verify importing is blocked when no step is selected1. Try importing without selecting stepError: “Please select a step to import”"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Verify importing is blocked when user lacks permission1. Login as read-only user",
+      "expected": "Try importing stepError: “Permission denied”",
+      "raw": "TC_27 External CummalationNegative Verify importing is blocked when user lacks permission1. Login as read-only user 2. Try importing stepError: “Permission denied”"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify import works for all content types (text, images, videos, widgets)1. Import steps with various content typesAll types appear intact",
+      "expected": "Import steps with various content typesAll types appear intact",
+      "raw": "TC_28 External CummalationPositive Verify import works for all content types (text, images, videos, widgets)1. Import steps with various content typesAll types appear intact"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify imported step with drag-and-drop widget functions in preview1. Import drag/drop step",
+      "expected": "PreviewWidget behaves correctly",
+      "raw": "TC_29 External CummalationPositive Verify imported step with drag-and-drop widget functions in preview1. Import drag/drop step 2. PreviewWidget behaves correctly"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify system handles import of very large step1. Import large step with many elements Step is imported without performance issues",
+      "expected": "Import large step with many elements Step is imported without performance issues",
+      "raw": "TC_30 External CummalationPositive Verify system handles import of very large step1. Import large step with many elements Step is imported without performance issues"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Verify importing a step with broken/unsupported media shows warning1. Import such step Warning displayed, step imported excluding broken media",
+      "expected": "Import such step Warning displayed, step imported excluding broken media",
+      "raw": "TC_31 External CummalationNegative Verify importing a step with broken/unsupported media shows warning1. Import such step Warning displayed, step imported excluding broken media"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify multiple imports from same external activity are allowed1. Import same step multiple times Each import creates a new independent step",
+      "expected": "Import same step multiple times Each import creates a new independent step",
+      "raw": "TC_32 External CummalationPositive Verify multiple imports from same external activity are allowed1. Import same step multiple times Each import creates a new independent step"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify user can publish activity containing imported step1. Import step",
+      "expected": "Publish activity Published activity contains imported step",
+      "raw": "TC_33 External CummalationPositive Verify user can publish activity containing imported step1. Import step 2. Publish activity Published activity contains imported step"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify republishing after editing imported step updates reader view1. Edit imported step",
+      "expected": "View in readerReader displays updated version",
+      "raw": "TC_34 External CummalationPositive Verify republishing after editing imported step updates reader view1. Edit imported step 2. Republish 3. View in readerReader displays updated version"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify imported step does not affect original activity",
+      "expected": "Open source activityNo changes in source activity’s step",
+      "raw": "TC_35 External CummalationPositive Verify imported step does not affect original activity 1. Edit imported step in current activity 2. Open source activityNo changes in source activity’s step"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Positive",
+      "description": "Verify search filters work correctly (date range, owner, tags)1. Apply filters in step library",
+      "expected": "Observe results Only activities matching filters are shown",
+      "raw": "TC_36 External CummalationPositive Verify search filters work correctly (date range, owner, tags)1. Apply filters in step library 2. Observe results Only activities matching filters are shown"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Negative",
+      "description": "Verify importing step from deleted external activity is not possible1. Search for deleted activity",
+      "expected": "Try importingActivity not found, import unavailable",
+      "raw": "TC_37 External CummalationNegative Verify importing step from deleted external activity is not possible1. Search for deleted activity 2. Try importingActivity not found, import unavailable"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Positive",
+      "description": "Verify external cumulation from 6.3 to 6.5 Launch 6.3 →",
+      "expected": "5",
+      "raw": "TC_38 External CummalationPositiveVerify external cumulation from 6.3 to 6.5 Launch 6.3 → Enter data → Submit → Launch 6.5 → Check cumulated dataData from 6.3 appears correctly in 6.5"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Positive",
+      "description": "Verify external cumulation from 6.5 to 6.3 Launch 6.5 →",
+      "expected": "3",
+      "raw": "TC_39 External CummalationPositiveVerify external cumulation from 6.5 to 6.3 Launch 6.5 → Enter data → Submit → Launch 6.3 → Check cumulated dataData from 6.5 appears correctly in 6.3"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Negative",
+      "description": "External cumulation not triggered due to SCORM API failureLaunch 6.3 → Disconnect SCORM → Submit → Launch 6.5 Cumulation fails; “SCORM API failed” popup appears",
+      "expected": "5 Cumulation fails; “SCORM API failed” popup appears",
+      "raw": "TC_40 External CummalationNegative External cumulation not triggered due to SCORM API failureLaunch 6.3 → Disconnect SCORM → Submit → Launch 6.5 Cumulation fails; “SCORM API failed” popup appears"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functional",
+      "description": "External CummalationEdge Reverse external cumulation from child to parent",
+      "expected": "3 unless designed",
+      "raw": "TC_41 External CummalationEdge Reverse external cumulation from child to parent Enter data in 6.5 → Submit → Launch 6.3 → Check for unexpected cumulated data Data from 6.5 should not appear in 6.3 unless designed"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Positive",
+      "description": "Verify external cumulation works for first attempt",
+      "expected": "5 correctly",
+      "raw": "TC_42 External CummalationPositive Verify external cumulation works for first attempt 1. Launch Activity 6.3 and enter data 2. Complete activity 3. Launch Activity 6.5Data from 6.3 appears in 6.5 correctly"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Positive",
+      "description": "Verify data patch before submit (first attempt)",
+      "expected": "5",
+      "raw": "TC_43 External CummalationPositive Verify data patch before submit (first attempt) 1. Launch Activity 6.3 2. Enter data in step 3. Launch Activity 6.5 before submitting 6.3Partially entered data visible in 6.5"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Positive",
+      "description": "Verify data patch after submit (first attempt)1. Submit Activity 6.3",
+      "expected": "5",
+      "raw": "TC_44 External CummalationPositiveVerify data patch after submit (first attempt)1. Submit Activity 6.3 2. Launch Activity 6.5 Final submitted data from 6.3 appears in 6.5"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Negative",
+      "description": "Odd Observation – repeated attempt data not reflected",
+      "expected": "Actual: Old data from first attempt remains",
+      "raw": "TC_45 External CummalationNegative Odd Observation – repeated attempt data not reflected 1. Complete Activity 6.3 first time 2. Launch Activity 6.5 and note data 3. Relaunch Activity 6.3, change data, and submit again 4. Launch Activity 6.5 Expected: Updated data from 6.3 appears in 6.5. Actual: Old data from first attempt remains"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Positive",
+      "description": "Verify external cumulation behaviour on “In Progress” student1. Student starts 6.3 but hasn’t submitted",
+      "expected": "5",
+      "raw": "TC_46 External CummalationPositive Verify external cumulation behaviour on “In Progress” student1. Student starts 6.3 but hasn’t submitted 2. Launch 6.5 Data from in-progress 6.3 appears in 6.5"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Positive",
+      "description": "Verify teacher view reflects external cumulation1. Complete 6.3",
+      "expected": "5Teacher sees correct cumulated data",
+      "raw": "TC_47 External CummalationPositive Verify teacher view reflects external cumulation1. Complete 6.3 2. Teacher views report for 6.5Teacher sees correct cumulated data"
+    }
+  ]
+}

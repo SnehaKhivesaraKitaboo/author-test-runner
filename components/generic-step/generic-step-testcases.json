@@ -1,0 +1,916 @@
+{
+  "component": "Generic Step",
+  "slug": "generic-step",
+  "dataType": "GenericStep",
+  "source": "Author Test Cases - Generic Step.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Generic Step.pdf",
+  "pages": 11,
+  "extractedCount": 113,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Author Generic StepsUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Author Generic Steps FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03 Author Generic Steps FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify '+' icon in TOC opens the Step Tray",
+      "expected": "",
+      "raw": "TC_04 Author Generic Steps FunctionalityVerify '+' icon in TOC opens the Step TrayClick on ‘+’ in TOC Step tray opens with all step types including “Generic Step”"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify Generic Step is listed in Step TrayOpen step tray“Generic Step” is available in step types",
+      "expected": "",
+      "raw": "TC_05 Author Generic Steps FunctionalityVerify Generic Step is listed in Step TrayOpen step tray“Generic Step” is available in step types"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify step wizard opens on selecting Generic Step",
+      "expected": "",
+      "raw": "TC_06 Author Generic Steps Functionality Verify step wizard opens on selecting Generic StepClick on “Generic Step”Step wizard opens"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify mandatory metadata fields validation in step wizardTry saving step wizard without filling required fieldsAppropriate validation error is displayed",
+      "expected": "",
+      "raw": "TC_07 Author Generic Steps Functionality Verify mandatory metadata fields validation in step wizardTry saving step wizard without filling required fieldsAppropriate validation error is displayed"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify successful save of step after entering required metadata",
+      "expected": "",
+      "raw": "TC_08 Author Generic Steps Functionality Verify successful save of step after entering required metadataEnter metadata → Click Save Step is created and blank authoring page is shown"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify 'Generic step' tag is auto-added in keyword tag fieldCreate step and check keyword fieldTag ‘Generic step’ is added",
+      "expected": "",
+      "raw": "TC_09 Author Generic Steps Functionality Verify 'Generic step' tag is auto-added in keyword tag fieldCreate step and check keyword fieldTag ‘Generic step’ is added"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify all default KB layouts are available (left, center, right)Open layout panelAll default layouts are visible",
+      "expected": "",
+      "raw": "TC_10 Author Generic Steps Functionality Verify all default KB layouts are available (left, center, right)Open layout panelAll default layouts are visible"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify 4-column layout (CL-specific) is availableOpen layout panel4-column layout is visible",
+      "expected": "",
+      "raw": "TC_11 Author Generic Steps Functionality Verify 4-column layout (CL-specific) is availableOpen layout panel4-column layout is visible"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify 3-column layout (CL-specific) is availableOpen layout panel3-column layout is visible",
+      "expected": "",
+      "raw": "TC_12 Author Generic Steps Functionality Verify 3-column layout (CL-specific) is availableOpen layout panel3-column layout is visible"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify Custom Center Layout is availableOpen layout panelCustom Center Layout is listed",
+      "expected": "",
+      "raw": "TC_13 Author Generic Steps FunctionalityVerify Custom Center Layout is availableOpen layout panelCustom Center Layout is listed"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify multiple layouts can be added one below the otherDrag & drop 2+ layoutsLayouts appear stacked vertically",
+      "expected": "",
+      "raw": "TC_14 Author Generic Steps Functionality Verify multiple layouts can be added one below the otherDrag & drop 2+ layoutsLayouts appear stacked vertically"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify drag-and-drop of KB-provided elements into layout sectionsDrag elements (e.g., Title, Text)Elements added successfully",
+      "expected": "",
+      "raw": "TC_15 Author Generic Steps Functionality Verify drag-and-drop of KB-provided elements into layout sectionsDrag elements (e.g., Title, Text)Elements added successfully"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify drag-and-drop of KB widgets with CL enhancementsDrag widgets (e.g., Group Activity, MCQ, MTP)Widgets added inside layout",
+      "expected": "",
+      "raw": "TC_16 Author Generic Steps Functionality Verify drag-and-drop of KB widgets with CL enhancementsDrag widgets (e.g., Group Activity, MCQ, MTP)Widgets added inside layout"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify drag-and-drop of CL-developed widgetsDrag CL widgets (e.g., Image GO, FIB Image, TF)Widgets added correctly",
+      "expected": "",
+      "raw": "TC_17 Author Generic Steps FunctionalityVerify drag-and-drop of CL-developed widgetsDrag CL widgets (e.g., Image GO, FIB Image, TF)Widgets added correctly"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify only one component per section in regular layoutsTry to add 2 components in same sectionSystem prevents second drop",
+      "expected": "",
+      "raw": "TC_18 Author Generic Steps Functionality Verify only one component per section in regular layoutsTry to add 2 components in same sectionSystem prevents second drop"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify multiple components in Custom Center Layout sectionAdd multiple components in one sectionAll components added successfully",
+      "expected": "",
+      "raw": "TC_19 Author Generic Steps Functionality Verify multiple components in Custom Center Layout sectionAdd multiple components in one sectionAll components added successfully"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify CLIC Component is present in Widget trayOpen widget trayCLIC Component icon is present",
+      "expected": "",
+      "raw": "TC_20 Author Generic Steps Functionality Verify CLIC Component is present in Widget trayOpen widget trayCLIC Component icon is present"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify CLIC Component can be added only in Generic StepTry adding in other steps (e.g., question step)System prevents drop outside Generic step",
+      "expected": "",
+      "raw": "TC_21 Author Generic Steps Functionality Verify CLIC Component can be added only in Generic StepTry adding in other steps (e.g., question step)System prevents drop outside Generic step"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify sketchpad launches after entering identifier and clicking submit",
+      "expected": "",
+      "raw": "TC_22 Author Generic Steps Functionality Verify sketchpad launches after entering identifier and clicking submitEnter identifier → Click SubmitSketchpad launches correctly"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify author can draw on sketchpad and saveDraw something → SaveImage/graph saved and displayed on page",
+      "expected": "",
+      "raw": "TC_23 Author Generic Steps FunctionalityVerify author can draw on sketchpad and saveDraw something → SaveImage/graph saved and displayed on page"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify number line tool allows drawing and inserting fixed lineUse number line toolFixed number line appears in layout",
+      "expected": "",
+      "raw": "TC_24 Author Generic Steps Functionality Verify number line tool allows drawing and inserting fixed lineUse number line toolFixed number line appears in layout"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify math equations can be added in Text componentUse RTE to add math using LaTeX or MathMLEquation is rendered correctly",
+      "expected": "",
+      "raw": "TC_25 Author Generic Steps Functionality Verify math equations can be added in Text componentUse RTE to add math using LaTeX or MathMLEquation is rendered correctly"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify math equation persists after Save and RelaunchSave → Close → Relaunch activityEquation is present",
+      "expected": "",
+      "raw": "TC_26 Author Generic Steps Functionality Verify math equation persists after Save and RelaunchSave → Close → Relaunch activityEquation is present"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify Save functionality saves layout + content correctlyAdd layout + text + widget → Click SaveContent saved without error",
+      "expected": "",
+      "raw": "TC_27 Author Generic Steps Functionality Verify Save functionality saves layout + content correctlyAdd layout + text + widget → Click SaveContent saved without error"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify Publish functionality for MATH activitySave → PublishPublish success confirmation",
+      "expected": "",
+      "raw": "TC_28 Author Generic Steps FunctionalityVerify Publish functionality for MATH activitySave → PublishPublish success confirmation"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify Launch on CLP displays content correctlyOpen CLP → Launch published activity All authored content including images and sketchpad data visible",
+      "expected": "",
+      "raw": "TC_29 Author Generic Steps FunctionalityVerify Launch on CLP displays content correctlyOpen CLP → Launch published activity All authored content including images and sketchpad data visible"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify Edit + Republish retains all contentEdit → Change content → Republish All data including identifiers and drawings are retained",
+      "expected": "",
+      "raw": "TC_30 Author Generic Steps FunctionalityVerify Edit + Republish retains all contentEdit → Change content → Republish All data including identifiers and drawings are retained"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify CLIC image preview visible in Authoring Preview without re-launching toolInsert sketchpad content → PreviewImage/graph preview shown",
+      "expected": "",
+      "raw": "TC_31 Author Generic Steps Functionality Verify CLIC image preview visible in Authoring Preview without re-launching toolInsert sketchpad content → PreviewImage/graph preview shown"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify invalid identifier doesn’t launch sketchpad",
+      "expected": "",
+      "raw": "TC_32 Author Generic Steps Functionality Verify invalid identifier doesn’t launch sketchpadEnter wrong ID → Submit Error message displayed / sketchpad not launched"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify fields (identifier, instance name) are required in CLIC popupSubmit without fillingError validations shown",
+      "expected": "",
+      "raw": "TC_33 Author Generic Steps Functionality Verify fields (identifier, instance name) are required in CLIC popupSubmit without fillingError validations shown"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Add a math equation using RTE inside layout",
+      "expected": "Add Generic step Equation displayed properly",
+      "raw": "TC_34 Author Generic Steps FunctionalityAdd a math equation using RTE inside layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step Equation displayed properly"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Add long math equations to check responsiveness",
+      "expected": "Add Generic step No layout break, equation fits UI",
+      "raw": "TC_35 Author Generic Steps Functionality Add long math equations to check responsiveness 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step No layout break, equation fits UI"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify math equations render in Preview and Reader",
+      "expected": "Add Generic step Equation visible without data loss",
+      "raw": "TC_36 Author Generic Steps Functionality Verify math equations render in Preview and Reader 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step Equation visible without data loss"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify the author can add a Title element in layoutDrag & drop Title element into a layout sectionTitle appears and is editable",
+      "expected": "",
+      "raw": "TC_37 Author Generic Steps Functionality Verify the author can add a Title element in layoutDrag & drop Title element into a layout sectionTitle appears and is editable"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify the author can add a Header elementDrag & drop Header into layoutHeader appears in section",
+      "expected": "",
+      "raw": "TC_38 Author Generic Steps FunctionalityVerify the author can add a Header elementDrag & drop Header into layoutHeader appears in section"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify the author can add Text and enter paragraphDrag Text → Type contentText saved and displayed properly",
+      "expected": "",
+      "raw": "TC_39 Author Generic Steps Functionality Verify the author can add Text and enter paragraphDrag Text → Type contentText saved and displayed properly"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify the author can add an Audio fileDrag Audio → Upload fileAudio player appears",
+      "expected": "",
+      "raw": "TC_40 Author Generic Steps FunctionalityVerify the author can add an Audio fileDrag Audio → Upload fileAudio player appears"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify the author can add a VideoDrag Video → Upload/link fileVideo is embedded",
+      "expected": "",
+      "raw": "TC_41 Author Generic Steps FunctionalityVerify the author can add a VideoDrag Video → Upload/link fileVideo is embedded"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify the author can add an ImageDrag Image → UploadImage appears inside layout",
+      "expected": "",
+      "raw": "TC_42 Author Generic Steps FunctionalityVerify the author can add an ImageDrag Image → UploadImage appears inside layout"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify HTML Interactivity widget loads correctlyDrag component and paste HTMLInteractive content loads",
+      "expected": "",
+      "raw": "TC_43 Author Generic Steps Functionality Verify HTML Interactivity widget loads correctlyDrag component and paste HTMLInteractive content loads"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify Table can be inserted and content enteredAdd table → Input rows/columnsTable displays with data",
+      "expected": "",
+      "raw": "TC_44 Author Generic Steps FunctionalityVerify Table can be inserted and content enteredAdd table → Input rows/columnsTable displays with data"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify Callout box component supports stylesDrag Callout → Choose styleBox displayed properly",
+      "expected": "",
+      "raw": "TC_45 Author Generic Steps FunctionalityVerify Callout box component supports stylesDrag Callout → Choose styleBox displayed properly"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify FIB with image lets user fill text over imageAdd image → Mark blanksFIB renders as image-based",
+      "expected": "",
+      "raw": "TC_46 Author Generic Steps Functionality Verify FIB with image lets user fill text over imageAdd image → Mark blanksFIB renders as image-based"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify Extended response with media inputAdd media → Add long answer textMedia & response saved",
+      "expected": "",
+      "raw": "TC_47 Author Generic Steps FunctionalityVerify Extended response with media inputAdd media → Add long answer textMedia & response saved"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify Table GO functionality with dynamic contentAdd table + responsesTable validates correctly",
+      "expected": "",
+      "raw": "TC_48 Author Generic Steps Functionality Verify Table GO functionality with dynamic contentAdd table + responsesTable validates correctly"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify Image GO question/responseUpload image → Add Q and optionsInteraction allowed",
+      "expected": "",
+      "raw": "TC_49 Author Generic Steps FunctionalityVerify Image GO question/responseUpload image → Add Q and optionsInteraction allowed"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify TF response logicAdd TF statement → Check logicCorrect validation",
+      "expected": "",
+      "raw": "TC_50 Author Generic Steps FunctionalityVerify TF response logicAdd TF statement → Check logicCorrect validation"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify Annotation tool allows highlighting areasAdd image/text → Mark areasAreas annotated",
+      "expected": "",
+      "raw": "TC_51 Author Generic Steps FunctionalityVerify Annotation tool allows highlighting areasAdd image/text → Mark areasAreas annotated"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify MTP Multiple matching logicAdd 3+ pairsMatching works with all",
+      "expected": "",
+      "raw": "TC_52 Author Generic Steps FunctionalityVerify MTP Multiple matching logicAdd 3+ pairsMatching works with all"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify CLIC component opens popup with identifier and instance fieldsDrag CLIC → Fill details → SubmitSketchpad launches",
+      "expected": "",
+      "raw": "TC_53 Author Generic Steps Functionality Verify CLIC component opens popup with identifier and instance fieldsDrag CLIC → Fill details → SubmitSketchpad launches"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify CLIC Component persists across sessionsAdd CLIC → Save → Close and reopen Sketchpad loads automatically without re- entering ID",
+      "expected": "",
+      "raw": "TC_54 Author Generic Steps FunctionalityVerify CLIC Component persists across sessionsAdd CLIC → Save → Close and reopen Sketchpad loads automatically without re- entering ID"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify user cannot add CLIC in non-generic stepTry dragging into question stepSystem prevents drop",
+      "expected": "",
+      "raw": "TC_55 Author Generic Steps FunctionalityVerify user cannot add CLIC in non-generic stepTry dragging into question stepSystem prevents drop"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify error on blank submitClick Submit without entering any valueValidation error shown",
+      "expected": "",
+      "raw": "TC_56 Author Generic Steps FunctionalityVerify error on blank submitClick Submit without entering any valueValidation error shown"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functional",
+      "description": "Verify the author can add a Title element in layoutDrag & drop Title element into a layout sectionTitle appears and is editable",
+      "expected": "",
+      "raw": "TC_57 Author Generic StepsFunctional Verify the author can add a Title element in layoutDrag & drop Title element into a layout sectionTitle appears and is editable"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functional",
+      "description": "Verify the author can add a Header elementDrag & drop Header into layoutHeader appears in section",
+      "expected": "",
+      "raw": "TC_58 Author Generic StepsFunctionalVerify the author can add a Header elementDrag & drop Header into layoutHeader appears in section"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functional",
+      "description": "Verify the author can add Text and enter paragraphDrag Text → Type contentText saved and displayed properly",
+      "expected": "",
+      "raw": "TC_59 Author Generic StepsFunctional Verify the author can add Text and enter paragraphDrag Text → Type contentText saved and displayed properly"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functional",
+      "description": "Verify the author can add an Audio fileDrag Audio → Upload fileAudio player appears",
+      "expected": "",
+      "raw": "TC_60 Author Generic StepsFunctionalVerify the author can add an Audio fileDrag Audio → Upload fileAudio player appears"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functional",
+      "description": "Verify the author can add a VideoDrag Video → Upload/link fileVideo is embedded",
+      "expected": "",
+      "raw": "TC_61 Author Generic StepsFunctionalVerify the author can add a VideoDrag Video → Upload/link fileVideo is embedded"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functional",
+      "description": "Verify the author can add an ImageDrag Image → UploadImage appears inside layout",
+      "expected": "",
+      "raw": "TC_62 Author Generic StepsFunctionalVerify the author can add an ImageDrag Image → UploadImage appears inside layout"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functional",
+      "description": "Verify HTML Interactivity widget loads correctlyDrag component and paste HTMLInteractive content loads",
+      "expected": "",
+      "raw": "TC_63 Author Generic StepsFunctional Verify HTML Interactivity widget loads correctlyDrag component and paste HTMLInteractive content loads"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functional",
+      "description": "Verify Table can be inserted and content enteredAdd table → Input rows/columnsTable displays with data",
+      "expected": "",
+      "raw": "TC_64 Author Generic StepsFunctionalVerify Table can be inserted and content enteredAdd table → Input rows/columnsTable displays with data"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functional",
+      "description": "Verify Callout box component supports stylesDrag Callout → Choose styleBox displayed properly",
+      "expected": "",
+      "raw": "TC_65 Author Generic StepsFunctionalVerify Callout box component supports stylesDrag Callout → Choose styleBox displayed properly"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functional",
+      "description": "Verify drag and drop of Group ActivityDrag widget into layoutWidget displays",
+      "expected": "",
+      "raw": "TC_66 Author Generic StepsFunctionalVerify drag and drop of Group ActivityDrag widget into layoutWidget displays"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functional",
+      "description": "Verify MCQSS widget loads and options workDrag widget → Add question/optionsSelection and response handled correctly",
+      "expected": "",
+      "raw": "TC_67 Author Generic StepsFunctionalVerify MCQSS widget loads and options workDrag widget → Add question/optionsSelection and response handled correctly"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functional",
+      "description": "Verify MCQMS widget accepts multiple answers",
+      "expected": "",
+      "raw": "TC_68 Author Generic StepsFunctional Verify MCQMS widget accepts multiple answersSelect multiple answersSelection persists"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functional",
+      "description": "Verify FIB (Text) widget with blanksAdd blank using underscoreInput works",
+      "expected": "",
+      "raw": "TC_69 Author Generic StepsFunctionalVerify FIB (Text) widget with blanksAdd blank using underscoreInput works"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functional",
+      "description": "Verify FIB (Dropdown) widget populates dropdowns",
+      "expected": "",
+      "raw": "TC_70 Author Generic StepsFunctional Verify FIB (Dropdown) widget populates dropdownsEnter options in FIB dropDropdown rendered"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functional",
+      "description": "Verify FIB Drag/Drop functionalityAdd answers and test dragging",
+      "expected": "",
+      "raw": "TC_71 Author Generic StepsFunctionalVerify FIB Drag/Drop functionalityAdd answers and test draggingDrag and drop works"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functional",
+      "description": "Verify Match the Pair (1-1) behaviorAdd two pairs → MatchValidated correctly",
+      "expected": "",
+      "raw": "TC_72 Author Generic StepsFunctionalVerify Match the Pair (1-1) behaviorAdd two pairs → MatchValidated correctly"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functional",
+      "description": "Verify Carousel image/text scrollingAdd carousel widgetScroll arrows work",
+      "expected": "",
+      "raw": "TC_73 Author Generic StepsFunctionalVerify Carousel image/text scrollingAdd carousel widgetScroll arrows work"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functional",
+      "description": "Verify Image Labeling allows tagging on imageUpload image → Add labelsTags placed correctly",
+      "expected": "",
+      "raw": "TC_74 Author Generic StepsFunctionalVerify Image Labeling allows tagging on imageUpload image → Add labelsTags placed correctly"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functional",
+      "description": "Verify Highlighter allows marking of textDrag widget →",
+      "expected": "",
+      "raw": "TC_75 Author Generic StepsFunctionalVerify Highlighter allows marking of textDrag widget → Select textHighlights appear"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functional",
+      "description": "Verify Correction lets students correct marked answersMark wrong → Provide corrected answerValidated and feedback given",
+      "expected": "",
+      "raw": "TC_76 Author Generic StepsFunctional Verify Correction lets students correct marked answersMark wrong → Provide corrected answerValidated and feedback given"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functional",
+      "description": "Verify Sorting widget allows proper drag sortingDrag → ReorderOrder maintained",
+      "expected": "",
+      "raw": "TC_77 Author Generic StepsFunctionalVerify Sorting widget allows proper drag sortingDrag → ReorderOrder maintained"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functional",
+      "description": "Verify Sidebar adds right-side or left-side info panelAdd widget → Add contentSidebar is collapsible and resizable",
+      "expected": "",
+      "raw": "TC_78 Author Generic StepsFunctional Verify Sidebar adds right-side or left-side info panelAdd widget → Add contentSidebar is collapsible and resizable"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functional",
+      "description": "Verify Click to Reveal behaviorAdd prompt → Add reveal textClick displays hidden info",
+      "expected": "",
+      "raw": "TC_79 Author Generic StepsFunctionalVerify Click to Reveal behaviorAdd prompt → Add reveal textClick displays hidden info"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functional",
+      "description": "Verify Word Search grid and inputs workAdd words → PreviewWords appear in grid",
+      "expected": "",
+      "raw": "TC_80 Author Generic StepsFunctionalVerify Word Search grid and inputs workAdd words → PreviewWords appear in grid"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functional",
+      "description": "Verify QA supports math and RTEAdd question/answerWorks correctly",
+      "expected": "",
+      "raw": "TC_81 Author Generic StepsFunctionalVerify QA supports math and RTEAdd question/answerWorks correctly"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functional",
+      "description": "Verify Flashcard allows flipping and audioAdd Q and A → Add audioFlip animation and audio play correctly",
+      "expected": "",
+      "raw": "TC_82 Author Generic StepsFunctionalVerify Flashcard allows flipping and audioAdd Q and A → Add audioFlip animation and audio play correctly"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functional",
+      "description": "Verify Categorize drag options to categoryAdd categories + options → Test dragDrag works with validation",
+      "expected": "",
+      "raw": "TC_83 Author Generic StepsFunctionalVerify Categorize drag options to categoryAdd categories + options → Test dragDrag works with validation"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functional",
+      "description": "Verify FIB with image lets user fill text over imageAdd image → Mark blanksFIB renders as image-based",
+      "expected": "",
+      "raw": "TC_84 Author Generic StepsFunctional Verify FIB with image lets user fill text over imageAdd image → Mark blanksFIB renders as image-based"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functional",
+      "description": "Verify Extended response with media inputAdd media → Add long answer textMedia & response saved",
+      "expected": "",
+      "raw": "TC_85 Author Generic StepsFunctionalVerify Extended response with media inputAdd media → Add long answer textMedia & response saved"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functional",
+      "description": "Verify Table GO functionality with dynamic contentAdd table + responsesTable validates correctly",
+      "expected": "",
+      "raw": "TC_86 Author Generic StepsFunctional Verify Table GO functionality with dynamic contentAdd table + responsesTable validates correctly"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functional",
+      "description": "Verify Image GO question/responseUpload image → Add Q and optionsInteraction allowed",
+      "expected": "",
+      "raw": "TC_87 Author Generic StepsFunctionalVerify Image GO question/responseUpload image → Add Q and optionsInteraction allowed"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functional",
+      "description": "Verify TF response logicAdd TF statement → Check logicCorrect validation",
+      "expected": "",
+      "raw": "TC_88 Author Generic StepsFunctionalVerify TF response logicAdd TF statement → Check logicCorrect validation"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functional",
+      "description": "Verify Annotation tool allows highlighting areasAdd image/text → Mark areasAreas annotated",
+      "expected": "",
+      "raw": "TC_89 Author Generic StepsFunctionalVerify Annotation tool allows highlighting areasAdd image/text → Mark areasAreas annotated"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functional",
+      "description": "Verify MTP Multiple matching logicAdd 3+ pairsMatching works with all",
+      "expected": "",
+      "raw": "TC_90 Author Generic StepsFunctionalVerify MTP Multiple matching logicAdd 3+ pairsMatching works with all"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functional",
+      "description": "Verify CLIC component opens popup with identifierDrag CLIC → Fill details → SubmitSketchpad launches",
+      "expected": "",
+      "raw": "TC_91 Author Generic StepsFunctional Verify CLIC component opens popup with identifierDrag CLIC → Fill details → SubmitSketchpad launches"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functional",
+      "description": "Verify CLIC Component persists across sessionsAdd CLIC → Save → Close and reopenSketchpad loads automatically",
+      "expected": "",
+      "raw": "TC_92 Author Generic StepsFunctionalVerify CLIC Component persists across sessionsAdd CLIC → Save → Close and reopenSketchpad loads automatically"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functional",
+      "description": "Verify user cannot add CLIC in non-generic stepTry dragging into question stepSystem prevents drop",
+      "expected": "",
+      "raw": "TC_93 Author Generic StepsFunctionalVerify user cannot add CLIC in non-generic stepTry dragging into question stepSystem prevents drop"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functional",
+      "description": "Verify only one “Drag Assessment Widget” message is shown after deleting component",
+      "expected": "Delete the widget Only one message “Drag Assessment Widget from right panel” should be visible",
+      "raw": "TC_94 Author Generic StepsFunctional Verify only one “Drag Assessment Widget” message is shown after deleting component 1. Create a Generic Step2. Drag and drop a widget (e.g., MCQ)3. Delete the widget Only one message “Drag Assessment Widget from right panel” should be visible"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functional",
+      "description": "Verify no duplicate messages are shown after deleting multiple widgets sequentially",
+      "expected": "Delete all widgets one by one Still only a single “Drag Assessment Widget” message should appear",
+      "raw": "TC_95 Author Generic StepsFunctional Verify no duplicate messages are shown after deleting multiple widgets sequentially 1. Add multiple widgets in layout sections2. Delete all widgets one by one Still only a single “Drag Assessment Widget” message should appear"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functional",
+      "description": "Verify if the message reappears correctly after adding and removing a component repeatedly",
+      "expected": "Repeat multiple timesOnly one message should be displayed each time",
+      "raw": "TC_96 Author Generic StepsFunctional Verify if the message reappears correctly after adding and removing a component repeatedly 1. Drag and drop a widget2. Delete the widget3. Repeat multiple timesOnly one message should be displayed each time"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functional",
+      "description": "Verify incorrect behavior when more than one message is displayed Add widgets and forcefully trigger multiple deletions using script or console Multiple messages should not appear; this is a bug if they do",
+      "expected": "",
+      "raw": "TC_97 Author Generic StepsFunctional Verify incorrect behavior when more than one message is displayed Add widgets and forcefully trigger multiple deletions using script or console Multiple messages should not appear; this is a bug if they do"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functional",
+      "description": "Verify widget cannot be dragged outside Generic Step Try to drag and drop a widget outside the Generic Step boundary The widget should not be placed outside the step boundary",
+      "expected": "",
+      "raw": "TC_98 Author Generic StepsFunctional Verify widget cannot be dragged outside Generic Step Try to drag and drop a widget outside the Generic Step boundary The widget should not be placed outside the step boundary"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functional",
+      "description": "Verify Layout cannot be dragged outside the Generic StepTry to place a layout outside the canvas/step area Layout should be restricted inside the Generic Step container",
+      "expected": "",
+      "raw": "TC_99 Author Generic StepsFunctional Verify Layout cannot be dragged outside the Generic StepTry to place a layout outside the canvas/step area Layout should be restricted inside the Generic Step container"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functional",
+      "description": "Verify error message or block if user tries to drop component outside Generic StepUse boundary or section edges to drop component Drop should be blocked, and no placement should occur",
+      "expected": "",
+      "raw": "TC_100 Author Generic StepsFunctional Verify error message or block if user tries to drop component outside Generic StepUse boundary or section edges to drop component Drop should be blocked, and no placement should occur"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "UI",
+      "description": "glitch when widget partially drops outside Generic StepTry edge placement visually Widget should auto-align or revert if outside bounds",
+      "expected": "",
+      "raw": "TC_101 Author Generic StepsFunctional Verify UI glitch when widget partially drops outside Generic StepTry edge placement visually Widget should auto-align or revert if outside bounds"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "Functional",
+      "description": "Check if layout overflow impacts CLP rendering Add layout partially outside the Generic Step and publish Content should not be rendered outside on CLP (must be trimmed or rejected)",
+      "expected": "",
+      "raw": "TC_102 Author Generic StepsFunctionalCheck if layout overflow impacts CLP rendering Add layout partially outside the Generic Step and publish Content should not be rendered outside on CLP (must be trimmed or rejected)"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functional",
+      "description": "Verify layout snapping feature keeps layout within boundaryDrag component near boundary and drop Component should automatically align inside layout zone",
+      "expected": "",
+      "raw": "TC_103 Author Generic StepsFunctional Verify layout snapping feature keeps layout within boundaryDrag component near boundary and drop Component should automatically align inside layout zone"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functional",
+      "description": "Verify user is able to add same components multiple times",
+      "expected": "Add Generic step User should add same compoents",
+      "raw": "TC_104 Author Generic StepsFunctional Verify user is able to add same components multiple times 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should add same compoents"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "Functional",
+      "description": "Verify user is able to delete the single component, when its added multiple times",
+      "expected": "Add Generic step User should add same compoents",
+      "raw": "TC_105 Author Generic StepsFunctional Verify user is able to delete the single component, when its added multiple times 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should add same compoents"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Functional",
+      "description": "Verify User is able to add flexi layout",
+      "expected": "Add Generic step User should add same compoents",
+      "raw": "TC_106 Author Generic StepsFunctionalVerify User is able to add flexi layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should add same compoents"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Functional",
+      "description": "Verify if user is able to add sample layer inside the generic step",
+      "expected": "Add Generic step User should add compoents inside the sample layer",
+      "raw": "TC_107 Author Generic StepsFunctional Verify if user is able to add sample layer inside the generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should add compoents inside the sample layer"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "Functional",
+      "description": "Verify if user is able to copy and paste the components inside the Generic step",
+      "expected": "Add Generic step User should able to copy and paste components inside generic step",
+      "raw": "TC_108 Author Generic StepsFunctional Verify if user is able to copy and paste the components inside the Generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able to copy and paste components inside generic step"
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "Functional",
+      "description": "Verify is user is able to delete the pasted components inside the generic step",
+      "expected": "Add Generic step User should able todelete components inside generic step",
+      "raw": "TC_109 Author Generic StepsFunctional Verify is user is able to delete the pasted components inside the generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able todelete components inside generic step"
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "Functional",
+      "description": "Verify if user is able to delete the generic step",
+      "expected": "Add Generic step User should able todelete components inside generic step",
+      "raw": "TC_110 Author Generic StepsFunctionalVerify if user is able to delete the generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able todelete components inside generic step"
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "Functional",
+      "description": "Verify if user is able to change the background color",
+      "expected": "Add Generic step User should able to change the background color of generic step",
+      "raw": "TC_111 Author Generic StepsFunctional Verify if user is able to change the background color 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able to change the background color of generic step"
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "Functional",
+      "description": "Verify if user is able to change the pattern of the generic step",
+      "expected": "Add Generic step User should able to change the background pattern of generic step",
+      "raw": "TC_112 Author Generic StepsFunctional Verify if user is able to change the pattern of the generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able to change the background pattern of generic step"
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "Functional",
+      "description": "Verify if user is able to change the background color of the multipart inside the generic step",
+      "expected": "Add Generic step User should able to change the background color of multipart",
+      "raw": "TC_113 Author Generic StepsFunctional Verify if user is able to change the background color of the multipart inside the generic step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Generic step User should able to change the background color of multipart"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "component": "CLIC (Sketchpad)",
+  "slug": "clic",
+  "spec": "31-clic-deep.spec.ts",
+  "qcSource": "Author Test Cases - CLIC.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires login/activity bootstrap, runtime submit/validation, persistence-after-reload, post-submit CLIC iframe, Preview/Reader/CLP, responsive, or lifecycle flows."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "deferred", "reason": "Launch Studio URL + listing page — environment bootstrap handled by cy.openAuthoringTool, not a component assertion" },
+    { "qc": "TC_02", "status": "deferred", "reason": "Create math activity (basic info) — activity-creation flow outside authoring DOM" },
+    { "qc": "TC_03", "status": "deferred", "reason": "Start authoring redirect — activity-creation flow outside authoring DOM" },
+
+    { "qc": "TC_04", "status": "automated", "it": "TC_04 — CLIC pop-up shows the \"CLIC Assignment\" title (icon-clic catalog widget)", "selectors": ["#sketchpad .form-title", "#sketchpad .form-icon"], "note": "Widgets-tray icon is catalogued as iconClass 'icon-clic'; the dropped pop-up title is asserted" },
+    { "qc": "TC_05", "status": "automated", "it": "TC_05/TC_06 — CLIC component is placed and its pop-up form is displayed", "selectors": [".customClass[data-type=\"sketchpad\"]", "#sketchpad .form-container"] },
+    { "qc": "TC_06", "status": "automated", "it": "TC_05/TC_06 — CLIC component is placed and its pop-up form is displayed", "note": "Element drops onto the unrestricted Instructions canvas (no Generic Step column required)" },
+    { "qc": "TC_07", "status": "deferred", "reason": "CLIC blocked in non-generic step types — step-type provisioning + negative drop flow (not provisioned in this harness)" },
+
+    { "qc": "TC_08", "status": "automated", "it": "TC_08 — Pop-up exposes CLIC Identifier, Instance Name, and Submit button", "selectors": ["#sketchpad #clicuid", "#sketchpad #instancename", "#sketchpad .form-button"] },
+    { "qc": "TC_09", "status": "deferred", "reason": "Submit disabled / validation when both fields empty — Submit has no ng-disabled binding; enforced at submit runtime (required), not author DOM" },
+    { "qc": "TC_10", "status": "deferred", "reason": "Validation message \"CLIC Identifier is required\" — runtime submit validation" },
+    { "qc": "TC_11", "status": "deferred", "reason": "Validation message \"Instance Name is required\" — runtime submit validation" },
+
+    { "qc": "TC_12", "status": "automated", "it": "TC_12 — Both fields accept valid alphanumeric input", "selectors": ["#sketchpad #clicuid", "#sketchpad #instancename"] },
+    { "qc": "TC_13", "status": "deferred", "reason": "Submit saves data + pop-up closes — runtime submit + iframe swap (submitCLIC → issubmitted)" },
+    { "qc": "TC_14", "status": "deferred", "reason": "UI spacing/alignment/padding vs Figma — visual design assertion" },
+    { "qc": "TC_15", "status": "automated", "it": "TC_15 — Fields accept special characters (no client-side block in author DOM)", "note": "field accepts @#$%; server-side validation is a runtime/save check (deferred)" },
+    { "qc": "TC_16", "status": "automated", "it": "TC_16 — Long (100+ char) input is accepted by the Identifier field", "note": "input retained; CSS truncation/wrapping is a visual check (deferred)" },
+
+    { "qc": "TC_17", "status": "deferred", "reason": "Submit triggers backend/save request — network/save flow (runtime)" },
+    { "qc": "TC_18", "status": "deferred", "reason": "Edit values after re-opening component — persistence + re-open flow" },
+    { "qc": "TC_19", "status": "deferred", "reason": "CLIC retained after save/preview/re-edit — save + Preview flow" },
+    { "qc": "TC_20", "status": "deferred", "reason": "Activity with CLIC can be published — Publish flow outside authoring DOM" },
+    { "qc": "TC_21", "status": "deferred", "reason": "Responsive pop-up behavior across screen sizes — responsive/visual flow" },
+    { "qc": "TC_22", "status": "deferred", "reason": "Max-allowed CLIC instances limit enforced (if any) — multi-instance + runtime limit" },
+    { "qc": "TC_23", "status": "deferred", "reason": "Clicking outside the pop-up closes/ignores gracefully — runtime usability behavior" },
+    { "qc": "TC_24", "status": "deferred", "reason": "CLIC Identifier retained after activity save — persistence/save flow" },
+    { "qc": "TC_25", "status": "deferred", "reason": "CLIC auto-launches on activity re-open — re-open + iframe auto-launch" },
+    { "qc": "TC_26", "status": "deferred", "reason": "No prompt again after relaunch unless edited — re-open state flow" },
+    { "qc": "TC_27", "status": "deferred", "reason": "CLIC persists after logout/login — session + persistence flow" },
+    { "qc": "TC_28", "status": "deferred", "reason": "Editing Identifier persists across relaunch — persistence + re-open flow" },
+    { "qc": "TC_29", "status": "deferred", "reason": "CLIC auto-launches in Preview with saved Identifier — Preview/iframe flow" },
+    { "qc": "TC_30", "status": "deferred", "reason": "CLIC inactive/prompts if Identifier not entered before save — runtime save-state flow" },
+    { "qc": "TC_31", "status": "deferred", "reason": "Multiple CLIC instances with distinct Identifiers across relaunches — multi-instance + persistence" },
+    { "qc": "TC_32", "status": "deferred", "reason": "No data loss on relaunch with CLIC + extra content — persistence-after-reload" },
+    { "qc": "TC_33", "status": "deferred", "reason": "Saved CLIC launches in CLP with correct Identifier — CLP/Reader flow" }
+  ]
+}

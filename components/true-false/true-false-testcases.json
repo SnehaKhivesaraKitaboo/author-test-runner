@@ -1,0 +1,732 @@
+{
+  "component": "True or False",
+  "slug": "true-false",
+  "dataType": "true-false-template",
+  "source": "Author Test Cases - True or False.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - True or False.pdf",
+  "pages": 3,
+  "extractedCount": 90,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 True or FalseUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 True or False FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03 True or False FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 True or False FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05 True or False FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel button The step creation pop up should be closed",
+      "raw": "TC_06 True or False Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel button The step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 True or False Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 True or False Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 True or False Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify the component renders correctlyAdd the True or False component to an activity Component is added with default header, instruction, and options",
+      "expected": "",
+      "raw": "TC_10 True or FalsePositiveVerify the component renders correctlyAdd the True or False component to an activity Component is added with default header, instruction, and options"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Verify header text input",
+      "expected": "",
+      "raw": "TC_11 True or FalsePositiveVerify header text inputEnter text in Header field Header updates and displays entered text"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Negative",
+      "description": "Verify empty headerLeave header blank and preview No header is shown in preview and reader",
+      "expected": "",
+      "raw": "TC_12 True or FalseNegativeVerify empty headerLeave header blank and preview No header is shown in preview and reader"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify instruction text input",
+      "expected": "",
+      "raw": "TC_13 True or FalsePositiveVerify instruction text inputEnter instruction text (e.g., \"Choose one option\") Instruction updates and displays correctly"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Negative",
+      "description": "Verify empty instructionLeave instruction blank Instruction area hidden or blank in reader",
+      "expected": "",
+      "raw": "TC_14 True or FalseNegativeVerify empty instructionLeave instruction blank Instruction area hidden or blank in reader"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify option text input",
+      "expected": "",
+      "raw": "TC_15 True or FalsePositiveVerify option text inputEnter text for Option 1 and Option 2Options display entered text"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functional",
+      "description": "True or FalseEdgeVerify special characters in options",
+      "expected": "",
+      "raw": "TC_16 True or FalseEdgeVerify special characters in optionsEnter symbols or emoji in optionsText is accepted and rendered properly"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify long option text wrapping",
+      "expected": "",
+      "raw": "TC_17 True or FalsePositiveVerify long option text wrappingEnter long text exceeding container widthText wraps correctly without overflow"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify line break support",
+      "expected": "",
+      "raw": "TC_18 True or FalsePositiveVerify line break supportEnter text with line breaks in optionsLine breaks are preserved in reader"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify Add Media - Image",
+      "expected": "",
+      "raw": "TC_19 True or FalsePositiveVerify Add Media - ImageEnable \"Add Media\", select Image, upload imageImage displays next to options"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify Add Media - Video",
+      "expected": "",
+      "raw": "TC_20 True or FalsePositiveVerify Add Media - VideoEnable \"Add Media\", select Video, upload videoVideo displays with player controls"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify Add Media - Audio",
+      "expected": "",
+      "raw": "TC_21 True or FalsePositiveVerify Add Media - AudioEnable \"Add Media\", select Audio, upload audioAudio player displays correctly"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify media alignment - LeftUpload media and set Align to LeftMedia shows to the left of options",
+      "expected": "",
+      "raw": "TC_22 True or FalsePositiveVerify media alignment - LeftUpload media and set Align to LeftMedia shows to the left of options"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify media alignment - RightUpload media and set Align to RightMedia shows to the right of options",
+      "expected": "",
+      "raw": "TC_23 True or FalsePositiveVerify media alignment - RightUpload media and set Align to RightMedia shows to the right of options"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify removing mediaAdd media and then uncheck \"Add Media\" Media removed from preview and reader",
+      "expected": "",
+      "raw": "TC_24 True or FalsePositiveVerify removing mediaAdd media and then uncheck \"Add Media\" Media removed from preview and reader"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify Show Header toggleUncheck \"Show Header\" Header section hides in preview and reader",
+      "expected": "",
+      "raw": "TC_25 True or FalsePositiveVerify Show Header toggleUncheck \"Show Header\" Header section hides in preview and reader"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Positive",
+      "description": "Verify Show Instruction toggleUncheck \"Show Instruction\" Instruction section hides in preview and reader",
+      "expected": "",
+      "raw": "TC_26 True or FalsePositiveVerify Show Instruction toggleUncheck \"Show Instruction\" Instruction section hides in preview and reader"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Positive",
+      "description": "Verify Feedback - Generic",
+      "expected": "",
+      "raw": "TC_27 True or FalsePositiveVerify Feedback - GenericEnable Generic feedback On submission, generic feedback message shows regardless of option"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify Feedback - Individual",
+      "expected": "",
+      "raw": "TC_28 True or FalsePositiveVerify Feedback - IndividualEnable Individual feedback On submission, different feedback messages show for each option"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify Feedback - Try Again",
+      "expected": "",
+      "raw": "TC_29 True or FalsePositiveVerify Feedback - Try AgainEnable Try Again feedback When wrong option selected, prompt to try again without revealing answer"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify Feedback - Add Show Me",
+      "expected": "",
+      "raw": "TC_30 True or FalsePositiveVerify Feedback - Add Show MeEnable Add Show Me feedback When wrong option selected, user can click \"Show Me\" to reveal correct answer"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Positive",
+      "description": "Verify Feedback - Shuffle Choices",
+      "expected": "",
+      "raw": "TC_31 True or FalsePositiveVerify Feedback - Shuffle ChoicesEnable Shuffle Choices Options are displayed in random order each load"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify Feedback - Reset",
+      "expected": "",
+      "raw": "TC_32 True or FalsePositiveVerify Feedback - ResetEnable Reset User can reset and reattempt after submitting"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify selecting correct option Mark Option 1 as correct, select in preview, submitSuccess feedback shows",
+      "expected": "",
+      "raw": "TC_33 True or FalsePositiveVerify selecting correct option Mark Option 1 as correct, select in preview, submitSuccess feedback shows"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify selecting incorrect optionMark Option 2 as correct, select Option 1Failure or Try Again feedback shows",
+      "expected": "",
+      "raw": "TC_34 True or FalsePositiveVerify selecting incorrect optionMark Option 2 as correct, select Option 1Failure or Try Again feedback shows"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify publishing the activityCreate activity, save, and publishActivity is available in Reader",
+      "expected": "",
+      "raw": "TC_35 True or FalsePositiveVerify publishing the activityCreate activity, save, and publishActivity is available in Reader"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Positive",
+      "description": "Verify launching in ReaderLaunch published activity All configured content and feedback display correctly",
+      "expected": "",
+      "raw": "TC_36 True or FalsePositiveVerify launching in ReaderLaunch published activity All configured content and feedback display correctly"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Positive",
+      "description": "Verify editing after publishingEdit question text, republish Reader shows updated text after relaunch",
+      "expected": "",
+      "raw": "TC_37 True or FalsePositiveVerify editing after publishingEdit question text, republish Reader shows updated text after relaunch"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Positive",
+      "description": "Verify editing media after publishingReplace image/video/audio and republishReader displays updated media",
+      "expected": "",
+      "raw": "TC_38 True or FalsePositiveVerify editing media after publishingReplace image/video/audio and republishReader displays updated media"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Negative",
+      "description": "Verify empty options errorRemove text from all options, saveValidation error prevents publishing",
+      "expected": "",
+      "raw": "TC_39 True or FalseNegativeVerify empty options errorRemove text from all options, saveValidation error prevents publishing"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functional",
+      "description": "True or FalseEdgeVerify publishing with no feedback selectedDisable all feedback options, publishNo feedback displayed in Reader",
+      "expected": "",
+      "raw": "TC_40 True or FalseEdgeVerify publishing with no feedback selectedDisable all feedback options, publishNo feedback displayed in Reader"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functional",
+      "description": "True or FalseEdgeVerify very long header text",
+      "expected": "",
+      "raw": "TC_41 True or FalseEdgeVerify very long header textEnter 500+ characters in headerText wraps or truncates gracefully"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Security",
+      "description": "Verify special characters in header",
+      "expected": "",
+      "raw": "TC_42 True or FalseSecurityVerify special characters in headerEnter tags in headerTags are escaped; no script executes"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Positive",
+      "description": "Verify preview accuracyCheck preview matches reader view exactlyConsistency confirmed",
+      "expected": "",
+      "raw": "TC_43 True or FalsePositiveVerify preview accuracyCheck preview matches reader view exactlyConsistency confirmed"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Positive",
+      "description": "Verify mobile responsivenessLaunch on mobile deviceAll text and media adapt to screen size",
+      "expected": "",
+      "raw": "TC_44 True or FalsePositiveVerify mobile responsivenessLaunch on mobile deviceAll text and media adapt to screen size"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Positive",
+      "description": "Verify toggling feedback combinations",
+      "expected": "",
+      "raw": "TC_45 True or FalsePositiveVerify toggling feedback combinations Enable different combinations (e.g., Individual + Try Again)Correct behavior per combination"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Positive",
+      "description": "Verify reordering options manuallyDrag Option 2 above Option 1Order updates and persists after save",
+      "expected": "",
+      "raw": "TC_46 True or FalsePositiveVerify reordering options manuallyDrag Option 2 above Option 1Order updates and persists after save"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Accessibility",
+      "description": "Verify alt text for mediaAdd alt text for image/videoAlt text available for screen readers",
+      "expected": "",
+      "raw": "TC_47 True or FalseAccessibilityVerify alt text for mediaAdd alt text for image/videoAlt text available for screen readers"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Negative",
+      "description": "Verify error on invalid media formatUpload unsupported file typeError message displays",
+      "expected": "",
+      "raw": "TC_48 True or FalseNegativeVerify error on invalid media formatUpload unsupported file typeError message displays"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functional",
+      "description": "True or FalseEdgeVerify removing all media and feedbackSave component without media/feedback Component saves and renders empty state gracefully",
+      "expected": "",
+      "raw": "TC_49 True or FalseEdgeVerify removing all media and feedbackSave component without media/feedback Component saves and renders empty state gracefully"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Positive",
+      "description": "Verify Generic Feedback when correct option selected",
+      "expected": "",
+      "raw": "TC_50 True or FalsePositive Verify Generic Feedback when correct option selected 1. Enable Generic Feedback. 2. Enter custom Correct and Incorrect messages. 3. Select correct option in preview. 4. Click Submit. Generic Correct feedback message displays (e.g., “Congratulations! Your answer is correct.”)"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Positive",
+      "description": "Verify Generic Feedback when incorrect option selected",
+      "expected": "",
+      "raw": "TC_51 True or FalsePositive Verify Generic Feedback when incorrect option selected 1. Enable Generic Feedback. 2. Select incorrect option. 3. Click Submit. Generic Incorrect feedback message displays (e.g., “Oops! You have selected the wrong answer.”)"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functional",
+      "description": "True or FalseEdgeVerify Generic Feedback with empty messages",
+      "expected": "",
+      "raw": "TC_52 True or FalseEdgeVerify Generic Feedback with empty messages 1. Enable Generic Feedback .2. Leave both messages blank. 3. Submit any option. Default system feedback messages display"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Positive",
+      "description": "Verify Try Again Feedback on first incorrect attempt",
+      "expected": "",
+      "raw": "TC_53 True or FalsePositive Verify Try Again Feedback on first incorrect attempt 1. Enable Try Again Feedback. 2. Set Number of attempts = 2. 3. Select incorrect option.4. Submit. “Try Again” prompt appears, allowing user to reattempt"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Positive",
+      "description": "Verify Try Again Feedback decrements attempt count",
+      "expected": "",
+      "raw": "TC_54 True or FalsePositive Verify Try Again Feedback decrements attempt count 1. Enable Try Again Feedback with 2 attempts. 2. Submit incorrect option twice. 3. Submit again. After last attempt, final feedback is shown; no further reattempt allowed"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Positive",
+      "description": "Verify Try Again Feedback with Number of attempts = 1",
+      "expected": "",
+      "raw": "TC_55 True or FalsePositive Verify Try Again Feedback with Number of attempts = 1 1. Set attempts = 1. 2. Submit incorrect option. 3. Try submitting again. “Try Again” appears once; second submission triggers final feedback"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Positive",
+      "description": "Verify Add Show Me Feedback functionality",
+      "expected": "",
+      "raw": "TC_56 True or FalsePositiveVerify Add Show Me Feedback functionality 1. Enable Add Show Me Feedback. 2. Submit incorrect option. 3. Click “Show Me” button. Correct option is highlighted and revealed"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Positive",
+      "description": "Verify Add Show Me with Try Again enabled",
+      "expected": "",
+      "raw": "TC_57 True or FalsePositiveVerify Add Show Me with Try Again enabled 1. Enable Try Again and Add Show Me. 2. Submit incorrect option 3. After failed attempts, click “Show Me”. System displays correct answer only after all attempts are exhausted"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Positive",
+      "description": "Verify Add Show Me disabled",
+      "expected": "",
+      "raw": "TC_58 True or FalsePositiveVerify Add Show Me disabled 1. Disable Add Show Me. 2. Submit incorrect option.No “Show Me” button appears"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Positive",
+      "description": "Verify Reset icon resets selection and feedback",
+      "expected": "",
+      "raw": "TC_59 True or FalsePositiveVerify Reset icon resets selection and feedback 1. Select an option. 2. Submit and view feedback. 3. Click the Reset icon. All selections and feedback are cleared; user can reattempt"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Positive",
+      "description": "Verify Reset without prior submission",
+      "expected": "",
+      "raw": "TC_60 True or FalsePositiveVerify Reset without prior submission 1. Select option but do not submit. 2. Click Reset icon.Option selection clears"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Positive",
+      "description": "Verify feedback in Reader after publishing",
+      "expected": "",
+      "raw": "TC_61 True or FalsePositiveVerify feedback in Reader after publishing 1. Publish the activity with all feedback enabled. 2. Launch in Reader. 3. Complete submission flow. Same feedback behavior works identically in Reader"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Positive",
+      "description": "Verify Reset icon hidden when Reset disabled",
+      "expected": "",
+      "raw": "TC_62 True or FalsePositiveVerify Reset icon hidden when Reset disabled 1. Disable Reset in Settings. 2. Preview component.Reset icon not displayed"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Positive",
+      "description": "Verify combination: Generic + Try Again + Add Show Me + Reset",
+      "expected": "",
+      "raw": "TC_63 True or FalsePositive Verify combination: Generic + Try Again + Add Show Me + Reset 1. Enable all feedback options. 2. Submit incorrect option. 3. Use Try Again, Show Me, and Reset. All feedback and controls function together without conflicts"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Positive",
+      "description": "Verify line breaks in Generic Feedback messages",
+      "expected": "",
+      "raw": "TC_64 True or FalsePositive Verify line breaks in Generic Feedback messages 1. Enter line breaks in Correct/Incorrect messages. 2. Submit.Feedback text respects line breaks"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Security",
+      "description": "Verify special characters in Generic Feedback",
+      "expected": "",
+      "raw": "TC_65 True or FalseSecurityVerify special characters in Generic Feedback 1. Add special characters (&, %, <, >) in messages. 2. Submit. Special characters are displayed safely, not rendered as HTML"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Accessibility",
+      "description": "Verify feedback accessibility (screen reader)",
+      "expected": "",
+      "raw": "TC_66 True or FalseAccessibilityVerify feedback accessibility (screen reader) 1. Submit an answer. 2. Use screen reader. Feedback text is read aloud by assistive technology"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Positive",
+      "description": "Verify Try Again resets option selection after each attempt",
+      "expected": "",
+      "raw": "TC_67 True or FalsePositive Verify Try Again resets option selection after each attempt 1. Enable Try Again with 2 attempts. 2. Submit incorrect option. 3. Observe behavior. Option remains selected or clears as per design spec (to be verified)"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functional",
+      "description": "True or FalseEdge Verify feedback persists on page reload before reset",
+      "expected": "",
+      "raw": "TC_68 True or FalseEdge Verify feedback persists on page reload before reset 1. Submit an answer. 2. Reload page. 3. Observe feedback state. Feedback persists or resets per system spec"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functional",
+      "description": "True or FalseEdge Verify no feedback displayed when all feedback options are disabled",
+      "expected": "",
+      "raw": "TC_69 True or FalseEdge Verify no feedback displayed when all feedback options are disabled 1. Uncheck all feedback options. 2. Submit answer.No feedback appears"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Positive",
+      "description": "Verify Individual Feedback for correct option",
+      "expected": "",
+      "raw": "TC_70 True or FalsePositiveVerify Individual Feedback for correct option 1. Enable Individual Feedback. 2. Enter text in correct option feedback. 3. Select correct option. 4. Submit. Correct option-specific feedback is displayed."
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Positive",
+      "description": "Verify Individual Feedback for incorrect option",
+      "expected": "",
+      "raw": "TC_71 True or FalsePositiveVerify Individual Feedback for incorrect option 1. Enable Individual Feedback. 2. Enter text in incorrect option feedback. 3. Select incorrect option. 4. Submit. Incorrect option-specific feedback is displayed."
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functional",
+      "description": "True or FalseEdge Verify Individual Feedback fallback when no text entered",
+      "expected": "",
+      "raw": "TC_72 True or FalseEdge Verify Individual Feedback fallback when no text entered 1. Enable Individual Feedback. 2. Leave feedback field blank. 3. Submit any option. No feedback displayed or default generic feedback shown (as per spec)."
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Positive",
+      "description": "Verify editing Individual Feedback updates content",
+      "expected": "",
+      "raw": "TC_73 True or FalsePositive Verify editing Individual Feedback updates content 1. Enter feedback text. 2. Save activity. 3. Re-edit text. 4. Submit answer.Latest edited feedback is shown."
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Positive",
+      "description": "Verify Individual Feedback persists after publishing",
+      "expected": "",
+      "raw": "TC_74 True or FalsePositive Verify Individual Feedback persists after publishing 1. Publish activity with Individual Feedback enabled. 2. Launch in Reader. 3. Submit answer. Feedback works the same in Reader mode."
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Positive",
+      "description": "Verify adding video feedback to an option",
+      "expected": "",
+      "raw": "TC_75 True or FalsePositiveVerify adding video feedback to an option 1. Enable Individual Feedback. 2. Upload video feedback file for an option. 3. Submit answer.Video playback is available as feedback."
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Positive",
+      "description": "Verify enabling Video by URL",
+      "expected": "",
+      "raw": "TC_76 True or FalsePositiveVerify enabling Video by URL 1. Check Add Media .2. Select Video. 3. Select Upload by URL.URL input field is visible and enabled."
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Positive",
+      "description": "Verify entering valid YouTube URL ID",
+      "expected": "",
+      "raw": "TC_77 True or FalsePositiveVerify entering valid YouTube URL ID 1. Enter valid YouTube video ID. 2. Save activity. 3. Submit answer. Video player loads and displays video thumbnail."
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Positive",
+      "description": "Verify video playback from URL",
+      "expected": "",
+      "raw": "TC_78 True or FalsePositiveVerify video playback from URL 1. Enter valid YouTube video ID. 2. Submit answer. 3. Click Play.Video streams and plays correctly."
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Negative",
+      "description": "Verify invalid YouTube video ID handling",
+      "expected": "",
+      "raw": "TC_79 True or FalseNegativeVerify invalid YouTube video ID handling 1. Enter invalid YouTube ID (e.g., “xyz”). 2. Submit answer. Error message displayed or no video loads."
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Negative",
+      "description": "Verify empty YouTube video ID field",
+      "expected": "",
+      "raw": "TC_80 True or FalseNegativeVerify empty YouTube video ID field 1. Leave video ID empty. 2. Submit answer. No video appears; system handles gracefully without errors."
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Positive",
+      "description": "Verify switching from Upload by URL to Upload by System",
+      "expected": "",
+      "raw": "TC_81 True or FalsePositive Verify switching from Upload by URL to Upload by System 1. Enter video ID. 2. Switch to Upload by System. 3. Upload a video. 4. Submit answer.Uploaded video replaces URL video."
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Positive",
+      "description": "Verify deleting URL video input",
+      "expected": "",
+      "raw": "TC_82 True or FalsePositiveVerify deleting URL video input 1. Enter video ID. 2. Remove it (clear field). 3. Submit answer.No video feedback is shown."
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Positive",
+      "description": "Verify combining Video by URL with text feedback",
+      "expected": "",
+      "raw": "TC_83 True or FalsePositive Verify combining Video by URL with text feedback 1. Enter video ID. 2. Enter text feedback. 3. Submit answer. Both video and text feedback are displayed."
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Positive",
+      "description": "Verify alignment of video when set to Right",
+      "expected": "",
+      "raw": "TC_84 True or FalsePositiveVerify alignment of video when set to Right 1. Enter video ID. 2. Select Align: Right. 3. Submit answer. Video appears on the right side of the component."
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Positive",
+      "description": "Verify alignment of video when set to Left",
+      "expected": "",
+      "raw": "TC_85 True or FalsePositiveVerify alignment of video when set to Left 1. Enter video ID. 2. Select Align: Left. 3. Submit answer.Video appears on the left side."
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functional",
+      "description": "True or FalseUsabilityVerify responsiveness on different screen sizes",
+      "expected": "",
+      "raw": "TC_86 True or FalseUsabilityVerify responsiveness on different screen sizes 1. Enter video ID. 2. Submit answer. 3. View on mobile/tablet. Video resizes responsively without cropping."
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Positive",
+      "description": "Verify video URL persists after saving and reloading editor",
+      "expected": "",
+      "raw": "TC_87 True or FalsePositive Verify video URL persists after saving and reloading editor 1. Enter video ID. 2. Save. 3. Reopen activity in editor.Video ID remains populated."
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Accessibility",
+      "description": "Verify accessibility labels for video",
+      "expected": "",
+      "raw": "TC_88 True or FalseAccessibilityVerify accessibility labels for video 1. Submit answer with video feedback. 2. Use screen reader. Video is announced with appropriate labels (e.g., “video feedback”)."
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Negative",
+      "description": "Verify unsupported video platform handling",
+      "expected": "",
+      "raw": "TC_89 True or FalseNegativeVerify unsupported video platform handling 1. Try entering a Vimeo or non-YouTube ID. 2. Submit answer.Error shown or video not loaded."
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functionality",
+      "description": "Verify security handling of invalid or malicious URLs",
+      "expected": "",
+      "raw": "TC_90 True or FalseFunctionality Verify security handling of invalid or malicious URLs 1. Enter script injection as video ID (e.g., <script>alert(1)</script>).2. Submit answer.Input sanitized and no script executes."
+    }
+  ]
+}

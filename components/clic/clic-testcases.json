@@ -1,0 +1,276 @@
+{
+  "component": "CLIC (Sketchpad)",
+  "slug": "clic",
+  "dataType": "clic",
+  "source": "Author Test Cases - CLIC.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - CLIC.pdf",
+  "pages": 1,
+  "extractedCount": 33,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01CLIC ComponentUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic infoActivity creation page should display with Basic info screen",
+      "raw": "TC_02CLIC Component Functionality Verify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic infoActivity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03CLIC Component FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI",
+      "description": "Verify the CLIC icon is displayed in the Widgets trayOpen Generic Step → Check Widgets trayCLIC icon is visible and matches design spec",
+      "expected": "",
+      "raw": "TC_04CLIC ComponentUI Verify the CLIC icon is displayed in the Widgets trayOpen Generic Step → Check Widgets trayCLIC icon is visible and matches design spec"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functional",
+      "description": "Verify author can drag and drop CLIC component inside a layout section (Generic Step only)Drag CLIC component from Widgets tray into a sectionCLIC pop-up is displayed inside the section",
+      "expected": "",
+      "raw": "TC_05CLIC ComponentFunctional Verify author can drag and drop CLIC component inside a layout section (Generic Step only)Drag CLIC component from Widgets tray into a sectionCLIC pop-up is displayed inside the section"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functional",
+      "description": "Verify author can drag and drop CLIC component outside a layout section (Generic Step only) Drag CLIC component outside section but within Generic StepCLIC pop-up is displayed outside section",
+      "expected": "",
+      "raw": "TC_06CLIC ComponentFunctional Verify author can drag and drop CLIC component outside a layout section (Generic Step only) Drag CLIC component outside section but within Generic StepCLIC pop-up is displayed outside section"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functional",
+      "description": "Verify CLIC component is not allowed in non-generic step typesTry adding CLIC in non-generic stepsError message or no action should occur",
+      "expected": "",
+      "raw": "TC_07CLIC ComponentFunctional Verify CLIC component is not allowed in non-generic step typesTry adding CLIC in non-generic stepsError message or no action should occur"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI",
+      "description": "Verify the CLIC pop-up opens with fields: CLIC Identifier, Instance Name, Submit ButtonDrop component → Observe pop-upAll fields and Submit button are visible as per design",
+      "expected": "",
+      "raw": "TC_08CLIC ComponentUI Verify the CLIC pop-up opens with fields: CLIC Identifier, Instance Name, Submit ButtonDrop component → Observe pop-upAll fields and Submit button are visible as per design"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functional",
+      "description": "Verify the Submit button is disabled if both fields are emptyOpen pop-up → Leave both fields empty → Click SubmitButton click should either do nothing or show validation error",
+      "expected": "",
+      "raw": "TC_09CLIC ComponentFunctional Verify the Submit button is disabled if both fields are emptyOpen pop-up → Leave both fields empty → Click SubmitButton click should either do nothing or show validation error"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functional",
+      "description": "Verify validation message if CLIC Identifier is empty Leave Identifier empty, enter value in Instance Name → Click SubmitError message shown: “CLIC Identifier is required”",
+      "expected": "",
+      "raw": "TC_10CLIC ComponentFunctional Verify validation message if CLIC Identifier is empty Leave Identifier empty, enter value in Instance Name → Click SubmitError message shown: “CLIC Identifier is required”"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "Verify validation message if Instance Name is empty",
+      "expected": "",
+      "raw": "TC_11CLIC ComponentFunctional Verify validation message if Instance Name is emptyEnter Identifier, leave Instance Name empty → Click SubmitError message shown: “Instance Name is required”"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functional",
+      "description": "Verify valid values can be entered in both fields",
+      "expected": "",
+      "raw": "TC_12CLIC ComponentFunctional Verify valid values can be entered in both fieldsEnter alphanumeric/valid strings in both fieldsFields accept input"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functional",
+      "description": "Verify Submit button works when both fields are filledFill both fields → Click SubmitData saved or submitted successfully, pop-up closes",
+      "expected": "",
+      "raw": "TC_13CLIC ComponentFunctional Verify Submit button works when both fields are filledFill both fields → Click SubmitData saved or submitted successfully, pop-up closes"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI",
+      "description": "Verify UI spacing, alignment, and padding for all fields and buttonObserve layout of the pop-upMatches Figma spec; no misaligned fields",
+      "expected": "",
+      "raw": "TC_14CLIC ComponentUI Verify UI spacing, alignment, and padding for all fields and buttonObserve layout of the pop-upMatches Figma spec; no misaligned fields"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functional",
+      "description": "Verify special characters are handled in Identifier and Instance Name",
+      "expected": "",
+      "raw": "TC_15CLIC ComponentFunctional Verify special characters are handled in Identifier and Instance NameEnter characters like @#$%^&*()If not allowed, show validation; if allowed, data saved"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI",
+      "description": "Verify long text truncation or wrapping behavior",
+      "expected": "",
+      "raw": "TC_16CLIC ComponentUI Verify long text truncation or wrapping behaviorEnter 100+ character strings in fieldsText wraps inside input or shows max-length error"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Integration",
+      "description": "Verify Submit triggers appropriate backend/save logic Fill values → Submit → Check network or log for save requestSave/submit request triggered",
+      "expected": "",
+      "raw": "TC_17CLIC ComponentIntegration Verify Submit triggers appropriate backend/save logic Fill values → Submit → Check network or log for save requestSave/submit request triggered"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functional",
+      "description": "Verify author can edit the values in the pop-up after re-opening componentAdd → Submit → Reopen same component → Edit valuesPreviously saved data is shown and editable",
+      "expected": "",
+      "raw": "TC_18CLIC ComponentFunctional Verify author can edit the values in the pop-up after re-opening componentAdd → Submit → Reopen same component → Edit valuesPreviously saved data is shown and editable"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Regression",
+      "description": "Verify CLIC component is retained after save, preview, and re-editSave activity with CLIC → Preview → Re-editCLIC component with entered data is preserved",
+      "expected": "",
+      "raw": "TC_19CLIC ComponentRegression Verify CLIC component is retained after save, preview, and re-editSave activity with CLIC → Preview → Re-editCLIC component with entered data is preserved"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functional",
+      "description": "Verify activity with CLIC component can be publishedSave → PublishNo error, activity published successfully",
+      "expected": "",
+      "raw": "TC_20CLIC ComponentFunctional Verify activity with CLIC component can be publishedSave → PublishNo error, activity published successfully"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI",
+      "description": "/Responsive Verify responsive behavior of pop-up in different screen sizesResize window or preview in mobile/tablet/desktopPop-up layout adjusts responsively",
+      "expected": "",
+      "raw": "TC_21CLIC ComponentUI/Responsive Verify responsive behavior of pop-up in different screen sizesResize window or preview in mobile/tablet/desktopPop-up layout adjusts responsively"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functional",
+      "description": "Verify user cannot drag and drop more than allowed number of CLIC components (if any limit exists)Try adding multiple CLIC componentsLimit enforced (if applicable)",
+      "expected": "",
+      "raw": "TC_22CLIC ComponentFunctional Verify user cannot drag and drop more than allowed number of CLIC components (if any limit exists)Try adding multiple CLIC componentsLimit enforced (if applicable)"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functional",
+      "description": "CLIC ComponentUsability Verify that clicking outside the popup closes the component gracefully (if applicable)Click outside the CLIC pop-upPop-up closes or ignores outside click gracefully",
+      "expected": "",
+      "raw": "TC_23CLIC ComponentUsability Verify that clicking outside the popup closes the component gracefully (if applicable)Click outside the CLIC pop-upPop-up closes or ignores outside click gracefully"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functional",
+      "description": "Verify CLIC Identifier is retained after activity is saved",
+      "expected": "Save the activityCLIC Identifier is saved and retained in authoring data",
+      "raw": "TC_24CLIC ComponentFunctional Verify CLIC Identifier is retained after activity is saved 1. Create new activity → Add generic step2. Drag and drop CLIC Component3. Enter CLIC Identifier4. Save the activityCLIC Identifier is saved and retained in authoring data"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functional",
+      "description": "Verify CLIC Component auto-launches on activity re-open",
+      "expected": "Reopen the same activity in authoring CLIC Component is shown automatically with previously entered Identifier populated",
+      "raw": "TC_25CLIC ComponentFunctional Verify CLIC Component auto-launches on activity re-open 1. Close the saved activity2. Reopen the same activity in authoring CLIC Component is shown automatically with previously entered Identifier populated"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functional",
+      "description": "Verify no prompt is displayed again for CLIC Identifier after relaunchFollow TC_CLIC_22 steps CLIC Identifier input fields should not be shown again unless explicitly edited",
+      "expected": "",
+      "raw": "TC_26CLIC ComponentFunctional Verify no prompt is displayed again for CLIC Identifier after relaunchFollow TC_CLIC_22 steps CLIC Identifier input fields should not be shown again unless explicitly edited"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Regression",
+      "description": "Verify CLIC Component persists even after author logs out and logs back in",
+      "expected": "Open saved activity CLIC Component launches with previously entered data without prompting again",
+      "raw": "TC_27CLIC ComponentRegression Verify CLIC Component persists even after author logs out and logs back in 1. Save activity with CLIC Identifier2. Log out and log in again3. Open saved activity CLIC Component launches with previously entered data without prompting again"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functional",
+      "description": "Verify that editing the CLIC Identifier updates the value and persists across relaunch",
+      "expected": "Reopen the activityUpdated CLIC Identifier is displayed and used in auto-launch",
+      "raw": "TC_28CLIC ComponentFunctional Verify that editing the CLIC Identifier updates the value and persists across relaunch 1. Edit CLIC Identifier field → Save → Close activity2. Reopen the activityUpdated CLIC Identifier is displayed and used in auto-launch"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functional",
+      "description": "Verify CLIC Component launches automatically in Preview mode with saved Identifier",
+      "expected": "Preview activity CLIC component loads and functions based on stored Identifier",
+      "raw": "TC_29CLIC ComponentFunctional Verify CLIC Component launches automatically in Preview mode with saved Identifier 1. Save activity after entering CLIC Identifier2. Preview activity CLIC component loads and functions based on stored Identifier"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functional",
+      "description": "Verify CLIC Component doesn’t launch if Identifier wasn’t entered before saving",
+      "expected": "Save and reopen activity CLIC Component remains inactive or prompts for missing Identifier",
+      "raw": "TC_30CLIC ComponentFunctional Verify CLIC Component doesn’t launch if Identifier wasn’t entered before saving 1. Add CLIC without entering Identifier2. Save and reopen activity CLIC Component remains inactive or prompts for missing Identifier"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functional",
+      "description": "Verify CLIC Component handles multiple CLIC instances with different Identifiers properly across relaunches",
+      "expected": "Save and reopen activity Each CLIC Component is loaded with correct and previously saved Identifier",
+      "raw": "TC_31CLIC ComponentFunctional Verify CLIC Component handles multiple CLIC instances with different Identifiers properly across relaunches 1. Add 2+ CLIC Components with unique Identifiers2. Save and reopen activity Each CLIC Component is loaded with correct and previously saved Identifier"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functional",
+      "description": "Verify no data loss occurs during relaunch with previously saved CLIC Component",
+      "expected": "Save, close, reopenAll data including CLIC is intact",
+      "raw": "TC_32CLIC ComponentFunctional Verify no data loss occurs during relaunch with previously saved CLIC Component 1. Add CLIC + Identifier2. Add extra content (e.g., MTP, Text)3. Save, close, reopenAll data including CLIC is intact"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functional",
+      "description": "Verify activity with saved CLIC launches in CLP with correct behavior and Identifier reflected",
+      "expected": "Launch in CLP as teacher/student CLIC component appears as expected, correctly tied to the stored Identifier",
+      "raw": "TC_33CLIC ComponentFunctional Verify activity with saved CLIC launches in CLP with correct behavior and Identifier reflected 1. Add CLIC + Identifier2. Save + Publish3. Launch in CLP as teacher/student CLIC component appears as expected, correctly tied to the stored Identifier"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "component": "Image Labeling",
+  "slug": "image-labeling",
+  "dataType": "imageLabeling",
+  "source": "Author Test Cases - Image labeling.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Image labeling.pdf",
+  "pages": 1,
+  "extractedCount": 12,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "Functional",
+      "description": "Verify images of various dimensions upload without distortion or cropping in Image Labeling.",
+      "expected": "Drag image labeling Upload images of varying dimensions All image sizes should upload successfully without distortion or cropping",
+      "raw": "TC_01Image LabelingFunctional Verify images of various dimensions upload without distortion or cropping in Image Labeling. 1. Create activity and start authoring 2.Create multipart component 3.Drag image labeling Upload images of varying dimensions All image sizes should upload successfully without distortion or cropping"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functional",
+      "description": "Validate only supported image extensions (.jpg, .svg, . png) upload successfully; unsupported formats rejected.Upload images with extensions: .Jpg, .Svg, .png. All supported extensions should upload without error; unsupp",
+      "expected": "",
+      "raw": "TC_02Image LabelingFunctional Validate only supported image extensions (.jpg, .svg, . png) upload successfully; unsupported formats rejected.Upload images with extensions: .Jpg, .Svg, .png. All supported extensions should upload without error; unsupported formats should be rejected"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functional",
+      "description": "Image LabelingBoundary Ensure a maximum of 20 labels can be added in Image Labeling; restrict adding the 21st label.Add labels incrementally up to 20 System should allow exactly 20 labels; 21st label should be restricted",
+      "expected": "",
+      "raw": "TC_03Image LabelingBoundary Ensure a maximum of 20 labels can be added in Image Labeling; restrict adding the 21st label.Add labels incrementally up to 20 System should allow exactly 20 labels; 21st label should be restricted"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functional",
+      "description": "Verify labels of both Text and Number types are added and displayed correctly.Add labels using both Text and Number types Labels should reflect correct type and display accordingly",
+      "expected": "",
+      "raw": "TC_04Image LabelingFunctional Verify labels of both Text and Number types are added and displayed correctly.Add labels using both Text and Number types Labels should reflect correct type and display accordingly"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "Ensure settings panel in Image Labeling remains fixed and visible during component scroll. Open settings panel and scroll through the component Settings panel should remain fixed and visible during scroll",
+      "expected": "",
+      "raw": "TC_05Image LabelingUI Ensure settings panel in Image Labeling remains fixed and visible during component scroll. Open settings panel and scroll through the component Settings panel should remain fixed and visible during scroll"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functional",
+      "description": "Check that toggling \"Show Instruction\" reflects immediately on the image component. Toggle “Show Instruction” from settings and observe image component Instruction text should appear/disappear based on toggle state",
+      "expected": "",
+      "raw": "TC_06Image LabelingFunctional Check that toggling \"Show Instruction\" reflects immediately on the image component. Toggle “Show Instruction” from settings and observe image component Instruction text should appear/disappear based on toggle state"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functional",
+      "description": "Verify \"Show Arrow\" toggle shows or hides arrow on image component as expected. Toggle “Show Arrow” from settings and observe image component Arrow should appear/disappear based on toggle state",
+      "expected": "",
+      "raw": "TC_07Image LabelingFunctional Verify \"Show Arrow\" toggle shows or hides arrow on image component as expected. Toggle “Show Arrow” from settings and observe image component Arrow should appear/disappear based on toggle state"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functional",
+      "description": "Verify \"Show Header\" toggle shows or hides header on image component as expected. Toggle “Show Header” from settings and observe image component Header should appear/disappear based on toggle state",
+      "expected": "",
+      "raw": "TC_08Image LabelingFunctional Verify \"Show Header\" toggle shows or hides header on image component as expected. Toggle “Show Header” from settings and observe image component Header should appear/disappear based on toggle state"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI",
+      "description": "Confirm that style changes in settings are reflected immediately on the Image Labeling component.Apply different styles from the availabel styles. Image labeling component should reflect selected styles immediately",
+      "expected": "",
+      "raw": "TC_09Image LabelingUI Confirm that style changes in settings are reflected immediately on the Image Labeling component.Apply different styles from the availabel styles. Image labeling component should reflect selected styles immediately"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functional",
+      "description": "Verify multiple tags can be added in settings and are displayed correctly in the component.Click “Add Tags” in settings and input multiple tags Tags should be added and displayed correctly in the component",
+      "expected": "",
+      "raw": "TC_10Image LabelingFunctional Verify multiple tags can be added in settings and are displayed correctly in the component.Click “Add Tags” in settings and input multiple tags Tags should be added and displayed correctly in the component"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "Ensure special characters and symbols are accepted and rendered in all text input fields.",
+      "expected": "",
+      "raw": "TC_11Image LabelingFunctional Ensure special characters and symbols are accepted and rendered in all text input fields. Enter text, special characters, and symbols in Header, Instruction, Question, Caption boxes All characters should be accepted and rendered correctly"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functional",
+      "description": "Validate replacing the image with a smaller or larger one updates correctly without layout issues.Replace existing image with smaller/larger image New image should replace old one and render correctly without layout issu",
+      "expected": "",
+      "raw": "TC_12Image LabelingFunctional Validate replacing the image with a smaller or larger one updates correctly without layout issues.Replace existing image with smaller/larger image New image should replace old one and render correctly without layout issues"
+    }
+  ]
+}

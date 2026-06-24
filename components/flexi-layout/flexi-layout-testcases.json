@@ -1,0 +1,708 @@
+{
+  "component": "Flexi Layout",
+  "slug": "flexi-layout",
+  "dataType": "layout-7",
+  "source": "Author Test Cases - Flexi Layout.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Flexi Layout.pdf",
+  "pages": 13,
+  "extractedCount": 87,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Author Math - Flexi LayoutUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Author Math - Flexi Layout FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03Author Math - Flexi Layout FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Author Math - Flexi Layout FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05Author Math - Flexi Layout FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Author Math - Flexi Layout Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Author Math - Flexi Layout Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Author Math - Flexi Layout FunctionalityVerify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Author Math - Flexi Layout FunctionalityVerify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify without entering \"Instructions for Students and teacher\" able to create steps",
+      "expected": "Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity",
+      "raw": "TC_10Author Math - Flexi Layout Functionality Verify without entering \"Instructions for Students and teacher\" able to create steps 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that all the Layouts, Elements and widgets are enabled and dragged",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets",
+      "raw": "TC_11Author Math - Flexi Layout Functionality Verify that all the Layouts, Elements and widgets are enabled and dragged 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify that column split pop up is displaying",
+      "expected": "Check Split Column Pop up for Felxi Layout is Showing Felxi Layout Split Column Pop up Should be Dispalyed",
+      "raw": "TC_12Author Math - Flexi Layout FunctionalityVerify that column split pop up is displaying 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable 8.Check Split Column Pop up for Felxi Layout is Showing Felxi Layout Split Column Pop up Should be Dispalyed"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify that up and down arrow is clickable",
+      "expected": "Click up and down arrow is clickable Up and Down Arrows Should Work for Adjust the Values for the Columns in Flexi Layout",
+      "raw": "TC_13Author Math - Flexi Layout FunctionalityVerify that up and down arrow is clickable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable 8.Check Split Column Pop up is Showing 9.Click up and down arrow is clickable Up and Down Arrows Should Work for Adjust the Values for the Columns in Flexi Layout"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify that column minimum value is \"0\"",
+      "expected": "Enter Column minimum value is \"0\"Minimum column split value should be \"0\"",
+      "raw": "TC_14Author Math - Flexi Layout FunctionalityVerify that column minimum value is \"0\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable 8.Check Split Column Pop up is Showing 9.Click up and down arrow is clickable 10.Enter Column minimum value is \"0\"Minimum column split value should be \"0\""
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify that column maximum value is \"3\"",
+      "expected": "Enter Column maximum value is \"3\"Maximum column split value should be 3",
+      "raw": "TC_15Author Math - Flexi Layout FunctionalityVerify that column maximum value is \"3\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable 8.Check Split Column Pop up is Showing 9.Click up and down arrow is clickable 10.Enter Column minimum value is \"0\" 11.Enter Column maximum value is \"3\"Maximum column split value should be 3"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify that the create button is clickable inside the split column pop up",
+      "expected": "Click Create button is Clickable inside the Spit Column PopupCreate button should be accesible",
+      "raw": "TC_16Author Math - Flexi Layout Functionality Verify that the create button is clickable inside the split column pop up 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable 8.Check Split Column Pop up is Showing 9.Click up and down arrow is clickable 10.Enter Column minimum value is \"0\" 11.Enter Column maximum value is \"3\" 12.Click Create button is Clickable inside th"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify that clicking on create button, vertical columns are created",
+      "expected": "Click on create buttonVertical columns should be created",
+      "raw": "TC_17Author Math - Flexi Layout Functionality Verify that clicking on create button, vertical columns are created 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create buttonVertical columns should be created"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify that the column ratio are splitted equally by default",
+      "expected": "Check Column ratio are Splitted EquallyThe columns should be splitted equal ratio's",
+      "raw": "TC_18Author Math - Flexi Layout FunctionalityVerify that the column ratio are splitted equally by default 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create button 9.Check Column ratio are Splitted EquallyThe columns should be splitted equal ratio's"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify that user is not able to enter alphabets inside the column",
+      "expected": "Alphabets is not able Enter inside the ColumnUser should enter only numbers",
+      "raw": "TC_19Author Math - Flexi Layout Functionality Verify that user is not able to enter alphabets inside the column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create button 9.Check Column ratio are Splitted Equally 10.Alphabets is not able Enter inside the ColumnUser should enter only numbers"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify that user is not able to enter decimal values inside the column",
+      "expected": "Enter decimal valuesUser should enter only numbers",
+      "raw": "TC_20Author Math - Flexi Layout Functionality Verify that user is not able to enter decimal values inside the column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create button 9.Check Column ratio are Splitted Equally 10.Enter decimal valuesUser should enter only numbers"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify that user is not able to enter negative values inside the column",
+      "expected": "Enter negative valuesUser should enter only numbers",
+      "raw": "TC_21Author Math - Flexi Layout Functionality Verify that user is not able to enter negative values inside the column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create button 9.Check Column ratio are Splitted Equally 10.Enter negative valuesUser should enter only numbers"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify that user not able to 3digit values inside the column",
+      "expected": "Enter 3 digit valuesUser should enter only \"2 digit\" values",
+      "raw": "TC_22Author Math - Flexi Layout FunctionalityVerify that user not able to 3digit values inside the column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Click on create button 9.Check Column ratio are Splitted Equally 10.Enter 3 digit valuesUser should enter only \"2 digit\" values"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify that entering 1 as separator, 2 columns were created",
+      "expected": "Enter values as 1 in split column2 vertical columns should be created",
+      "raw": "TC_23Author Math - Flexi Layout FunctionalityVerify that entering 1 as separator, 2 columns were created 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Enter values as 1 in split column2 vertical columns should be created"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify that entering 2 as separator, 3 columns were created",
+      "expected": "Enter values as 2 in split column3 vertical columns should be created",
+      "raw": "TC_24Author Math - Flexi Layout FunctionalityVerify that entering 2 as separator, 3 columns were created 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Enter values as 2 in split column3 vertical columns should be created"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify that entering 3 as separator, 4 columns were created",
+      "expected": "Enter values as 3 in split column4 vertical columns should be created",
+      "raw": "TC_25Author Math - Flexi Layout FunctionalityVerify that entering 3 as separator, 4 columns were created 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Enter values as 3 in split column4 vertical columns should be created"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify that entering 0 as separator, 1 columns were created",
+      "expected": "Enter values as 0 in split column1vertical columns should be created",
+      "raw": "TC_26Author Math - Flexi Layout FunctionalityVerify that entering 0 as separator, 1 columns were created 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Enter values as 0 in split column1vertical columns should be created"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify if user is able to all elements inside the flexi columns",
+      "expected": "Drag all elements inside the layoutUser should add all elements",
+      "raw": "TC_27Author Math - Flexi Layout FunctionalityVerify if user is able to all elements inside the flexi columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag all elements inside the layoutUser should add all elements"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify if user is able to all widgets inside the flexi columns",
+      "expected": "Drag all widgets inside the layoutUser should add all Widgets",
+      "raw": "TC_28Author Math - Flexi Layout FunctionalityVerify if user is able to all widgets inside the flexi columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag all widgets inside the layoutUser should add all Widgets"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify if user is able to add all layouts inside the flexi columns",
+      "expected": "Drag all layouts inside the layoutUser shouldn't add layouts",
+      "raw": "TC_29Author Math - Flexi Layout Functionality Verify if user is able to add all layouts inside the flexi columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag all layouts inside the layoutUser shouldn't add layouts"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify if user ia able to add multiple elements in single column",
+      "expected": "Drag multiple elements inside the single columnUser should add multiple elements inside the column",
+      "raw": "TC_30Author Math - Flexi Layout Functionality Verify if user ia able to add multiple elements in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multiple elements inside the single columnUser should add multiple elements inside the column"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify if user ia able to add multiple widgets in single column",
+      "expected": "Drag multiple widgets inside the single columnUser should add multiple widgets inside the column",
+      "raw": "TC_31Author Math - Flexi Layout FunctionalityVerify if user ia able to add multiple widgets in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multiple widgets inside the single columnUser should add multiple widgets inside the column"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multiple elements and widgets in single column",
+      "expected": "Drag multiple widgets and elements inside the single column User should add multiple elements and widgets inside the column",
+      "raw": "TC_32Author Math - Flexi Layout Functionality Verify if user is able to add multiple elements and widgets in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multiple widgets and elements inside the single column User should add multiple elements and widgets inside the column"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multiple elements and widgets in flexi layout",
+      "expected": "Drag multiple widgets and elements inside the flexi layout User should add multiple elements widgets inside the flexi layout",
+      "raw": "TC_33Author Math - Flexi Layout Functionality Verify if user is able to add multiple elements and widgets in flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multiple widgets and elements inside the flexi layout User should add multiple elements widgets inside the flexi layout"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multipart inside the flexi layout columns",
+      "expected": "Drag multipart component inside the flexi layout User should add multipart component inside the flexi layout",
+      "raw": "TC_34Author Math - Flexi Layout Functionality Verify if user is able to add multipart inside the flexi layout columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multipart component inside the flexi layout User should add multipart component inside the flexi layout"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multipart question widget multiple times in the single column",
+      "expected": "Drag multipart component multiple times inside the flexi layout User should add multiple multipart component inside the flexi layout",
+      "raw": "TC_35Author Math - Flexi Layout Functionality Verify if user is able to add multipart question widget multiple times in the single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8. Drag multipart component multiple times inside the flexi layout User should add multiple multipart component inside the flexi layout"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify if user is able to add same element/ widgets multiple times inside the single column",
+      "expected": "Drag Some Elements and widgets multiple times in the single column User should add same elements /widgets multiple times",
+      "raw": "TC_36Author Math - Flexi Layout Functionality Verify if user is able to add same element/ widgets multiple times inside the single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the single column User should add same elements /widgets multiple times"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify if user is able to add same element/ widgets multiple times inside the all column",
+      "expected": "Drag Some Elements and widgets multiple times in the all column User should add same elements /widgets multiple times",
+      "raw": "TC_37Author Math - Flexi Layout Functionality Verify if user is able to add same element/ widgets multiple times inside the all column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all column User should add same elements /widgets multiple times"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "and UI Verify if all the elements and widgets are fitting properly inside the columns",
+      "expected": "Drag Some Elements and widgets multiple times in the all columnThe Components should fit properly inside the layouts",
+      "raw": "TC_38Author Math - Flexi Layout Functionality and UI Verify if all the elements and widgets are fitting properly inside the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all columnThe Components should fit properly inside the layouts"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the flexi layout",
+      "expected": "Delete Flexi LayoutLayout should be deleted successfully",
+      "raw": "TC_39Author Math - Flexi Layout FunctionalityVerify if user is able to delete the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Flexi LayoutLayout should be deleted successfully"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete single column inside the flexi layout",
+      "expected": "Delete Single Cloumn Insdie the Flexi LayoutSingle column should be deleted successfully",
+      "raw": "TC_40Author Math - Flexi Layout Functionality Verify if user is able to delete single column inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Single Cloumn Insdie the Flexi LayoutSingle column should be deleted successfully"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete multiple columns inside the flexi layout",
+      "expected": "Delete Multiple Cloumn Insdie the Flexi Layoutmultiple column should be deleted successfully",
+      "raw": "TC_41Author Math - Flexi Layout Functionality Verify if user is able to delete multiple columns inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Multiple Cloumn Insdie the Flexi Layoutmultiple column should be deleted successfully"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify that the column ratio is getting adjusted automatically, when deleting the column",
+      "expected": "Delete Multiple Cloumn Insdie the Flexi LayoutThe ratio should be adjusted successfully",
+      "raw": "TC_42Author Math - Flexi Layout Functionality Verify that the column ratio is getting adjusted automatically, when deleting the column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Multiple Cloumn Insdie the Flexi LayoutThe ratio should be adjusted successfully"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify that user is able to enter the minimum value as 10%",
+      "expected": "",
+      "raw": "TC_43Author Math - Flexi Layout FunctionalityVerify that user is able to enter the minimum value as 10% 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8..Enter the Minimum Value as 10%The Minimum Value should be 10%"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify that column values are auto adjusted, if the values are less than 10%",
+      "expected": "",
+      "raw": "TC_44Author Math - Flexi Layout Functionality Verify that column values are auto adjusted, if the values are less than 10% 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8..Enter the Minimum Value as 10%The values should be auto- adjusted/ modified"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify that all column values total should have 100%",
+      "expected": "",
+      "raw": "TC_45Author Math - Flexi Layout FunctionalityVerify that all column values total should have 100% 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8..Enter the Minimum Value as 10%The consolidate column values should be 100%"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify if user is able to update the column values multiple times",
+      "expected": "Enter the Column Values Multiple TimesThe values should be updated multiple times",
+      "raw": "TC_46Author Math - Flexi Layout Functionality Verify if user is able to update the column values multiple times 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Column Values Multiple TimesThe values should be updated multiple times"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify if user is able to add components in alternate columns",
+      "expected": "Add Components in Alternate ColumnsUser should add components in alternate columns",
+      "raw": "TC_47Author Math - Flexi Layout FunctionalityVerify if user is able to add components in alternate columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Add Components in Alternate ColumnsUser should add components in alternate columns"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify if user is able to preview the flexi layouts",
+      "expected": "Click Preview button to preview the ActivityThe preview should be loaded successfully",
+      "raw": "TC_48Author Math - Flexi Layout FunctionalityVerify if user is able to preview the flexi layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Click Save button 10.Click Preview button to preview the ActivityThe preview should be loaded successfully"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify that flexi layout is interactable in preview",
+      "expected": "Check Components added in Flexi layouts are interactable in Preview The components added inside flexi layouts hould be interactable",
+      "raw": "TC_49Author Math - Flexi Layout FunctionalityVerify that flexi layout is interactable in preview 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Click Preview button to preview the Activity 10.Check Components added in Flexi layouts are interactable in Preview The components added inside flexi layouts hould be interactable"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the components inside the flexi layout",
+      "expected": "Delete the Components inside the Flexi layoutUser should delete the components successfully",
+      "raw": "TC_50Author Math - Flexi Layout Functionality Verify if user is able to delete the components inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Delete the Components inside the Flexi layoutUser should delete the components successfully"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify if user is able to multiple flexi layouts inside the generic step",
+      "expected": "Add Multiple Flexi layout inside the Generic StepUser should add multiple flexi layouts successfully",
+      "raw": "TC_51Author Math - Flexi Layout Functionality Verify if user is able to multiple flexi layouts inside the generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Add Multiple Flexi layout inside the Generic StepUser should add multiple flexi layouts successfully"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify if user is able to add flexi layout outside the Generic step",
+      "expected": "Add Flexi layout outside the Generic StepUser shouldn't add layouts",
+      "raw": "TC_52Author Math - Flexi Layout Functionality Verify if user is able to add flexi layout outside the Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Add Flexi layout outside the Generic StepUser shouldn't add layouts"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify if user is able to change the background color of the flexi layout",
+      "expected": "Change the background color of the Flexi layout User shouldn't change the background color of the flexi layout",
+      "raw": "TC_53Author Math - Flexi Layout Functionality Verify if user is able to change the background color of the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Change the background color of the Flexi layout User shouldn't change the background color of the flexi layout"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when relaunching the activity",
+      "expected": "Check any Data loss in a layout while Relauching the Activity Data's shouldn't be lost",
+      "raw": "TC_54Author Math - Flexi Layout Functionality Verify if user is facing any data loss in layout when relaunching the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Check any Data loss in a layout while Relauching the Activity Data's shouldn't be lost"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when previewing the activity",
+      "expected": "Check any Data loss in a layout while Previewing the Activity Data's shouldn't loss in author preview mode",
+      "raw": "TC_55Author Math - Flexi Layout Functionality Verify if user is facing any data loss in layout when previewing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Check any Data loss in a layout while Previewing the Activity Data's shouldn't loss in author preview mode"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss while republishing the activity",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing",
+      "raw": "TC_56Author Math - Flexi Layout Functionality Verify if user is facing any data loss while republishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when launching the activity after publishing",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing and launching",
+      "raw": "TC_57Author Math - Flexi Layout Functionality Verify if user is facing any data loss in layout when launching the activity after publishing 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing and launching"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify if the components are collapsed after publishing the activity",
+      "expected": "Check any Components get collaped After Publishing the ActivityThe Data's inside the layout should display properly",
+      "raw": "TC_58Author Math - Flexi Layout Functionality Verify if the components are collapsed after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Enter the Minimum Value as 10% 9.Check any Components get collaped After Publishing the ActivityThe Data's inside the layout should display properly"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Large tables(20*20) inside the flexi layout",
+      "expected": "Add Large Table (20*20) inside the Flexi LayoutThe Table should display properly",
+      "raw": "TC_59Author Math - Flexi Layout Functionality Verify if user is able to add Large tables(20*20) inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Add Large Table (20*20) inside the Flexi LayoutThe Table should display properly"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in flexi layout",
+      "expected": "Add Media in the Flexi LayoutUser should media inside the flexi layout",
+      "raw": "TC_60Author Math - Flexi Layout FunctionalityVerify if user is able to add media in flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Add Media in the Flexi LayoutUser should media inside the flexi layout"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Math equations inside the flexi layout",
+      "expected": "Add Math Equations inside the Flexi LayoutUser should add math equations inside the flexi layout",
+      "raw": "TC_61Author Math - Flexi Layout Functionality Verify if user is able to add Math equations inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Add Math Equations inside the Flexi LayoutUser should add math equations inside the flexi layout"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify if user is able to add chinese and spanish languages",
+      "expected": "Check Able to Add Chinese and Spanish Languages User should add spanish and chinese languages inside the flexi layout",
+      "raw": "TC_62Author Math - Flexi Layout FunctionalityVerify if user is able to add chinese and spanish languages 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Add Math Equations inside the Flexi Layout 9.Check Able to Add Chinese and Spanish Languages User should add spanish and chinese languages inside the flexi layout"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify if user is able to launch the flexi layout activity on reader",
+      "expected": "Publish the Activity to Launch it in the ReaderThe activity should be launched successfully",
+      "raw": "TC_63Author Math - Flexi Layout Functionality Verify if user is able to launch the flexi layout activity on reader 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity and Close it 9.Publish the Activity to Launch it in the ReaderThe activity should be launched successfully"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the flexi layout is interactable",
+      "expected": "Check Components Added inside the Flexi layouts are interactableThe components should interactable",
+      "raw": "TC_64Author Math - Flexi Layout Functionality Verify that in reader, components added inside the flexi layout is interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Flexi layouts are interactableThe components should interactable"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the flexi layout are collapsed",
+      "expected": "Check Components Added inside the Flexi layouts are CollapsedThe components should display properly",
+      "raw": "TC_65Author Math - Flexi Layout Functionality Verify that in reader, components added inside the flexi layout are collapsed 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Flexi layouts are CollapsedThe components should display properly"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the flexi layout are aligned properly",
+      "expected": "Check Components Added inside the Flexi layouts are Aligned ProperlyThe components should fit properly inside the layout",
+      "raw": "TC_66Author Math - Flexi Layout Functionality Verify that in reader, components added inside the flexi layout are aligned properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Flexi layouts are Aligned ProperlyThe components should fit properly inside the layout"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify that all the widgets are interactable",
+      "expected": "Check All the Widgets inside the Flexi Layout are interactableThe Widgets should be interactable",
+      "raw": "TC_67Author Math - Flexi Layout FunctionalityVerify that all the widgets are interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check All the Widgets inside the Flexi Layout are interactableThe Widgets should be interactable"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Verify if all elements are displaying properly inside the flexi layout",
+      "expected": "Check All the Elements inside the Flexi Layout are Displaying properlyThe components should display properly",
+      "raw": "TC_68Author Math - Flexi Layout Functionality Verify if all elements are displaying properly inside the flexi layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check All the Elements inside the Flexi Layout are Displaying properlyThe components should display properly"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Verify that Multipart component is displaying properly",
+      "expected": "Check Multipart Components are Displaying properlyThe Multipart should display properly",
+      "raw": "TC_69Author Math - Flexi Layout FunctionalityVerify that Multipart component is displaying properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Multipart Components are Displaying properlyThe Multipart should display properly"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functionality",
+      "description": "Verify that user is able to submit the activity",
+      "expected": "Submit the ActivityThe activity should be submitted successfully",
+      "raw": "TC_70Author Math - Flexi Layout FunctionalityVerify that user is able to submit the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the ActivityThe activity should be submitted successfully"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity before submission",
+      "expected": "Check Given Data's are gettting Patched upon relaunching the activity before submissionThe data's should get patched successfully",
+      "raw": "TC_71Author Math - Flexi Layout Functionality Verify that the data's are getting patched upon relaunching the activity before submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Check Given Data's are gettting Patched upon relaunching the activity before submissionThe data's should get patched success"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity after submission",
+      "expected": "Check Given Data's are gettting Patched upon relaunching the activity After submissionThe data's should get patched successfully",
+      "raw": "TC_72Author Math - Flexi Layout Functionality Verify that the data's are getting patched upon relaunching the activity after submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Check Given Data's are gettting Patched upon relaunching the activity After submissionThe data's should get patched successfu"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functionality",
+      "description": "Verify that the student is able to access the activity",
+      "expected": "Student is able to Access the ActivityStudents should access the activity",
+      "raw": "TC_73Author Math - Flexi Layout FunctionalityVerify that the student is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Student is able to Access the ActivityStudents should access the activity"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "Verify that the Teacher is able to access the activity",
+      "expected": "Teacher is able to Access the ActivityTeachers should access the activity",
+      "raw": "TC_74Author Math - Flexi Layout FunctionalityVerify that the Teacher is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Teacher is able to Access the ActivityTeachers should access the activity"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functionality",
+      "description": "Verify that the flexi layout outline is displaying in CLP",
+      "expected": "Flexi layout Outline Should be Displaying in CLPThe outline should display",
+      "raw": "TC_75Author Math - Flexi Layout FunctionalityVerify that the flexi layout outline is displaying in CLP 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Flexi layout Outline Should be Displaying in CLPThe outline should display"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functionality",
+      "description": "Verify that the Flexi layout separtor line is displaying between the columns",
+      "expected": "Flexi layout Separtor line Should be Displaying in btw the ColumnsThe separator line shouldn't display",
+      "raw": "TC_76Author Math - Flexi Layout Functionality Verify that the Flexi layout separtor line is displaying between the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Flexi layout Separtor line Should be Displaying in btw the ColumnsThe separator line shouldn't display"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functionality",
+      "description": "Verify that user is able to refresh the activity",
+      "expected": "Refersh the ActivityUser should refresh the activity",
+      "raw": "TC_77Author Math - Flexi Layout FunctionalityVerify that user is able to refresh the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Refersh the ActivityUser should refresh the activity"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functionality",
+      "description": "Verify that data is cleared while refreshing the activity",
+      "expected": "",
+      "raw": "TC_78Author Math - Flexi Layout FunctionalityVerify that data is cleared while refreshing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Entered Data is Cleared while Refershing the ActivityThe data's should be cleared when refreshing."
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functionality",
+      "description": "Verify that the Flexi columns aligned are not collapsed while refreshing",
+      "expected": "Check Flexi layout Columns are Aligned and not Collapsed while RefershingThe data's should display properly",
+      "raw": "TC_79Author Math - Flexi Layout Functionality Verify that the Flexi columns aligned are not collapsed while refreshing 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Flexi layout Columns are Aligned and not Collapsed while RefershingThe data's should display properly"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functionality",
+      "description": "Verify that user is able to edit the published activity",
+      "expected": "Try to Edit the Published Activity The activity should be editable",
+      "raw": "TC_80Author Math - Flexi Layout FunctionalityVerify that user is able to edit the published activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Try to Edit the Published Activity The activity should be editable"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the layout after publishing the activity",
+      "expected": "Try to Delete the Layout After Published the Activity The Layouts should be editable",
+      "raw": "TC_81Author Math - Flexi Layout Functionality Verify if user is able to delete the layout after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Try to Delete the Layout After Published the Activity The Layouts should be editable"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functionality",
+      "description": "Verify if user ia able to add new flexi layout inside the same Genneric step",
+      "expected": "Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic StepUser should add new flexi layout",
+      "raw": "TC_82Author Math - Flexi Layout Functionality Verify if user ia able to add new flexi layout inside the same Genneric step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic StepUser should add new flexi layout"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functionality",
+      "description": "Verify that the column ratio's are not changed when adding multiple flexi layouts",
+      "expected": "Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsThe column's ratio shouldn't be changed",
+      "raw": "TC_83Author Math - Flexi Layout Functionality Verify that the column ratio's are not changed when adding multiple flexi layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic Step 11.Check Column Ratio's are not Changed When Adding a Multiple Fle"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- Audio",
+      "expected": "Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsUser should media -audio inside the Right layout",
+      "raw": "TC_84Author Math - Flexi Layout FunctionalityVerify if user is able to add media in Right layout- Audio 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic Step 11.Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsUser should me"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- video",
+      "expected": "Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsUser should media -video inside the Right layout",
+      "raw": "TC_85Author Math - Flexi Layout FunctionalityVerify if user is able to add media in Right layout- video 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic Step 11.Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsUser should me"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- video from URL",
+      "expected": "Check Column Ratio's are not Changed When Adding a Multiple Flexi Layouts User should media -video from url inside the Right layout",
+      "raw": "TC_86Author Math - Flexi Layout Functionality Verify if user is able to add media in Right layout- video from URL 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic Step 11.Check Column Ratio's are not Changed When Adding a Multiple Flexi Layouts Use"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functionality",
+      "description": "Verify if user is able to copy and paste text/ sentence inside the layout",
+      "expected": "Check Column Ratio's are not Changed When Adding a Multiple Flexi LayoutsUser should copy and paste text inside the layouts",
+      "raw": "TC_87Author Math - Flexi Layout Functionality Verify if user is able to copy and paste text/ sentence inside the layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Flexi layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Flexi layout inside the Same Generic Step 11.Check Column Ratio's are not Changed When Adding a Multiple Flexi Layou"
+    }
+  ]
+}

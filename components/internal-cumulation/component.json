@@ -1,0 +1,23 @@
+{
+  "component": "Internal Cumulation",
+  "slug": "internal-cumulation",
+  "dataType": "internal-cumulation",
+  "module": "shared Asset Library / Import From Library (step re-use)",
+  "spec": "48-internal-cumulation-deep.spec.ts",
+  "qcSource": "Author Test Cases - Internal Cumulation.pdf",
+  "qcCount": 70,
+  "automated": 12,
+  "deferred": 58,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/editor/ngcontroller.js"
+  ],
+  "architectureNotes": [
+    "There is NO standalone 'cumulation enable toggle', 'aggregate display', or 'display-rule settings' widget in the authoring DOM. Grepping config/config.js and index.html for 'cumulation' returns no UI (only math-library 'accumulate' tokens).",
+    "Internal Cumulation in QC is realised through the shared Asset Library / 'Import From Library' flow (#asset-library-popup) — re-using/duplicating a step from the SAME activity into the current one.",
+    "The 'Import From Library' TOC menu item is gated by ng-show=\"getProgramName()\" — flag-gated; spec logs + returns gracefully when absent.",
+    "Library modal: search input[ng-model=assetLibInput]; activity rows tr[ng-repeat=(key, value) in assetLibraryList] (.selected-activity); preview .step-block (.selected); LOS chips .los-chip (.selectedLos / .disableInsert); Insert ng-click=addActivityFromLibrary() enabled only when an activity + at least one LOS are selected.",
+    "The cumulative score/LOS roll-up from child to parent steps is a Reader/Preview RUNTIME behaviour — all aggregation, teacher-vs-student report, persistence-after-reload and LOS-variant cases are DEFERRED.",
+    "Automatable authoring surface: import entry presence (flag-gated), library modal open, search (exact/partial/no-match), listing columns, step+LOS selection insert-gating, cancel, filters, and security."
+  ]
+}

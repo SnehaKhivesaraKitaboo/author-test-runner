@@ -1,0 +1,31 @@
+{
+  "component": "HTML Interactivity",
+  "slug": "html-interactivity",
+  "dataType": "html-interactivity",
+  "directive": "htmlinteractivity-template",
+  "widgetName": "HTML Interactivity",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "37-html-interactivity-deep.spec.ts",
+  "qcSource": "Author Test Cases - HTML Interactivity.pdf",
+  "qcCount": 32,
+  "automated": 22,
+  "deferred": 10,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/htmlInteractivity/html-interactivity.html",
+    "closify/KITABOO_Authoring/templates/htmlInteractivity/html-interactive-settings-panel.html",
+    "closify/KITABOO_Authoring/templates/htmlInteractivity/default/html-interactivity.json",
+    "closify/KITABOO_Authoring/templates/htmlInteractivity/scripts/html-interactive-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "SOURCE-OF-TRUTH dataType is 'html-interactivity' (hyphenated) per config/config.js. The QC catalog file (html-interactivity-testcases.json) records dataType 'htmlInteractivity' (camelCase, matching the template folder name); that value is NOT used by the app — config.js, the directive attribute, and the default JSON all use 'html-interactivity'. The automation uses 'html-interactivity'.",
+    "HTML Interactivity is an ELEMENT (widget name 'HTML Interactivity', dataType 'html-interactivity'), NOT an assessment widget. 'html-interactivity' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('HTML Interactivity'), not into a Generic Step column.",
+    "The dropped wrapper is .htmlStyleSet (active style class + ng-style width/height/background); the inner package holder is .html-interactivity.component-holder[data-htmlinteractivity-template].",
+    "This is a HTML-PACKAGE (.zip) uploader, NOT a free-text HTML/iframe source editor. The uploaded package renders inside an <object data=\"{{fieldData.indexLink}}\"> (popup or inline). There is no author-facing snippet/srcdoc editor in the source — the QC narrative wording ('embed HTML', 'source edit') maps to the zip-upload + Popup/Inline surface.",
+    "Settings panel id is #html-interactive-settings-panel with title 'HTML Interactivity' and icon .icon-HTML-Interactivity. Controls: zip upload box (#upload-zip, label flips Upload↔Replace on currSettings.fileuploaded), Show Interactivity Popup/Inline radios (name='showInteractivity'), Show Header (#show-header) / Show Caption (#show-caption) checkboxes, No Outline / Outline & Fill Background radios (name='outline') + colour swatches + colour picker, Tags input (currSettings.metaTags), Alt Text textarea (maxlength 2000), and the shared <stylepanel> (style1 default-active, style2).",
+    "Header (.sc-intro.template-header), Instruction (.sc-instr.template-instruction) and Caption (.imgCaption.template-caption) are contenteditable and gated by settings.isHeaderText / isInstructionText / isCaptionText — set via cy.setContentEditableOn, never cy.type().",
+    "Security: the embed surface ingests packaged content. Author-entered markup must not execute in the authoring DOM (automated). Malicious-zip rejection + 'security warning' is a server-side / upload-pipeline check (deferred).",
+    "Deferred QC cases require flows outside the authoring DOM: real .zip uploads via the OS file picker (valid/replace/oversized/corrupt/malicious), Preview/Reader rendering, Popup-vs-Inline runtime behaviour, settings-panel-fixed drag, delete-during-upload, and style/colour persistence after page reload."
+  ]
+}

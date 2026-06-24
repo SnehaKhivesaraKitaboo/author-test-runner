@@ -1,0 +1,38 @@
+{
+  "component": "Image",
+  "slug": "image",
+  "spec": "08-image-deep.spec.ts",
+  "qcSource": "Author Test Cases - Image.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires a native OS file picker upload, or Reader/publish rendering, or is a Generic-Step assessment-flow step not applicable to the Image element."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "automated", "it": "TC_01 — Studio URL launches and the authoring editor is ready", "selectors": ["#desktop_view", "button.btn"] },
+    { "qc": "TC_02", "status": "automated", "it": "TC_02/TC_03 — Clicking the Image opens its settings panel (title \"Image\")", "selectors": [".componentSettingPanel", ".imagesetting [data-title=\"Image\"]"] },
+    { "qc": "TC_03", "status": "automated", "it": "TC_02/TC_03 — Clicking the Image opens its settings panel (title \"Image\")" },
+    { "qc": "TC_10", "status": "automated", "it": "TC_10 — Upload box + \"Jpg, PNG, Svg\" format hint are present", "selectors": ["#upload-comp-img[uploadfiles]", "label[for=\"imageUploadInput\"]"], "note": "Presence only; actual JPG/PNG/SVG upload deferred (OS file picker)." },
+    { "qc": "TC_12", "status": "automated", "it": "TC_12 — Full Width toggle is present and checkable", "selectors": ["input[ng-model=\"currSettings.fullwidth\"]"] },
+    { "qc": "TC_13", "status": "automated", "it": "TC_13 — \"Keep Original\" radio exists and is the default selection", "selectors": ["input[name=\"radio\"]#qq129"] },
+    { "qc": "TC_14", "status": "automated", "it": "TC_14 — Custom W/H inputs exist (disabled under Keep Original / Upload state)", "selectors": ["input#imgWidthc", "input#imgHeightc", "input[name=\"radio\"]#qq128"], "note": "Inputs present; actual resize deferred (requires uploaded image + custom dim radio)." },
+    { "qc": "TC_15", "status": "automated", "it": "TC_15 — Caption field accepts text on the canvas component", "selectors": [".Imagecomponent figcaption.imgCaption"] },
+    { "qc": "TC_16", "status": "automated", "it": "TC_16 — \"Show Caption\" toggle controls caption visibility", "selectors": ["input[ng-model=\"currSettings.captiondisplay\"]"] },
+    { "qc": "TC_17", "status": "automated", "it": "TC_17 — Outline / Fill radios present; selecting Fill reveals colour options", "selectors": ["input[name=\"outline\"][value=\"outline\"]", "input[name=\"outline\"][value=\"outlineBg\"]", ".colorOption .color", "input#outlineBgColorInput"] },
+    { "qc": "TC_18", "status": "automated", "it": "TC_18a — Accessibility label + descriptive subtext present / TC_18b — ALT text field accepts input and enforces maxlength 2000", "selectors": [".accessibility", ".accessibilityPara", "textarea[ng-model=\"currSettings.altText\"]", ".altTextCharLimitText"] },
+    { "qc": "TC_24", "status": "automated", "it": "TC_24/TC_25 — Style panel present; style thumbnails are selectable", "selectors": ["stylepanel", ".card-style"] },
+    { "qc": "TC_25", "status": "automated", "it": "TC_24/TC_25 — Style panel present; style thumbnails are selectable" },
+
+    { "qc": "TC_04", "status": "deferred", "reason": "Add Generic step — N/A: Image is a canvas element, not a Generic Step assessment widget" },
+    { "qc": "TC_05", "status": "deferred", "reason": "Enter step title — Generic Step assessment flow, not applicable to the Image element" },
+    { "qc": "TC_06", "status": "deferred", "reason": "Generic step Cancel button — Generic Step assessment flow, not applicable to the Image element" },
+    { "qc": "TC_07", "status": "deferred", "reason": "Generic step Change step — Generic Step assessment flow, not applicable to the Image element" },
+    { "qc": "TC_08", "status": "deferred", "reason": "Instructions for Students entry — Generic Step assessment flow, not applicable to the Image element" },
+    { "qc": "TC_09", "status": "deferred", "reason": "Instructions for Teachers entry — Generic Step assessment flow, not applicable to the Image element" },
+    { "qc": "TC_11", "status": "deferred", "reason": "Unsupported-format error requires selecting a real file via the native OS file picker" },
+    { "qc": "TC_19", "status": "deferred", "reason": "Publish + Reader rendering of image/settings/caption — outside the authoring DOM" },
+    { "qc": "TC_20", "status": "deferred", "reason": "Edit + republish reflected in Reader — outside the authoring DOM" },
+    { "qc": "TC_21", "status": "deferred", "reason": "Caption line breaks rendered in Reader — Reader-side rendering" },
+    { "qc": "TC_22", "status": "deferred", "reason": "Long caption wrapping in Reader layout — Reader-side rendering" },
+    { "qc": "TC_23", "status": "deferred", "reason": "Remove image + republish stability (placeholder/empty state) — needs upload + Reader" }
+  ]
+}

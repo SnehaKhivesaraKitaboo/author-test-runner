@@ -1,0 +1,572 @@
+{
+  "component": "Internal Cumulation",
+  "slug": "internal-cumulation",
+  "dataType": "internal-cumulation",
+  "source": "Author Test Cases - Internal Cumulation.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Internal Cumulation.pdf",
+  "pages": 2,
+  "extractedCount": 70,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Internal Cummalation UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Internal Cummalation FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Internal Cummalation FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functional",
+      "description": "Internal Cummalation Verify if user able to create new step in ELA, WL and Math Activites",
+      "expected": "Add new stepAdd new step should be clickable",
+      "raw": "TC_04 Internal Cummalation Verify if user able to create new step in ELA, WL and Math Activites 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add new stepAdd new step should be clickable"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Internal Cummalation FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Internal Cummalation Functionality Verify that the cancel button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Internal Cummalation Functionality Verify that the change step button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Internal Cummalation Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Internal Cummalation Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify author can open an existing activity to duplicate a step within the same activity",
+      "expected": "Open an activity with at least 1 existing stepActivity opens with all steps visible in step list",
+      "raw": "TC_10 Internal CummalationPositive Verify author can open an existing activity to duplicate a step within the same activity 1. Login as Author 2. Navigate to “My Activities” 3. Open an activity with at least 1 existing stepActivity opens with all steps visible in step list"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Verify “import” button is visible in the activity editor",
+      "expected": "Look for the “import” button in the toolbar“import” button is visible and enabled",
+      "raw": "TC_11 Internal CummalationPositiveVerify “import” button is visible in the activity editor 1. Open an activity 2. Look for the “import” button in the toolbar“import” button is visible and enabled"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify clicking “import” opens the step library1. Click “import”",
+      "expected": "Observe modal or panel opensStep library opens with search options visible",
+      "raw": "TC_12 Internal CummalationPositiveVerify clicking “import” opens the step library1. Click “import” 2. Observe modal or panel opensStep library opens with search options visible"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify current activity appears in step library list with correct title and created date",
+      "expected": "Check for current activity entry Current activity name and created date displayed correctly",
+      "raw": "TC_13 Internal CummalationPositive Verify current activity appears in step library list with correct title and created date 1. Open step library 2. Check for current activity entry Current activity name and created date displayed correctly"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify search returns current activity when searching by title",
+      "expected": "Click searchSearch results show current activity",
+      "raw": "TC_14 Internal CummalationPositive Verify search returns current activity when searching by title 1. In step library search, enter full activity title 2. Click searchSearch results show current activity"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify search returns current activity when searching by partial title1.",
+      "expected": "SearchPartial match returns current activity in list",
+      "raw": "TC_15 Internal CummalationPositive Verify search returns current activity when searching by partial title1. Enter partial title 2. SearchPartial match returns current activity in list"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify author can see all existing steps within the current activity",
+      "expected": "View step list All steps from current activity displayed in correct order",
+      "raw": "TC_16 Internal CummalationPositive Verify author can see all existing steps within the current activity 1. Click on current activity entry in library 2. View step list All steps from current activity displayed in correct order"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify author can select a step to duplicate1.",
+      "expected": "Click “Import” Selected step is copied into current activity as a new step (n+1)",
+      "raw": "TC_17 Internal CummalationPositiveVerify author can select a step to duplicate1. Select a step from list 2. Click “Import” Selected step is copied into current activity as a new step (n+1)"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify duplicated step retains all content from original step",
+      "expected": "Compare original and duplicated step content Content matches exactly, including text, images, formatting, widgets",
+      "raw": "TC_18 Internal CummalationPositive Verify duplicated step retains all content from original step 1. Duplicate a step 2. Compare original and duplicated step content Content matches exactly, including text, images, formatting, widgets"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify duplicated step retains formatting (font, bullets, numbering, line breaks, styles)1. Compare formatting properties of both steps Font-family Roboto, size 16px, weight 500, line- height 136%, bullet and numbering p",
+      "expected": "Compare formatting properties of both steps Font-family Roboto, size 16px, weight 500, line- height 136%, bullet and numbering preserved",
+      "raw": "TC_19 Internal CummalationPositive Verify duplicated step retains formatting (font, bullets, numbering, line breaks, styles)1. Compare formatting properties of both steps Font-family Roboto, size 16px, weight 500, line- height 136%, bullet and numbering preserved"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify user can edit duplicated step content",
+      "expected": "SaveChanges are saved and only affect duplicated step",
+      "raw": "TC_20 Internal CummalationPositiveVerify user can edit duplicated step content 1. Open duplicated step 2. Edit text and formatting 3. SaveChanges are saved and only affect duplicated step"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify user can edit duplicated step metadata1. Edit step title, tags, scoring options",
+      "expected": "SaveMetadata changes apply to duplicated step only",
+      "raw": "TC_21 Internal CummalationPositiveVerify user can edit duplicated step metadata1. Edit step title, tags, scoring options 2. SaveMetadata changes apply to duplicated step only"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify user can save and preview duplicated step1. Click “Save”",
+      "expected": "Click “Preview” Step is saved and appears correctly in preview mode",
+      "raw": "TC_22 Internal CummalationPositiveVerify user can save and preview duplicated step1. Click “Save” 2. Click “Preview” Step is saved and appears correctly in preview mode"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify preview mode displays duplicated step content exactly as in editor1. Preview activity",
+      "expected": "View duplicated step All text, formatting, and media displayed accurately",
+      "raw": "TC_23 Internal CummalationPositive Verify preview mode displays duplicated step content exactly as in editor1. Preview activity 2. View duplicated step All text, formatting, and media displayed accurately"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify duplicated step appears in correct order in step navigation1. Check step sequence Duplicated step appears immediately after original or at end, as per design",
+      "expected": "Check step sequence Duplicated step appears immediately after original or at end, as per design",
+      "raw": "TC_24 Internal CummalationPositive Verify duplicated step appears in correct order in step navigation1. Check step sequence Duplicated step appears immediately after original or at end, as per design"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify undo/cancel duplication action works1. Start duplication",
+      "expected": "Click “Cancel”No new step created",
+      "raw": "TC_25 Internal CummalationPositiveVerify undo/cancel duplication action works1. Start duplication 2. Click “Cancel”No new step created"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Negative",
+      "description": "Verify duplication is blocked when no step is selected1. Click “Import” without selecting stepError message: “Please select a step to import”",
+      "expected": "Click “Import” without selecting stepError message: “Please select a step to import”",
+      "raw": "TC_26 Internal CummalationNegativeVerify duplication is blocked when no step is selected1. Click “Import” without selecting stepError message: “Please select a step to import”"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Verify duplication is blocked when user has no edit permission1. Login with read-only role",
+      "expected": "Try to duplicate step“Permission denied” message shown",
+      "raw": "TC_27 Internal CummalationNegative Verify duplication is blocked when user has no edit permission1. Login with read-only role 2. Try to duplicate step“Permission denied” message shown"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify duplication works for all content types (text, images, videos, widgets)1. Duplicate steps with each typeAll content types are preserved in duplicated step",
+      "expected": "Duplicate steps with each typeAll content types are preserved in duplicated step",
+      "raw": "TC_28 Internal CummalationPositive Verify duplication works for all content types (text, images, videos, widgets)1. Duplicate steps with each typeAll content types are preserved in duplicated step"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify duplication of steps containing drag-and-drop widgets",
+      "expected": "Test drag/drop in previewWidget works in duplicated step same as original",
+      "raw": "TC_29 Internal CummalationPositive Verify duplication of steps containing drag-and-drop widgets 1. Duplicate step with enabled drag/drop 2. Test drag/drop in previewWidget works in duplicated step same as original"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify system handles duplication of very large step1. Duplicate step with many elements",
+      "expected": "SaveDuplication completes without performance issue",
+      "raw": "TC_30 Internal CummalationPositiveVerify system handles duplication of very large step1. Duplicate step with many elements 2. SaveDuplication completes without performance issue"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Verify duplication of step with unsupported media gives warning",
+      "expected": "Try duplicating step containing broken/unsupported media Warning shown, duplication proceeds excluding broken asset",
+      "raw": "TC_31 Internal CummalationNegative Verify duplication of step with unsupported media gives warning 1. Try duplicating step containing broken/unsupported media Warning shown, duplication proceeds excluding broken asset"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify multiple duplications of the same step are allowed1. Duplicate step multiple timesEach new step is created independently",
+      "expected": "Duplicate step multiple timesEach new step is created independently",
+      "raw": "TC_32 Internal CummalationPositive Verify multiple duplications of the same step are allowed1. Duplicate step multiple timesEach new step is created independently"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify user can publish activity with duplicated step1. Duplicate step",
+      "expected": "Publish activity Published version contains duplicated step correctly",
+      "raw": "TC_33 Internal CummalationPositiveVerify user can publish activity with duplicated step1. Duplicate step 2. Publish activity Published version contains duplicated step correctly"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify republishing after editing duplicated step updates reader view",
+      "expected": "View in readerReader displays updated content",
+      "raw": "TC_34 Internal CummalationPositive Verify republishing after editing duplicated step updates reader view 1. Edit duplicated step 2. Republish 3. View in readerReader displays updated content"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify child step data is cumulated to parent step before submit (Core LOS)",
+      "expected": "Navigate to parent step before submitting Parent step displays updated cumulative data reflecting child step input",
+      "raw": "TC_35 Internal CummalationPositive Verify child step data is cumulated to parent step before submit (Core LOS) 1. Launch activity with internal cumulation (Core LOS) in Reader 2. Complete child step 3. Navigate to parent step before submitting Parent step displays updated cumulative data reflecting child step input"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Positive",
+      "description": "Verify child step data is cumulated to parent step after submit (Core LOS)",
+      "expected": "Navigate to parent step Parent step updates with child step data after submission is processed",
+      "raw": "TC_36 Internal CummalationPositive Verify child step data is cumulated to parent step after submit (Core LOS) 1. Launch Core LOS activity 2. Submit child step 3. Navigate to parent step Parent step updates with child step data after submission is processed"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Positive",
+      "description": "Verify partial child step data is reflected before submit (Core LOS)",
+      "expected": "Navigate to parent stepParent shows partial data correctly",
+      "raw": "TC_37 Internal CummalationPositive Verify partial child step data is reflected before submit (Core LOS) 1. Partially complete child step 2. Navigate to parent stepParent shows partial data correctly"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Positive",
+      "description": "Verify multiple child steps' data are combined before submit (Core LOS)",
+      "expected": "Navigate to parent step Parent shows cumulative data from all completed child steps",
+      "raw": "TC_38 Internal CummalationPositive Verify multiple child steps' data are combined before submit (Core LOS) 1. Complete multiple child steps 2. Navigate to parent step Parent shows cumulative data from all completed child steps"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Positive",
+      "description": "Verify multiple child steps' data are combined after submit (Core LOS)",
+      "expected": "Navigate to parent step Parent shows updated data for all submitted child steps",
+      "raw": "TC_39 Internal CummalationPositive Verify multiple child steps' data are combined after submit (Core LOS) 1. Submit multiple child steps 2. Navigate to parent step Parent shows updated data for all submitted child steps"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Positive",
+      "description": "Verify cumulation works for Moderate LOS before submitRepeat steps in IC-R-01 for Moderate LOSData cumulates before submit",
+      "expected": "",
+      "raw": "TC_40 Internal CummalationPositive Verify cumulation works for Moderate LOS before submitRepeat steps in IC-R-01 for Moderate LOSData cumulates before submit"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Positive",
+      "description": "Verify cumulation works for Moderate LOS after submitRepeat steps in IC-R-02 for Moderate LOSData cumulates after submit",
+      "expected": "",
+      "raw": "TC_41 Internal CummalationPositive Verify cumulation works for Moderate LOS after submitRepeat steps in IC-R-02 for Moderate LOSData cumulates after submit"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Positive",
+      "description": "Verify cumulation works for Light LOS before submitRepeat steps in IC-R-01 for Light LOSData cumulates before submit",
+      "expected": "",
+      "raw": "TC_42 Internal CummalationPositive Verify cumulation works for Light LOS before submitRepeat steps in IC-R-01 for Light LOSData cumulates before submit"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Positive",
+      "description": "Verify cumulation works for Light LOS after submitRepeat steps in IC-R-02 for Light LOSData cumulates after submit",
+      "expected": "",
+      "raw": "TC_43 Internal CummalationPositiveVerify cumulation works for Light LOS after submitRepeat steps in IC-R-02 for Light LOSData cumulates after submit"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Positive",
+      "description": "Verify cumulation works for Intensive LOS before submitRepeat steps in IC-R-01 for Intensive LOSData cumulates before submit",
+      "expected": "",
+      "raw": "TC_44 Internal CummalationPositive Verify cumulation works for Intensive LOS before submitRepeat steps in IC-R-01 for Intensive LOSData cumulates before submit"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Positive",
+      "description": "Verify cumulation works for Intensive LOS after submitRepeat steps in IC-R-02 for Intensive LOSData cumulates after submit",
+      "expected": "",
+      "raw": "TC_45 Internal CummalationPositive Verify cumulation works for Intensive LOS after submitRepeat steps in IC-R-02 for Intensive LOSData cumulates after submit"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Positive",
+      "description": "Verify changes in child step reflect instantly on parent before submit",
+      "expected": "Navigate to parent stepUpdated data appears without submit",
+      "raw": "TC_46 Internal CummalationPositive Verify changes in child step reflect instantly on parent before submit 1. Update answer in child step 2. Navigate to parent stepUpdated data appears without submit"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Positive",
+      "description": "Verify data integrity after submission",
+      "expected": "Navigate to parent stepCumulative data remains intact",
+      "raw": "TC_47 Internal CummalationPositiveVerify data integrity after submission 1. Submit child step 2. Refresh activity 3. Navigate to parent stepCumulative data remains intact"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Negative",
+      "description": "Verify no cumulation occurs when child step is empty1. Skip child step",
+      "expected": "Navigate to parentParent shows no additional data",
+      "raw": "TC_48 Internal CummalationNegative Verify no cumulation occurs when child step is empty1. Skip child step 2. Navigate to parentParent shows no additional data"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Positive",
+      "description": "Verify cumulation handles large data sets",
+      "expected": "View parent step Data is displayed without truncation or performance issues",
+      "raw": "TC_49 Internal CummalationPositiveVerify cumulation handles large data sets 1. Enter large content in multiple child steps 2. View parent step Data is displayed without truncation or performance issues"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Positive",
+      "description": "Verify formatting of cumulative data is preserved",
+      "expected": "View parent stepFormatting is retained",
+      "raw": "TC_50 Internal CummalationPositiveVerify formatting of cumulative data is preserved 1. Add rich text in child step (bullets, bold, etc.) 2. View parent stepFormatting is retained"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Positive",
+      "description": "Verify cumulative data is accurate after multiple edits in child",
+      "expected": "View parent stepFinal child content reflected in parent",
+      "raw": "TC_51 Internal CummalationPositive Verify cumulative data is accurate after multiple edits in child 1. Edit child step content multiple times 2. View parent stepFinal child content reflected in parent"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Positive",
+      "description": "Verify parent step updates after child step resubmission",
+      "expected": "View parentUpdated data reflected",
+      "raw": "TC_52 Internal CummalationPositive Verify parent step updates after child step resubmission 1. Submit child step 2. Edit and resubmit child step 3. View parentUpdated data reflected"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Positive",
+      "description": "Verify cumulation persists across sessions",
+      "expected": "View parent stepCumulative data persists",
+      "raw": "TC_53 Internal CummalationPositiveVerify cumulation persists across sessions 1. Complete child step 2. Logout 3. Login and open activity 4. View parent stepCumulative data persists"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Negative",
+      "description": "Verify network failure before submit does not update parent",
+      "expected": "Navigate to parentNo update on parent until connection restored",
+      "raw": "TC_54 Internal CummalationNegative Verify network failure before submit does not update parent 1. Disconnect network 2. Fill child step 3. Navigate to parentNo update on parent until connection restored"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Positive",
+      "description": "Verify teacher sees cumulative data for “In Progress” student (before submit)",
+      "expected": "Teacher opens the activity report Teacher sees updated cumulative data in the report for the “In Progress” student",
+      "raw": "TC_55 Internal CummalationPositive Verify teacher sees cumulative data for “In Progress” student (before submit) 1. Student starts activity (Core LOS) 2. Completes child step but has not submitted parent step 3. Teacher opens the activity report Teacher sees updated cumulative data in the report for the “In Progress” student"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Positive",
+      "description": "Verify teacher sees cumulative data for “In Progress” student (after submit)",
+      "expected": "Teacher views report Teacher sees updated data from submitted child step reflected in parent",
+      "raw": "TC_56 Internal CummalationPositive Verify teacher sees cumulative data for “In Progress” student (after submit) 1. Student starts activity and submits child step 2. Student still in progress overall 3. Teacher views report Teacher sees updated data from submitted child step reflected in parent"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Positive",
+      "description": "Verify teacher sees cumulative data for “Completed” student",
+      "expected": "Teacher views report Teacher sees full cumulative data from all child steps in parent step",
+      "raw": "TC_57 Internal CummalationPositive Verify teacher sees cumulative data for “Completed” student 1. Student completes activity 2. Teacher views report Teacher sees full cumulative data from all child steps in parent step"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Positive",
+      "description": "Verify partial cumulative data displayed for “In Progress” state",
+      "expected": "Teacher views reportTeacher sees partial cumulative data",
+      "raw": "TC_58 Internal CummalationPositive Verify partial cumulative data displayed for “In Progress” state 1. Student completes some child steps but not all 2. Teacher views reportTeacher sees partial cumulative data"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Positive",
+      "description": "Verify teacher view updates when student moves from “In Progress” → “Completed”",
+      "expected": "Teacher refreshes reportTeacher view updates to full cumulative data",
+      "raw": "TC_59 Internal CummalationPositive Verify teacher view updates when student moves from “In Progress” → “Completed” 1. Student in “In Progress” state 2. Completes remaining steps 3. Teacher refreshes reportTeacher view updates to full cumulative data"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Positive",
+      "description": "Verify teacher view for Moderate LOS – “In Progress” stateRepeat IC-T-01 for Moderate LOSData reflects child step content accurately",
+      "expected": "",
+      "raw": "TC_60 Internal CummalationPositive Verify teacher view for Moderate LOS – “In Progress” stateRepeat IC-T-01 for Moderate LOSData reflects child step content accurately"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Positive",
+      "description": "Verify teacher view for Moderate LOS – “Completed” stateRepeat IC-T-03 for Moderate LOSData reflects all steps",
+      "expected": "",
+      "raw": "TC_61 Internal CummalationPositive Verify teacher view for Moderate LOS – “Completed” stateRepeat IC-T-03 for Moderate LOSData reflects all steps"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Positive",
+      "description": "Verify teacher view for Light LOS – “In Progress”Repeat IC-T-01 for Light LOSPartial cumulative data visible",
+      "expected": "",
+      "raw": "TC_62 Internal CummalationPositiveVerify teacher view for Light LOS – “In Progress”Repeat IC-T-01 for Light LOSPartial cumulative data visible"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Positive",
+      "description": "Verify teacher view for Light LOS – “Completed”Repeat IC-T-03 for Light LOSFull cumulative data visible",
+      "expected": "",
+      "raw": "TC_63 Internal CummalationPositiveVerify teacher view for Light LOS – “Completed”Repeat IC-T-03 for Light LOSFull cumulative data visible"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Positive",
+      "description": "Verify teacher view for Intensive LOS – “In Progress”Repeat IC-T-01 for Intensive LOSPartial cumulative data visible",
+      "expected": "",
+      "raw": "TC_64 Internal CummalationPositive Verify teacher view for Intensive LOS – “In Progress”Repeat IC-T-01 for Intensive LOSPartial cumulative data visible"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Positive",
+      "description": "Verify teacher view for Intensive LOS – “Completed”Repeat IC-T-03 for Intensive LOSFull cumulative data visible",
+      "expected": "",
+      "raw": "TC_65 Internal CummalationPositive Verify teacher view for Intensive LOS – “Completed”Repeat IC-T-03 for Intensive LOSFull cumulative data visible"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Positive",
+      "description": "Verify formatting of cumulative data is preserved in teacher view",
+      "expected": "Teacher views reportFormatting is retained",
+      "raw": "TC_66 Internal CummalationPositive Verify formatting of cumulative data is preserved in teacher view 1. Student uses bullets, bold text in child step 2. Teacher views reportFormatting is retained"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Positive",
+      "description": "Verify teacher view updates in real-time while student is “In Progress”",
+      "expected": "Teacher refreshes viewUpdated content visible",
+      "raw": "TC_67 Internal CummalationPositive Verify teacher view updates in real-time while student is “In Progress” 1. Student modifies child step content while teacher report is open 2. Teacher refreshes viewUpdated content visible"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Positive",
+      "description": "Verify teacher view handles large cumulative data",
+      "expected": "Teacher views reportNo truncation or performance issues",
+      "raw": "TC_68 Internal CummalationPositiveVerify teacher view handles large cumulative data 1. Student enters large input in multiple child steps 2. Teacher views reportNo truncation or performance issues"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Negative",
+      "description": "Verify teacher view when no child steps are completed",
+      "expected": "Teacher views reportNo cumulative data shown",
+      "raw": "TC_69 Internal CummalationNegative Verify teacher view when no child steps are completed 1. Student opens activity but completes no steps 2. Teacher views reportNo cumulative data shown"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Negative",
+      "description": "Verify teacher view for incorrect data mappingSimulate data patch failure for a student Teacher sees blank or error message, system logs error",
+      "expected": "",
+      "raw": "TC_70 Internal CummalationNegativeVerify teacher view for incorrect data mappingSimulate data patch failure for a student Teacher sees blank or error message, system logs error"
+    }
+  ]
+}

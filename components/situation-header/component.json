@@ -1,0 +1,29 @@
+{
+  "component": "Situation Header",
+  "slug": "situation-header",
+  "dataType": "situationbox",
+  "directive": "situationbox",
+  "widgetName": "Situation Header",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "24-situation-header-deep.spec.ts",
+  "qcSource": "Author Test Cases - Situation Header.pdf",
+  "qcCount": 54,
+  "automated": 20,
+  "deferred": 34,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/situation-box/situation-box.html",
+    "closify/KITABOO_Authoring/templates/situation-box/situation-box-settings.html",
+    "closify/KITABOO_Authoring/templates/situation-box/default/situation-box.json",
+    "closify/KITABOO_Authoring/templates/situation-box/scripts/situation-box-directive.js",
+    "closify/KITABOO_Authoring/templates/situation-box/styles/situation-box.css"
+  ],
+  "architectureNotes": [
+    "Situation Header is an ELEMENT (widget name 'Situation Header', dataType 'situationbox', directive 'situationbox' restrict:'EA'), NOT an assessment widget. 'situationbox' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, and config/config.js lists it in the same general elements catalog group as Text/Image/Video/Callout Box — so resolveDropTarget routes it to the canvas. It drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Situation Header'), NOT into a Generic Step column.",
+    "Canvas wrapper is div[situationbox].situation-box-container — a purple box (inline background-color #f3ecfe / rgb(243,236,254), border-radius 16px).",
+    "The fixed arrow icon is .situation-box-arrow-image-container img (src images/arrow.svg, draggable='false'); its container has pointer-events:none and user-select:none, so the icon is non-editable / non-draggable / non-selectable and protected from deletion. The component itself (the sd-item) is still copyable/deletable via the shared canvas chrome.",
+    "The authoring text area is .situation-box-text-editor — a contenteditable RTE bound to ng-model fieldData.textArea (also .math-read-only-field for math). Set via cy.setContentEditableOn, never cy.type().",
+    "The settings panel body (situation-box-settings.html) is loaded into the shared .componentSettingPanel. It contains the title 'Situation Header' (.txt-set-title .para-ellipsis) with .icon-Situationbox, an Accessibility label + .accessibilityPara subtext, and an Alt Text textarea[ng-model=\"currSettings.altText\"] (maxlength=2000, counter 'Chars 2000'). No style/colour/visibility toggles exist in this settings body beyond Alt Text.",
+    "QC TC_01–TC_03 are login/create-activity/start-authoring bootstrap (handled by the harness, not the component); TC_05 step-type gating is config-driven; math-editor render, the floating textEditor formatting toolbar, Preview/Reader/Publish, persistence-after-reload, cross-browser, and char-limit warnings are deferred."
+  ]
+}

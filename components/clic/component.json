@@ -1,0 +1,35 @@
+{
+  "component": "CLIC (Sketchpad)",
+  "slug": "clic",
+  "dataType": "sketchpad",
+  "directive": "sketchpad",
+  "widgetName": "CLIC Component",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "31-clic-deep.spec.ts",
+  "qcSource": "Author Test Cases - CLIC.pdf",
+  "qcCount": 33,
+  "automated": 7,
+  "deferred": 26,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/sketch-pad/sketchpad.html",
+    "closify/KITABOO_Authoring/templates/sketch-pad/styles/sketchpad.css",
+    "closify/KITABOO_Authoring/templates/sketch-pad/default/sketchpad.json",
+    "closify/KITABOO_Authoring/templates/sketch-pad/scripts/sketchpad-directive.js",
+    "closify/KITABOO_Authoring/templates/sketch-pad/config.txt"
+  ],
+  "architectureNotes": [
+    "CLIC is catalogued as name 'CLIC Component', dataType 'sketchpad', iconClass 'icon-clic', isDroppable:true (config/config.js). It is an ELEMENT, NOT an assessment widget — 'sketchpad' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas. It drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('CLIC Component'), not into a Generic Step column.",
+    "The dropped component is a CLIC Assignment FORM, not a drawing canvas. sketchpad.html renders a pop-up .form-box (title 'CLIC Assignment') with two contenteditable fields #clicuid ('CLIC identifier') and #instancename ('Instance Name') plus a Submit button (.form-button → submitCLIC()). This matches the QC pop-up (CLIC Identifier / Instance Name / Submit). The source has NO pen/colour/clear drawing tools, so any QC drawing-tool/colour/clear expectations do not apply to this component.",
+    "#clicuid / #instancename are contenteditable divs wired via ng-keyup updateText() — set with cy.setContentEditableOn, never cy.type(). Defaults (default/sketchpad.json) are empty strings; settings.issubmitted defaults to false.",
+    "The form renders only while !fieldData.settings.issubmitted. After submit (submitCLIC sets issubmitted=true) — or when a clicuid already exists on load — the directive swaps to a CLIC iframe (.sample-page > iframe[data-identifier], src built from window.clicBaseUrl + clicid). This iframe/auto-launch path is runtime-bound and deferred.",
+    "CLIC has NO dedicated settings panel template on disk: config references templates/sketch-pad/sketchpad-settings.html which does not exist. Clicking runs con.displaySettingPanel() into the generic .componentSettingPanel; the spec opens it defensively (log + return when not mounted).",
+    "The Submit button has no ng-disabled binding, so 'disabled when empty' and 'required' validation messages are enforced at submit runtime, not in the author DOM — those QC cases are deferred.",
+    "QC TC_01–TC_03 are login/activity/start-authoring bootstrap; submit save/network, persistence-after-reload, edit-after-reopen, multi-instance, responsive, Preview/Reader/CLP, and copy/delete lifecycle require flows outside the authoring DOM — all deferred as it.skip() with reasons."
+  ],
+  "sourceAmbiguity": [
+    "config/config.js lists the catalog name as 'CLIC Component' (with icon 'K'/'Ƈ'); the standalone templates/sketch-pad/config.txt lists name 'SketchPad' (icon '4'). Both share dataType 'sketchpad' and url templates/sketch-pad/sketchpad.html. The authoring catalog (config.js) is authoritative, so the widget is dropped by name 'CLIC Component'.",
+    "config references a settings template (sketchpad-settings.html) that is absent from the folder — treated as no-settings and handled gracefully.",
+    "QC PDF phrasing implies a generic interactive 'CLIC' with possible drawing/tools; the real source is a CLIC-assignment iframe launcher form. Test cases were mapped to the actual form fields/behavior, not to non-existent drawing controls."
+  ]
+}

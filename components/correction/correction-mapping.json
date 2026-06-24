@@ -1,0 +1,41 @@
+{
+  "component": "Correction",
+  "slug": "correction",
+  "spec": "32-correction-deep.spec.ts",
+  "qcSource": "Author Test Cases - Correction.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires Preview/Reader, submit/validation, responsiveness, accessibility, network, or persistence/lifecycle flows outside the authoring DOM."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "automated", "it": "TC_01 — Add Header & Add Instruction Text enabled by default; texts present", "selectors": ["input#header-visibility", "input#instr-visibility", ".sc-intro-holder.header-text", ".sc-instr-holder.instruction-text"] },
+    { "qc": "TC_02", "status": "automated", "it": "TC_02 — \"Add Sentence\" button present; Text Description 1 editable", "selectors": [".add-sentence-1", ".form-row.correction-text", ".sc-sentence.sentence-text"] },
+    { "qc": "TC_03", "status": "automated", "it": "TC_03 — Add multiple sentences; delete enabled for extra rows; row deletes", "selectors": ["span[data-ng-click=\"addSentenceClick($event)\"]", ".row-delete"] },
+    { "qc": "TC_04", "status": "automated", "it": "TC_04 — No Outline / Outline radios switch; colour input accepts a value", "selectors": ["input[name=\"outline\"]", ".colorPickerInputBox"] },
+    { "qc": "TC_05", "status": "automated", "it": "TC_05 (author) — Sentence text + strike popups are present for find-and-fix", "note": "Author-side presence automated; Preview/Reader red-line + correct answer deferred (see TC_05 deferred row).", "selectors": [".sc-sentence.sentence-text", ".correction-Popup", ".correction-Strik.strikethrough"] },
+    { "qc": "TC_06", "status": "automated", "it": "TC_06 — Unchecking Add Header removes Header Text from the page", "selectors": ["input#header-visibility", ".sc-intro-holder.header-text"] },
+    { "qc": "TC_07", "status": "automated", "it": "TC_07 — Unchecking Add Instruction Text removes Instruction Text", "selectors": ["input#instr-visibility", ".sc-instr-holder.instruction-text"] },
+    { "qc": "TC_08", "status": "automated", "it": "TC_08 — Tag manager is present (renders when showText)", "note": "graceful when tag-manager not rendered", "selectors": ["tag-manager", ".tagsContainer"] },
+    { "qc": "TC_09", "status": "deferred", "reason": "UI responsiveness across mobile/desktop viewport sizes (visual)" },
+    { "qc": "TC_10", "status": "deferred", "reason": "Submit enabled only when required fields filled (Preview submit flow)" },
+    { "qc": "TC_11", "status": "automated", "it": "TC_11 — Text Description handles special characters", "selectors": [".sc-sentence.sentence-text"] },
+    { "qc": "TC_12", "status": "automated", "it": "TC_12 — Delete is disabled for the only remaining sentence", "selectors": [".row-delete.disabled"] },
+    { "qc": "TC_13", "status": "deferred", "reason": "Submission works without Header/Instruction when unchecked (Preview submit flow)" },
+    { "qc": "TC_14", "status": "deferred", "reason": "Submit disabled with empty Text Description 1 (Preview validation)" },
+    { "qc": "TC_15", "status": "deferred", "reason": "Long text handled gracefully without UI break (visual/Preview)" },
+    { "qc": "TC_16", "status": "automated", "it": "TC_16 — Action Assets accepts a raw value without crashing (invalid-code handling)", "note": "asserts panel resilience; default/reset visual deferred", "selectors": [".colorPickerInputBox"] },
+    { "qc": "TC_17", "status": "deferred", "reason": "Submit disabled when no sentences added (Preview validation)" },
+    { "qc": "TC_18", "status": "automated", "it": "TC_18 — Cannot add sentences beyond the source max limit (max_question=10)", "selectors": [".form-row.correction-text"] },
+    { "qc": "TC_19", "status": "deferred", "reason": "Accessibility — keyboard navigation & screen reader for all controls" },
+    { "qc": "TC_20", "status": "deferred", "reason": "Rapid Save/Preview actions handled gracefully (stability)" },
+    { "qc": "TC_21", "status": "deferred", "reason": "Network disconnect error + recovery on reconnect" },
+    { "qc": "TC_22", "status": "automated", "it": "TC_22/TC_23 — Delete Component control is present (red highlight is visual)", "note": "Cancel-keeps-component navigation outcome deferred to runtime", "selectors": [".add-common-hover .icon-Delete"] },
+    { "qc": "TC_23", "status": "automated", "it": "TC_22/TC_23 — Delete Component control is present (red highlight is visual)", "note": "red colour is a visual assertion" },
+    { "qc": "TC_24", "status": "automated", "it": "TC_24/TC_25/TC_28 — Copy Component control is present/clickable", "note": "graceful when hover toolbar not mounted", "selectors": [".add-common-hover .icon-Copy"] },
+    { "qc": "TC_25", "status": "automated", "it": "TC_24/TC_25/TC_28 — Copy Component control is present/clickable" },
+    { "qc": "TC_26", "status": "deferred", "reason": "Success pop-up \"component has been copied successfully\" after copy (lifecycle)" },
+    { "qc": "TC_27", "status": "deferred", "reason": "Pop-up appears each time on multiple copy actions (lifecycle)" },
+    { "qc": "TC_28", "status": "automated", "it": "TC_24/TC_25/TC_28 — Copy Component control is present/clickable", "note": "copied-component-matches-original outcome deferred to runtime" },
+    { "qc": "TC_29", "status": "deferred", "reason": "Copy control hidden/disabled when no component present (lifecycle)" }
+  ]
+}

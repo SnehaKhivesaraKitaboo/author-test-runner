@@ -1,0 +1,35 @@
+{
+  "component": "Steps Cloning",
+  "slug": "steps-cloning",
+  "dataType": "platform-steps-cloning",
+  "feature": "Clone New Level (step-level clone within a lesson)",
+  "module": "platform-feature (per-step TOC kebab action)",
+  "spec": "47-steps-cloning-deep.spec.ts",
+  "qcSource": "Author Test Cases - Steps Cloning.pdf",
+  "qcCount": 77,
+  "automated": 32,
+  "deferred": 45,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/js/page-tray.js"
+  ],
+  "reusedHelpers": [
+    "cy.openAuthoringTool",
+    "cy.createTestStep",
+    "cy.ensureOnFibGenericStep",
+    "cy.waitForGenericStepCanvasReady",
+    "cy.dropComponentForModule",
+    "cy.setContentEditableOn",
+    "cy.captureLiveStep",
+    "cy.waitForLoaderGone"
+  ],
+  "architectureNotes": [
+    "Cloning is a STEP-level lifecycle action exposed ONLY via the per-step TOC kebab menu (.tocPageIconMenu) item 'Clone New Level' (ng-click=tocSectionClonePopup). It is NOT flag-gated — the menu item is always present for a step page.",
+    "'Clone New Level' reuses the step metadata wizard (#formsModal) in clone mode (scope.clonedStepData set): Basic Info tab shows the Step Title with `disabledInput` (read-only); the Levels tab shows an editable Levels-of-Support chips dropdown (#level-drop-list) when the cloned LoS != CORE, otherwise the message 'Since the LoS is Core, it cannot be updated.' renders.",
+    "LoS master list (page-tray.js scope.levelItems): CORE, LIGHT, LIGHT-MULTILINGUAL, MODERATE, MODERATE-MULTILINGUAL, INTENSIVE, INTENSIVE-MULTILINGUAL. Already-applied LoS in the step are disabled in the dropdown (checkIfLOSApplied → grey + cursor:not-allowed); CORE is therefore not re-selectable once the Core page exists.",
+    "Save/Insert calls clonePhysicalPage(); the cloned page keeps the SAME stepid (Step number unchanged) and is added as another page under the same step in grouptoc.steps with a new page id and its own losTag(s). Metadata is stamped isCloned:true / Cloned-time / Cloned-by.",
+    "Automated here (authoring DOM): kebab menu + Clone option visibility, clone wizard open, prefilled/read-only Step Title, LoS dropdown rules (applied LoS disabled, multilingual variants present, Core not re-selectable), cancel safety, clone-creates-a-new-page-row in TOC, source content integrity (clone copies page JSON), and security.",
+    "Deferred: full save round-trip + reload persistence, save-time LoS validation messages, Reader/CLP rendering after publish, undo/redo internals, audit-trail/DB/internal-id inspection, activity export, locked/read-only and concurrency rules, and the step-creation wizard cases TC_06–TC_09 (covered by the Generic Step component).",
+    "NOT YET LIVE-VERIFIED: selectors are source-derived from KITABOO_Authoring index.html + page-tray.js. A single run against a live authoring instance will confirm the kebab menu, clone wizard, LoS dropdown, and TOC row selectors."
+  ]
+}

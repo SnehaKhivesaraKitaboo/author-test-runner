@@ -1,0 +1,268 @@
+{
+  "component": "HTML Interactivity",
+  "slug": "html-interactivity",
+  "dataType": "htmlInteractivity",
+  "source": "Author Test Cases - HTML Interactivity.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - HTML Interactivity.pdf",
+  "pages": 3,
+  "extractedCount": 32,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI",
+      "description": "/Functional Verify HTML Interactivity component can be added to the editor by drag and drop.",
+      "expected": "Drag and drop HTML Interactivity component onto editorComponent is placed on editor",
+      "raw": "TC_01HTML InteractivityUI/Functional Verify HTML Interactivity component can be added to the editor by drag and drop. 1. Drag and drop HTML Interactivity component onto editorComponent is placed on editor"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI",
+      "description": "/Functional Ensure component cannot be dropped where not allowed and user receives notification.",
+      "expected": "Attempt to drag and drop HTML Interactivity component onto editor where drop is not allowed Component cannot be dropped, user is notified",
+      "raw": "TC_02HTML InteractivityUI/Functional Ensure component cannot be dropped where not allowed and user receives notification. 1. Attempt to drag and drop HTML Interactivity component onto editor where drop is not allowed Component cannot be dropped, user is notified"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functional",
+      "description": "Verify uploading a valid .zip file in HTML Interactivity component works as expected.",
+      "expected": "",
+      "raw": "TC_03HTML InteractivityFunctional Verify uploading a valid .zip file in HTML Interactivity component works as expected. 1. Upload a valid .zip file in HTML Interactivity componentZip file is uploaded and processed"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Negative",
+      "description": "Validate error handling for unsupported file formats when uploading as HTML package.",
+      "expected": "",
+      "raw": "TC_04HTML InteractivityNegative Validate error handling for unsupported file formats when uploading as HTML package. 1. Upload an invalid file format (e.g., . exe, .txt) as html packageError: Unsupported file format"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functional",
+      "description": "Verify replacing existing zip with a new valid zip file updates the component correctly.",
+      "expected": "Replace existing zip with a new valid zip file New zip is uploaded and replaces previous",
+      "raw": "TC_05HTML InteractivityFunctional Verify replacing existing zip with a new valid zip file updates the component correctly. 1. Replace existing zip with a new valid zip file New zip is uploaded and replaces previous"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Negative",
+      "description": "Validate error handling for corrupt or invalid zip file replacement.",
+      "expected": "Replace existing zip with a corrupt/invalid zipError: Invalid zip file",
+      "raw": "TC_06HTML InteractivityNegative Validate error handling for corrupt or invalid zip file replacement. 1. Replace existing zip with a corrupt/invalid zipError: Invalid zip file"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functional",
+      "description": "Ensure style changes to HTML Interactivity are applied and reflected in both editor and preview.",
+      "expected": "",
+      "raw": "TC_09HTML InteractivityFunctional Ensure style changes to HTML Interactivity are applied and reflected in both editor and preview. 1. Change styles of HTML Interactivity. Styles applied correctly in editor and preview"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functional",
+      "description": "Verify replacing zip file with another of different size does not cause functional issues.",
+      "expected": "Replace zip file with another of different size New zip (any size) replaces old, component behaves correctly",
+      "raw": "TC_10HTML InteractivityFunctional Verify replacing zip file with another of different size does not cause functional issues. 1. Replace zip file with another of different size New zip (any size) replaces old, component behaves correctly"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "Validate popup and inline display options in preview mode.",
+      "expected": "Set popup and inline options, preview componentPopup/inline behave correctly",
+      "raw": "TC_11HTML InteractivityFunctional Validate popup and inline display options in preview mode. 1. Set popup and inline options, preview componentPopup/inline behave correctly"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI",
+      "description": "/Functional Check that disabling the \"Show Header\" checkbox hides the header in editor and preview.",
+      "expected": "Disable show header checkbox in settings Header is hidden in editor and preview",
+      "raw": "TC_12HTML InteractivityUI/Functional Check that disabling the \"Show Header\" checkbox hides the header in editor and preview. 1. Disable show header checkbox in settings Header is hidden in editor and preview"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI",
+      "description": "/Functional Ensure settings panel remains fixed when moved.",
+      "expected": "Move settings panel, check if it's fixedSettings panel remains fixed",
+      "raw": "TC_13HTML InteractivityUI/Functional Ensure settings panel remains fixed when moved. 1. Move settings panel, check if it's fixedSettings panel remains fixed"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI",
+      "description": "/Functional Verify icon color in left panel matches design specification.1. Verify icon color in left panel Icon color hex code is #ffffff as per design",
+      "expected": "Verify icon color in left panel Icon color hex code is #ffffff as per design",
+      "raw": "TC_14HTML InteractivityUI/Functional Verify icon color in left panel matches design specification.1. Verify icon color in left panel Icon color hex code is #ffffff as per design"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI",
+      "description": "/Functional Check that disabling \"Show Caption\" hides caption in both editor and preview.",
+      "expected": "Disable show caption checkbox in settings Caption is hidden in editor and preview",
+      "raw": "TC_15HTML InteractivityUI/Functional Check that disabling \"Show Caption\" hides caption in both editor and preview. 1. Disable show caption checkbox in settings Caption is hidden in editor and preview"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI",
+      "description": "/Functional Verify entered header and caption appear correctly in all supported views.",
+      "expected": "Enter text in header and caption, verify in editor, normal preview, list preview, and readerEntered data is visible in all views",
+      "raw": "TC_16HTML InteractivityUI/Functional Verify entered header and caption appear correctly in all supported views. 1. Enter text in header and caption, verify in editor, normal preview, list preview, and readerEntered data is visible in all views"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functional",
+      "description": "Validate the HTML Interactivity component can be deleted using the delete icon.",
+      "expected": "Delete HTML Interactivity component using delete icon (right corner)Component is removed from editor",
+      "raw": "TC_17HTML InteractivityFunctional Validate the HTML Interactivity component can be deleted using the delete icon. 1. Delete HTML Interactivity component using delete icon (right corner)Component is removed from editor"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functional",
+      "description": "Ensure \"No Outline\" setting removes outline in both editor and preview.",
+      "expected": "Select \"No Outline\" in settings, check in editor and previewNo outline visible",
+      "raw": "TC_18HTML InteractivityFunctional Ensure \"No Outline\" setting removes outline in both editor and preview. 1. Select \"No Outline\" in settings, check in editor and previewNo outline visible"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functional",
+      "description": "Verify outline and background color selections render correctly.",
+      "expected": "Select various outline and fill background colors, verify effectCorrect color effects are shown",
+      "raw": "TC_19HTML InteractivityFunctional Verify outline and background color selections render correctly. 1. Select various outline and fill background colors, verify effectCorrect color effects are shown"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "/Functional Check that background color selection in settings matches displayed hex code.",
+      "expected": "Select background color in settings, check color panel for matching hex codeSelected color and hex code match",
+      "raw": "TC_20HTML InteractivityUI/Functional Check that background color selection in settings matches displayed hex code. 1. Select background color in settings, check color panel for matching hex codeSelected color and hex code match"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI",
+      "description": "/Functional Validate long text in header/caption wraps and displays properly in all views.",
+      "expected": "Enter long text in header/caption, verify wrapping and display in editor, preview, reader Long text appears correctly, wraps as expected",
+      "raw": "TC_21HTML InteractivityUI/Functional Validate long text in header/caption wraps and displays properly in all views. 1. Enter long text in header/caption, verify wrapping and display in editor, preview, reader Long text appears correctly, wraps as expected"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI",
+      "description": "/Functional Verify tags, accessibility, and alt text fields are present in settings panel.",
+      "expected": "Open settings, check for tags, accessibility, alt text fieldsAll fields are present",
+      "raw": "TC_22HTML InteractivityUI/Functional Verify tags, accessibility, and alt text fields are present in settings panel. 1. Open settings, check for tags, accessibility, alt text fieldsAll fields are present"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functional",
+      "description": "Ensure component accepts zip file upload and renders content correctly.",
+      "expected": "Drag and drop HTML Interactivity, upload valid zip Component accepts zip and renders content",
+      "raw": "TC_23HTML InteractivityFunctional Ensure component accepts zip file upload and renders content correctly. 1. Drag and drop HTML Interactivity, upload valid zip Component accepts zip and renders content"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Negative",
+      "description": "Validate error handling when uploading an oversized zip file.",
+      "expected": "Drag and drop HTML Interactivity, try uploading oversized zip (beyond allowed limit)Error: File too large",
+      "raw": "TC_24HTML InteractivityNegative Validate error handling when uploading an oversized zip file. 1. Drag and drop HTML Interactivity, try uploading oversized zip (beyond allowed limit)Error: File too large"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI",
+      "description": "/Functional Verify header displays heavy text data without truncation.1. Add header with heavy text data Header displays all content, no truncation",
+      "expected": "Add header with heavy text data Header displays all content, no truncation",
+      "raw": "TC_25HTML InteractivityUI/Functional Verify header displays heavy text data without truncation.1. Add header with heavy text data Header displays all content, no truncation"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI",
+      "description": "/Functional Ensure both header and caption with heavy text display correctly after duplication.",
+      "expected": "Add heavy text in both header and caption, duplicate component Both display correctly, duplication works",
+      "raw": "TC_26HTML InteractivityUI/Functional Ensure both header and caption with heavy text display correctly after duplication. 1. Add heavy text in both header and caption, duplicate component Both display correctly, duplication works"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functional",
+      "description": "Verify header and component display as expected after text entry and zip upload.",
+      "expected": "Add text and upload zip file, check header display Header and component display correctly",
+      "raw": "TC_27HTML InteractivityFunctional Verify header and component display as expected after text entry and zip upload. 1. Add text and upload zip file, check header display Header and component display correctly"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functional",
+      "description": "Confirm reader launches successfully with valid credentials.",
+      "expected": "Login to reader with valid credentials, launch bookReader launches successfully",
+      "raw": "TC_28HTML InteractivityFunctional Confirm reader launches successfully with valid credentials. 1. Login to reader with valid credentials, launch bookReader launches successfully"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functional",
+      "description": "Verify HTML Interactivity component data displays correctly in reader.",
+      "expected": "View HTML Interactivity in reader, verify data Data from component displays correctly",
+      "raw": "TC_29HTML InteractivityFunctional Verify HTML Interactivity component data displays correctly in reader. 1. View HTML Interactivity in reader, verify data Data from component displays correctly"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Security",
+      "description": "/Nega tive Ensure upload is rejected and security warning shown for zips containing malicious content.",
+      "expected": "",
+      "raw": "TC_31HTML Interactivity Security/Nega tive Ensure upload is rejected and security warning shown for zips containing malicious content. 1. Upload zip with malicious content (e.g., JS, XSS vectors)Upload is rejected, security warning"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI",
+      "description": "/Functional Verify only valid drag-and-drop actions are accepted in the editor.",
+      "expected": "Try to drag component quickly multiple times or drop outside editorOnly valid drops are accepted",
+      "raw": "TC_32HTML InteractivityUI/Functional Verify only valid drag-and-drop actions are accepted in the editor. 1. Try to drag component quickly multiple times or drop outside editorOnly valid drops are accepted"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI",
+      "description": "/Functional Ensure component deletion works gracefully if attempted during an ongoing upload.",
+      "expected": "Drag and drop, then immediately try to delete before upload completes Deletion should work gracefully or disallow until upload completes",
+      "raw": "TC_33HTML InteractivityUI/Functional Ensure component deletion works gracefully if attempted during an ongoing upload. 1. Drag and drop, then immediately try to delete before upload completes Deletion should work gracefully or disallow until upload completes"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "UI",
+      "description": "/Functional Verify alt text, tags, and accessibility info are saved and displayed properly.",
+      "expected": "Add alt text/tag/accessibility info, check in settings and on rendered componentInfo is saved and displayed correctly",
+      "raw": "TC_34HTML InteractivityUI/Functional Verify alt text, tags, and accessibility info are saved and displayed properly. 1. Add alt text/tag/accessibility info, check in settings and on rendered componentInfo is saved and displayed correctly"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "UI",
+      "description": "/Functional Ensure style changes (border, background, icon) persist after page reload.",
+      "expected": "Select different style options (border, background, icon) and verify persistence after page reloadStyles persist after reload",
+      "raw": "TC_35HTML InteractivityUI/Functional Ensure style changes (border, background, icon) persist after page reload. 1. Select different style options (border, background, icon) and verify persistence after page reloadStyles persist after reload"
+    }
+  ]
+}

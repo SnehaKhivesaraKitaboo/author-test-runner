@@ -1,0 +1,316 @@
+{
+  "component": "Thumbcard",
+  "slug": "thumbcard",
+  "dataType": "thumbcard",
+  "source": "Author Test Cases - Thumbcard.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Thumbcard.pdf",
+  "pages": 2,
+  "extractedCount": 38,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 ThumbCard HeaderUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 ThumbCard Header FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03 ThumbCard Header FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI",
+      "description": "Verify that the author can view the Thumbs Card Header component in the Elements tray",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header component should be listed and visible in the Elements tray",
+      "raw": "TC_04 ThumbCard HeaderUI Verify that the author can view the Thumbs Card Header component in the Elements tray 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header component should be listed and visible in the Elements tray"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify that the Thumbs Card Header component is enabled in Generic Step",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header is available and can be added to Generic Step",
+      "raw": "TC_05 ThumbCard HeaderFunctionality Verify that the Thumbs Card Header component is enabled in Generic Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header is available and can be added to Generic Step"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the Thumbs Card Header component is enabled in Multipart Step",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header is available and can be added to Multipart Step",
+      "raw": "TC_06 ThumbCard HeaderFunctionality Verify that the Thumbs Card Header component is enabled in Multipart Step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header is available and can be added to Multipart Step"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the author can drag and drop the component in Flexi Layout",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header is inserted and rendered in the Flexi Layout correctly",
+      "raw": "TC_07 ThumbCard HeaderFunctionality Verify that the author can drag and drop the component in Flexi Layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header is inserted and rendered in the Flexi Layout correctly"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that the author can drag and drop the component in other layouts",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header is inserted and rendered in the selected layout",
+      "raw": "TC_08 ThumbCard HeaderFunctionality Verify that the author can drag and drop the component in other layouts 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header is inserted and rendered in the selected layout"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI",
+      "description": "Verify that the top-left icon is fixed and appears in the component",
+      "expected": "Drag and drop Thumbcard Fixed thumbs icon is present and correctly aligned",
+      "raw": "TC_09 ThumbCard HeaderUI Verify that the top-left icon is fixed and appears in the component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Fixed thumbs icon is present and correctly aligned"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify that the icon in the component is not editable",
+      "expected": "Drag and drop Thumbcard Icon is not clickable or editable by the user",
+      "raw": "TC_10 ThumbCard HeaderFunctionalityVerify that the icon in the component is not editable 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Icon is not clickable or editable by the user"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that the settings panel shows two thumbs icons",
+      "expected": "Drag and drop Thumbcard Two thumbs icons are displayed as selectable options",
+      "raw": "TC_11 ThumbCard HeaderFunctionality Verify that the settings panel shows two thumbs icons 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Two thumbs icons are displayed as selectable options"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify that the selected thumbs icon is saved and persists",
+      "expected": "Drag and drop Thumbcard The selected icon remains after reloading the activity",
+      "raw": "TC_12 ThumbCard HeaderFunctionality Verify that the selected thumbs icon is saved and persists 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard The selected icon remains after reloading the activity"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify that RTE allows bold, italic, underline, numbered & bulleted list",
+      "expected": "Drag and drop Thumbcard All text formatting options work as expected and are applied correctly",
+      "raw": "TC_13 ThumbCard HeaderFunctionality Verify that RTE allows bold, italic, underline, numbered & bulleted list 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard All text formatting options work as expected and are applied correctly"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify that math text can be added using RTE",
+      "expected": "Drag and drop Thumbcard Math content is rendered correctly within the component",
+      "raw": "TC_14 ThumbCard HeaderFunctionalityVerify that math text can be added using RTE 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Math content is rendered correctly within the component"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI",
+      "description": "Verify that the component does not show scroll bars",
+      "expected": "Drag and drop Thumbcard No internal scroll should appear No internal scrollbars appear; content fits within the visible area",
+      "raw": "TC_15 ThumbCard HeaderUIVerify that the component does not show scroll bars 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard No internal scroll should appear No internal scrollbars appear; content fits within the visible area"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify that the component can be added inside a Multipart step",
+      "expected": "Drag and drop ThumbcardComponent functions as expected",
+      "raw": "TC_16 ThumbCard HeaderFunctionality Verify that the component can be added inside a Multipart step 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop ThumbcardComponent functions as expected"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify that there is no data loss on reload",
+      "expected": "Drag and drop Thumbcard Previously authored and edited content is intact",
+      "raw": "TC_17 ThumbCard HeaderFunctionalityVerify that there is no data loss on reload 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Previously authored and edited content is intact"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify that content is retained after editing and republishing",
+      "expected": "Drag and drop Thumbcard Content is saved without errors and persists after save",
+      "raw": "TC_18 ThumbCard HeaderFunctionality Verify that content is retained after editing and republishing 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Content is saved without errors and persists after save"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify that the Save functionality works correctly",
+      "expected": "Drag and drop ThumbcardNo errors, data saved",
+      "raw": "TC_19 ThumbCard HeaderFunctionalityVerify that the Save functionality works correctly 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop ThumbcardNo errors, data saved"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "Verify that the component previews correctly in all responsive modes",
+      "expected": "Drag and drop Thumbcard UI adapts responsively without layout breaks",
+      "raw": "TC_20 ThumbCard HeaderUI Verify that the component previews correctly in all responsive modes 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard UI adapts responsively without layout breaks"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify that the activity can be published with the component",
+      "expected": "Drag and drop Thumbcard Activity publishes successfully without errors",
+      "raw": "TC_21 ThumbCard HeaderFunctionality Verify that the activity can be published with the component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Activity publishes successfully without errors"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify that the component content is displayed correctly in CLP",
+      "expected": "Drag and drop Thumbcard Full content of component is visible to students",
+      "raw": "TC_22 ThumbCard HeaderFunctionality Verify that the component content is displayed correctly in CLP 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Full content of component is visible to students"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify that the activity with the component previews correctly in authoring",
+      "expected": "Drag and drop Thumbcard All authored content and layout preview correctly",
+      "raw": "TC_23 ThumbCard HeaderFunctionality Verify that the activity with the component previews correctly in authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard All authored content and layout preview correctly"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify that changes made post preview are visible on re-preview",
+      "expected": "Drag and drop Thumbcard All changes reflect in the preview view",
+      "raw": "TC_24 ThumbCard HeaderFunctionality Verify that changes made post preview are visible on re-preview 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard All changes reflect in the preview view"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify that the component renders correctly when launched in saLTIre",
+      "expected": "Drag and drop Thumbcard Thumbs Card Header displays correctly in saLTIre",
+      "raw": "TC_25 ThumbCard HeaderFunctionality Verify that the component renders correctly when launched in saLTIre 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Thumbs Card Header displays correctly in saLTIre"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify that content is not lost after republishing",
+      "expected": "Drag and drop Thumbcard All component data remains intact",
+      "raw": "TC_26 ThumbCard HeaderFunctionalityVerify that content is not lost after republishing 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard All component data remains intact"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify that the student can attempt and submit the activity successfully",
+      "expected": "Drag and drop Thumbcard Submission completes successfully with content rendered",
+      "raw": "TC_27 ThumbCard HeaderFunctionality Verify that the student can attempt and submit the activity successfully 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Submission completes successfully with content rendered"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify that the teacher can launch and view the activity correctly",
+      "expected": "Drag and drop Thumbcard Teacher preview shows all component data",
+      "raw": "TC_28 ThumbCard HeaderFunctionality Verify that the teacher can launch and view the activity correctly 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Teacher preview shows all component data"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functional",
+      "description": "ThumbCard HeaderCompatibilityVerify full component workflow in Chrome browser",
+      "expected": "Drag and drop Thumbcard Component behaves correctly in Chrome",
+      "raw": "TC_29 ThumbCard HeaderCompatibilityVerify full component workflow in Chrome browser 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Component behaves correctly in Chrome"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functional",
+      "description": "ThumbCard HeaderCompatibilityVerify full component workflow in Safari browser",
+      "expected": "Drag and drop Thumbcard Component behaves correctly in safari",
+      "raw": "TC_30 ThumbCard HeaderCompatibilityVerify full component workflow in Safari browser 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Component behaves correctly in safari"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify that the component works in previously created activities",
+      "expected": "Drag and drop Thumbcard Component is usable in older activities",
+      "raw": "TC_31 ThumbCard HeaderFunctionality Verify that the component works in previously created activities 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Component is usable in older activities"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI",
+      "description": "Verify that the implemented UI matches the Figma design",
+      "expected": "Drag and drop Thumbcard Component appearance and layout match Figma design exactly",
+      "raw": "TC_32 ThumbCard HeaderUI Verify that the implemented UI matches the Figma design 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Component appearance and layout match Figma design exactly"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify that a paragraph with multiple formatting options is retained",
+      "expected": "Drag and drop Thumbcard All formatting persistsAll formatting (bold, italic, lists) renders correctly",
+      "raw": "TC_33 ThumbCard HeaderFunctionality Verify that a paragraph with multiple formatting options is retained 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard All formatting persistsAll formatting (bold, italic, lists) renders correctly"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify that math equations and formatted text render correctly together",
+      "expected": "Drag and drop Thumbcard Text and math content display properly and consistently",
+      "raw": "TC_34 ThumbCard HeaderFunctionality Verify that math equations and formatted text render correctly together 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Text and math content display properly and consistently"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify that long multi-paragraph content does not break layout",
+      "expected": "Drag and drop Thumbcard Layout remains stable; no overflow or scrollbars appear",
+      "raw": "TC_35 ThumbCard HeaderFunctionality Verify that long multi-paragraph content does not break layout 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Layout remains stable; no overflow or scrollbars appear"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "UI",
+      "description": "Verify that the default background color is yellow",
+      "expected": "Drag and drop Thumbcard Background appears as yellow without additional config",
+      "raw": "TC_36 ThumbCard HeaderUIVerify that the default background color is yellow 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Background appears as yellow without additional config"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify plain text addition in Rounded Corners Text Box",
+      "expected": "Drag and drop Thumbcard Plain text is accepted and displayed correctly",
+      "raw": "TC_37 ThumbCard HeaderFunctionality Verify plain text addition in Rounded Corners Text Box 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Plain text is accepted and displayed correctly"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify that text formatting is not accepted in Rounded Corners Box",
+      "expected": "Drag and drop Thumbcard Formatting is ignored; text remains unformatted",
+      "raw": "TC_38 ThumbCard HeaderFunctionality Verify that text formatting is not accepted in Rounded Corners Box 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Drag and drop Thumbcard Formatting is ignored; text remains unformatted"
+    }
+  ]
+}

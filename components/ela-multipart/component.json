@@ -1,0 +1,33 @@
+{
+  "component": "ELA Multipart",
+  "slug": "ela-multipart",
+  "dataType": "group-interactivity-template",
+  "directive": "group-interactivity",
+  "widgetName": "Multipart Question",
+  "widgetAlias": "Group Activity",
+  "module": "assessment-widget (Generic Step column)",
+  "spec": "41-ela-multipart-deep.spec.ts",
+  "qcSource": "Author Test Cases - ELA- Multipart.pdf",
+  "qcCount": 155,
+  "automated": 38,
+  "deferred": 117,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/group-activity/group-activity.html",
+    "closify/KITABOO_Authoring/templates/group-activity/group-activity-settings.html",
+    "closify/KITABOO_Authoring/templates/group-activity/default/group-activity.json",
+    "closify/KITABOO_Authoring/templates/group-activity/scripts/group-activity-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "VERIFIED dataType: the QC suite slug 'ela-multipart' is NOT a real widget dataType in config.js. The actual dropped widget is the 'Multipart Question' (Widgets tab; alias 'Group Activity') with dataType 'group-interactivity-template', directive groupInteractivity, url templates/group-activity/group-activity.html. The QC catalog's dataType:'ela-multipart' is an auto-extracted placeholder and is overridden here by the source-of-truth value.",
+    "DROP MECHANISM: 'group-interactivity-template' IS present in support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes the container to a Generic Step column. The container drops via cy.dropComponentForModule('Multipart Question', { dataType: 'group-interactivity-template' }), mirroring the Extended Response / Correction siblings. NOTE: module-setup NAME_TO_DATA_TYPE maps the name 'ela multipart' -> 'ela-multipart' (a non-assessment type); the commands deliberately drop by the real widget name 'Multipart Question' so routing lands on generic-step-column. module-setup.ts was NOT modified.",
+    "CONTAINER DOM: outer wrapper .group-interactivity-container; the inner repeater host carries the 'group-interactivity' attribute. Sub-question slots are .question-container (ng-repeat over fieldData.settings.questionBank). Empty slots render .empty-droppable-text with 'Drag Assessment widget from right panel'; filled slots host the widget HTML in .save-html.column-content.editables.",
+    "PARTS: a fresh empty slot is auto-appended after each successful inner drop. group-activity-directive.js caps pushes at questionBank.length < 35 (effective max parts = 35). Only widgets with enableGroupInteractivity:true (MCQ, FIB, etc.) are accepted inside the container.",
+    "INNER DROP: the framework's cy.dropWidgetIntoGenericStep targets the OUTER .generic-step-column-content, so sub-question drops are performed by cy.addElaMultipartPart, which invokes the multipart directive's own onDropComplete on its [group-interactivity] scope. This is best-effort and logs+returns gracefully when the directive scope / widget catalog / empty slot is unavailable in the headless DOM.",
+    "SETTINGS PANEL: shared id #fib-settings-panel with directive group-interactivity-settings and title 'Group Activity'. Interactive Component yes/no radios bind currSettings.isInteractive (default 'yes'). Shuffle Questions (#add-shuftle-choices), Background Color (#grp-Background) and Corner Radius (#grp-CornerRadius) checkboxes reveal dependent inputs. Outline radios value 'outline'/'outlineBg' bind currSettings.outline (default 'outline'); Action Assets colour via #appearanceInput (currSettings.Appearance default '#7eb1eb'). Tags via #metaTagsInput.",
+    "FLAG-GATED: Header Background Color (#headerBgColorInput) renders only when styleClass=='workedExample'; Try Again (#add-activity-restart) / Show Me (#add-show-me) / Reset (#btn-rest) render only when !isGradableActivity; the Worked-Example Hide/Show bar (.showhideButton) renders only for the workedExample style. The spec degrades gracefully (log+return) when these are absent.",
+    "DEFERRED: the bulk of the 155-case QC suite is Reader/Preview runtime (answer icons, scoring counts, submit-enable rules, outline highlighting, review mode, progress, timer, conditional navigation, reporting), per-part-type widget regression (TC_10–49 drag-each-widget), media upload/error handling, publishing/data-patch, persistence-after-reload, accessibility, responsiveness, and cross-browser — all outside the authoring DOM. These are it.skip() with explicit reasons.",
+    "NOT YET LIVE-VERIFIED: selectors are derived from the source templates and have not been executed against a running authoring instance (AUTHORING_LAUNCH_URL was not available). A single headed run will confirm the container drop, the inner slot drop mechanism, and the settings-panel selectors."
+  ]
+}

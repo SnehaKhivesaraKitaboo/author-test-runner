@@ -1,0 +1,23 @@
+{
+  "component": "Edit Metadata",
+  "slug": "edit-metadata",
+  "dataType": "platform-edit-metadata",
+  "module": "step-metadata-wizard (TOC kebab → Edit Metadata)",
+  "spec": "46-edit-metadata-deep.spec.ts",
+  "qcSource": "Author Test Cases - Edit metadata.pdf",
+  "qcCount": 34,
+  "automated": 18,
+  "deferred": 16,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html"
+  ],
+  "architectureNotes": [
+    "Edit Metadata is not a dropped widget: the TOC per-step kebab menu (.tocMenuDiv → .tocPageIconMenu) item 'Edit Metadata' (li ng-click=\"tocSectionEditPopup\") re-opens the step creation wizard (#formsModal / .forms-modal) in editingStepData mode.",
+    "The kebab menu exposes Clone New Level, Edit Metadata and Delete (Delete gated by canDeletePage) — QC TC_32.",
+    "Editable wizard fields: Step Title (#title, ng-model=\"stepTitle\", required), Keyword Tags (#tag / #tag-list, the 'standards/objectives' tags), Levels of Support (#level-sec; new step LoS fixed to 'Core', read-only), Instructions for Students/Teachers (#studentDesc/#teacherDesc, 10000-char budget).",
+    "There is NO literal 'Objectives' or 'Standards' field in the metadata wizard markup; those QC concepts are mapped to Keyword Tags + Levels of Support + Instructions, which are the actual fields present.",
+    "Save = #subBtn ng-click=\"... infoEdit()\" (visible only off the Basic Info tab); Cancel = #cancelBtn ng-click=\"cancelAndReset()\". 'Change Step' (#backPageTray) is hidden while editing.",
+    "Required-field validation is enforced via ng-class disabledBtn / !stepTitle on Next/Submit rather than an inline red error string, so the spec asserts the disabled-button contract.",
+    "RTE toolbar formatting (B/I/U, lists, image, undo/redo, char-limit toast), Publish/Republish/Reader visibility, read-only permission mode, responsive layout, simultaneous-tab conflict, clone/delete mutations and persistence-after-reload are outside the authoring DOM and are deferred."
+  ]
+}

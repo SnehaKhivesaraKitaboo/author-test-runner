@@ -1,0 +1,420 @@
+{
+  "component": "Jodit Editor",
+  "slug": "jodit-editor",
+  "dataType": "platform-jodit",
+  "source": "Author Test Cases - Jodit Editor Test Cases.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Jodit Editor Test Cases.pdf",
+  "pages": 3,
+  "extractedCount": 51,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01QA Jodit editor UI and FunctionalityVerify if user able to launch the URL 1. Hit the URL https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login 2. Login with valid credentials.User is successfully logged in."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "Verify presence of \"Answer type\" section in Q&A widget settings panel",
+      "expected": "",
+      "raw": "TC_02QA Jodit editor UI and Functionality Verify presence of \"Answer type\" section in Q&A widget settings panel 1. Navigate to the activity authoring page. 2. Add a Q&A widget. 3. Open settings panel. Answer type section is displayed in settings panel."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "Verify RTE radio button is checked by default in Answer type section",
+      "expected": "",
+      "raw": "TC_03QA Jodit editor UI and Functionality Verify RTE radio button is checked by default in Answer type section 1. Open Q&A widget settings. 2. Observe the \"RTE\" radio button.RTE radio button is checked by default."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "Verify two checkboxes (\"Basic\", \"Advanced\") are displayed under RTE when RTE is selected",
+      "expected": "",
+      "raw": "TC_04QA Jodit editor UI and Functionality Verify two checkboxes (\"Basic\", \"Advanced\") are displayed under RTE when RTE is selected 1. Ensure RTE is selected. 2. Observe the checkboxes under RTE. Both \"Basic\" and \"Advanced\" checkboxes are displayed."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functional",
+      "description": "QA Jodit editor Default Behavior Verify \"Basic\" checkbox is selected by default",
+      "expected": "",
+      "raw": "TC_05QA Jodit editor Default Behavior Verify \"Basic\" checkbox is selected by default 1. Observe which checkbox is selected by default under RTE.Basic checkbox is selected by default."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify current Rich Text Editor is displayed when \"Basic\" editor is selected",
+      "expected": "",
+      "raw": "TC_06QA Jodit editor Editor Functionality Verify current Rich Text Editor is displayed when \"Basic\" editor is selected 1. Confirm \"Basic\" checkbox is selected. 2. Observe editor in Q&A widget.Current Rich Text Editor is displayed."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify Jodit Editor is displayed when \"Advanced\" editor is selected",
+      "expected": "",
+      "raw": "TC_07QA Jodit editor Editor Functionality Verify Jodit Editor is displayed when \"Advanced\" editor is selected 1. Select \"Advanced\" checkbox. 2. Observe editor in Q&A widget.Jodit Editor is displayed."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify author can use all enabled functionalities of Jodit Editor while authoring",
+      "expected": "",
+      "raw": "TC_08QA Jodit editor Editor Functionality Verify author can use all enabled functionalities of Jodit Editor while authoring 1. Select \"Advanced\" editor. 2. Use all enabled Jodit Editor buttons/features. All enabled Jodit Editor functionalities are usable."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify author can switch from Basic to Advanced editor and vice versa",
+      "expected": "",
+      "raw": "TC_09QA Jodit editor Editor Functionality Verify author can switch from Basic to Advanced editor and vice versa 1. Select \"Advanced\" editor, then select \"Basic\" editor. 2. Repeat vice versa. Editor switches correctly each time without issues."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functional",
+      "description": "QA Jodit editorData Integrity Verify no data loss when switching from Basic to Advanced editor and vice versa",
+      "expected": "",
+      "raw": "TC_10QA Jodit editorData Integrity Verify no data loss when switching from Basic to Advanced editor and vice versa 1. Enter content in Basic editor. 2. Switch to Advanced editor. 3. Switch back to Basic editor. 4. Observe content. Content is retained and not lost after switching."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify no data loss after inserting data in both editors, previewing activity, and then publishing",
+      "expected": "",
+      "raw": "TC_11QA Jodit editor Preview Functionality Verify no data loss after inserting data in both editors, previewing activity, and then publishing 1. Enter data using Basic editor. 2. Preview activity. 3. Publish activity. 4. Check data in published activity. 5. Repeat for Advanced editor. No data loss in published activity for both editors."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functional",
+      "description": "QA Jodit editorData Integrity Verify no data loss when modifying activity and switching editors before publishing",
+      "expected": "",
+      "raw": "TC_12QA Jodit editorData Integrity Verify no data loss when modifying activity and switching editors before publishing 1. Enter data in one editor. 2. Switch to other editor. 3. Preview. 4. Publish. 5. Check data in published activity. No data loss after publishing when switching editors."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functional",
+      "description": "QA Jodit editorData Integrity Verify no data loss when republishing an activity containing Q&A widgets",
+      "expected": "",
+      "raw": "TC_13QA Jodit editorData Integrity Verify no data loss when republishing an activity containing Q&A widgets 1. Publish an activity with Q&A widgets. 2. Republish the same activity. 3. Check data in Q&A widgets.No data loss after republishing activity."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify student can access Jodit Editor in CLP if Advanced Editor was selected during authoring",
+      "expected": "",
+      "raw": "TC_14QA Jodit editor Student Functionality Verify student can access Jodit Editor in CLP if Advanced Editor was selected during authoring 1. Author uses Advanced Editor for Q&A. 2. Publish activity. 3. Login as student. 4. Access activity. 5. Observe editor in Q&A. Jodit Editor appears for student in Q&A activity."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify student can use all available buttons in Jodit Editor",
+      "expected": "",
+      "raw": "TC_15QA Jodit editor Student Functionality Verify student can use all available buttons in Jodit Editor 1. Login as student. 2. Access activity with Jodit Editor. 3. Use all available editor buttons. All available Jodit Editor buttons are usable by student."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI and Functionality",
+      "description": "Verify only one of Basic or Advanced checkbox can be selected at one time",
+      "expected": "",
+      "raw": "TC_16QA Jodit editor UI and Functionality Verify only one of Basic or Advanced checkbox can be selected at one time 1. Try to select both \"Basic\" and \"Advanced\" at the same time.Only one checkbox can be selected at a time."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functional",
+      "description": "QA Jodit editorData Integrity Verify data created with Basic Editor displays correctly after switching to Advanced Editor",
+      "expected": "",
+      "raw": "TC_17QA Jodit editorData Integrity Verify data created with Basic Editor displays correctly after switching to Advanced Editor 1. Enter data in Basic Editor. 2. Switch to Advanced Editor. 3. Observe data formatting and content.Data displays correctly in Advanced Editor."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functional",
+      "description": "QA Jodit editorData Integrity Verify data created with Advanced Editor displays correctly after switching to Basic Editor",
+      "expected": "",
+      "raw": "TC_18QA Jodit editorData Integrity Verify data created with Advanced Editor displays correctly after switching to Basic Editor 1. Enter data in Advanced Editor. 2. Switch to Basic Editor. 3. Observe data formatting and content.Data displays correctly in Basic Editor."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Validation",
+      "description": "Verify error handling if editor fails to load",
+      "expected": "",
+      "raw": "TC_19QA Jodit editorValidationVerify error handling if editor fails to load 1. Simulate editor load failure. 2. Observe error message.User is shown a clear error message."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Security",
+      "description": "Verify that no script/html/garbage content injection is possible via the editors",
+      "expected": "",
+      "raw": "TC_20QA Jodit editorSecurity Verify that no script/html/garbage content injection is possible via the editors 1. Observe both editors. 2. Preview and publish. 3. Check for script execution. Scripts/t/html/garbage are not added. proper validation/sanitization is in place."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify all formatting options in Jodit Editor are functional for author",
+      "expected": "",
+      "raw": "TC_21QA Jodit editorPositive Verify all formatting options in Jodit Editor are functional for author 1. Select Advanced (Jodit) editor. 2. Use all formatting options (Bold, Italic, Underline, Strikethrough, Font size, Color, Subscript, Superscript, Undo, Redo, Table, List, Insert link, Insert symbol, etc.). All formatting options work as expected and changes are visible in the answer area."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify editor expands to full screen on clicking expand button",
+      "expected": "",
+      "raw": "TC_22QA Jodit editorPositive Verify editor expands to full screen on clicking expand button 1. Click the expand (full screen) button in the Jodit Editor toolbar.Editor expands to full screen."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify content is retained after toggling full screen in Jodit Editor",
+      "expected": "",
+      "raw": "TC_23QA Jodit editorPositive Verify content is retained after toggling full screen in Jodit Editor 1. Enter content in Jodit Editor. 2. Switch to full screen and back. Content remains unchanged and formatting is preserved."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify character limit (5000) enforcement in Jodit Editor",
+      "expected": "",
+      "raw": "TC_24QA Jodit editorPositive Verify character limit (5000) enforcement in Jodit Editor 1. Enter text until the 5000 character limit is reached. 2. Try to add more. User cannot enter more than 5000 characters. Proper message or block is shown."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify keyboard shortcut functionality in Jodit Editor",
+      "expected": "",
+      "raw": "TC_25QA Jodit editorPositive Verify keyboard shortcut functionality in Jodit Editor 1. Use keyboard shortcuts (e.g., Ctrl+B for bold, Ctrl+I for italic) in Jodit Editor. Keyboard shortcuts perform the expected formatting actions."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Positive",
+      "description": "Verify undo/redo functionality in Jodit Editor",
+      "expected": "",
+      "raw": "TC_26QA Jodit editorPositive Verify undo/redo functionality in Jodit Editor 1. Type text. 2. Format it. 3. Use Undo, then Redo buttons.Editor undoes and redoes actions correctly."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Positive",
+      "description": "Verify text alignment options in Jodit Editor",
+      "expected": "",
+      "raw": "TC_27QA Jodit editorPositive Verify text alignment options in Jodit Editor 1. Select text. 2. Apply left, center, right, justify alignment.Text aligns as per the selected option."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify list creation (bulleted/numbered) in Jodit Editor",
+      "expected": "",
+      "raw": "TC_28QA Jodit editorPositive Verify list creation (bulleted/numbered) in Jodit Editor 1. Click bullet and number list buttons. 2. Enter list items.Lists are created and displayed correctly."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify table insertion and editing in Jodit Editor",
+      "expected": "",
+      "raw": "TC_29QA Jodit editorPositive Verify table insertion and editing in Jodit Editor 1. Insert a table using the table button. 2. Enter and edit content in cells.Table is inserted and editable."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify link insertion and navigation in Jodit Editor",
+      "expected": "",
+      "raw": "TC_30QA Jodit editorPositive Verify link insertion and navigation in Jodit Editor 1. Insert a hyperlink. 2. Click the link in preview/published mode.Link is created and navigates to correct URL."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Positive",
+      "description": "Verify symbol insertion in Jodit Editor",
+      "expected": "",
+      "raw": "TC_31QA Jodit editorPositiveVerify symbol insertion in Jodit Editor 1. Click the symbol button and insert a symbol.Symbol appears in the editor as expected."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify font size and color changes in Jodit Editor",
+      "expected": "",
+      "raw": "TC_32QA Jodit editorPositive Verify font size and color changes in Jodit Editor 1. Select text. 2. Change font size and color. Text updates reflect chosen font size and color."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify clearing formatting in Jodit Editor",
+      "expected": "",
+      "raw": "TC_33QA Jodit editorPositiveVerify clearing formatting in Jodit Editor 1. Apply multiple formats to text. 2. Use clear formatting button. All formatting is removed from the selected text."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify preview shows all formatting done in Jodit Editor",
+      "expected": "",
+      "raw": "TC_34QA Jodit editorPositive Verify preview shows all formatting done in Jodit Editor 1. Format text using various options. 2. Preview activity.All formatting appears correctly in preview."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify copying and pasting styled content in Jodit Editor",
+      "expected": "",
+      "raw": "TC_35QA Jodit editorPositive Verify copying and pasting styled content in Jodit Editor 1. Copy formatted text from Word/other RTE . 2. Paste in Jodit Editor. Pasted content retains formatting or shows expected sanitation."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Negative",
+      "description": "Verify error when inserting an invalid URL in link dialog",
+      "expected": "",
+      "raw": "TC_36QA Jodit editorNegative Verify error when inserting an invalid URL in link dialog 1. Try to insert a malformed URL in link insertion. Editor should show a validation error or prevent submission."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Negative",
+      "description": "Verify editor does not allow script/HTML injection",
+      "expected": "",
+      "raw": "TC_37QA Jodit editorNegative Verify editor does not allow script/HTML injection 1. Attempt to insert <script> or malicious HTML via editor.Editor sanitizes input; scripts are not executed."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Negative",
+      "description": "Verify behavior when switching from Jodit to Basic with unsupported formatting",
+      "expected": "",
+      "raw": "TC_38QA Jodit editorNegative Verify behavior when switching from Jodit to Basic with unsupported formatting 1. Add advanced formatting in Jodit (e.g., table, color). 2. Switch to Basic editor. Editor gracefully degrades formatting or warns user about unsupported features."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Negative",
+      "description": "Verify editor disables input when read- only or submission is disabled",
+      "expected": "",
+      "raw": "TC_39QA Jodit editorNegative Verify editor disables input when read- only or submission is disabled 1. Set widget to read-only mode. 2. Try to edit answer in Jodit.Editor is disabled; user cannot make changes."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Negative",
+      "description": "Verify error message when trying to upload unsupported file via Jodit (if file upload is enabled)",
+      "expected": "",
+      "raw": "TC_40QA Jodit editorNegative Verify error message when trying to upload unsupported file via Jodit (if file upload is enabled) 1. Attempt to upload an unsupported file type via Jodit.Editor blocks upload and shows error message."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Negative",
+      "description": "Verify editor handles network failure during auto-save or publish",
+      "expected": "",
+      "raw": "TC_41QA Jodit editorNegative Verify editor handles network failure during auto-save or publish 1. Disconnect internet and attempt to save/publish content. Editor shows appropriate error and does not lose data."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Negative",
+      "description": "Verify editor handles large paste (over 5000 characters) gracefully1. Copy >5000 chars and paste into Jodit. Editor truncates at 5000 chars or displays clear error.",
+      "expected": "",
+      "raw": "TC_42QA Jodit editorNegative Verify editor handles large paste (over 5000 characters) gracefully1. Copy >5000 chars and paste into Jodit. Editor truncates at 5000 chars or displays clear error."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Negative",
+      "description": "Verify editor handles browser back/refresh without unsaved data loss",
+      "expected": "",
+      "raw": "TC_43QA Jodit editorNegative Verify editor handles browser back/refresh without unsaved data loss 1. Enter data. 2. Refresh/Go back. Editor warns about unsaved changes or auto- saves as per app logic."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Negative",
+      "description": "Verify improper HTML or CSS is not rendered/executed in preview/publish",
+      "expected": "",
+      "raw": "TC_44QA Jodit editorNegative Verify improper HTML or CSS is not rendered/executed in preview/publish 1. Paste invalid HTML/CSS. 2. Preview/publish. Improper code is ignored, not rendered/executed."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "UI",
+      "description": "does not break if editor toolbar overflows or is resized",
+      "expected": "",
+      "raw": "TC_45QA Jodit editorNegative Verify UI does not break if editor toolbar overflows or is resized 1. Resize browser to small width. 2. Observe editor toolbar.Toolbar is responsive and UI does not break."
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Positive",
+      "description": "Verify all toolbar options are visible for Jodit Editor in authoring and CLP",
+      "expected": "",
+      "raw": "TC_46QA Jodit editorPositive Verify all toolbar options are visible for Jodit Editor in authoring and CLP 1. Open Jodit Editor as author and student. 2. Check toolbar visibility. All enabled toolbar options are visible in both views."
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Negative",
+      "description": "Verify user cannot select both Basic and Advanced at once",
+      "expected": "",
+      "raw": "TC_47QA Jodit editorNegative Verify user cannot select both Basic and Advanced at once 1. Attempt to check both checkboxes in settings.Only one can be selected at any time."
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Negative",
+      "description": "Verify switching editor with unsaved changes prompts user (if applicable)",
+      "expected": "",
+      "raw": "TC_48QA Jodit editorNegative Verify switching editor with unsaved changes prompts user (if applicable) 1. Make changes in one editor. 2. Switch editor without saving. User is prompted to save or warned of data loss."
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Positive",
+      "description": "Verify maximum character limit warning is displayed when limit approached1.",
+      "expected": "",
+      "raw": "TC_49QA Jodit editorPositive Verify maximum character limit warning is displayed when limit approached1. Enter text close to 5000 chars. Editor displays warning when near or at limit. It should display the popup message."
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Negative",
+      "description": "Verify accessibility: Editor toolbar and content are accessible via keyboard and screen reader",
+      "expected": "",
+      "raw": "TC_50QA Jodit editorNegative Verify accessibility: Editor toolbar and content are accessible via keyboard and screen reader 1. Tab through toolbar and content. 2. Use screen reader. All elements are accessible and announced correctly in the preview and in reader."
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functional",
+      "description": "Verify there should not be any data loss when user relaunch the activity in the reader.",
+      "expected": "",
+      "raw": "TC_51QA Jodit editorFunctional Verify there should not be any data loss when user relaunch the activity in the reader. 1. Open Jodit Editor activity as a student. 2. Attempt the activity and relaunch in the reader. 3.check the dataData should not be loss after relaunch ."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "component": "Flashcard",
+  "slug": "flashcard",
+  "dataType": "flashcard",
+  "directive": "flash-card-template",
+  "widgetName": "Flashcard",
+  "module": "content-widget (Instructions-for-Students canvas)",
+  "spec": "30-flashcard-deep.spec.ts",
+  "qcSource": "Author Test Cases - Flashcard.pdf",
+  "qcCount": 41,
+  "automated": 13,
+  "deferred": 28,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/flashcard/flashcard.html",
+    "closify/KITABOO_Authoring/templates/flashcard/flashcard-template-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/flashcard/flashcard-media-template.html",
+    "closify/KITABOO_Authoring/templates/flashcard/default/flashcard.json"
+  ],
+  "architectureNotes": [
+    "Flashcard is a CONTENT widget (catalog name 'Flashcard', dataType 'flashcard', directive 'flash-card-template'), NOT an assessment widget. 'flashcard' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Flashcard'), not into a Generic Step column.",
+    "Canvas wrapper is .component-holder.flashcard[flash-card-template]. Each card is a .slideshowContainer (ng-repeat over fieldData.slides). The default JSON ships 3 slides.",
+    "Card management: Add Card (.add-slide) is disabled (btn-disabled) when slides >= 20; Delete Card (.delete-slide) is disabled when slides <= 3 (source ng-class in flashcard.html). The QC '50+ cards' case is therefore capped by design at 20 — asserted as the cap contract.",
+    "Front/back editable text bodies are .front-container .card-text.editables and .back-container .card-text.editables (contenteditable, ng-model option.frontCard.cardText / option.backCard.cardText) — set via cy.setContentEditableOn, never cy.type(). cardType=='text' gates these; media types render the [data-media-template-flashcard] block.",
+    "Header (.sc-intro) / Instruction (.sc-instr) bodies are contenteditable, shown only when settings.isHeaderVisible / isInstructionVisible (both default true).",
+    "Settings panel ([flash-card-setting] / .flashcard-setting-panel, title 'Flashcard') contains: <stylepanel> (style1 active, style2, coming-soon), Show Header (#header-visibility) / Show Instruction (#instr-visibility) checkboxes, Front/Back media radios (Text/Image/Audio/Video), No Outline / Outline radios, Card Colour (#card-colour) + Action Assets colour pickers, Tags input, Alt Text textarea (maxlength=2000).",
+    "There is NO math editor ('fx') control in the flashcard settings panel; the QC 'fx/LaTeX' step (TC_17) does not map to a flashcard control — the Audio media option is asserted instead and the math-render expectation is deferred.",
+    "Flip is .add-flip (toggles option.isBackCardActive); the visual flip animation, navigation arrows (bxslider), undo, paste-formatting, file pickers, math render, a11y, cross-browser, annotations, Preview/Reader/Publish, and persistence-after-reload are deferred.",
+    "QC TC_01–TC_09 are login/activity/step bootstrap (handled by cy.openAuthoringTool and step helpers, not the Flashcard component)."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "component": "Situation Header",
+  "slug": "situation-header",
+  "spec": "24-situation-header-deep.spec.ts",
+  "qcSource": "Author Test Cases - Situation Header.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires login/activity bootstrap, math-editor render, the floating formatting toolbar, Preview/Reader/Publish, persistence-after-reload, cross-browser, or char-limit flows."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "deferred", "reason": "Launch Studio URL + listing page — environment bootstrap handled by cy.openAuthoringTool, not a component assertion" },
+    { "qc": "TC_02", "status": "deferred", "reason": "Create math activity (basic info) — activity-creation flow outside authoring DOM" },
+    { "qc": "TC_03", "status": "deferred", "reason": "Start authoring redirect — activity-creation flow outside authoring DOM" },
+
+    { "qc": "TC_04", "status": "automated", "it": "TC_04 — Component is present/selectable after being added from the Elements tray", "selectors": ["[situationbox]", ".situation-box-container"] },
+    { "qc": "TC_05", "status": "automated", "it": "TC_05 — Layout/step availability is config-gated (situationbox flags)", "note": "presence on allowed page verified; disallowed-step gating is config-driven (runtime)" },
+    { "qc": "TC_06", "status": "automated", "it": "TC_06 — Component is placed successfully without error", "selectors": [".situation-box-container", ".situation-box-text-editor", ".situation-box-arrow-image-container img"] },
+
+    { "qc": "TC_07", "status": "automated", "it": "TC_07/TC_10 — Arrow icon appears at the top-left after placement", "selectors": [".situation-box-arrow-image-container img"] },
+    { "qc": "TC_08", "status": "automated", "it": "TC_08 — An RTE-enabled text area appears next to the icon", "selectors": [".situation-box-text-editor[contenteditable=\"true\"]"] },
+    { "qc": "TC_09", "status": "automated", "it": "TC_09/TC_11 — Arrow icon is non-editable (no contenteditable, not draggable)", "selectors": ["img[draggable=\"false\"]"] },
+    { "qc": "TC_10", "status": "automated", "it": "TC_07/TC_10 — Arrow icon appears at the top-left after placement" },
+    { "qc": "TC_11", "status": "automated", "it": "TC_09/TC_11 — Arrow icon is non-editable (no contenteditable, not draggable)" },
+    { "qc": "TC_12", "status": "automated", "it": "TC_12/TC_16 — No editing handles / context-menu options appear on the icon" },
+    { "qc": "TC_13", "status": "deferred", "reason": "Icon intact after save + reload — persistence-after-reload" },
+    { "qc": "TC_14", "status": "deferred", "reason": "Icon visible in preview & published CLP view — Preview/Reader flow" },
+    { "qc": "TC_15", "status": "automated", "it": "TC_15/TC_49 — Icon cannot be selected & deleted via keyboard (Delete)" },
+    { "qc": "TC_16", "status": "automated", "it": "TC_12/TC_16 — No editing handles / context-menu options appear on the icon" },
+    { "qc": "TC_17", "status": "automated", "it": "TC_17/TC_25 — Icon remains fixed; cannot be dragged out of the component" },
+    { "qc": "TC_18", "status": "automated", "it": "TC_18 — Pasting over the icon does not overwrite it" },
+    { "qc": "TC_19", "status": "automated", "it": "TC_19 — Icon container is non-interactive (UI-hack via pointer-events guarded)", "note": "deep DOM-tamper persistence verified in Reader (deferred)" },
+
+    { "qc": "TC_20", "status": "deferred", "reason": "Math equation (√, fractions, exponents) renders — math editor render in Reader" },
+    { "qc": "TC_21", "status": "deferred", "reason": "Text + math render together without overlap — math editor render" },
+    { "qc": "TC_22", "status": "deferred", "reason": "Long text + math retained after save/reopen — persistence-after-reload" },
+    { "qc": "TC_23", "status": "deferred", "reason": "Preview shows formatting + math as authored — Preview render" },
+    { "qc": "TC_24", "status": "deferred", "reason": "Math-only content visible & saved — math editor render + persistence" },
+
+    { "qc": "TC_25", "status": "automated", "it": "TC_17/TC_25 — Icon remains fixed; cannot be dragged out of the component" },
+    { "qc": "TC_26", "status": "automated", "it": "TC_26 — Default background colour is the source-defined purple", "selectors": [".situation-box-container"], "note": "background-color #f3ecfe / rgb(243,236,254)" },
+    { "qc": "TC_27", "status": "automated", "it": "TC_27 — Author can type plain text into the component", "selectors": [".situation-box-text-editor"] },
+    { "qc": "TC_28", "status": "automated", "it": "TC_28 — Author can add multiple paragraphs (line break preserved)", "selectors": [".situation-box-text-editor br"] },
+
+    { "qc": "TC_29", "status": "deferred", "reason": "Bold formatting applied — floating textEditor toolbar render (overlay)" },
+    { "qc": "TC_30", "status": "deferred", "reason": "Italic formatting applied — floating textEditor toolbar render (overlay)" },
+    { "qc": "TC_31", "status": "deferred", "reason": "Underline formatting applied — floating textEditor toolbar render (overlay)" },
+    { "qc": "TC_32", "status": "deferred", "reason": "Bulleted list — floating textEditor toolbar render (overlay)" },
+    { "qc": "TC_33", "status": "deferred", "reason": "Numbered list — floating textEditor toolbar render (overlay)" },
+    { "qc": "TC_34", "status": "deferred", "reason": "Math equation input via math editor — math editor render" },
+    { "qc": "TC_35", "status": "deferred", "reason": "Mixed formatted text + math without layout issues — render" },
+    { "qc": "TC_36", "status": "deferred", "reason": "No internal scrollbars; height adjusts to content — visual/Preview check" },
+    { "qc": "TC_37", "status": "deferred", "reason": "No content loss after navigation/refresh (if saved) — persistence-after-reload" },
+    { "qc": "TC_38", "status": "deferred", "reason": "Save stores content/formatting/equations — Save + persistence flow" },
+    { "qc": "TC_39", "status": "deferred", "reason": "Preview reflects exact authored content — Preview render" },
+    { "qc": "TC_40", "status": "deferred", "reason": "Edit mode after Preview retains content — Preview/Edit round-trip" },
+    { "qc": "TC_41", "status": "deferred", "reason": "Activity published successfully with component — Publish flow" },
+    { "qc": "TC_42", "status": "deferred", "reason": "Content appears in CLP (Reader) after launch — Reader flow" },
+    { "qc": "TC_43", "status": "deferred", "reason": "Republish reflects updated content in CLP — Publish/Reader flow" },
+    { "qc": "TC_44", "status": "deferred", "reason": "Responsive in Desktop/Tablet/Mobile preview — Preview responsiveness" },
+    { "qc": "TC_45", "status": "deferred", "reason": "Content renders correctly in Chrome — cross-browser (Reader)" },
+    { "qc": "TC_46", "status": "deferred", "reason": "Content renders correctly in Safari — cross-browser (Reader)" },
+    { "qc": "TC_47", "status": "deferred", "reason": "Existing activities accept the new component — activity-edit flow" },
+    { "qc": "TC_48", "status": "deferred", "reason": "Save/Preview/Publish flows in existing activities — Publish flow" },
+
+    { "qc": "TC_49", "status": "automated", "it": "TC_15/TC_49 — Icon cannot be selected & deleted via keyboard (Delete)", "note": "icon protection; component-level delete control verified separately in lifecycle suite" },
+    { "qc": "TC_50", "status": "deferred", "reason": "Unsupported formatting (font color) ignored gracefully — toolbar/Preview" },
+    { "qc": "TC_51", "status": "deferred", "reason": "Invalid math syntax shows error; equation not inserted — math editor validation" },
+    { "qc": "TC_52", "status": "automated", "it": "SEC — Script tags in the text area are not rendered as live <script>", "selectors": [".situation-box-text-editor"] },
+    { "qc": "TC_53", "status": "deferred", "reason": "Excessive characters beyond system limit — limit warning (runtime/Preview)" },
+    { "qc": "TC_54", "status": "deferred", "reason": "Close authoring without saving shows warning — unsaved-changes dialog (harness)" }
+  ]
+}

@@ -1,0 +1,1652 @@
+{
+  "component": "WL Multipart",
+  "slug": "wl-multipart",
+  "dataType": "wl-multipart",
+  "source": "Author Test Cases - WL - Multipart.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - WL - Multipart.pdf",
+  "pages": 3,
+  "extractedCount": 205,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01WL Multipart UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create WL activity",
+      "expected": "Create activity by entering basic infoActivity creation page should display with Basic info screen",
+      "raw": "TC_02WL Multipart FunctionalityVerify if user ia able to create WL activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic infoActivity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03WL Multipart FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user able to create new step in WL Activites",
+      "expected": "Add new stepAdd new step should be clickable",
+      "raw": "TC_04WL Multipart Functionality Verify if user able to create new step in WL Activites 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add new stepAdd new step should be clickable"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05WL Multipart FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06WL Multipart Functionality Verify that the cancel button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07WL Multipart Functionality Verify that the change step button is clickable in step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08WL Multipart Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09WL Multipart Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify adding Title element to multipartDrag “Title” from components to canvasTitle element appears with editable text field",
+      "expected": "",
+      "raw": "TC_10WL Multipart FunctionalityVerify adding Title element to multipartDrag “Title” from components to canvasTitle element appears with editable text field"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify editing Title element textClick and edit textText updates immediately",
+      "expected": "",
+      "raw": "TC_11WL Multipart FunctionalityVerify editing Title element textClick and edit textText updates immediately"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify removing Title element",
+      "expected": "",
+      "raw": "TC_12WL Multipart FunctionalityVerify removing Title elementSelect Title → press DeleteTitle is removed from canvas"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify adding Header elementDrag “Header” to canvasHeader block appears",
+      "expected": "",
+      "raw": "TC_13WL Multipart FunctionalityVerify adding Header elementDrag “Header” to canvasHeader block appears"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify adding Text elementDrag “Text” to canvasRich text block appears",
+      "expected": "",
+      "raw": "TC_14WL Multipart FunctionalityVerify adding Text elementDrag “Text” to canvasRich text block appears"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify formatting text with bold, italic, underline",
+      "expected": "",
+      "raw": "TC_15WL Multipart FunctionalityVerify formatting text with bold, italic, underlineSelect text → apply formattingText displays with correct formatting"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify adding Audio elementDrag “Audio” → upload fileAudio player appears with play button",
+      "expected": "",
+      "raw": "TC_16WL Multipart FunctionalityVerify adding Audio elementDrag “Audio” → upload fileAudio player appears with play button"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify playing audio in preview modeClick Preview → Play buttonAudio plays without error",
+      "expected": "",
+      "raw": "TC_17WL Multipart FunctionalityVerify playing audio in preview modeClick Preview → Play buttonAudio plays without error"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify adding Video elementDrag “Video” → upload or embed URLVideo player appears",
+      "expected": "",
+      "raw": "TC_18WL Multipart FunctionalityVerify adding Video elementDrag “Video” → upload or embed URLVideo player appears"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify playing video in preview modePreview → Play buttonVideo plays correctly",
+      "expected": "",
+      "raw": "TC_19WL Multipart FunctionalityVerify playing video in preview modePreview → Play buttonVideo plays correctly"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify adding Image elementDrag “Image” → upload imageImage displays correctly",
+      "expected": "",
+      "raw": "TC_20WL Multipart FunctionalityVerify adding Image elementDrag “Image” → upload imageImage displays correctly"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify adding Table elementDrag “Table” to canvasTable grid appears with cells editable",
+      "expected": "",
+      "raw": "TC_21WL Multipart FunctionalityVerify adding Table elementDrag “Table” to canvasTable grid appears with cells editable"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify adding Callout BoxDrag “Callout” to canvasCallout box appears with editable text",
+      "expected": "",
+      "raw": "TC_22WL Multipart FunctionalityVerify adding Callout BoxDrag “Callout” to canvasCallout box appears with editable text"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify adding Situation HeaderDrag “Situation Header” to canvasSituation header displays",
+      "expected": "",
+      "raw": "TC_23WL Multipart FunctionalityVerify adding Situation HeaderDrag “Situation Header” to canvasSituation header displays"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify adding Thumb CardDrag “Thumb Card” to canvasThumbnail card appears",
+      "expected": "",
+      "raw": "TC_24WL Multipart FunctionalityVerify adding Thumb CardDrag “Thumb Card” to canvasThumbnail card appears"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify adding MCQSS widgetDrag “MCQSS” to canvas → add question & answersSingle-select MCQ works in preview",
+      "expected": "",
+      "raw": "TC_25WL Multipart FunctionalityVerify adding MCQSS widgetDrag “MCQSS” to canvas → add question & answersSingle-select MCQ works in preview"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify adding MCQMS widget Drag “MCQMS” to canvas → add question & answersMulti-select MCQ works in preview",
+      "expected": "",
+      "raw": "TC_26WL Multipart FunctionalityVerify adding MCQMS widget Drag “MCQMS” to canvas → add question & answersMulti-select MCQ works in preview"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify adding FIB Text widgetDrag FIB Text to canvasBlank fields appear in preview",
+      "expected": "",
+      "raw": "TC_27WL Multipart FunctionalityVerify adding FIB Text widgetDrag FIB Text to canvasBlank fields appear in preview"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify adding FIB Dropdown widgetDrag FIB Dropdown to canvasDropdown blanks appear",
+      "expected": "",
+      "raw": "TC_28WL Multipart FunctionalityVerify adding FIB Dropdown widgetDrag FIB Dropdown to canvasDropdown blanks appear"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify adding FIB Drag/Drop widgetDrag FIB Drag/Drop to canvasDrag blanks appear",
+      "expected": "",
+      "raw": "TC_29WL Multipart FunctionalityVerify adding FIB Drag/Drop widgetDrag FIB Drag/Drop to canvasDrag blanks appear"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify adding MTP (1-1) widgetDrag MTP to canvasMatching pairs work",
+      "expected": "",
+      "raw": "TC_30WL Multipart FunctionalityVerify adding MTP (1-1) widgetDrag MTP to canvasMatching pairs work"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify adding Carousel widgetDrag Carousel to canvas → add slidesCarousel navigates between slides",
+      "expected": "",
+      "raw": "TC_31WL Multipart FunctionalityVerify adding Carousel widgetDrag Carousel to canvas → add slidesCarousel navigates between slides"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify adding Image Labeling widgetDrag Image Labeling to canvasLabels attach correctly in preview",
+      "expected": "",
+      "raw": "TC_32WL Multipart FunctionalityVerify adding Image Labeling widgetDrag Image Labeling to canvasLabels attach correctly in preview"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify adding Highlighter widgetDrag Highlighter to canvasHighlighting text works",
+      "expected": "",
+      "raw": "TC_33WL Multipart FunctionalityVerify adding Highlighter widgetDrag Highlighter to canvasHighlighting text works"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify adding Correction widgetDrag Correction to canvasCorrection options work",
+      "expected": "",
+      "raw": "TC_34WL Multipart FunctionalityVerify adding Correction widgetDrag Correction to canvasCorrection options work"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify adding Sorting widgetDrag Sorting to canvasSorting works in preview",
+      "expected": "",
+      "raw": "TC_35WL Multipart FunctionalityVerify adding Sorting widgetDrag Sorting to canvasSorting works in preview"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify adding Sidebar widgetDrag Sidebar to canvasSidebar toggles open/close",
+      "expected": "",
+      "raw": "TC_36WL Multipart FunctionalityVerify adding Sidebar widgetDrag Sidebar to canvasSidebar toggles open/close"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify adding Click to Reveal widgetDrag Click to Reveal to canvasClick reveals hidden content",
+      "expected": "",
+      "raw": "TC_37WL Multipart FunctionalityVerify adding Click to Reveal widgetDrag Click to Reveal to canvasClick reveals hidden content"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify adding Word Search widgetDrag Word Search to canvasPuzzle works in preview",
+      "expected": "",
+      "raw": "TC_38WL Multipart FunctionalityVerify adding Word Search widgetDrag Word Search to canvasPuzzle works in preview"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify adding Question Answer widgetDrag Q&A to canvasQuestion text & answer field display",
+      "expected": "",
+      "raw": "TC_39WL Multipart FunctionalityVerify adding Question Answer widgetDrag Q&A to canvasQuestion text & answer field display"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify adding Flashcard widgetDrag Flashcard to canvasCards flip correctly",
+      "expected": "",
+      "raw": "TC_40WL Multipart FunctionalityVerify adding Flashcard widgetDrag Flashcard to canvasCards flip correctly"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify adding Categorize widgetDrag Categorize to canvasDrag items to categories works",
+      "expected": "",
+      "raw": "TC_41WL Multipart FunctionalityVerify adding Categorize widgetDrag Categorize to canvasDrag items to categories works"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify adding FIB with Image widgetDrag FIB with Image to canvasBlank fields over image appear",
+      "expected": "",
+      "raw": "TC_42WL Multipart FunctionalityVerify adding FIB with Image widgetDrag FIB with Image to canvasBlank fields over image appear"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify adding Extended Response about Media widgetDrag widget → add mediaExtended text box appears",
+      "expected": "",
+      "raw": "TC_43WL Multipart Functionality Verify adding Extended Response about Media widgetDrag widget → add mediaExtended text box appears"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify adding Table GO widgetDrag Table GO to canvasInteractive table appears",
+      "expected": "",
+      "raw": "TC_44WL Multipart FunctionalityVerify adding Table GO widgetDrag Table GO to canvasInteractive table appears"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify adding Image GO widgetDrag Image GO to canvasInteractive image appears",
+      "expected": "",
+      "raw": "TC_45WL Multipart FunctionalityVerify adding Image GO widgetDrag Image GO to canvasInteractive image appears"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify adding True/False widgetDrag True/False to canvasT/F buttons appear",
+      "expected": "",
+      "raw": "TC_46WL Multipart FunctionalityVerify adding True/False widgetDrag True/False to canvasT/F buttons appear"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify adding Annotation widgetDrag Annotation to canvasAnnotation tool works",
+      "expected": "",
+      "raw": "TC_47WL Multipart FunctionalityVerify adding Annotation widgetDrag Annotation to canvasAnnotation tool works"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify adding MTP Multiple widgetDrag MTP Multiple to canvasMultiple matching works",
+      "expected": "",
+      "raw": "TC_48WL Multipart FunctionalityVerify adding MTP Multiple widgetDrag MTP Multiple to canvasMultiple matching works"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify adding CLIC Component widgetDrag CLIC to canvasClick interaction works",
+      "expected": "",
+      "raw": "TC_49WL Multipart FunctionalityVerify adding CLIC Component widgetDrag CLIC to canvasClick interaction works"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify enabling “Interactive Component”Toggle YesComponent becomes interactive",
+      "expected": "",
+      "raw": "TC_50WL Multipart FunctionalityVerify enabling “Interactive Component”Toggle YesComponent becomes interactive"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify disabling “Interactive Component”Toggle NoComponent loses interactivity",
+      "expected": "",
+      "raw": "TC_51WL Multipart FunctionalityVerify disabling “Interactive Component”Toggle NoComponent loses interactivity"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify applying Shuffle Questions option",
+      "expected": "",
+      "raw": "TC_52WL Multipart FunctionalityVerify applying Shuffle Questions optionEnable “Shuffle”Questions appear in random order"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify applying Background Color",
+      "expected": "",
+      "raw": "TC_53WL Multipart FunctionalityVerify applying Background ColorSelect colorBackground updates"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify applying Corner Radius",
+      "expected": "",
+      "raw": "TC_54WL Multipart FunctionalityVerify applying Corner RadiusEnable & set radiusCorners become rounded"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify setting Outline Style",
+      "expected": "",
+      "raw": "TC_55WL Multipart FunctionalityVerify setting Outline StyleSelect Outline optionBorder appears"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify removing Outline Style",
+      "expected": "",
+      "raw": "TC_56WL Multipart FunctionalityVerify removing Outline StyleSelect No OutlineBorder disappears"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify configuring Action AssetsChange button color & labelsButtons update",
+      "expected": "",
+      "raw": "TC_57WL Multipart FunctionalityVerify configuring Action AssetsChange button color & labelsButtons update"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify “Try Again” button functionalitySubmit wrong answer → click Try AgainWidget resets for retry",
+      "expected": "",
+      "raw": "TC_58WL Multipart FunctionalityVerify “Try Again” button functionalitySubmit wrong answer → click Try AgainWidget resets for retry"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify “Show Me” button functionalityClick Show MeCorrect answer appears",
+      "expected": "",
+      "raw": "TC_59WL Multipart FunctionalityVerify “Show Me” button functionalityClick Show MeCorrect answer appears"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify “Reset” button functionalityClick ResetWidget clears all inputs",
+      "expected": "",
+      "raw": "TC_60WL Multipart FunctionalityVerify “Reset” button functionalityClick ResetWidget clears all inputs"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify saving multipartClick SaveChanges are saved successfully",
+      "expected": "",
+      "raw": "TC_61WL Multipart FunctionalityVerify saving multipartClick SaveChanges are saved successfully"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify previewing multipartClick PreviewPreview loads without errors",
+      "expected": "",
+      "raw": "TC_62WL Multipart FunctionalityVerify previewing multipartClick PreviewPreview loads without errors"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify publishing multipartClick PublishActivity published successfully",
+      "expected": "",
+      "raw": "TC_63WL Multipart FunctionalityVerify publishing multipartClick PublishActivity published successfully"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify launching activity in readerOpen in learner viewLoads in reader without errors",
+      "expected": "",
+      "raw": "TC_64WL Multipart FunctionalityVerify launching activity in readerOpen in learner viewLoads in reader without errors"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify completing activity in readerAnswer all → SubmitCompletion recorded",
+      "expected": "",
+      "raw": "TC_65WL Multipart FunctionalityVerify completing activity in readerAnswer all → SubmitCompletion recorded"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify editing published activityOpen in editor → modifyChanges saved",
+      "expected": "",
+      "raw": "TC_66WL Multipart FunctionalityVerify editing published activityOpen in editor → modifyChanges saved"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify republishing edited activityClick PublishUpdates go live",
+      "expected": "",
+      "raw": "TC_67WL Multipart FunctionalityVerify republishing edited activityClick PublishUpdates go live"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Verify data patch for “In Progress” student statePublish updateState retained, progress unaffected",
+      "expected": "",
+      "raw": "TC_68WL Multipart FunctionalityVerify data patch for “In Progress” student statePublish updateState retained, progress unaffected"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Verify data patch for “Completed” student statePublish updateCompletion status retained",
+      "expected": "",
+      "raw": "TC_69WL Multipart FunctionalityVerify data patch for “Completed” student statePublish updateCompletion status retained"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functionality",
+      "description": "Verify error when uploading unsupported file in Audio elementUpload .exeError message shown",
+      "expected": "",
+      "raw": "TC_70WL Multipart Functionality Verify error when uploading unsupported file in Audio elementUpload .exeError message shown"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "Verify error when uploading corrupted imageUpload invalid fileError shown",
+      "expected": "",
+      "raw": "TC_71WL Multipart FunctionalityVerify error when uploading corrupted imageUpload invalid fileError shown"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "Verify warning when saving without titleClick SaveWarning appears",
+      "expected": "",
+      "raw": "TC_72WL Multipart FunctionalityVerify warning when saving without titleClick SaveWarning appears"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functionality",
+      "description": "Verify large video file upload handlingUpload >500MBEither processes or shows file size limit error",
+      "expected": "",
+      "raw": "TC_73WL Multipart FunctionalityVerify large video file upload handlingUpload >500MBEither processes or shows file size limit error"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "Verify behavior at max widgets per multipartAdd widgets till limitLast widget addition blocked",
+      "expected": "",
+      "raw": "TC_74WL Multipart FunctionalityVerify behavior at max widgets per multipartAdd widgets till limitLast widget addition blocked"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functionality",
+      "description": "Verify behavior with very long text in TitlePaste 10,000 charsText truncates or scrolls",
+      "expected": "",
+      "raw": "TC_75WL Multipart FunctionalityVerify behavior with very long text in TitlePaste 10,000 charsText truncates or scrolls"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functionality",
+      "description": "Verify special characters in text display correctlyAdd emojis & symbolsCharacters display correctly",
+      "expected": "",
+      "raw": "TC_76WL Multipart FunctionalityVerify special characters in text display correctlyAdd emojis & symbolsCharacters display correctly"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functionality",
+      "description": "Verify multiple interactive widgets on one slideAdd 5+ interactive widgetsAll function independently",
+      "expected": "",
+      "raw": "TC_77WL Multipart FunctionalityVerify multiple interactive widgets on one slideAdd 5+ interactive widgetsAll function independently"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functionality",
+      "description": "Verify handling of duplicate element namesAdd same label twiceNo conflict or validation error",
+      "expected": "",
+      "raw": "TC_78WL Multipart FunctionalityVerify handling of duplicate element namesAdd same label twiceNo conflict or validation error"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functionality",
+      "description": "Verify cross-browser compatibilityOpen in Chrome, Firefox, EdgeFunctions identical in all browsers",
+      "expected": "",
+      "raw": "TC_79WL Multipart FunctionalityVerify cross-browser compatibilityOpen in Chrome, Firefox, EdgeFunctions identical in all browsers"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functionality",
+      "description": "Verify header background color changes when selecting a new color",
+      "expected": "Apply change Header background updates immediately to the selected color in both editor and preview",
+      "raw": "TC_80WL Multipart Functionality Verify header background color changes when selecting a new color 1. Open Settings panel2. Click color picker for Header Background Color3. Select a new color4. Apply change Header background updates immediately to the selected color in both editor and preview"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functionality",
+      "description": "Verify background color is applied when checkbox is selected",
+      "expected": "Save and previewComponent body area shows selected background color",
+      "raw": "TC_81WL Multipart Functionality Verify background color is applied when checkbox is selected 1. Check Background Color2. Pick a color3. Save and previewComponent body area shows selected background color"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functionality",
+      "description": "Verify background color is removed when checkbox is unchecked1. Uncheck Background Color2. Save and previewComponent body reverts to transparent background",
+      "expected": "Save and previewComponent body reverts to transparent background",
+      "raw": "TC_82WL Multipart Functionality Verify background color is removed when checkbox is unchecked1. Uncheck Background Color2. Save and previewComponent body reverts to transparent background"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functionality",
+      "description": "Verify background color code field accepts valid hex values",
+      "expected": "SaveBackground updates to color matching entered hex",
+      "raw": "TC_83WL Multipart Functionality Verify background color code field accepts valid hex values 1. Enter a valid hex code (e.g., #FFFFFF) in Background Color field2. SaveBackground updates to color matching entered hex"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functionality",
+      "description": "Verify background color field rejects invalid values1.",
+      "expected": "Try to saveSystem rejects value or reverts to last valid color",
+      "raw": "TC_84WL Multipart Functionality Verify background color field rejects invalid values1. Enter invalid code (e.g., abc123)2. Try to saveSystem rejects value or reverts to last valid color"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functionality",
+      "description": "Verify corner radius changes are applied",
+      "expected": "Save and previewComponent corners adjust to specified radius",
+      "raw": "TC_85WL Multipart FunctionalityVerify corner radius changes are applied 1. Change Corner Radius value (e.g., 0, 8, 16, 50)2. Save and previewComponent corners adjust to specified radius"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functionality",
+      "description": "Verify corner radius accepts only numeric values1.",
+      "expected": "SaveSystem rejects value or ignores non-numeric input",
+      "raw": "TC_86WL Multipart FunctionalityVerify corner radius accepts only numeric values1. Enter non-numeric value in Corner Radius2. SaveSystem rejects value or ignores non-numeric input"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functionality",
+      "description": "Verify “Interactive Component” toggle changes state to Yes1.",
+      "expected": "SaveInteractive features become enabled (if widget is added)",
+      "raw": "TC_87WL Multipart Functionality Verify “Interactive Component” toggle changes state to Yes1. Select Yes under Interactive Component2. SaveInteractive features become enabled (if widget is added)"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functionality",
+      "description": "Verify “Interactive Component” toggle changes state to No1. Switch toggle to No2. SaveAll interactivity disabled; component acts as static",
+      "expected": "SaveAll interactivity disabled; component acts as static",
+      "raw": "TC_88WL Multipart Functionality Verify “Interactive Component” toggle changes state to No1. Switch toggle to No2. SaveAll interactivity disabled; component acts as static"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functionality",
+      "description": "Verify “Shuffle Questions” checkbox shuffles content order",
+      "expected": "Save and preview multiple timesQuestion order changes between previews",
+      "raw": "TC_89WL Multipart Functionality Verify “Shuffle Questions” checkbox shuffles content order 1. Enable Shuffle Questions2. Save and preview multiple timesQuestion order changes between previews"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functionality",
+      "description": "Verify “Shuffle Questions” has no effect if only one question exists1.",
+      "expected": "Save and previewOrder remains unchanged",
+      "raw": "TC_90WL Multipart Functionality Verify “Shuffle Questions” has no effect if only one question exists1. Enable Shuffle Questions2. Save and previewOrder remains unchanged"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functionality",
+      "description": "Verify tags can be added and saved1.",
+      "expected": "SaveTags are stored and visible when re-editing",
+      "raw": "TC_91WL Multipart FunctionalityVerify tags can be added and saved1. Enter multiple tags in tag field2. SaveTags are stored and visible when re-editing"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functionality",
+      "description": "Verify tags accept comma-separated format1.",
+      "expected": "SaveTags split into separate values correctly",
+      "raw": "TC_92WL Multipart FunctionalityVerify tags accept comma-separated format1. Enter tags with commas2. SaveTags split into separate values correctly"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functionality",
+      "description": "Verify tags reject special characters if restricted1.",
+      "expected": "SaveInvalid tags rejected",
+      "raw": "TC_93WL Multipart FunctionalityVerify tags reject special characters if restricted1. Enter tags with invalid special chars2. SaveInvalid tags rejected"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functionality",
+      "description": "Verify “No Outline” removes border completely1.",
+      "expected": "SaveBorder disappears",
+      "raw": "TC_94WL Multipart FunctionalityVerify “No Outline” removes border completely1. Select “No Outline”2. SaveBorder disappears"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functionality",
+      "description": "Verify “Outline” adds visible border1.",
+      "expected": "SaveBorder appears around component",
+      "raw": "TC_95WL Multipart FunctionalityVerify “Outline” adds visible border1. Select “Outline”2. SaveBorder appears around component"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functionality",
+      "description": "Verify color selections persist after page reload1. Reload editor2. Open component settingsColors match last saved selection",
+      "expected": "Open component settingsColors match last saved selection",
+      "raw": "TC_96WL Multipart FunctionalityVerify color selections persist after page reload1. Reload editor2. Open component settingsColors match last saved selection"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functionality",
+      "description": "Verify settings persist between “Save” and “Preview”1. Save2. Click PreviewPreview matches saved settings exactly",
+      "expected": "Click PreviewPreview matches saved settings exactly",
+      "raw": "TC_97WL Multipart Functionality Verify settings persist between “Save” and “Preview”1. Save2. Click PreviewPreview matches saved settings exactly"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functionality",
+      "description": "Verify settings reset if component is deleted and re-added",
+      "expected": "Open settingsDefault settings are applied",
+      "raw": "TC_98WL Multipart Functionality Verify settings reset if component is deleted and re-added 1. Delete component2. Add new Worked Example3. Open settingsDefault settings are applied"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "UI",
+      "description": "layout of settings panel is consistent1. Observe settings panel alignment and groupingFields, labels, and toggles are aligned and labeled correctly",
+      "expected": "Observe settings panel alignment and groupingFields, labels, and toggles are aligned and labeled correctly",
+      "raw": "TC_99WL Multipart FunctionalityVerify UI layout of settings panel is consistent1. Observe settings panel alignment and groupingFields, labels, and toggles are aligned and labeled correctly"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functionality",
+      "description": "Verify component hides when clicking “Hide”",
+      "expected": "Observe component area Component body collapses, header remains visible with “Show” label",
+      "raw": "TC_100WL Multipart FunctionalityVerify component hides when clicking “Hide” 1. Click the Hide button in header2. Observe component area Component body collapses, header remains visible with “Show” label"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "Functionality",
+      "description": "Verify component expands when clicking “Show” after hiding",
+      "expected": "Observe component areaComponent body expands back to original size and content",
+      "raw": "TC_101WL Multipart Functionality Verify component expands when clicking “Show” after hiding 1. Click Show button in header2. Observe component areaComponent body expands back to original size and content"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "Functionality",
+      "description": "Verify hide/unhide toggle updates label correctly",
+      "expected": "Click Show → label changes to “Hide”Label always matches next available action",
+      "raw": "TC_102WL Multipart FunctionalityVerify hide/unhide toggle updates label correctly 1. Click Hide → label changes to “Show”2. Click Show → label changes to “Hide”Label always matches next available action"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functionality",
+      "description": "Verify hide/unhide does not affect saved content",
+      "expected": "Reload editor and unhideAll previously added widgets remain intact",
+      "raw": "TC_103WL Multipart FunctionalityVerify hide/unhide does not affect saved content 1. Hide component2. Save page3. Reload editor and unhideAll previously added widgets remain intact"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functionality",
+      "description": "Verify hide/unhide state persists after save and reload1. Save2. Reload pageComponent remains hidden until manually expanded",
+      "expected": "Reload pageComponent remains hidden until manually expanded",
+      "raw": "TC_104WL Multipart Functionality Verify hide/unhide state persists after save and reload1. Save2. Reload pageComponent remains hidden until manually expanded"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "Functionality",
+      "description": "Verify keyboard accessibility for hide/unhide toggle",
+      "expected": "Press Enter/Space on Hide/ShowComponent toggles visibility successfully",
+      "raw": "TC_105WL Multipart Functionality Verify keyboard accessibility for hide/unhide toggle 1. Focus header with keyboard2. Press Enter/Space on Hide/ShowComponent toggles visibility successfully"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Functionality",
+      "description": "Verify hiding a component removes it from learner preview1. Save2. Preview as learnerComponent is not displayed in learner view",
+      "expected": "Preview as learnerComponent is not displayed in learner view",
+      "raw": "TC_106WL Multipart Functionality Verify hiding a component removes it from learner preview1. Save2. Preview as learnerComponent is not displayed in learner view"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Functionality",
+      "description": "Verify unhiding a component restores it in learner preview1. Unhide2. Save3. Preview as learnerComponent is visible again in learner preview",
+      "expected": "Preview as learnerComponent is visible again in learner preview",
+      "raw": "TC_107WL Multipart Functionality Verify unhiding a component restores it in learner preview1. Unhide2. Save3. Preview as learnerComponent is visible again in learner preview"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "Functionality",
+      "description": "Verify hide/unhide works with multiple Worked Example components",
+      "expected": "Save and previewEach component’s visibility changes are independent",
+      "raw": "TC_108WL Multipart Functionality Verify hide/unhide works with multiple Worked Example components 1. Hide first component2. Unhide second3. Save and previewEach component’s visibility changes are independent"
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "Functionality",
+      "description": "Verify rapid hide/unhide clicks do not break UI1. Quickly click Hide/Show multiple timesComponent toggles smoothly without breaking layout",
+      "expected": "Quickly click Hide/Show multiple timesComponent toggles smoothly without breaking layout",
+      "raw": "TC_109WL Multipart FunctionalityVerify rapid hide/unhide clicks do not break UI1. Quickly click Hide/Show multiple timesComponent toggles smoothly without breaking layout"
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response (Author Editor) Open Extended Response in Author Editor → Click “Add Special Characters”Special character panel opens with default language ESP.",
+      "expected": "",
+      "raw": "TC_110WL Multipart Functionality Verify special character keyboard is available in Extended Response (Author Editor) Open Extended Response in Author Editor → Click “Add Special Characters”Special character panel opens with default language ESP."
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response Media (Author Editor)Repeat SC-001 in Extended Response MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_111WL Multipart Functionality Verify special character keyboard is available in Extended Response Media (Author Editor)Repeat SC-001 in Extended Response MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB (Author Editor)Repeat SC-001 in FIBPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_112WL Multipart Functionality Verify special character keyboard is available in FIB (Author Editor)Repeat SC-001 in FIBPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB Media (Author Editor)Repeat SC-001 in FIB MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_113WL Multipart Functionality Verify special character keyboard is available in FIB Media (Author Editor)Repeat SC-001 in FIB MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_114",
+      "num": 114,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response (Author Preview)Switch to Author Preview → Open Extended ResponsePanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_114WL Multipart Functionality Verify special character keyboard is available in Extended Response (Author Preview)Switch to Author Preview → Open Extended ResponsePanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_115",
+      "num": 115,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response Media (Author Preview)Repeat SC-005 for Extended Response MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_115WL Multipart Functionality Verify special character keyboard is available in Extended Response Media (Author Preview)Repeat SC-005 for Extended Response MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_116",
+      "num": 116,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB (Author Preview)Repeat SC-005 for FIBPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_116WL Multipart Functionality Verify special character keyboard is available in FIB (Author Preview)Repeat SC-005 for FIBPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_117",
+      "num": 117,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB Media (Author Preview)Repeat SC-005 for FIB MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_117WL Multipart Functionality Verify special character keyboard is available in FIB Media (Author Preview)Repeat SC-005 for FIB MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_118",
+      "num": 118,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response (Reader Mode)Publish activity → Open in Reader → Extended ResponsePanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_118WL Multipart Functionality Verify special character keyboard is available in Extended Response (Reader Mode)Publish activity → Open in Reader → Extended ResponsePanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_119",
+      "num": 119,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in Extended Response Media (Reader Mode)Repeat SC-009 for Extended Response MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_119WL Multipart Functionality Verify special character keyboard is available in Extended Response Media (Reader Mode)Repeat SC-009 for Extended Response MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_120",
+      "num": 120,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB (Reader Mode)Repeat SC-009 for FIBPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_120WL Multipart Functionality Verify special character keyboard is available in FIB (Reader Mode)Repeat SC-009 for FIBPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_121",
+      "num": 121,
+      "type": "Functionality",
+      "description": "Verify special character keyboard is available in FIB Media (Reader Mode)Repeat SC-009 for FIB MediaPanel opens with ESP characters displayed.",
+      "expected": "",
+      "raw": "TC_121WL Multipart Functionality Verify special character keyboard is available in FIB Media (Reader Mode)Repeat SC-009 for FIB MediaPanel opens with ESP characters displayed."
+    },
+    {
+      "id": "TC_122",
+      "num": 122,
+      "type": "Functionality",
+      "description": "Verify language dropdown displays all world language optionsOpen dropdownESP, ITA, FRA, CHI, GER are listed.",
+      "expected": "",
+      "raw": "TC_122WL Multipart Functionality Verify language dropdown displays all world language optionsOpen dropdownESP, ITA, FRA, CHI, GER are listed."
+    },
+    {
+      "id": "TC_123",
+      "num": 123,
+      "type": "Functionality",
+      "description": "Verify ESP loads correct Spanish characters",
+      "expected": "",
+      "raw": "TC_123WL Multipart Functionality Verify ESP loads correct Spanish charactersSelect ESPÁ, É, Í, Ó, Ú, Ñ, ñ, ¿, ¡, Ü, ü appear."
+    },
+    {
+      "id": "TC_124",
+      "num": 124,
+      "type": "Functionality",
+      "description": "Verify ITA loads correct Italian characters",
+      "expected": "",
+      "raw": "TC_124WL Multipart Functionality Verify ITA loads correct Italian charactersSelect ITAà, è, é, ì, ò, ù appear."
+    },
+    {
+      "id": "TC_125",
+      "num": 125,
+      "type": "Functionality",
+      "description": "Verify FRA loads correct French characters",
+      "expected": "",
+      "raw": "TC_125WL Multipart Functionality Verify FRA loads correct French charactersSelect FRAà, â, ç, é, è, ê, ë, î, ï, ô, ù, û, ü appear."
+    },
+    {
+      "id": "TC_126",
+      "num": 126,
+      "type": "Functionality",
+      "description": "Verify CHI loads correct Chinese input/characters",
+      "expected": "",
+      "raw": "TC_126WL Multipart Functionality Verify CHI loads correct Chinese input/charactersSelect CHIChinese characters appear."
+    },
+    {
+      "id": "TC_127",
+      "num": 127,
+      "type": "Functionality",
+      "description": "Verify GER loads correct German characters",
+      "expected": "",
+      "raw": "TC_127WL Multipart Functionality Verify GER loads correct German charactersSelect GERä, ö, ü, ß appear."
+    },
+    {
+      "id": "TC_128",
+      "num": 128,
+      "type": "Functionality",
+      "description": "Verify switching language updates instantlyChange ESP → ITA → FRACharacters update without refresh.",
+      "expected": "",
+      "raw": "TC_128WL Multipart Functionality Verify switching language updates instantlyChange ESP → ITA → FRACharacters update without refresh."
+    },
+    {
+      "id": "TC_129",
+      "num": 129,
+      "type": "Functionality",
+      "description": "Verify selected language persists on re-open",
+      "expected": "",
+      "raw": "TC_129WL Multipart Functionality Verify selected language persists on re-openSelect GER → Close panel → Re-openGER still selected."
+    },
+    {
+      "id": "TC_130",
+      "num": 130,
+      "type": "Functionality",
+      "description": "Verify inserting special character at cursorClick “Ñ”“Ñ” appears at cursor in text.",
+      "expected": "",
+      "raw": "TC_130WL Multipart Functionality Verify inserting special character at cursorClick “Ñ”“Ñ” appears at cursor in text."
+    },
+    {
+      "id": "TC_131",
+      "num": 131,
+      "type": "Functionality",
+      "description": "Verify inserting multiple charactersInsert Á, Ñ, ÜAll appear sequentially.",
+      "expected": "",
+      "raw": "TC_131WL Multipart Functionality Verify inserting multiple charactersInsert Á, Ñ, ÜAll appear sequentially."
+    },
+    {
+      "id": "TC_132",
+      "num": 132,
+      "type": "Functionality",
+      "description": "Verify panel closes when clicking outsideClick outside panelPanel closes.",
+      "expected": "",
+      "raw": "TC_132WL Multipart Functionality Verify panel closes when clicking outsideClick outside panelPanel closes."
+    },
+    {
+      "id": "TC_133",
+      "num": 133,
+      "type": "Functionality",
+      "description": "Verify panel position is correctOpen in each question typePanel is aligned with text field.",
+      "expected": "",
+      "raw": "TC_133WL Multipart Functionality Verify panel position is correctOpen in each question typePanel is aligned with text field."
+    },
+    {
+      "id": "TC_134",
+      "num": 134,
+      "type": "Functionality",
+      "description": "Verify panel accessibilityUse keyboard to navigate and insertPanel works without mouse.",
+      "expected": "",
+      "raw": "TC_134WL Multipart Functionality Verify panel accessibilityUse keyboard to navigate and insertPanel works without mouse."
+    },
+    {
+      "id": "TC_135",
+      "num": 135,
+      "type": "Functionality",
+      "description": "Verify panel loads quicklyOpen panelLoads in <2 seconds.",
+      "expected": "",
+      "raw": "TC_135WL Multipart Functionality Verify panel loads quicklyOpen panelLoads in <2 seconds."
+    },
+    {
+      "id": "TC_136",
+      "num": 136,
+      "type": "Functionality",
+      "description": "Verify no duplicate characters in set",
+      "expected": "",
+      "raw": "TC_136WL Multipart Functionality Verify no duplicate characters in setSelect each languageCharacters appear once only."
+    },
+    {
+      "id": "TC_137",
+      "num": 137,
+      "type": "Functionality",
+      "description": "Verify no broken/missing character glyphsCheck all languagesNo missing boxes (“□”) shown.",
+      "expected": "",
+      "raw": "TC_137WL Multipart Functionality Verify no broken/missing character glyphsCheck all languagesNo missing boxes (“□”) shown."
+    },
+    {
+      "id": "TC_138",
+      "num": 138,
+      "type": "Functionality",
+      "description": "Verify special characters can be deleted normallyInsert characters → Use backspaceCharacters are deleted as expected.",
+      "expected": "",
+      "raw": "TC_138WL Multipart Functionality Verify special characters can be deleted normallyInsert characters → Use backspaceCharacters are deleted as expected."
+    },
+    {
+      "id": "TC_139",
+      "num": 139,
+      "type": "Functionality",
+      "description": "Verify no corruption in saved responsesInsert special chars → Save/Publish → Re-openAll characters appear correctly.",
+      "expected": "",
+      "raw": "TC_139WL Multipart Functionality Verify no corruption in saved responsesInsert special chars → Save/Publish → Re-openAll characters appear correctly."
+    },
+    {
+      "id": "TC_140",
+      "num": 140,
+      "type": "Functionality",
+      "description": "Verify panel does not overlap essential UIOpen in small screen modePanel does not hide text input area.",
+      "expected": "",
+      "raw": "TC_140WL Multipart Functionality Verify panel does not overlap essential UIOpen in small screen modePanel does not hide text input area."
+    },
+    {
+      "id": "TC_141",
+      "num": 141,
+      "type": "Functionality",
+      "description": "Verify panel resizes properly on small screenResize browserPanel adjusts layout.",
+      "expected": "",
+      "raw": "TC_141WL Multipart Functionality Verify panel resizes properly on small screenResize browserPanel adjusts layout."
+    },
+    {
+      "id": "TC_142",
+      "num": 142,
+      "type": "Functionality",
+      "description": "Verify characters are stored as Unicode in DBSave response → Inspect stored valueCharacters stored as correct Unicode.",
+      "expected": "",
+      "raw": "TC_142WL Multipart Functionality Verify characters are stored as Unicode in DBSave response → Inspect stored valueCharacters stored as correct Unicode."
+    },
+    {
+      "id": "TC_143",
+      "num": 143,
+      "type": "Functionality",
+      "description": "Negative – Verify behavior if language set fails to loadForce network failDefault language set (ESP) loads.",
+      "expected": "",
+      "raw": "TC_143WL Multipart Functionality Negative – Verify behavior if language set fails to loadForce network failDefault language set (ESP) loads."
+    },
+    {
+      "id": "TC_144",
+      "num": 144,
+      "type": "Functionality",
+      "description": "Negative – Verify behavior if panel fails to openSimulate JS errorError message/log entry shown.",
+      "expected": "",
+      "raw": "TC_144WL Multipart Functionality Negative – Verify behavior if panel fails to openSimulate JS errorError message/log entry shown."
+    },
+    {
+      "id": "TC_145",
+      "num": 145,
+      "type": "Functionality",
+      "description": "Negative – Verify invalid character selectionClick empty space in panelNo character inserted.",
+      "expected": "",
+      "raw": "TC_145WL Multipart Functionality Negative – Verify invalid character selectionClick empty space in panelNo character inserted."
+    },
+    {
+      "id": "TC_146",
+      "num": 146,
+      "type": "Functionality",
+      "description": "Negative – Verify wrong font handlingSwitch to non-Unicode fontCharacters still render correctly.",
+      "expected": "",
+      "raw": "TC_146WL Multipart Functionality Negative – Verify wrong font handlingSwitch to non-Unicode fontCharacters still render correctly."
+    },
+    {
+      "id": "TC_147",
+      "num": 147,
+      "type": "Functionality",
+      "description": "Negative – Verify no cross-language contaminationSwitch from FRA to GEROnly GER characters display.",
+      "expected": "",
+      "raw": "TC_147WL Multipart Functionality Negative – Verify no cross-language contaminationSwitch from FRA to GEROnly GER characters display."
+    },
+    {
+      "id": "TC_148",
+      "num": 148,
+      "type": "Functionality",
+      "description": "Negative – Verify read-only modeOpen in read-only previewPanel opens but text cannot be edited.",
+      "expected": "",
+      "raw": "TC_148WL Multipart Functionality Negative – Verify read-only modeOpen in read-only previewPanel opens but text cannot be edited."
+    },
+    {
+      "id": "TC_149",
+      "num": 149,
+      "type": "Functionality",
+      "description": "Verify keyboard works in both inline & fullscreen editorsToggle fullscreenPanel works in both.",
+      "expected": "",
+      "raw": "TC_149WL Multipart Functionality Verify keyboard works in both inline & fullscreen editorsToggle fullscreenPanel works in both."
+    },
+    {
+      "id": "TC_150",
+      "num": 150,
+      "type": "Functionality",
+      "description": "Verify copy-paste of inserted charactersInsert → Copy → PasteCharacters remain intact.",
+      "expected": "",
+      "raw": "TC_150WL Multipart Functionality Verify copy-paste of inserted charactersInsert → Copy → PasteCharacters remain intact."
+    },
+    {
+      "id": "TC_151",
+      "num": 151,
+      "type": "Functionality",
+      "description": "Verify undo/redo works with inserted charactersInsert Á → Undo → RedoWorks correctly.",
+      "expected": "",
+      "raw": "TC_151WL Multipart Functionality Verify undo/redo works with inserted charactersInsert Á → Undo → RedoWorks correctly."
+    },
+    {
+      "id": "TC_152",
+      "num": 152,
+      "type": "Functionality",
+      "description": "Verify special characters in multi-part responsesAdd in multiple answer fieldsAll fields accept characters.",
+      "expected": "",
+      "raw": "TC_152WL Multipart Functionality Verify special characters in multi-part responsesAdd in multiple answer fieldsAll fields accept characters."
+    },
+    {
+      "id": "TC_153",
+      "num": 153,
+      "type": "Functionality",
+      "description": "Verify navigation to next question using right arrowClick right arrow iconQuestion 2 is displayed.",
+      "expected": "",
+      "raw": "TC_153WL Multipart Functionality Verify navigation to next question using right arrowClick right arrow iconQuestion 2 is displayed."
+    },
+    {
+      "id": "TC_154",
+      "num": 154,
+      "type": "Functionality",
+      "description": "Verify navigation to previous question using left arrowNavigate to Q3 → Click left arrowQuestion 2 is displayed.",
+      "expected": "",
+      "raw": "TC_154WL Multipart Functionality Verify navigation to previous question using left arrowNavigate to Q3 → Click left arrowQuestion 2 is displayed."
+    },
+    {
+      "id": "TC_155",
+      "num": 155,
+      "type": "Functionality",
+      "description": "Verify direct question number navigation",
+      "expected": "",
+      "raw": "TC_155WL Multipart Functionality Verify direct question number navigationClick on “3” in paginationQuestion 3 is displayed."
+    },
+    {
+      "id": "TC_156",
+      "num": 156,
+      "type": "Functionality",
+      "description": "Verify selected question number is highlightedNavigate to Q4Q4 circle is highlighted in blue.",
+      "expected": "",
+      "raw": "TC_156WL Multipart Functionality Verify selected question number is highlightedNavigate to Q4Q4 circle is highlighted in blue."
+    },
+    {
+      "id": "TC_157",
+      "num": 157,
+      "type": "Functionality",
+      "description": "Verify navigation works after answering questionAnswer Q1 → Click Q2Q2 is displayed, Q1 answer is saved.",
+      "expected": "",
+      "raw": "TC_157WL Multipart Functionality Verify navigation works after answering questionAnswer Q1 → Click Q2Q2 is displayed, Q1 answer is saved."
+    },
+    {
+      "id": "TC_158",
+      "num": 158,
+      "type": "Functionality",
+      "description": "Verify unanswered question navigationSkip Q2 → Click Q3Q3 is displayed without errors.",
+      "expected": "",
+      "raw": "TC_158WL Multipart Functionality Verify unanswered question navigationSkip Q2 → Click Q3Q3 is displayed without errors."
+    },
+    {
+      "id": "TC_159",
+      "num": 159,
+      "type": "Functionality",
+      "description": "Verify disabled navigation at first questionOn Q1, check left arrowLeft arrow is disabled.",
+      "expected": "",
+      "raw": "TC_159WL Multipart Functionality Verify disabled navigation at first questionOn Q1, check left arrowLeft arrow is disabled."
+    },
+    {
+      "id": "TC_160",
+      "num": 160,
+      "type": "Functionality",
+      "description": "Verify disabled navigation at last questionOn Q5, check right arrowRight arrow is disabled.",
+      "expected": "",
+      "raw": "TC_160WL Multipart Functionality Verify disabled navigation at last questionOn Q5, check right arrowRight arrow is disabled."
+    },
+    {
+      "id": "TC_161",
+      "num": 161,
+      "type": "Functionality",
+      "description": "Verify pagination with images in optionsNavigate across all questionsImages load without delay or error.",
+      "expected": "",
+      "raw": "TC_161WL Multipart Functionality Verify pagination with images in optionsNavigate across all questionsImages load without delay or error."
+    },
+    {
+      "id": "TC_162",
+      "num": 162,
+      "type": "Functionality",
+      "description": "Verify navigation remembers last visited questionNavigate to Q4 → Refresh → ResumeQ4 is displayed after reload.",
+      "expected": "",
+      "raw": "TC_162WL Multipart Functionality Verify navigation remembers last visited questionNavigate to Q4 → Refresh → ResumeQ4 is displayed after reload."
+    },
+    {
+      "id": "TC_163",
+      "num": 163,
+      "type": "Functionality",
+      "description": "Verify keyboard navigation supportUse Tab +",
+      "expected": "",
+      "raw": "TC_163WL Multipart Functionality Verify keyboard navigation supportUse Tab + Enter or Arrow KeysNavigation works as expected."
+    },
+    {
+      "id": "TC_164",
+      "num": 164,
+      "type": "Functionality",
+      "description": "Verify navigation works in fullscreen mode",
+      "expected": "",
+      "raw": "TC_164WL Multipart Functionality Verify navigation works in fullscreen modeEnter fullscreen → Click Q5Q5 is displayed correctly."
+    },
+    {
+      "id": "TC_165",
+      "num": 165,
+      "type": "Functionality",
+      "description": "Negative – Verify error handling for missing questionForce Q3 data removal → Navigate to Q3Error message or fallback shown.",
+      "expected": "",
+      "raw": "TC_165WL Multipart Functionality Negative – Verify error handling for missing questionForce Q3 data removal → Navigate to Q3Error message or fallback shown."
+    },
+    {
+      "id": "TC_166",
+      "num": 166,
+      "type": "Functionality",
+      "description": "Verify question loads in <2 seconds during navigationClick between questions repeatedlyLoad time < 2s.",
+      "expected": "",
+      "raw": "TC_166WL Multipart Functionality Verify question loads in <2 seconds during navigationClick between questions repeatedlyLoad time < 2s."
+    },
+    {
+      "id": "TC_167",
+      "num": 167,
+      "type": "Functionality",
+      "description": "Verify pagination is responsive on smaller screensResize browser to mobile viewPagination adapts to screen width.",
+      "expected": "",
+      "raw": "TC_167WL Multipart Functionality Verify pagination is responsive on smaller screensResize browser to mobile viewPagination adapts to screen width."
+    },
+    {
+      "id": "TC_168",
+      "num": 168,
+      "type": "Functionality",
+      "description": "Verify correct answer icon is displayed for a correct responseAnswer question with correct inputGreen check mark appears next to the answer",
+      "expected": "",
+      "raw": "TC_168WL Multipart Functionality Verify correct answer icon is displayed for a correct responseAnswer question with correct inputGreen check mark appears next to the answer"
+    },
+    {
+      "id": "TC_169",
+      "num": 169,
+      "type": "Functionality",
+      "description": "Verify incorrect answer icon is displayed for a wrong responseAnswer question incorrectlyRed cross mark appears next to the answer",
+      "expected": "",
+      "raw": "TC_169WL Multipart Functionality Verify incorrect answer icon is displayed for a wrong responseAnswer question incorrectlyRed cross mark appears next to the answer"
+    },
+    {
+      "id": "TC_170",
+      "num": 170,
+      "type": "Functionality",
+      "description": "Verify partially correct icon is displayed for partially correct response Provide partially correct response (e.g., 2/3 blanks correct in FIB)Yellow/Orange partially correct icon appears",
+      "expected": "",
+      "raw": "TC_170WL Multipart Functionality Verify partially correct icon is displayed for partially correct response Provide partially correct response (e.g., 2/3 blanks correct in FIB)Yellow/Orange partially correct icon appears"
+    },
+    {
+      "id": "TC_171",
+      "num": 171,
+      "type": "Functionality",
+      "description": "Verify mixed icons appear when responses varyAttempt multiple questions with mixed resultsEach question displays its corresponding icon correctly",
+      "expected": "",
+      "raw": "TC_171WL Multipart Functionality Verify mixed icons appear when responses varyAttempt multiple questions with mixed resultsEach question displays its corresponding icon correctly"
+    },
+    {
+      "id": "TC_172",
+      "num": 172,
+      "type": "Functionality",
+      "description": "Verify no icon or unattempted icon is shown for unanswered questionsLeave question blank and check state after submitNo icon shown or icon indicates \"unattempted\"",
+      "expected": "",
+      "raw": "TC_172WL Multipart Functionality Verify no icon or unattempted icon is shown for unanswered questionsLeave question blank and check state after submitNo icon shown or icon indicates \"unattempted\""
+    },
+    {
+      "id": "TC_173",
+      "num": 173,
+      "type": "Functionality",
+      "description": "Verify counts when all answers are correctAnswer all questions correctly Questions Attempted = total questions, Correct Answers = total questions, Incorrect Answers = 0, Partially Correct = 0",
+      "expected": "",
+      "raw": "TC_173WL Multipart Functionality Verify counts when all answers are correctAnswer all questions correctly Questions Attempted = total questions, Correct Answers = total questions, Incorrect Answers = 0, Partially Correct = 0"
+    },
+    {
+      "id": "TC_174",
+      "num": 174,
+      "type": "Functionality",
+      "description": "Verify counts when all answers are incorrectAnswer all questions incorrectly Questions Attempted = total questions, Correct = 0, Incorrect = total questions",
+      "expected": "",
+      "raw": "TC_174WL Multipart Functionality Verify counts when all answers are incorrectAnswer all questions incorrectly Questions Attempted = total questions, Correct = 0, Incorrect = total questions"
+    },
+    {
+      "id": "TC_175",
+      "num": 175,
+      "type": "Functionality",
+      "description": "Verify counts when all answers are partially correctGive partially correct answers for allQuestions Attempted = total, Partially Correct = total",
+      "expected": "",
+      "raw": "TC_175WL Multipart Functionality Verify counts when all answers are partially correctGive partially correct answers for allQuestions Attempted = total, Partially Correct = total"
+    },
+    {
+      "id": "TC_176",
+      "num": 176,
+      "type": "Functionality",
+      "description": "Verify counts for a mix of correct, incorrect, and partial responses2 correct, 2 incorrect, 1 partialValues reflect correct breakdown",
+      "expected": "",
+      "raw": "TC_176WL Multipart Functionality Verify counts for a mix of correct, incorrect, and partial responses2 correct, 2 incorrect, 1 partialValues reflect correct breakdown"
+    },
+    {
+      "id": "TC_177",
+      "num": 177,
+      "type": "Functionality",
+      "description": "Verify counts when some questions are skippedSkip some questionsQuestions Attempted count matches only attempted ones",
+      "expected": "",
+      "raw": "TC_177WL Multipart Functionality Verify counts when some questions are skippedSkip some questionsQuestions Attempted count matches only attempted ones"
+    },
+    {
+      "id": "TC_178",
+      "num": 178,
+      "type": "Functionality",
+      "description": "Verify counts when no questions are attemptedDo not answer any question and press submitAll counts = 0",
+      "expected": "",
+      "raw": "TC_178WL Multipart Functionality Verify counts when no questions are attemptedDo not answer any question and press submitAll counts = 0"
+    },
+    {
+      "id": "TC_179",
+      "num": 179,
+      "type": "Functionality",
+      "description": "Verify Submit button is enabled when questions are answered sequentiallyAnswer Q1 to last Qn in orderSubmit button becomes enabled after last question",
+      "expected": "",
+      "raw": "TC_179WL Multipart Functionality Verify Submit button is enabled when questions are answered sequentiallyAnswer Q1 to last Qn in orderSubmit button becomes enabled after last question"
+    },
+    {
+      "id": "TC_180",
+      "num": 180,
+      "type": "Functionality",
+      "description": "Verify Submit button is enabled for random answering order Answer questions in non-sequential order, last question answered last Submit button becomes enabled immediately after last unanswered question is answered",
+      "expected": "",
+      "raw": "TC_180WL Multipart Functionality Verify Submit button is enabled for random answering order Answer questions in non-sequential order, last question answered last Submit button becomes enabled immediately after last unanswered question is answered"
+    },
+    {
+      "id": "TC_181",
+      "num": 181,
+      "type": "Functionality",
+      "description": "Verify Submit button remains disabled when at least one question is unansweredLeave at least one question unansweredSubmit button remains disabled",
+      "expected": "",
+      "raw": "TC_181WL Multipart Functionality Verify Submit button remains disabled when at least one question is unansweredLeave at least one question unansweredSubmit button remains disabled"
+    },
+    {
+      "id": "TC_182",
+      "num": 182,
+      "type": "Functionality",
+      "description": "Verify Submit button is disabled when an answered question is clearedChange an answered question to blankSubmit button becomes disabled again",
+      "expected": "",
+      "raw": "TC_182WL Multipart Functionality Verify Submit button is disabled when an answered question is clearedChange an answered question to blankSubmit button becomes disabled again"
+    },
+    {
+      "id": "TC_183",
+      "num": 183,
+      "type": "Functionality",
+      "description": "Verify Submit button remains enabled after page refresh when all questions are attemptedRefresh page after answering allSubmit button remains enabled (if persistence is expected)",
+      "expected": "",
+      "raw": "TC_183WL Multipart Functionality Verify Submit button remains enabled after page refresh when all questions are attemptedRefresh page after answering allSubmit button remains enabled (if persistence is expected)"
+    },
+    {
+      "id": "TC_184",
+      "num": 184,
+      "type": "Functionality",
+      "description": "Verify answered question retains status icon after navigating away and backAnswer Q1, go to Q2, return to Q1Status icon persists",
+      "expected": "",
+      "raw": "TC_184WL Multipart Functionality Verify answered question retains status icon after navigating away and backAnswer Q1, go to Q2, return to Q1Status icon persists"
+    },
+    {
+      "id": "TC_185",
+      "num": 185,
+      "type": "Functionality",
+      "description": "Verify icon updates when answer changes from correct to incorrectInitially correct, change to wrong, navigate away, returnIcon and counts update",
+      "expected": "",
+      "raw": "TC_185WL Multipart Functionality Verify icon updates when answer changes from correct to incorrectInitially correct, change to wrong, navigate away, returnIcon and counts update"
+    },
+    {
+      "id": "TC_186",
+      "num": 186,
+      "type": "Functionality",
+      "description": "Verify icon updates when answer changes from incorrect to correctInitially wrong, fix to correct, navigate away, returnIcon and counts update",
+      "expected": "",
+      "raw": "TC_186WL Multipart Functionality Verify icon updates when answer changes from incorrect to correctInitially wrong, fix to correct, navigate away, returnIcon and counts update"
+    },
+    {
+      "id": "TC_187",
+      "num": 187,
+      "type": "Functionality",
+      "description": "Verify extra spaces in answer are handled correctly",
+      "expected": "",
+      "raw": "TC_187WL Multipart Functionality Verify extra spaces in answer are handled correctlyEnter \"Test user \" (with spaces)Still counted as correct if answer matches after trimming"
+    },
+    {
+      "id": "TC_188",
+      "num": 188,
+      "type": "Functionality",
+      "description": "Verify case sensitivity rules are applied",
+      "expected": "",
+      "raw": "TC_188WL Multipart Functionality Verify case sensitivity rules are appliedEnter lowercase/uppercase variationsMatch according to case sensitivity setting"
+    },
+    {
+      "id": "TC_189",
+      "num": 189,
+      "type": "Functionality",
+      "description": "Verify special characters in answers are handled per rulesInclude characters like -, _, etc.Evaluated per rules",
+      "expected": "",
+      "raw": "TC_189WL Multipart Functionality Verify special characters in answers are handled per rulesInclude characters like -, _, etc.Evaluated per rules"
+    },
+    {
+      "id": "TC_190",
+      "num": 190,
+      "type": "Functionality",
+      "description": "Verify partial scoring for multi-blank answersLeave some blanks emptyPartial scoring and icon applied correctly",
+      "expected": "",
+      "raw": "TC_190WL Multipart Functionality Verify partial scoring for multi-blank answersLeave some blanks emptyPartial scoring and icon applied correctly"
+    },
+    {
+      "id": "TC_191",
+      "num": 191,
+      "type": "Functionality",
+      "description": "Verify correct answer option is highlighted with a green outline after submission",
+      "expected": "",
+      "raw": "TC_191WL Multipart Functionality Verify correct answer option is highlighted with a green outline after submissionSelect correct answer, submitSelected option and/or correct option has a green outline"
+    },
+    {
+      "id": "TC_192",
+      "num": 192,
+      "type": "Functionality",
+      "description": "Verify incorrect answer option is highlighted with a red outline after submission",
+      "expected": "",
+      "raw": "TC_192WL Multipart Functionality Verify incorrect answer option is highlighted with a red outline after submissionSelect wrong answer, submit Selected option is outlined in red, correct option outlined in green (if applicable)"
+    },
+    {
+      "id": "TC_193",
+      "num": 193,
+      "type": "Functionality",
+      "description": "Verify correct option is highlighted even if the user selected the wrong one",
+      "expected": "",
+      "raw": "TC_193WL Multipart Functionality Verify correct option is highlighted even if the user selected the wrong oneSelect wrong answer, submitWrong option outlined red, correct option outlined green"
+    },
+    {
+      "id": "TC_194",
+      "num": 194,
+      "type": "Functionality",
+      "description": "Verify partial correct answers display mixed highlighting for multi-selectIn multi-select, choose some correct and some wrongCorrect ones outlined green, wrong ones outlined red",
+      "expected": "",
+      "raw": "TC_194WL Multipart Functionality Verify partial correct answers display mixed highlighting for multi-selectIn multi-select, choose some correct and some wrongCorrect ones outlined green, wrong ones outlined red"
+    },
+    {
+      "id": "TC_195",
+      "num": 195,
+      "type": "Functionality",
+      "description": "Verify outline disappears or resets when retaking the quizSubmit once, then retake/reset quizAll outlines are cleared before new attempt",
+      "expected": "",
+      "raw": "TC_195WL Multipart Functionality Verify outline disappears or resets when retaking the quizSubmit once, then retake/reset quizAll outlines are cleared before new attempt"
+    },
+    {
+      "id": "TC_196",
+      "num": 196,
+      "type": "Functionality",
+      "description": "Verify outline highlight is visible on both text and image answer choices",
+      "expected": "",
+      "raw": "TC_196WL Multipart Functionality Verify outline highlight is visible on both text and image answer choicesSelect image option and submitOutline correctly applied to image boundary"
+    },
+    {
+      "id": "TC_197",
+      "num": 197,
+      "type": "Functionality",
+      "description": "Verify no outline is shown before submissionNavigate between questions before submittingOptions remain in default style with no green/red outline",
+      "expected": "",
+      "raw": "TC_197WL Multipart Functionality Verify no outline is shown before submissionNavigate between questions before submittingOptions remain in default style with no green/red outline"
+    },
+    {
+      "id": "TC_198",
+      "num": 198,
+      "type": "Functionality",
+      "description": "Verify outline highlights for image + text mixed answersQuestion with text and image options, submitBoth types outlined correctly",
+      "expected": "",
+      "raw": "TC_198WL Multipart Functionality Verify outline highlights for image + text mixed answersQuestion with text and image options, submitBoth types outlined correctly"
+    },
+    {
+      "id": "TC_199",
+      "num": 199,
+      "type": "Functionality",
+      "description": "Verify correct outline on partially correct multipartIn multi-select FIB or MCQ, get partial correctCorrect outlined green, wrong red",
+      "expected": "",
+      "raw": "TC_199WL Multipart Functionality Verify correct outline on partially correct multipartIn multi-select FIB or MCQ, get partial correctCorrect outlined green, wrong red"
+    },
+    {
+      "id": "TC_200",
+      "num": 200,
+      "type": "Functionality",
+      "description": "Verify progress bar updates across multipartMove from Q1 to last QProgress bar reflects current question index",
+      "expected": "",
+      "raw": "TC_200WL Multipart Functionality Verify progress bar updates across multipartMove from Q1 to last QProgress bar reflects current question index"
+    },
+    {
+      "id": "TC_201",
+      "num": 201,
+      "type": "Functionality",
+      "description": "Verify “Submit All” applies to all multipart questionsAnswer all, click submit allAll questions graded together",
+      "expected": "",
+      "raw": "TC_201WL Multipart Functionality Verify “Submit All” applies to all multipart questionsAnswer all, click submit allAll questions graded together"
+    },
+    {
+      "id": "TC_202",
+      "num": 202,
+      "type": "Functionality",
+      "description": "Verify mobile responsiveness of special keyboardOpen in mobile viewportSpecial char panel fits screen without overflow",
+      "expected": "",
+      "raw": "TC_202WL Multipart Functionality Verify mobile responsiveness of special keyboardOpen in mobile viewportSpecial char panel fits screen without overflow"
+    },
+    {
+      "id": "TC_203",
+      "num": 203,
+      "type": "Functionality",
+      "description": "Verify special keyboard accessibilityUse Tab/",
+      "expected": "",
+      "raw": "TC_203WL Multipart Functionality Verify special keyboard accessibilityUse Tab/Enter to focus & insert special charsWorks without mouse clicks"
+    },
+    {
+      "id": "TC_204",
+      "num": 204,
+      "type": "Functionality",
+      "description": "Verify reset clears all special character entriesFill answers, click ResetAll inputs cleared, outlines removed",
+      "expected": "",
+      "raw": "TC_204WL Multipart Functionality Verify reset clears all special character entriesFill answers, click ResetAll inputs cleared, outlines removed"
+    },
+    {
+      "id": "TC_205",
+      "num": 205,
+      "type": "Functionality",
+      "description": "Verify language persistence per question in multipartNavigate between different language QsKeyboard changes automatically to match Q's language",
+      "expected": "",
+      "raw": "TC_205WL Multipart Functionality Verify language persistence per question in multipartNavigate between different language QsKeyboard changes automatically to match Q's language"
+    }
+  ]
+}

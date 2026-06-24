@@ -1,0 +1,27 @@
+{
+  "component": "Extended Response about Media",
+  "slug": "extended-response-media",
+  "dataType": "identify-the-clip",
+  "directive": "identify-the-clip-template (identifyTheClipTemplate)",
+  "module": "assessment-widget (Generic Step column)",
+  "spec": "16-extended-response-media-deep.spec.ts",
+  "qcSource": "Author Test Cases - Extended Response About Media.pdf",
+  "qcCount": 159,
+  "automated": 63,
+  "deferred": 96,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/identify-the-clip/identify-the-clip.html",
+    "closify/KITABOO_Authoring/templates/identify-the-clip/identify-the-clip-settings-pannel.html",
+    "closify/KITABOO_Authoring/templates/identify-the-clip/scripts/identify-the-clip-directive.js"
+  ],
+  "architectureNotes": [
+    "SOURCE AMBIGUITY RESOLVED: the QC catalog claims dataType 'extendedResponseMedia', which does not exist in source. The palette entry literally named 'Extended Response about Media' (config/config.js) maps to dataType 'identify-the-clip', directive identifyTheClipTemplate, canvas class .identifyTheClipComponent, settings panel .identifyTheClip-setting (title 'Extended Response about Media'). The dropped answer field even carries the class 'characters_count_extended_response_about_media'.",
+    "Answer types are Short and RTE (the Long radio is commented out in the settings panel). Default authoring state is Short.",
+    "Outline / Fill Background radios + colour picker render only when styleSelected == 'style1'; the spec degrades gracefully (logs + returns) when absent.",
+    "'Show Media' (#showMedia) reveals Image/Audio/Video radios (.mediaTypeBtn). Image hint = 'PNG, JPG, SVG'; Video hint = 'Upload format MP4'; Audio shows a transcript input + 'Play in Background'. Video URL upload exposes a YouTube/Vimeo dropdown (#itcVideoDropdown) + 'Enter Video ID' input + 'Full Width'.",
+    "Allowed Response (#allowResponse) + Exact Match (#answerMatch) checkboxes; Add Show Me (ng-model showmecheckbox) + Reset (ng-model reset) checkboxes; Show Label Type (#label-visibility) → Primary/Secondary radios.",
+    "Alt Text textarea enforces maxlength=2000; audio transcript maxlength=1000.",
+    "Heavily deferred: login/listing/activity-creation/ePUB and the step-creation wizard (Step Title, Levels, Instructions for Students/Teacher 10k-char), all file-picker uploads (image/audio/video), media playback, Preview/Reader answer typing/scoring/submission, and cross-session persistence. These are not assertable in the authoring DOM."
+  ]
+}

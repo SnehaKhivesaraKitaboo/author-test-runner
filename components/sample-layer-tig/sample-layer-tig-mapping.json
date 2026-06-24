@@ -1,0 +1,599 @@
+{
+  "component": "Sample Layer / TIG Panel",
+  "slug": "sample-layer-tig",
+  "spec": "40-sample-layer-tig-deep.spec.ts",
+  "qcSource": "Author Test Cases - Sample Layer _TIG Panel.pdf",
+  "dataType": "layer-2",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires Studio activity flow, Publish, Saltire/CLP Reader, clipboard, persistence, or a11y."
+  },
+  "mappings": [
+    {
+      "qc": "TC_01",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_02",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_03",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_04",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_05",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_06",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_07",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_08",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_09",
+      "status": "deferred",
+      "reason": "Deferred"
+    },
+    {
+      "qc": "TC_10",
+      "status": "deferred",
+      "reason": "Studio: activity-info pop Cancel/Add (activity info)"
+    },
+    {
+      "qc": "TC_11",
+      "status": "deferred",
+      "reason": "Studio: default Jodit prompt options (activity info)"
+    },
+    {
+      "qc": "TC_12",
+      "status": "deferred",
+      "reason": "Studio: Jodit prompt options editable (activity info)"
+    },
+    {
+      "qc": "TC_13",
+      "status": "deferred",
+      "reason": "Studio: Add new Jodit prompt (activity info)"
+    },
+    {
+      "qc": "TC_14",
+      "status": "deferred",
+      "reason": "Studio: title/text in new prompt (activity info)"
+    },
+    {
+      "qc": "TC_15",
+      "status": "deferred",
+      "reason": "Studio: delete new prompt editor (activity info)"
+    },
+    {
+      "qc": "TC_16",
+      "status": "deferred",
+      "reason": "Studio: delete default editor options (activity info)"
+    },
+    {
+      "qc": "TC_17",
+      "status": "deferred",
+      "reason": "Studio: Next enabled on activity info (navigation)"
+    },
+    {
+      "qc": "TC_18",
+      "status": "deferred",
+      "reason": "Studio: Next enabled without editor content (navigation)"
+    },
+    {
+      "qc": "TC_19",
+      "status": "deferred",
+      "reason": "Studio: Jodit formatting options (editor runtime)"
+    },
+    {
+      "qc": "TC_20",
+      "status": "deferred",
+      "reason": "Studio: move to next page without activity labels (navigation)"
+    },
+    {
+      "qc": "TC_21",
+      "status": "deferred",
+      "reason": "Studio: move to next page without prompt (navigation)"
+    },
+    {
+      "qc": "TC_22",
+      "status": "deferred",
+      "reason": "Studio: start authoring from link text page (navigation)"
+    },
+    {
+      "qc": "TC_23",
+      "status": "deferred",
+      "reason": "Author: add Generic step (step-creation flow, covered by support)"
+    },
+    {
+      "qc": "TC_24",
+      "status": "deferred",
+      "reason": "Author: Basic info + Next (step wizard)"
+    },
+    {
+      "qc": "TC_25",
+      "status": "deferred",
+      "reason": "Author: level info auto-populated (step wizard)"
+    },
+    {
+      "qc": "TC_26",
+      "status": "deferred",
+      "reason": "Author: student/teacher instructions (step content)"
+    },
+    {
+      "qc": "TC_27",
+      "status": "deferred",
+      "reason": "Author: Support Content (Purposeful Q + Diff Strategy)"
+    },
+    {
+      "qc": "TC_28",
+      "status": "deferred",
+      "reason": "Author: Purposeful Question sub-types (support content)"
+    },
+    {
+      "qc": "TC_29",
+      "status": "deferred",
+      "reason": "Author: add section under Purposeful Question (support content)"
+    },
+    {
+      "qc": "TC_30",
+      "status": "deferred",
+      "reason": "Author: delete section under Purposeful Question (support content)"
+    },
+    {
+      "qc": "TC_31",
+      "status": "deferred",
+      "reason": "Author: add Differentiation Strategy (support content)"
+    },
+    {
+      "qc": "TC_32",
+      "status": "deferred",
+      "reason": "Author: add section under Differentiation Strategy (support content)"
+    },
+    {
+      "qc": "TC_33",
+      "status": "deferred",
+      "reason": "Author: delete section under Differentiation Strategy (support content)"
+    },
+    {
+      "qc": "TC_34",
+      "status": "deferred",
+      "reason": "Author: Jodit formatting in support content (editor runtime)"
+    },
+    {
+      "qc": "TC_35",
+      "status": "deferred",
+      "reason": "Author: add ER/Table/ER-media under Generic step (widget drop runtime)"
+    },
+    {
+      "qc": "TC_36",
+      "status": "automated",
+      "it": "TC_36/TC_53/TC_56 — Sample Layer container is added inside the generic step",
+      "selectors": [
+        ".sample-layer-container.layer-2"
+      ]
+    },
+    {
+      "qc": "TC_37",
+      "status": "automated",
+      "it": "TC_37/TC_57 — Layer exposes droppable column zones for inner components",
+      "selectors": [
+        ".sample-layer-section",
+        ".column-content.layer-box"
+      ]
+    },
+    {
+      "qc": "TC_38",
+      "status": "deferred",
+      "reason": "Author: paste components inside sample layer (clipboard runtime)"
+    },
+    {
+      "qc": "TC_39",
+      "status": "deferred",
+      "reason": "Author: edit pasted components inside sample layer (runtime)"
+    },
+    {
+      "qc": "TC_40",
+      "status": "deferred",
+      "reason": "Author: copy/paste Flexi layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_41",
+      "status": "deferred",
+      "reason": "Author: copy/paste four-column layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_42",
+      "status": "deferred",
+      "reason": "Author: copy/paste three-column layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_43",
+      "status": "deferred",
+      "reason": "Author: copy/paste custom-center layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_44",
+      "status": "deferred",
+      "reason": "Author: copy/paste center layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_45",
+      "status": "deferred",
+      "reason": "Author: copy/paste left layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_46",
+      "status": "deferred",
+      "reason": "Author: copy/paste right layout inside sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_47",
+      "status": "deferred",
+      "reason": "Author: copy/paste layouts inside layouts (clipboard)"
+    },
+    {
+      "qc": "TC_48",
+      "status": "deferred",
+      "reason": "Author: copy/paste layouts inside layouts in sample layer (clipboard)"
+    },
+    {
+      "qc": "TC_49",
+      "status": "automated",
+      "it": "TC_49 — A second Sample Layer can be added in the same step",
+      "selectors": [
+        ".sample-layer-container.layer-2"
+      ]
+    },
+    {
+      "qc": "TC_50",
+      "status": "deferred",
+      "reason": "Author preview: sample layer renders (preview runtime)"
+    },
+    {
+      "qc": "TC_51",
+      "status": "deferred",
+      "reason": "Author: sample layer outside the generic step (placement runtime)"
+    },
+    {
+      "qc": "TC_52",
+      "status": "deferred",
+      "reason": "Author preview: sample layer outside generic step (preview runtime)"
+    },
+    {
+      "qc": "TC_53",
+      "status": "automated",
+      "it": "TC_36/TC_53/TC_56 — Sample Layer container is added inside the generic step",
+      "selectors": [
+        ".sample-layer-parent-container"
+      ]
+    },
+    {
+      "qc": "TC_54",
+      "status": "automated",
+      "it": "TC_54 — Sample Layer UI shows the \"Sample Answers: On\" banner tag",
+      "selectors": [
+        ".sample-main-layer .tagBlockName"
+      ]
+    },
+    {
+      "qc": "TC_55",
+      "status": "automated",
+      "it": "TC_55 — Settings panel opens with the \"Sample Layer\" title",
+      "selectors": [
+        "#sample-layer-template-setting .templateName"
+      ]
+    },
+    {
+      "qc": "TC_56",
+      "status": "automated",
+      "it": "TC_36/TC_53/TC_56 — Sample Layer container is added inside the generic step",
+      "selectors": [
+        ".sample-layer-container.layer-2"
+      ]
+    },
+    {
+      "qc": "TC_57",
+      "status": "automated",
+      "it": "TC_37/TC_57 — Layer exposes droppable column zones for inner components",
+      "selectors": [
+        ".column-content.layer-box"
+      ]
+    },
+    {
+      "qc": "TC_58",
+      "status": "deferred",
+      "reason": "Publish the sample-layer activity (publish flow)"
+    },
+    {
+      "qc": "TC_59",
+      "status": "deferred",
+      "reason": "Saltire student: sample layer visible (Reader)"
+    },
+    {
+      "qc": "TC_60",
+      "status": "deferred",
+      "reason": "CLP teacher preview: sample layer visible (Reader)"
+    },
+    {
+      "qc": "TC_61",
+      "status": "deferred",
+      "reason": "CLP teacher review: sample layer visible (Reader)"
+    },
+    {
+      "qc": "TC_62",
+      "status": "deferred",
+      "reason": "CLP teacher review: TIG panel displayed (Reader)"
+    },
+    {
+      "qc": "TC_63",
+      "status": "automated",
+      "it": "TC_63/TC_72 — Sample Answers On/Off radios are present in settings",
+      "selectors": [
+        "#sample-layer-template-setting .tagBlockValue input[type=\"radio\"]"
+      ]
+    },
+    {
+      "qc": "TC_64",
+      "status": "automated",
+      "it": "TC_64 — Banner default state is \"On\" (sample answers shown by default)",
+      "selectors": [
+        "[data-sampletaginfo]"
+      ]
+    },
+    {
+      "qc": "TC_65",
+      "status": "automated",
+      "it": "TC_65/TC_81/TC_83 — Toggling Sample Answers Off updates the selected state",
+      "selectors": [
+        "input[type=\"radio\"][value=\"Off\"]"
+      ]
+    },
+    {
+      "qc": "TC_66",
+      "status": "deferred",
+      "reason": "CLP: \"Show TIG Panel\" enabled by default (Reader)"
+    },
+    {
+      "qc": "TC_67",
+      "status": "deferred",
+      "reason": "CLP: Activity Info shown in TIG panel (Reader)"
+    },
+    {
+      "qc": "TC_68",
+      "status": "deferred",
+      "reason": "CLP: Support Content shown in TIG panel (Reader)"
+    },
+    {
+      "qc": "TC_69",
+      "status": "deferred",
+      "reason": "CLP: Purposeful Question under support content (Reader)"
+    },
+    {
+      "qc": "TC_70",
+      "status": "deferred",
+      "reason": "CLP: Differentiation Strategy under support content (Reader)"
+    },
+    {
+      "qc": "TC_71",
+      "status": "deferred",
+      "reason": "CLP: newly added title under support content (Reader)"
+    },
+    {
+      "qc": "TC_72",
+      "status": "automated",
+      "it": "TC_72 — \"Off\" radio is disabled by source contract (ng-disabled)",
+      "selectors": [
+        "input[type=\"radio\"][value=\"Off\"]"
+      ]
+    },
+    {
+      "qc": "TC_73",
+      "status": "deferred",
+      "reason": "CLP: all support-content sub-options listed (Reader)"
+    },
+    {
+      "qc": "TC_74",
+      "status": "deferred",
+      "reason": "CLP: support content formatting (Reader)"
+    },
+    {
+      "qc": "TC_75",
+      "status": "deferred",
+      "reason": "CLP: support content shown fully without truncation (Reader)"
+    },
+    {
+      "qc": "TC_76",
+      "status": "deferred",
+      "reason": "CLP: Activity Info formatting preserved (Reader)"
+    },
+    {
+      "qc": "TC_77",
+      "status": "deferred",
+      "reason": "CLP: Activity Info sub-category options (Reader)"
+    },
+    {
+      "qc": "TC_78",
+      "status": "automated",
+      "it": "TC_78 — Sample Layer container carries the pink (#C91CA5) outline border",
+      "selectors": [
+        ".sample-layer-container"
+      ]
+    },
+    {
+      "qc": "TC_79",
+      "status": "deferred",
+      "reason": "CLP: sample answers fully visible (Reader)"
+    },
+    {
+      "qc": "TC_80",
+      "status": "deferred",
+      "reason": "CLP: scroll to see full answers (Reader)"
+    },
+    {
+      "qc": "TC_81",
+      "status": "automated",
+      "it": "TC_65/TC_81/TC_83 — Toggling Sample Answers Off updates the selected state",
+      "selectors": [
+        "input[type=\"radio\"][value=\"Off\"]"
+      ]
+    },
+    {
+      "qc": "TC_82",
+      "status": "deferred",
+      "reason": "CLP: sample-answer inputs disabled / non-typeable (Reader)"
+    },
+    {
+      "qc": "TC_83",
+      "status": "automated",
+      "it": "TC_65/TC_81/TC_83 — Toggling Sample Answers Off updates the selected state",
+      "selectors": [
+        "input[type=\"radio\"][value=\"Off\"]"
+      ]
+    },
+    {
+      "qc": "TC_84",
+      "status": "deferred",
+      "reason": "CLP: edit answers when sample answers enabled (Reader)"
+    },
+    {
+      "qc": "TC_85",
+      "status": "deferred",
+      "reason": "CLP: edit math-activity metadata (Reader)"
+    },
+    {
+      "qc": "TC_86",
+      "status": "deferred",
+      "reason": "CLP: edit Activity Info metadata (Reader)"
+    },
+    {
+      "qc": "TC_87",
+      "status": "deferred",
+      "reason": "CLP: add new categories (Reader)"
+    },
+    {
+      "qc": "TC_88",
+      "status": "deferred",
+      "reason": "CLP: edit support content (Reader)"
+    },
+    {
+      "qc": "TC_89",
+      "status": "deferred",
+      "reason": "CLP: delete support content (Reader)"
+    },
+    {
+      "qc": "TC_90",
+      "status": "deferred",
+      "reason": "CLP: add sample layer after publish (Reader/lifecycle)"
+    },
+    {
+      "qc": "TC_91",
+      "status": "deferred",
+      "reason": "CLP: add new steps with sample layer (Reader/lifecycle)"
+    },
+    {
+      "qc": "TC_92",
+      "status": "deferred",
+      "reason": "CLP: republish activity (publish flow)"
+    },
+    {
+      "qc": "TC_93",
+      "status": "deferred",
+      "reason": "CLP: new steps + sample layer in author preview (preview)"
+    },
+    {
+      "qc": "TC_94",
+      "status": "deferred",
+      "reason": "CLP: new steps + sample layer in teacher review (Reader)"
+    },
+    {
+      "qc": "TC_95",
+      "status": "deferred",
+      "reason": "CLP: copy/paste math equations inside sample layer (clipboard/Reader)"
+    },
+    {
+      "qc": "TC_96",
+      "status": "deferred",
+      "reason": "CLP: math equation pink colour in sample layer (Reader runtime)"
+    },
+    {
+      "qc": "TC_97",
+      "status": "deferred",
+      "reason": "CLP: scroll inside Extended Response sample layer (Reader)"
+    },
+    {
+      "qc": "TC_98",
+      "status": "deferred",
+      "reason": "CLP: scroll inside ER media short sample layer (Reader)"
+    },
+    {
+      "qc": "TC_99",
+      "status": "deferred",
+      "reason": "CLP: scroll inside ER media RTE sample layer (Reader)"
+    },
+    {
+      "qc": "TC_100",
+      "status": "deferred",
+      "reason": "CLP: scroll inside FIB Text sample layer (Reader)"
+    },
+    {
+      "qc": "TC_101",
+      "status": "deferred",
+      "reason": "CLP: layout outline hidden inside sample layer (Reader runtime)"
+    },
+    {
+      "qc": "TC_102",
+      "status": "deferred",
+      "reason": "CLP: scroll inside Image GO sample layer (Reader)"
+    },
+    {
+      "qc": "TC_103",
+      "status": "deferred",
+      "reason": "CLP: scroll inside Table sample layer (Reader)"
+    },
+    {
+      "qc": "TC_104",
+      "status": "deferred",
+      "reason": "CLP: ER answer formatting pink in reader (Reader runtime)"
+    },
+    {
+      "qc": "TC_105",
+      "status": "deferred",
+      "reason": "CLP: Flexi layout w/ multipart in sample layer (Reader runtime)"
+    },
+    {
+      "qc": "TC_106",
+      "status": "deferred",
+      "reason": "CLP: layouts w/ elements in sample layer (Reader runtime)"
+    },
+    {
+      "qc": "TC_107",
+      "status": "deferred",
+      "reason": "CLP: Flexi layout w/ multipart in sample layer in CLP (Reader)"
+    },
+    {
+      "qc": "TC_108",
+      "status": "deferred",
+      "reason": "CLP: layouts w/ elements in sample layer in CLP (Reader)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "component": "Lesson Opener",
+  "slug": "lesson-opener",
+  "dataType": "lessonOpenerComponent",
+  "directive": "lesson-opener-template",
+  "widgetName": "Lesson Opener Components",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "44-lesson-opener-deep.spec.ts",
+  "qcSource": "Author Test Cases - Lesson Opener.pdf",
+  "qcCount": 150,
+  "automated": 33,
+  "deferred": 117,
+  "notYetLiveVerified": true,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/lessonOpener/lessonOpener.html",
+    "closify/KITABOO_Authoring/templates/lessonOpener/lessonOpener-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/lessonOpener/default/lessonOpener.json",
+    "closify/KITABOO_Authoring/templates/lessonOpener/scripts/lessonOpener-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html",
+    "closify/KITABOO_Authoring/index.html"
+  ],
+  "architectureNotes": [
+    "Lesson Opener is registered in config/config.js as a droppable ELEMENT: name 'Lesson Opener Components', dataType 'lessonOpenerComponent', iconClass 'icon-Lesson-opener', isDroppable:true, enableGroupInteractivity:true. It is NOT an assessment widget — 'lessonOpenerComponent' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas. It drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Lesson Opener Components'), NOT into a Generic Step column.",
+    "QC ambiguity: the QC PDF narrates a 'Drag and drop Lesson Opener … into Generic Step' flow, but the shipped config registers it as an unrestricted droppable element (canvas). The automation follows the source of truth (canvas element). Step-restriction / drop-guard cases (TC_21, TC_29, TC_33, TC_36, TC_37, TC_47, TC_48, TC_65, TC_102) are deferred as runtime guards.",
+    "The canvas wrapper is section.lessonOpenerComponent[lesson-opener-template]. It renders ONE of four style layouts gated by fieldData.settings.layoutColorActive: style1 'Learning Prompt' (default, bulb icon lessonOpener-Icon_1.svg), style2 'Make a Connection' (lessonOpener-Icon_2.svg), style3 'My Learning Goals' (starIcon.svg), style4 'Key Terms' (keyTerm.svg). The QC's four component GROUPS (Key Terms / Make a Connection / My Learning Goals / Learning Prompt) ARE these four styles.",
+    "Each style has a FIXED, non-editable header label (.sidebarHeaderText) and one editable body (.sidebarCaption[contenteditable], ng-model fieldData.paragraph) — set via cy.setContentEditableOn, never cy.type().",
+    "Settings panel renders in .componentSettingPanel via ng-include of lessonOpener-setting-panel.html; the root carries [lesson-opener-setting] with .icon-Lesson-opener.settings-icon and .templateName 'Lesson Opener'. The shared <stylepanel> renders style buttons under .stylebgdiv[id='style1'..'style4'] containing .styleBackground; the active style adds class 'active-style' (style1 active by default per default JSON).",
+    "Settings toggles: Show Header (#isHeaderVisible), Show Image (#imagedisplay), Show Caption (#caption-option). For the sidebar styles (style1/2/3) the Background/Stroke colour inputs are DISABLED by source (fixed colours). Alt Text textarea (ng-model currSettings.altText) maxlength=2000.",
+    "Hero image/video upload uses an OS file picker / Kaltura (uploadfiles directive) — deferred. RTE formatting + math RENDER (floating textEditor toolbar), Preview/Reader/CLP student & teacher views, Publish/republish, persistence-after-reload, Figma/visual & responsive parity, cross-browser, multilingual, glossary, and saLTIre launch are all outside the authoring DOM and are deferred.",
+    "Automated surface (33 QC ids): page reachable + drop, settings panel (title/icon/style dropdown), four styles present/selectable + default-active, fixed titles/icons per style, non-editable header, content entry + line break + empty-state, style switching with content retention + stability, display toggles + disabled colour inputs + Alt Text contract, and script-injection security."
+  ]
+}

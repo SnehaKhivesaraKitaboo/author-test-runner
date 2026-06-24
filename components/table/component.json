@@ -1,0 +1,37 @@
+{
+  "component": "Table",
+  "slug": "table",
+  "dataType": "tablesNew",
+  "directive": "table-new-init",
+  "widgetName": "Table",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "10-table-deep.spec.ts",
+  "qcSource": "Author Test Cases - Table.pdf",
+  "qcCount": 88,
+  "automated": 45,
+  "deferred": 43,
+  "notLiveVerified": true,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/tableNew/tables.html",
+    "closify/KITABOO_Authoring/templates/tableNew/tables-settings-panel.html",
+    "closify/KITABOO_Authoring/templates/tableNew/default/tablesTemplate.json",
+    "closify/KITABOO_Authoring/templates/tableNew/scripts/tablesTemplate-directive.js",
+    "closify/KITABOO_Authoring/templates/tableNew/scripts/resizable.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Table is an ELEMENT (widget name 'Table', dataType 'tablesNew', catalog url templates/tableNew/tables.html), NOT an assessment widget. 'tablesNew' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Table'), not into a Generic Step column.",
+    "Verified in config.js: { name: 'Table', iconClass: 'icon-Table-01', dataType: 'tablesNew', url: 'templates/tableNew/tables.html', json: 'templates/tableNew/default/tablesTemplate.json', settingsURL: 'templates/tableNew/tables-settings-panel.html', isDroppable: true }. The directive is table-new-init / edittemplate (tables.html root section).",
+    "Canvas wrapper is section.tablecomponent.tabletemplate (with [edittemplate][table-new-init][add-common-hover]); the framework wraps it in .customClass[data-type=\"tablesNew\"] / .sd-item.",
+    "On first drop a jQuery-UI 'Create Table' dialog (.rows-columns-dialog, title .edit-table-title='Create Table') opens with #table-rows-input (default 8, min 1, max 20) and #table-cols-input (default 4, min 1, max 20). The dialog 'Create' button renders as .table-ok-button; confirming sets fieldData.isTableCreated and builds table.tableNew (createNewTable).",
+    "Editable cells are table.tableNew td (contenteditable children) — set via cy.setContentEditableOn, never cy.type(). Header is .table-template-header (ng-model fieldData.header, only when settings.isHeaderVisible); caption is figcaption.template-caption (placeholder 'Enter caption text here', only when settings.optionalcaption).",
+    "Row/column edits use a right-click .vmenu with [data-attr] buttons: rowAbove/rowBelow/delRow (Insert Above/Below, Delete) and colLeft/colRight/delCol (Insert Left/Right, Delete). Multi-cell drag selection (.tableDataSelected) then right-click shows .margeMenu ('Merge All'); a merged master cell shows .unmargeMenu ('Unmerge').",
+    "Settings panel id is #table-settings-panel (title 'Table', icon .icon-Table-01). Styles are data-driven from settings.style_tab.stylesHolder (style1..style5) rendered by shared <stylepanel> as .stylebgdiv[id='styleN'] .styleBackground (active = .active-style; default styleSelected = 'style1').",
+    "Settings checkboxes (ng-model on currSettings): verticalLines (Show Vertical Lines, default ON), optionalcaption (Show Caption, default ON), isHeaderVisible (Show Header, default ON), isLabelTypeTable (Show Label Type), rowAlternate (Alternate Colors). Vertical Align radios name='table_alignment' (tabel_align_top default / _middle / _bottom). Outline radios name='outline' (outline default = 'No Outline' / outlineBg = 'Outline with Fill Background', #daebed fill).",
+    "FLAG-GATED / not rendered: 'Show Horizontal Lines' is commented out in tables-settings-panel.html (horizontal lines always enabled by default); Row-Header direction + per-cell colour pickers (header/stroke/cell text) render only when currSettings.styleSelected == 'style5'. The spec degrades gracefully (log + return) for these.",
+    "QC colour assertions (#005A9C header, #C2E5FF row header, #ffffff cell, #B7B7BD stroke, #176299 cell text, #daebed fill) are computed-style/theme checks and in several cases the shipped tablesTemplate.json defaults differ from the QC values (e.g. default headerColor '#CFBA99', dividerColor '#ccc'). These are documented as deferred (best verified in Preview/Reader against the live theme).",
+    "QC TC_01–TC_09 are login/activity/Offline-step bootstrap (harness, not the Table element); paste-from-Excel (TC_34/61), Math equation (TC_33/60), Preview/Reader (TC_37/38/64/65), undo (TC_78–81), persistence-after-reload + style-switch retention (TC_86), keyboard-nav a11y, and repeated-delete-to-one edges (TC_76/77) are deferred."
+  ],
+  "notLiveVerifiedWarning": "Selectors and flows are DERIVED from the KITABOO_Authoring source templates (config.js + templates/tableNew/*) and mirror the verified Text element pattern, but have NOT yet been executed against a live AUTHORING_LAUNCH_URL. Run 10-table-deep.spec.ts against the live Studio environment and adjust any selectors that drift before treating coverage as verified."
+}

@@ -1,0 +1,26 @@
+{
+  "component": "Image",
+  "slug": "image",
+  "dataType": "image",
+  "directive": "image-template",
+  "module": "element (Instructions canvas)",
+  "spec": "08-image-deep.spec.ts",
+  "qcSource": "Author Test Cases - Image.pdf",
+  "qcCount": 25,
+  "automated": 13,
+  "deferred": 12,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/templates/image.html",
+    "closify/KITABOO_Authoring/templates/image/image-settings-pannel.html",
+    "closify/KITABOO_Authoring/templates/image/image.json",
+    "closify/KITABOO_Authoring/templates/uploadimagepopup.html"
+  ],
+  "architectureNotes": [
+    "Image is an ELEMENT (dataType 'image', identifier 'image' in image.json), NOT an assessment widget. It is dropped on the Instructions canvas (#desktop_view) via cy.dropComponentForModule('Image', { dataType: 'image' }) → cy.dropComponent(), since 'image' is not in support/module-setup.ts ASSESSMENT_DATA_TYPES.",
+    "Canvas wrapper is section.Imagecomponent[image-template] (also .imageTemplateMainDiv). The settings panel body (templates/image/image-settings-pannel.html) is ng-included into the shared .componentSettingPanel (index.html) and identified by .imagesetting[heading-setting] / data-title=\"Image\" / .video-settings-panel2.",
+    "Default styleSelected is 'style1' (image.json), so Show Header, Outline/Fill radios and the colour picker render. Outline radios + colour options only exist for style1.",
+    "Dimension W/H inputs (#imgWidthc / #imgHeightc) are ng-disabled while imageDim=='qq129' (Keep Original, the default) and while imageUploadOrReplace=='Upload' — so actual resize requires an uploaded image and the custom-dimension radio (#qq128).",
+    "Alt Text textarea enforces maxlength=2000 with a 'Chars 2000' counter (.altTextCharLimitText).",
+    "MOST Image QC cases are DEFERRED because image upload uses the native popup #uploadimagepopup → 'My Computer' (OS file picker), which Cypress cannot drive in the authoring DOM, and because publish/Reader rendering is outside the authoring DOM. TC_04–TC_09 are Generic Step assessment-flow setup steps that do not apply to the canvas Image element."
+  ]
+}

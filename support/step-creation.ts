@@ -87,44 +87,48 @@ export function fillStepTitle(stepTitle: string): void {
   cy.captureLiveStep('step-metadata-title-filled');
 }
 
-function getProgramName(win: Window): string {
-  const ang = (win as { angular?: { element: (el: Element) => { scope: () => { programName?: string } } } }).angular;
-  const el = win.document.getElementById('myController');
-  return el && ang ? ang.element(el).scope()?.programName || '' : '';
-}
-
-/** Advance wizard tabs and submit (Selenium submitStepForm — native click #nextBtn → #subBtn). */
+/**
+ * Advance wizard tabs and submit (Selenium submitStepForm — native click #nextBtn → #subBtn).
+ *
+ * The Generic Step wizard has a variable number of tabs (e.g. Basic Info → Levels →
+ * Instructions → Support Content). Rather than assume a fixed count, loop clicking the
+ * enabled #nextBtn until the Submit button (#subBtn) becomes visible, then submit.
+ */
 export function submitStepWizard(): void {
-  logStage('STEP', 'submitStepForm — advance tabs and submit');
+  logStage('STEP', 'submitStepForm — advance tabs until Submit appears, then submit');
 
-  cy.get('#formsModal #nextBtn:visible', { timeout: 8000 })
-    .should('not.have.class', 'disabledBtn')
-    .then($btn => {
-      ($btn[0] as HTMLElement).click();
+  // Defensive cap: real wizards top out around 4–5 tabs; 8 leaves headroom.
+  const MAX_NEXT_CLICKS = 8;
+
+  const advance = (remaining: number): void => {
+    cy.get('#formsModal', { timeout: 8000 }).then($modal => {
+      const submitVisible = $modal.find('#subBtn:visible').length > 0;
+      if (submitVisible) {
+        return; // reached final tab — submit handled below
+      }
+
+      if (remaining <= 0) {
+        throw new Error(
+          'submitStepWizard: exhausted Next clicks without reaching Submit (#subBtn). ' +
+            'Wizard may have an unexpected number of tabs or a blocked/required field.',
+        );
+      }
+
+      const $next = $modal.find('#nextBtn:visible');
+      if ($next.length === 0 || $next.hasClass('disabledBtn')) {
+        throw new Error(
+          'submitStepWizard: #nextBtn not clickable but Submit not yet visible — ' +
+            'wizard is stuck (likely a required field on the current tab).',
+        );
+      }
+
+      ($next[0] as HTMLElement).click();
+      waitForAngularSettled();
+      advance(remaining - 1);
     });
+  };
 
-  cy.get('#formsModal').then($modal => {
-    if ($modal.find('#subBtn:visible').length === 0) {
-      cy.get('#formsModal #nextBtn:visible', { timeout: 8000 })
-        .then($btn => {
-          if ($btn.length && !$btn.hasClass('disabledBtn')) {
-            ($btn[0] as HTMLElement).click();
-          }
-        });
-    }
-  });
-
-  cy.window().then(win => {
-    if (getProgramName(win) === 'CL-MATH') {
-      cy.get('#formsModal #subBtn:visible').then($sub => {
-        if (!$sub.length) {
-          cy.get('#formsModal #nextBtn:visible').then($btn => {
-            if ($btn.length) ($btn[0] as HTMLElement).click();
-          });
-        }
-      });
-    }
-  });
+  advance(MAX_NEXT_CLICKS);
 
   cy.get('#formsModal #subBtn:visible', { timeout: 15000 })
     .should('be.visible')

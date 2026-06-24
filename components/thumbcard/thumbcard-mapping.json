@@ -1,0 +1,56 @@
+{
+  "component": "Thumbs Card Header",
+  "slug": "thumbcard",
+  "spec": "38-thumbcard-deep.spec.ts",
+  "qcSource": "Author Test Cases - Thumbcard.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block (degrades gracefully when the flag-gated widget is not offered).",
+    "deferred": "Documented as it.skip() — requires login/activity bootstrap, copy/delete or persistence lifecycle, Preview/Reader/CLP/Publish/saLTIre, cross-browser, Figma comparison, or math/format RENDER flows."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "deferred", "reason": "Launch Studio URL + listing page — environment bootstrap handled by cy.openAuthoringTool, not a component assertion" },
+    { "qc": "TC_02", "status": "deferred", "reason": "Create math activity (basic info) — activity-creation flow outside authoring DOM" },
+    { "qc": "TC_03", "status": "deferred", "reason": "Start authoring redirect — activity-creation flow outside authoring DOM" },
+
+    { "qc": "TC_04", "status": "automated", "it": "TC_04/TC_07/TC_08 — Component is listed/inserted and rendered in the layout", "selectors": ["section.thumbs-card-header[thumbs-card-header-template]"] },
+    { "qc": "TC_05", "status": "automated", "it": "TC_05/TC_06/TC_16 — Component placed successfully (Generic/Multipart share the element drop)", "note": "Generic-Step enablement is a config.js catalog flag; verified via canvas drop presence" },
+    { "qc": "TC_06", "status": "automated", "it": "TC_05/TC_06/TC_16 — Component placed successfully (Generic/Multipart share the element drop)", "note": "Multipart-Step enablement is a config.js catalog flag" },
+    { "qc": "TC_07", "status": "automated", "it": "TC_04/TC_07/TC_08 — Component is listed/inserted and rendered in the layout", "note": "Flexi Layout render shares the element-drop mechanism" },
+    { "qc": "TC_08", "status": "automated", "it": "TC_04/TC_07/TC_08 — Component is listed/inserted and rendered in the layout", "note": "other layouts share the element-drop mechanism" },
+
+    { "qc": "TC_09", "status": "automated", "it": "TC_09 — Fixed thumbs icon is present and aligned (top-left icon span)", "selectors": ["img.thumbs-card-header-icon", ".thumbs-card-header-icon-span"] },
+    { "qc": "TC_10", "status": "automated", "it": "TC_10 — Icon is not editable (no contenteditable / no ng-click handler)", "selectors": ["img.thumbs-card-header-icon"] },
+
+    { "qc": "TC_11", "status": "automated", "it": "TC_11 — Settings panel shows two selectable thumbs icons", "selectors": [".thumbs-card-header-setting .icons-item"] },
+    { "qc": "TC_12", "status": "deferred", "reason": "Selected thumbs icon persists after reload — persistence-after-reload (icon selection automated in TC_11b; persistence is runtime)" },
+
+    { "qc": "TC_13", "status": "automated", "it": "TC_13/TC_14/TC_38 — Heading is a contenteditable RTE field (formatting/math via floating toolbar)", "selectors": [".thumbs-card-header-heading.editables"], "note": "RTE bold/italic/list APPLIED render verified in Preview (deferred)" },
+    { "qc": "TC_14", "status": "automated", "it": "TC_13/TC_14/TC_38 — Heading is a contenteditable RTE field (formatting/math via floating toolbar)", "note": "math entry via shared textEditor; math RENDER verified in Preview (deferred)" },
+    { "qc": "TC_15", "status": "automated", "it": "TC_15/TC_35 — Long heading content does not introduce internal scrollbars on the container", "selectors": [".thumbs-card-container"], "note": "full no-scroll/responsive guarantee is a Preview check (deferred)" },
+    { "qc": "TC_16", "status": "automated", "it": "TC_05/TC_06/TC_16 — Component placed successfully (Generic/Multipart share the element drop)", "note": "add inside Multipart shares the element drop" },
+
+    { "qc": "TC_17", "status": "deferred", "reason": "No data loss on reload — persistence-after-reload" },
+    { "qc": "TC_18", "status": "deferred", "reason": "Content retained after editing + republishing — Publish/persistence flow" },
+    { "qc": "TC_19", "status": "deferred", "reason": "Save functionality (no errors, data saved) — Save/persistence flow outside authoring DOM" },
+    { "qc": "TC_20", "status": "deferred", "reason": "Responsive-mode preview without layout breaks — Preview rendering" },
+    { "qc": "TC_21", "status": "deferred", "reason": "Publish activity with the component — Publish flow" },
+    { "qc": "TC_22", "status": "deferred", "reason": "Content displayed correctly in CLP — CLP/Reader flow" },
+    { "qc": "TC_23", "status": "deferred", "reason": "Activity preview in authoring — Preview rendering" },
+    { "qc": "TC_24", "status": "deferred", "reason": "Post-preview changes visible on re-preview — Preview flow" },
+    { "qc": "TC_25", "status": "deferred", "reason": "Renders correctly when launched in saLTIre — saLTIre/LTI flow" },
+    { "qc": "TC_26", "status": "deferred", "reason": "Content not lost after republishing — Publish/persistence flow" },
+    { "qc": "TC_27", "status": "deferred", "reason": "Student attempt & submit — Reader/runtime flow" },
+    { "qc": "TC_28", "status": "deferred", "reason": "Teacher launch & view — Reader/runtime flow" },
+    { "qc": "TC_29", "status": "deferred", "reason": "Full workflow in Chrome — cross-browser compatibility run" },
+    { "qc": "TC_30", "status": "deferred", "reason": "Full workflow in Safari — cross-browser compatibility run (not available headless here)" },
+    { "qc": "TC_31", "status": "deferred", "reason": "Works in previously created activities — legacy-activity/persistence flow" },
+    { "qc": "TC_32", "status": "deferred", "reason": "Implemented UI matches Figma design — visual/design comparison" },
+    { "qc": "TC_33", "status": "deferred", "reason": "Paragraph with multiple formatting retained + rendered — Preview/Reader render (contenteditable presence automated in 38-D)" },
+    { "qc": "TC_34", "status": "deferred", "reason": "Math equations + formatted text render together — Preview/Reader math render" },
+
+    { "qc": "TC_35", "status": "automated", "it": "TC_15/TC_35 — Long heading content does not introduce internal scrollbars on the container", "note": "long multi-paragraph content accepted; visual stability fully verified in Preview (deferred)" },
+    { "qc": "TC_36", "status": "automated", "it": "TC_36 — Default Background Color reflects the source default (#FFF1D0, yellow)", "selectors": ["#headerBgColorInput"], "note": "input value asserted; rendered swatch is a Preview check" },
+    { "qc": "TC_37", "status": "automated", "it": "TC_37 — Heading accepts plain text in edit mode", "selectors": [".thumbs-card-header-heading.editables"], "note": "QC 'Rounded Corners Text Box' wording maps to the single editable heading in this source" },
+    { "qc": "TC_38", "status": "automated", "it": "TC_13/TC_14/TC_38 — Heading is a contenteditable RTE field (formatting/math via floating toolbar)", "note": "QC 'formatting not accepted in Rounded Corners Box' has no matching plain-text-only surface in this single-header source; heading is a full RTE field — documented in spec" }
+  ]
+}

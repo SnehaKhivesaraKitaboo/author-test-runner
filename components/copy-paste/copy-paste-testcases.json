@@ -1,0 +1,156 @@
+{
+  "component": "Copy and Paste",
+  "slug": "copy-paste",
+  "dataType": "platform-copy-paste",
+  "source": "Author Test Cases - Copy and Paste.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Copy and Paste.pdf",
+  "pages": 1,
+  "extractedCount": 18,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Copy and PasteUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Copy and Paste FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New authoring page",
+      "raw": "TC_03Copy and Paste FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Copy component from Step 1 and paste into Step 2 Add a component in Step 1 → Copy it → Navigate to Step 2 → Paste Component should appear in Step 2 with no data loss",
+      "expected": "",
+      "raw": "TC_04Copy and Paste Functionality Copy component from Step 1 and paste into Step 2 Add a component in Step 1 → Copy it → Navigate to Step 2 → Paste Component should appear in Step 2 with no data loss"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Copy widget (e.g., MCQ) inside layout section to outside layout in another step In Step 1 (inside layout) → Copy MCQ → Step 2 (no layout) → Paste outside layout Widget should paste successfully outside layout",
+      "expected": "",
+      "raw": "TC_05Copy and Paste Functionality Copy widget (e.g., MCQ) inside layout section to outside layout in another step In Step 1 (inside layout) → Copy MCQ → Step 2 (no layout) → Paste outside layout Widget should paste successfully outside layout"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Copy element (e.g., Situation Box) from outside layout to section inside layout Step 1 (outside layout) → Copy → Step 2 (with layout) → Paste inside section Should paste correctly in layout section",
+      "expected": "",
+      "raw": "TC_06Copy and Paste Functionality Copy element (e.g., Situation Box) from outside layout to section inside layout Step 1 (outside layout) → Copy → Step 2 (with layout) → Paste inside section Should paste correctly in layout section"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Copy full layout with all components and paste into new step In Step 1 → Add layout + components → Copy → Step 2 → Paste Entire layout and all contents should appear in Step 2",
+      "expected": "",
+      "raw": "TC_07Copy and Paste Functionality Copy full layout with all components and paste into new step In Step 1 → Add layout + components → Copy → Step 2 → Paste Entire layout and all contents should appear in Step 2"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Copy complex components like Worked Example or Thumbs CardAdd Thumbs Card in Step 1 → Copy → Paste into Step 2 All nested sub-elements/widgets should be included",
+      "expected": "",
+      "raw": "TC_08Copy and Paste Functionality Copy complex components like Worked Example or Thumbs CardAdd Thumbs Card in Step 1 → Copy → Paste into Step 2 All nested sub-elements/widgets should be included"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Copy from flexi layout section to another flexi layout section In Step 1 → Add components in Flexi → Copy → Step 2 Flexi → Paste into section Should paste within section with intact structure",
+      "expected": "",
+      "raw": "TC_09Copy and Paste Functionality Copy from flexi layout section to another flexi layout section In Step 1 → Add components in Flexi → Copy → Step 2 Flexi → Paste into section Should paste within section with intact structure"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Check for data loss after copying Copy any component from one step to another → Validate all fields and content All fields should be intact and editable",
+      "expected": "",
+      "raw": "TC_10Copy and Paste Functionality Check for data loss after copying Copy any component from one step to another → Validate all fields and content All fields should be intact and editable"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Save reused componentsAfter pasting in Step 2 → Click Save Save should be successful, no errors",
+      "expected": "",
+      "raw": "TC_11Copy and Paste Functionality Save reused componentsAfter pasting in Step 2 → Click Save Save should be successful, no errors"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Publish reused contentAfter pasting → Save → Publish the activityActivity should publish successfully",
+      "expected": "",
+      "raw": "TC_12Copy and Paste Functionality Publish reused contentAfter pasting → Save → Publish the activityActivity should publish successfully"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Launch activity in CLP and verify reused content",
+      "expected": "",
+      "raw": "TC_13Copy and Paste Functionality Launch activity in CLP and verify reused contentLaunch the published activity → Go to Step 2 Content should be visible and same as original"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Edit reused content and republish Make changes in reused component → Save → Republish Changes should reflect correctly after publish",
+      "expected": "",
+      "raw": "TC_14Copy and Paste Functionality Edit reused content and republish Make changes in reused component → Save → Republish Changes should reflect correctly after publish"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Copy-paste works across all programs (ELA, WL, MATH)Repeat steps for each subject program Functionality should behave the same across all",
+      "expected": "",
+      "raw": "TC_15Copy and Paste Functionality Copy-paste works across all programs (ELA, WL, MATH)Repeat steps for each subject program Functionality should behave the same across all"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Check copy-paste fails when pasting outside stepTry to paste into TOC panel or other invalid zones Component should not paste; appropriate message if needed",
+      "expected": "",
+      "raw": "TC_16Copy and Paste Functionality Check copy-paste fails when pasting outside stepTry to paste into TOC panel or other invalid zones Component should not paste; appropriate message if needed"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Undo after pasting reused contentPaste → Click undo (if feature available) Component should be removed successfully",
+      "expected": "",
+      "raw": "TC_17Copy and Paste Functionality Undo after pasting reused contentPaste → Click undo (if feature available) Component should be removed successfully"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Multiple copy-paste actions in a single authoring session Copy and paste different components multiple times across steps All actions should be retained without error",
+      "expected": "",
+      "raw": "TC_18Copy and Paste Functionality Multiple copy-paste actions in a single authoring session Copy and paste different components multiple times across steps All actions should be retained without error"
+    }
+  ]
+}

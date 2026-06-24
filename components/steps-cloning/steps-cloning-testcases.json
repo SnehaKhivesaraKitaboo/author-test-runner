@@ -1,0 +1,628 @@
+{
+  "component": "Steps Cloning",
+  "slug": "steps-cloning",
+  "dataType": "platform-steps-cloning",
+  "source": "Author Test Cases - Steps Cloning.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Steps Cloning.pdf",
+  "pages": 2,
+  "extractedCount": 77,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Steps ClonningUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic infoActivity creation page should display with Basic info screen",
+      "raw": "TC_02 Steps Clonning FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic infoActivity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Steps Clonning FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Steps Clonning FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Steps Clonning FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Steps Clonning Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step buttonClicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Steps Clonning Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step buttonClicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Steps Clonning FunctionalityVerify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \"User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Steps Clonning Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \"User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI",
+      "description": "Verify visibility of \"Clone New Level\" optionHover on 3-dot menu of a step\"Clone New Level\" appears in dropdown",
+      "expected": "",
+      "raw": "TC_10 Steps Clonning UIVerify visibility of \"Clone New Level\" optionHover on 3-dot menu of a step\"Clone New Level\" appears in dropdown"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "Verify clone action creates a new stepClick \"Clone New Level\" on Step 1New step (Step 2) appears with the same content as Step 1",
+      "expected": "",
+      "raw": "TC_11 Steps Clonning FunctionalVerify clone action creates a new stepClick \"Clone New Level\" on Step 1New step (Step 2) appears with the same content as Step 1"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functional",
+      "description": "Verify cloned step has unique step numberClone Step 1 → Step 2 is addedCloned step is named \"Step 2\", not duplicate Step 1",
+      "expected": "",
+      "raw": "TC_12 Steps Clonning FunctionalVerify cloned step has unique step numberClone Step 1 → Step 2 is addedCloned step is named \"Step 2\", not duplicate Step 1"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functional",
+      "description": "Verify cloned step appears immediately after source stepClone Step 1Cloned step appears just below original Step 1",
+      "expected": "",
+      "raw": "TC_13 Steps Clonning Functional Verify cloned step appears immediately after source stepClone Step 1Cloned step appears just below original Step 1"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functional",
+      "description": "Verify content inside cloned step is same as sourceClone Step 1 with paragraph/imageCloned step has same paragraph, image, layout",
+      "expected": "",
+      "raw": "TC_14 Steps Clonning FunctionalVerify content inside cloned step is same as sourceClone Step 1 with paragraph/imageCloned step has same paragraph, image, layout"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functional",
+      "description": "Verify cloned step metadataClone a step and check “Edit Metadata”Metadata should be copied accurately",
+      "expected": "",
+      "raw": "TC_15 Steps Clonning FunctionalVerify cloned step metadataClone a step and check “Edit Metadata”Metadata should be copied accurately"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functional",
+      "description": "Verify clone retains formattingApply formatting to original step content → CloneCloned content retains fonts, sizes, colors",
+      "expected": "",
+      "raw": "TC_16 Steps Clonning FunctionalVerify clone retains formattingApply formatting to original step content → CloneCloned content retains fonts, sizes, colors"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functional",
+      "description": "Verify clone retains embedded widgets/componentsAdd image or assessment widget → CloneComponents should exist in the cloned step",
+      "expected": "",
+      "raw": "TC_17 Steps Clonning FunctionalVerify clone retains embedded widgets/componentsAdd image or assessment widget → CloneComponents should exist in the cloned step"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functional",
+      "description": "Verify clone in nested structureClone a page inside a nested folder/stepClone appears in same hierarchy",
+      "expected": "",
+      "raw": "TC_18 Steps Clonning FunctionalVerify clone in nested structureClone a page inside a nested folder/stepClone appears in same hierarchy"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functional",
+      "description": "Verify behavior when cloning a step without any contentClone empty StepEmpty step with default layout should be created",
+      "expected": "",
+      "raw": "TC_19 Steps Clonning FunctionalVerify behavior when cloning a step without any contentClone empty StepEmpty step with default layout should be created"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functional",
+      "description": "Verify renaming cloned step works independentlyClone Step 1 → rename Step 2Renaming cloned step doesn’t affect original",
+      "expected": "",
+      "raw": "TC_20 Steps Clonning FunctionalVerify renaming cloned step works independentlyClone Step 1 → rename Step 2Renaming cloned step doesn’t affect original"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functional",
+      "description": "Verify deletion of original step doesn’t affect cloneClone Step 1 → delete Step 1Step 2 remains intact",
+      "expected": "",
+      "raw": "TC_21 Steps Clonning FunctionalVerify deletion of original step doesn’t affect cloneClone Step 1 → delete Step 1Step 2 remains intact"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functional",
+      "description": "Verify undo functionality after cloneClone Step → click undoCloned step should be removed",
+      "expected": "",
+      "raw": "TC_22 Steps Clonning FunctionalVerify undo functionality after cloneClone Step → click undoCloned step should be removed"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functional",
+      "description": "Verify redo functionality after undoRedo after undoing cloneCloned step reappears",
+      "expected": "",
+      "raw": "TC_23 Steps Clonning FunctionalVerify redo functionality after undoRedo after undoing cloneCloned step reappears"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functional",
+      "description": "Verify multiple clones from same sourceClone Step 1 multiple timesMultiple steps get created: Step 2, 3, 4, etc.",
+      "expected": "",
+      "raw": "TC_24 Steps Clonning FunctionalVerify multiple clones from same sourceClone Step 1 multiple timesMultiple steps get created: Step 2, 3, 4, etc."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functional",
+      "description": "Steps Clonning EdgeVerify limits on number of clonesTry cloning 100+ stepsHandle limit gracefully or notify",
+      "expected": "",
+      "raw": "TC_25 Steps Clonning EdgeVerify limits on number of clonesTry cloning 100+ stepsHandle limit gracefully or notify"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functional",
+      "description": "Verify clone behavior with special characters in contentAdd text with symbols/emojis → CloneCloned content preserves symbols",
+      "expected": "",
+      "raw": "TC_26 Steps Clonning FunctionalVerify clone behavior with special characters in contentAdd text with symbols/emojis → CloneCloned content preserves symbols"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI",
+      "description": "Verify clone behavior in full-screen or collapsed TOC viewCollapse TOC → CloneStep is cloned successfully without UI glitch",
+      "expected": "",
+      "raw": "TC_27 Steps Clonning UI Verify clone behavior in full-screen or collapsed TOC viewCollapse TOC → CloneStep is cloned successfully without UI glitch"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functional",
+      "description": "Verify clone step while unsaved changes existMake changes in Step 1 (unsaved) → CloneClone includes current in-memory state",
+      "expected": "",
+      "raw": "TC_28 Steps Clonning FunctionalVerify clone step while unsaved changes existMake changes in Step 1 (unsaved) → CloneClone includes current in-memory state"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI",
+      "description": "Verify 3-dot menu is available for a stepHover/click on a step3-dot (ellipsis) appears",
+      "expected": "",
+      "raw": "TC_29 Steps Clonning UIVerify 3-dot menu is available for a stepHover/click on a step3-dot (ellipsis) appears"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI",
+      "description": "Verify \"Clone New Level\" option is shown in 3-dot menu",
+      "expected": "",
+      "raw": "TC_30 Steps Clonning UIVerify \"Clone New Level\" option is shown in 3-dot menuClick on 3-dot menu“Clone New Level” option visible (unless all LOS used)"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI",
+      "description": "Verify \"Clone New Level\" option is disabled when all LOS usedClone Core → Light, Moderate, IntensiveClone option grayed out or hidden",
+      "expected": "",
+      "raw": "TC_31 Steps Clonning UI Verify \"Clone New Level\" option is disabled when all LOS usedClone Core → Light, Moderate, IntensiveClone option grayed out or hidden"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI",
+      "description": "Verify labels of all steps in the TOC after multiple clonesClone Core 3 timesAll pages listed under Step 1 with increasing page numbers",
+      "expected": "",
+      "raw": "TC_32 Steps Clonning UI Verify labels of all steps in the TOC after multiple clonesClone Core 3 timesAll pages listed under Step 1 with increasing page numbers"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI",
+      "description": "Verify tooltip/help text appears on hovering cloneHover over disabled Clone buttonTooltip: “All LOS variants already added”",
+      "expected": "",
+      "raw": "TC_33 Steps Clonning UIVerify tooltip/help text appears on hovering cloneHover over disabled Clone buttonTooltip: “All LOS variants already added”"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functional",
+      "description": "Verify wizard opens after clicking \"Clone\"",
+      "expected": "",
+      "raw": "TC_34 Steps Clonning FunctionalVerify wizard opens after clicking \"Clone\"Click on \"Clone New Level\"Step wizard modal appears"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functional",
+      "description": "Verify prefilled values in wizardOpen clone for CoreStep = 1, Page ID = next, Core prefilled",
+      "expected": "",
+      "raw": "TC_35 Steps Clonning FunctionalVerify prefilled values in wizardOpen clone for CoreStep = 1, Page ID = next, Core prefilled"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functional",
+      "description": "Verify LOS dropdown excludes already used valuesClone Core > Moderate > Open clone againOnly Light, Intensive shown",
+      "expected": "",
+      "raw": "TC_36 Steps Clonning FunctionalVerify LOS dropdown excludes already used valuesClone Core > Moderate > Open clone againOnly Light, Intensive shown"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functional",
+      "description": "Verify “Core” cannot be selected in cloneOpen Clone after Core createdCore option not available in LOS dropdown",
+      "expected": "",
+      "raw": "TC_37 Steps Clonning FunctionalVerify “Core” cannot be selected in cloneOpen Clone after Core createdCore option not available in LOS dropdown"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functional",
+      "description": "Verify LOS values include multilingual variantsOpen LOS dropdownShow Light, Light - Multilingual, etc. as unique options",
+      "expected": "",
+      "raw": "TC_38 Steps Clonning FunctionalVerify LOS values include multilingual variantsOpen LOS dropdownShow Light, Light - Multilingual, etc. as unique options"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Negative",
+      "description": "Verify validation if no LOS is selectedTry saving clone without LOSShow validation error: “LOS is required”",
+      "expected": "",
+      "raw": "TC_39 Steps Clonning NegativeVerify validation if no LOS is selectedTry saving clone without LOSShow validation error: “LOS is required”"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Negative",
+      "description": "Verify clone is not allowed for duplicate LOSTry cloning for “Light” againShow error: “LOS already linked to a page”",
+      "expected": "",
+      "raw": "TC_40 Steps Clonning NegativeVerify clone is not allowed for duplicate LOSTry cloning for “Light” againShow error: “LOS already linked to a page”"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functional",
+      "description": "Verify step is saved successfully",
+      "expected": "",
+      "raw": "TC_41 Steps Clonning FunctionalVerify step is saved successfullySelect LOS, click SaveStep created with incremented page ID"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functional",
+      "description": "Verify cancel closes wizard without changesClick Clone → CancelWizard closes, no step created",
+      "expected": "",
+      "raw": "TC_42 Steps Clonning FunctionalVerify cancel closes wizard without changesClick Clone → CancelWizard closes, no step created"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functional",
+      "description": "Verify save assigns unique page IDClone Core > Light > SavePage ID is 2 (unique)",
+      "expected": "",
+      "raw": "TC_43 Steps Clonning FunctionalVerify save assigns unique page IDClone Core > Light > SavePage ID is 2 (unique)"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functional",
+      "description": "Steps Clonning",
+      "expected": "",
+      "raw": "TC_44 Steps Clonning"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functional",
+      "description": "Verify Step number remains the same after cloningClone Step 1 (Core) multiple timesAll clones have Step 1",
+      "expected": "",
+      "raw": "TC_45 Steps Clonning FunctionalVerify Step number remains the same after cloningClone Step 1 (Core) multiple timesAll clones have Step 1"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functional",
+      "description": "Verify Page ID increments with each cloneClone Core > 3 timesPage IDs = 2, 3, 4",
+      "expected": "",
+      "raw": "TC_46 Steps Clonning FunctionalVerify Page ID increments with each cloneClone Core > 3 timesPage IDs = 2, 3, 4"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functional",
+      "description": "Verify each clone links to unique LOSClone Core → Light → ModerateEach page mapped to distinct LOS",
+      "expected": "",
+      "raw": "TC_47 Steps Clonning FunctionalVerify each clone links to unique LOSClone Core → Light → ModerateEach page mapped to distinct LOS"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functional",
+      "description": "Verify clone logic respects LOS availabilityTry clone after all variants usedClone option disabled",
+      "expected": "",
+      "raw": "TC_48 Steps Clonning FunctionalVerify clone logic respects LOS availabilityTry clone after all variants usedClone option disabled"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functional",
+      "description": "Verify multilingual variants treated separatelyClone Core > Moderate > Moderate - MultilingualAll accepted as separate LOS",
+      "expected": "",
+      "raw": "TC_49 Steps Clonning FunctionalVerify multilingual variants treated separatelyClone Core > Moderate > Moderate - MultilingualAll accepted as separate LOS"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functional",
+      "description": "Verify same LOS cannot be reused in other step clonesUse “Moderate” in Step 1 → Try in Step 2 cloneError/disabled",
+      "expected": "",
+      "raw": "TC_50 Steps Clonning FunctionalVerify same LOS cannot be reused in other step clonesUse “Moderate” in Step 1 → Try in Step 2 cloneError/disabled"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Negative",
+      "description": "Try cloning without selecting LOSOpen Clone → Skip LOS → SaveError: “LOS required”",
+      "expected": "",
+      "raw": "TC_51 Steps Clonning NegativeTry cloning without selecting LOSOpen Clone → Skip LOS → SaveError: “LOS required”"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Negative",
+      "description": "Try cloning after all LOS addedClone Core with Light, Moderate, IntensiveClone disabled",
+      "expected": "",
+      "raw": "TC_52 Steps Clonning NegativeTry cloning after all LOS addedClone Core with Light, Moderate, IntensiveClone disabled"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Negative",
+      "description": "Attempt to manually assign existing page IDTry modifying Page ID in wizard (if editable)Validation error or auto-correction",
+      "expected": "",
+      "raw": "TC_53 Steps Clonning NegativeAttempt to manually assign existing page IDTry modifying Page ID in wizard (if editable)Validation error or auto-correction"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Negative",
+      "description": "Try cloning on a locked/read-only stepOpen Clone on locked stepAction blocked or disabled",
+      "expected": "",
+      "raw": "TC_54 Steps Clonning NegativeTry cloning on a locked/read-only stepOpen Clone on locked stepAction blocked or disabled"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify each cloned step has a unique internal IDCreate clone > inspect metadataEach has unique internal ID",
+      "expected": "",
+      "raw": "TC_55 Steps Clonning TechnicalVerify each cloned step has a unique internal IDCreate clone > inspect metadataEach has unique internal ID"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify LOS stored correctly for each cloneClone > ModerateStep linked to correct LOS in DB",
+      "expected": "",
+      "raw": "TC_56 Steps Clonning TechnicalVerify LOS stored correctly for each cloneClone > ModerateStep linked to correct LOS in DB"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify original step (Core) remains unchangedClone Core > Light, ModerateCore remains untouched",
+      "expected": "",
+      "raw": "TC_57 Steps Clonning TechnicalVerify original step (Core) remains unchangedClone Core > Light, ModerateCore remains untouched"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify metadata export contains all clonesExport activityAll step mappings correctly listed",
+      "expected": "",
+      "raw": "TC_58 Steps Clonning TechnicalVerify metadata export contains all clonesExport activityAll step mappings correctly listed"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functional",
+      "description": "Steps Clonning Edge Clone steps in random order (Moderate → Light → Intensive)Clone out of orderSystem still assigns next available page ID correctly",
+      "expected": "",
+      "raw": "TC_59 Steps Clonning Edge Clone steps in random order (Moderate → Light → Intensive)Clone out of orderSystem still assigns next available page ID correctly"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functional",
+      "description": "Clone across steps (Step 2 > Clone)Should follow same logicStep 2: Page 2, 3, etc.",
+      "expected": "",
+      "raw": "TC_60 Steps Clonning FunctionalClone across steps (Step 2 > Clone)Should follow same logicStep 2: Page 2, 3, etc."
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functional",
+      "description": "Steps Clonning EdgeTest with all LOS multilingual optionsClone with Light - Multilingual, Moderate - MultilingualAll handled separately",
+      "expected": "",
+      "raw": "TC_61 Steps Clonning EdgeTest with all LOS multilingual optionsClone with Light - Multilingual, Moderate - MultilingualAll handled separately"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functional",
+      "description": "Steps Clonning EdgeClone while simultaneously editing another stepOpen Clone while editing stepAllow or block based on system rules",
+      "expected": "",
+      "raw": "TC_62 Steps Clonning EdgeClone while simultaneously editing another stepOpen Clone while editing stepAllow or block based on system rules"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functional",
+      "description": "Clone with Moderate, Light → verify both mapped to same Page IDClone Core →",
+      "expected": "",
+      "raw": "TC_63 Steps Clonning Functional Clone with Moderate, Light → verify both mapped to same Page IDClone Core → Select Moderate, Light → SaveStep 1, Page 2 has LOS: Moderate, Light"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functional",
+      "description": "Clone remaining LOS → Page ID auto-setClone →",
+      "expected": "",
+      "raw": "TC_64 Steps Clonning FunctionalClone remaining LOS → Page ID auto-setClone → Select Intensive → SavePage 3 created"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functional",
+      "description": "Verify each step page has unique page IDClone thrice → SavePage IDs: 1 (Core), 2 (Mod+Light), 3 (Intensive)",
+      "expected": "",
+      "raw": "TC_65 Steps Clonning FunctionalVerify each step page has unique page IDClone thrice → SavePage IDs: 1 (Core), 2 (Mod+Light), 3 (Intensive)"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Negative",
+      "description": "Verify same LOS not allowed across different page IDsTry assigning Moderate to another pageError shown or option disabled",
+      "expected": "",
+      "raw": "TC_66 Steps Clonning NegativeVerify same LOS not allowed across different page IDsTry assigning Moderate to another pageError shown or option disabled"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify all selected LOS are correctly stored against stepClone with Moderate, Light → SaveStep 1, Page 2 mapped with both LOS",
+      "expected": "",
+      "raw": "TC_67 Steps Clonning TechnicalVerify all selected LOS are correctly stored against stepClone with Moderate, Light → SaveStep 1, Page 2 mapped with both LOS"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify internal IDs are unique for each pageClone → Inspect metadataUnique IDs for Page 1, 2, 3",
+      "expected": "",
+      "raw": "TC_68 Steps Clonning TechnicalVerify internal IDs are unique for each pageClone → Inspect metadataUnique IDs for Page 1, 2, 3"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functional",
+      "description": "Steps Clonning TechnicalVerify audit trail stores user who clonedClone by Author A → SaveEntry in audit log for clone action",
+      "expected": "",
+      "raw": "TC_69 Steps Clonning TechnicalVerify audit trail stores user who clonedClone by Author A → SaveEntry in audit log for clone action"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Negative",
+      "description": "Verify validation message shown if no LOS selectedOpen Clone wizard → Save without selecting LOSError: “At least one LOS must be selected”",
+      "expected": "",
+      "raw": "TC_70 Steps Clonning NegativeVerify validation message shown if no LOS selectedOpen Clone wizard → Save without selecting LOSError: “At least one LOS must be selected”"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Negative",
+      "description": "Verify user cannot select Core againClone after Core existsCore not in LOS list",
+      "expected": "",
+      "raw": "TC_71 Steps Clonning NegativeVerify user cannot select Core againClone after Core existsCore not in LOS list"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Negative",
+      "description": "Verify same LOS cannot be reused in another cloneUse Moderate once → Try againModerate disabled in dropdown",
+      "expected": "",
+      "raw": "TC_72 Steps Clonning NegativeVerify same LOS cannot be reused in another cloneUse Moderate once → Try againModerate disabled in dropdown"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Negative",
+      "description": "Verify page is not created if Cancel is clickedClone →",
+      "expected": "",
+      "raw": "TC_73 Steps Clonning NegativeVerify page is not created if Cancel is clickedClone → Select LOS → Click CancelNo new page created"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functional",
+      "description": "Verify if user is able to publish the activity",
+      "expected": "publishing the Activity Activity should be Published successfully",
+      "raw": "TC_74 Steps Clonning FunctionalVerify if user is able to publish the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.publishing the Activity Activity should be Published successfully"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functional",
+      "description": "Verify after publishing user is able to see the cloned steps in reader",
+      "expected": "Check Without Entering Data in both \" Instruction for Student and Teacher \" Steps should be visble on CLP",
+      "raw": "TC_75 Steps Clonning Functional Verify after publishing user is able to see the cloned steps in reader 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" Steps should be visble on CLP"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functional",
+      "description": "Verify if user is able to edit the activity",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Able to edit the activity",
+      "raw": "TC_76 Steps Clonning FunctionalVerify if user is able to edit the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Check any Data loss in a layout while Republishing the Activity Able to edit the activity"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functional",
+      "description": "Verify if user is able to republish the activity",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Activity should be Published successfully",
+      "raw": "TC_77 Steps Clonning FunctionalVerify if user is able to republish the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Check any Data loss in a layout while Republishing the Activity Activity should be Published successfully"
+    }
+  ]
+}

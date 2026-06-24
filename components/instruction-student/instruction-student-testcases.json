@@ -1,0 +1,164 @@
+{
+  "component": "Instruction for Student",
+  "slug": "instruction-student",
+  "dataType": "instructionsstudents",
+  "source": "Author Test Cases -  Instruction for Student.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases -  Instruction for Student.pdf",
+  "pages": 1,
+  "extractedCount": 19,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Instruction for studentUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Instruction for student FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03Instruction for student FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Positive",
+      "description": "Apply font family, size, weight, and line-height",
+      "expected": "",
+      "raw": "TC_04Instruction for student PositiveApply font family, size, weight, and line-height Enter text, apply Roboto, 16px, weight 500, line-height 136% Text appears with specified style and spacing"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Positive",
+      "description": "Add line break in paragraphPress",
+      "expected": "",
+      "raw": "TC_05Instruction for student PositiveAdd line break in paragraphPress Enter mid-sentenceNew line added, paragraph splits correctly"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Positive",
+      "description": "Apply bold, italic, and underline formatting",
+      "expected": "",
+      "raw": "TC_06Instruction for student PositiveApply bold, italic, and underline formattingSelect text and apply B, I, UFormatting is applied and visually shown"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Positive",
+      "description": "Add bullets and numbered listsUse bullets/numbering toolbar optionsItems appear as list elements",
+      "expected": "",
+      "raw": "TC_07Instruction for student PositiveAdd bullets and numbered listsUse bullets/numbering toolbar optionsItems appear as list elements"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Positive",
+      "description": "Add colored or styled textHighlight text and apply styles (e.g. color)Style applies and renders properly",
+      "expected": "",
+      "raw": "TC_08Instruction for student PositiveAdd colored or styled textHighlight text and apply styles (e.g. color)Style applies and renders properly"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Positive",
+      "description": "Drag and drop Image componentDrag Image component into instruction field Image block appears with caption placeholder",
+      "expected": "",
+      "raw": "TC_09Instruction for student PositiveDrag and drop Image componentDrag Image component into instruction field Image block appears with caption placeholder"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Drag and drop table componentDrag table component into instruction fieldTable should added with caption placeholder",
+      "expected": "",
+      "raw": "TC_10Instruction for student PositiveDrag and drop table componentDrag table component into instruction fieldTable should added with caption placeholder"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Drag and drop Header componentDrag Header component into instruction fieldHeader should added with placeholder",
+      "expected": "",
+      "raw": "TC_11Instruction for student PositiveDrag and drop Header componentDrag Header component into instruction fieldHeader should added with placeholder"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Drag and drop Title componentDrag Title component into instruction fieldTitle should added with placeholder",
+      "expected": "",
+      "raw": "TC_12Instruction for student PositiveDrag and drop Title componentDrag Title component into instruction fieldTitle should added with placeholder"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Publish activity with instruction blockFill instruction and click “Publish”Activity publishes without errors",
+      "expected": "",
+      "raw": "TC_13Instruction for student PositivePublish activity with instruction blockFill instruction and click “Publish”Activity publishes without errors"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Launch on reader and validate instruction appearanceOpen published activity in readerText, images, video appear correctly",
+      "expected": "",
+      "raw": "TC_14Instruction for student PositiveLaunch on reader and validate instruction appearanceOpen published activity in readerText, images, video appear correctly"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Edit instruction block post-publishModify text/components in instruction blockChanges are reflected in the authoring tool",
+      "expected": "",
+      "raw": "TC_15Instruction for student PositiveEdit instruction block post-publishModify text/components in instruction blockChanges are reflected in the authoring tool"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Republish after editingClick “Republish” after changesLatest content appears in reader",
+      "expected": "",
+      "raw": "TC_16Instruction for student PositiveRepublish after editingClick “Republish” after changesLatest content appears in reader"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Edge Case",
+      "description": "Enter extremely long instruction content (edge case)Paste 1000+ characters Instruction scrolls properly or wraps as expected",
+      "expected": "",
+      "raw": "TC_17Instruction for student Edge CaseEnter extremely long instruction content (edge case)Paste 1000+ characters Instruction scrolls properly or wraps as expected"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Negative",
+      "description": "Leave instruction block empty and try publishingDelete all content, click “Publish”System blocks publishing or shows warning",
+      "expected": "",
+      "raw": "TC_18Instruction for student NegativeLeave instruction block empty and try publishingDelete all content, click “Publish”System blocks publishing or shows warning"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Edge Case",
+      "description": "Use special characters and validate renderingAdd emojis, symbols, foreign characters All characters render properly or with fallback font",
+      "expected": "",
+      "raw": "TC_19Instruction for student Edge CaseUse special characters and validate renderingAdd emojis, symbols, foreign characters All characters render properly or with fallback font"
+    }
+  ]
+}

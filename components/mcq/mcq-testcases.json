@@ -1,0 +1,537 @@
+{
+  "component": "MCQ (Single Choice)",
+  "slug": "mcq",
+  "dataType": "multiple-choice-template",
+  "source": "Author Test Cases - MCQ .pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - MCQ .pdf",
+  "pages": 3,
+  "extractedCount": 105,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "raw": "TC_01MCQUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "raw": "TC_02MCQ FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "raw": "TC_03MCQ FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "raw": "TC_04MCQ FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "raw": "TC_05MCQ FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "raw": "TC_06MCQ Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel button The step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "raw": "TC_07MCQ Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "raw": "TC_08MCQ Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "raw": "TC_09MCQ Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "raw": "TC_10MCQ Functionality Verify user able to drag and drop MCQ inside the multipart/ Generic stepDrag and drop MCQ inside the stepMCQ should be added successfully"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "raw": "TC_11MCQUI Verification Verify selecting style default applies correct appearance (style1)Select the styles from the settings panel Styles should display properly on author editor and preview"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "raw": "TC_12MCQUI Verification Verify selecting \"Switching between\" style applies correct appearanceSwitch the styles from the settings panelUser shoukd be switched successfully"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "raw": "TC_13MCQPersistence Verify style persists after saving and re-opening activitySet style to Outline > Save > Close > ReopenStyle selection remains as Outline"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "raw": "TC_14MCQIntegration Verify style persists after publishing and launching in ReaderSet style > Publish > Launch in Reader Reader displays MCQ with selected style"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "raw": "TC_15MCQUI VerificationVerify selecting Align Left positions options leftSelect Align LeftAll option text is left aligned"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "raw": "TC_16MCQUI Verification Verify selecting Align Right positions options rightSelect Align RightAll option text is right aligned"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "raw": "TC_17MCQIntegrationVerify align setting persists after publishingSelect Align Right > Publish > Reader MCQ options remain right aligned in Reader"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "raw": "TC_18MCQPositiveVerify adding image via Upload by SystemEnable Add Media > Select Image > Upload fileImage preview shown next to MCQ"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "raw": "TC_19MCQPositiveVerify adding video via URL(style2) Enable Add Media > Select Video > Upload by URL > Enter YouTube ID Video placeholder visible, playable in Reader"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "raw": "TC_20MCQPositiveVerify adding audio via Upload by SystemEnable Add Media > Select Audio > Upload fileAudio controls displayed"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "raw": "TC_21MCQNegativeVerify validation error when URL is invalidSelect Video > Upload by URL > Enter invalid linkError message shown, video not added"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "raw": "TC_22MCQPositiveVerify removing media resets placeholderAdd media > Remove mediaPlaceholder cleared"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "raw": "TC_23MCQFunctional Verify Generic feedback displays correct message on correct answer Enable Generic > Enter correct/incorrect text > Preview MCQ > Submit correct answer Correct message shown (\"Congratulations! Your answer is correct\")"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "raw": "TC_24MCQFunctional Verify Generic feedback displays incorrect messageSubmit incorrect answerIncorrect message shown"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "raw": "TC_25MCQFormattingVerify line breaks in Generic feedbackEnter feedback text with line breaksReader displays line breaks correctly"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "raw": "TC_26MCQNegative Verify empty feedback text shows default fallbackLeave Generic feedback blankDefault system message displayed"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "raw": "TC_27MCQFunctional Verify Individual feedback overrides Generic feedbackEnable Individual > Enter per-option feedback Submitting shows individual feedback instead of generic"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "raw": "TC_28MCQPersistenceVerify Individual feedback persists after savingSave activity > ReopenPer-option feedback text retained"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "raw": "TC_29MCQFunctional Verify Try Again option allows multiple attempts Enable Try Again > Set attempts to 3 > Preview > Submit incorrect answer Try Again message shown, can retry 2 more times"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "raw": "TC_30MCQEdge CaseVerify max attempts disable Try AgainSubmit incorrect answers 3 times Final feedback shown, no further attempts"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "raw": "TC_31MCQNegative Verify disabling Try Again prevents multiple attemptsDisable Try AgainOnly one submission allowed"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "raw": "TC_32MCQFunctional Verify Add Show Me shows correct answer on demand Enable Add Show Me > Preview > Submit incorrect answer > Click Show MeCorrect answer highlighted"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "raw": "TC_33MCQNegative Verify Show Me option not visible when disabledDisable Add Show Me No Show Me option appears after submission"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "raw": "TC_34MCQFunctional Verify Shuffle Choices randomizes options on loadEnable Shuffle Choices > Preview multiple timesOptions order changes each time"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "raw": "TC_35MCQFunctional Verify Shuffle Choices disabled keeps order fixedDisable Shuffle ChoicesOptions order remains constant"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "raw": "TC_36MCQFunctional Verify Reset option clears selection and feedbackEnable Reset > Submit answer > Click Reset icon All selections cleared, user can reattempt"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "raw": "TC_37MCQNegativeVerify Reset icon disabled hides reset optionDisable ResetNo reset icon visible"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "raw": "TC_38MCQUI Verification Verify selecting label types updates option labelsChoose \"A,B,C,D\" labelsOptions labeled A,B,C,D"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "raw": "TC_39MCQIntegrationVerify label type persists after publishingSelect label type > Publish > ReaderCorrect labels displayed"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "raw": "TC_40MCQPositive Verify activity publishes successfully with all configurationsConfigure MCQ with all settings > PublishActivity publishes without error"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "raw": "TC_41MCQIntegrationVerify MCQ displays correctly in ReaderLaunch Reader Layout, styles, feedback, media display correctly"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "raw": "TC_42MCQRegressionVerify editing activity updates Reader view Edit MCQ > Change options > Republish > Reload ReaderUpdated MCQ content visible"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "raw": "TC_43MCQFormatting Verify line break formatting in question and optionsEnter text with line breaks in question/optionsReader displays line breaks properly"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "raw": "TC_44MCQEdge CaseVerify long text wraps correctly in ReaderAdd long question/option textText wraps without overflow"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "raw": "TC_45MCQNegativeVerify saving without any options shows errorRemove all options > Save Error message: \"At least one option required\""
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "raw": "TC_46MCQNegative Verify saving without correct answer shows errorNo correct answer selected > SaveError message: \"Select correct answer\""
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "raw": "TC_47MCQEdge CaseVerify exceeding max attempts disables submit Enable Try Again with 1 attempt > Submit incorrect answerSubmit button disabled"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "raw": "TC_48MCQNegativeVerify invalid media URL prevents publishAdd invalid video URL > PublishError shown: \"Invalid media link\""
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "raw": "TC_49MCQUI VerificationVerify Action Asset color applied correctlySet Action Assets color (e.g., #113e9a) Buttons and highlights reflect selected color"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "raw": "TC_50MCQPersistenceVerify Action Assets color persists after saveChange Action Assets color > Save > ReopenColor remains applied"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "raw": "TC_51MCQIntegrationVerify Action Assets color persists in ReaderSet Action Assets color > Publish > Reader Color is applied to MCQ components in Reader"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "raw": "TC_52MCQNegativeVerify invalid color input shows errorEnter invalid color codeValidation error displayed"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "raw": "TC_53MCQFormatting Verify question text line breaks render correctlyAdd line breaks in Question TextReader displays formatting"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "raw": "TC_54MCQFormattingVerify option text line breaks renderAdd line breaks in Option TextCorrect rendering in Reader"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "raw": "TC_55MCQEdge CaseVerify long text wraps without overflowEnter long textText wraps cleanly"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "raw": "TC_56MCQNegativeVerify no options configured prevents saveRemove all options > Save Error shown: \"At least one option required\""
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "raw": "TC_57MCQNegativeVerify no correct answer prevents saveDeselect all correct answers > SaveError shown"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "raw": "TC_58MCQNegativeVerify invalid video URL in Add MediaEnter invalid URLValidation error"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "raw": "TC_59MCQPositiveVerify Add Media supports Image uploadUpload imageImage displays"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "raw": "TC_60MCQPositiveVerify Add Media supports Audio uploadUpload audioAudio controls display"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "raw": "TC_61MCQNegativeVerify feedback fallback if text left emptyLeave feedback emptyDefault system message shown"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "raw": "TC_62MCQNegativeVerify correct Save & Preview button statesWithout required fields, Save disabledSave button inactive"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "raw": "TC_63MCQPositiveVerify correct Save & Publish button statesWith required fields, Save enabledSave button active"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "raw": "TC_64MCQUI VerificationVerify Default label type appliedSelect Default label typeOptions show default numbering style"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "raw": "TC_65MCQUI VerificationVerify A,B,C,D label type appliedSelect A,B,C,DOptions labeled A,B,C,D"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "raw": "TC_66MCQUI VerificationVerify 1,2,3,4 label type appliedSelect 1,2,3,4Options labeled numerically"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "raw": "TC_67MCQUI VerificationVerify a,b,c,d label type appliedSelect a,b,c,dOptions labeled in lowercase"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "raw": "TC_68MCQUI VerificationVerify Roman uppercase label type appliedSelect I,II,III,IV Options labeled with Roman numerals uppercase"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "raw": "TC_69MCQUI VerificationVerify Roman lowercase label type appliedSelect i,ii,iii,iv Options labeled with Roman numerals lowercase"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "raw": "TC_70MCQIntegrationVerify label type persists after publishingSet label type > Publish > Launch ReaderSame label type displayed in Reader"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "raw": "TC_71MCQFunctional Verify switching label types updates labels immediatelyChange label types repeatedly Labels update dynamically without requiring save"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "raw": "TC_72MCQFunctionalVerify able to click on add optionClick add option New option should be added and labels should be auto updated"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "raw": "TC_73MCQFunctionalVerify able to upload image in answer optionsUpload image in answer options Image should be added in Answer option"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "raw": "TC_74MCQFunctional Verify able to add math equations in the answer optionsAdd math equations in answer options Math equations should be added succesfully"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "raw": "TC_75MCQFunctional Verify able to add line break in the answer optionsAdd line break in answer options add line break should be added in the answer options"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "raw": "TC_76MCQFunctional Verify able to add large paragraph and contents in answer options Add large paragraph and contents in answer options large paragraph and contents should be added in answer option"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "raw": "TC_77MCQFunctional Verify able to delete the answer options by clicking the close iconclick the delete/ close iconAnswer option should be deleted"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "raw": "TC_78MCQFunctional Verify filling the header text with using line break format in Header text field Add Multipart in step tray > Drag and drop the Multichoice component > Then fill the Header text The header text should be fetched on the respective field"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "raw": "TC_79MCQFunctional Verify filling the Choose the Answer field in the field Add Multipart in step tray > Drag and drop the Multichoice component > Then fill the choose the answer field The choose the answer text should be fetched on the respective field Sample Layer"
+    },
+    {
+      "id": "TC_77__2",
+      "num": 77,
+      "raw": "TC_77MCQUI VerificationVerify enabling Sample Answer displays bannerIn Settings panel, check Add Sample Answer Pink “Sample Answers: On” banner appears above MCQ"
+    },
+    {
+      "id": "TC_78__2",
+      "num": 78,
+      "raw": "TC_78MCQUI VerificationVerify disabling Sample Answer hides bannerUncheck Add Sample AnswerBanner disappears"
+    },
+    {
+      "id": "TC_79__2",
+      "num": 79,
+      "raw": "TC_79MCQPersistenceVerify Sample Answer toggle persists after SaveEnable Sample Answer > Save > Reopen activityBanner still visible"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "raw": "TC_80MCQIntegration Verify Sample Answer toggle persists after PublishEnable Sample Answer > Publish > Launch ReaderBanner and Sample Answer visible"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "raw": "TC_81MCQUI VerificationVerify Sample Answer text is highlightedEnable Sample Answer Sample Answer text styled distinctly (e. g., pink or highlighted)"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "raw": "TC_82MCQUI Verification Verify Sample Answer shows selected correct optionEnable Sample Answer and select correct answer Correct option marked or pre-selected as sample"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "raw": "TC_83MCQUI VerificationVerify Sample Answer respects label types Enable Sample Answer > Change Label Type (A,B, C,D) Sample Answer labels update accordingly"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "raw": "TC_84MCQFunctionalVerify Sample Answer is read-onlyEnable Sample Answer > Try to change answer User cannot modify Sample Answer selection"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "raw": "TC_85MCQFunctional Verify switching back to normal mode re- enables selectionDisable Sample AnswerUser can again select answers normally"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "raw": "TC_86MCQUI Verification Verify Show Header and Show Instruction with Sample Answer Enable Sample Answer + Show Header + Show Instruction Header Text and Instruction Text displayed"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "raw": "TC_87MCQUI Verification Verify hiding Header removes it while Sample Answer is onDisable Show HeaderHeader Text hidden"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "raw": "TC_88MCQUI Verification Verify hiding Instruction removes it while Sample Answer is onDisable Show InstructionInstruction Text hidden"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "raw": "TC_89MCQUI VerificationVerify Image renders in Sample AnswerEnable Sample Answer + Add Media (Image)Image visible in Sample Answer view"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "raw": "TC_90MCQUI VerificationVerify Video renders in Sample AnswerAdd Media > VideoVideo player visible"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "raw": "TC_91MCQUI VerificationVerify Audio renders in Sample AnswerAdd Media > AudioAudio player visible"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "raw": "TC_92MCQIntegrationVerify Sample Answer displays in Reader viewEnable Sample Answer > Publish > Launch Reader Sample Answer visible with pink banner"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "raw": "TC_93MCQIntegration Verify toggling Sample Answer off updates ReaderDisable Sample Answer > RepublishSample Answer removed from Reader"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "raw": "TC_94MCQNegative Verify enabling Sample Answer without correct option set Enable Sample Answer without marking any correct option Validation error shown: “Please select a correct option to show sample answer.”"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "raw": "TC_95MCQFunctional Verify multiple correct answers in Multiple mode Switch to Multiple > Mark multiple correct answers > Enable Sample Answer All correct answers highlighted as sample"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "raw": "TC_96MCQEdge CaseVerify Sample Answer text wrappingEnter long text in optionText wraps within the option area"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "raw": "TC_97MCQFunctional Verify Sample Answer persists when switching answer types Enable Sample Answer > Switch to Multiple > Save > ReloadSample Answer settings preserved"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "raw": "TC_98MCQAccessibility Verify Sample Answer banner has accessible labelInspect banner for aria-label or alt textAccessible label present"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "raw": "TC_99MCQAccessibilityVerify color contrast meets standardsCheck pink banner contrast against textPasses WCAG AA/AAA"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "raw": "TC_100MCQFunctionalVerify Reset disables Sample Answer selection Enable Sample Answer > Enable Reset > Click Reset Banner remains, but options unselected (if applicable)"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "raw": "TC_101MCQFunctional Verify Shuffle Choices doesn’t affect Sample Answer Enable Shuffle Choices > Enable Sample Answer > Preview multiple times Sample Answer always shows consistent option"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "raw": "TC_102MCQPersistence Verify Save/Publish retains Sample Answer across sessions Enable Sample Answer > Save > Logout/Login > Reopen activitySample Answer visible and active"
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "component": "Situation Header",
+  "slug": "situation-header",
+  "dataType": "situationbox",
+  "source": "Author Test Cases - Situation Header.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Situation Header.pdf",
+  "pages": 3,
+  "extractedCount": 54,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Situation Header UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Situation Header FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03 Situation Header FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify that the \"Situation Box Header\" component is visible in the Elements tray on the right panel",
+      "expected": "Add Situation headerComponent is visible and selectable",
+      "raw": "TC_04 Situation HeaderFunctionality Verify that the \"Situation Box Header\" component is visible in the Elements tray on the right panel 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerComponent is visible and selectable"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify that the component is enabled only for Generic and Multipart Question step types",
+      "expected": "Add Situation header Component is selectable only under allowed step types",
+      "raw": "TC_05 Situation HeaderFunctionality Verify that the component is enabled only for Generic and Multipart Question step types 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Component is selectable only under allowed step types"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the component can be dragged and dropped into any section of all layouts (especially Flexi layout)",
+      "expected": "Add Situation header Component can be placed successfully without error",
+      "raw": "TC_06 Situation HeaderFunctionality Verify that the component can be dragged and dropped into any section of all layouts (especially Flexi layout) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Component can be placed successfully without error"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the component has a fixed icon on the top-left after placement",
+      "expected": "Add Situation headerIcon appears and is non-editable",
+      "raw": "TC_07 Situation HeaderFunctionality Verify that the component has a fixed icon on the top-left after placement 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerIcon appears and is non-editable"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that the right side of the icon contains a text area for authoring",
+      "expected": "Add Situation headerRTE-enabled text area appears next to the icon",
+      "raw": "TC_08 Situation HeaderFunctionality Verify that the right side of the icon contains a text area for authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerRTE-enabled text area appears next to the icon"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that the icon is not editable",
+      "expected": "Add Situation header Author cannot delete or change the icon",
+      "raw": "TC_09 Situation Header FunctionalityVerify that the icon is not editable 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Author cannot delete or change the icon"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify that the arrow icon is displayed on the top-left of the Situation Box Header component",
+      "expected": "Add Situation header The arrow icon is visible and correctly positioned",
+      "raw": "TC_10 Situation HeaderFunctionality Verify that the arrow icon is displayed on the top-left of the Situation Box Header component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header The arrow icon is visible and correctly positioned"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that the arrow icon is not editable in authoring mode",
+      "expected": "Add Situation header The user should not be able to modify, delete, replace, or interact with the icon",
+      "raw": "TC_11 Situation HeaderFunctionality Verify that the arrow icon is not editable in authoring mode 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header The user should not be able to modify, delete, replace, or interact with the icon"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify that no editing handles (resize, move, delete) appear when clicking the arrow icon",
+      "expected": "Add Situation header No editing controls appear on icon hover or click",
+      "raw": "TC_12 Situation HeaderFunctionality Verify that no editing handles (resize, move, delete) appear when clicking the arrow icon 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header No editing controls appear on icon hover or click"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify icon remains intact and visible after saving and reloading the activity",
+      "expected": "Add Situation headerThe icon appears unchanged on reloading",
+      "raw": "TC_13 Situation HeaderFunctionality Verify icon remains intact and visible after saving and reloading the activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerThe icon appears unchanged on reloading"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify the arrow icon appears in preview and published CLP view",
+      "expected": "Add Situation header The icon is visible and in expected position in all views",
+      "raw": "TC_14 Situation HeaderFunctionality Verify the arrow icon appears in preview and published CLP view 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header The icon is visible and in expected position in all views"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Try to select and delete the arrow icon via keyboard (e.g., using Delete key)",
+      "expected": "Add Situation headerIcon cannot be selected or deleted",
+      "raw": "TC_15 Situation HeaderFunctionality Try to select and delete the arrow icon via keyboard (e.g., using Delete key) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerIcon cannot be selected or deleted"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Attempt to right-click the arrow icon and check for browser or editor context menu",
+      "expected": "Add Situation headerNo editable context options should appear",
+      "raw": "TC_16 Situation HeaderFunctionality Attempt to right-click the arrow icon and check for browser or editor context menu 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerNo editable context options should appear"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Attempt to drag the icon to another location",
+      "expected": "Add Situation headerIcon remains fixed; cannot be dragged",
+      "raw": "TC_17 Situation HeaderFunctionalityAttempt to drag the icon to another location 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerIcon remains fixed; cannot be dragged"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Try pasting content over the icon to overwrite",
+      "expected": "Add Situation headerThe icon remains intact; no overwrite occurs",
+      "raw": "TC_18 Situation HeaderFunctionalityTry pasting content over the icon to overwrite 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerThe icon remains intact; no overwrite occurs"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Try inspecting and editing the icon using browser dev tools (UI hack attempt)",
+      "expected": "Add Situation header Any UI hack attempt fails to affect actual component rendering",
+      "raw": "TC_19 Situation HeaderFunctionality Try inspecting and editing the icon using browser dev tools (UI hack attempt) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Any UI hack attempt fails to affect actual component rendering"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Author enters math equation using math editor (√, fractions, exponents)",
+      "expected": "Add Situation headerEquation renders properly inside the component",
+      "raw": "TC_20 Situation HeaderFunctionality Author enters math equation using math editor (√, fractions, exponents) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerEquation renders properly inside the component"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Author adds text and math equation in the same content block",
+      "expected": "Add Situation header Text and math both render together without overlap",
+      "raw": "TC_21 Situation HeaderFunctionality Author adds text and math equation in the same content block 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Text and math both render together without overlap"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Author adds long text and math formulas, saves the content, and reopens to verify",
+      "expected": "Add Situation header Content is retained accurately with all formatting",
+      "raw": "TC_22 Situation HeaderFunctionality Author adds long text and math formulas, saves the content, and reopens to verify 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Content is retained accurately with all formatting"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Author previews content with formatting and math",
+      "expected": "Add Situation header All content displays as authored in preview mode",
+      "raw": "TC_23 Situation HeaderFunctionalityAuthor previews content with formatting and math 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header All content displays as authored in preview mode"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Author enters only math equations without any accompanying text",
+      "expected": "Add Situation headerMath equation should still be visible and saved",
+      "raw": "TC_24 Situation HeaderFunctionality Author enters only math equations without any accompanying text 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerMath equation should still be visible and saved"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Author attempts to drag the math icon outside the component",
+      "expected": "Add Situation headerIcon is fixed and cannot be dragged",
+      "raw": "TC_25 Situation HeaderFunctionality Author attempts to drag the math icon outside the component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerIcon is fixed and cannot be dragged"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify that the background color is set to default Purple (validate hex)",
+      "expected": "Add Situation header Background is correctly styled as per Figma spec",
+      "raw": "TC_26 Situation HeaderFunctionality Verify that the background color is set to default Purple (validate hex) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Background is correctly styled as per Figma spec"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify author can type plain text into the component",
+      "expected": "Add Situation headerText is accepted and displayed correctly",
+      "raw": "TC_27 Situation HeaderFunctionalityVerify author can type plain text into the component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerText is accepted and displayed correctly"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify author can add multiple paragraphs using the",
+      "expected": "Add Situation headerParagraphs are separated properly",
+      "raw": "TC_28 Situation HeaderFunctionality Verify author can add multiple paragraphs using the Enter key 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerParagraphs are separated properly"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify author can apply Bold formatting",
+      "expected": "Add Situation headerText appears bolded",
+      "raw": "TC_29 Situation HeaderFunctionalityVerify author can apply Bold formatting 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerText appears bolded"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify author can apply Italic formatting",
+      "expected": "Add Situation headerText appears italicized",
+      "raw": "TC_30 Situation HeaderFunctionalityVerify author can apply Italic formatting 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerText appears italicized"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify author can apply Underline formatting",
+      "expected": "Add Situation headerText appears underlined",
+      "raw": "TC_31 Situation HeaderFunctionalityVerify author can apply Underline formatting 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerText appears underlined"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify author can use bulleted lists",
+      "expected": "Add Situation headerBullets render correctly with indentation",
+      "raw": "TC_32 Situation HeaderFunctionalityVerify author can use bulleted lists 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerBullets render correctly with indentation"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify author can use numbered lists",
+      "expected": "Add Situation headerNumbered points render correctly",
+      "raw": "TC_33 Situation HeaderFunctionalityVerify author can use numbered lists 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerNumbered points render correctly"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify author can input math equations using math editor",
+      "expected": "Add Situation headerEquations are rendered properly",
+      "raw": "TC_34 Situation HeaderFunctionalityVerify author can input math equations using math editor 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerEquations are rendered properly"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify author can mix formatted text with math equations in same block",
+      "expected": "Add Situation headerContent displays without layout issues",
+      "raw": "TC_35 Situation HeaderFunctionality Verify author can mix formatted text with math equations in same block 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent displays without layout issues"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify the component does not show scroll bars (no internal scrolling)",
+      "expected": "Add Situation headerComponent height adjusts to content; no scroll",
+      "raw": "TC_36 Situation HeaderFunctionality Verify the component does not show scroll bars (no internal scrolling) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerComponent height adjusts to content; no scroll"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify that no content is lost during authoring, even after navigation or browser refresh (if saved)",
+      "expected": "Add Situation headerContent is retained",
+      "raw": "TC_37 Situation HeaderFunctionality Verify that no content is lost during authoring, even after navigation or browser refresh (if saved) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent is retained"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify Save functionality stores all content, formatting, and equations",
+      "expected": "Add Situation headerContent persists after save",
+      "raw": "TC_38 Situation HeaderFunctionality Verify Save functionality stores all content, formatting, and equations 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent persists after save"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify Preview mode reflects exact authored content including style and equations",
+      "expected": "Add Situation headerPreview matches authored content",
+      "raw": "TC_39 Situation HeaderFunctionality Verify Preview mode reflects exact authored content including style and equations 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerPreview matches authored content"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify that Edit mode works after Preview, retaining full content and formatting",
+      "expected": "Add Situation headerContent appears editable and intact",
+      "raw": "TC_40 Situation HeaderFunctionality Verify that Edit mode works after Preview, retaining full content and formatting 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent appears editable and intact"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify that authored activity can be published successfully with Situation Box Header",
+      "expected": "Add Situation headerActivity should be Published successfully",
+      "raw": "TC_41 Situation HeaderFunctionality Verify that authored activity can be published successfully with Situation Box Header 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerActivity should be Published successfully"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify that content appears in CLP (Reader) after launch",
+      "expected": "Add Situation headerContent visible in student/teacher views",
+      "raw": "TC_42 Situation HeaderFunctionalityVerify that content appears in CLP (Reader) after launch 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent visible in student/teacher views"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify that republishing with modified content reflects updated content in CLP",
+      "expected": "Add Situation header Old content replaced when republishing the activity",
+      "raw": "TC_43 Situation HeaderFunctionality Verify that republishing with modified content reflects updated content in CLP 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Old content replaced when republishing the activity"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify preview works correctly in Desktop, Tablet, and Mobile modes",
+      "expected": "Add Situation headerContent responsive and no overlap",
+      "raw": "TC_44 Situation HeaderFunctionality Verify preview works correctly in Desktop, Tablet, and Mobile modes 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerContent responsive and no overlap"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify content displays correctly in Chrome",
+      "expected": "Add Situation headerChrome renders content correctly",
+      "raw": "TC_45 Situation HeaderFunctionalityVerify content displays correctly in Chrome 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerChrome renders content correctly"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify content displays correctly in Safari",
+      "expected": "Add Situation headerSafari renders content correctly",
+      "raw": "TC_46 Situation HeaderFunctionalityVerify content displays correctly in Safari 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerSafari renders content correctly"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify that previously created activities can be edited to add this component",
+      "expected": "Add Situation headerOld activities accept new component",
+      "raw": "TC_47 Situation HeaderFunctionality Verify that previously created activities can be edited to add this component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerOld activities accept new component"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify Save, Preview, and Publish flows in existing activities",
+      "expected": "Save and publish the activitywhen republishing the activity",
+      "raw": "TC_48 Situation HeaderFunctionality Verify Save, Preview, and Publish flows in existing activities 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header 7. Save and publish the activitywhen republishing the activity"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Attempt to delete the fixed icon in the component",
+      "expected": "Add Situation headerIcon is protected and cannot be removed",
+      "raw": "TC_49 Situation HeaderFunctionalityAttempt to delete the fixed icon in the component 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerIcon is protected and cannot be removed"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Attempt to use unsupported formatting (e.g., font color)",
+      "expected": "Add Situation headerFeature not available or ignored gracefully",
+      "raw": "TC_50 Situation HeaderFunctionalityAttempt to use unsupported formatting (e.g., font color) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerFeature not available or ignored gracefully"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Input invalid math syntax in math editor",
+      "expected": "Add Situation headerError message shown; equation not inserted",
+      "raw": "TC_51 Situation HeaderFunctionalityInput invalid math syntax in math editor 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerError message shown; equation not inserted"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Paste external HTML or script tags into RTE",
+      "expected": "Add Situation headerTags are stripped or sanitized",
+      "raw": "TC_52 Situation HeaderFunctionalityPaste external HTML or script tags into RTE 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerTags are stripped or sanitized"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Add excessive characters beyond system limit (if applicable)",
+      "expected": "Add Situation headerSystem restricts or warns user",
+      "raw": "TC_53 Situation HeaderFunctionality Add excessive characters beyond system limit (if applicable) 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation headerSystem restricts or warns user"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Close authoring without saving changes",
+      "expected": "Add Situation header Changes are not saved, warning shown (if applicable)",
+      "raw": "TC_54 Situation HeaderFunctionalityClose authoring without saving changes 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring 6. Add Situation header Changes are not saved, warning shown (if applicable)"
+    }
+  ]
+}

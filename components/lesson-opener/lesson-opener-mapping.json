@@ -1,0 +1,765 @@
+{
+  "component": "Lesson Opener",
+  "slug": "lesson-opener",
+  "spec": "44-lesson-opener-deep.spec.ts",
+  "qcSource": "Author Test Cases - Lesson Opener.pdf",
+  "qcCount": 150,
+  "automated": 33,
+  "deferred": 117,
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires login/activity bootstrap, hero media upload (OS picker), RTE math render, Preview/Reader/CLP, Publish/republish, persistence-after-reload, Figma/responsive parity, cross-browser, multilingual, glossary, saLTIre, or runtime drop/edit guards."
+  },
+  "mappings": [
+    {
+      "qc": "TC_01",
+      "status": "deferred",
+      "reason": "Launch Studio URL + listing page — environment bootstrap handled by openAuthoringTool, not a component assertion"
+    },
+    {
+      "qc": "TC_02",
+      "status": "deferred",
+      "reason": "Create math activity (basic info) — activity-creation flow outside authoring DOM"
+    },
+    {
+      "qc": "TC_03",
+      "status": "deferred",
+      "reason": "Start authoring redirect — activity-creation flow outside authoring DOM"
+    },
+    {
+      "qc": "TC_04",
+      "status": "automated",
+      "it": "TC_04/TC_06/TC_07 — Lesson Opener component is placed successfully in the layout"
+    },
+    {
+      "qc": "TC_05",
+      "status": "automated",
+      "it": "TC_05/TC_27 — \"Learning Prompt\" (style1) is present and active by default"
+    },
+    {
+      "qc": "TC_06",
+      "status": "automated",
+      "it": "TC_04/TC_06/TC_07 — Lesson Opener component is placed successfully in the layout"
+    },
+    {
+      "qc": "TC_07",
+      "status": "automated",
+      "it": "TC_04/TC_06/TC_07 — Lesson Opener component is placed successfully in the layout"
+    },
+    {
+      "qc": "TC_08",
+      "status": "automated",
+      "it": "TC_08 — \"Key Terms\" (style4) shows its fixed title + icon"
+    },
+    {
+      "qc": "TC_09",
+      "status": "deferred",
+      "reason": "Figma visual parity (bg/font/style) — visual-design review, not a DOM assertion"
+    },
+    {
+      "qc": "TC_10",
+      "status": "deferred",
+      "reason": "All RTE features applied/visible — floating RTE toolbar + render verified in Preview"
+    },
+    {
+      "qc": "TC_11",
+      "status": "deferred",
+      "reason": "Math text + special characters render — math RENDER verified in Preview"
+    },
+    {
+      "qc": "TC_12",
+      "status": "deferred",
+      "reason": "Glossary term linked + shown in CLP — glossary + CLP flow"
+    },
+    {
+      "qc": "TC_13",
+      "status": "deferred",
+      "reason": "Restriction on editing title/font/color (full) — runtime edit-guard + visual"
+    },
+    {
+      "qc": "TC_14",
+      "status": "automated",
+      "it": "TC_14/TC_53 — Editable body accepts and retains entered text"
+    },
+    {
+      "qc": "TC_15",
+      "status": "deferred",
+      "reason": "Preview in desktop/tablet/mobile — Preview/responsive flow"
+    },
+    {
+      "qc": "TC_16",
+      "status": "deferred",
+      "reason": "Publish activity with Key Terms — Publish flow outside authoring DOM"
+    },
+    {
+      "qc": "TC_17",
+      "status": "deferred",
+      "reason": "Edit + re-publish reflected in CLP — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_18",
+      "status": "deferred",
+      "reason": "Glossary viewable in CLP as student — CLP student flow"
+    },
+    {
+      "qc": "TC_19",
+      "status": "deferred",
+      "reason": "Component appears as expected for teacher — CLP teacher flow"
+    },
+    {
+      "qc": "TC_20",
+      "status": "deferred",
+      "reason": "No scrollbars with long content — visual/overflow assertion best seen in Preview"
+    },
+    {
+      "qc": "TC_21",
+      "status": "deferred",
+      "reason": "Restriction on using outside Generic Step — runtime drop-guard (config registers as canvas element)"
+    },
+    {
+      "qc": "TC_22",
+      "status": "deferred",
+      "reason": "Browser compatibility — Chrome — cross-browser matrix"
+    },
+    {
+      "qc": "TC_23",
+      "status": "deferred",
+      "reason": "Browser compatibility — Safari — cross-browser matrix (no Safari runner)"
+    },
+    {
+      "qc": "TC_24",
+      "status": "deferred",
+      "reason": "Add component to older activities — pre-existing activity bootstrap"
+    },
+    {
+      "qc": "TC_25",
+      "status": "deferred",
+      "reason": "UI matches Figma (full) — visual-design review"
+    },
+    {
+      "qc": "TC_26",
+      "status": "deferred",
+      "reason": "Creation of static Lesson Opener — Preview/Reader static behaviour"
+    },
+    {
+      "qc": "TC_27",
+      "status": "automated",
+      "it": "TC_05/TC_27 — \"Learning Prompt\" (style1) is present and active by default"
+    },
+    {
+      "qc": "TC_28",
+      "status": "deferred",
+      "reason": "Static behaviour (no interactivity) — Reader runtime behaviour"
+    },
+    {
+      "qc": "TC_29",
+      "status": "deferred",
+      "reason": "Restriction of Lesson Opener to Generic Step — runtime drop-guard"
+    },
+    {
+      "qc": "TC_30",
+      "status": "deferred",
+      "reason": "Multilingual content support — locale-switch + render flow"
+    },
+    {
+      "qc": "TC_31",
+      "status": "deferred",
+      "reason": "Math support (equations display) — math RENDER verified in Preview"
+    },
+    {
+      "qc": "TC_32",
+      "status": "deferred",
+      "reason": "Responsive behaviour — responsive Preview flow"
+    },
+    {
+      "qc": "TC_33",
+      "status": "deferred",
+      "reason": "Restriction on dragging into unsupported step — runtime drop-guard"
+    },
+    {
+      "qc": "TC_34",
+      "status": "automated",
+      "it": "TC_34 — The fixed header label is a non-editable text node (not contenteditable)"
+    },
+    {
+      "qc": "TC_35",
+      "status": "automated",
+      "it": "TC_35/TC_67 — Background/Stroke colour inputs are disabled for sidebar styles"
+    },
+    {
+      "qc": "TC_36",
+      "status": "deferred",
+      "reason": "Restriction on unsupported nested components — runtime drop-guard"
+    },
+    {
+      "qc": "TC_37",
+      "status": "deferred",
+      "reason": "Restriction on adding Key Terms outside Lesson Opener — runtime drop-guard"
+    },
+    {
+      "qc": "TC_38",
+      "status": "automated",
+      "it": "TC_38/TC_104 — Empty body retains its empty/placeholder state (no crash)"
+    },
+    {
+      "qc": "TC_39",
+      "status": "deferred",
+      "reason": "Broken glossary link behaviour — glossary runtime"
+    },
+    {
+      "qc": "TC_40",
+      "status": "deferred",
+      "reason": "Unsupported browser behaviour — cross-browser matrix"
+    },
+    {
+      "qc": "TC_41",
+      "status": "deferred",
+      "reason": "Conflicting RTE usage misalignment — visual/RTE runtime"
+    },
+    {
+      "qc": "TC_42",
+      "status": "deferred",
+      "reason": "Long glossary term overflow — visual/overflow in Preview"
+    },
+    {
+      "qc": "TC_43",
+      "status": "deferred",
+      "reason": "Add math text + symbols — math RENDER verified in Preview"
+    },
+    {
+      "qc": "TC_44",
+      "status": "deferred",
+      "reason": "Math equation saved + previewed — Save + Preview render flow"
+    },
+    {
+      "qc": "TC_45",
+      "status": "deferred",
+      "reason": "Multiple languages render — locale flow"
+    },
+    {
+      "qc": "TC_46",
+      "status": "automated",
+      "it": "TC_46 — \"Make a Connection\" (style2) is present and selectable"
+    },
+    {
+      "qc": "TC_47",
+      "status": "deferred",
+      "reason": "Drag/drop Make a Connection into Generic Step — runtime drop into step"
+    },
+    {
+      "qc": "TC_48",
+      "status": "deferred",
+      "reason": "Make a Connection restricted to Generic step — runtime drop-guard"
+    },
+    {
+      "qc": "TC_49",
+      "status": "deferred",
+      "reason": "Make a Connection UI matches Figma — visual-design review"
+    },
+    {
+      "qc": "TC_50",
+      "status": "automated",
+      "it": "TC_50 — \"Make a Connection\" (style2) shows its fixed title + icon"
+    },
+    {
+      "qc": "TC_51",
+      "status": "deferred",
+      "reason": "Make a Connection RTE basic formatting — RTE render in Preview"
+    },
+    {
+      "qc": "TC_52",
+      "status": "deferred",
+      "reason": "Make a Connection math + special chars — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_53",
+      "status": "automated",
+      "it": "TC_14/TC_53 — Editable body accepts and retains entered text"
+    },
+    {
+      "qc": "TC_54",
+      "status": "deferred",
+      "reason": "Make a Connection preview across modes — Preview/responsive flow"
+    },
+    {
+      "qc": "TC_55",
+      "status": "deferred",
+      "reason": "Publish with Make a Connection — Publish flow"
+    },
+    {
+      "qc": "TC_56",
+      "status": "deferred",
+      "reason": "Published Make a Connection in CLP — CLP flow"
+    },
+    {
+      "qc": "TC_57",
+      "status": "deferred",
+      "reason": "Make a Connection edit + republish — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_58",
+      "status": "deferred",
+      "reason": "Make a Connection static on CLP — CLP runtime"
+    },
+    {
+      "qc": "TC_59",
+      "status": "deferred",
+      "reason": "Make a Connection Chrome compatibility — cross-browser matrix"
+    },
+    {
+      "qc": "TC_60",
+      "status": "deferred",
+      "reason": "Make a Connection Safari compatibility — cross-browser matrix"
+    },
+    {
+      "qc": "TC_61",
+      "status": "deferred",
+      "reason": "Existing activity accepts Make a Connection — pre-existing activity bootstrap"
+    },
+    {
+      "qc": "TC_62",
+      "status": "deferred",
+      "reason": "Make a Connection multilingual — locale flow"
+    },
+    {
+      "qc": "TC_63",
+      "status": "deferred",
+      "reason": "Make a Connection long content no scrollbars — visual/overflow in Preview"
+    },
+    {
+      "qc": "TC_64",
+      "status": "deferred",
+      "reason": "Make a Connection math saves + re-renders — Save + Preview render"
+    },
+    {
+      "qc": "TC_65",
+      "status": "deferred",
+      "reason": "Make a Connection cannot be added to Multipart/interactive — runtime drop-guard"
+    },
+    {
+      "qc": "TC_66",
+      "status": "deferred",
+      "reason": "Make a Connection fixed title not editable (full) — runtime edit-guard"
+    },
+    {
+      "qc": "TC_67",
+      "status": "automated",
+      "it": "TC_35/TC_67 — Background/Stroke colour inputs are disabled for sidebar styles"
+    },
+    {
+      "qc": "TC_68",
+      "status": "deferred",
+      "reason": "Make a Connection not available outside Lesson Opener — runtime availability"
+    },
+    {
+      "qc": "TC_69",
+      "status": "deferred",
+      "reason": "Make a Connection empty save blocks publish — Publish validation flow"
+    },
+    {
+      "qc": "TC_70",
+      "status": "deferred",
+      "reason": "Make a Connection formatting conflicts — RTE runtime"
+    },
+    {
+      "qc": "TC_71",
+      "status": "deferred",
+      "reason": "Make a Connection invalid math fails gracefully — math validation in Preview"
+    },
+    {
+      "qc": "TC_72",
+      "status": "deferred",
+      "reason": "Make a Connection no glossary/hyperlinks — RTE feature-gate runtime"
+    },
+    {
+      "qc": "TC_73",
+      "status": "deferred",
+      "reason": "Make a Connection long-text overflow — visual/overflow in Preview"
+    },
+    {
+      "qc": "TC_74",
+      "status": "deferred",
+      "reason": "Make a Connection corrupted save preserves input — persistence/retry runtime"
+    },
+    {
+      "qc": "TC_75",
+      "status": "automated",
+      "it": "TC_75/TC_76 — \"My Learning Goals\" (style3) is present and selectable"
+    },
+    {
+      "qc": "TC_76",
+      "status": "automated",
+      "it": "TC_75/TC_76 — \"My Learning Goals\" (style3) is present and selectable"
+    },
+    {
+      "qc": "TC_77",
+      "status": "deferred",
+      "reason": "My Learning Goals drag/drop in Flexi layout — runtime drop into layout section"
+    },
+    {
+      "qc": "TC_78",
+      "status": "automated",
+      "it": "TC_78/TC_79 — \"My Learning Goals\" (style3) shows its fixed title + icon"
+    },
+    {
+      "qc": "TC_79",
+      "status": "automated",
+      "it": "TC_78/TC_79 — \"My Learning Goals\" (style3) shows its fixed title + icon"
+    },
+    {
+      "qc": "TC_80",
+      "status": "deferred",
+      "reason": "My Learning Goals bg/colors match Figma — visual-design review"
+    },
+    {
+      "qc": "TC_81",
+      "status": "deferred",
+      "reason": "My Learning Goals RTE options work — RTE render in Preview"
+    },
+    {
+      "qc": "TC_82",
+      "status": "deferred",
+      "reason": "My Learning Goals math via math keyboard — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_83",
+      "status": "deferred",
+      "reason": "My Learning Goals long math renders — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_84",
+      "status": "deferred",
+      "reason": "My Learning Goals math saved after save — Save + persistence"
+    },
+    {
+      "qc": "TC_85",
+      "status": "deferred",
+      "reason": "My Learning Goals content saved in backend — persistence-after-reload"
+    },
+    {
+      "qc": "TC_86",
+      "status": "deferred",
+      "reason": "My Learning Goals across author preview modes — Preview flow"
+    },
+    {
+      "qc": "TC_87",
+      "status": "deferred",
+      "reason": "My Learning Goals published content in CLP — CLP flow"
+    },
+    {
+      "qc": "TC_88",
+      "status": "deferred",
+      "reason": "My Learning Goals republish preserves content — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_89",
+      "status": "deferred",
+      "reason": "My Learning Goals read-only on CLP as student — CLP student flow"
+    },
+    {
+      "qc": "TC_90",
+      "status": "deferred",
+      "reason": "My Learning Goals teacher preview/review — CLP teacher flow"
+    },
+    {
+      "qc": "TC_91",
+      "status": "deferred",
+      "reason": "My Learning Goals no data loss on reload — persistence-after-reload"
+    },
+    {
+      "qc": "TC_92",
+      "status": "deferred",
+      "reason": "My Learning Goals Chrome compatibility — cross-browser matrix"
+    },
+    {
+      "qc": "TC_93",
+      "status": "deferred",
+      "reason": "My Learning Goals Safari compatibility — cross-browser matrix"
+    },
+    {
+      "qc": "TC_94",
+      "status": "deferred",
+      "reason": "Editing previously created activity — pre-existing activity bootstrap + Publish"
+    },
+    {
+      "qc": "TC_95",
+      "status": "deferred",
+      "reason": "Launch published activity via saLTIre — LTI launch flow"
+    },
+    {
+      "qc": "TC_96",
+      "status": "deferred",
+      "reason": "Long text + math rendered — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_97",
+      "status": "deferred",
+      "reason": "Equation inside list/formatted text — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_98",
+      "status": "deferred",
+      "reason": "Editing fixed title blocked (full) — runtime edit-guard"
+    },
+    {
+      "qc": "TC_99",
+      "status": "deferred",
+      "reason": "Invalid LaTeX/MathML syntax — math validation in Preview"
+    },
+    {
+      "qc": "TC_100",
+      "status": "deferred",
+      "reason": "Unsupported symbols sanitized — sanitization verified in Preview/Publish"
+    },
+    {
+      "qc": "TC_101",
+      "status": "automated",
+      "it": "TC_101/TC_108b — Only the four source-defined Lesson Opener styles are offered"
+    },
+    {
+      "qc": "TC_102",
+      "status": "deferred",
+      "reason": "Lesson Opener Components visible only in Generic Step — runtime step-type availability guard"
+    },
+    {
+      "qc": "TC_103",
+      "status": "deferred",
+      "reason": "Lesson Opener Components visible in elements tray — catalog/tray listing flow"
+    },
+    {
+      "qc": "TC_103__2",
+      "status": "automated",
+      "it": "TC_103__2/TC_103__3 — \"Learning Prompt\" (style1) shows its fixed title + bulb icon"
+    },
+    {
+      "qc": "TC_103__3",
+      "status": "automated",
+      "it": "TC_103__2/TC_103__3 — \"Learning Prompt\" (style1) shows its fixed title + bulb icon"
+    },
+    {
+      "qc": "TC_103__4",
+      "status": "deferred",
+      "reason": "Fixed bg/font/color match Figma — visual-design review"
+    },
+    {
+      "qc": "TC_103__5",
+      "status": "deferred",
+      "reason": "RTE bulleted list — RTE render in Preview"
+    },
+    {
+      "qc": "TC_103__6",
+      "status": "deferred",
+      "reason": "RTE numbered list — RTE render in Preview"
+    },
+    {
+      "qc": "TC_103__7",
+      "status": "deferred",
+      "reason": "RTE bold/italic/underline — RTE render in Preview"
+    },
+    {
+      "qc": "TC_103__8",
+      "status": "deferred",
+      "reason": "Math equations via RTE — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_103__9",
+      "status": "deferred",
+      "reason": "Long text + math together — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_103__10",
+      "status": "automated",
+      "it": "TC_103__10/TC_103__11 — Body preserves a line break entered in edit mode"
+    },
+    {
+      "qc": "TC_103__11",
+      "status": "automated",
+      "it": "TC_103__10/TC_103__11 — Body preserves a line break entered in edit mode"
+    },
+    {
+      "qc": "TC_103__12",
+      "status": "deferred",
+      "reason": "Authoring preview (desktop) — Preview flow"
+    },
+    {
+      "qc": "TC_103__13",
+      "status": "deferred",
+      "reason": "Authoring preview (tablet) — responsive Preview flow"
+    },
+    {
+      "qc": "TC_103__14",
+      "status": "deferred",
+      "reason": "Authoring preview (mobile) — responsive Preview flow"
+    },
+    {
+      "qc": "TC_103__15",
+      "status": "deferred",
+      "reason": "Edit + re-preview — Preview flow"
+    },
+    {
+      "qc": "TC_103__16",
+      "status": "deferred",
+      "reason": "Published activity retains Learning Prompt — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_103__17",
+      "status": "deferred",
+      "reason": "Republish retains updated content — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_103__18",
+      "status": "deferred",
+      "reason": "No data loss during edit/save/publish — persistence + Publish"
+    },
+    {
+      "qc": "TC_103__19",
+      "status": "deferred",
+      "reason": "CLP student view — no interaction — CLP student flow"
+    },
+    {
+      "qc": "TC_103__20",
+      "status": "deferred",
+      "reason": "CLP teacher view — readable, non-editable — CLP teacher flow"
+    },
+    {
+      "qc": "TC_103__21",
+      "status": "deferred",
+      "reason": "UI matches Figma (colors/spacing/alignment) — visual-design review"
+    },
+    {
+      "qc": "TC_103__22",
+      "status": "deferred",
+      "reason": "Cross-browser Chrome — cross-browser matrix"
+    },
+    {
+      "qc": "TC_103__23",
+      "status": "deferred",
+      "reason": "Cross-browser Safari — cross-browser matrix"
+    },
+    {
+      "qc": "TC_103__24",
+      "status": "deferred",
+      "reason": "Multiple Lesson Opener components independently editable — multi-instance lifecycle"
+    },
+    {
+      "qc": "TC_103__25",
+      "status": "automated",
+      "it": "TC_103__25 — Script tags in the body are not rendered as live <script>"
+    },
+    {
+      "qc": "TC_104",
+      "status": "automated",
+      "it": "TC_38/TC_104 — Empty body retains its empty/placeholder state (no crash)"
+    },
+    {
+      "qc": "TC_105",
+      "status": "deferred",
+      "reason": "Delete component title via dev tools re-renders — DOM-tamper resilience runtime"
+    },
+    {
+      "qc": "TC_106",
+      "status": "deferred",
+      "reason": "Long math exceeds limit — math limit handling in Preview/Publish"
+    },
+    {
+      "qc": "TC_107",
+      "status": "automated",
+      "it": "TC_107 — Default style is \"Learning Prompt\" when the component is added"
+    },
+    {
+      "qc": "TC_108",
+      "status": "automated",
+      "it": "TC_108 — Clicking the component opens the Lesson Opener settings panel with title + icon"
+    },
+    {
+      "qc": "TC_109",
+      "status": "automated",
+      "it": "TC_109/TC_110 — Switch Learning Prompt → Make a Connection → back"
+    },
+    {
+      "qc": "TC_110",
+      "status": "automated",
+      "it": "TC_109/TC_110 — Switch Learning Prompt → Make a Connection → back"
+    },
+    {
+      "qc": "TC_111",
+      "status": "automated",
+      "it": "TC_111/TC_124 — Body content is retained when switching styles"
+    },
+    {
+      "qc": "TC_112",
+      "status": "deferred",
+      "reason": "Math equation preserved while switching styles — math RENDER in Preview"
+    },
+    {
+      "qc": "TC_113",
+      "status": "deferred",
+      "reason": "List preserved after switching styles — RTE render in Preview"
+    },
+    {
+      "qc": "TC_114",
+      "status": "deferred",
+      "reason": "Style-specific UI updates on switch (full visual) — visual parity in Preview"
+    },
+    {
+      "qc": "TC_115",
+      "status": "automated",
+      "it": "TC_115 — Switching styles multiple times keeps the component stable"
+    },
+    {
+      "qc": "TC_116",
+      "status": "automated",
+      "it": "TC_116 — Header text stays non-editable after switching styles"
+    },
+    {
+      "qc": "TC_117",
+      "status": "deferred",
+      "reason": "Save after switching style — Save/persistence flow"
+    },
+    {
+      "qc": "TC_118",
+      "status": "deferred",
+      "reason": "Publish after style switch — Publish flow"
+    },
+    {
+      "qc": "TC_119",
+      "status": "deferred",
+      "reason": "Preview after switching styles — Preview flow"
+    },
+    {
+      "qc": "TC_120",
+      "status": "deferred",
+      "reason": "Edit → re-preview after publish with new style — Publish/Preview flow"
+    },
+    {
+      "qc": "TC_121",
+      "status": "deferred",
+      "reason": "No data loss during rapid style switching — persistence/runtime"
+    },
+    {
+      "qc": "TC_122",
+      "status": "deferred",
+      "reason": "Responsive preview after style switch — responsive Preview flow"
+    },
+    {
+      "qc": "TC_123",
+      "status": "deferred",
+      "reason": "Switch style with empty required fields — Save/validation runtime"
+    },
+    {
+      "qc": "TC_124",
+      "status": "automated",
+      "it": "TC_111/TC_124 — Body content is retained when switching styles"
+    },
+    {
+      "qc": "TC_125",
+      "status": "deferred",
+      "reason": "Style change reflected in CLP (student) — Publish/CLP flow"
+    },
+    {
+      "qc": "TC_126",
+      "status": "deferred",
+      "reason": "Style change reflected in CLP (teacher) — Publish/CLP flow"
+    }
+  ]
+}

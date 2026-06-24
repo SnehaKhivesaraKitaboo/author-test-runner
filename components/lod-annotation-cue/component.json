@@ -1,0 +1,42 @@
+{
+  "component": "LoD + Annotation Cue",
+  "slug": "lod-annotation-cue",
+  "dataType": "lod",
+  "relatedDataType": "annotationCueHighlightOutline",
+  "widgetNames": ["LoD", "Annotation Cue"],
+  "module": "layer (canvas) + Annotation Cue widget dropped into the LoD column",
+  "spec": "39-lod-annotation-cue-deep.spec.ts",
+  "qcSource": "Author Test Cases - LoD and Annottaion cue.pdf",
+  "qcCount": 144,
+  "automated": 25,
+  "deferred": 119,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/LoD/LoD.html",
+    "closify/KITABOO_Authoring/templates/LoD/LoD-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/LoD/default/LoD.json",
+    "closify/KITABOO_Authoring/templates/LoD/scripts/LoD-directive.js",
+    "closify/KITABOO_Authoring/templates/annotation-cue/annotation-cue.html",
+    "closify/KITABOO_Authoring/templates/annotation-cue/annotation-cue-setting.html",
+    "closify/KITABOO_Authoring/templates/annotation-cue/default/annotation-cue.json"
+  ],
+  "verified": {
+    "dataType": "lod",
+    "name": "LoD",
+    "section": "Layer",
+    "iconClass": "icon-LOD",
+    "relatedWidget": { "name": "Annotation Cue", "dataType": "annotationCueHighlightOutline" },
+    "dropMechanism": "LoD is a Layer (not an assessment widget) → resolveDropTarget routes it to the canvas (#desktop_view) via cy.dropComponentForModule. The LoD column accepts ONLY annotationCueHighlightOutline (LoD-directive.js onDropComplete returns early otherwise); the cue is injected through that scope method.",
+    "settingsPanelId": "#lod-template-setting (title 'LoD'); Annotation Cue settings = .annotation-cue-setting (title 'Annotation Cue')",
+    "liveVerified": false
+  },
+  "architectureNotes": [
+    "config.js gates BOTH widgets off in the layout droppability map (\"lod\":false, \"annotationCueHighlightOutline\":false) — they are flag-gated, so every drop-dependent test logs + returns gracefully when the widget is absent from scope.widgets.",
+    "LoD canvas wrapper = .LoD-container.layer-lod ([lod-template]); host .customClass carries a unique lod-id ('lod-' + Date.now()) stamped once at first drop (LoD-directive.js).",
+    "Display Criteria groups (Level of Support / Type / Activity) are loaded from a backend API (fetchLODSettingData); displayCritaria is [] by default — so all value-level QC cases (CORE/LIGHT/MODERATE/INTENSIVE, Activity 'Add New', tag persistence/DB sync) require a provisioned backend and are deferred.",
+    "Link Activity: input #customLinkedActivity + add icon .lod-activity-add-container.icon-Link; validateAndAddLink() rejects empty and duplicate Ref IDs; list rows .activity-list with .lod-activity-list-delete; Apply Tag = #apply-tag-button (disabled until isApplyEnabled).",
+    "Annotation Cue: default title 'Stop and Annotate'; editable title .cue-section-title-text + body .cue-section-textarea; non-editable pen icon .icon-Highlight_AnnotationCue; settings colour input .colorPickerInputBox (maxlength 7, default #6E35C8).",
+    "CLP/Reader rendering, Show/Hide cues, Publish/republish, persistence-after-reload, undo/redo, cross-device, a11y, RTE-toolbar formatting, file uploads, clipboard paste into layouts/multipart, and EPUB project bootstrap all run outside the authoring DOM → deferred.",
+    "Selectors derived from source templates but NOT live-verified (feature gated off by default). Graceful 'ℹ' log paths are expected until the flag is enabled."
+  ]
+}

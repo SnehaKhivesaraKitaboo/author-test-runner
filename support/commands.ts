@@ -607,6 +607,12 @@ Cypress.Commands.add('dropWidgetIntoGenericStep', (
     return cy.wrap(null);
   });
 
+  // Post-drop settle: the live app fires an auto-save (saveContent POST) and
+  // re-fetches generic-step.json, which transiently re-renders the canvas empty.
+  // Wait for that cycle to finish, then re-confirm (and re-drop if the reload
+  // wiped the widget) so downstream assertions see a stable DOM.
+  settleGenericStepDrop(widgetName, columnIndex, dataType);
+
   if (!skipLiveCapture) {
     cy.get('@lastDroppedWidgetType').then(dt => {
       cy.captureLiveStep(`widget-dropped-${dt}`);
@@ -614,6 +620,51 @@ Cypress.Commands.add('dropWidgetIntoGenericStep', (
   }
   cy.log(`✅ Widget "${widgetName}" dropped into Generic Step`);
 });
+
+// ---------------------------------------------------------------------------
+// settleGenericStepDrop — absorb the post-drop auto-save + canvas reload race.
+//
+// After onDropComplete, the authoring app saves and re-fetches generic-step.json,
+// which can momentarily clear the column. We poll until the dropped widget is
+// stably present; if the reload wiped it, we re-issue the drop once. A guard flag
+// prevents the nested re-drop from recursing back into this settle.
+// ---------------------------------------------------------------------------
+let isResettlingGenericStepDrop = false;
+
+function settleGenericStepDrop(widgetName: string, columnIndex: number, dataType?: string): void {
+  if (isResettlingGenericStepDrop) {
+    return; // nested re-drop — outer settle owns verification
+  }
+
+  const COLUMN_ITEM_SEL =
+    '#desktop_view .generic-step-column-content .sd-item, ' +
+    '#desktop_view .generic-step-column-content [data-type]';
+
+  // Give the save/reload cycle time to fire, then settle Angular.
+  waitForLoaderGone();
+  waitForAngularSettled();
+
+  // Poll for stable presence; re-drop once if the reload cleared the column.
+  cy.get('body').then($body => {
+    const present = $body.find(COLUMN_ITEM_SEL).length > 0;
+    if (present) {
+      return;
+    }
+    cy.log('⟳ settleGenericStepDrop: column emptied by reload — re-dropping once');
+    isResettlingGenericStepDrop = true;
+    cy.ensureOnFibGenericStep();
+    cy.waitForGenericStepCanvasReady();
+    cy.dropWidgetIntoGenericStep(widgetName, columnIndex, dataType, true);
+    cy.then(() => {
+      isResettlingGenericStepDrop = false;
+    });
+    waitForLoaderGone();
+    waitForAngularSettled();
+  });
+
+  cy.get(COLUMN_ITEM_SEL, { timeout: 25000 }).should('exist');
+  waitForAngularSettled();
+}
 
 // ---------------------------------------------------------------------------
 // Open the Components panel (right rail — Carnegie / flat TOC UI).

@@ -1,0 +1,484 @@
+{
+  "component": "Fill in the Blank",
+  "slug": "fib",
+  "dataType": "fill-in-the-blank",
+  "source": "Author Test Cases - FIB test cases.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - FIB test cases.pdf",
+  "pages": 6,
+  "extractedCount": 59,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user can launch the URL and login",
+      "expected": "",
+      "raw": "TC_01Fill in the blanksUI and FunctionalityVerify if user can launch the URL and login 1. Hit the URL https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login 2. Login with valid credentials.User is successfully logged in."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "Verify author can create a FIB without image",
+      "expected": "",
+      "raw": "TC_02Fill in the blanksUI and FunctionalityVerify author can create a FIB without image 1. Click \"+Add\" to create a new component. 2. Select \"Fill in the Blank\". 3. Enter header text and sentence. 4. Save and preview. FIB is created and displayed; no image options present."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "Verify user can copy the FIB component from UI",
+      "expected": "",
+      "raw": "TC_03Fill in the blanksUI and FunctionalityVerify user can copy the FIB component from UI 1. Select an existing FIB component. 2. Click the \"Copy\" icon. Component has been copied successfully popup appears at the left corner."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "Verify copied FIB component is identical to original",
+      "expected": "",
+      "raw": "TC_04Fill in the blanksUI and FunctionalityVerify copied FIB component is identical to original 1. Copy a FIB component. 2. Compare copied and original (text, blanks, style, settings). Copied component matches original except for unique identifier."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI and Functionality",
+      "description": "Verify all 6 style options are available and selectable",
+      "expected": "",
+      "raw": "TC_05Fill in the blanksUI and FunctionalityVerify all 6 style options are available and selectable 1. Create or open a FIB. 2. Check style panel. 3. Select each style one by one. FIB updates according to the selected style; all 6 are available."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI and Functionality",
+      "description": "Verify changing style updates FIB layout",
+      "expected": "",
+      "raw": "TC_06Fill in the blanksUI and FunctionalityVerify changing style updates FIB layout 1. Select a style. 2. Observe FIB component layout. 3. Change to another style.Layout changes immediately per selected style."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI and Functionality",
+      "description": "Verify FIB with multiple sentences and blanks",
+      "expected": "",
+      "raw": "TC_07Fill in the blanksUI and FunctionalityVerify FIB with multiple sentences and blanks 1. Add multiple sentences. 2. Insert blanks in each sentence. 3. Save and preview.All sentences and blanks appear correctly."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Label Type\" is unchecked by default1. Open FIB settings.Show Label Type checkbox is not checked.",
+      "expected": "",
+      "raw": "TC_08Fill in the blanksUI and FunctionalityVerify \"Show Label Type\" is unchecked by default1. Open FIB settings.Show Label Type checkbox is not checked."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Label Type\" options appear on checking1. Check \"Show Label Type\".Primary and \"Secondary\" options appear.",
+      "expected": "",
+      "raw": "TC_09Fill in the blanksUI and FunctionalityVerify \"Show Label Type\" options appear on checking1. Check \"Show Label Type\".Primary and \"Secondary\" options appear."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify \"Primary\" label type is enabled by default on checking1. Check \"Show Label Type\".Primary checkbox is checked by default.",
+      "expected": "",
+      "raw": "TC_10Fill in the blanksUI and Functionality Verify \"Primary\" label type is enabled by default on checking1. Check \"Show Label Type\".Primary checkbox is checked by default."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Verify \"Question 1\" label with oval shape and blue styles for \"Primary\"",
+      "expected": "",
+      "raw": "TC_11Fill in the blanksUI and Functionality Verify \"Question 1\" label with oval shape and blue styles for \"Primary\" 1. Check \"Show Label Type\". 2. Ensure \"Primary\" is selected. Question 1 appears on screen in oval shape, light blue background, blue text."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI and Functionality",
+      "description": "Verify \"Part A\" label and blue text for \"Secondary\"",
+      "expected": "",
+      "raw": "TC_12Fill in the blanksUI and FunctionalityVerify \"Part A\" label and blue text for \"Secondary\" 1. Check \"Show Label Type\". 2. Select \"Secondary\".Part A appears on screen, blue text."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI and Functionality",
+      "description": "Verify switching between Primary and Secondary updates label",
+      "expected": "",
+      "raw": "TC_13Fill in the blanksUI and Functionality Verify switching between Primary and Secondary updates label 1. Toggle between \"Primary\" and \"Secondary\" options. Label changes between \"Question 1\" and \"Part A\" with correct styles."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI and Functionality",
+      "description": "Verify header and instruction display toggles1. Toggle \"Show Header\" and \"Show Instruction\".Header and instruction visibility updates accordingly.",
+      "expected": "",
+      "raw": "TC_14Fill in the blanksUI and FunctionalityVerify header and instruction display toggles1. Toggle \"Show Header\" and \"Show Instruction\".Header and instruction visibility updates accordingly."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI and Functionality",
+      "description": "Verify dropdown, text, and drag & drop option types",
+      "expected": "",
+      "raw": "TC_15Fill in the blanksUI and FunctionalityVerify dropdown, text, and drag & drop option types 1. Select each option type under \"Select Option Type\".FIB updates to allow respective answer modes."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI and Functionality",
+      "description": "Verify adding/removing sentences in FIB",
+      "expected": "",
+      "raw": "TC_16Fill in the blanksUI and FunctionalityVerify adding/removing sentences in FIB 1. Add sentences. 2. Remove one. 3. Save and preview.Only remaining sentences are displayed."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI and Functionality",
+      "description": "Verify \"Insert Blank\" adds blanks in sentence1. Click \"Insert Blank\" in a sentence.Blank is inserted at cursor position in sentence.",
+      "expected": "",
+      "raw": "TC_17Fill in the blanksUI and FunctionalityVerify \"Insert Blank\" adds blanks in sentence1. Click \"Insert Blank\" in a sentence.Blank is inserted at cursor position in sentence."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "UI and Functionality",
+      "description": "Verify minimum and maximum blanks per sentence",
+      "expected": "",
+      "raw": "TC_18Fill in the blanksUI and FunctionalityVerify minimum and maximum blanks per sentence 1. Add multiple blanks in sentence. 2. Try to exceed limit (if any). System allows up to maximum blanks; prevents over- limit."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI and Functionality",
+      "description": "Verify keyboard navigation for all controls",
+      "expected": "",
+      "raw": "TC_19Fill in the blanksUI and FunctionalityVerify keyboard navigation for all controls 1. Use Tab/Arrow keys to navigate settings and controls.All controls are accessible via keyboard."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "Verify tooltips/help text for style and label controls1. Hover over style, label, and other controls. Tooltips/help text appear and describe controls correctly.",
+      "expected": "",
+      "raw": "TC_20Fill in the blanksUIVerify tooltips/help text for style and label controls1. Hover over style, label, and other controls. Tooltips/help text appear and describe controls correctly."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI and Functionality",
+      "description": "Verify undo/redo for adding/removing sentences/blanks",
+      "expected": "",
+      "raw": "TC_21Fill in the blanksUI and Functionality Verify undo/redo for adding/removing sentences/blanks 1. Add/remove sentence or blank. 2. Use undo/redo (Ctrl+Z/Ctrl+Y or UI).Changes are undone/redone appropriately."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Verify preview matches authoring view for styles and labels",
+      "expected": "",
+      "raw": "TC_22Fill in the blanksUI and Functionality Verify preview matches authoring view for styles and labels 1. Set style and label type. 2. Preview.Preview matches authoring view exactly."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Verify copied component can be edited independently",
+      "expected": "",
+      "raw": "TC_23Fill in the blanksUI and FunctionalityVerify copied component can be edited independently 1. Copy FIB component. 2. Edit header/sentence in copied component.Edits affect only copied component, not original."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Verify component deletion removes only selected FIB",
+      "expected": "",
+      "raw": "TC_24Fill in the blanksUI and FunctionalityVerify component deletion removes only selected FIB 1. Create/copy multiple FIBs. 2. Delete one.Only selected FIB is deleted."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Verify feedback field accepts and displays text",
+      "expected": "",
+      "raw": "TC_25Fill in the blanksUI and FunctionalityVerify feedback field accepts and displays text 1. Enter feedback in Feedback section . 2. Preview.Feedback is shown to user."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Negative",
+      "description": "Verify error when saving FIB with empty sentence",
+      "expected": "",
+      "raw": "TC_26Fill in the blanksNegativeVerify error when saving FIB with empty sentence 1. Create FIB, leave sentence blank. 2. Save.System shows error and prevents saving."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Verify system prevents duplicate FIB components with same identifier",
+      "expected": "",
+      "raw": "TC_27Fill in the blanksNegative Verify system prevents duplicate FIB components with same identifier 1. Copy FIB repeatedly. 2. Check identifiers.System assigns unique identifiers to each copy."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Negative",
+      "description": "Verify system behavior for unsupported content additions",
+      "expected": "",
+      "raw": "TC_28Fill in the blanksNegative Verify system behavior for unsupported content additions 1. Try to add media/image/audio/video in normal FIB.System prevents addition; no media options present."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI and Functionality",
+      "description": "Verify multiple FIB components per page",
+      "expected": "",
+      "raw": "TC_29Fill in the blanksUI and FunctionalityVerify multiple FIB components per page 1. Add several FIB components to a page. 2. Preview. All components are displayed and work independently."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI and Functionality",
+      "description": "Verify blank answers are validated correctly",
+      "expected": "",
+      "raw": "TC_30Fill in the blanksUI and FunctionalityVerify blank answers are validated correctly 1. Preview FIB. 2. Enter correct/incorrect answers.Answers are validated; correct ones are marked."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI",
+      "description": "Verify layout and alignment of header, sentence, and blanks in all styles",
+      "expected": "",
+      "raw": "TC_31Fill in the blanksUI Verify layout and alignment of header, sentence, and blanks in all styles 1. Select each style. 2. Enter header, sentence, blanks. 3. Preview.Layout remains consistent and visually correct."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI and Functionality",
+      "description": "Verify drag-and-drop reordering of sentences (if supported)1. Drag sentences to reorder.Sequence updates accordingly.",
+      "expected": "",
+      "raw": "TC_32Fill in the blanksUI and Functionality Verify drag-and-drop reordering of sentences (if supported)1. Drag sentences to reorder.Sequence updates accordingly."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Negative",
+      "description": "Verify system prevents saving FIB without header (if header required)",
+      "expected": "",
+      "raw": "TC_33Fill in the blanksNegative Verify system prevents saving FIB without header (if header required) 1. Deselect \"Show Header\". 2. Leave header text blank. 3. Save.System prevents saving if header is required."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "UI and Functionality",
+      "description": "Verify component duplication preserves all settings",
+      "expected": "",
+      "raw": "TC_34Fill in the blanksUI and FunctionalityVerify component duplication preserves all settings 1. Copy FIB with specific settings (style, label, options). 2. Preview copy.All settings are preserved in copied component."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "UI and Functionality",
+      "description": "Verify changes to options (Dropdown/Text/Drag & Drop) are saved",
+      "expected": "",
+      "raw": "TC_35Fill in the blanksUI and Functionality Verify changes to options (Dropdown/Text/Drag & Drop) are saved 1. Change option type. 2. Save and preview.Selected option type persists."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "UI and Functionality",
+      "description": "Verify accessibility for labels and blanks",
+      "expected": "",
+      "raw": "TC_36Fill in the blanksUI and FunctionalityVerify accessibility for labels and blanks 1. Inspect FIB in preview for accessibility tags (e.g., aria-label).Labels and blanks are accessible."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Negative",
+      "description": "Verify system prevents script injection in all text fields",
+      "expected": "",
+      "raw": "TC_37Fill in the blanksNegativeVerify system prevents script injection in all text fields 1. Enter script tag in header/sentence/label/feedback. 2. Save and preview.System sanitizes input; no script is executed."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "UI and Functionality",
+      "description": "Verify maximum allowed sentences per FIB component",
+      "expected": "",
+      "raw": "TC_38Fill in the blanksUI and Functionality Verify maximum allowed sentences per FIB component 1. Add sentences up to maximum limit . 2. Try to exceed. System enforces maximum; shows warning if exceeded."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI and Functionality",
+      "description": "Verify minimum required fields for FIB creation",
+      "expected": "",
+      "raw": "TC_39Fill in the blanksUI and FunctionalityVerify minimum required fields for FIB creation 1. Attempt to save FIB with minimum fields required (header, sentence, blank).FIB is saved if minimum criteria met."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI and Functionality",
+      "description": "Verify label type persists after saving and refresh",
+      "expected": "",
+      "raw": "TC_40Fill in the blanksUI and FunctionalityVerify label type persists after saving and refresh 1. Set label type. 2. Save and refresh.Label type remains as set."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI and Functionality",
+      "description": "Verify feedback text persists after save and refresh",
+      "expected": "",
+      "raw": "TC_41Fill in the blanksUI and FunctionalityVerify feedback text persists after save and refresh 1. Enter feedback. 2. Save and refresh.Feedback is retained."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI and Functionality",
+      "description": "Verify system handles large numbers of FIB components per page",
+      "expected": "",
+      "raw": "TC_42Fill in the blanksUI and Functionality Verify system handles large numbers of FIB components per page 1. Add many FIB components. 2. Preview and interact. System performance remains acceptable; all FIBs load."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "UI and Functionality",
+      "description": "Verify keyboard shortcuts for adding/removing blanks (if supported)1. Use keyboard shortcut to insert/remove blank.Blank is inserted/removed.",
+      "expected": "",
+      "raw": "TC_43Fill in the blanksUI and Functionality Verify keyboard shortcuts for adding/removing blanks (if supported)1. Use keyboard shortcut to insert/remove blank.Blank is inserted/removed."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "UI and Functionality",
+      "description": "Verify sentence numbering and sequencing on preview",
+      "expected": "",
+      "raw": "TC_44Fill in the blanksUI and Functionality Verify sentence numbering and sequencing on preview 1. Add multiple sentences. 2. Preview.Sentences are numbered/sequenced correctly."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "UI and Functionality",
+      "description": "Verify changes in label type update immediately in preview",
+      "expected": "",
+      "raw": "TC_45Fill in the blanksUI and Functionality Verify changes in label type update immediately in preview 1. Change label type. 2. Preview.Preview updates immediately."
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "UI and Functionality",
+      "description": "Verify FIB component is accessible via screen reader1. Preview with screen reader.Component and labels are read correctly.",
+      "expected": "",
+      "raw": "TC_46Fill in the blanksUI and FunctionalityVerify FIB component is accessible via screen reader1. Preview with screen reader.Component and labels are read correctly."
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Negative",
+      "description": "Verify error handling for network loss during save",
+      "expected": "",
+      "raw": "TC_47Fill in the blanksNegativeVerify error handling for network loss during save 1. Edit FIB. 2. Disconnect network during save. 3. Reconnect and retry.System shows error/retry; no data loss."
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Positive",
+      "description": "Verify Insert Blank button adds a blank",
+      "expected": "",
+      "raw": "TC_48Fill in the blanksPositiveVerify Insert Blank button adds a blank 1. Click on 'Insert Blank' button. 2. Observe the page.A blank is added to the page."
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Positive",
+      "description": "Verify user can add up to 20 options in dropdown",
+      "expected": "",
+      "raw": "TC_49Fill in the blanksPositiveVerify user can add up to 20 options in dropdown 1. Open dropdown field. 2. Click 'Add Option' button 20 times.System allows user to add exactly 20 options."
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Negative",
+      "description": "Verify user cannot add more than 20 options1. Add 21 options using 'Add Option' repeatedly. System restricts adding more than 20 options and shows an error message.",
+      "expected": "",
+      "raw": "TC_50Fill in the blanksNegativeVerify user cannot add more than 20 options1. Add 21 options using 'Add Option' repeatedly. System restricts adding more than 20 options and shows an error message."
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Positive",
+      "description": "Verify user can delete a dropdown option",
+      "expected": "",
+      "raw": "TC_51Fill in the blanksPositiveVerify user can delete a dropdown option 1. Add a few options. 2. Click delete icon on one of them.Option is removed successfully from dropdown."
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Positive",
+      "description": "Verify red mark appears for wrong answer in reader",
+      "expected": "",
+      "raw": "TC_52Fill in the blanksPositiveVerify red mark appears for wrong answer in reader 1. Open reader. 2. Select a wrong answer. Red indicator shown for wrong answer in reader mode."
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Positive",
+      "description": "Verify changing type from dropdown to text",
+      "expected": "",
+      "raw": "TC_53Fill in the blanksPositiveVerify changing type from dropdown to text 1. Click on type dropdown. 2. Select 'Text'.Type answer' placeholder appears for user input."
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Positive",
+      "description": "Verify changing type to drag and drop",
+      "expected": "",
+      "raw": "TC_54Fill in the blanksPositiveVerify changing type to drag and drop 1. Select 'Drag and Drop' from type dropdown. 2. Observe changes.Input box appears with 'Properties of Blank' panel."
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Positive",
+      "description": "Verify uploading image inside a blank for drag and drop",
+      "expected": "",
+      "raw": "TC_55Fill in the blanksPositiveVerify uploading image inside a blank for drag and drop 1. Select 'Image' option from properties. 2. Upload an image.Image is uploaded and shown inside the blank input."
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Positive",
+      "description": "Verify Shuffle Choices checkbox functionality",
+      "expected": "",
+      "raw": "TC_56Fill in the blanksPositiveVerify Shuffle Choices checkbox functionality 1. Enable 'Shuffle Choice' option. 2. Preview the content. Answer options are shuffled in both preview and reader."
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Positive",
+      "description": "Verify adding distractors to drag and drop type",
+      "expected": "",
+      "raw": "TC_57Fill in the blanksPositiveVerify adding distractors to drag and drop type 1. Click 'Insert Blank'. 2. Mark added option as distractor.Distractor added successfully and shown in reader."
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "UI and Functionality",
+      "description": "Verify component copy and success popup",
+      "expected": "",
+      "raw": "TC_58Fill in the blanksUI and FunctionalityVerify component copy and success popup 1. Click copy icon on FIB component. 2. Observe bottom left corner. Popup message 'Component has been copied successfully' is shown."
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "UI and Functionality",
+      "description": "Verify style options are applied correctly",
+      "expected": "",
+      "raw": "TC_59Fill in the blanksUI and FunctionalityVerify style options are applied correctly 1. Open style settings. 2. Select any style option.Style applied and reflected in preview immediately. # Convert to DataFrame df_all = pd.DataFrame(all_test_cases) # Display for user to copy/paste into Excel import caas_jupyter_tools as tools; tools.display_dataframe_to_user(name=\"Full FIB Test Case Suite\", dataframe=df_all)"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "component": "Click to Reveal",
+  "slug": "click-to-reveal",
+  "dataType": "clickToReveal",
+  "directive": "click-to-reveal-template",
+  "widgetName": "Click to Reveal",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "29-click-to-reveal-deep.spec.ts",
+  "qcSource": "Author Test Cases - Click to Reveal.pdf",
+  "qcCount": 113,
+  "automated": 28,
+  "deferred": 85,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/clickToReveal/clickToReveal.html",
+    "closify/KITABOO_Authoring/templates/clickToReveal/clickToReveal-settings.html",
+    "closify/KITABOO_Authoring/templates/clickToReveal/clickToReveal-media-template.html",
+    "closify/KITABOO_Authoring/templates/clickToReveal/default/clickToReveal.json",
+    "closify/KITABOO_Authoring/templates/clickToReveal/scripts/clickToReveal.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Click to Reveal is an ELEMENT (widget name 'Click to Reveal', dataType 'clickToReveal'), NOT an assessment widget. 'clickToReveal' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Click to Reveal'), not into a Generic Step column.",
+    "Canvas wrapper is .clickToReveal (.component-holder with style classes), hosted by the click-to-reveal-template directive (App.directive 'clickToRevealTemplate') inside .customClass / .sd-item.",
+    "The component is a SINGLE card: header (.sc-intro, ng-model fieldData.introduction, visible when isHeaderVisible=true), instruction (.sc-instr, ng-model fieldData.instruction, visible only when isInstructionVisible — default false), reveal button (button.transcriptTextCorrection with editable label .ButtonSpanCTR, ng-model settings.transcriptText default 'Read more', maxlength 50), and hidden description (.descriptionTextCorrection, ng-model fieldData.descriptionText). All bodies are contenteditable — set via cy.setContentEditableOn, never cy.type().",
+    "There is no per-card 'add reveal panel' control in the authoring DOM. 'Add/remove reveal panels' is therefore expressed as drop/copy/delete of the card itself (multiple Click to Reveal cards = QC TC_45; same-label collision = TC_38), keeping it DOM-assertable.",
+    "Settings panel uses the shared chrome id #chapter-heading-settings-panel scoped by class .click-to-reveal-setting-panel; title resolves from currSettings.templateName = 'Click to Reveal'. Style panel is the shared <stylepanel> driven by style_tab.stylesHolder: CTR_Style1 (default/active), CTR_Style2, CTR_Style3, CTR_Style4.",
+    "Settings controls: Show Instruction (#instruction-visibility), Add Media (#add-media) → media radios (Image/Video/Audio), Show Caption (#Caption-visibility), video From system / By URL radios + YouTube ID input, Show Transcript / Show Subtitle (CC) toggles + VTT upload button, Placement icons (#headingOnePlacement .CTRPlacementDiv — below/above always, left/right for image), Card Properties colour pickers (Background/Header/Line — style-gated; Outline toggle + colour), Button Properties colour pickers (Background/Outline — style-gated; Text), Tags (.CTR_tag_div input), Alt Text (textarea maxlength 2000, 'Chars 2000' label).",
+    "Media render (figure data-media-template-ctr) is gated by listData[0].mcssData.media mediaVisible; colour pickers Background/Header/Line and Button Background/Outline are gated by selectedStyle (CTR_Style1..4) — the spec degrades gracefully (log + return) when those flag/style-gated controls are not rendered.",
+    "QC TC_01–TC_09 are login/activity/step bootstrap (handled by the harness, not the component). Reveal animation at runtime, Preview/Reader click interaction, media upload (OS file pickers), Publish/Republish, persistence-after-reload, validation messaging and edge/responsive cases are deferred."
+  ]
+}

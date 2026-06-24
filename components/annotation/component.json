@@ -1,0 +1,29 @@
+{
+  "component": "Annotation",
+  "slug": "annotation",
+  "dataType": "annotationHighlightOutline",
+  "directive": "annotation-template",
+  "widgetName": "Annotation",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "27-annotation-deep.spec.ts",
+  "qcSource": "Author Test Cases - Annotation.pdf",
+  "qcCount": 29,
+  "automated": 11,
+  "deferred": 18,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/annotation/annotation.html",
+    "closify/KITABOO_Authoring/templates/annotation/annotation-setting.html",
+    "closify/KITABOO_Authoring/templates/annotation/default/annotation.json",
+    "closify/KITABOO_Authoring/templates/annotation/scripts/annotation.js"
+  ],
+  "architectureNotes": [
+    "Annotation is an ELEMENT (widget name 'Annotation', dataType 'annotationHighlightOutline'), NOT an assessment widget. The dataType is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Annotation'), not into a Generic Step column. Verified against config/config.js line ~284 (name 'Annotation', dataType 'annotationHighlightOutline', url templates/annotation/annotation.html, settingsURL templates/annotation/annotation-setting.html).",
+    "Canvas container is .annotationContainer.annotationHighlightOutline.component-holder, hosting the annotation-template directive. It contains a Highlight section (#highlights-section, shown when settings.showHighlights — default true) and an Outline section (#outline-section, shown when settings.showOutline — default false).",
+    "Each section repeats .label-row entries: a .color-button (opens an inline colour picker with .color-option swatches), a contenteditable .text-input label (set via cy.setContentEditableOn, never cy.type()), and a .remove-button shown only when the section has more than one row.",
+    "'+ Add Label' (.add-button) appends a row; the directive hard-caps each section at 5 entries (addHighlight/addOutline 'if (length >= 5) return') and greys the button at 5 — this backs the TC_15/TC_16 max-label cases.",
+    "Settings panel root is .annotation-setting (title 'Annotation', icon .icon-Image-labelling_number-01) with two toggles: 'Add Highlight' (currSettings.showHighlights) and 'Add Outline' (currSettings.showOutline). The directive forces at least one ON (window.alert if both are unchecked), so the 'both off' path is a runtime alert, not an authoring-DOM assertion. Alt Text textarea (currSettings.altText) enforces maxlength=2000.",
+    "There is NO free-text annotation body in authoring — the QC PDF's 'select text / Annotate / type text / save' steps and all Reader-visibility, persistence, copy-paste-formatting, annotate-on-image, and screen-reader cases describe the Reader/student runtime and are deferred. Authoring only configures the highlight/outline label + colour catalogue.",
+    "QC TC_01–TC_09 are login/activity/Generic-Step-wizard bootstrap (handled by the harness, not the Annotation element) and are deferred."
+  ]
+}

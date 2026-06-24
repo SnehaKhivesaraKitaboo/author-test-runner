@@ -1,0 +1,31 @@
+{
+  "component": "Image Labeling",
+  "slug": "image-labeling",
+  "dataType": "imagelabelling",
+  "directive": "labelling-template",
+  "widgetName": "Image Labeling",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "35-image-labeling-deep.spec.ts",
+  "qcSource": "Author Test Cases - Image labeling.pdf",
+  "qcCount": 12,
+  "automated": 7,
+  "deferred": 5,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/image-label-number/image-labelling-number.html",
+    "closify/KITABOO_Authoring/templates/image-label-number/image-labelling-number-setting.html",
+    "closify/KITABOO_Authoring/templates/image-label-number/default/image-labelling-number.json",
+    "closify/KITABOO_Authoring/templates/image-label-number/scripts/image-labelling-number.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "dataType is 'imagelabelling' (VERIFIED in config.js — widget name 'Image Labeling', iconClass 'icon-Image-labelling_number-01'). The QC catalog tentatively listed 'imageLabeling'; the verified config value is used.",
+    "Image Labeling is an ELEMENT, NOT an assessment widget. 'imagelabelling' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Image Labeling'), not into a Generic Step column.",
+    "Canvas wrapper is .imageLabelling.component-holder[labelling-template]. Editable fields are contenteditable: #introductionInput (Header), #instructionInput (Instruction), #questionInput (Question), #captionInput (Caption) — set via cy.setContentEditableOn, never cy.type().",
+    "Header/Instruction visibility is driven by .displayBlock/.displayNone on .header-text.sc-intro-holder / .instruction-text.sc-instr-holder via settings.isHeaderVisible / isInstructionVisible.",
+    "Settings panel body is ng-included into the shared .componentSettingPanel and identified by .img-label-setting.imgLabel; title text 'Image Labeling', icon .icon-Image-labelling_number-01.",
+    "Label TYPE radios: #with-Text (Text) / #with-Number (Numbers, default checked) — ng-model currSettings.isNumber. Visibility toggles: #header-visibility, #instr-visibility, #caption-visibility. Show Arrow: #show-arrow-checkbox (text mode) / #show-arrow-checkbox-properties (number mode). Outline radios input[name=\"outline\"] (outline/outlineBg) and .colorPickerInputBox render only when !isGroupActivity. Tags via <tag-manager> in .tagsContainer.",
+    "Labels are created at RUNTIME by clicking the uploaded image area (scope.addLabel; scripts/image-labelling-number.js maxCounter = 20). They render via ng-repeat over fieldData.settings.media.labelInfo as .number-Container / .label_text / .Text-Container pins. Default labelInfo[] is empty; label-container presence is automated, but pin creation/drag, the 21st-label boundary, and per-type pin rendering need the OS-picker image + runtime interaction (deferred).",
+    "Image upload/replace uses #upload-comp-img (uploadfiles directive) → OS file picker; alt text maxlength = 50. Upload/replace, extension validation, settings-fixed-on-scroll, style 'applied' visuals, Preview/Reader drag-drop, persistence, and accessibility are deferred."
+  ]
+}

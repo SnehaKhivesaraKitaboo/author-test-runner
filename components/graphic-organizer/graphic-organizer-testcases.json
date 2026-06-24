@@ -1,0 +1,628 @@
+{
+  "component": "Graphic Organizer (Image)",
+  "slug": "graphic-organizer",
+  "dataType": "graphicOrganizerImageHotSpot",
+  "source": "Author Test Cases - Graphic Organizer (Image-based) .pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Graphic Organizer (Image-based) .pdf",
+  "pages": 14,
+  "extractedCount": 77,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Author Graphic Organizer (Image Go)UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo.com/reader/CL-ELA- master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create ELA activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Author Graphic Organizer (Image Go) FunctionalityVerify if user ia able to create ELA activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on ELA 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03Author Graphic Organizer (Image Go) FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on ELA 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Graphic Organizer (Image-based)",
+      "expected": "Add Graphic Organizer (Image-based) User Should able add Graphic Organizer (Image- based)",
+      "raw": "TC_04Author Graphic Organizer (Image Go) Functionality Verify if user is able to add Graphic Organizer (Image-based) 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) User Should able add Graphic Organizer (Image- based)"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05Author Graphic Organizer (Image Go) FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable inGraphic Organizer (Image-based) step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Author Graphic Organizer (Image Go) Functionality Verify that the cancel button is clickable inGraphic Organizer (Image-based) step creation 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in Graphic Organizer (Image-based)",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Author Graphic Organizer (Image Go) Functionality Verify that the change step button is clickable in Graphic Organizer (Image-based) 1. Launch the URL and Login with valid credentials 2.CreateELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Author Graphic Organizer (Image Go) Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Author Graphic Organizer (Image Go) Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify without entering \"Instructions for Students and teacher\" able to create steps",
+      "expected": "Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity",
+      "raw": "TC_10Author Graphic Organizer (Image Go) Functionality Verify without entering \"Instructions for Students and teacher\" able to create steps 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that the character limit is displaying while adding instructions",
+      "expected": "Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" User Should able to see the character limit 10000 Characters remaining",
+      "raw": "TC_11Author Graphic Organizer (Image Go) Functionality Verify that the character limit is displaying while adding instructions 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" User Should able to see the character limit 10000 Characters remaining"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify that is user is able to use all the formatting options while adding instructions",
+      "expected": "Click on submit User must be able to use all the formatting options while adding instructions",
+      "raw": "TC_12Author Graphic Organizer (Image Go) Functionality Verify that is user is able to use all the formatting options while adding instructions 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit User must be able to use all the formatting options while adding instructions"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on change step while adding the step title",
+      "expected": "Click on submit User should be able to click on change step while adding the step title",
+      "raw": "TC_13Author Graphic Organizer (Image Go) Functionality Verify that the user is able to click on change step while adding the step title 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit User should be able to click on change step while adding the step title"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify that the Graphic Organizer (Image-based) step is created and displaying under the steps in authoring page",
+      "expected": "Click on submit The Graphic Organizer (Image-based) step must be created and displaying under the steps in authoring page",
+      "raw": "TC_14Author Graphic Organizer (Image Go) Functionality Verify that the Graphic Organizer (Image-based) step is created and displaying under the steps in authoring page 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit The Graphic Organizer (Image-based) step must be created and displaying under the steps in authoring page"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify when clicking on the Graphic Organizer (Image-based) in the authoring page its redirected to the Graphic Organizer (Image- based) setting pannel",
+      "expected": "Click on submit User should be redirected to the setting panel when clicking on the Graphic Organizer (Image-based) in the authoring page",
+      "raw": "TC_15Author Graphic Organizer (Image Go) Functionality Verify when clicking on the Graphic Organizer (Image-based) in the authoring page its redirected to the Graphic Organizer (Image- based) setting pannel 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit User should be redirected to the setting panel when clicking on the Graphic Organizer (Image-based) in the authoring page"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify if the user is able to upload the image",
+      "expected": "Click on Upload The user must be able to upload the image",
+      "raw": "TC_16Author Graphic Organizer (Image Go) Functionality Verify if the user is able to upload the image 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on Upload The user must be able to upload the image"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify if the user is able to replace the image from both the setting pannel and clicking on the replace button on the image",
+      "expected": "Click on Replace The user should be able to replace the image from both the setting pannel and clicking on the replace button on the image",
+      "raw": "TC_17Author Graphic Organizer (Image Go) Functionality Verify if the user is able to replace the image from both the setting pannel and clicking on the replace button on the image 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on Replace The user should be able to replace the image from both the setting pannel and clicking on the replace button on the image"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify if the add hotspot button is visible",
+      "expected": "Click on submit The add hotspot button should be visible",
+      "raw": "TC_18Author Graphic Organizer (Image Go) FunctionalityVerify if the add hotspot button is visible 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit The add hotspot button should be visible"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify if the user is able to click on add hotspot button and add the hotspots",
+      "expected": "Click on Add hotspot The usermust be able to click on add hotspot button and add the hotspots",
+      "raw": "TC_19Author Graphic Organizer (Image Go) Functionality Verify if the user is able to click on add hotspot button and add the hotspots 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.8.Click on Add hotspot The usermust be able to click on add hotspot button and add the hotspots"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify if the delete button is available on the hotspot",
+      "expected": "Click on delete icon The delete button should be available on the hotspot",
+      "raw": "TC_20Author Graphic Organizer (Image Go) Functionality Verify if the delete button is available on the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on delete icon The delete button should be available on the hotspot"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify that the user is able to delete the hotspot",
+      "expected": "Click on delete icon The user should be able to delete the hotspot",
+      "raw": "TC_21Author Graphic Organizer (Image Go) Functionality Verify that the user is able to delete the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on delete icon The user should be able to delete the hotspot"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify if the user is able to add inputs into the hotspot",
+      "expected": "Click on hotspot and add datas The user must be able to add inputs into the hotspot",
+      "raw": "TC_22Author Graphic Organizer (Image Go) Functionality Verify if the user is able to add inputs into the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot and add datas The user must be able to add inputs into the hotspot"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify if the user is able to delete inputs from the hotspot",
+      "expected": "Click on hotspot The user must be able to delete inputs from the hotspot",
+      "raw": "TC_23Author Graphic Organizer (Image Go) Functionality Verify if the user is able to delete inputs from the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot The user must be able to delete inputs from the hotspot"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify if the user is able to move the hotspot",
+      "expected": "Click on hotspot The user should be able to move the hotspot",
+      "raw": "TC_24Author Graphic Organizer (Image Go) Functionality Verify if the user is able to move the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot The user should be able to move the hotspot"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify if the user is able to add math equations on the hotspot box",
+      "expected": "Click on hotspot add math equation The user should be able to add math equations on the hotspot box",
+      "raw": "TC_25Author Graphic Organizer (Image Go) Functionality Verify if the user is able to add math equations on the hotspot box 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot add math equation The user should be able to add math equations on the hotspot box"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify if the scroll bar appears when we enter large datas inside the hotspot box",
+      "expected": "Click on hotspot add large datas The scroll bar should appear when we enter large datas inside the hotspot box",
+      "raw": "TC_26Author Graphic Organizer (Image Go) Functionality Verify if the scroll bar appears when we enter large datas inside the hotspot box 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot add large datas The scroll bar should appear when we enter large datas inside the hotspot box"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify if the user is able to add multiple hotspots",
+      "expected": "Click on hotspot add multiple hotspots The user should be allowed to add multiple hotspots",
+      "raw": "TC_27Author Graphic Organizer (Image Go) Functionality Verify if the user is able to add multiple hotspots 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on hotspot add multiple hotspots The user should be allowed to add multiple hotspots"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify that the submit button is disable in the edit mode",
+      "expected": "Click on submit button The submit button must be disable in the edit mode",
+      "raw": "TC_28Author Graphic Organizer (Image Go) Functionality Verify that the submit button is disable in the edit mode 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on submit button The submit button must be disable in the edit mode"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify that the hotspot datas are not changed when replacing the image after adding hotspot",
+      "expected": "Click on replace The hotspot datas should not change when replacing the image after adding hotspot",
+      "raw": "TC_29Author Graphic Organizer (Image Go) Functionality Verify that the hotspot datas are not changed when replacing the image after adding hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on replace The hotspot datas should not change when replacing the image after adding hotspot"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify that the datas enter inside the input box in the setting pannel is reflecting inside the hotspot",
+      "expected": "Click on setting panel The datas enter inside the input box in the setting pannel should reflect inside the hotspot",
+      "raw": "TC_30Author Graphic Organizer (Image Go) Functionality Verify that the datas enter inside the input box in the setting pannel is reflecting inside the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on setting panel The datas enter inside the input box in the setting pannel should reflect inside the hotspot"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify if the user is able to enter the header label",
+      "expected": "Click on header label The user must be allowed to enter the header label",
+      "raw": "TC_31Author Graphic Organizer (Image Go) Functionality Verify if the user is able to enter the header label 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on header label The user must be allowed to enter the header label"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify that the character limit checkbox is clickable",
+      "expected": "Click on character limit checkboxThe character limit checkbox should be clickable",
+      "raw": "TC_32Author Graphic Organizer (Image Go) Functionality Verify that the character limit checkbox is clickable 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on character limit checkboxThe character limit checkbox should be clickable"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify that the user is able to enter the character limits only when that checkbox is selected",
+      "expected": "Click on character limit checkbox The user should be able to enter the character limits only when that checkbox is selected",
+      "raw": "TC_33Author Graphic Organizer (Image Go) Functionality Verify that the user is able to enter the character limits only when that checkbox is selected 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on character limit checkbox The user should be able to enter the character limits only when that checkbox is selected"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify that the hotspot is accepting only limited characters given at the character limit.",
+      "expected": "",
+      "raw": "TC_34Author Graphic Organizer (Image Go) Functionality Verify that the hotspot is accepting only limited characters given at the character limit. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on character limit checkbox The hotspot should accept only limited characters given at the character limit."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify that the Apply for all Input checkbox is clickable",
+      "expected": "Click on apply for all inputs The Apply for all Input checkbox should be clickable",
+      "raw": "TC_35Author Graphic Organizer (Image Go) Functionality Verify that the Apply for all Input checkbox is clickable 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on apply for all inputs The Apply for all Input checkbox should be clickable"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify that the user is able to select the background",
+      "expected": "Click on background The user must be able to select the background",
+      "raw": "TC_36Author Graphic Organizer (Image Go) Functionality Verify that the user is able to select the background 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on background The user must be able to select the background"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify that the user is able to select the outline",
+      "expected": "Click on outline The usershould be able to select the outline",
+      "raw": "TC_37Author Graphic Organizer (Image Go) Functionality Verify that the user is able to select the outline 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on outline The usershould be able to select the outline"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify if the user is able to click on Lock for Student checkbox",
+      "expected": "Click on lock for student The user must be able to click on Lock for Student checkbox",
+      "raw": "TC_38Author Graphic Organizer (Image Go) Functionality Verify if the user is able to click on Lock for Student checkbox 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on lock for student The user must be able to click on Lock for Student checkbox"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify that the replaced image is updated correctly",
+      "expected": "Click on replace image The replaced image must be updated correctly",
+      "raw": "TC_39Author Graphic Organizer (Image Go) Functionality Verify that the replaced image is updated correctly 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on replace image The replaced image must be updated correctly"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify that all the datas are saved after clicking on the save button.",
+      "expected": "",
+      "raw": "TC_40Author Graphic Organizer (Image Go) Functionality Verify that all the datas are saved after clicking on the save button. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on save All the datas must be saved after clicking on the save button."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on preview",
+      "expected": "Click on preview The user should be able to click on preview",
+      "raw": "TC_41Author Graphic Organizer (Image Go) FunctionalityVerify that the user is able to click on preview 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on save 9.Click on preview The user should be able to click on preview"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify that the user is rediected to the preview page when clicking on the preview button",
+      "expected": "Click on preview The user should be rediected to the preview page when clicking on the preview button",
+      "raw": "TC_42Author Graphic Organizer (Image Go) Functionality Verify that the user is rediected to the preview page when clicking on the preview button 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview The user should be rediected to the preview page when clicking on the preview button"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify that the user is able to enter datas inside the hotspots",
+      "expected": "Click on hotspot The user must be allowed to enter datas inside the hotspots",
+      "raw": "TC_43Author Graphic Organizer (Image Go) Functionality Verify that the user is able to enter datas inside the hotspots 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on hotspot The user must be allowed to enter datas inside the hotspots"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify that the user is not allowed to enter datas inside the locked hotspots",
+      "expected": "Click on hotspot The user is not allowed to enter datas inside the locked hotspots",
+      "raw": "TC_44Author Graphic Organizer (Image Go) Functionality Verify that the user is not allowed to enter datas inside the locked hotspots 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on hotspot The user is not allowed to enter datas inside the locked hotspots"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on cancel button on the hotspot box",
+      "expected": "Click on hotspot The usershould be able to click on cancel button on the hotspot box",
+      "raw": "TC_45Author Graphic Organizer (Image Go) Functionality Verify that the user is able to click on cancel button on the hotspot box 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on hotspot The usershould be able to click on cancel button on the hotspot box"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on save button on the hotspot box",
+      "expected": "Click on hotspot and save The user must be able to click on save button on the hotspot box",
+      "raw": "TC_46Author Graphic Organizer (Image Go) Functionality Verify that the user is able to click on save button on the hotspot box 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on hotspot and save The user must be able to click on save button on the hotspot box"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify that the user is able to able to scroll and view the long text inside the hotspot.",
+      "expected": "",
+      "raw": "TC_47Author Graphic Organizer (Image Go) Functionality Verify that the user is able to able to scroll and view the long text inside the hotspot. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on submit The user should be able to able to scroll and view the long text inside the hotspot."
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify that the user is able to move the hotspot",
+      "expected": "Click on hotspot The user must be able to move the hotspot",
+      "raw": "TC_48Author Graphic Organizer (Image Go) FunctionalityVerify that the user is able to move the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview 9.Click on hotspot The user must be able to move the hotspot"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify that the submit button is enabled",
+      "expected": "Add datas in hotspot and submitThe submit button must be enabled",
+      "raw": "TC_49Author Graphic Organizer (Image Go) FunctionalityVerify that the submit button is enabled 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submitThe submit button must be enabled"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on the submit button",
+      "expected": "Add datas in hotspot and submit The user should be able to click on the submit button",
+      "raw": "TC_50Author Graphic Organizer (Image Go) Functionality Verify that the user is able to click on the submit button 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit The user should be able to click on the submit button"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify that the user is able to click on edit after previewing",
+      "expected": "Click on edit The user should be able to click on edit after previewing",
+      "raw": "TC_51Author Graphic Organizer (Image Go) Functionality Verify that the user is able to click on edit after previewing 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit The user should be able to click on edit after previewing"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify that the user is able to make changes in the authoring",
+      "expected": "Click on edit The user must be able to make changes in the authoring",
+      "raw": "TC_52Author Graphic Organizer (Image Go) Functionality Verify that the user is able to make changes in the authoring 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit The user must be able to make changes in the authoring"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify that the user is able to save the changes and preview",
+      "expected": "Click on save The usershould be able to save the changes and preview",
+      "raw": "TC_53Author Graphic Organizer (Image Go) Functionality Verify that the user is able to save the changes and preview 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save The usershould be able to save the changes and preview"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify that all the changes are reflecting in the preview mode",
+      "expected": "Click on preview All the changes must be reflecting in the preview mode",
+      "raw": "TC_54Author Graphic Organizer (Image Go) Functionality Verify that all the changes are reflecting in the preview mode 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview All the changes must be reflecting in the preview mode"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify if the user is able to publish the activity by clicking the publish button.",
+      "expected": "",
+      "raw": "TC_55Author Graphic Organizer (Image Go) Functionality Verify if the user is able to publish the activity by clicking the publish button. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity The user\\must be able to publish the activity by clicking the publish button."
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify if the user is able to launch the activity from the saltire",
+      "expected": "",
+      "raw": "TC_56Author Graphic Organizer (Image Go) Functionality Verify if the user is able to launch the activity from the saltire 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user should be able to launch the activity from the saltire"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify if the user is able to open the hotspot and enter datas inside the hotspot.",
+      "expected": "",
+      "raw": "TC_57Author Graphic Organizer (Image Go) Functionality Verify if the user is able to open the hotspot and enter datas inside the hotspot. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user should be able to open the hotspot and enter data"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify if the user is able to click on add after adding datas inside the hotspot",
+      "expected": "",
+      "raw": "TC_58Author Graphic Organizer (Image Go) Functionality Verify if the user is able to click on add after adding datas inside the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user should be able to click on add after adding datas i"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify if the user is able to click on cancel after adding datas inside the hotspot",
+      "expected": "",
+      "raw": "TC_59Author Graphic Organizer (Image Go) Functionality Verify if the user is able to click on cancel after adding datas inside the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user should be able to click on cancel after adding d"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify if the scroll bar appears when we enter large datas inside the hotspot box in reader",
+      "expected": "",
+      "raw": "TC_60Author Graphic Organizer (Image Go) Functionality Verify if the scroll bar appears when we enter large datas inside the hotspot box in reader 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The scroll bar should appar when we enter large d"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify that the user is not allowed to enter datas inside the locked hotspots in reader",
+      "expected": "",
+      "raw": "TC_61Author Graphic Organizer (Image Go) Functionality Verify that the user is not allowed to enter datas inside the locked hotspots in reader 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user is should not allowed to enter datas inside "
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify that the data is patching while relaunching the activity without submitting",
+      "expected": "",
+      "raw": "TC_62Author Graphic Organizer (Image Go) Functionality Verify that the data is patching while relaunching the activity without submitting 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The data should patch while relaunching the activity witho"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify that the user is able to submit the activity after entering datas inside the hotspot",
+      "expected": "",
+      "raw": "TC_63Author Graphic Organizer (Image Go) Functionality Verify that the user is able to submit the activity after entering datas inside the hotspot 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. The user must be able to submit the activity afte"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify that the data is patching while relaunching the activity after submitting the activity.",
+      "expected": "",
+      "raw": "TC_64Author Graphic Organizer (Image Go) Functionality Verify that the data is patching while relaunching the activity after submitting the activity. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity. The data should patch "
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify that the review panel is visible as evaluation pending after submitting the activity",
+      "expected": "Submit the activity The review panel should be visible as evaluation pending after submitting the activity",
+      "raw": "TC_65Author Graphic Organizer (Image Go) Functionality Verify that the review panel is visible as evaluation pending after submitting the activity 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity The review panel should be"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify that the attempt is displaying with the correct date and time.",
+      "expected": "",
+      "raw": "TC_66Author Graphic Organizer (Image Go) Functionality Verify that the attempt is displaying with the correct date and time. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity The attempt should display with the correct date"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify that the hotspots are not editable after submitting the activity.",
+      "expected": "",
+      "raw": "TC_67Author Graphic Organizer (Image Go) Functionality Verify that the hotspots are not editable after submitting the activity. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity The hotspots should not be editable after sub"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Verify that the students attempts are visible for the instructor.",
+      "expected": "",
+      "raw": "TC_68Author Graphic Organizer (Image Go) Functionality Verify that the students attempts are visible for the instructor. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. The students attempts shoul"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Verify that the user is able to launch the activity as an Instructor.",
+      "expected": "",
+      "raw": "TC_69Author Graphic Organizer (Image Go) Functionality Verify that the user is able to launch the activity as an Instructor. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. The user must be able t"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functionality",
+      "description": "Verify that the teacher is allowed to edit the student attempt",
+      "expected": "",
+      "raw": "TC_70Author Graphic Organizer (Image Go) Functionality Verify that the teacher is allowed to edit the student attempt 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. The teacher should not be allo"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functionality",
+      "description": "Verify that the teacher is able to evaluate the student and submit the review.",
+      "expected": "",
+      "raw": "TC_71Author Graphic Organizer (Image Go) Functionality Verify that the teacher is able to evaluate the student and submit the review. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. The teacher mu"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functionality",
+      "description": "Verify that the teachers evaluation is visible for the students",
+      "expected": "",
+      "raw": "TC_72Author Graphic Organizer (Image Go) Functionality Verify that the teachers evaluation is visible for the students 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. 17.Launch as leaner. The teac"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functionality",
+      "description": "Verify that the completed status is reflecting for students after teacher evaluation",
+      "expected": "",
+      "raw": "TC_73Author Graphic Organizer (Image Go) Functionality Verify that the completed status is reflecting for students after teacher evaluation 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. 17.Launc"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functionality",
+      "description": "Verify that the students is allowed to edit if the teacher provide resubmission request.",
+      "expected": "",
+      "raw": "TC_74Author Graphic Organizer (Image Go) Functionality Verify that the students is allowed to edit if the teacher provide resubmission request. 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. 17.L"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functionality",
+      "description": "Verify that the students is not allowed to edit if the teacher evaluation is completed",
+      "expected": "",
+      "raw": "TC_75Author Graphic Organizer (Image Go) Functionality Verify that the students is not allowed to edit if the teacher evaluation is completed 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. 17.Lau"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functionality",
+      "description": "Verify Text entry fields are not overrunning image edge",
+      "expected": "",
+      "raw": "TC_76Author Graphic Organizer (Image Go) Functionality Verify Text entry fields are not overrunning image edge 1. Launch the URL and Login with valid credentials 2.Create ELA activity 3. Click on start authoring 4. Add Graphic Organizer (Image-based) 5.Enter the Step Title 6 Enter \" Instruction for Student and Teacher \" 7.Click on submit 8.Click on preview and submit 9.Add datas in hotspot and submit 10.Click on edit 11.Click on save 12.Click on preview 13.Publish the activity 14.Launch in reader as a leaner. 15.Submit the activity 16.Launch as Instructor. 17.Launch as leaner. Text entry field"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functionality",
+      "description": "Verify if text entry focus skips to end when typing in Image GO",
+      "expected": "",
+      "raw": "TC_77Author Graphic Organizer (Image Go) Functionality Verify if text entry focus skips to end when typing in Image GO 1. Launch activity with Image GO widget<br> 2. Click inside the text entry field<br> 3. Type a few characters<br> 4. Move cursor to the middle of the text<br> 5. Type additional charactersCursor should remain at the intended position."
+    }
+  ]
+}

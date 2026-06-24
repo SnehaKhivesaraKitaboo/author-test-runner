@@ -1,0 +1,380 @@
+{
+  "component": "Extended Response",
+  "slug": "extended-response",
+  "dataType": "shortLongAns",
+  "source": "Author Test Cases - Extended Response.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Extended Response.pdf",
+  "pages": 5,
+  "extractedCount": 46,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"Extended Response\" step opens the author page and the settings panel when clicked.",
+      "expected": "",
+      "raw": "TC_01Extended Response UI / Functionality Verify if the \"Extended Response\" step opens the author page and the settings panel when clicked. 1. Click on the \"Extended Response\" step in the step tray. 2. Observe the author page and settings panel. The author page should open with the settings panel visible."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"Question and Answer\" text with icon is present on the page.",
+      "expected": "",
+      "raw": "TC_02Extended Response UI / Functionality Verify if the \"Question and Answer\" text with icon is present on the page. 1. After opening the \"Extended Response\" step, observe the author page. \"Question and Answer\" text should be visible with an icon."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI",
+      "description": "/ Functionality Verify if two styles are visible to users: one style and \"coming soon\" style.",
+      "expected": "",
+      "raw": "TC_03Extended Response UI / Functionality Verify if two styles are visible to users: one style and \"coming soon\" style. 1. Observe the style options displayed on the author page. The page should display two styles: one active style and one with the \"Coming Soon\" label."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"Answer Type\" section is present under the settings panel.",
+      "expected": "",
+      "raw": "TC_04Extended Response UI / Functionality Verify if the \"Answer Type\" section is present under the settings panel. 1. Open the \"Settings\" panel. 2. Look for the \"Answer Type\" section. The \"Answer Type\" section should be present."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"RTE\" radio button is enabled by default and highlighted in blue color.",
+      "expected": "",
+      "raw": "TC_05Extended Response UI / Functionality Verify if the \"RTE\" radio button is enabled by default and highlighted in blue color. 1. Observe the \"Answer Type\" settings under the settings panel. 2. Check the \"RTE\" radio button. The \"RTE\" radio button should be enabled by default and highlighted in blue color."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI",
+      "description": "/ Functionality Verify that the \"",
+      "expected": "",
+      "raw": "TC_06Extended Response UI / Functionality Verify that the \"Enable Keyboard\" radio button is visible but not enabled by default. 1. Observe the \"Answer Type\" settings under the settings panel. 2. Check for the \"Enable Keyboard\" radio button. The \"Enable Keyboard\" radio button should be visible but not enabled by default."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"",
+      "expected": "",
+      "raw": "TC_07Extended Response UI / Functionality Verify if the \"Enable Keyboard\" radio button is enabled when a special language (French, German, Spanish) is selected. 1. Select a special keyboard language (French, German, Spanish). 2. Observe the \"Enable Keyboard\" radio button. The \"Enable Keyboard\" radio button should be enabled after selecting a special language."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI",
+      "description": "/ Functionality Verify the \"Content limited to 5000 characters\" subtext below the \"",
+      "expected": "",
+      "raw": "TC_08Extended Response UI / Functionality Verify the \"Content limited to 5000 characters\" subtext below the \"Enable Keyboard\" radio button. 1. After enabling the \"Enable Keyboard\" radio button, observe the subtext. The \"Content limited to 5000 characters\" subtext should be visible below the radio button."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI",
+      "description": "/ Functionality Verify that the \"No Outline\" radio button is selected by default",
+      "expected": "",
+      "raw": "TC_09Extended Response UI / Functionality Verify that the \"No Outline\" radio button is selected by default 1. Navigate to the settings panel where the \"No Outline\" option is available. The \"No Outline\" radio button is selected by default."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can select the \"Outline & Fill Background\" radio button",
+      "expected": "",
+      "raw": "TC_10Extended Response UI / Functionality Verify that the user can select the \"Outline & Fill Background\" radio button 1. Navigate to the settings panel. 2. Click on the \"Outline & Fill Background\" radio button. The \"Outline & Fill Background\" radio button is selected, and the background color options are displayed"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can select a background color from the available options",
+      "expected": "",
+      "raw": "TC_11Extended Response UI / Functionality Verify that the user can select a background color from the available options 1. Select the \"Outline & Fill Background\" radio button. 2. Choose a background color from the available options. The selected background color is applied successfully, and the color is reflected in the UI."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI",
+      "description": "/ Functionality Verify that the color code updates in the box below according to the selected background color",
+      "expected": "",
+      "raw": "TC_12Extended Response UI / Functionality Verify that the color code updates in the box below according to the selected background color 1. Select the \"Outline & Fill Background\" radio button. 2. Choose a background color. 3. Observe the color code in the box below. The color code in the box below updates correctly to match the selected background color."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can switch back to the \"No Outline\" radio button",
+      "expected": "",
+      "raw": "TC_13Extended Response UI / Functionality Verify that the user can switch back to the \"No Outline\" radio button 1. Select the \"Outline & Fill Background\" radio button. 2. Switch back to the \"No Outline\" radio button. The \"No Outline\" radio button is selected, and any previously applied background color is removed."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI",
+      "description": "/ Functionality Verify that the system retains the by default background color when switching back to \"Outline & Fill\"",
+      "expected": "",
+      "raw": "TC_14Extended Response UI / Functionality Verify that the system retains the by default background color when switching back to \"Outline & Fill\" 1. Select the \"Outline & Fill Background\" radio button and choose a background color. 2. Switch to \"No Outline.\" 3. Switch back to \"Outline & Fill Background.\" The by default background color is retained when switching back to \"Outline & Fill Background.\""
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI",
+      "description": "/ Functionality Verify behavior when an invalid color code is entered manually in the box below",
+      "expected": "",
+      "raw": "TC_15Extended Response UI / Functionality Verify behavior when an invalid color code is entered manually in the box below 1. Select the \"Outline & Fill Background\" radio button. 2. Manually enter an invalid color code in the box below. The system displays an error message or resets to the last valid color code, or it will take by default selected color."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can manually enter a valid color code in the box below to change the background color",
+      "expected": "",
+      "raw": "TC_16Extended Response UI / Functionality Verify that the user can manually enter a valid color code in the box below to change the background color 1. Select the \"Outline & Fill Background\" radio button. 2. Manually enter a valid color code in the box below. The background color changes to match the manually entered color code."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI",
+      "description": "/ Functionality Verify if the \"",
+      "expected": "",
+      "raw": "TC_17Extended Response UI / Functionality Verify if the \"Enter Tags\" field is available with correct placeholder text. 1. Navigate to the extended response section. 2. Locate the \"Enter Tags\" input box. The \"Enter Tags\" field should be available with the placeholder text: \"Enter , to separate to tags\"."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "UI",
+      "description": "/ FunctionalityVerify if the subtext for \"",
+      "expected": "",
+      "raw": "TC_18Extended Response UI / FunctionalityVerify if the subtext for \"Enter Tags\" is displayed correctly. 1. Navigate to the extended response section. 2. Observe the subtext below the \"Enter Tags\" field. The subtext \"Enter , to separate to tags\" should be present below the input box."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI",
+      "description": "/ FunctionalityVerify if the \"Accessibility\" text is present on the page.",
+      "expected": "",
+      "raw": "TC_19Extended Response UI / FunctionalityVerify if the \"Accessibility\" text is present on the page. 1. Navigate to the extended response section. 2. Look for the \"Accessibility\" label. The text \"Accessibility\" should be present on the page."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "/ FunctionalityVerify if the correct subtext for accessibility is displayed.",
+      "expected": "",
+      "raw": "TC_20Extended Response UI / FunctionalityVerify if the correct subtext for accessibility is displayed. 1. Navigate to the extended response section. 2. Observe the text below the \"Accessibility\" label. The subtext \"ALT text refers to invisible description of images which are read aloud to blind users on a screen reader.\" should be displayed."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI",
+      "description": "/ FunctionalityVerify if the \"Alt Text\" input field is present on the page.",
+      "expected": "",
+      "raw": "TC_21Extended Response UI / FunctionalityVerify if the \"Alt Text\" input field is present on the page. 1. Navigate to the extended response section. 2. Look for the \"Alt Text\" input box. The \"Alt Text\" input field should be present on the page."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI",
+      "description": "/ FunctionalityVerify the character limit for the \"Alt Text\" field.",
+      "expected": "",
+      "raw": "TC_22Extended Response UI / FunctionalityVerify the character limit for the \"Alt Text\" field. 1. Navigate to the extended response section. 2. Enter text in the \"Alt Text\" field up to 2000 characters. The input should be accepted up to 2000 characters only."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI",
+      "description": "/ FunctionalityVerify if the user can enter text in the \"Alt Text\" input box.",
+      "expected": "",
+      "raw": "TC_23Extended Response UI / FunctionalityVerify if the user can enter text in the \"Alt Text\" input box. 1. Navigate to the extended response section. 2. Click inside the \"Alt Text\" input box. 3. Type text. The user should be able to enter text without issues."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI",
+      "description": "/ Functionality Verify if the system restricts input beyond 2000 characters in the \"Alt Text\" field.",
+      "expected": "",
+      "raw": "TC_24Extended Response UI / Functionality Verify if the system restricts input beyond 2000 characters in the \"Alt Text\" field. 1. Navigate to the extended response section. 2. Try entering text beyond the 2000-character limit. The system should prevent entering text beyond 2000 characters."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can click on the Author page and see the Question and Answer with an icon.",
+      "expected": "",
+      "raw": "TC_25Extended Response UI / Functionality Verify that the user can click on the Author page and see the Question and Answer with an icon. 1. Navigate to the Author page. 2. Check for the presence of the Question and Answer section with an icon. The Question and Answer section with an icon should be displayed."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can type a question and apply formatting options.",
+      "expected": "",
+      "raw": "TC_26Extended Response UI / Functionality Verify that the user can type a question and apply formatting options. 1. Navigate to the Author page. 2. Type a question. 3. Apply formatting options such as bold, italic, underline, ordered list, and unordered list. Formatting should be applied successfully and visible in preview and reader mode."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can click on the Copy icon and the component is copied below.",
+      "expected": "",
+      "raw": "TC_27Extended Response UI / Functionality Verify that the user can click on the Copy icon and the component is copied below. 1. Navigate to the Author page. 2. Click the Copy icon on a component. The copied component should appear below the original component."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can type in the answer field in edit mode",
+      "expected": "",
+      "raw": "TC_28Extended Response UI / Functionality Verify that the user can type in the answer field in edit mode 1. Navigate to the Author page. 2. Type an answer in the answer field.The answer should be entered successfully."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI",
+      "description": "/ Functionality Verify that formatting options are visible in preview and reader mode.",
+      "expected": "",
+      "raw": "TC_29Extended Response UI / Functionality Verify that formatting options are visible in preview and reader mode. 1. Apply formatting to text. 2. Switch to preview and reader mode. The formatting should be displayed correctly in both preview and reader mode."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can type an answer in preview mode and reader mode.",
+      "expected": "",
+      "raw": "TC_30Extended Response UI / Functionality Verify that the user can type an answer in preview mode and reader mode. 1. Navigate to the preview mode. 2. Type an answer in the answer field. 3. Switch to reader mode and type an answer. The user should be able to enter answers in both preview and reader modes successfully."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI",
+      "description": "/ Functionality Verify that the submit button is available for individual components in preview mode.",
+      "expected": "",
+      "raw": "TC_31Extended Response UI / Functionality Verify that the submit button is available for individual components in preview mode. 1. Navigate to the preview mode. 2. Check for the submit button next to each component. The submit button should be available and functional for individual components in preview mode."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'Spanish' as subject type opens a special character keyboard",
+      "expected": "",
+      "raw": "TC_32Extended Response UI / Functionality Verify that selecting 'Spanish' as subject type opens a special character keyboard 1. Navigate to activity creation screen. 2. Select 'Spanish' as the subject type. 3. Observe if the special character keyboard appears. Special character keyboard for Spanish should open in the author page."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'German' as subject type opens a special character keyboard",
+      "expected": "",
+      "raw": "TC_33Extended Response UI / Functionality Verify that selecting 'German' as subject type opens a special character keyboard 1. Navigate to activity creation screen. 2. Select 'German' as the subject type. 3. Observe if the special character keyboard appears. Special character keyboard for German should open in Author page if user click on the 'Add special keyboard character button."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'French' as subject type opens a special character keyboard",
+      "expected": "",
+      "raw": "TC_34Extended Response UI / Functionality Verify that selecting 'French' as subject type opens a special character keyboard 1. Navigate to activity creation screen. 2. Select 'French' as the subject type. 3. Observe if the special character keyboard appears. Special character keyboard for French should open once user click on 'Add special keyboard character' button."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "UI",
+      "description": "/ Functionality Verify that the 'Add special keyboard' button is present with an add icon on the author page",
+      "expected": "",
+      "raw": "TC_35Extended Response UI / Functionality Verify that the 'Add special keyboard' button is present with an add icon on the author page 1. Navigate to the author page. 2. Locate the 'Add special keyboard' button. 3. Verify the presence of an add icon next to the button. Add special keyboard' button should be displayed with an add icon."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "UI",
+      "description": "/ Functionality Verify that clicking the 'Add special keyboard' button opens the special character keyboard",
+      "expected": "",
+      "raw": "TC_36Extended Response UI / Functionality Verify that clicking the 'Add special keyboard' button opens the special character keyboard 1. Navigate to the author page. 2. Click on the 'Add special keyboard' button.Special character keyboard should open."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'Spanish' displays the correct language label and alphabets",
+      "expected": "",
+      "raw": "TC_37Extended Response UI / Functionality Verify that selecting 'Spanish' displays the correct language label and alphabets 1. Click on 'Add special keyboard'. 2. Select 'Spanish' as the language. 3. Observe the displayed language label and alphabets. Spanish' should be displayed as the selected language, followed by the Spanish alphabet characters."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'German' displays the correct language label and alphabets",
+      "expected": "",
+      "raw": "TC_38Extended Response UI / Functionality Verify that selecting 'German' displays the correct language label and alphabets 1. Click on 'Add special keyboard'. 2. Select 'German' as the language. 3. Observe the displayed language label and alphabets German' should be displayed as the selected language, followed by the German alphabet characters."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI",
+      "description": "/ Functionality Verify that selecting 'French' displays the correct language label and alphabets",
+      "expected": "",
+      "raw": "TC_39Extended Response UI / Functionality Verify that selecting 'French' displays the correct language label and alphabets 1. Click on 'Add special keyboard'. 2. Select 'French' as the language. 3. Observe the displayed language label and alphabets. French' should be displayed as the selected language, followed by the French alphabet characters."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI",
+      "description": "/ Functionality Verify that the special character keyboard allows input in the activity edit mode",
+      "expected": "",
+      "raw": "TC_40Extended Response UI / Functionality Verify that the special character keyboard allows input in the activity edit mode 1. Open an existing activity in edit mode. 2. Use the special character keyboard. 3. Enter text with special characters in the question and answer fields. User should be able to type special characters in the fields."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI",
+      "description": "/ Functionality Verify that the special character keyboard allows input in preview mode",
+      "expected": "",
+      "raw": "TC_41Extended Response UI / Functionality Verify that the special character keyboard allows input in preview mode 1. Navigate to the preview mode of an activity. 2. Use the special character keyboard. 3. Enter text with special characters in the fields. User should be able to type special characters in the fields."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI",
+      "description": "/ Functionality Verify that the special character keyboard allows input in reader mode",
+      "expected": "",
+      "raw": "TC_42Extended Response UI / Functionality Verify that the special character keyboard allows input in reader mode 1. Open the activity in reader mode. 2. Use the special character keyboard. 3. Enter text with special characters in the fields. User should be able to type special characters in the fields."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "UI",
+      "description": "/ Functionality Verify that data entered in edit mode is reflected in preview and reader mode",
+      "expected": "",
+      "raw": "TC_43Extended Response UI / Functionality Verify that data entered in edit mode is reflected in preview and reader mode 1. Open an activity in edit mode. 2. Enter data in the input box using the special keyboard. 3. Save the activity. 4. Navigate to preview mode and verify if the entered data is displayed. 5. Open the activity in reader mode and verify if the entered data is displayed Data entered in edit mode should be visible in both preview and reader modes."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can add, modify, or remove data in the input box after launching the activity",
+      "expected": "",
+      "raw": "TC_44Extended Response UI / Functionality Verify that the user can add, modify, or remove data in the input box after launching the activity 1. Launch the activity. 2. Enter data in the input box using the special keyboard. 3. Modify the entered data. 4. Remove the data and enter new data.User should be able to add, modify data."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can remove data in the input box after launching the activity",
+      "expected": "",
+      "raw": "TC_45Extended Response UI / Functionality Verify that the user can remove data in the input box after launching the activity 1. Launch the activity. 2. Enter data in the input box using the special keyboard. 3. Clear the input box and keep it blank. User should be able to leave the input box blank."
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "UI",
+      "description": "/ Functionality Verify that the user can add an extended response in multipart",
+      "expected": "",
+      "raw": "TC_46Extended Response UI / Functionality Verify that the user can add an extended response in multipart 1. Open an activity in edit mode. 2. Navigate to the multipart section. 3. Add an extended response in the input box. 4. Save and preview the activity. 5. Verify if the extended response appears correctly in preview and reader modes. Extended response should be successfully added in multipart and displayed correctly in preview and reader modes."
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "component": "Highlighter",
+  "slug": "highlighter",
+  "dataType": "highlight",
+  "source": "Author Test Cases - Highlighter.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Highlighter.pdf",
+  "pages": 4,
+  "extractedCount": 45,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "Functionality",
+      "description": "Verify Highlighter can be added to group activity and is visible in Preview/Reader",
+      "expected": "",
+      "raw": "TC_01HighlighterFunctionality Verify Highlighter can be added to group activity and is visible in Preview/Reader 1. Drag and drop Highlighter to group activity. 2. Open Preview/Reader. Highlighter appears and is usable in both views."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI",
+      "description": "Verify question text formatting: number/alphabet/special character/language",
+      "expected": "",
+      "raw": "TC_02HighlighterUI Verify question text formatting: number/alphabet/special character/language 1. Enter question text with numbers, alphabets, special characters, other language. 2. Preview/Reader. Text is formatted and displays correctly in all styles."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI",
+      "description": "Verify answer text formatting: number/alphabet/special character/language",
+      "expected": "",
+      "raw": "TC_03HighlighterUI Verify answer text formatting: number/alphabet/special character/language 1. Enter answer text with numbers, alphabets, special characters, other language. 2. Preview/Reader. Text is formatted and displays correctly in all styles."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI",
+      "description": "Verify different font, alignment, text color, background, math eq. in Preview/Reader",
+      "expected": "",
+      "raw": "TC_04HighlighterUI Verify different font, alignment, text color, background, math eq. in Preview/Reader 1. Apply alignment, font, color, background, math equation to text. 2. Preview/Reader. Formatting is applied and visible as expected."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "Verify ordered/unordered lists, hyperlinks, additional components in Highlighter",
+      "expected": "",
+      "raw": "TC_05HighlighterUI Verify ordered/unordered lists, hyperlinks, additional components in Highlighter 1. Add lists, hyperlinks, components. 2. Preview/Reader.All are visible and functional."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify user can highlight words in sentence in Highlighter",
+      "expected": "",
+      "raw": "TC_06HighlighterFunctionality Verify user can highlight words in sentence in Highlighter 1. Add sentence. 2. Select and highlight word(s). Highlight is applied and visible in Preview/Reader."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify user can add and delete sentences; delete icon visible only when sentence exists",
+      "expected": "",
+      "raw": "TC_07HighlighterFunctionality Verify user can add and delete sentences; delete icon visible only when sentence exists 1. Add sentence. 2. Delete sentence. Delete icon appears only when sentence is present; sentence is removed on click."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify incorrect word with arrow and marking in red after click",
+      "expected": "",
+      "raw": "TC_08HighlighterFunctionality Verify incorrect word with arrow and marking in red after click 1. Select incorrect word/phrase. 2. Click arrow. Word is marked incorrect and appears in red."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify reverse arrow undoes incorrect marking and highlight in Preview/Reader",
+      "expected": "",
+      "raw": "TC_09HighlighterFunctionality Verify reverse arrow undoes incorrect marking and highlight in Preview/Reader 1. Highlight/mark incorrect. 2. Click reverse arrow.Marking/highlight is undone."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify Show Me button, Add Header, Add Instruction Text checkboxes enabled by default",
+      "expected": "",
+      "raw": "TC_10HighlighterFunctionality Verify Show Me button, Add Header, Add Instruction Text checkboxes enabled by default 1. Add Highlighter. 2. Check settings. All are checked by default and visible."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify Header and Instruction Text are hidden when respective checkboxes are unchecked1. Uncheck Add Header/Instruction Text. Header/instruction text section is hidden.",
+      "expected": "",
+      "raw": "TC_11HighlighterFunctionality Verify Header and Instruction Text are hidden when respective checkboxes are unchecked1. Uncheck Add Header/Instruction Text. Header/instruction text section is hidden."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI",
+      "description": "Verify Style One selectable and Coming Soon style visible but not clickable",
+      "expected": "",
+      "raw": "TC_12HighlighterUI Verify Style One selectable and Coming Soon style visible but not clickable 1. View settings. 2. Try to select Style One/Coming Soon. Style One is selectable; Coming Soon is visible but disabled."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI",
+      "description": "Verify No Outline and Outline options and color selection under Action Assets",
+      "expected": "",
+      "raw": "TC_13HighlighterUI Verify No Outline and Outline options and color selection under Action Assets 1. Change Outline/No Outline, select asset color. Outline appears with selected color; No Outline removes border."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify user can add multiple sentences and highlight independently",
+      "expected": "",
+      "raw": "TC_14HighlighterFunctionality Verify user can add multiple sentences and highlight independently 1. Add multiple sentences. 2. Highlight in each. Each sentence can be highlighted independently."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify Highlighter is non- editable after submission/completion",
+      "expected": "",
+      "raw": "TC_15HighlighterFunctionality Verify Highlighter is non- editable after submission/completion 1. Submit attempt. 2. Try editing/highlighting. Editing/highlighting is blocked post- submit."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify user can change answer in Reader after attempt (if allowed)",
+      "expected": "",
+      "raw": "TC_16HighlighterFunctionality Verify user can change answer in Reader after attempt (if allowed) 1. Attempt. 2. Change answer in Reader.Change is allowed only if permitted."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functional",
+      "description": "HighlighterCompatibility Verify attempted questions persist after close/reopen in different browsers/devices/environmen ts",
+      "expected": "",
+      "raw": "TC_17HighlighterCompatibility Verify attempted questions persist after close/reopen in different browsers/devices/environmen ts 1. Attempt all. 2. Close/reopen in various environments.Attempts persist as expected."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify Allow Activity Restart clears previous attempts and data",
+      "expected": "",
+      "raw": "TC_18HighlighterFunctionality Verify Allow Activity Restart clears previous attempts and data 1. Attempt/highlight. 2. Relaunch activity.Data/attempts are cleared."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify Add Tag option and tags functionality1. Add tag in settings.Tag is added and visible.",
+      "expected": "",
+      "raw": "TC_19HighlighterFunctionality Verify Add Tag option and tags functionality1. Add tag in settings.Tag is added and visible."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "Verify UI adapts to minimize/maximize, mobile/tablet, and multiple browsers",
+      "expected": "",
+      "raw": "TC_20HighlighterUI Verify UI adapts to minimize/maximize, mobile/tablet, and multiple browsers 1. Minimize/maximize, use on various devices and browsers. UI adapts; component is responsive and usable."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI",
+      "description": "Verify placeholder/helper text in all input fields",
+      "expected": "",
+      "raw": "TC_21HighlighterUI Verify placeholder/helper text in all input fields 1. Check header, instruction, sentence fields.Placeholder text is visible."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI",
+      "description": "Verify consistent spacing and alignment in component and settings1. Review UI in editor, preview, reader. Elements are aligned and spaced consistently.",
+      "expected": "",
+      "raw": "TC_22HighlighterUI Verify consistent spacing and alignment in component and settings1. Review UI in editor, preview, reader. Elements are aligned and spaced consistently."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify submit button visibility and enablement after adding sentence1. Add sentence.Submit button is visible and enabled.",
+      "expected": "",
+      "raw": "TC_23HighlighterFunctionality Verify submit button visibility and enablement after adding sentence1. Add sentence.Submit button is visible and enabled."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Negative",
+      "description": "Verify Show Me, Header, Instruction Text, Outline, Add Tag options cannot be used when disabled1. Uncheck options, try to use.Options inaccessible/hidden.",
+      "expected": "",
+      "raw": "TC_24HighlighterNegative Verify Show Me, Header, Instruction Text, Outline, Add Tag options cannot be used when disabled1. Uncheck options, try to use.Options inaccessible/hidden."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Negative",
+      "description": "Verify delete icon is not visible when no sentence is present1. Do not add sentence.Delete icon is hidden.",
+      "expected": "",
+      "raw": "TC_25HighlighterNegative Verify delete icon is not visible when no sentence is present1. Do not add sentence.Delete icon is hidden."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Negative",
+      "description": "Verify error for excessively long text in any field1. Add text exceeding allowed limit.Error/warning; input restricted.",
+      "expected": "",
+      "raw": "TC_26HighlighterNegative Verify error for excessively long text in any field1. Add text exceeding allowed limit.Error/warning; input restricted."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Verify error handling for invalid inputs in Highlighter component1.",
+      "expected": "",
+      "raw": "TC_27HighlighterNegative Verify error handling for invalid inputs in Highlighter component1. Enter invalid/special chars/empty inputs. Error/warning displayed; not accepted."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Negative",
+      "description": "Verify user cannot edit Highlighter after submission/completion",
+      "expected": "",
+      "raw": "TC_28HighlighterNegative Verify user cannot edit Highlighter after submission/completion 1. Submit activity. 2. Try editing.Editing is blocked post-submit."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI",
+      "description": "break/error after rapid add/remove/edit/highlight/un do/redo1. Perform rapid actions.UI remains stable; no errors.",
+      "expected": "",
+      "raw": "TC_29HighlighterNegative Verify no UI break/error after rapid add/remove/edit/highlight/un do/redo1. Perform rapid actions.UI remains stable; no errors."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Negative",
+      "description": "Verify incorrect marking only possible on selected words/phrases",
+      "expected": "",
+      "raw": "TC_30HighlighterNegative Verify incorrect marking only possible on selected words/phrases 1. Try marking incorrect on blank/unselected area.Action not allowed."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Verify activity/highlight states do not persist after restart with new student1. Restart activity after highlighting.All highlights/markings are cleared.",
+      "expected": "",
+      "raw": "TC_31HighlighterNegative Verify activity/highlight states do not persist after restart with new student1. Restart activity after highlighting.All highlights/markings are cleared."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Negative",
+      "description": "Verify error if network fails during submit/update",
+      "expected": "",
+      "raw": "TC_32HighlighterNegative Verify error if network fails during submit/update 1. Simulate network failure during submit/update.Error/warning; action fails gracefully."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify multiple sentences can be added, highlighted, and deleted independently",
+      "expected": "",
+      "raw": "TC_33HighlighterFunctionality Verify multiple sentences can be added, highlighted, and deleted independently 1. Add multiple sentences. 2. Highlight each. 3. Delete any sentence.Each sentence acts independently."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "UI",
+      "description": "Verify Add Header, Add Instruction Text, Add Show Me are checked by default1. Add Highlighter, open settings.All three are checked by default.",
+      "expected": "",
+      "raw": "TC_34HighlighterUI Verify Add Header, Add Instruction Text, Add Show Me are checked by default1. Add Highlighter, open settings.All three are checked by default."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Negative",
+      "description": "Verify user cannot highlight text if sentence is not present",
+      "expected": "",
+      "raw": "TC_35HighlighterNegative Verify user cannot highlight text if sentence is not present 1. Do not add sentence. 2. Try to highlight.Highlight is not possible; no error."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "UI",
+      "description": "Verify Action Assets color picker is present and functional for Outline1.",
+      "expected": "",
+      "raw": "TC_36HighlighterUI Verify Action Assets color picker is present and functional for Outline1. Select Outline, change color.Border color changes as selected."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify user can add, edit, and delete tags in Highlighter1. Add tag, edit tag, delete tag.Tag changes reflect correctly.",
+      "expected": "",
+      "raw": "TC_37HighlighterFunctionality Verify user can add, edit, and delete tags in Highlighter1. Add tag, edit tag, delete tag.Tag changes reflect correctly."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "UI and Functionality",
+      "description": "Verify Delete button deletes component from author page",
+      "expected": "",
+      "raw": "TC_38Highlighter UI and Functionality Verify Delete button deletes component from author page 1. Click Delete button on component. 2. In confirmation pop-up, click \"Delete\". Component is deleted from author page."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI and Functionality",
+      "description": "Verify Copy button is present",
+      "expected": "",
+      "raw": "TC_39Highlighter UI and FunctionalityVerify Copy button is present 1. Locate Copy Component button on the screen. Copy Component button is visible on the page."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI and Functionality",
+      "description": "Verify Copy Component button is clickable1. Click the Copy Component button. Copy Component button is clickable; triggers copy action.",
+      "expected": "",
+      "raw": "TC_40Highlighter UI and Functionality Verify Copy Component button is clickable1. Click the Copy Component button. Copy Component button is clickable; triggers copy action."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI and Functionality",
+      "description": "Verify success pop-up after copying",
+      "expected": "",
+      "raw": "TC_41Highlighter UI and Functionality Verify success pop-up after copying 1. Click Copy Component button. 2. Observe pop-up message. Pop-up displays: \"The component has been copied successfully\"."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI and Functionality",
+      "description": "Verify multiple copy actions",
+      "expected": "",
+      "raw": "TC_42Highlighter UI and FunctionalityVerify multiple copy actions 1. Click Copy Component button multiple times. 2. Observe pop-up each time. Pop-up appears each time component is copied."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "UI and Functionality",
+      "description": "Verify copied component appears correctly",
+      "expected": "",
+      "raw": "TC_43Highlighter UI and Functionality Verify copied component appears correctly 1. Click Copy Component button. 2. Verify a new copy of the component appears on the author page. Copied component is displayed and matches the original."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Negative",
+      "description": "Verify copy action does not trigger for other buttons",
+      "expected": "",
+      "raw": "TC_44HighlighterNegative Verify copy action does not trigger for other buttons 1. Click other buttons (e.g., Delete, Add Sentence). 2. Observe pop-up message. \"The component has been copied successfully\" pop-up does not appear."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Negative",
+      "description": "Verify copy action with no component present",
+      "expected": "",
+      "raw": "TC_45HighlighterNegative Verify copy action with no component present 1. Remove all components. 2. Check if Copy Component button is present and clickable. Copy Component button is not visible/clickable if no component exists."
+    }
+  ]
+}

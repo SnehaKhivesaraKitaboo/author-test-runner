@@ -1,0 +1,24 @@
+{
+  "component": "Extended Response",
+  "slug": "extended-response",
+  "dataType": "shortLongAns",
+  "directive": "shortlongans-template",
+  "module": "assessment-widget (Generic Step column)",
+  "spec": "15-extended-response-deep.spec.ts",
+  "qcSource": "Author Test Cases - Extended Response.pdf",
+  "qcCount": 46,
+  "automated": 18,
+  "deferred": 28,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/templates/shortLongAns/shortLongAns.html",
+    "closify/KITABOO_Authoring/templates/shortLongAns/shortLongAns-settings-pannel.html"
+  ],
+  "architectureNotes": [
+    "Canvas wrapper class is .shortLongAnsComponent; settings panel id is #shortLongAns-setting (title 'Question Answer').",
+    "Answer types Short/Long/RTE — RTE and Keyboard-Type (Basic/Advance) radios are gated by TOCFlag.",
+    "Outline/Fill radios and colour picker render only when styleSelected == 'style1'.",
+    "Enable Keyboard checkbox is disabled unless a subject-level special language (FRA/ESP/GER) is selected — so all special-keyboard language QC cases are deferred (cannot set subject language from the authoring DOM).",
+    "Alt Text textarea enforces maxlength=2000.",
+    "Preview/Reader typing, submit, copy lifecycle, and multipart cases require flows outside the authoring DOM and are deferred."
+  ]
+}

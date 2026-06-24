@@ -1,0 +1,340 @@
+{
+  "component": "Flashcard",
+  "slug": "flashcard",
+  "dataType": "flashcard",
+  "source": "Author Test Cases - Flashcard.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Flashcard.pdf",
+  "pages": 2,
+  "extractedCount": 41,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Flashcard UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Flashcard FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03Flashcard FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Flashcard FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05Flashcard FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Flashcard Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Flashcard Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Flashcard Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Flashcard Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify the ability to add a new flashcard to the activityClick '+ Add Card', enter content in front/back areasFlashcard is added and editable",
+      "expected": "",
+      "raw": "TC_10Flashcard Functionality Verify the ability to add a new flashcard to the activityClick '+ Add Card', enter content in front/back areasFlashcard is added and editable"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify deleting a flashcard and card renumbering Click ‘Delete Card’, observe card removal and numbering Card is removed and remaining cards renumber",
+      "expected": "",
+      "raw": "TC_11Flashcard Functionality Verify deleting a flashcard and card renumbering Click ‘Delete Card’, observe card removal and numbering Card is removed and remaining cards renumber"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify navigation between flashcards Click left/right arrows and observe navigation behaviorNavigation moves smoothly between cards",
+      "expected": "",
+      "raw": "TC_12Flashcard FunctionalityVerify navigation between flashcards Click left/right arrows and observe navigation behaviorNavigation moves smoothly between cards"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify flip functionality for both sidesClick the ‘Flip’ button to toggle between sidesCard flips to show reverse side",
+      "expected": "",
+      "raw": "TC_13Flashcard FunctionalityVerify flip functionality for both sidesClick the ‘Flip’ button to toggle between sidesCard flips to show reverse side"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify adding and displaying textClick ‘Text’, input desired text contentText appears as expected in both sides",
+      "expected": "",
+      "raw": "TC_14Flashcard FunctionalityVerify adding and displaying textClick ‘Text’, input desired text contentText appears as expected in both sides"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify image upload functionalityClick ‘Image’, select and upload an image fileImage appears properly within bounds",
+      "expected": "",
+      "raw": "TC_15Flashcard FunctionalityVerify image upload functionalityClick ‘Image’, select and upload an image fileImage appears properly within bounds"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify video addition and playback",
+      "expected": "",
+      "raw": "TC_16Flashcard FunctionalityVerify video addition and playbackSelect ‘Video’, upload or enter a video URLVideo renders and is playable"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify math editor renderingClick ‘fx’, enter a LaTeX expression and applyMath equation is displayed correctly",
+      "expected": "",
+      "raw": "TC_17Flashcard FunctionalityVerify math editor renderingClick ‘fx’, enter a LaTeX expression and applyMath equation is displayed correctly"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify formatting is retained when pastingPaste text from Word or other editorsFormatting is preserved after paste",
+      "expected": "",
+      "raw": "TC_18Flashcard FunctionalityVerify formatting is retained when pastingPaste text from Word or other editorsFormatting is preserved after paste"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify card color selection updates flashcardOpen color selector, choose color, verify updateCard color changes appropriately",
+      "expected": "",
+      "raw": "TC_19Flashcard Functionality Verify card color selection updates flashcardOpen color selector, choose color, verify updateCard color changes appropriately"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify enabling header/instruction shows fieldsCheck ‘Show Header’ and ‘Show Instruction’Header and instruction fields appear",
+      "expected": "",
+      "raw": "TC_20Flashcard Functionality Verify enabling header/instruction shows fieldsCheck ‘Show Header’ and ‘Show Instruction’Header and instruction fields appear"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify outline and no-outline togglingToggle outline and no-outline optionsBorder toggles as per selected style",
+      "expected": "",
+      "raw": "TC_21Flashcard FunctionalityVerify outline and no-outline togglingToggle outline and no-outline optionsBorder toggles as per selected style"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify saving and publishing activityClick ‘Save’ then ‘Publish’ buttonActivity is published without issues",
+      "expected": "",
+      "raw": "TC_22Flashcard FunctionalityVerify saving and publishing activityClick ‘Save’ then ‘Publish’ buttonActivity is published without issues"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify reader launch of published activityClick ‘Launch’ from published activity view Reader shows published flashcards correctly",
+      "expected": "",
+      "raw": "TC_23Flashcard FunctionalityVerify reader launch of published activityClick ‘Launch’ from published activity view Reader shows published flashcards correctly"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify post-publish editing and republishingEdit a card > Save > Publish againReader reflects the latest edits",
+      "expected": "",
+      "raw": "TC_24Flashcard Functionality Verify post-publish editing and republishingEdit a card > Save > Publish againReader reflects the latest edits"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify content update reflects in reader after re-publishingModify content > Save > Republish activity Updated activity shows new version on reader",
+      "expected": "",
+      "raw": "TC_25Flashcard Functionality Verify content update reflects in reader after re-publishingModify content > Save > Republish activity Updated activity shows new version on reader"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify collapsing blank properties doesn't impact UICollapse blank section, observe UI alignmentNo overlap or alignment issues occur",
+      "expected": "",
+      "raw": "TC_26Flashcard Functionality Verify collapsing blank properties doesn't impact UICollapse blank section, observe UI alignmentNo overlap or alignment issues occur"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify delete icon does not obstruct content Hover over delete icon, ensure no overlap or misalignmentDelete icon does not obscure content",
+      "expected": "",
+      "raw": "TC_27Flashcard FunctionalityVerify delete icon does not obstruct content Hover over delete icon, ensure no overlap or misalignmentDelete icon does not obscure content"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify edited content is visible in readerEdit flashcard > Publish > View in readerReader reflects updated card accurately",
+      "expected": "",
+      "raw": "TC_28Flashcard FunctionalityVerify edited content is visible in readerEdit flashcard > Publish > View in readerReader reflects updated card accurately"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify validation prevents empty flashcards from being savedLeave both sides blank > Click SaveValidation error shown, save blocked",
+      "expected": "",
+      "raw": "TC_29Flashcard Functionality Verify validation prevents empty flashcards from being savedLeave both sides blank > Click SaveValidation error shown, save blocked"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify unsupported file upload handlingUpload unsupported format (e.g., .exe)Error shown, upload blocked",
+      "expected": "",
+      "raw": "TC_30Flashcard FunctionalityVerify unsupported file upload handlingUpload unsupported format (e.g., .exe)Error shown, upload blocked"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify adding large number of flashcards worksAdd flashcards repeatedly up to 50+All cards added and functional",
+      "expected": "",
+      "raw": "TC_31Flashcard Functionality Verify adding large number of flashcards worksAdd flashcards repeatedly up to 50+All cards added and functional"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify large content (image/text) doesn't break UIAdd large image or lengthy text to cardNo crash; large content handled",
+      "expected": "",
+      "raw": "TC_32Flashcard Functionality Verify large content (image/text) doesn't break UIAdd large image or lengthy text to cardNo crash; large content handled"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify keyboard accessibility of flashcard UIUse Tab and arrows to navigate all elementsAll elements are focusable and accessible",
+      "expected": "",
+      "raw": "TC_33Flashcard Functionality Verify keyboard accessibility of flashcard UIUse Tab and arrows to navigate all elementsAll elements are focusable and accessible"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify cross-browser compatibilityOpen same activity in Chrome, Edge, FirefoxNo rendering or functionality issues",
+      "expected": "",
+      "raw": "TC_34Flashcard FunctionalityVerify cross-browser compatibilityOpen same activity in Chrome, Edge, FirefoxNo rendering or functionality issues"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify undo functionality after deletionDelete flashcard > Check if ‘Undo’ appearsUndo restores deleted card",
+      "expected": "",
+      "raw": "TC_35Flashcard FunctionalityVerify undo functionality after deletionDelete flashcard > Check if ‘Undo’ appearsUndo restores deleted card"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify overlapping annotations are handledAdd both highlight and outline to same textSystem shows proper handling or prevents",
+      "expected": "",
+      "raw": "TC_36Flashcard FunctionalityVerify overlapping annotations are handledAdd both highlight and outline to same textSystem shows proper handling or prevents"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify annotations sync after editing textEdit annotated text > Save > PublishAnnotation remains valid post-edit",
+      "expected": "",
+      "raw": "TC_37Flashcard FunctionalityVerify annotations sync after editing textEdit annotated text > Save > PublishAnnotation remains valid post-edit"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify publishing when cards are blankLeave card content blank > Attempt to publishActivity should be published succesfully",
+      "expected": "",
+      "raw": "TC_38Flashcard FunctionalityVerify publishing when cards are blankLeave card content blank > Attempt to publishActivity should be published succesfully"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify in Reader side able to flip the card",
+      "expected": "Launch the activity on readerThe Card should be fliped",
+      "raw": "TC_39Flashcard FunctionalityVerify in Reader side able to flip the card 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8.Launch the activity on readerThe Card should be fliped"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify in reader able to play the audio",
+      "expected": "Launch the activity on readerThe audio should play",
+      "raw": "TC_40Flashcard FunctionalityVerify in reader able to play the audio 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8.Launch the activity on readerThe audio should play"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify in reader able to play the video",
+      "expected": "Launch the activity on readerThe video should play",
+      "raw": "TC_41Flashcard FunctionalityVerify in reader able to play the video 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8.Launch the activity on readerThe video should play"
+    }
+  ]
+}

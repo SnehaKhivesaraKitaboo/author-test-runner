@@ -1,0 +1,24 @@
+{
+  "component": "Image Labeling",
+  "slug": "image-labeling",
+  "spec": "35-image-labeling-deep.spec.ts",
+  "qcSource": "Author Test Cases - Image labeling.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires OS file picker, runtime label creation/drag, Preview/Reader, persistence, or accessibility flows."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "deferred", "reason": "Upload images of varying dimensions without distortion/cropping — OS file picker + server-side image handling. Component+image-area placement is asserted in 'TC_01/TC_12 — Component is placed successfully with its image area'." },
+    { "qc": "TC_02", "status": "deferred", "reason": "Validate supported (.jpg/.svg/.png) vs unsupported extensions — OS file picker + server-side validation" },
+    { "qc": "TC_03", "status": "deferred", "reason": "Add up to 20 labels and restrict the 21st — runtime image-area clicks (scope.addLabel, maxCounter=20). Label-container presence + source max are asserted in 'TC_03 — Label container exists and respects the 20-label source maximum'." },
+    { "qc": "TC_04", "status": "automated", "it": "TC_04 — Text & Number label-type radios are present; Numbers is the default", "selectors": ["#with-Text", "#with-Number"], "note": "type radios + default automated; per-type pin rendering needs runtime label creation (deferred)" },
+    { "qc": "TC_05", "status": "deferred", "reason": "Settings panel stays fixed/visible during component scroll — visual/layout assertion" },
+    { "qc": "TC_06", "status": "automated", "it": "TC_06 — \"Show Instruction\" toggle shows/hides the instruction on the component", "selectors": ["#instr-visibility", ".instruction-text.sc-instr-holder"] },
+    { "qc": "TC_07", "status": "automated", "it": "TC_07 — \"Show Arrow\" toggle is present (text or number variant)", "selectors": ["#show-arrow-checkbox", "#show-arrow-checkbox-properties"], "note": "control presence automated; arrow appearing on a pin is a runtime visual (deferred)" },
+    { "qc": "TC_08", "status": "automated", "it": "TC_08 — \"Show Header\" toggle shows/hides the header on the component", "selectors": ["#header-visibility", ".header-text.sc-intro-holder"] },
+    { "qc": "TC_09", "status": "automated", "it": "TC_09 — Style panel is present with selectable styles", "selectors": ["stylepanel"], "note": "panel presence automated; the immediate 'applied' visual is a render check (deferred)" },
+    { "qc": "TC_10", "status": "automated", "it": "TC_10 — Tags manager is present and accepts multiple tags", "selectors": [".tagsContainer", "tag-manager"] },
+    { "qc": "TC_11", "status": "automated", "it": "TC_11 — Header / Instruction / Question / Caption accept special characters", "selectors": ["#introductionInput", "#instructionInput", "#questionInput", "#captionInput"] },
+    { "qc": "TC_12", "status": "deferred", "reason": "Replace image with smaller/larger one renders without layout issues — OS file picker + visual. Component+image-area placement is asserted in 'TC_01/TC_12 — Component is placed successfully with its image area'." }
+  ]
+}

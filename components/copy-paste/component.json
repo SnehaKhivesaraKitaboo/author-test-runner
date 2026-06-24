@@ -1,0 +1,27 @@
+{
+  "component": "Copy and Paste",
+  "slug": "copy-paste",
+  "dataType": "platform-copy-paste",
+  "directive": "n/a (cross-component platform feature)",
+  "module": "platform-feature (operates on dropped components in a Generic Step column)",
+  "spec": "45-copy-paste-deep.spec.ts",
+  "qcSource": "Author Test Cases - Copy and Paste.pdf",
+  "qcCount": 18,
+  "automated": 11,
+  "deferred": 7,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/editor/ngcontroller.js",
+    "closify/KITABOO_Authoring/templates/generic-step/generic-step.html",
+    "closify/KITABOO_Authoring/templates/generic-step/scripts/generic-step-directive.js",
+    "closify/KITABOO_Authoring/editor/contenteditable-ng-model-directive.js"
+  ],
+  "architectureNotes": [
+    "Copy/Paste is NOT its own widget — it operates on existing dropped components. The reference siblings (extended-response, text) supply the drop + step helpers reused here; the copy source is a Fill in the Blank widget in a Generic Step column.",
+    "Per-component heading toolbar (rendered by findTag): .duplicate-widget-icon.icon-Page-duplication-01 (componentDuplicate, always present) and .copy-widget-icon.icon-Copy-Icon (componentCopy). The ORIGINAL drop template (ngcontroller.js ~2341) renders only duplicate + delete, so the copy icon is build-dependent — helpers degrade gracefully when absent.",
+    "Clipboard is localStorage-backed: componentCopy clears localStorage then writes copiedComponent / targetDataType / copiedTemplates / isDroppable. Copy → paste round trips are driveable (NOT OS clipboard).",
+    "Paste target is the empty Generic Step slot (.generic-step-empty-droppable-text): hover sets questions.showPasteHere → renders .icon-Paste-Icon + 'Paste Here'; ng-click=\"pastecomp($event)\" → componentPaste + onPasteDropComplete.",
+    "Invalid paste targets (TOC panel / plain Instructions canvas) have no pastecomp binding, so a copied component cannot be pasted there (TC_16).",
+    "Success/status toast renders into '.bb-alert' (span.textContent + span.alert-icon) with class 'alert-success'. componentCopy => 'The component has been copied successfully.'; componentDuplicate => 'Component duplicated successfully.'",
+    "Save/Publish, Reader (CLP) verification, cross-program parity (ELA/WL/MATH), undo, persistence-after-republish, OS-clipboard Ctrl+C/V, and a11y are deferred (flows outside the authoring DOM)."
+  ]
+}

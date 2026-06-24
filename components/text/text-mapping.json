@@ -1,0 +1,61 @@
+{
+  "component": "Text",
+  "slug": "text",
+  "spec": "07-text-deep.spec.ts",
+  "qcSource": "Author Test Cases - Text.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires login/activity bootstrap, Offline Step, file pickers, math render, Preview/Reader/Publish, or persistence flows."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "deferred", "reason": "Launch Studio URL + listing page — environment bootstrap handled by cy.openAuthoringTool, not a component assertion" },
+    { "qc": "TC_02", "status": "deferred", "reason": "Create math activity (basic info) — activity-creation flow outside authoring DOM" },
+    { "qc": "TC_03", "status": "deferred", "reason": "Start authoring redirect — activity-creation flow outside authoring DOM" },
+    { "qc": "TC_04", "status": "deferred", "reason": "Add Generic Step — step-creation flow; Text is a canvas element, not a Generic Step widget" },
+    { "qc": "TC_05", "status": "deferred", "reason": "Enter Step Title — step-wizard flow outside the Text element" },
+    { "qc": "TC_06", "status": "deferred", "reason": "Cancel button in step creation — step-wizard flow" },
+    { "qc": "TC_07", "status": "deferred", "reason": "Change Step button — step-wizard flow" },
+    { "qc": "TC_08", "status": "deferred", "reason": "Enter Instructions for Students — page-level field, not the Text element" },
+    { "qc": "TC_09", "status": "deferred", "reason": "Enter Instructions for Teachers — page-level field, not the Text element" },
+
+    { "qc": "TC_10", "status": "automated", "it": "TC_10/TC_12/TC_13 — Text component is placed successfully in the layout", "selectors": [".customClass[data-type=\"paragraph\"]"] },
+    { "qc": "TC_11", "status": "deferred", "reason": "Drag Text into Offline Step — Offline Step type not provisioned in this harness" },
+    { "qc": "TC_12", "status": "automated", "it": "TC_10/TC_12/TC_13 — Text component is placed successfully in the layout", "note": "Student Instructions is the canvas page used for the element drop" },
+    { "qc": "TC_13", "status": "automated", "it": "TC_10/TC_12/TC_13 — Text component is placed successfully in the layout", "note": "Teacher Instructions shares the same element-drop mechanism" },
+
+    { "qc": "TC_14", "status": "automated", "it": "TC_14 — \"Default\" style exists and is the active default", "selectors": ["#defaultText .styleBackground.active-style"] },
+    { "qc": "TC_15", "status": "automated", "it": "TC_15 — \"Block Text\" style is selectable", "selectors": ["#blockTextParagraph .styleBackground"] },
+    { "qc": "TC_16", "status": "automated", "it": "TC_16 — \"Quote\" (blockquote) style is selectable", "selectors": ["#blockquote .styleBackground"] },
+    { "qc": "TC_17", "status": "automated", "it": "TC_17 — \"Drop Cap\" style is selectable", "selectors": ["#dropCapflag .styleBackground"] },
+    { "qc": "TC_18", "status": "automated", "it": "TC_18 — \"Emphasis Text\" style is selectable", "selectors": ["#emphasisText .styleBackground"] },
+    { "qc": "TC_19", "status": "automated", "it": "TC_19 — \"Button Text\" style is selectable", "selectors": ["#buttontext .styleBackground"] },
+    { "qc": "TC_20", "status": "automated", "it": "TC_20 — Only the source-defined style set is offered (no invalid style)", "note": "asserts the style list is constrained to the supported names" },
+
+    { "qc": "TC_21", "status": "automated", "it": "TC_21 — Left-align control is present in the rich-text toolbar", "selectors": [".editor-list #align-left"], "note": "graceful when toolbar overlay not mounted" },
+    { "qc": "TC_22", "status": "automated", "it": "TC_22 — Right-align control is present in the rich-text toolbar", "selectors": [".editor-list #align-right"], "note": "graceful when toolbar overlay not mounted" },
+    { "qc": "TC_23", "status": "automated", "it": "TC_23 — Body accepts entered text (Insert Text content)", "selectors": [".paragraph-container.editables"] },
+    { "qc": "TC_24", "status": "automated", "it": "TC_24 — Empty body retains its empty/placeholder state (no crash)", "note": "empty-input error message is a Preview/Publish check (deferred)" },
+
+    { "qc": "TC_25", "status": "automated", "it": "TC_25 — \"Upload Image\" control is present in settings", "selectors": ["#inline-image"], "note": "control presence automated; OS file picker deferred" },
+    { "qc": "TC_26", "status": "deferred", "reason": "Upload Image unsupported format (.txt) — OS file picker + server-side validation" },
+
+    { "qc": "TC_27", "status": "automated", "it": "TC_27 — Body preserves a line break entered in edit mode", "selectors": [".paragraph-container.editables br"] },
+    { "qc": "TC_28", "status": "deferred", "reason": "Excessive (10+) line breaks handling — visual/limit assertion best seen in Preview" },
+
+    { "qc": "TC_29", "status": "automated", "it": "TC_29/TC_30 — Math equation control is present in the rich-text toolbar", "selectors": [".editor-list #equation"], "note": "render verified in Preview (deferred)" },
+    { "qc": "TC_30", "status": "automated", "it": "TC_29/TC_30 — Math equation control is present in the rich-text toolbar", "note": "invalid-syntax handling verified in Preview (deferred)" },
+
+    { "qc": "TC_31", "status": "deferred", "reason": "Publish activity with Text — Publish flow outside authoring DOM" },
+    { "qc": "TC_32", "status": "deferred", "reason": "Launch published activity in Reader — Reader flow" },
+    { "qc": "TC_33", "status": "deferred", "reason": "Edit + republish reflected in Reader — Publish/Reader flow" },
+    { "qc": "TC_34", "status": "deferred", "reason": "No data loss after republish + reload — persistence-after-reload" },
+    { "qc": "TC_35", "status": "deferred", "reason": "Preview before publishing — Preview flow" },
+    { "qc": "TC_36", "status": "deferred", "reason": "Publish with missing metadata blocked — Publish validation flow" },
+    { "qc": "TC_37", "status": "deferred", "reason": "Preview of text with all applied styles — Preview rendering" },
+
+    { "qc": "TC_38", "status": "automated", "it": "TC_38 — \"Reset changes\" button is present", "selectors": [".applyToAllResetButton"], "note": "post-reset state verification is runtime (deferred)" },
+    { "qc": "TC_39", "status": "automated", "it": "TC_39 — \"Apply to all\" button is present", "selectors": [".applyToAllButton"], "note": "multi-component propagation verification is runtime (deferred)" },
+
+    { "qc": "TC_40", "status": "deferred", "reason": "Publish Text with no content (empty render/hidden) — Publish flow" }
+  ]
+}

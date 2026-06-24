@@ -1,0 +1,31 @@
+{
+  "component": "Carousel",
+  "slug": "carousel",
+  "dataType": "slideshow",
+  "directive": "slide-show-template",
+  "widgetName": "Carousel",
+  "widgetNameAlt": "Slideshow",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "28-carousel-deep.spec.ts",
+  "qcSource": "Author Test Cases - Carousel.pdf",
+  "qcCount": 101,
+  "automated": 33,
+  "deferred": 68,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/slideshow/slideshow.html",
+    "closify/KITABOO_Authoring/templates/slideshow/common-template-settings-panel.html",
+    "closify/KITABOO_Authoring/templates/slideshow/default/slideshow.json",
+    "closify/KITABOO_Authoring/templates/slideshow/scripts/slideshow-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Carousel is an ELEMENT (catalog name 'Carousel'/'Slideshow', dataType 'slideshow'), NOT an assessment widget. 'slideshow' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Carousel'), not into a Generic Step column. config.js exposes the widget under both 'Carousel' and 'Slideshow'; cy.dropCarouselIntoCanvas prefers 'Carousel' and falls back to 'Slideshow'.",
+    "Canvas wrapper is .component-holder.slideshow[slide-show-template]. Each slide is a .slideshowContainer (ng-repeat over fieldData.slides). The default JSON ships TWO slides.",
+    "Slide-count limits (directive slideshow-directive.js): max_slides = 12 (Add Slide gets btn-disabled at length >= 12), min_slides = 2 (Delete Slide gets btn-disabled at length <= 2). These are DOM-assertable on the .add-slide / .delete-slide footer labels.",
+    "Editable bodies are contenteditable (ng-model) — set via cy.setContentEditableOn, never cy.type(): page header .sc-intro, page instruction .sc-instr, per-slide title .slide-title, per-slide text .slideshowPara, caption .template-caption.",
+    "Settings panel id is #Slideshow-settings-panel with title 'Carousel' and icon .icon-Slideshow. The Settings form is section-gated by commonrightpanel == 'switchSettings'; visibility/playback toggles use stable ids (#autoslide, #header-visibility, #instr-visibility, #SlideTitle-visibility, #pragraph-visibility, #caption-visibility).",
+    "Layout radios #vertical-slideshow / #horizontal-slideshow (ng-model verticalSlide). Media-type radios image/video/text (name='slide_Media', ng-model mediaToUpload). Outline radios value='outline' (No Outline) / value='outlineBg' (Outline). Action-asset colour via .colorPickerInputBox + <settingcolorpicker> dropdown. Auto Play exposes a 'Slide duration' number input (.slideshow-pause-duration) only when autoSlide is on.",
+    "This is an image/media-heavy widget. The majority of QC cases assert rendered media, rich-text formatting (bold/italic/underline/colour/bullets/numbering/equations via a floating editor overlay), runtime autoplay/navigation, Preview/Reader playback, Publish lifecycle, persistence-after-reload, or accessibility/contrast — all outside the authoring DOM and therefore deferred (it.skip with reasons). Image/video upload requires the OS file picker. Automated coverage targets the authoring-DOM surface: drop, settings panel, visibility/layout/media/outline controls, add/reorder/delete slides + count limits, caption/title editing, and security."
+  ]
+}

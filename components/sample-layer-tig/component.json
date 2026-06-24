@@ -1,0 +1,32 @@
+{
+  "component": "Sample Layer / TIG Panel",
+  "slug": "sample-layer-tig",
+  "dataType": "layer-2",
+  "qcDataTypeClaim": "sample-layer",
+  "dataTypeNote": "QC catalog claims dataType 'sample-layer'; config.js (verified) registers { name:'Sample Layer', dataType:'layer-2' }. 'layer-2' is the authoritative catalog dataType used for the drop.",
+  "directive": "sample-layer-template",
+  "module": "layer-container (dropped into Generic Step column; GenericStep[\"layer-2\"]=true)",
+  "spec": "40-sample-layer-tig-deep.spec.ts",
+  "qcSource": "Author Test Cases - Sample Layer _TIG Panel.pdf",
+  "qcCount": 108,
+  "automated": 15,
+  "deferred": 93,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/sampleLayer/sample-layer.html",
+    "closify/KITABOO_Authoring/templates/sampleLayer/sample-layer-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/sampleLayer/default/sampleLayer.json",
+    "closify/KITABOO_Authoring/templates/sampleLayer/scripts/sample-layer-directive.js",
+    "closify/KITABOO_Authoring/templates/sampleLayer/scripts/sample-layer-preview1.js",
+    "closify/KITABOO_Authoring/templates/sampleLayer/styles/sample-layer-template.css"
+  ],
+  "architectureNotes": [
+    "VERIFIED dataType is 'layer-2' (config.js name 'Sample Layer'); the QC catalog's 'sample-layer' is not the catalog dataType.",
+    "Sample Layer is a LAYER CONTAINER, not an assessment widget. It is dropped into a Generic Step column (config GenericStep['layer-2']=true), like a layout. It is intentionally NOT added to support/module-setup.ts ASSESSMENT_DATA_TYPES (no files outside the component folder were modified); the drop is performed explicitly via cy.dropWidgetIntoGenericStep('Sample Layer', col, 'layer-2').",
+    "Canvas DOM: .sample-layer-parent-container > .sample-main-layer banner with .tagBlockName spans rendered from tagDataCollection (tag 'Sample Answers', tagColor #C91CA5, default 'On') → banner text 'Sample Answers: On'. The directive stamps data-sampletaginfo='{\"Sample_Answers\":\"On\"}'.",
+    "The .sample-layer-container has a 1px solid #C91CA5 (pink) border in authoring (sample-layer-template.css) — DOM-assertable.",
+    "Settings panel id is #sample-layer-template-setting (title 'Sample Layer'); tag radios are values 'Off'/'On' bound to currSettings.TagClolorData[i].defaultvalue, with 'Off' ng-disabled.",
+    "Pink colouring of the actual sample ANSWERS (FIB/ER/MCQ/table/math text), the TIG (teacher instructional guide) panel, scroll bars, and outline-hiding are applied by sample-layer-preview1.js at Reader/CLP runtime — those, plus Studio activity-creation, Publish, Saltire teacher review, copy/paste lifecycle, persistence-after-reload and a11y are deferred.",
+    "Not yet live-verified against a running authoring instance — selectors are source-derived."
+  ]
+}

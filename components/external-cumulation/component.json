@@ -1,0 +1,24 @@
+{
+  "component": "External Cumulation",
+  "slug": "external-cumulation",
+  "dataType": "external-cumulation",
+  "module": "shared Asset Library / Import From Library (cross-activity step re-use)",
+  "spec": "49-external-cumulation-deep.spec.ts",
+  "qcSource": "Author Test Cases - External Cumulation.pdf",
+  "qcCount": 47,
+  "automated": 12,
+  "deferred": 35,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/editor/ngcontroller.js"
+  ],
+  "architectureNotes": [
+    "There is NO standalone 'external cumulation enable toggle', 'external lesson linkage', or 'display-rule settings' widget in the authoring DOM. Grepping config/config.js and index.html for 'cumulation' returns no UI (only math-library 'accumulate' tokens).",
+    "External Cumulation has TWO facets: (1) AUTHORING — importing a step from a DIFFERENT activity via the shared Asset Library / 'Import From Library' flow (#asset-library-popup); (2) RUNTIME — cross-lesson SCORM data patching between external lessons (activity 6.3 ↔ 6.5), incl. the 'SCORM API failed' popup.",
+    "Only facet (1) is DOM-assertable. It uses the same #asset-library-popup modal as Internal Cumulation, but the author selects a cross-activity source.",
+    "The 'Import From Library' TOC menu item is gated by ng-show=\"getProgramName()\" — flag-gated; spec logs + returns gracefully when absent.",
+    "Library modal: search input[ng-model=assetLibInput]; activity rows tr[ng-repeat=(key, value) in assetLibraryList] (.selected-activity); preview .step-block (.selected); LOS chips .los-chip (.selectedLos / .disableInsert); Insert ng-click=addActivityFromLibrary() enabled only when an activity + at least one LOS are selected.",
+    "Facet (2) — cross-lesson SCORM patching (6.3↔6.5, first/repeat attempts, In-Progress, teacher report, SCORM API failure) — is a Reader/SCORM RUNTIME behaviour and is DEFERRED.",
+    "Automatable authoring surface: import entry presence (flag-gated), library modal open, cross-activity search (exact/partial/no-match), listing metadata, step+LOS selection insert-gating, cancel, filters, and security."
+  ]
+}

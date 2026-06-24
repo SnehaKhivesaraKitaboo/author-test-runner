@@ -1,0 +1,548 @@
+{
+  "component": "Custom Center",
+  "slug": "custom-center",
+  "dataType": "layout-6",
+  "source": "Author Test Cases - Custom Center.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Custom Center.pdf",
+  "pages": 10,
+  "extractedCount": 67,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Custom Center LayoutUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Custom Center Layout FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03Custom Center Layout FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Custom Center Layout FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05Custom Center Layout FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Custom Center Layout Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Custom Center Layout Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Custom Center Layout FunctionalityVerify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Custom Center Layout FunctionalityVerify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify without entering \"Instructions for Students and teacher\" able to create steps",
+      "expected": "Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity",
+      "raw": "TC_10Custom Center Layout Functionality Verify without entering \"Instructions for Students and teacher\" able to create steps 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" Without Entering Any Datas in Both \" Instructions for Student and Teacher \" User should still able Work in Activity"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify that all the Layouts, Elements and widgets are enabled and dragged",
+      "expected": "Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets",
+      "raw": "TC_11Custom Center Layout Functionality Verify that all the Layouts, Elements and widgets are enabled and dragged 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6 Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Click all the Layouts, Elements and widgets are Draggable User Should able to Work on All Layouts, Elements and widgets"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify if user is able to all elements inside the Custom center columns",
+      "expected": "Drag all elements inside the layoutUser should add all elements",
+      "raw": "TC_12Custom Center Layout Functionality Verify if user is able to all elements inside the Custom center columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag all elements inside the layoutUser should add all elements"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify if user is able to all widgets inside the Custom center columns",
+      "expected": "Drag all widgets inside the layoutUser should add all Widgets",
+      "raw": "TC_13Custom Center Layout Functionality Verify if user is able to all widgets inside the Custom center columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag all widgets inside the layoutUser should add all Widgets"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify if user is able to add all layouts inside the Custom center columns",
+      "expected": "Drag all layouts inside the layoutUser shouldn't add layouts",
+      "raw": "TC_14Custom Center Layout Functionality Verify if user is able to add all layouts inside the Custom center columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag all layouts inside the layoutUser shouldn't add layouts"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify if user ia able to add multiple elements in single column",
+      "expected": "Drag multiple elements inside the single columnUser should add multiple elements inside the column",
+      "raw": "TC_15Custom Center Layout Functionality Verify if user ia able to add multiple elements in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple elements inside the single columnUser should add multiple elements inside the column"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify if user ia able to add multiple widgets in single column",
+      "expected": "Drag multiple widgets inside the single columnUser should add multiple widgets inside the column",
+      "raw": "TC_16Custom Center Layout FunctionalityVerify if user ia able to add multiple widgets in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets inside the single columnUser should add multiple widgets inside the column"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multiple elements and widgets in single column",
+      "expected": "Drag multiple widgets and elements inside the single column User should add multiple elements and widgets inside the column",
+      "raw": "TC_17Custom Center Layout Functionality Verify if user is able to add multiple elements and widgets in single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the single column User should add multiple elements and widgets inside the column"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multiple elements and widgets in Custom center layout",
+      "expected": "Drag multiple widgets and elements inside the Custom center layout User should add multiple elements widgets inside the Custom center layout",
+      "raw": "TC_18Custom Center Layout Functionality Verify if user is able to add multiple elements and widgets in Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layout User should add multiple elements widgets inside the Custom center layout"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multipart inside the Custom center layout columns",
+      "expected": "Drag multipart component inside the Custom center layout User should add multipart component inside the Custom center layout",
+      "raw": "TC_19Custom Center Layout Functionality Verify if user is able to add multipart inside the Custom center layout columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multipart component inside the Custom center layout User should add multipart component inside the Custom center layout"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify if user is able to add multipart question widget multiple times in the single column",
+      "expected": "Drag multipart component multiple times inside the Custom center layout User should add multiple multipart component inside the Custom center layout",
+      "raw": "TC_20Custom Center Layout Functionality Verify if user is able to add multipart question widget multiple times in the single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multipart component multiple times inside the Custom center layout User should add multiple multipart component inside the Custom center layout"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify if user is able to add same element/ widgets multiple times inside the single column",
+      "expected": "Drag Some Elements and widgets multiple times in the single column User should add same elements /widgets multiple times",
+      "raw": "TC_21Custom Center Layout Functionality Verify if user is able to add same element/ widgets multiple times inside the single column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Drag Some Elements and widgets multiple times in the single column User should add same elements /widgets multiple times"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify if user is able to add same element/ widgets multiple times inside the all column",
+      "expected": "Drag Some Elements and widgets multiple times in the all column User should add same elements /widgets multiple times",
+      "raw": "TC_22Custom Center Layout Functionality Verify if user is able to add same element/ widgets multiple times inside the all column 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Drag Some Elements and widgets multiple times in the all column User should add same elements /widgets multiple times"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI",
+      "description": "Verify if all the elements and widgets are fitting properly inside the columns",
+      "expected": "Drag Some Elements and widgets multiple times in the all columnThe Components should fit properly inside the layouts",
+      "raw": "TC_23Custom Center Layout Functionality and UI Verify if all the elements and widgets are fitting properly inside the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Drag Some Elements and widgets multiple times in the all columnThe Components should fit properly inside the layouts"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the Custom center layout",
+      "expected": "Delete Custom center LayoutLayout should be deleted successfully",
+      "raw": "TC_24Custom Center Layout FunctionalityVerify if user is able to delete the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Custom center LayoutLayout should be deleted successfully"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete single column inside the Custom center layout",
+      "expected": "Delete Single Cloumn Insdie the Custom center LayoutSingle column shouldn't deleted",
+      "raw": "TC_25Custom Center Layout Functionality Verify if user is able to delete single column inside the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Drag Some Elements and widgets multiple times in the all column 9.Delete Single Cloumn Insdie the Custom center LayoutSingle column shouldn't deleted"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify if user is able to add components in alternate columns",
+      "expected": "Add Components in Alternate ColumnsUser should add components in alternate columns",
+      "raw": "TC_26Custom Center Layout FunctionalityVerify if user is able to add components in alternate columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Components in Alternate ColumnsUser should add components in alternate columns"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify if user is able to preview the Custom center layouts",
+      "expected": "Click Preview button to preview the ActivityThe preview should be loaded successfully",
+      "raw": "TC_27Custom Center Layout FunctionalityVerify if user is able to preview the Custom center layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Enter the Minimum Value as 10% 9.Click Save button 10.Click Preview button to preview the ActivityThe preview should be loaded successfully"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify that Custom center layout is interactable in preview",
+      "expected": "Check Components added in Custom center layouts are interactable in Preview The components added inside Custom center layouts hould be interactable",
+      "raw": "TC_28Custom Center Layout FunctionalityVerify that Custom center layout is interactable in preview 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Enter the Minimum Value as 10% 9.Click Preview button to preview the Activity 10.Check Components added in Custom center layouts are interactable in Preview The components added inside Custom center layouts hould be interactable"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the components inside the Custom center layout",
+      "expected": "Delete the Components inside the Custom center layoutUser should delete the components successfully",
+      "raw": "TC_29Custom Center Layout Functionality Verify if user is able to delete the components inside the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Delete the Components inside the Custom center layoutUser should delete the components successfully"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify if user is able to multiple Custom center layouts inside the generic step",
+      "expected": "Add Custom center layout User should add multiple Custom center layouts successfully",
+      "raw": "TC_30Custom Center Layout Functionality Verify if user is able to multiple Custom center layouts inside the generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout User should add multiple Custom center layouts successfully"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Custom center layout outside the Generic step",
+      "expected": "Add Custom center layout outside the Generic StepUser shouldn't add layouts",
+      "raw": "TC_31Custom Center Layout Functionality Verify if user is able to add Custom center layout outside the Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Custom center layout outside the Generic StepUser shouldn't add layouts"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify if user is able to change the background color of the Custom center layout",
+      "expected": "Change the background color of the Custom center layout User shouldn't change the background color of the Custom center layout",
+      "raw": "TC_32Custom Center Layout Functionality Verify if user is able to change the background color of the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Change the background color of the Custom center layout User shouldn't change the background color of the Custom center layout"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when relaunching the activity",
+      "expected": "Check any Data loss in a layout while Relauching the Activity Data's shouldn't be lost",
+      "raw": "TC_33Custom Center Layout Functionality Verify if user is facing any data loss in layout when relaunching the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Check any Data loss in a layout while Relauching the Activity Data's shouldn't be lost"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when previewing the activity",
+      "expected": "Check any Data loss in a layout while Previewing the Activity Data's shouldn't loss in author preview mode",
+      "raw": "TC_34Custom Center Layout Functionality Verify if user is facing any data loss in layout when previewing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Check any Data loss in a layout while Previewing the Activity Data's shouldn't loss in author preview mode"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss while republishing the activity",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing",
+      "raw": "TC_35Custom Center Layout Functionality Verify if user is facing any data loss while republishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify if user is facing any data loss in layout when launching the activity after publishing",
+      "expected": "Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing and launching",
+      "raw": "TC_36Custom Center Layout Functionality Verify if user is facing any data loss in layout when launching the activity after publishing 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Check any Data loss in a layout while Republishing the Activity Data's shouldn't loss when republishing and launching"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify if the components are collapsed after publishing the activity",
+      "expected": "Check any Components get collaped After Publishing the ActivityThe Data's inside the layout should display properly",
+      "raw": "TC_37Custom Center Layout Functionality Verify if the components are collapsed after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Check any Components get collaped After Publishing the ActivityThe Data's inside the layout should display properly"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Large tables(20*20) inside the Custom center layout",
+      "expected": "Add Large Table (20*20) inside the Custom center LayoutThe Table should display properly",
+      "raw": "TC_38Custom Center Layout Functionality Verify if user is able to add Large tables(20*20) inside the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Large Table (20*20) inside the Custom center LayoutThe Table should display properly"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Custom center layout",
+      "expected": "Add Media in the Custom center LayoutUser should media inside the Custom center layout",
+      "raw": "TC_39Custom Center Layout FunctionalityVerify if user is able to add media in Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Media in the Custom center LayoutUser should media inside the Custom center layout"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Math equations inside the Custom center layout",
+      "expected": "Add Math Equations inside the Custom center Layout User should add math equations inside the Custom center layout",
+      "raw": "TC_40Custom Center Layout Functionality Verify if user is able to add Math equations inside the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Math Equations inside the Custom center Layout User should add math equations inside the Custom center layout"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify if user is able to add chinese and spanish languages",
+      "expected": "Check Able to Add Chinese and Spanish Languages User should add spanish and chinese languages inside the Custom center layout",
+      "raw": "TC_41Custom Center Layout FunctionalityVerify if user is able to add chinese and spanish languages 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Add Math Equations inside the Custom center Layout 9.Check Able to Add Chinese and Spanish Languages User should add spanish and chinese languages inside the Custom center layout"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify if user is able to launch the Custom center layout activity on reader",
+      "expected": "Publish the Activity to Launch it in the ReaderThe activity should be launched successfully",
+      "raw": "TC_42Custom Center Layout Functionality Verify if user is able to launch the Custom center layout activity on reader 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity and Close it 9.Publish the Activity to Launch it in the ReaderThe activity should be launched successfully"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Custom center layout is interactable",
+      "expected": "Check Components Added inside the Custom center layouts are interactableThe components should interactable",
+      "raw": "TC_43Custom Center Layout Functionality Verify that in reader, components added inside the Custom center layout is interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Custom center layouts are interactableThe components should interactable"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Custom center layout are collapsed",
+      "expected": "Check Components Added inside the Custom center layouts are CollapsedThe components should display properly",
+      "raw": "TC_44Custom Center Layout Functionality Verify that in reader, components added inside the Custom center layout are collapsed 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Custom center layouts are CollapsedThe components should display properly"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify that in reader, components added inside the Custom center layout are aligned properly",
+      "expected": "Check Components Added inside the Custom center layouts are Aligned ProperlyThe components should fit properly inside the layout",
+      "raw": "TC_45Custom Center Layout Functionality Verify that in reader, components added inside the Custom center layout are aligned properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Components Added inside the Custom center layouts are Aligned ProperlyThe components should fit properly inside the layout"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify that all the widgets are interactable",
+      "expected": "Check All the Widgets inside the Custom center Layout are interactableThe Widgets should be interactable",
+      "raw": "TC_46Custom Center Layout FunctionalityVerify that all the widgets are interactable 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check All the Widgets inside the Custom center Layout are interactableThe Widgets should be interactable"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify if all elements are displaying properly inside the Custom center layout",
+      "expected": "Check All the Elements inside the Custom center Layout are Displaying properlyThe components should display properly",
+      "raw": "TC_47Custom Center Layout Functionality Verify if all elements are displaying properly inside the Custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check All the Elements inside the Custom center Layout are Displaying properlyThe components should display properly"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify that Multipart component is displaying properly",
+      "expected": "Check Multipart Components are Displaying properlyThe Multipart should display properly",
+      "raw": "TC_48Custom Center Layout FunctionalityVerify that Multipart component is displaying properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Multipart Components are Displaying properlyThe Multipart should display properly"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify that user is able to submit the activity",
+      "expected": "Submit the ActivityThe activity should be submitted successfully",
+      "raw": "TC_49Custom Center Layout FunctionalityVerify that user is able to submit the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the ActivityThe activity should be submitted successfully"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity before submission",
+      "expected": "Check Given Data's are gettting Patched upon relaunching the activity before submissionThe data's should get patched successfully",
+      "raw": "TC_50Custom Center Layout Functionality Verify that the data's are getting patched upon relaunching the activity before submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Check Given Data's are gettting Patched upon relaunching the activity before submissionThe data's should get patched succe"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify that the data's are getting patched upon relaunching the activity after submission",
+      "expected": "Check Given Data's are gettting Patched upon relaunching the activity After submissionThe data's should get patched successfully",
+      "raw": "TC_51Custom Center Layout Functionality Verify that the data's are getting patched upon relaunching the activity after submission 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Check Given Data's are gettting Patched upon relaunching the activity After submissionThe data's should get patched success"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify that the student is able to access the activity",
+      "expected": "Student is able to Access the ActivityStudents should access the activity",
+      "raw": "TC_52Custom Center Layout FunctionalityVerify that the student is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Student is able to Access the ActivityStudents should access the activity"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify that the Teacher is able to access the activity",
+      "expected": "Teacher is able to Access the ActivityTeachers should access the activity",
+      "raw": "TC_53Custom Center Layout FunctionalityVerify that the Teacher is able to access the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Submit the Activity 11.Teacher is able to Access the ActivityTeachers should access the activity"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify that the Custom center layout outline is displaying in CLP",
+      "expected": "Custom center layout Outline Should be Displaying in CLPThe outline should display",
+      "raw": "TC_54Custom Center Layout Functionality Verify that the Custom center layout outline is displaying in CLP 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Custom center layout Outline Should be Displaying in CLPThe outline should display"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify that the Custom center layout separtor line is displaying between the columns",
+      "expected": "Custom center layout Separtor line Should be Displaying in btw the ColumnsThe separator line shouldn't display",
+      "raw": "TC_55Custom Center Layout Functionality Verify that the Custom center layout separtor line is displaying between the columns 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Custom center layout Separtor line Should be Displaying in btw the ColumnsThe separator line shouldn't display"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify that user is able to refresh the activity",
+      "expected": "Refersh the ActivityUser should refresh the activity",
+      "raw": "TC_56Custom Center Layout FunctionalityVerify that user is able to refresh the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Refersh the ActivityUser should refresh the activity"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify that data is cleared while refreshing the activity",
+      "expected": "",
+      "raw": "TC_57Custom Center Layout FunctionalityVerify that data is cleared while refreshing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Entered Data is Cleared while Refershing the ActivityThe data's should be cleared when refreshing."
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify that the Custom center columns aligned are not collapsed while refreshing",
+      "expected": "Check Custom center layout Columns are Aligned and not Collapsed while RefershingThe data's should display properly",
+      "raw": "TC_58Custom Center Layout Functionality Verify that the Custom center columns aligned are not collapsed while refreshing 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Check Custom center layout Columns are Aligned and not Collapsed while RefershingThe data's should display properly"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify that user is able to edit the published activity",
+      "expected": "Try to Edit the Published Activity The activity should be editable",
+      "raw": "TC_59Custom Center Layout FunctionalityVerify that user is able to edit the published activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Try to Edit the Published Activity The activity should be editable"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify if user is able to delete the layout after publishing the activity",
+      "expected": "Try to Delete the Layout After Published the Activity The Layouts should be editable",
+      "raw": "TC_60Custom Center Layout Functionality Verify if user is able to delete the layout after publishing the activity 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Try to Delete the Layout After Published the Activity The Layouts should be editable"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify if user is able to add new Custom center layout inside the same Genneric step",
+      "expected": "Relaunch the the Activity in Author and Add New Custom center layout inside the Same Generic StepUser should add new Custom center layout",
+      "raw": "TC_61Custom Center Layout Functionality Verify if user is able to add new Custom center layout inside the same Genneric step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8.Save the Activity 9.Publish the Activity and Launch it in the Reader 10.Relaunch the the Activity in Author and Add New Custom center layout inside the Same Generic StepUser should add new Custom center layout"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify if user is able to add other layouts inside the custom center layout",
+      "expected": "Drag other layout inside the layoutUser shouldn't add other layouts inside the layouts",
+      "raw": "TC_62Custom Center Layout Functionality Verify if user is able to add other layouts inside the custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag other layout inside the layoutUser shouldn't add other layouts inside the layouts"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify if user is able to add other layouts below /above the custom center layout",
+      "expected": "Drag multiple widgets and elements inside the Custom center layoutUser should add new layouts",
+      "raw": "TC_63Custom Center Layout Functionality Verify if user is able to add other layouts below /above the custom center layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layoutUser should add new layouts"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- Audio",
+      "expected": "Drag multiple widgets and elements inside the Custom center layoutUser should media -audio inside the Right layout",
+      "raw": "TC_64Custom Center Layout FunctionalityVerify if user is able to add media in Right layout- Audio 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layoutUser should media -audio inside the Right layout"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- video",
+      "expected": "Drag multiple widgets and elements inside the Custom center layoutUser should media -video inside the Right layout",
+      "raw": "TC_65Custom Center Layout FunctionalityVerify if user is able to add media in Right layout- video 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layoutUser should media -video inside the Right layout"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify if user is able to add media in Right layout- video from URL",
+      "expected": "Drag multiple widgets and elements inside the Custom center layout User should media -video from url inside the Right layout",
+      "raw": "TC_66Custom Center Layout Functionality Verify if user is able to add media in Right layout- video from URL 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layout User should media -video from url inside the Right layout"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify if user is able to copy and paste text/ sentence inside the layout",
+      "expected": "Drag multiple widgets and elements inside the Custom center layoutUser should copy and paste text inside the layouts",
+      "raw": "TC_67Custom Center Layout Functionality Verify if user is able to copy and paste text/ sentence inside the layout 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Check Without Entering Data in both \" Instruction for Student and Teacher \" 7.Add Custom center layout 8. Drag multiple widgets and elements inside the Custom center layoutUser should copy and paste text inside the layouts"
+    }
+  ]
+}

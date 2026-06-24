@@ -1,0 +1,29 @@
+{
+  "component": "Generic Step",
+  "slug": "generic-step",
+  "dataType": "GenericStep",
+  "identifier": "GenericStep",
+  "module": "step (step chooser + metadata wizard + column drop zones)",
+  "spec": "43-generic-step-deep.spec.ts",
+  "qcSource": "Author Test Cases - Generic Step.pdf",
+  "qcCount": 113,
+  "automated": 17,
+  "deferred": 96,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/templates/generic-step/generic-step.html",
+    "closify/KITABOO_Authoring/templates/generic-step/generic-step-settings.html",
+    "closify/KITABOO_Authoring/templates/generic-step/scripts/generic-step-directive.js",
+    "closify/KITABOO_Authoring/templates/generic-step/default/generic-step.json"
+  ],
+  "architectureNotes": [
+    "This component covers the Generic STEP itself (creation flow + step canvas + step settings + TOC lifecycle), not a dropped widget.",
+    "Step chooser modal is #widget-popup (title 'Choose a step'); the Generic Step card is in .hover-div/.step-text. Opened via TOC '+ Add' (#add-page-dropdown.removeAddPreview) → 'Add New Step' (#StepWidgetBtm).",
+    "Metadata wizard is #formsModal with tabs Basic Info / Levels / Instructions. Step Title (#title, ng-model stepTitle) is required: #nextBtn carries ng-class disabledBtn when !stepTitle. Keyword Tags (#tag-container, label 'Keyword Tags'); a 'Generic step' tag is expected auto-added (TC_09). New steps get fixed LoS 'Core'.",
+    "Step canvas container is .generic-step-container[generic-step-template] (class questionsAdded/questionsEmpty). Each slot is .generic-step-question-container[question-index] with drop zone .generic-step-column-content (ng-drop). Empty slots show .generic-step-empty-droppable-text → 'Drag Assessment widget from right panel' (single span; ng-if). questionBank auto-grows only while length < 15.",
+    "Step settings panel is #generic-step-settings-panel (title 'Generic Step'): Background Color (#bgColorInput.colorPickerInputBox), Add Pattern checkbox (#caption-option, ng-model currSettings.isBgPatternActive) revealing .icons-container .icons-item, Accessibility + Alt Text (textarea ng-model currSettings.altText, maxlength=2000, 'Chars 2000'). Multipart background colour (TC_113) maps to the same bgColor model.",
+    "Per-step TOC kebab menu (.tocMenuDiv → .tocPageIconMenu): Clone New Level (tocSectionClonePopup), Edit Metadata (tocSectionEditPopup → wizard edit mode), Delete (tocSectionDeletePopup, gated by canDeletePage).",
+    "Deferred: per-widget/element/layout drop authoring (TC_10–TC_103 widget behaviors), sketchpad/CLIC and math rendering, copy/paste lifecycle, flexi/sample layers, and Preview/Reader/CLP/persistence — these require per-widget settings or runtime flows outside the step DOM."
+  ],
+  "notYetLiveVerified": true
+}

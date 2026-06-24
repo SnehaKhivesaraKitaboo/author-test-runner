@@ -1,0 +1,244 @@
+{
+  "component": "Correction",
+  "slug": "correction",
+  "dataType": "correction",
+  "source": "Author Test Cases - Correction.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Correction.pdf",
+  "pages": 2,
+  "extractedCount": 29,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify default settings for Add Header and Add Instruction Text",
+      "expected": "",
+      "raw": "TC_01 Correction UI and Functionality Verify default settings for Add Header and Add Instruction Text 1. Login as user. 2. Navigate to Correction module. 3. Check if 'Add Header' and 'Add Instruction Text' are enabled by default in the settings panel. 4. Verify Header Text and Instruction Text are present on the page. Header Text and Instruction Text should be present by default."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "Verify Add Sentence button and Text Description 1 availability",
+      "expected": "",
+      "raw": "TC_02 Correction UI and Functionality Verify Add Sentence button and Text Description 1 availability 1. Check if 'Add Sentence' button is present on author page. 2. Click 'Add Sentence'. 3. Verify if 'Text Description 1' is present and editable. Add Sentence' button present, Text Description 1 editable."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "Verify delete functionality for multiple sentences",
+      "expected": "",
+      "raw": "TC_03 Correction UI and Functionality Verify delete functionality for multiple sentences 1. Click 'Add Sentence' multiple times. 2. Verify Delete button is enabled for all sentences except the first. 3. Delete a sentence and verify other sentences remain. Delete button enabled for additional sentences; sentence deleted successfully."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "Verify Outline and No Outline options and color selection",
+      "expected": "",
+      "raw": "TC_04 Correction UI and Functionality Verify Outline and No Outline options and color selection 1. Select 'No Outline' option. 2. Select 'Outline' option. 3. Change color using Action Assets color palette. 4. Verify color changes on outline.User can switch options and change outline color."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI and Functionality",
+      "description": "Verify strikethrough and input correct answer",
+      "expected": "",
+      "raw": "TC_05 Correction UI and Functionality Verify strikethrough and input correct answer 1. Click on a sentence word. 2. Select 'Strikethrough' option. 3. Verify red line appears. 4. Enter correct answer in input box. 5. Check preview and reader for correct answer. Strikethrough shows red line; correct answer appears in preview and reader."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI and Functionality",
+      "description": "Verify Header Text removal when Add Header is unchecked",
+      "expected": "",
+      "raw": "TC_06 Correction UI and Functionality Verify Header Text removal when Add Header is unchecked 1. Uncheck 'Add Header' in settings panel. 2. Verify Header Text is removed from the page.Header Text not visible when unchecked."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI and Functionality",
+      "description": "Verify Instruction Text removal when Add Instruction Text is unchecked",
+      "expected": "",
+      "raw": "TC_07 Correction UI and Functionality Verify Instruction Text removal when Add Instruction Text is unchecked 1. Uncheck 'Add Instruction Text' in settings panel. 2. Verify Instruction Text is removed from the page.Instruction Text not visible when unchecked."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI and Functionality",
+      "description": "Verify Add Tag functionality",
+      "expected": "",
+      "raw": "TC_08 Correction UI and FunctionalityVerify Add Tag functionality 1. Click '+Add Tag' button. 2. Add a tag. 3. Verify tag is shown on the page.Tag is added and displayed."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI and Functionality",
+      "description": "Verify UI responsiveness",
+      "expected": "",
+      "raw": "TC_09 Correction UI and FunctionalityVerify UI responsiveness 1. Resize browser window. 2. Check display on mobile and desktop views. 3. Verify all controls and text display correctly. Controls and texts display correctly across screen sizes."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify Submit enabled only with required fields filled",
+      "expected": "",
+      "raw": "TC_10 Correction UI and Functionality Verify Submit enabled only with required fields filled 1. Leave required fields empty. 2. Check if Submit button is disabled. 3. Fill required fields. 4. Check if Submit button is enabled. Submit enabled only when required fields are filled."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Verify handling of special characters in Text Description",
+      "expected": "",
+      "raw": "TC_11 Correction UI and Functionality Verify handling of special characters in Text Description 1. Enter special characters in Text Description 1. 2. Save or preview. Special characters are handled and displayed correctly."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Negative",
+      "description": "Verify Delete button is disabled for only sentence",
+      "expected": "",
+      "raw": "TC_12 Correction Negative Verify Delete button is disabled for only sentence 1. Add only one sentence. 2. Try to delete it. 3. Verify Delete button is disabled. User cannot delete the only sentence; Delete disabled."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Negative",
+      "description": "Verify submission without Header Text or Instruction Text",
+      "expected": "",
+      "raw": "TC_13 Correction Negative Verify submission without Header Text or Instruction Text 1. Uncheck 'Add Header' and 'Add Instruction Text' in settings panel. 2. Submit the page. 3. Verify submission works. Submission works without Header or Instruction Text if unchecked."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Negative",
+      "description": "Verify submission with empty Text Description 1",
+      "expected": "",
+      "raw": "TC_14 Correction Negative Verify submission with empty Text Description 1 1. Do not enter any text in 'Text Description 1'. 2. Try to submit. 3. Verify validation message appears. Submission not allowed. submit button is disable."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Negative",
+      "description": "Verify handling of long text in Text Description",
+      "expected": "",
+      "raw": "TC_15 Correction Negative Verify handling of long text in Text Description 1. Enter very long text in 'Text Description 1'. 2. Save or preview. 3. Check for UI break.Application handles long text gracefully."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Negative",
+      "description": "Verify handling of invalid color code in Action Assets",
+      "expected": "",
+      "raw": "TC_16 Correction Negative Verify handling of invalid color code in Action Assets 1. Enter invalid color code in Action Assets input. 2. Try to apply. 3. Check for errors.App prevents or defaults color; does not crash."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Negative",
+      "description": "Verify submission with no sentences added",
+      "expected": "",
+      "raw": "TC_17 Correction Negative Verify submission with no sentences added 1. Remove all sentences. 2. Try to submit. 3. Check for validation message. Submission not allowed. submit button is disable."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Negative",
+      "description": "Verify max sentence limit",
+      "expected": "",
+      "raw": "TC_18 Correction NegativeVerify max sentence limit 1. Add sentences up to max limit. 2. Try to add one more sentence. 3. Verify if application prevents adding.Cannot add sentences beyond max limit."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Negative",
+      "description": "Verify accessibility (keyboard/screen reader)",
+      "expected": "",
+      "raw": "TC_19 Correction Negative Verify accessibility (keyboard/screen reader) 1. Use keyboard to navigate controls. 2. Use screen reader. 3. Verify accessibility for all components. All controls accessible via keyboard and screen reader."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Negative",
+      "description": "Verify rapid Save/Preview actions",
+      "expected": "",
+      "raw": "TC_20 Correction NegativeVerify rapid Save/Preview actions 1. Click Save/Preview multiple times quickly. 2. Verify app stability and no errors.Application handles rapid actions gracefully."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Negative",
+      "description": "Verify handling of network disconnect",
+      "expected": "",
+      "raw": "TC_21 Correction Negative Verify handling of network disconnect 1. Disconnect network. 2. Try to Save or Preview. 3. Reconnect and retry. 4. Check error handling and recovery. Error shown on disconnect; recovers after reconnect."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Verify Cancel button navigates to author page without deletion",
+      "expected": "",
+      "raw": "TC_22 Correction UI and Functionality Verify Cancel button navigates to author page without deletion 1. Click Delete button on component. 2. In confirmation pop-up, click \"Cancel\". 3. Observe navigation and component status. User is navigated to author page; component is NOT deleted."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Verify Delete button is highlighted in red color.",
+      "expected": "",
+      "raw": "TC_23 Correction UI and Functionality Verify Delete button is highlighted in red color. 1. Click Delete button on component. 2. Observe Delete button color in red buttonDelete button is highlighted in red color."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Verify Copy Component button is clickable1. Click the Copy Component button. Copy Component button is clickable; triggers copy action.",
+      "expected": "",
+      "raw": "TC_24 Correction UI and Functionality Verify Copy Component button is clickable1. Click the Copy Component button. Copy Component button is clickable; triggers copy action."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Verify Copy button is present",
+      "expected": "",
+      "raw": "TC_25 Correction UI and Functionality Verify Copy button is present 1. Locate Copy Component button on the screen. 2.After clicking on copy button component should copied on the page. Copy Component button is visible on the page and component is copied on the page."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Verify success pop-up after copying",
+      "expected": "",
+      "raw": "TC_26 Correction UI and Functionality Verify success pop-up after copying 1. Click Copy Component button. 2. Observe pop-up message. Pop-up displays: \"The component has been copied successfully\"."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI and Functionality",
+      "description": "Verify multiple copy actions",
+      "expected": "",
+      "raw": "TC_27 Correction UI and FunctionalityVerify multiple copy actions 1. Click Copy Component button multiple times. 2. Observe pop-up each time.Pop-up appears each time component is copied."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI and Functionality",
+      "description": "Verify copied component appears correctly",
+      "expected": "",
+      "raw": "TC_28 Correction UI and Functionality Verify copied component appears correctly 1. Click Copy Component button. 2. Verify a new copy of the component appears on the author page. Copied component is displayed and matches the original."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Negative",
+      "description": "Verify copy action with no component present",
+      "expected": "",
+      "raw": "TC_29 Correction Negative Verify copy action with no component present 1. Remove all components. 2. Check if Copy Component button is present and clickable. Copy Component button is not visible/clickable if no component exists."
+    }
+  ]
+}

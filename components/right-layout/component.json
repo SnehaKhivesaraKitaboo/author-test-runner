@@ -1,0 +1,35 @@
+{
+  "component": "Right Layout",
+  "slug": "right-layout",
+  "dataType": "layout-3",
+  "widgetName": "Right",
+  "directive": "layout-template",
+  "module": "layout (Instructions-for-Students canvas)",
+  "spec": "20-right-layout-deep.spec.ts",
+  "qcSource": "Author Test Cases - Right Layout.pdf",
+  "qcCount": 67,
+  "automated": 15,
+  "deferred": 52,
+  "columnCount": 2,
+  "verified": {
+    "dataType": "layout-3",
+    "widgetName": "Right",
+    "source": "config/config.js (both catalogs agree)"
+  },
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/layouts/layout3.html",
+    "closify/KITABOO_Authoring/templates/layouts/layout-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/layouts/default/layout.json",
+    "closify/KITABOO_Authoring/templates/layouts/scripts/layout-directive.js"
+  ],
+  "architectureNotes": [
+    "Right is a LAYOUT (widget name 'Right', dataType 'layout-3'), NOT an assessment widget. 'layout-3' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Right'), not into a Generic Step column.",
+    "Canvas wrapper is .customClass[data-type=\"layout-3\"] containing .layout-container.layout-3 ([layout-template]).",
+    "layout-3 has TWO columns: .column.two-thirds (template1, wide-first) + .column.one-third (template2), separated by .vertical-divider — a mirror of layout-1 with the wide column leading. Each column has a .column-content.editables drop zone and an .empty-droppable-text placeholder ('Drag Elements or Widgets').",
+    "Clicking the .sd-item opens #layout-template-setting (.layout-setting-panel) with a Full Width checkbox (.layout-width-setup). Full Width sets data-pagemargin='fullwidth' on the layout .sd-item.",
+    "Nested child-drop business rules (one element/widget per column; no layout-inside-layout) are enforced in layout-directive.js at runtime and are NOT DOM-assertable here — deferred.",
+    "Preview/Reader/Publish, media/tables/math/special-languages, multipart, persistence-after-reload, refresh and CLP outline/separator display are deferred."
+  ],
+  "notYetLiveVerified": "Selectors are source-derived from layout3.html + layout-setting-panel.html + layout-directive.js but NOT yet run against a live authoring instance. A single headed run will confirm the drop + settings-panel selectors."
+}

@@ -1,0 +1,34 @@
+{
+  "component": "Callout",
+  "slug": "callout",
+  "dataType": "sidebarComponent",
+  "directive": "sidebar-template",
+  "widgetName": "Callout Box",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "17-callout-deep.spec.ts",
+  "qcSource": "Author Test Cases - Callout.pdf",
+  "qcCount": 110,
+  "automated": 47,
+  "deferred": 63,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/sidebar/sidebar.html",
+    "closify/KITABOO_Authoring/templates/sidebar/sidebar-settings-pannel.html",
+    "closify/KITABOO_Authoring/templates/sidebar/default/sidebar.json",
+    "closify/KITABOO_Authoring/templates/sidebar/scripts/sidebar-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Callout is the 'Callout Box' catalog widget (config/config.js: name 'Callout Box', dataType 'sidebarComponent', url templates/sidebar/sidebar.html, settingsURL templates/sidebar/sidebar-settings-pannel.html). It is an ELEMENT, NOT an assessment widget. 'sidebarComponent' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Callout Box'), not into a Generic Step column.",
+    "Do NOT confuse with the separate 'Sidebar' interactivity widget (dataType 'aside-bar', templates/asidebar/*) — that is a different component.",
+    "Canvas wrapper is [data-type=\"sidebarComponent\"] containing section.sidebarComponent[sidebar-template].",
+    "Header/title field is .sc-intro.template-header.sidebarHeader (contenteditable, ng-model fieldData.introductionText) — rendered ONLY for style1/style2 (isHeaderVisible). The body/text field is .sidebarCaption (contenteditable, ng-model fieldData.paragraph). Set via cy.setContentEditableOn, never cy.type().",
+    "Settings panel has NO fixed element id (unlike paragraph's #text-settings-panel). It is rendered into the shared .componentSettingPanel host via ng-include of settingsURL; the panel root is .chaperHeding.sidebar-setting[heading-setting][sidebar-setting] with title 'Callout Box'. Selectors are scoped to .componentSettingPanel.",
+    "Styles are data-driven from style_tab.stylesHolder via the shared <stylepanel>; each .stylebgdiv[id] id is the style name: style3 ('Take Note' card, CalloutBox-Thumbnail_1.svg, ACTIVE BY DEFAULT per sidebar.json layoutColorActive='style3') and style4 (icon card, CalloutBox-Thumbnail_2.svg). sidebar-directive.updateSidebarStyles() removes the legacy #style1/#style2 tiles. There are only TWO styles.",
+    "SOURCE AMBIGUITY: QC TC_04–TC_20 (and others) reference a 'Direction Line' callout style with stroke/arrow. NO such style exists in templates/sidebar/default/sidebar.json (only style3/style4). Those cases are deferred as 'source not present' rather than asserting against a non-existent style.",
+    "style4 (icon card) exposes a 5-item icon picker (.style-4-icons-item): Take Note... / Remember... / Think About... / Ask Yourself... / Did You Know? (settings.style4Icons; default active index 0 = Take Note).",
+    "Settings toggles: Show Header (#caption-option-show-header), Show Image (#caption-option-show-image), Auto Colour (#caption-option-auto-color, style1 only), Show Caption (#caption-option-show-caption, inside image section). Colour pickers: Header (#headerBgColorInput, style1 only), Background (#sidebarBgColorInput), Auto (#autoColorInput), plus disabled style3/style4 Background/Stroke inputs. Image placement radios (Below/Above/Left/Right) and Outline radios (No Outline / Outline & Fill, style1 only) render inside the image section. Alt Text textarea (ng-model currSettings.altText) maxlength 2000, counter '.altTextCharLimitText' ('Chars 2000').",
+    "Many controls are source-gated by the active style/layout (style1 header+colour pickers+outline; image section requires Show Image). The spec degrades gracefully (log + return) when a flag-gated control is absent in the default style3 context.",
+    "Preview/Reader, Publish, file pickers, RTE-toolbar formatting, math render, persistence-after-reload, responsiveness and accessibility (keyboard/screen-reader) flows are outside the authoring DOM and are deferred."
+  ]
+}

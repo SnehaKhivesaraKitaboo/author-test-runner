@@ -1,0 +1,34 @@
+{
+  "component": "Video",
+  "slug": "video",
+  "dataType": "video",
+  "directive": "video-template",
+  "widgetName": "Video",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "09-video-deep.spec.ts",
+  "qcSource": "Author Test Cases - Video.pdf",
+  "qcCount": 69,
+  "automated": 34,
+  "deferred": 35,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/video-template.html",
+    "closify/KITABOO_Authoring/templates/video/video.json",
+    "closify/KITABOO_Authoring/templates/video/video-settings-panel.html",
+    "closify/KITABOO_Authoring/templates/media-template.html",
+    "closify/KITABOO_Authoring/templates/stylepanel.html"
+  ],
+  "architectureNotes": [
+    "Video is an ELEMENT (widget name 'Video', dataType 'video', directive 'video-template'), NOT an assessment widget. 'video' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponentForModule('Video', { dataType: 'video' }), not into a Generic Step column.",
+    "config/config.js verified catalog entry: name 'Video', dataType 'video', url 'templates/video-template.html', json 'templates/video/video.json', settingsURL 'templates/video/video-settings-panel.html', isDroppable true, iconClass 'icon-Video'.",
+    "Canvas wrapper is .customClass[data-type=\"video\"] containing section[video-template] (.component-holder.videostyle) with .pc-figure, an empty-state .icon-video.icon-Video placeholder, a <video class=primary-video> (only when an MP4 is uploaded), and a YouTube/Vimeo iframe (only in URL mode).",
+    "Settings panel has NO id: it renders as [video-setting].video-settings-panel.videosetting inside the shared .componentSettingPanel wrapper. Title is 'Video' (.txt-set-title .para-ellipsis[data-title=\"Video\"]) with icon .txt-set-icon.icon-Video.",
+    "Upload mode is a radio pair (ng-model currSettings.uploadtype): 'uploadbysystem' (default) vs 'uploadbyurl'. URL mode reveals .kaltura-part (YouTube/Vimeo dropdown) + a Video ID text input (ng-model currSettings.youtubeVideoName). System mode reveals .video-upload-box (uploadfiles) — actual file selection is a native OS picker (deferred).",
+    "Dimensions (#video-Dimensions): #videoWidthc / #videoHeightc number inputs, a custom-dimension radio (#video-dimension-radio) and a 'Keep Original' radio (#full-video-radio). W/H are ng-disabled when videoDim==='full-video-radio' AND additionally gated on upload state — so enable-and-type is automated only when the field is not disabled, else logged+returned.",
+    "Toggles: Full Width (currSettings.fullwidth), Show Header (currSettings.isHeaderVisible — only styleSelected=='style1'), Show Caption (currSettings.optionalcaption), Show Transcript / Show Subtitle CC (only uploadtype != uploadbyurl). Outline radios (No Outline / Outline & Fill Background) + colour options + colour-picker input render only when styleSelected=='style1'. Each ng-if-gated control logs+returns gracefully when not mounted.",
+    "Meta tags input (#metaTagsInput) + Alt Text textarea (maxlength 2000, char counter 'Chars 2000'). Styles are data-driven from video.json style_tab.stylesHolder (style1 default active, style2, style3) rendered via shared <stylepanel>.",
+    "Video is upload/playback heavy: actual file upload, YouTube/URL playback, autoplay/poster runtime, Preview/Reader, Publish/Republish, persistence-after-reload, slide duplication, multi-slide independence, cross-browser playback, and a11y-in-Reader are all deferred (it.skip with explicit reasons). Automated cases assert authoring-DOM control presence, mode toggles, dimension gating, toggle switchability, invalid-input field behaviour, outline/colour/tags/alt-text controls, styles, caption entry, copy/delete, and security.",
+    "QC TC_01–TC_09 are login/activity/step bootstrap (handled by the harness, not the Video element)."
+  ],
+  "notYetLiveVerified": "Selectors are source-derived from the templates above and have NOT yet been verified against a running authoring instance. A single live run is required to confirm the element drop onto the canvas, the .componentSettingPanel/[video-setting] panel selectors, and the upload-state gating on the W/H dimension inputs."
+}

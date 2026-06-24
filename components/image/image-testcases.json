@@ -1,0 +1,212 @@
+{
+  "component": "Image",
+  "slug": "image",
+  "dataType": "image",
+  "source": "Author Test Cases - Image.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Image.pdf",
+  "pages": 1,
+  "extractedCount": 25,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Image UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Image Functionality Verify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Image FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Image FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Image FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Image Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Image Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Image Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Image Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify the image component allows upload of valid image formats (JPG, PNG, SVG).",
+      "expected": "",
+      "raw": "TC_10 Image Positive Verify the image component allows upload of valid image formats (JPG, PNG, SVG). 1. Drag and drop Image component onto canvas. 2. Click upload and select JPG/PNG/SVG file. Image is uploaded and displayed in the component area."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Negative",
+      "description": "Verify error message is shown for unsupported file format.",
+      "expected": "",
+      "raw": "TC_11 Image Negative Verify error message is shown for unsupported file format. 1. Drag and drop Image component. 2. Click upload and select unsupported file (e.g., PDF).Error message: \"Unsupported file format\"."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify the 'Full Width' option resizes the image to span the full width.1. Upload image.",
+      "expected": "",
+      "raw": "TC_12 Image Positive Verify the 'Full Width' option resizes the image to span the full width.1. Upload image. 2. Enable 'Full Width' toggle.Image spans full horizontal space."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify the 'Keep Original' option maintains original image size.1. Upload image.",
+      "expected": "",
+      "raw": "TC_13 Image Positive Verify the 'Keep Original' option maintains original image size.1. Upload image. 2. Check 'Keep Original'.Image retains original size."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify dimensions (W, H) can be manually set when 'Keep Original' is off.",
+      "expected": "",
+      "raw": "TC_14 Image Positive Verify dimensions (W, H) can be manually set when 'Keep Original' is off. 1. Upload image. 2. Uncheck 'Keep Original'. 3. Enter custom dimensions.Image resizes to entered width and height."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify caption text can be added and displayed.1. Upload image.",
+      "expected": "",
+      "raw": "TC_15 Image Positive Verify caption text can be added and displayed.1. Upload image. 2. Enter caption text below image.Caption appears below the image."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify 'Show Caption' toggle controls caption visibility.",
+      "expected": "",
+      "raw": "TC_16 Image Positive Verify 'Show Caption' toggle controls caption visibility. 1. Upload image with caption. 2. Toggle 'Show Caption'.Caption appears/disappears accordingly."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify outline and background fill options apply correctly.",
+      "expected": "",
+      "raw": "TC_17 Image Positive Verify outline and background fill options apply correctly. 1. Upload image. 2. Select 'Outline & Fill Background'. 3. Choose fill color. Image displays with chosen outline and background."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify ALT text is accepted and saved for screen readers.",
+      "expected": "",
+      "raw": "TC_18 Image Positive Verify ALT text is accepted and saved for screen readers. 1. Upload image. 2. Enter ALT text in Accessibility section.ALT text is stored and read in screen reader."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify publishing activity displays image and settings in reader.",
+      "expected": "",
+      "raw": "TC_19 Image Positive Verify publishing activity displays image and settings in reader. 1. Configure image component. 2. Save and publish. 3. Launch in reader.Image displays with correct styles and caption."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify editing and republishing updates image component in reader.",
+      "expected": "",
+      "raw": "TC_20 Image Positive Verify editing and republishing updates image component in reader. 1. Edit published image component (e.g., caption). 2. Republish.Updated content appears in reader."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify line breaks in caption field render correctly in reader.",
+      "expected": "",
+      "raw": "TC_21 Image Positive Verify line breaks in caption field render correctly in reader. 1. Enter multi-line caption using Enter key. 2. Save and preview.Caption displays with line breaks."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Edge Case",
+      "description": "Verify long captions wrap correctly and do not break layout.1.",
+      "expected": "",
+      "raw": "TC_22 Image Edge Case Verify long captions wrap correctly and do not break layout.1. Enter long caption text. 2. Preview.Text wraps correctly within layout."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Edge Case",
+      "description": "Verify component doesn't crash if image is removed and republished.",
+      "expected": "",
+      "raw": "TC_23 Image Edge Case Verify component doesn't crash if image is removed and republished. 1. Upload and publish image. 2. Remove image. 3. Republish. Component remains stable with placeholder or empty state."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify able to apply 1.",
+      "expected": "No change or flicker",
+      "raw": "TC_24 Image Positive Verify able to apply 1.Select bordered style 2.Select no-border style 3.Reapply current style Click bordered thumbnail Click no-border thumbnail Click same style twice 1.Style applied with border 2.Style applied with no border 3.No change or flicker"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify Switch between stylesAlternate clicks between stylesStyle updates correctly each time",
+      "expected": "",
+      "raw": "TC_25 Image PositiveVerify Switch between stylesAlternate clicks between stylesStyle updates correctly each time"
+    }
+  ]
+}

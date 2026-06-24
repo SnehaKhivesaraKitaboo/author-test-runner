@@ -1,0 +1,916 @@
+{
+  "component": "Click to Reveal",
+  "slug": "click-to-reveal",
+  "dataType": "clickToReveal",
+  "source": "Author Test Cases - Click to Reveal.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Click to Reveal.pdf",
+  "pages": 5,
+  "extractedCount": 113,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Click to RevelUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Click to Revel Functionality Verify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03Click to Revel FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Click to Revel FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05Click to Revel FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel button The step creation pop up should be closed",
+      "raw": "TC_06Click to Revel Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel button The step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Click to Revel Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Click to Revel Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Click to Revel Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify the Header field accepts input",
+      "expected": "",
+      "raw": "TC_10Click to RevelUI and FunctionalityVerify the Header field accepts input 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.User can enter and edit header text"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Verify \"Read more\" button visibility",
+      "expected": "",
+      "raw": "TC_11Click to RevelUI and FunctionalityVerify \"Read more\" button visibility 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Button is visible on component load"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI and Functionality",
+      "description": "Verify description text is hidden initially in preview",
+      "expected": "",
+      "raw": "TC_12Click to RevelUI and Functionality Verify description text is hidden initially in preview 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Hidden content is not shown until interaction"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI and Functionality",
+      "description": "Verify description text displays after clicking button in preview",
+      "expected": "",
+      "raw": "TC_13Click to RevelUI and Functionality Verify description text displays after clicking button in preview 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Hidden description is shown after clicking"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI and Functionality",
+      "description": "Verify caption text is editable when image is added",
+      "expected": "",
+      "raw": "TC_14Click to RevelUI and Functionality Verify caption text is editable when image is added 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Caption input is available and editable"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI and Functionality",
+      "description": "Upload supported image format (JPG/PNG/SVG)",
+      "expected": "",
+      "raw": "TC_15Click to RevelUI and Functionality Upload supported image format (JPG/PNG/SVG) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Image uploads and displays successfully"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI and Functionality",
+      "description": "Upload unsupported image format (e.g., . bmp/.pdf)",
+      "expected": "",
+      "raw": "TC_16Click to RevelUI and Functionality Upload unsupported image format (e.g., . bmp/.pdf) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Error message or upload restricted"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI and Functionality",
+      "description": "Check behavior when mandatory fields are empty",
+      "expected": "",
+      "raw": "TC_17Click to RevelUI and Functionality Check behavior when mandatory fields are empty 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Validation message shown or component doesn't save"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "UI and Functionality",
+      "description": "Verify Add Media toggle functionality",
+      "expected": "",
+      "raw": "TC_18Click to RevelUI and FunctionalityVerify Add Media toggle functionality 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Media options (Image, Video, Audio) are shown/hidden correctly"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI and Functionality",
+      "description": "Verify each media type selection reveals correct upload area",
+      "expected": "",
+      "raw": "TC_19Click to RevelUI and Functionality Verify each media type selection reveals correct upload area 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Image shows image upload, video shows video upload, etc."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI and Functionality",
+      "description": "Change Card background color",
+      "expected": "",
+      "raw": "TC_20Click to RevelUI and FunctionalityChange Card background color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Background updates immediately as per color code"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI and Functionality",
+      "description": "Change Card outline color",
+      "expected": "",
+      "raw": "TC_21Click to RevelUI and FunctionalityChange Card outline color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Outline reflects new hex color"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Change Button background color",
+      "expected": "",
+      "raw": "TC_22Click to RevelUI and FunctionalityChange Button background color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Button color updates properly"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Change Button text color",
+      "expected": "",
+      "raw": "TC_23Click to RevelUI and FunctionalityChange Button text color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Text inside button updates as per selected hex"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Toggle between different layouts",
+      "expected": "",
+      "raw": "TC_24Click to RevelUI and FunctionalityToggle between different layouts 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Layout switches and reflects selected type"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Enable Show Instruction 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructio",
+      "expected": "",
+      "raw": "TC_25Click to RevelUI and FunctionalityEnable Show Instruction 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Instruction input area appears"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Enable/Disable caption checkbox",
+      "expected": "",
+      "raw": "TC_26Click to RevelUI and FunctionalityEnable/Disable caption checkbox 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Caption under image is shown/hidden accordingly"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Leave Header field blank and try to save",
+      "expected": "",
+      "raw": "TC_27Click to RevelNegativeLeave Header field blank and try to save 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Show validation error or prevent save"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Negative",
+      "description": "Enter only spaces in Header or Description fields 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.",
+      "expected": "",
+      "raw": "TC_28Click to RevelNegative Enter only spaces in Header or Description fields 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Show validation error – input should not be empty"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Negative",
+      "description": "Enter HTML/JS code in Header or Description (<script>alert(1)</script>) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.C",
+      "expected": "",
+      "raw": "TC_29Click to RevelNegative Enter HTML/JS code in Header or Description (<script>alert(1)</script>) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Code is sanitized and not executed"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Negative",
+      "description": "Upload unsupported image format (e.g., . exe, .pdf)",
+      "expected": "",
+      "raw": "TC_30Click to RevelNegative Upload unsupported image format (e.g., . exe, .pdf) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Show error or reject upload"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Upload an image larger than allowed size",
+      "expected": "",
+      "raw": "TC_31Click to RevelNegativeUpload an image larger than allowed size 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Show error or reject upload"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Negative",
+      "description": "Add very long header or description (e.g., 1000+ characters)",
+      "expected": "",
+      "raw": "TC_32Click to RevelNegative Add very long header or description (e.g., 1000+ characters) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. UI should handle overflow with scroll or truncation"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Negative",
+      "description": "Save without selecting any media when it is required",
+      "expected": "",
+      "raw": "TC_33Click to RevelNegative Save without selecting any media when it is required 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Show validation error"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Negative",
+      "description": "Use invalid hex code in color fields (e.g., #ZZZZZZ)",
+      "expected": "",
+      "raw": "TC_34Click to RevelNegative Use invalid hex code in color fields (e.g., #ZZZZZZ) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Show error or reset to default"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Negative",
+      "description": "Enable media (Image/Video), then delete uploaded file and save 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on N",
+      "expected": "",
+      "raw": "TC_35Click to RevelNegative Enable media (Image/Video), then delete uploaded file and save 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Validation should prevent saving without media"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Negative",
+      "description": "Click on \"Read more\" without adding description 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.En",
+      "expected": "",
+      "raw": "TC_36Click to RevelNegative Click on \"Read more\" without adding description 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Nothing is revealed; placeholder or warning shown"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Negative",
+      "description": "Upload an image, then quickly toggle off “Show caption”",
+      "expected": "",
+      "raw": "TC_37Click to RevelNegative Upload an image, then quickly toggle off “Show caption” 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Caption area should disappear without UI lag or glitch"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Negative",
+      "description": "Use same button text for multiple Click to Reveal instances",
+      "expected": "",
+      "raw": "TC_38Click to RevelNegative Use same button text for multiple Click to Reveal instances 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Ensure unique identifiers or no collision in runtime behavior"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Negative",
+      "description": "Press",
+      "expected": "",
+      "raw": "TC_39Click to RevelNegative Press Enter key repeatedly in numeric or color fields 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Input field behavior remains stable, no crash or error"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Positive",
+      "description": "Verify component renders properly",
+      "expected": "",
+      "raw": "TC_40Click to RevelPositiveVerify component renders properly 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Component should display with default settings"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Positive",
+      "description": "Enter valid header text 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructio",
+      "expected": "",
+      "raw": "TC_41Click to RevelPositiveEnter valid header text 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Header is saved and displayed"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Positive",
+      "description": "Enter valid description text 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instr",
+      "expected": "",
+      "raw": "TC_42Click to RevelPositiveEnter valid description text 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Description is saved and shown"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Positive",
+      "description": "Upload valid image (JPG/PNG)",
+      "expected": "",
+      "raw": "TC_43Click to RevelPositiveUpload valid image (JPG/PNG) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Image preview appears"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Positive",
+      "description": "Enter valid button label 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructi",
+      "expected": "",
+      "raw": "TC_44Click to RevelPositiveEnter valid button label 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Button label shows on reader"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Positive",
+      "description": "Add multiple \"Click to Reveal\" components",
+      "expected": "",
+      "raw": "TC_45Click to RevelPositive Add multiple \"Click to Reveal\" components 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Each works independently"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Positive",
+      "description": "Enable/disable image caption toggle",
+      "expected": "",
+      "raw": "TC_46Click to RevelPositiveEnable/disable image caption toggle 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Caption field appears/disappears"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Positive",
+      "description": "Apply formatting (bold, italic)",
+      "expected": "",
+      "raw": "TC_47Click to RevelPositiveApply formatting (bold, italic) 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Styles reflected in preview"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Positive",
+      "description": "Click \"Read more\" with long text",
+      "expected": "",
+      "raw": "TC_48Click to RevelPositiveClick \"Read more\" with long text 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component.Hidden text is revealed"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Positive",
+      "description": "Enter valid hex color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions",
+      "expected": "",
+      "raw": "TC_49Click to RevelPositiveEnter valid hex color 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" 8. Add click to reveal component. Color applied to background/text correctly"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Positive",
+      "description": "Add image from system",
+      "expected": "",
+      "raw": "TC_50Click to RevelPositiveAdd image from system Enable Add Media → Select Image → Choose From system → Click Upload Image is uploaded and displayed correctly"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Positive",
+      "description": "Add video from system",
+      "expected": "",
+      "raw": "TC_51Click to RevelPositiveAdd video from system Enable Add Media → Select Video → Choose From system → Click UploadVideo is uploaded and playable"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Positive",
+      "description": "Add audio from system",
+      "expected": "",
+      "raw": "TC_52Click to RevelPositiveAdd audio from system Enable Add Media → Select Audio → Choose From system → Click UploadAudio is uploaded and playable"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Positive",
+      "description": "Enable captions for videoAfter video upload → Check Show Caption Caption option appears and works properly",
+      "expected": "",
+      "raw": "TC_53Click to RevelPositiveEnable captions for videoAfter video upload → Check Show Caption Caption option appears and works properly"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Positive",
+      "description": "Enable transcript for videoAfter video upload → Check Show TranscriptTranscript section appears",
+      "expected": "",
+      "raw": "TC_54Click to RevelPositiveEnable transcript for videoAfter video upload → Check Show TranscriptTranscript section appears"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Positive",
+      "description": "Enable subtitles/CC for video After video upload → Check Show Subtitle / Closed Caption (CC) → Upload .vtt fileSubtitles/CC are shown during playback",
+      "expected": "",
+      "raw": "TC_55Click to RevelPositiveEnable subtitles/CC for video After video upload → Check Show Subtitle / Closed Caption (CC) → Upload .vtt fileSubtitles/CC are shown during playback"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Positive",
+      "description": "Audio player displays correctlyUpload valid MP3 file Audio controls appear and are functional",
+      "expected": "",
+      "raw": "TC_56Click to RevelPositiveAudio player displays correctlyUpload valid MP3 file Audio controls appear and are functional"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Positive",
+      "description": "Validate placement change Change placement (icon with different card layouts) for mediaMedia is positioned as per selection",
+      "expected": "",
+      "raw": "TC_57Click to RevelPositiveValidate placement change Change placement (icon with different card layouts) for mediaMedia is positioned as per selection"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Positive",
+      "description": "Add header and caption text",
+      "expected": "",
+      "raw": "TC_58Click to RevelPositiveAdd header and caption text Enter values in \"Enter Header\" and \"Enter caption text here\"Text is saved and displays properly"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Positive",
+      "description": "Validate preview after media uploadClick Preview after uploading media Preview displays media and UI elements correctly",
+      "expected": "",
+      "raw": "TC_59Click to RevelPositiveValidate preview after media uploadClick Preview after uploading media Preview displays media and UI elements correctly"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Positive",
+      "description": "Add YouTube video by URL",
+      "expected": "",
+      "raw": "TC_60Click to RevelPositiveAdd YouTube video by URL Select Add Media → Video → By URL → Paste valid YouTube ID → Click Upload Video is embedded and displays play icon"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Positive",
+      "description": "Add caption to video",
+      "expected": "",
+      "raw": "TC_61Click to RevelPositiveAdd caption to video Enable Show Caption → Enter text in caption fieldCaption text appears below video"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Positive",
+      "description": "Add transcript for video",
+      "expected": "",
+      "raw": "TC_62Click to RevelPositiveAdd transcript for videoEnable Show Transcript Transcript text box appears (if applicable)"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Positive",
+      "description": "Add subtitle (VTT file)",
+      "expected": "",
+      "raw": "TC_63Click to RevelPositiveAdd subtitle (VTT file) Enable Show Subtitle / Closed Caption (CC) → Upload valid .vtt fileSubtitles appear during video playback"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Positive",
+      "description": "Placement switch Switch between placement icons → Observe layout Video aligns as per selected layout (left/right etc.)",
+      "expected": "",
+      "raw": "TC_64Click to RevelPositivePlacement switch Switch between placement icons → Observe layout Video aligns as per selected layout (left/right etc.)"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Positive",
+      "description": "Enter header and caption Enter text in \"Enter Header\" and \"Enter caption text here\"Header and caption text display properly",
+      "expected": "",
+      "raw": "TC_65Click to RevelPositiveEnter header and caption Enter text in \"Enter Header\" and \"Enter caption text here\"Header and caption text display properly"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Positive",
+      "description": "Upload valid YouTube ID Paste a correct video ID (e.g., dQw4w9WgXcQ) → Click UploadVideo embeds successfully",
+      "expected": "",
+      "raw": "TC_66Click to RevelPositiveUpload valid YouTube ID Paste a correct video ID (e.g., dQw4w9WgXcQ) → Click UploadVideo embeds successfully"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Positive",
+      "description": "Hidden description visibilityClick Read More → Description expandsHidden Description Text becomes visible",
+      "expected": "",
+      "raw": "TC_67Click to RevelPositiveHidden description visibilityClick Read More → Description expandsHidden Description Text becomes visible"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Positive",
+      "description": "\"Read more\" button functionality",
+      "expected": "",
+      "raw": "TC_68Click to RevelPositive\"Read more\" button functionalityClick on \"Read More\" Expands/collapses additional content without issues"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Negative",
+      "description": "Upload unsupported media format",
+      "expected": "",
+      "raw": "TC_69Click to RevelNegativeUpload unsupported media format Select video/audio and upload a non-supported format like .avi or .wav System shows appropriate error message"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Negative",
+      "description": "Upload without selecting media typeClick Upload with no media type selected System prevents upload or shows warning",
+      "expected": "",
+      "raw": "TC_70Click to RevelNegativeUpload without selecting media typeClick Upload with no media type selected System prevents upload or shows warning"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Negative",
+      "description": "Upload broken/corrupt file",
+      "expected": "",
+      "raw": "TC_71Click to RevelNegativeUpload broken/corrupt fileSelect and upload a corrupt fileError message is shown; upload fails"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Negative",
+      "description": "Upload file > allowed sizeUpload a media file that exceeds file size limitUpload fails with size error",
+      "expected": "",
+      "raw": "TC_72Click to RevelNegativeUpload file > allowed sizeUpload a media file that exceeds file size limitUpload fails with size error"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Negative",
+      "description": "Play video without uploadingTry to click play before uploading video Nothing happens or error message shown",
+      "expected": "",
+      "raw": "TC_73Click to RevelNegativePlay video without uploadingTry to click play before uploading video Nothing happens or error message shown"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Negative",
+      "description": "Enter invalid caption text (e.g., special chars only)Add only symbols in caption field Validation message (if applicable) or saved without effect",
+      "expected": "",
+      "raw": "TC_74Click to RevelNegative Enter invalid caption text (e.g., special chars only)Add only symbols in caption field Validation message (if applicable) or saved without effect"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Negative",
+      "description": "Use invalid URL in By URL optionInput broken or unsafe video URL Error message displayed; media not embedded",
+      "expected": "",
+      "raw": "TC_75Click to RevelNegativeUse invalid URL in By URL optionInput broken or unsafe video URL Error message displayed; media not embedded"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Negative",
+      "description": "Mismatch subtitle file formatUpload .txt instead of .vttSystem displays error message",
+      "expected": "",
+      "raw": "TC_76Click to RevelNegativeMismatch subtitle file formatUpload .txt instead of .vttSystem displays error message"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Negative",
+      "description": "Upload invalid YouTube IDPaste random string → Click Upload Error: “Invalid Video ID” or video fails to load",
+      "expected": "",
+      "raw": "TC_77Click to RevelNegativeUpload invalid YouTube IDPaste random string → Click Upload Error: “Invalid Video ID” or video fails to load"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Negative",
+      "description": "Leave YouTube ID field blank",
+      "expected": "",
+      "raw": "TC_78Click to RevelNegativeLeave YouTube ID field blank Select By URL → Leave field empty → Click UploadUpload should be blocked or show error"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Negative",
+      "description": "Upload wrong subtitle formatUpload .txt or .srt instead of .vttError shown; upload rejected",
+      "expected": "",
+      "raw": "TC_79Click to RevelNegativeUpload wrong subtitle formatUpload .txt or .srt instead of .vttError shown; upload rejected"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Negative",
+      "description": "Upload broken .vtt fileUpload corrupted subtitle fileSubtitles not shown or error displayed",
+      "expected": "",
+      "raw": "TC_80Click to RevelNegativeUpload broken .vtt fileUpload corrupted subtitle fileSubtitles not shown or error displayed"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Negative",
+      "description": "Enter special chars only in caption/headerEnter symbols like @@@@### Either accepted as-is or validated and rejected",
+      "expected": "",
+      "raw": "TC_81Click to RevelNegative Enter special chars only in caption/headerEnter symbols like @@@@### Either accepted as-is or validated and rejected"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Negative",
+      "description": "Upload YouTube video with age restrictionsPaste age-restricted video ID Error or message: \"Video cannot be embedded\"",
+      "expected": "",
+      "raw": "TC_82Click to RevelNegative Upload YouTube video with age restrictionsPaste age-restricted video ID Error or message: \"Video cannot be embedded\""
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Negative",
+      "description": "Click Upload without selecting media type Skip choosing Image/Video/Audio → Click Upload System prevents upload or displays warning",
+      "expected": "",
+      "raw": "TC_83Click to RevelNegative Click Upload without selecting media type Skip choosing Image/Video/Audio → Click Upload System prevents upload or displays warning"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Negative",
+      "description": "Add video and disable all togglesAdd video → Uncheck Caption, Transcript, CC Only video appears without extra options",
+      "expected": "",
+      "raw": "TC_84Click to RevelNegativeAdd video and disable all togglesAdd video → Uncheck Caption, Transcript, CC Only video appears without extra options"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functional",
+      "description": "Click to RevelEdgeUpload very large resolution videoUpload a 4K video file Video loads slowly but plays or error is shown if unsupported",
+      "expected": "",
+      "raw": "TC_85Click to RevelEdgeUpload very large resolution videoUpload a 4K video file Video loads slowly but plays or error is shown if unsupported"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functional",
+      "description": "Click to RevelEdgeUpload file with same name as previousUpload video.mp4, then reupload same fileSystem overwrites or handles versioning",
+      "expected": "",
+      "raw": "TC_86Click to RevelEdgeUpload file with same name as previousUpload video.mp4, then reupload same fileSystem overwrites or handles versioning"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functional",
+      "description": "Click to RevelEdgeSwitch media types after uploadingUpload a video → switch to AudioVideo resets; audio section appears",
+      "expected": "",
+      "raw": "TC_87Click to RevelEdgeSwitch media types after uploadingUpload a video → switch to AudioVideo resets; audio section appears"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functional",
+      "description": "Click to RevelEdge",
+      "expected": "",
+      "raw": "TC_88Click to RevelEdge Enable all settings without uploading video Check all checkboxes (Caption, Transcript, CC) before upload Settings saved, but do nothing until media uploaded"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functional",
+      "description": "Click to RevelEdge Upload image and change placement rapidlyRapid toggle between placement optionsUI remains stable and updates correctly",
+      "expected": "",
+      "raw": "TC_89Click to RevelEdge Upload image and change placement rapidlyRapid toggle between placement optionsUI remains stable and updates correctly"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functional",
+      "description": "Click to RevelEdgeResize browser during media preview Upload media → Click Preview → Resize window UI elements are responsive and maintain structure",
+      "expected": "",
+      "raw": "TC_90Click to RevelEdgeResize browser during media preview Upload media → Click Preview → Resize window UI elements are responsive and maintain structure"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functional",
+      "description": "Click to RevelEdgeResize browser after uploading videoUpload video → Resize screenLayout adapts responsively",
+      "expected": "",
+      "raw": "TC_91Click to RevelEdgeResize browser after uploading videoUpload video → Resize screenLayout adapts responsively"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functional",
+      "description": "Click to RevelEdgeUpload video, then switch media typeUpload via URL → Change to ImageVideo section resets; image UI appears",
+      "expected": "",
+      "raw": "TC_92Click to RevelEdgeUpload video, then switch media typeUpload via URL → Change to ImageVideo section resets; image UI appears"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functional",
+      "description": "Click to RevelEdgeSwitch placement before uploadToggle placement options → Then upload videoPlacement still applies correctly",
+      "expected": "",
+      "raw": "TC_93Click to RevelEdgeSwitch placement before uploadToggle placement options → Then upload videoPlacement still applies correctly"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functional",
+      "description": "Click to RevelEdgeToggle all checkboxes before upload",
+      "expected": "",
+      "raw": "TC_94Click to RevelEdgeToggle all checkboxes before upload Enable Caption, Transcript, CC → Upload video later All settings persist and apply after upload"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functional",
+      "description": "Click to RevelEdgeRapid toggle of placement iconsClick placement icons repeatedly UI remains stable, applies last selected layout",
+      "expected": "",
+      "raw": "TC_95Click to RevelEdgeRapid toggle of placement iconsClick placement icons repeatedly UI remains stable, applies last selected layout"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functional",
+      "description": "Click to RevelEdgeUpload same YouTube ID twicePaste same ID → Upload twice Video embeds without duplication or reloads",
+      "expected": "",
+      "raw": "TC_96Click to RevelEdgeUpload same YouTube ID twicePaste same ID → Upload twice Video embeds without duplication or reloads"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functional",
+      "description": "Click to RevelEdgePreview mode checkUpload all assets → Click Preview All components display accurately in preview mode",
+      "expected": "",
+      "raw": "TC_97Click to RevelEdgePreview mode checkUpload all assets → Click Preview All components display accurately in preview mode"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "UI and Functionality",
+      "description": "Publish activity with Click to Reveal component Create activity → Add Click to Reveal → Save → PublishActivity published without errors",
+      "expected": "",
+      "raw": "TC_98Click to RevelUI and Functionality Publish activity with Click to Reveal component Create activity → Add Click to Reveal → Save → PublishActivity published without errors"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "UI and Functionality",
+      "description": "Launch published activity in ReaderOpen Reader → Launch published activity Click to Reveal content loads and works as expected",
+      "expected": "",
+      "raw": "TC_99Click to RevelUI and FunctionalityLaunch published activity in ReaderOpen Reader → Launch published activity Click to Reveal content loads and works as expected"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "UI and Functionality",
+      "description": "Verify Click to Reveal behavior in ReaderIn Reader →",
+      "expected": "",
+      "raw": "TC_100Click to RevelUI and FunctionalityVerify Click to Reveal behavior in ReaderIn Reader → Click on \"Read More\"Reveals hidden content properly"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "UI and Functionality",
+      "description": "Play embedded video on ReaderClick Play icon on embedded videoVideo plays without issues",
+      "expected": "",
+      "raw": "TC_101Click to RevelUI and FunctionalityPlay embedded video on ReaderClick Play icon on embedded videoVideo plays without issues"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "UI and Functionality",
+      "description": "Caption, Transcript, and CC visibility in Reader",
+      "expected": "",
+      "raw": "TC_102Click to RevelUI and Functionality Caption, Transcript, and CC visibility in Reader Enable all options before publishing → Launch in Reader All elements display and function properly"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "UI and Functionality",
+      "description": "Verify alignment/placement in Reader Set media placement → Publish → Launch in ReaderPlacement renders correctly",
+      "expected": "",
+      "raw": "TC_103Click to RevelUI and FunctionalityVerify alignment/placement in Reader Set media placement → Publish → Launch in ReaderPlacement renders correctly"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "UI and Functionality",
+      "description": "Video loads from YouTube in Reader Use valid YouTube ID → Publish → Launch in ReaderYouTube video embeds and plays",
+      "expected": "",
+      "raw": "TC_104Click to RevelUI and FunctionalityVideo loads from YouTube in Reader Use valid YouTube ID → Publish → Launch in ReaderYouTube video embeds and plays"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "UI and Functionality",
+      "description": "Edit Click to Reveal after publishing Open previously published activity → Edit header/video/captionEditor allows updates",
+      "expected": "",
+      "raw": "TC_105Click to RevelUI and FunctionalityEdit Click to Reveal after publishing Open previously published activity → Edit header/video/captionEditor allows updates"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "UI and Functionality",
+      "description": "Republish activity after editEdit → Save → RepublishRepublishing successful",
+      "expected": "",
+      "raw": "TC_106Click to RevelUI and FunctionalityRepublish activity after editEdit → Save → RepublishRepublishing successful"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "UI and Functionality",
+      "description": "Launch updated activity in ReaderLaunch updated activity in ReaderReader reflects latest changes",
+      "expected": "",
+      "raw": "TC_107Click to RevelUI and FunctionalityLaunch updated activity in ReaderLaunch updated activity in ReaderReader reflects latest changes"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "UI and Functionality",
+      "description": "Edit only video ID and republishChange YouTube ID → RepublishReader displays newly linked video",
+      "expected": "",
+      "raw": "TC_108Click to RevelUI and FunctionalityEdit only video ID and republishChange YouTube ID → RepublishReader displays newly linked video"
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "UI and Functionality",
+      "description": "Edit caption and republish Update caption text → Republish → Launch ReaderUpdated caption visible in Reader",
+      "expected": "",
+      "raw": "TC_109Click to RevelUI and FunctionalityEdit caption and republish Update caption text → Republish → Launch ReaderUpdated caption visible in Reader"
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "UI and Functionality",
+      "description": "Change placement and republish Change video placement → Republish → Launch ReaderNew placement reflected correctly",
+      "expected": "",
+      "raw": "TC_110Click to RevelUI and FunctionalityChange placement and republish Change video placement → Republish → Launch ReaderNew placement reflected correctly"
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "UI and Functionality",
+      "description": "Remove video and republishDelete media → Save & RepublishVideo no longer visible in Reader",
+      "expected": "",
+      "raw": "TC_111Click to RevelUI and FunctionalityRemove video and republishDelete media → Save & RepublishVideo no longer visible in Reader"
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "UI and Functionality",
+      "description": "Toggle CC off and republish Uncheck Subtitle/CC option → Republish → Launch ReaderSubtitles no longer shown",
+      "expected": "",
+      "raw": "TC_112Click to RevelUI and FunctionalityToggle CC off and republish Uncheck Subtitle/CC option → Republish → Launch ReaderSubtitles no longer shown"
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "UI and Functionality",
+      "description": "Add CC and republish Upload VTT file →",
+      "expected": "",
+      "raw": "TC_113Click to RevelUI and FunctionalityAdd CC and republish Upload VTT file → Enable CC → Republish → Launch ReaderSubtitles now appear in Reader"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MCQ Multiple (Multiple Answer)",
+  "slug": "mcq-multiple",
+  "dataType": "multiple-choice-template",
+  "module": "ela",
+  "dropTarget": "generic-step-column",
+  "spec": "12-mcq-multiple-deep.spec.ts",
+  "qcPdf": "Author Test Cases - MCQ Multiple.pdf",
+  "qcPdfPath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - MCQ Multiple.pdf",
+  "architectureNote": "MCQ Multiple is NOT a separate template. It is the same multiple-choice-template component as single MCQ, with the answer type set to 'multiple' (checkbox options). Selectors, commands and test data extend the shared ../mcq assets.",
+  "source": {
+    "settings": "closify/KITABOO_Authoring/templates/multiple-choice-template/multiple-choice-template-settings.html",
+    "auth": "closify/KITABOO_Authoring/templates/multiple-choice-template/multiple-choice-template-auth.html",
+    "default": "closify/KITABOO_Authoring/templates/multiple-choice-template/default/multiple-choice-template.json"
+  },
+  "rules": {
+    "minOptions": 2,
+    "maxOptions": 10,
+    "defaultOptions": 4,
+    "answerType": "multiple-select",
+    "optionInputClass": "mcqchkbox",
+    "labelTypesRequireShowMe": true,
+    "feedbackRequiresShowMe": true,
+    "resetReusesShowMeId": true
+  },
+  "coverage": {
+    "qcTotal": 108,
+    "automated": 40,
+    "deferred": 64,
+    "lastVerified": null,
+    "status": "generated-unverified"
+  }
+}

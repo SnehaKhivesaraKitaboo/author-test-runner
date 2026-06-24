@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QC Coverage — Kitaboo Authoring Tests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --brand:#4f46e5; --brand-light:#818cf8; --brand-dark:#3730a3;
+  --pass:#059669; --pass-light:#d1fae5;
+  --fail:#dc2626; --fail-light:#fee2e2;
+  --warn:#d97706; --warn-light:#fef3c7;
+  --info:#0284c7; --info-light:#e0f2fe;
+  --bg:#f0f2ff; --surface:#fff; --surface-2:#f8fafc;
+  --border:#e2e8f0; --text:#0f172a; --text-muted:#64748b;
+  --radius:14px; --radius-sm:8px;
+  --shadow:0 4px 24px rgba(79,70,229,.10);
+  --shadow-lg:0 12px 48px rgba(79,70,229,.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Roboto,sans-serif;background:var(--bg);color:var(--text);
+  min-height:100vh;padding:0 0 80px;position:relative;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:-1;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%,rgba(129,140,248,.18),transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 0%,rgba(79,70,229,.12),transparent 50%);
+  pointer-events:none;
+}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none}
+input{font-family:inherit}
+
+/* nav */
+.nav{
+  background:var(--brand-dark);padding:0 32px;display:flex;align-items:center;
+  gap:16px;height:60px;position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 12px rgba(0,0,0,.25);
+}
+.nav .logo{color:#fff;font-weight:800;font-size:18px;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+.nav .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--brand-light);box-shadow:0 0 12px var(--brand-light)}
+.nav .links{display:flex;gap:6px;margin-left:24px}
+.nav .links a{color:#c7d2fe;font-weight:500;font-size:14px;padding:8px 14px;border-radius:8px;transition:.15s}
+.nav .links a:hover{background:rgba(255,255,255,.1);color:#fff}
+.nav .links a.active{background:var(--brand);color:#fff}
+
+.page-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* header */
+.head{margin:32px 0 18px}
+.head h1{font-size:28px;font-weight:800;letter-spacing:-.5px}
+.head p{color:var(--text-muted);margin-top:6px;font-size:14px}
+
+/* summary cards */
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:18px 0 8px}
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px 18px;box-shadow:var(--shadow);
+}
+.card .k{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);font-weight:600}
+.card .v{font-size:28px;font-weight:800;margin-top:4px;line-height:1}
+.card.pass .v{color:var(--pass)} .card.warn .v{color:var(--warn)}
+.card.brand .v{color:var(--brand)} .card.info .v{color:var(--info)}
+.card .sub{font-size:12px;color:var(--text-muted);margin-top:4px}
+
+.global-bar{height:10px;border-radius:6px;overflow:hidden;background:var(--border);display:flex;margin:8px 0 4px}
+.global-bar .seg-auto{background:var(--pass)}
+.global-bar .seg-def{background:var(--warn)}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:22px 0 14px}
+.controls input[type=search]{
+  flex:1;min-width:220px;padding:10px 14px;border:1px solid var(--border);
+  border-radius:var(--radius-sm);font-size:14px;background:var(--surface);
+}
+.controls input[type=search]:focus{outline:2px solid var(--brand-light);border-color:var(--brand)}
+.seg{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+.seg button{padding:9px 14px;font-size:13px;font-weight:600;background:transparent;color:var(--text-muted)}
+.seg button.active{background:var(--brand);color:#fff}
+.btn-ghost{
+  padding:9px 14px;font-size:13px;font-weight:600;background:var(--surface);
+  color:var(--brand);border:1px solid var(--border);border-radius:var(--radius-sm);
+}
+.btn-ghost:hover{background:var(--surface-2)}
+
+/* accordion */
+.acc{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.comp{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.comp-head{
+  display:flex;align-items:center;gap:14px;padding:16px 18px;cursor:pointer;
+  user-select:none;transition:background .12s;
+}
+.comp-head:hover{background:var(--surface-2)}
+.comp-head .chev{transition:transform .2s;color:var(--text-muted);font-size:14px;width:14px}
+.comp.open .comp-head .chev{transform:rotate(90deg)}
+.comp-title{flex:1;min-width:0}
+.comp-title .name{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.comp-title .meta{font-size:12px;color:var(--text-muted);margin-top:3px;display:flex;gap:10px;flex-wrap:wrap}
+.comp-title .meta code{background:var(--surface-2);padding:1px 6px;border-radius:5px;font-size:11px}
+
+.mini-bar{width:120px;height:8px;border-radius:5px;overflow:hidden;background:var(--border);display:flex;flex-shrink:0}
+.mini-bar .a{background:var(--pass)} .mini-bar .d{background:var(--warn)}
+.count-pills{display:flex;gap:6px;flex-shrink:0}
+.pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.pill.auto{background:var(--pass-light);color:var(--pass)}
+.pill.def{background:var(--warn-light);color:var(--warn)}
+.pill.tot{background:var(--info-light);color:var(--info)}
+
+.warn-flag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:var(--warn-light);color:var(--warn);text-transform:uppercase;letter-spacing:.4px}
+
+.comp-body{display:none;border-top:1px solid var(--border)}
+.comp.open .comp-body{display:block}
+.comp-note{padding:10px 18px;font-size:12px;color:var(--text-muted);background:var(--surface-2);border-bottom:1px solid var(--border)}
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{
+  text-align:left;padding:10px 14px;font-size:11px;text-transform:uppercase;
+  letter-spacing:.5px;color:var(--text-muted);background:var(--surface-2);
+  border-bottom:1px solid var(--border);position:sticky;top:0;
+}
+tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--surface-2)}
+.qc-id{font-weight:700;white-space:nowrap;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.status-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;display:inline-block}
+.status-badge.automated{background:var(--pass-light);color:var(--pass)}
+.status-badge.deferred{background:var(--warn-light);color:var(--warn)}
+.our-test{line-height:1.45}
+.our-test .reason{color:var(--warn);font-style:italic}
+.our-test .note{display:block;color:var(--text-muted);font-size:11px;margin-top:3px}
+.sel{margin-top:5px;display:flex;flex-wrap:wrap;gap:4px}
+.sel code{background:var(--surface-2);border:1px solid var(--border);padding:1px 6px;border-radius:5px;font-size:11px;color:var(--brand-dark)}
+.row-hidden{display:none}
+
+.empty{padding:60px 20px;text-align:center;color:var(--text-muted)}
+.loading{padding:60px 20px;text-align:center;color:var(--text-muted)}
+.spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--brand);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.legend-foot{margin-top:24px;font-size:12px;color:var(--text-muted);display:flex;gap:18px;flex-wrap:wrap}
+.legend-foot span{display:inline-flex;align-items:center;gap:6px}
+.legend-foot .sw{width:12px;height:12px;border-radius:3px}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo"><span class="dot"></span> Kitaboo Authoring Tests</div>
+  <div class="links">
+    <a href="/dashboard.html">Dashboard</a>
+    <a href="/coverage.html" class="active">QC Coverage</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="head">
+    <h1>QC Test Case Coverage</h1>
+    <p>Every QC test case (from the component PDFs) mapped against our automated Cypress test — grouped by component. Expand a component to see the full matrix.</p>
+  </div>
+
+  <div class="summary" id="summary"></div>
+  <div class="global-bar" id="globalBar" title="Automated vs Deferred"></div>
+
+  <div class="controls">
+    <input type="search" id="search" aria-label="Search component, QC id, or test text" placeholder="Search component, QC id, or test text…" />
+    <div class="seg" id="statusFilter">
+      <button data-f="all" class="active">All</button>
+      <button data-f="automated">Automated</button>
+      <button data-f="deferred">Deferred</button>
+    </div>
+    <button class="btn-ghost" id="expandAll">Expand all</button>
+    <button class="btn-ghost" id="collapseAll">Collapse all</button>
+  </div>
+
+  <div class="acc" id="acc">
+    <div class="loading"><div class="spinner"></div>Loading coverage data…</div>
+  </div>
+
+  <div class="legend-foot">
+    <span><span class="sw" style="background:var(--pass)"></span> Automated — verified in the authoring DOM by an <code>it()</code> block</span>
+    <span><span class="sw" style="background:var(--warn)"></span> Deferred — <code>it.skip()</code> (Preview/Reader, file pickers, persistence, a11y, etc.)</span>
+  </div>
+</div>
+
+<script>
+const API = (location.port === '5500' ? 'http://localhost:4200' : '') + '/api/coverage';
+let DATA = null;
+let activeStatus = 'all';
+let query = '';
+
+const esc = (s) => String(s == null ? '' : s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+function pct(n, d){ return d ? Math.round((n/d)*100) : 0; }
+
+function renderSummary(){
+  const t = DATA.totals;
+  const autoPct = pct(t.automated, t.mapped);
+  document.getElementById('summary').innerHTML = `
+    <div class="card brand"><div class="k">Components</div><div class="v">${DATA.componentCount}</div><div class="sub">with QC mapping</div></div>
+    <div class="card info"><div class="k">QC test cases</div><div class="v">${t.mapped}</div><div class="sub">mapped from PDFs</div></div>
+    <div class="card pass"><div class="k">Automated</div><div class="v">${t.automated}</div><div class="sub">${autoPct}% of mapped</div></div>
+    <div class="card warn"><div class="k">Deferred</div><div class="v">${t.deferred}</div><div class="sub">${pct(t.deferred,t.mapped)}% of mapped</div></div>
+  `;
+  const gb = document.getElementById('globalBar');
+  gb.innerHTML =
+    `<div class="seg-auto" style="width:${autoPct}%"></div>` +
+    `<div class="seg-def" style="width:${100-autoPct}%"></div>`;
+  gb.title = `${t.automated} automated / ${t.deferred} deferred (${t.mapped} total)`;
+}
+
+function rowMatches(comp, row){
+  if (activeStatus !== 'all' && row.status !== activeStatus) return false;
+  if (!query) return true;
+  const hay = (comp.component + ' ' + row.qc + ' ' + (row.ourTest||'') + ' ' +
+    (row.reason||'') + ' ' + (row.note||'') + ' ' + (row.selectors||[]).join(' ')).toLowerCase();
+  return hay.includes(query);
+}
+
+function compMatchesSearch(comp){
+  if (!query) return true;
+  if (comp.component.toLowerCase().includes(query)) return true;
+  return comp.rows.some(r => rowMatches(comp, r));
+}
+
+function renderRows(comp){
+  return comp.rows.map(row => {
+    const hidden = rowMatches(comp, row) ? '' : ' row-hidden';
+    const sel = (row.selectors && row.selectors.length)
+      ? `<div class="sel">${row.selectors.map(s=>`<code>${esc(s)}</code>`).join('')}</div>` : '';
+    let our;
+    if (row.status === 'deferred'){
+      our = `<span class="reason">${esc(row.reason || 'Deferred')}</span>`;
+    } else {
+      our = esc(row.ourTest || '—');
+    }
+    const note = row.note ? `<span class="note">${esc(row.note)}</span>` : '';
+    return `<tr class="r${hidden}" data-status="${row.status}">
+      <td class="qc-id">${esc(row.qc)}</td>
+      <td><span class="status-badge ${row.status}">${row.status}</span></td>
+      <td class="our-test">${our}${note}${sel}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderAcc(){
+  const acc = document.getElementById('acc');
+  const comps = DATA.components.filter(compMatchesSearch);
+  if (!comps.length){ acc.innerHTML = `<div class="empty">No matching test cases.</div>`; return; }
+
+  acc.innerHTML = comps.map((c, idx) => {
+    const cnt = c.counts;
+    const autoW = pct(cnt.automated, cnt.mapped);
+    const warnFlag = c.notLiveVerified ? `<span class="warn-flag">not live-verified</span>` : '';
+    const metaBits = [
+      c.spec ? `<code>${esc(c.spec)}</code>` : '',
+      c.qcSource ? `PDF: ${esc(c.qcSource)}` : '',
+      c.dataType ? `dataType: <code>${esc(c.dataType)}</code>` : '',
+    ].filter(Boolean).join('<span>·</span>');
+    // open the first component by default when searching/filtering
+    const open = (query || activeStatus!=='all') ? ' open' : '';
+    return `<div class="comp${open}" data-slug="${esc(c.slug)}">
+      <div class="comp-head" role="button" tabindex="0">
+        <span class="chev">▶</span>
+        <div class="comp-title">
+          <div class="name">${esc(c.component)} ${warnFlag}</div>
+          <div class="meta">${metaBits}</div>
+        </div>
+        <div class="mini-bar" title="${cnt.automated} automated / ${cnt.deferred} deferred">
+          <div class="a" style="width:${autoW}%"></div>
+          <div class="d" style="width:${100-autoW}%"></div>
+        </div>
+        <div class="count-pills">
+          <span class="pill auto" title="Automated">${cnt.automated}✓</span>
+          <span class="pill def" title="Deferred">${cnt.deferred}⏸</span>
+          <span class="pill tot" title="Total mapped">${cnt.mapped}</span>
+        </div>
+      </div>
+      <div class="comp-body">
+        ${c.note ? `<div class="comp-note">${esc(c.note)}</div>` : ''}
+        <table>
+          <thead><tr><th style="width:90px">QC ID</th><th style="width:110px">Status</th><th>Our Test / Reason</th></tr></thead>
+          <tbody>${renderRows(c)}</tbody>
+        </table>
+      </div>
+    </div>`;
+  }).join('');
+
+  acc.querySelectorAll('.comp-head').forEach(head => {
+    const toggle = () => head.parentElement.classList.toggle('open');
+    head.addEventListener('click', toggle);
+    head.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); }
+    });
+  });
+}
+
+function render(){ renderSummary(); renderAcc(); }
+
+document.getElementById('search').addEventListener('input', (e) => {
+  query = e.target.value.trim().toLowerCase();
+  renderAcc();
+});
+document.getElementById('statusFilter').addEventListener('click', (e) => {
+  const btn = e.target.closest('button'); if (!btn) return;
+  activeStatus = btn.dataset.f;
+  document.querySelectorAll('#statusFilter button').forEach(b => b.classList.toggle('active', b === btn));
+  renderAcc();
+});
+document.getElementById('expandAll').addEventListener('click', () =>
+  document.querySelectorAll('.comp').forEach(c => c.classList.add('open')));
+document.getElementById('collapseAll').addEventListener('click', () =>
+  document.querySelectorAll('.comp').forEach(c => c.classList.remove('open')));
+
+fetch(API)
+  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(d => { DATA = d; render(); })
+  .catch(err => {
+    document.getElementById('acc').innerHTML =
+      `<div class="empty">Failed to load coverage data.<br><small>${esc(err.message)}</small><br><br>` +
+      `Make sure the test-runner server is running (<code>npm start</code>) and open this page at <code>http://localhost:4200/coverage.html</code>.</div>`;
+  });
+</script>
+</body>
+</html>

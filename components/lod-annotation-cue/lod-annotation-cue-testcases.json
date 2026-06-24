@@ -1,0 +1,1164 @@
+{
+  "component": "LoD + Annotation Cue",
+  "slug": "lod-annotation-cue",
+  "dataType": "lod",
+  "source": "Author Test Cases - LoD and Annottaion cue.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - LoD and Annottaion cue.pdf",
+  "pages": 3,
+  "extractedCount": 144,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "Functional",
+      "description": "LODAuthor can create a reflowable EPUB from studio",
+      "expected": "",
+      "raw": "TC_001LODAuthor can create a reflowable EPUB from studio 1. Login as author. 2. Start new EPUB project. 3. Add base text.New EPUB created, base text saved and visible."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functional",
+      "description": "LODAuthor can add multiple components into EPUB",
+      "expected": "",
+      "raw": "TC_002LODAuthor can add multiple components into EPUB 1. In EPUB project, add text, image, audio components. 2. Save.All components appear correctly in the EPUB."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functional",
+      "description": "LOD Author can save EPUB with only base text (no other components)",
+      "expected": "",
+      "raw": "TC_003LOD Author can save EPUB with only base text (no other components) 1. Add only base text. 2. Save EPUB.EPUB saved with single component, no errors."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functional",
+      "description": "LOD Verify that LoD component can be added to reflowable EPUBClick “+” →",
+      "expected": "",
+      "raw": "TC_004LOD Verify that LoD component can be added to reflowable EPUBClick “+” → Select LoD from component list LoD container appears with default border and placeholder “Drag components here”"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "layout of LoD containerObserve the LoD placeholder area LoD container should have bordered area with title “LoD” and delete icon",
+      "expected": "",
+      "raw": "TC_005LODVerify UI layout of LoD containerObserve the LoD placeholder area LoD container should have bordered area with title “LoD” and delete icon"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functional",
+      "description": "LOD Verify tooltip on hover over LoD icon Hover the mouse over LoD iconTooltip should display “Layers of Differentiation”.",
+      "expected": "",
+      "raw": "TC_006LOD Verify tooltip on hover over LoD icon Hover the mouse over LoD iconTooltip should display “Layers of Differentiation”."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functional",
+      "description": "Annotation CueVerify Annotation Cue icon is present in component panel",
+      "expected": "Locate component panelAnnotation Cue icon should be visible",
+      "raw": "TC_007Annotation CueVerify Annotation Cue icon is present in component panel 1. Open authoring platform 2. Locate component panelAnnotation Cue icon should be visible"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functional",
+      "description": "Annotation CueVerify user can drag and drop Annotation Cue element",
+      "expected": "Drop on authoring page Annotation Cue box appears with default border and title \"Stop and Annotate\"",
+      "raw": "TC_008Annotation CueVerify user can drag and drop Annotation Cue element 1. Drag Annotation Cue from pane 2. Drop on authoring page Annotation Cue box appears with default border and title \"Stop and Annotate\""
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functional",
+      "description": "Annotation CueVerify Annotation Cue title is editable",
+      "expected": "Edit and saveEdited title is saved and displayed",
+      "raw": "TC_009Annotation CueVerify Annotation Cue title is editable 1. Click on title \"Stop and Annotate\" 2. Edit and saveEdited title is saved and displayed"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functional",
+      "description": "Annotation CueVerify pen icon is not editable1. Attempt to click or edit the pen iconPen icon should not be editable or respond to interaction",
+      "expected": "Attempt to click or edit the pen iconPen icon should not be editable or respond to interaction",
+      "raw": "TC_010Annotation CueVerify pen icon is not editable1. Attempt to click or edit the pen iconPen icon should not be editable or respond to interaction"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "Annotation CueVerify border color can be changed via settings",
+      "expected": "Change border colorBorder color changes according to selection",
+      "raw": "TC_011Annotation CueVerify border color can be changed via settings 1. Select Annotation Cue 2. Open settings panel 3. Change border colorBorder color changes according to selection"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functional",
+      "description": "Annotation CueVerify container deletion confirmationClick Delete on LoDConfirmation popup before deletion.",
+      "expected": "",
+      "raw": "TC_012Annotation CueVerify container deletion confirmationClick Delete on LoDConfirmation popup before deletion."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functional",
+      "description": "LODVerify that LoD container can be deleted Click delete icon () LoD container is removed from canvas",
+      "expected": "",
+      "raw": "TC_013LODVerify that LoD container can be deleted Click delete icon () LoD container is removed from canvas"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functional",
+      "description": "LODVerify alignment of LoD component in authoring viewDrag LoD to different positions Component should align properly within authoring layout without overlapping",
+      "expected": "",
+      "raw": "TC_014LODVerify alignment of LoD component in authoring viewDrag LoD to different positions Component should align properly within authoring layout without overlapping"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functional",
+      "description": "LODVerify LoD settings panel visibility",
+      "expected": "",
+      "raw": "TC_015LODVerify LoD settings panel visibilitySelect LoD container “Settings” tab displays LoD properties: Display Criteria, Level of Support, Type, Link Activity"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functional",
+      "description": "LODVerify LoD container unique ID generationDrop multiple LoD containersEach LoD container should have a unique LoD_container_ID.",
+      "expected": "",
+      "raw": "TC_016LODVerify LoD container unique ID generationDrop multiple LoD containersEach LoD container should have a unique LoD_container_ID."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functional",
+      "description": "LODVerify LoD container can be repositionedDrag LoD container → Move within the pageContainer should move freely and reposition successfully.",
+      "expected": "",
+      "raw": "TC_017LODVerify LoD container can be repositionedDrag LoD container → Move within the pageContainer should move freely and reposition successfully."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functional",
+      "description": "LODVerify display of Display Criteria section",
+      "expected": "",
+      "raw": "TC_018LODVerify display of Display Criteria sectionSelect LoD container → Open Settings Display Criteria options (Level of Support, Type, Activity) should be visible."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functional",
+      "description": "LODVerify Level of Support toggle default stateCheck toggle for Level of SupportToggle should be OFF by default.",
+      "expected": "",
+      "raw": "TC_019LODVerify Level of Support toggle default stateCheck toggle for Level of SupportToggle should be OFF by default."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functional",
+      "description": "LODVerify enabling Level of SupportTurn ON toggle → Observe options Values “CORE”, “LIGHT”, “MODERATE”, “INTENSIVE” should appear.",
+      "expected": "",
+      "raw": "TC_020LODVerify enabling Level of SupportTurn ON toggle → Observe options Values “CORE”, “LIGHT”, “MODERATE”, “INTENSIVE” should appear."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functional",
+      "description": "LODVerify selection of Level of Support",
+      "expected": "",
+      "raw": "TC_021LODVerify selection of Level of SupportEnable toggle → Select any/all optionSelected value should get saved and reflected in settings."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functional",
+      "description": "LODVerify LoD Type toggle default and optionsCheck toggle for LoD Type Toggle should be OFF by default. When ON, display “Annotation cue”.",
+      "expected": "",
+      "raw": "TC_022LODVerify LoD Type toggle default and optionsCheck toggle for LoD Type Toggle should be OFF by default. When ON, display “Annotation cue”."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functional",
+      "description": "LODVerify Activity toggle default stateCheck toggle for ActivityToggle should be OFF by default.",
+      "expected": "",
+      "raw": "TC_023LODVerify Activity toggle default stateCheck toggle for ActivityToggle should be OFF by default."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functional",
+      "description": "LODVerify Activity toggle ON stateTurn ON Activity toggle“Add New” button should be displayed.",
+      "expected": "",
+      "raw": "TC_024LODVerify Activity toggle ON stateTurn ON Activity toggle“Add New” button should be displayed."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functional",
+      "description": "LODVerify persistence of tag selectionsSave → Refresh pagePreviously selected tag values should persist.",
+      "expected": "",
+      "raw": "TC_025LODVerify persistence of tag selectionsSave → Refresh pagePreviously selected tag values should persist."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functional",
+      "description": "LODVerify database sync for tag valuesSave LoD with tags → Check DB (via API)Tag group and tag values should be saved in DB.",
+      "expected": "",
+      "raw": "TC_026LODVerify database sync for tag valuesSave LoD with tags → Check DB (via API)Tag group and tag values should be saved in DB."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI",
+      "description": "update after backend tag modificationModify tags in backend → ReloadUpdated tag names should reflect automatically.",
+      "expected": "",
+      "raw": "TC_027LODVerify UI update after backend tag modificationModify tags in backend → ReloadUpdated tag names should reflect automatically."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functional",
+      "description": "LODVerify Link Activity toggle",
+      "expected": "",
+      "raw": "TC_028LODVerify Link Activity toggleEnable Link Activity toggleActivity linking dropdown appears"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functional",
+      "description": "LODVerify linking behaviorLink LoD with an annotation activityLoD is successfully linked with selected activity",
+      "expected": "",
+      "raw": "TC_029LODVerify linking behaviorLink LoD with an annotation activityLoD is successfully linked with selected activity"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functional",
+      "description": "Annotation Cue Verify adding RTE(Bold, Italics, Underline, color formatting etc..) inside LoD Use RTE options(Bold, Italics, Underline, color formatting etc..) into LoD container RTE(Bold, Italics, Underline, color forma",
+      "expected": "",
+      "raw": "TC_030Annotation Cue Verify adding RTE(Bold, Italics, Underline, color formatting etc..) inside LoD Use RTE options(Bold, Italics, Underline, color formatting etc..) into LoD container RTE(Bold, Italics, Underline, color formatting etc..) should be used successfully"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functional",
+      "description": "Annotation CueVerify text formatting optionsApply bold, italics, underlineFormatting reflects correctly",
+      "expected": "",
+      "raw": "TC_031Annotation CueVerify text formatting optionsApply bold, italics, underlineFormatting reflects correctly"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functional",
+      "description": "Annotation CueVerify inserting mediaInsert audio or image fileMedia uploaded and playable/displayed",
+      "expected": "",
+      "raw": "TC_032Annotation CueVerify inserting mediaInsert audio or image fileMedia uploaded and playable/displayed"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functional",
+      "description": "Annotation CueVerify Save functionalityAdd LoD + tags + widget → Click SaveAll data saved successfully.",
+      "expected": "",
+      "raw": "TC_033Annotation CueVerify Save functionalityAdd LoD + tags + widget → Click SaveAll data saved successfully."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functional",
+      "description": "Annotation CueVerify Preview behaviorClick PreviewAll components except those inside LoD are visible (as per MVP).",
+      "expected": "",
+      "raw": "TC_034Annotation CueVerify Preview behaviorClick PreviewAll components except those inside LoD are visible (as per MVP)."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functional",
+      "description": "LODVerify adding multiple linked activities (ref IDs)",
+      "expected": "",
+      "raw": "TC_035LODVerify adding multiple linked activities (ref IDs) 1. Open LoD container → Go to Settings → Enable Link Activity 2. Add multiple reference IDs (e.g., Activity_001, Activity_002). Multiple activity IDs get added and displayed under the linked activity list."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functional",
+      "description": "LODVerify validation when adding duplicate ref IDsTry adding the same reference ID twice. System should show a message like “Activity already linked” or prevent duplicate entry.",
+      "expected": "",
+      "raw": "TC_036LODVerify validation when adding duplicate ref IDsTry adding the same reference ID twice. System should show a message like “Activity already linked” or prevent duplicate entry."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functional",
+      "description": "LODVerify display of linked activity list After adding activities, observe the list area under “Linked Activities”. All linked activities with their IDs should be listed in a readable format (ID or activity name).",
+      "expected": "",
+      "raw": "TC_037LODVerify display of linked activity list After adding activities, observe the list area under “Linked Activities”. All linked activities with their IDs should be listed in a readable format (ID or activity name)."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functional",
+      "description": "LODVerify that linked activity IDs persist after saveAdd multiple linked activities → Save LoD → Refresh page.All previously linked activity IDs remain displayed and functional.",
+      "expected": "",
+      "raw": "TC_038LODVerify that linked activity IDs persist after saveAdd multiple linked activities → Save LoD → Refresh page.All previously linked activity IDs remain displayed and functional."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functional",
+      "description": "LODVerify ability to delete a linked activity IDHover or click delete icon beside an activity ID.The selected activity is removed from the list.",
+      "expected": "",
+      "raw": "TC_039LODVerify ability to delete a linked activity IDHover or click delete icon beside an activity ID.The selected activity is removed from the list."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functional",
+      "description": "LOD Verify behavior after deleting one of multiple linked activitiesLink 3 activities → Delete one → Save.Only the remaining 2 activities stay linked after save and reload.",
+      "expected": "",
+      "raw": "TC_040LOD Verify behavior after deleting one of multiple linked activitiesLink 3 activities → Delete one → Save.Only the remaining 2 activities stay linked after save and reload."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functional",
+      "description": "LODVerify that deletion confirmation prompt appearsTry deleting an activity ID. System should show confirmation dialog like “Are you sure you want to delete this link?”",
+      "expected": "",
+      "raw": "TC_041LODVerify that deletion confirmation prompt appearsTry deleting an activity ID. System should show confirmation dialog like “Are you sure you want to delete this link?”"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functional",
+      "description": "LODVerify linking validation with empty ID",
+      "expected": "",
+      "raw": "TC_042LODVerify linking validation with empty IDEnable Link Activity → Click add without entering ref ID.Validation error appears: “Please enter a valid reference ID”."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functional",
+      "description": "LODVerify linking validation with invalid format",
+      "expected": "",
+      "raw": "TC_043LODVerify linking validation with invalid format Enter invalid characters or incomplete ID (e.g., @@@ or blank spaces).System prevents saving and prompts “Invalid activity reference”."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functional",
+      "description": "LODVerify linking of large number of activitiesAdd more than 10 activity IDs (stress test). System should accept and display all (up to defined max limit) without UI overlap.",
+      "expected": "",
+      "raw": "TC_044LODVerify linking of large number of activitiesAdd more than 10 activity IDs (stress test). System should accept and display all (up to defined max limit) without UI overlap."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functional",
+      "description": "LODVerify tooltip or hover details for linked activityHover over a linked activity ID.Tooltip displays full ID or activity name/description.",
+      "expected": "",
+      "raw": "TC_045LODVerify tooltip or hover details for linked activityHover over a linked activity ID.Tooltip displays full ID or activity name/description."
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functional",
+      "description": "LODVerify activity linking with already linked LoDCreate two LoDs → Link same activity in both. System should allow linking if multiple LoDs can share same activity OR show validation if not allowed (based on design).",
+      "expected": "",
+      "raw": "TC_046LODVerify activity linking with already linked LoDCreate two LoDs → Link same activity in both. System should allow linking if multiple LoDs can share same activity OR show validation if not allowed (based on design)."
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functional",
+      "description": "LODVerify linking status after republishingLink activity → Publish EPUB → Reopen author view.Linked activity list remains visible and intact after republishing.",
+      "expected": "",
+      "raw": "TC_047LODVerify linking status after republishingLink activity → Publish EPUB → Reopen author view.Linked activity list remains visible and intact after republishing."
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functional",
+      "description": "LODVerify that linked activities open correct referenceClick a linked activity ID (if clickable). Opens or highlights respective activity in preview mode or link panel. invalid",
+      "expected": "",
+      "raw": "TC_048LODVerify that linked activities open correct referenceClick a linked activity ID (if clickable). Opens or highlights respective activity in preview mode or link panel. invalid"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functional",
+      "description": "LODVerify undo/redo after adding and deleting activity linksAdd activity → Delete it → Undo/Redo actions. Undo restores deleted activity link; Redo removes it again successfully.",
+      "expected": "",
+      "raw": "TC_049LODVerify undo/redo after adding and deleting activity linksAdd activity → Delete it → Undo/Redo actions. Undo restores deleted activity link; Redo removes it again successfully."
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functional",
+      "description": "LODVerify presence of Add button before linking first activity Navigate to LoD →",
+      "expected": "",
+      "raw": "TC_050LODVerify presence of Add button before linking first activity Navigate to LoD → Enable Link Activity. Observe UI before entering any ref ID.“Add” (+) button should not be displayed initially."
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functional",
+      "description": "LODVerify Add button appears after entering the first valid ref ID",
+      "expected": "",
+      "raw": "TC_051LODVerify Add button appears after entering the first valid ref ID Enable Link Activity → Enter valid Ref ID (e.g., ACT_001) → Click Save/Add. Once the first activity is added, Add (+) button becomes visible, allowing addition of second activity."
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functional",
+      "description": "LODVerify Add button functionality for linking second activity After first ref ID is linked, click the Add button →",
+      "expected": "",
+      "raw": "TC_052LODVerify Add button functionality for linking second activity After first ref ID is linked, click the Add button → Enter another valid ref ID (e.g., ACT_002). The second activity gets successfully added and displayed below the first one."
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functional",
+      "description": "LODVerify Add button remains available for multiple additions Continue clicking Add to add multiple reference IDs (e.g., ACT_003, ACT_004). Add button remains visible and functional after every successful addition until ",
+      "expected": "",
+      "raw": "TC_053LODVerify Add button remains available for multiple additions Continue clicking Add to add multiple reference IDs (e.g., ACT_003, ACT_004). Add button remains visible and functional after every successful addition until max limit is reached."
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functional",
+      "description": "LOD Verify Add button hides when maximum activity link limit reachedKeep adding activity IDs until system limit (say 10). Once limit is reached, Add button should disappear or become disabled with message “Maximum limit ",
+      "expected": "",
+      "raw": "TC_054LOD Verify Add button hides when maximum activity link limit reachedKeep adding activity IDs until system limit (say 10). Once limit is reached, Add button should disappear or become disabled with message “Maximum limit reached”."
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functional",
+      "description": "LODVerify Add button not visible when invalid ref ID entered Try to add invalid ref ID (e.g., empty field or special characters). Add button should remain hidden or inactive until a valid ref ID is entered.",
+      "expected": "",
+      "raw": "TC_055LODVerify Add button not visible when invalid ref ID entered Try to add invalid ref ID (e.g., empty field or special characters). Add button should remain hidden or inactive until a valid ref ID is entered."
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functional",
+      "description": "LOD Verify Add button reappears after deleting an existing linked activityAdd two valid activity ref IDs → Delete one from list. Add button should reappear/enabled again for adding new ref IDs if limit not reached.",
+      "expected": "",
+      "raw": "TC_056LOD Verify Add button reappears after deleting an existing linked activityAdd two valid activity ref IDs → Delete one from list. Add button should reappear/enabled again for adding new ref IDs if limit not reached."
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functional",
+      "description": "LODVerify Add button label or tooltipHover over Add button.Tooltip displays “Add another activity” or similar helpful text.",
+      "expected": "",
+      "raw": "TC_057LODVerify Add button label or tooltipHover over Add button.Tooltip displays “Add another activity” or similar helpful text."
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functional",
+      "description": "LODVerify Add button works after page reload Add first ref ID → Add second using Add button → Save → Reload page.All linked IDs remain, and Add button still visible for adding more.",
+      "expected": "",
+      "raw": "TC_058LODVerify Add button works after page reload Add first ref ID → Add second using Add button → Save → Reload page.All linked IDs remain, and Add button still visible for adding more."
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "UI",
+      "description": "consistencyAdd multiple activities. Add button appears aligned correctly below the last added activity, maintaining consistent spacing.",
+      "expected": "",
+      "raw": "TC_059LODVerify Add button alignment and UI consistencyAdd multiple activities. Add button appears aligned correctly below the last added activity, maintaining consistent spacing."
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functional",
+      "description": "LODVerify editing LoD before publishingEdit RTE or tagsChanges saved successfully",
+      "expected": "",
+      "raw": "TC_060LODVerify editing LoD before publishingEdit RTE or tagsChanges saved successfully"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functional",
+      "description": "LODVerify editing after publishingEdit LoD → RepublishUpdated content reflects on student view",
+      "expected": "",
+      "raw": "TC_061LODVerify editing after publishingEdit LoD → RepublishUpdated content reflects on student view"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functional",
+      "description": "LODVerify editing without base EPUB changesModify only LoDOnly LoD is updated in published package",
+      "expected": "",
+      "raw": "TC_062LODVerify editing without base EPUB changesModify only LoDOnly LoD is updated in published package"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functional",
+      "description": "LODVerify deletion and republishingDelete LoD → RepublishLoD is removed in published EPUB",
+      "expected": "",
+      "raw": "TC_063LODVerify deletion and republishingDelete LoD → RepublishLoD is removed in published EPUB"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functional",
+      "description": "LODVerify republish statusCheck activity after republishLatest version is visible in student interface",
+      "expected": "",
+      "raw": "TC_064LODVerify republish statusCheck activity after republishLatest version is visible in student interface"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functional",
+      "description": "CLPStudent launches text from CLC",
+      "expected": "",
+      "raw": "TC_065CLPStudent launches text from CLC 1. Login as student. 2. Select text. 3. Launch reading.Text loads successfully."
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functional",
+      "description": "CLPHighlight part of text for generic annotation",
+      "expected": "",
+      "raw": "TC_066CLPHighlight part of text for generic annotation 1. Select section. 2. Add highlight/annotation. 3. Save.Annotation is saved and visible in student account."
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functional",
+      "description": "CLPAdd notes on text for generic annotation",
+      "expected": "",
+      "raw": "TC_067CLPAdd notes on text for generic annotation 1. Highlight text. 2. Add note. 3. Save.Note is saved and attached to highlight."
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functional",
+      "description": "CLPView annotation cue if available on standalone text",
+      "expected": "",
+      "raw": "TC_068CLPView annotation cue if available on standalone text 1. Launch text. 2. Look for annotation cue. 3. View cue.Cue displays as per assigned LoD/tags."
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functional",
+      "description": "CLPLaunch annotation activity and add step annotation",
+      "expected": "",
+      "raw": "TC_069CLPLaunch annotation activity and add step annotation 1. Start annotation activity. 2. Follow instructions. 3. Add activity step annotation. 4. Save.Step annotation is saved and linked to activity."
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functional",
+      "description": "CLPView all LoDs available for text in current activity",
+      "expected": "",
+      "raw": "TC_070CLPView all LoDs available for text in current activity 1. Open text during activity. 2. View LoDs.All relevant LoDs displayed based on tags and assignment."
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Functional",
+      "description": "CLPHide/view LoD present on text",
+      "expected": "",
+      "raw": "TC_071CLPHide/view LoD present on text 1. Toggle LoD visibility. 2. Read text. 3. Toggle back.LoDs hide/unhide as per student action; text always accessible."
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functional",
+      "description": "CLPLoD adapts based on LTI/teacher assignment",
+      "expected": "",
+      "raw": "TC_072CLPLoD adapts based on LTI/teacher assignment 1. Launch text as student. 2. Verify LoD displayed matches assigned tags from LTI/teacher.LoD matches assignment; cues displayed per tag combination."
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functional",
+      "description": "CLPNo LoD assigned – student does not see cues",
+      "expected": "",
+      "raw": "TC_073CLPNo LoD assigned – student does not see cues 1. Launch text as student with no LoD assigned. 2. View text.No LoD cues displayed; text is readable."
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functional",
+      "description": "CLPMultiple LoD cues for overlapping tag combinations",
+      "expected": "",
+      "raw": "TC_074CLPMultiple LoD cues for overlapping tag combinations 1. Student has overlapping tags assigned. 2. Launch text. 3. View cues.All cues for matching tag combinations are shown."
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functional",
+      "description": "CLP After LoD is deleted in authoring, cues no longer show for student",
+      "expected": "",
+      "raw": "TC_075CLP After LoD is deleted in authoring, cues no longer show for student 1. Delete LoD in EPUB. 2. Republish. 3. Student launches text.LoD cues removed; student sees updated text."
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functional",
+      "description": "CLPView Annotation cues with multiple LoS on CLP",
+      "expected": "",
+      "raw": "TC_076CLPView Annotation cues with multiple LoS on CLP 1. Open teacher panel. 2. Select book/activity. 3. View students.List of students displayed for the selection."
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functional",
+      "description": "CLPView tags associated with book/activity",
+      "expected": "",
+      "raw": "TC_077CLPView tags associated with book/activity 1. Open teacher panel. 2. Select book/activity. 3. View tags.Tags and tag groups displayed."
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functional",
+      "description": "CLPAssign LoD to individual student",
+      "expected": "",
+      "raw": "TC_078CLPAssign LoD to individual student 1. Select student. 2. Assign LoD (tag combo). 3. Save.LoD assignment reflected for student. out of scope"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Functional",
+      "description": "CLPAssign LoD to group/class",
+      "expected": "",
+      "raw": "TC_079CLPAssign LoD to group/class 1. Select group/class. 2. Assign LoD. 3. Save.LoD assigned to all in group/class. out of scope"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functional",
+      "description": "CLPAssign LoD with multiple tag combinations",
+      "expected": "",
+      "raw": "TC_080CLPAssign LoD with multiple tag combinations 1. Assign more than one tag combo to student. 2. Save. 3. Verify.Multiple LoDs apply as per assigned tags. out of scope"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functional",
+      "description": "CLPAssign LoD without selecting student",
+      "expected": "",
+      "raw": "TC_081CLPAssign LoD without selecting student 1. Try to assign LoD with no student selected. 2. Save.System prompts error for missing selection. out of scope"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functional",
+      "description": "LODVerify addition of multiple LoD containersAdd more than one LoDEach container should act independently.",
+      "expected": "",
+      "raw": "TC_082LODVerify addition of multiple LoD containersAdd more than one LoDEach container should act independently."
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functional",
+      "description": "LODVerify deletion of one LoD doesn’t affect othersDelete one containerOnly the selected container should be deleted.",
+      "expected": "",
+      "raw": "TC_083LODVerify deletion of one LoD doesn’t affect othersDelete one containerOnly the selected container should be deleted."
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functional",
+      "description": "LODVerify unique ID for each containerInspect metadataEach LoD container should have a unique LoD_container_ID.",
+      "expected": "",
+      "raw": "TC_084LODVerify unique ID for each containerInspect metadataEach LoD container should have a unique LoD_container_ID."
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functional",
+      "description": "CLPVerify that the student can launch the annotation activity",
+      "expected": "",
+      "raw": "TC_085CLPVerify that the student can launch the annotation activity 1. Log in as a student. 2. Navigate to the CLP activity page. 3. Click on the annotation activity from the right panel.Annotation activity launches successfully in the activity player."
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functional",
+      "description": "CLPVerify pencil icon is displayed with correct color",
+      "expected": "Check pencil icon in annotation sectionPencil icon should display with the specified color",
+      "raw": "TC_086CLPVerify pencil icon is displayed with correct color 1. Open Reflowable ePub in reader 2. Check pencil icon in annotation sectionPencil icon should display with the specified color"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functional",
+      "description": "CLPVerify annotation text displays with correct colors",
+      "expected": "Check annotation text colorAnnotation text should display with specified colors",
+      "raw": "TC_087CLPVerify annotation text displays with correct colors 1. Open Reflowable ePub in reader 2. Check annotation text colorAnnotation text should display with specified colors"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Functional",
+      "description": "CLP Verify that the student can view text linked to the annotation activity",
+      "expected": "",
+      "raw": "TC_088CLP Verify that the student can view text linked to the annotation activity 1. Launch an annotation activity. 2. Observe the left panel (reader section) for the linked text. The full text linked to the activity is displayed correctly in the reader."
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functional",
+      "description": "CLPVerify that the student can view all thumbnails for linked text",
+      "expected": "",
+      "raw": "TC_089CLPVerify that the student can view all thumbnails for linked text 1. Launch an annotation activity. 2. Check all thumbnails for linked text sections in the CLP. All thumbnails for text sections linked to the activity are visible and clickable."
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functional",
+      "description": "CLP Verify that the student can view all Levels of Differentiation (LoD) for a book- if los not assigned",
+      "expected": "",
+      "raw": "TC_090CLP Verify that the student can view all Levels of Differentiation (LoD) for a book- if los not assigned 1. Open a book in CLP. 2. Observe LoD display in the reader or LoD indicator area. All LoD added during authoring and linked via tags are visible to the student."
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Functional",
+      "description": "CLPVerify that the student can highlight text in the reader",
+      "expected": "",
+      "raw": "TC_091CLPVerify that the student can highlight text in the reader 1. Launch an annotation activity. 2. Select any portion of text. 3. Apply highlight using available UI controls.Text is highlighted successfully with correct color/style."
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "Functional",
+      "description": "CLPVerify that the student can add a note to highlighted text",
+      "expected": "",
+      "raw": "TC_092CLPVerify that the student can add a note to highlighted text 1. Highlight text in the reader. 2. Click on the highlighted text. 3. Choose \"Add Note\" option. 4. Enter note content and save.Note is saved and visible on hover/click on the highlighted text."
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functional",
+      "description": "CLP Verify that LoD and annotation features work together without interference",
+      "expected": "",
+      "raw": "TC_093CLP Verify that LoD and annotation features work together without interference 1. Launch a book with multiple LoD. 2. Highlight text and add a note. 3. Check LoD visibility while adding notes. LoD is visible alongside annotation tools; highlighting and notes work without interference."
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functional",
+      "description": "CLPVerify system behavior when no LoD is added to a book",
+      "expected": "",
+      "raw": "TC_094CLPVerify system behavior when no LoD is added to a book 1. Open a book with no LoD tags. 2. Launch annotation activity. No LoD should be displayed. Text and annotation features still work."
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functional",
+      "description": "CLP Verify system behavior when an annotation activity has no linked text1. Launch an annotation activity with no linked text. A message like “No text available” is displayed; system does not crash.",
+      "expected": "",
+      "raw": "TC_095CLP Verify system behavior when an annotation activity has no linked text1. Launch an annotation activity with no linked text. A message like “No text available” is displayed; system does not crash."
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functional",
+      "description": "CLP Verify that LoD, text, and annotation tools are functional across devices",
+      "expected": "",
+      "raw": "TC_096CLP Verify that LoD, text, and annotation tools are functional across devices 1. Launch activity on desktop. 2. Launch activity on mobile/tablet /Mac view. LoD, text, and annotation tools are visible and functional across devices."
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functional",
+      "description": "CLP Verify that multiple highlights can be applied to the same text",
+      "expected": "",
+      "raw": "TC_097CLP Verify that multiple highlights can be applied to the same text 1. Launch an annotation activity. 2. Highlight one portion of text. 3. Highlight another overlapping or different portion of text. Both highlights appear correctly; colors/styles are applied as per settings."
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functional",
+      "description": "CLP Verify that multiple notes can be added to the same highlighted text",
+      "expected": "",
+      "raw": "TC_098CLP Verify that multiple notes can be added to the same highlighted text 1. Highlight a portion of text. 2. Add a note. 3. Add another note to the same highlight.All notes are visible; user can toggle between them without errors."
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functional",
+      "description": "CLPVerify that notes persist after page refresh",
+      "expected": "",
+      "raw": "TC_099CLPVerify that notes persist after page refresh 1. Highlight text and add a note. 2. Refresh the CLP page.Previously added notes and highlights are still visible."
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functional",
+      "description": "CLPVerify that LoD highlights correspond to the correct tag rules",
+      "expected": "",
+      "raw": "TC_100CLPVerify that LoD highlights correspond to the correct tag rules 1. Open a book with multiple LoD linked via tags. 2. Observe the LoD shown for each text section. LoD displayed for each section matches the tag rules defined during authoring."
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "Functional",
+      "description": "CLPVerify behavior when text is too long for a single screen",
+      "expected": "",
+      "raw": "TC_101CLPVerify behavior when text is too long for a single screen 1. Launch a long text in annotation activity. 2. Scroll through the text. All text sections are displayed correctly; highlights and LoD remain functional."
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "Functional",
+      "description": "CLPVerify that removing a highlight removes associated notes",
+      "expected": "",
+      "raw": "TC_102CLPVerify that removing a highlight removes associated notes 1. Highlight text and add a note. 2. Remove the highlight.Highlight is removed; associated note is also removed."
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functional",
+      "description": "CLP Verify that RTE content added in Annotation Cues is retained in the reader",
+      "expected": "",
+      "raw": "TC_103CLP Verify that RTE content added in Annotation Cues is retained in the reader 1. Launch annotation activity. 2. Add a note using RTE (format text: bold, italic, bullet points, images, links). 3. Save the note. 4. Navigate away and return to the activity.RTE content in the note is retained exactly as formatted."
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functional",
+      "description": "CLP Verify that Annotation Cue with RTE content supports scroll when content exceeds container",
+      "expected": "",
+      "raw": "TC_104CLP Verify that Annotation Cue with RTE content supports scroll when content exceeds container 1. Add RTE content longer than the visible area of annotation popup. 2. Save and open the Annotation Cue. Scrollbar appears inside the annotation popup allowing access to full content."
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "Functional",
+      "description": "CLP Verify that Annotation Cue with RTE content opens as popup when content exceeds predefined limit",
+      "expected": "",
+      "raw": "TC_105CLP Verify that Annotation Cue with RTE content opens as popup when content exceeds predefined limit 1. Add very long RTE note (e.g., several paragraphs). 2. Click on the Annotation Cue. Annotation content opens in a popup or modal (as per design), allowing full reading."
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Functional",
+      "description": "CLP Verify that annotation added inside LoD for Activity 1 is displayed in the reader",
+      "expected": "",
+      "raw": "TC_106CLP Verify that annotation added inside LoD for Activity 1 is displayed in the reader 1. Author a book with LoD containing Activity 1. 2. Add annotation inside the LoD for Activity 1. 3. Launch Activity 1 in CLP. 4. Check reader panel for annotations.Annotation added inside LoD for Activity 1 is visible in the reader."
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Functional",
+      "description": "CLP Verify that annotation added inside LoD for Activity 2 is displayed in the reader",
+      "expected": "",
+      "raw": "TC_107CLP Verify that annotation added inside LoD for Activity 2 is displayed in the reader 1. Author a book with LoD containing Activity 2. 2. Add annotation inside the LoD for Activity 2. 3. Launch Activity 2 in CLP. 4. Check reader panel for annotations.Annotation added inside LoD for Activity 2 is visible in the reader."
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "Functional",
+      "description": "CLPVerify that annotations are isolated per activity",
+      "expected": "",
+      "raw": "TC_108CLPVerify that annotations are isolated per activity 1. Add annotations inside LoD for multiple activities (Activity 1, Activity 2). 2. Launch Activity 1. 3. Launch Activity 2. 4. Observe displayed annotations for each activity. Only annotations relevant to the launched activity are displayed; no cross-activity annotations appear."
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "Functional",
+      "description": "CLP Verify that multiple annotations inside the same LoD for one activity are displayed correctly",
+      "expected": "",
+      "raw": "TC_109CLP Verify that multiple annotations inside the same LoD for one activity are displayed correctly 1. Add multiple annotations inside the LoD for Activity 1. 2. Launch Activity 1. 3. Check reader for all annotations. All annotations added inside the LoD for Activity 1 are visible and correctly positioned in the reader."
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "Functional",
+      "description": "CLP Verify that deleting an annotation inside LoD updates the reader view",
+      "expected": "",
+      "raw": "TC_110CLP Verify that deleting an annotation inside LoD updates the reader view 1. Add an annotation inside LoD for Activity 1. 2. Delete the annotation. 3. Launch Activity 1. 4. Check reader panel.Deleted annotation is no longer visible in the reader."
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "Functional",
+      "description": "CLP Verify behavior when annotation inside LoD has long content",
+      "expected": "",
+      "raw": "TC_111CLP Verify behavior when annotation inside LoD has long content 1. Add a long annotation inside LoD for Activity 1. 2. Launch Activity 1. 3. Check reader panel for display and scroll/popup handling. Annotation displays fully; scroll or popup is used if content exceeds visible area."
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "Functional",
+      "description": "LOD Verify backward compatibility with previously authored EPUBs (no LoD)",
+      "expected": "",
+      "raw": "TC_112LOD Verify backward compatibility with previously authored EPUBs (no LoD) 1. Open and preview/edit older EPUBs without LoD. 2. Save and publish. EPUBs function with no LoD; adding/removing LoD does not break legacy books. out of scope"
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "Functional",
+      "description": "LOD Try to link activity with insufficient permissions(Math and WL)",
+      "expected": "",
+      "raw": "TC_113LOD Try to link activity with insufficient permissions(Math and WL) 1. Attempt to link activity ID that author has no access to. 2. Save.System blocks action and displays permission error."
+    },
+    {
+      "id": "TC_114",
+      "num": 114,
+      "type": "Functional",
+      "description": "LODVerify Annotation Cue persistence after relaunch",
+      "expected": "",
+      "raw": "TC_114LODVerify Annotation Cue persistence after relaunch 1. Add Annotation Cue. 2. Submit activity and relaunch. 3. Check clue visibilityAnnotation Cues persist and remain fully functional after relaunch."
+    },
+    {
+      "id": "TC_115",
+      "num": 115,
+      "type": "Functional",
+      "description": "LOD Verify LoD loads without lag when multiple LoDs are present in a single activity.",
+      "expected": "",
+      "raw": "TC_115LOD Verify LoD loads without lag when multiple LoDs are present in a single activity. 1. Open an activity containing multiple LoD containers. 2. Observe the loading time for all LoDs. 3. Interact with each LoD (expand/collapse, drag/drop elements inside). All LoDs should load without noticeable lag. Interactions should be smooth and responsive. No UI glitches should occur."
+    },
+    {
+      "id": "TC_116",
+      "num": 116,
+      "type": "Functional",
+      "description": "LOD Verify LoD visibility and responsiveness when scrolling through large text.",
+      "expected": "",
+      "raw": "TC_116LOD Verify LoD visibility and responsiveness when scrolling through large text. 1. Open an activity containing LoDs with large text content. 2. Scroll from top to bottom of the activity. 3. Observe the LoD container and its content while scrolling. LoD container and its elements should remain visible and correctly rendered. Scrolling should be smooth without freezing. Text should remain readable at all positions."
+    },
+    {
+      "id": "TC_117",
+      "num": 117,
+      "type": "Functional",
+      "description": "Annotation CueVerify title edit in multiple Annotation CuesEdit title of all Annotation Cues individuallyTitles should be editable independently",
+      "expected": "",
+      "raw": "TC_117Annotation CueVerify title edit in multiple Annotation CuesEdit title of all Annotation Cues individuallyTitles should be editable independently"
+    },
+    {
+      "id": "TC_118",
+      "num": 118,
+      "type": "Functional",
+      "description": "Annotation CueVerify empty title scenarioDelete default title textAuthoring platform should allow empty title without errors",
+      "expected": "",
+      "raw": "TC_118Annotation CueVerify empty title scenarioDelete default title textAuthoring platform should allow empty title without errors"
+    },
+    {
+      "id": "TC_119",
+      "num": 119,
+      "type": "Functional",
+      "description": "Annotation CueVerify text truncation/overflow",
+      "expected": "",
+      "raw": "TC_119Annotation CueVerify text truncation/overflow Enter very long text exceeding visible box Text should either wrap correctly or show scroll without loss"
+    },
+    {
+      "id": "TC_120",
+      "num": 120,
+      "type": "Functional",
+      "description": "Annotation CueVerify able to use Copy-Paste formatted text Copy formatted text from external source → paste inside Annotation Cue Text formatting should be retained as per global RTE",
+      "expected": "",
+      "raw": "TC_120Annotation CueVerify able to use Copy-Paste formatted text Copy formatted text from external source → paste inside Annotation Cue Text formatting should be retained as per global RTE"
+    },
+    {
+      "id": "TC_121",
+      "num": 121,
+      "type": "Functional",
+      "description": "Annotation CueVerify Text alignmentApply left, center, right alignment via RTEText should align as selected",
+      "expected": "",
+      "raw": "TC_121Annotation CueVerify Text alignmentApply left, center, right alignment via RTEText should align as selected"
+    },
+    {
+      "id": "TC_122",
+      "num": 122,
+      "type": "Functional",
+      "description": "Annotation CueVerify Font size and style and Special character handling",
+      "expected": "Enter emojis, symbols, and special characters Text should reflect correct size and style Text should display special characters correctly without breaking layout",
+      "raw": "TC_122Annotation CueVerify Font size and style and Special character handling 1. Apply different font sizes and styles using RTE 2.Enter emojis, symbols, and special characters Text should reflect correct size and style Text should display special characters correctly without breaking layout"
+    },
+    {
+      "id": "TC_123",
+      "num": 123,
+      "type": "Functional",
+      "description": "Annotation Cue Verify the label is getting cleared while starts to enter the text inside the Annotation Cue",
+      "expected": "",
+      "raw": "TC_123Annotation Cue Verify the label is getting cleared while starts to enter the text inside the Annotation Cue Enter very long text exceeding visible box The label should disappear"
+    },
+    {
+      "id": "TC_124",
+      "num": 124,
+      "type": "Functional",
+      "description": "LOD Verify that the toasted message is diplaying for after LoD and annottaion clue added.Add Lod and Annottaion cluesToasted message should be displayed successfully",
+      "expected": "",
+      "raw": "TC_124LOD Verify that the toasted message is diplaying for after LoD and annottaion clue added.Add Lod and Annottaion cluesToasted message should be displayed successfully"
+    },
+    {
+      "id": "TC_125",
+      "num": 125,
+      "type": "Functional",
+      "description": "CLPVerify Show/Hide Annotation Cues button presence",
+      "expected": "",
+      "raw": "TC_125CLPVerify Show/Hide Annotation Cues button presence 1. Open CLP with content containing Annotation Cues. 2. Check for Show/Hide Annotation Cues button on the interface.Button should be visible to both Students and Teachers."
+    },
+    {
+      "id": "TC_126",
+      "num": 126,
+      "type": "Functional",
+      "description": "CLPVerify default state of Annotation Cues",
+      "expected": "",
+      "raw": "TC_126CLPVerify default state of Annotation Cues 1. Open CLP with content containing Annotation Cues. 2. Observe the Annotation Cues on the page without interacting with the button.Annotation Cues should be visible by default."
+    },
+    {
+      "id": "TC_127",
+      "num": 127,
+      "type": "Functional",
+      "description": "CLPHide Annotation Cues",
+      "expected": "",
+      "raw": "TC_127CLPHide Annotation Cues 1. Open CLP with visible Annotation Cues. 2. Click the “Hide Annotation Cues” button. All Annotation Cues should disappear; button text should change to “Show Annotation Cues.”"
+    },
+    {
+      "id": "TC_128",
+      "num": 128,
+      "type": "Functional",
+      "description": "CLPShow Annotation Cues after hiding",
+      "expected": "",
+      "raw": "TC_128CLPShow Annotation Cues after hiding 1. Open CLP with Annotation Cues hidden. 2. Click the “Show Annotation Cues” button. All Annotation Cues should reappear; button text should revert to “Hide Annotation Cues.”"
+    },
+    {
+      "id": "TC_129",
+      "num": 129,
+      "type": "Functional",
+      "description": "CLPToggle multiple times",
+      "expected": "",
+      "raw": "TC_129CLPToggle multiple times 1. Open CLP with Annotation Cues visible. 2. Click Hide → Show → Hide → Show. Annotation Cues should hide/show correctly each time; button text updates appropriately."
+    },
+    {
+      "id": "TC_130",
+      "num": 130,
+      "type": "Functional",
+      "description": "CLPVerify annotation cues remain hidden after page scroll",
+      "expected": "",
+      "raw": "TC_130CLPVerify annotation cues remain hidden after page scroll 1. Open CLP with Annotation Cues visible. 2. Click “Hide Annotation Cues.” 3. Scroll down/up the page. Hidden Annotation Cues should remain hidden; button text should remain “Show Annotation Cues.”"
+    },
+    {
+      "id": "TC_131",
+      "num": 131,
+      "type": "Functional",
+      "description": "CLPVerify annotation cues remain visible after page scroll",
+      "expected": "",
+      "raw": "TC_131CLPVerify annotation cues remain visible after page scroll 1. Open CLP with Annotation Cues visible. 2. Scroll down/up the page. Annotation Cues should remain visible; button text should remain “Hide Annotation Cues.”"
+    },
+    {
+      "id": "TC_132",
+      "num": 132,
+      "type": "Functional",
+      "description": "CLPVerify interaction with other content",
+      "expected": "",
+      "raw": "TC_132CLPVerify interaction with other content 1. Open CLP with Annotation Cues visible. 2. Click “Hide Annotation Cues.” 3. Interact with other content (links, popups, etc.). Hiding/showing Annotation Cues should not interfere with other content functionality."
+    },
+    {
+      "id": "TC_133",
+      "num": 133,
+      "type": "Functional",
+      "description": "CLPVerify behavior for multiple Annotation Cues",
+      "expected": "",
+      "raw": "TC_133CLPVerify behavior for multiple Annotation Cues 1. Open CLP with multiple Annotation Cues on the page. 2. Click “Hide Annotation Cues.”All Annotation Cues should hide simultaneously."
+    },
+    {
+      "id": "TC_134",
+      "num": 134,
+      "type": "Functional",
+      "description": "CLPVerify persistence after navigation within CLP",
+      "expected": "",
+      "raw": "TC_134CLPVerify persistence after navigation within CLP 1. Open CLP with Annotation Cues visible. 2. Click “Hide Annotation Cues.” 3. Navigate to next page and return to previous page. Hidden state of Annotation Cues should persist on the previous page."
+    },
+    {
+      "id": "TC_135",
+      "num": 135,
+      "type": "Functional",
+      "description": "CLPVerify persistence across content refresh",
+      "expected": "",
+      "raw": "TC_135CLPVerify persistence across content refresh 1. Open CLP with Annotation Cues visible. 2. Click “Hide Annotation Cues.” 3. Refresh the CLP page.Hidden/visible state should persist as per last toggle action."
+    },
+    {
+      "id": "TC_136",
+      "num": 136,
+      "type": "Functional",
+      "description": "CLPVerify tooltip or accessible text",
+      "expected": "",
+      "raw": "TC_136CLPVerify tooltip or accessible text 1. Open CLP with Show/Hide button visible. 2. Hover over or focus on the button. Button tooltip/text should indicate action (Show/Hide Annotation Cues) for accessibility."
+    },
+    {
+      "id": "TC_137",
+      "num": 137,
+      "type": "Functional",
+      "description": "CLPVerify mobile responsiveness",
+      "expected": "",
+      "raw": "TC_137CLPVerify mobile responsiveness 1. Open CLP on a mobile device with Annotation Cues. 2. Toggle Show/Hide Annotation Cues. Button should be visible and functional; Annotation Cues hide/show correctly on mobile."
+    },
+    {
+      "id": "TC_138",
+      "num": 138,
+      "type": "Functional",
+      "description": "CLPVerify screen reader accessibility",
+      "expected": "",
+      "raw": "TC_138CLPVerify screen reader accessibility 1. Open CLP with Show/Hide button. 2. Use a screen reader to navigate to the button. Screen reader should announce “Hide Annotation Cues” or “Show Annotation Cues” correctly. out of scope"
+    },
+    {
+      "id": "TC_139",
+      "num": 139,
+      "type": "Functional",
+      "description": "CLP Verify Reset button clears all filter selections and it won't affect on Annotation cue.",
+      "expected": "",
+      "raw": "TC_139CLP Verify Reset button clears all filter selections and it won't affect on Annotation cue. 1. Apply filters 2. Click Reset 3.Annotation cue will not affect. All filters should be cleared and default view restored but no impact on annotation cue."
+    },
+    {
+      "id": "TC_140",
+      "num": 140,
+      "type": "Functional",
+      "description": "CLP Verify disabling Annotation Cue toggle has no impact on page",
+      "expected": "Disable Annotation Cue toggle Annotation Cue toggle should be disabled, and there should be no impact or change on the page",
+      "raw": "TC_140CLP Verify disabling Annotation Cue toggle has no impact on page 1. Open Reflowable ePub in reader 2. Click Filter in annotation panel 3. Disable Annotation Cue toggle Annotation Cue toggle should be disabled, and there should be no impact or change on the page"
+    },
+    {
+      "id": "TC_141",
+      "num": 141,
+      "type": "Functional",
+      "description": "LODVerify able to duplicate the LoD step",
+      "expected": "Click on duplicate iconThe step should be duplicated successfully",
+      "raw": "TC_141LODVerify able to duplicate the LoD step 1. Add LoD container 2. Click on duplicate iconThe step should be duplicated successfully"
+    },
+    {
+      "id": "TC_142",
+      "num": 142,
+      "type": "Functional",
+      "description": "Annotation Cue Verify able to copy and paste the annotation cue inside the LoD container",
+      "expected": "Copy and paste LoD containeruser should able to copy and paste the annotation cue",
+      "raw": "TC_142Annotation Cue Verify able to copy and paste the annotation cue inside the LoD container 1. Add LoD container 2. Copy and paste LoD containeruser should able to copy and paste the annotation cue"
+    },
+    {
+      "id": "TC_143",
+      "num": 143,
+      "type": "Functional",
+      "description": "Annotation Cue Verify able to copy and paste the annotation cue inside the Layouts",
+      "expected": "Copy and paste LoD container into the Layoutuser should able to copy and paste the annotation cue",
+      "raw": "TC_143Annotation Cue Verify able to copy and paste the annotation cue inside the Layouts 1. Add LoD container 2. Copy and paste LoD container into the Layoutuser should able to copy and paste the annotation cue"
+    },
+    {
+      "id": "TC_144",
+      "num": 144,
+      "type": "Functional",
+      "description": "Annotation Cue Verify able to copy and paste the anotation cue inside the Multipart",
+      "expected": "Copy and paste LoD container into the multipartuser should able to copy and paste the annotation cue",
+      "raw": "TC_144Annotation Cue Verify able to copy and paste the anotation cue inside the Multipart 1. Add LoD container 2. Copy and paste LoD container into the multipartuser should able to copy and paste the annotation cue"
+    }
+  ]
+}

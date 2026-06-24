@@ -1,0 +1,1284 @@
+{
+  "component": "Extended Response About Media",
+  "slug": "extended-response-media",
+  "dataType": "extendedResponseMedia",
+  "source": "Author Test Cases - Extended Response About Media.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Extended Response About Media.pdf",
+  "pages": 7,
+  "extractedCount": 159,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "1.Verify if user able to launch the URL 1.Hit the URL https://qapartnerportal.kitaboo.com/reader/CL- ELA-master/#/login2. Login with valid credentials. User is successfully logged in.",
+      "expected": "",
+      "raw": "TC_01ER Media UI and Functionality 1.Verify if user able to launch the URL 1.Hit the URL https://qapartnerportal.kitaboo.com/reader/CL- ELA-master/#/login2. Login with valid credentials. User is successfully logged in."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "1.Verify if the user is able to view the text Listing dashboard 1.Hit the URL https://qapartnerportal.kitaboo.com/reader/CL- ELA-master/#/login",
+      "expected": "",
+      "raw": "TC_02ER Media UI and Functionality 1.Verify if the user is able to view the text Listing dashboard 1.Hit the URL https://qapartnerportal.kitaboo.com/reader/CL- ELA-master/#/login 2. Login with valid credentials. 3.User is redirected to the listing page. User is redirected to the listing page."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "1.Verify if the user is able to click on ELA and click on activity.",
+      "expected": "",
+      "raw": "TC_03ER Media UI and Functionality 1.Verify if the user is able to click on ELA and click on activity. 1. Login with valid credentials. 2. Redirect to listing page. 3. Click on \"Create New\". 4. Click on ELA. 5. Click on Activity.Activity page should open."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "1.Verify if the user is able to click on ELA 2.",
+      "expected": "",
+      "raw": "TC_04ER Media UI and Functionality 1.Verify if the user is able to click on ELA 2.Click on Fixed-layout or Reflowable ePUB 3.0. 3.verify user should be able to click on Valid file 1. Login with valid credentials. 2. Redirect to listing page. 3. Click on \"Create New\". 4. Click on ELA. 5. Click on Activity creation. ePUB file is uploaded successfully without errors."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Extended Response about Media\" option is available in the step tray.",
+      "expected": "",
+      "raw": "TC_05ER Media UI and Functionality Verify that the \"Extended Response about Media\" option is available in the step tray. 1. Click on new step (Untitled) 2. Click on the step tray. 3. Click on the \"Extended Response about Media\" option. The \"Extended Response about Media\" option should be available and clickable from the step tray."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI and Functionality",
+      "description": "Verify that clicking the step title correctly selects the step. After clicking the step title, observe the field below. 1.Step Title field should display.",
+      "expected": "",
+      "raw": "TC_06ER Media UI and Functionality Verify that clicking the step title correctly selects the step. After clicking the step title, observe the field below. 1.Step Title field should display. 2. Basic info field should display. 3.Levels 4.Instruction page will display. 5.Change step button should display. 6.Cancle and Next button will display on the page. The step should be selected, and its details should be displayed."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI and Functionality",
+      "description": "Verify that clicking the step title correctly selects the step and Keyword tag should display automatically. After clicking the step title, observe the field below. 1.Step Title field should display.",
+      "expected": "",
+      "raw": "TC_07ER Media UI and Functionality Verify that clicking the step title correctly selects the step and Keyword tag should display automatically. After clicking the step title, observe the field below. 1.Step Title field should display. 2. Basic info field should display. 3.Levels 4.Instruction page will display. 5.Change step button should display. 6.Cancle and Next button will display on the page. 7.'Keyword tag' field will filled automatically and display. The field should automatically display \"Keyword Tags\" with the prompt \"Press Enter to separate Optional\" and Step Title should display aut"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI and Functionality",
+      "description": "Verify the functionality of the \"Next\" button after entering Step title",
+      "expected": "",
+      "raw": "TC_08ER Media UI and Functionality Verify the functionality of the \"Next\" button after entering Step title 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. The system should proceed to the next screen/page after clicking \"Next\"."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Level step",
+      "expected": "",
+      "raw": "TC_09ER Media UI and Functionality Verify functinality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. The expected text 'When creating a new step, 'Core' is the fixed LoS.' should display on the page."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify functionality of the Level step",
+      "expected": "",
+      "raw": "TC_10ER Media UI and Functionality Verify functionality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. 7.User will able to click on the available buttons. Buttons Should be available to click."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Level step",
+      "expected": "",
+      "raw": "TC_11ER Media UI and Functionality Verify functinality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. 7.User will able to click on the change step button. 8.After clicking on the change step button user will redirect to step tray page. Change Step\" button to access the step tray page, ensuring all actions and data transitions function correctly."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Level step",
+      "expected": "After clicking on the back button user will redirect to Basic info page After clicking on the back button user will redirect to Basic info page",
+      "raw": "TC_12ER Media UI and Functionality Verify functinality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. 7.User will able to click on the Back button. 8.After clicking on the back button user will redirect to Basic info page After clicking on the back button user will redirect to Basic info page"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Level step",
+      "expected": "",
+      "raw": "TC_13ER Media UI and Functionality Verify functinality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. 7.User will able to click on the Cancle button. 8.After clicking on the Cancle user will redirect to author page. Clicking the Cancel button redirects the user to the Author page, discarding any unsaved changes."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Level step",
+      "expected": "",
+      "raw": "TC_14ER Media UI and Functionality Verify functinality of the Level step 1. Type in 'Step title'. 2. Press Enter to separate them. 3. Click on the \"Next\" button. 4. On the levels page with blue radio button will highlight with the text \"When creating a new step, 'Core' is the fixed LoS.\" 6.Cancle, back and Next button will display on the page. 7.User will able to click on the next button. 8.After clicking on the Next button user will redirect to instruction page The expected result is that upon clicking the \"Next\" button, the user is redirected to the instruction page."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI and Functionality",
+      "description": "Verify functinality of the Instructions step. After redirecting to the instruction text \"This information may be specific to the chosen Level of Support for this Activity.\" text should display. The text \"This information",
+      "expected": "",
+      "raw": "TC_15ER Media UI and Functionality Verify functinality of the Instructions step. After redirecting to the instruction text \"This information may be specific to the chosen Level of Support for this Activity.\" text should display. The text \"This information may be specific to the chosen Level of Support for this Activity\" should be displayed in blue color."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Students\" field is available for input.",
+      "expected": "",
+      "raw": "TC_16ER Media UI and Functionality Verify that the \"Instructions for Students\" field is available for input. 1. After clicking \"Next\", check for the \"Instructions for Students\" field. 2.The \"Instructions for Students\" field should allow the user to type text, numbers, and special characters, and apply text formatting options such as bold, italic, underline, and list (bulleted or numbered) to the entered content. The \"Instructions for Students\" field should be available and ready for input."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Students\" field accepts a maximum of 10,000 characters. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste 10000 characters into the input text. The field should all",
+      "expected": "",
+      "raw": "TC_17ER Media UI and Functionality Verify that the \"Instructions for Students\" field accepts a maximum of 10,000 characters. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste 10000 characters into the input text. The field should allow the user to enter up to 10,000 characters without restriction."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Students\" field not accepts a more than of 10,000 characters. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste more than 10000 characters into the input text. The ",
+      "expected": "",
+      "raw": "TC_18ER Media UI and Functionality Verify that the \"Instructions for Students\" field not accepts a more than of 10,000 characters. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste more than 10000 characters into the input text. The field should not allow the user to enter more than 10,000 characters."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Students\" field accepts a maximum of 10,000 characters and apply 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste upto 10000 characters into the input text. The fi",
+      "expected": "",
+      "raw": "TC_19ER Media UI and Functionality Verify that the \"Instructions for Students\" field accepts a maximum of 10,000 characters and apply 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste upto 10000 characters into the input text. The field should allow the user to enter upto 10,000 characters."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Students\" allows users to apply bold, italic, underline, and list formatting options. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste upto 10000 characters into t",
+      "expected": "",
+      "raw": "TC_20ER Media UI and Functionality Verify that the \"Instructions for Students\" allows users to apply bold, italic, underline, and list formatting options. 1.Navigate to the \"Instructions for Students\" field. 2.Try to add/paste upto 10000 characters into the input text. 3. Add text and apply bold, italic, underline, list options to the input . Users should be able to apply bold, italic, underline, and list formatting to the text.The applied formatting should be visible and correctly retained after saving and refreshing the page."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Teacher\" field is available for input.",
+      "expected": "",
+      "raw": "TC_21ER Media UI and Functionality Verify that the \"Instructions for Teacher\" field is available for input. 1. check for the \"Instructions for Teacher\" field. 2.The \"Instructions for Teacher\" field should allow the user to type text, numbers, and special characters, and apply text formatting options such as bold, italic, underline, and list (bulleted or numbered) to the entered content. The \"Instructions for Teacher\" field should be available and ready for input and applying formatting options."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Techer\" field accepts a maximum of 10,000 characters. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste 10000 characters into the input text. The field should allow ",
+      "expected": "",
+      "raw": "TC_22ER Media UI and Functionality Verify that the \"Instructions for Techer\" field accepts a maximum of 10,000 characters. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste 10000 characters into the input text. The field should allow the user to enter up to 10,000 characters without restriction."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Teacher\" field not accepts a more than of 10,000 characters. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste more than 10000 characters into the input text. The fi",
+      "expected": "",
+      "raw": "TC_23ER Media UI and Functionality Verify that the \"Instructions for Teacher\" field not accepts a more than of 10,000 characters. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste more than 10000 characters into the input text. The field should not allow the user to enter more than 10,000 characters."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Teacher\" field accepts a maximum of 10,000 characters and apply 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste upto 10000 characters into the input text. The fiel",
+      "expected": "",
+      "raw": "TC_24ER Media UI and Functionality Verify that the \"Instructions for Teacher\" field accepts a maximum of 10,000 characters and apply 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste upto 10000 characters into the input text. The field should allow the user to enter upto 10,000 characters."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Instructions for Teacher\" allows users to apply bold, italic, underline, and list formatting options. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste upto 10000 characters into the",
+      "expected": "",
+      "raw": "TC_25ER Media UI and Functionality Verify that the \"Instructions for Teacher\" allows users to apply bold, italic, underline, and list formatting options. 1.Navigate to the \"Instructions for Teacher\" field. 2.Try to add/paste upto 10000 characters into the input text. 3. Add text and apply bold, italic, underline, list options to the input . Users should be able to apply bold, italic, underline, and list formatting to the text.The applied formatting should be visible and correctly retained after saving and refreshing the page."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Verify the functionality of the \"Submit\" button after adding instructions.",
+      "expected": "",
+      "raw": "TC_26ER Media UI and Functionality Verify the functionality of the \"Submit\" button after adding instructions. 1. Enter instructions for both students and teachers. 2. Click \"Submit \" Button. The system should proceed to the author page after clicking \"Submit\"."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI and Functionality",
+      "description": "Verify that the Author page is loaded successfully after clicking \"Submit\".",
+      "expected": "",
+      "raw": "TC_27ER Media UI and Functionality Verify that the Author page is loaded successfully after clicking \"Submit\". 1. Click \"Submit\" after entering the instructions. 2. Check if the Author page loads. The Author page should open successfully, allowing content creation or review."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI and Functionality",
+      "description": "Verify that the Author page displays with the default \"Short Question\" type",
+      "expected": "",
+      "raw": "TC_28ER Media UI and Functionality Verify that the Author page displays with the default \"Short Question\" type 1. Click the \"Submit\" button. 2. Observe the Author page. The Author page is displayed with the default \"Short Question\" type."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI and Functionality",
+      "description": "Verify that the user is able to upload an image on the Author page",
+      "expected": "",
+      "raw": "TC_29ER Media UI and Functionality Verify that the user is able to upload an image on the Author page 1. On the Author page, click the \"Upload \" button. 2. Select a valid image file from the device. The image is successfully uploaded and displayed on the Author page."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can type a question in the \"Question\" field",
+      "expected": "",
+      "raw": "TC_30ER Media UI and Functionality Verify that the user can type a question in the \"Question\" field 1. On the Author page, locate the \"Question\" field. 2. Type a valid question into the field. The question is successfully typed and displayed in the \"Question\" field."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can type a response with a maximum of 150 characters in the \"Response\" field",
+      "expected": "",
+      "raw": "TC_31ER Media UI and Functionality Verify that the user can type a response with a maximum of 150 characters in the \"Response\" field 1. On the Author page, locate the \"Response\" field. 2. Type a response with up to 150 characters. The response is successfully typed and restricted to a maximum of 150 characters."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI and Functionality",
+      "description": "Verify the character count restriction message when typing a response exceeding 150 characters",
+      "expected": "",
+      "raw": "TC_32ER Media UI and Functionality Verify the character count restriction message when typing a response exceeding 150 characters 1. On the Author page, type a response exceeding 150 characters in the \"Response\" field. 2. Observe the system message or restriction behavior. The system displays a message or stops the user from typing beyond 150 characters, ensuring the restriction is enforced."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Settings\" panel displays two style options",
+      "expected": "",
+      "raw": "TC_33ER Media UI and Functionality Verify that the \"Settings\" panel displays two style options 1. Navigate to the \"Settings\" panel. 2. Observe the available style options. Two styles are displayed in the \"Settings\" panel."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can select a style from the available options",
+      "expected": "",
+      "raw": "TC_34ER Media UI and Functionality Verify that the user can select a style from the available options 1. Navigate to the \"Settings\" panel. 2. Select any one of the two available styles. The selected style is applied successfully."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "UI and Functionality",
+      "description": "Verify that in the second style, the \"Question Field\" is displayed",
+      "expected": "",
+      "raw": "TC_35ER Media UI and Functionality Verify that in the second style, the \"Question Field\" is displayed 1. Navigate to the \"Settings\" panel. 2. Select the second style option. 3. Observe the \"Question Field\" area. The \"Question Field\" is displayed when the second style is selected."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Thumbs Image\" is displayed in the \"Question Field\" for the second style",
+      "expected": "",
+      "raw": "TC_36ER Media UI and Functionality Verify that the \"Thumbs Image\" is displayed in the \"Question Field\" for the second style 1. Navigate to the \"Settings\" panel. 2. Select the second style option. 3. Observe the \"Thumbs Image\" in the \"Question Field.\" The \"Thumbs Image\" is displayed in the \"Question Field\" when the second style is selected."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "UI and Functionality",
+      "description": "Verify that the style options are available for \"Short Question\" type",
+      "expected": "",
+      "raw": "TC_37ER Media UI and Functionality Verify that the style options are available for \"Short Question\" type 1. Set the question type to \"Short Question\". 2. Navigate to the \"Settings\" panel. 3. Observe the availability of style options. The style options are available and selectable for the \"Short Question\" type."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "UI and Functionality",
+      "description": "Verify that the style options are available for \"RTE Question\" type",
+      "expected": "",
+      "raw": "TC_38ER Media UI and Functionality Verify that the style options are available for \"RTE Question\" type 1. Set the question type to \"RTE Question\". 2. Navigate to the \"Settings\" panel. 3. Observe the availability of style options. The style options are available and selectable for the \"RTE Question\" type."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI and Functionality",
+      "description": "Verify that selecting the second style in \"Short Question\" type displays the \"Thumbs Image\" in the \"Question Field\"",
+      "expected": "",
+      "raw": "TC_39ER Media UI and Functionality Verify that selecting the second style in \"Short Question\" type displays the \"Thumbs Image\" in the \"Question Field\" 1. Set the question type to \"Short Question\". 2. Navigate to the \"Settings\" panel. 3. Select the second style option. 4. Observe the \"Thumbs Image\" in the \"Question Field.\" The \"Thumbs Image\" is displayed in the \"Question Field\" when the second style is selected for \"Short Question\" type."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI and Functionality",
+      "description": "Verify that selecting the second style in \"RTE Question\" type displays the \"Thumbs Image\" in the \"Question Field\"",
+      "expected": "",
+      "raw": "TC_40ER Media UI and Functionality Verify that selecting the second style in \"RTE Question\" type displays the \"Thumbs Image\" in the \"Question Field\" 1. Set the question type to \"Short Question\". 2. Navigate to the \"Settings\" panel. 3. Select the second style option. 4. Observe the \"Thumbs Image\" in the \"Question Field.\" The \"Thumbs Image\" is displayed in the \"Question Field\" when the second style is selected for \"RTE Question\" type."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI and Functionality",
+      "description": "Verify behavior when no style is selected from the \"Settings\" panel",
+      "expected": "",
+      "raw": "TC_41ER Media UI and Functionality Verify behavior when no style is selected from the \"Settings\" panel 1. Navigate to the \"Settings\" panel. 2. Do not select any style option. 3. Observe the default state of the \"Question Field\" and its elements. it should be first The default style is applied, and the \"Question Field\" and other elements behave as expected."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI and Functionality",
+      "description": "Verify the ability to switch styles between the two available options",
+      "expected": "",
+      "raw": "TC_42ER Media UI and Functionality Verify the ability to switch styles between the two available options 1. Navigate to the \"Settings\" panel. 2. Select the first style and observe the changes. 3. Switch to the second style and observe the changes. The styles can be switched successfully, and the corresponding changes are applied in the \"Question Field\" and its elements."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can change styles after selecting the \"Short Question\" type",
+      "expected": "",
+      "raw": "TC_43ER Media UI and Functionality Verify that the user can change styles after selecting the \"Short Question\" type 1. Navigate to the \"Select Answer Type\" radio button and select \"Short Question\". 2. Navigate to the \"Settings\" panel. 3. Select a style option. The style is applied successfully for the \"Short Question\" type."
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can change styles after selecting the \"RTE Question\" type",
+      "expected": "",
+      "raw": "TC_44ER Media UI and Functionality Verify that the user can change styles after selecting the \"RTE Question\" type 1. Navigate to the \"Select Answer Type\" radio button and select \"RTE Question\". 2. Navigate to the \"Settings\" panel. 3. Select a style option. The style is applied successfully for the \"RTE Question\" type."
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "UI and Functionality",
+      "description": "Verify that style changes are retained when switching between \"Short Question\" and \"RTE Question\" types",
+      "expected": "",
+      "raw": "TC_45ER Media UI and Functionality Verify that style changes are retained when switching between \"Short Question\" and \"RTE Question\" types 1. Select \"Short Question\" type and apply a style. 2. Switch to \"RTE Question\" type and apply a different style. 3. Switch back to \"Short Question\" type. The previously added data are retained for each question type upon switching."
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "UI and Functionality",
+      "description": "Verify the behavior when switching between \"Short Question\" and \"RTE Question\" without selecting a style",
+      "expected": "",
+      "raw": "TC_46ER Media UI and Functionality Verify the behavior when switching between \"Short Question\" and \"RTE Question\" without selecting a style 1. Select \"Short Question\" type without selecting a style. 2. Switch to \"RTE Question\" type without selecting a style. The default style is applied for each question type upon switching."
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"No Outline\" radio button is selected by default",
+      "expected": "",
+      "raw": "TC_47ER Media UI and Functionality Verify that the \"No Outline\" radio button is selected by default 1. Navigate to the settings panel where the \"No Outline\" option is available The \"No Outline\" radio button is selected by default."
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can select the \"Outline & Fill Background\" radio button",
+      "expected": "",
+      "raw": "TC_48ER Media UI and Functionality Verify that the user can select the \"Outline & Fill Background\" radio button 1. Navigate to the settings panel. 2. Click on the \"Outline & Fill Background\" radio button. The \"Outline & Fill Background\" radio button is selected, and the background color options are displayed"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can select a background color from the available options",
+      "expected": "",
+      "raw": "TC_49ER Media UI and Functionality Verify that the user can select a background color from the available options 1. Select the \"Outline & Fill Background\" radio button. 2. Choose a background color from the available options. The selected background color is applied successfully, and the color is reflected in the UI."
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "UI and Functionality",
+      "description": "Verify that the color code updates in the box below according to the selected background color",
+      "expected": "",
+      "raw": "TC_50ER Media UI and Functionality Verify that the color code updates in the box below according to the selected background color 1. Select the \"Outline & Fill Background\" radio button. 2. Choose a background color. 3. Observe the color code in the box below. The color code in the box below updates correctly to match the selected background color."
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can switch back to the \"No Outline\" radio button",
+      "expected": "",
+      "raw": "TC_51ER Media UI and Functionality Verify that the user can switch back to the \"No Outline\" radio button 1. Select the \"Outline & Fill Background\" radio button. 2. Switch back to the \"No Outline\" radio button. The \"No Outline\" radio button is selected, and any previously applied background color is removed."
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "UI and Functionality",
+      "description": "Verify that the system retains the by default background color when switching back to \"Outline & Fill\"",
+      "expected": "",
+      "raw": "TC_52ER Media UI and Functionality Verify that the system retains the by default background color when switching back to \"Outline & Fill\" 1. Select the \"Outline & Fill Background\" radio button and choose a background color. 2. Switch to \"No Outline.\" 3. Switch back to \"Outline & Fill Background.\" The by default background color is retained when switching back to \"Outline & Fill Background.\""
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "UI and Functionality",
+      "description": "Verify behavior when an invalid color code is entered manually in the box below",
+      "expected": "",
+      "raw": "TC_53ER Media UI and Functionality Verify behavior when an invalid color code is entered manually in the box below 1. Select the \"Outline & Fill Background\" radio button. 2. Manually enter an invalid color code in the box below. The system displays an error message or resets to the last valid color code, or it will take by default selected color."
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can manually enter a valid color code in the box below to change the background color",
+      "expected": "",
+      "raw": "TC_54ER Media UI and Functionality Verify that the user can manually enter a valid color code in the box below to change the background color 1. Select the \"Outline & Fill Background\" radio button. 2. Manually enter a valid color code in the box below. The background color changes to match the manually entered color code."
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "UI and Functionality",
+      "description": "Verify that checking the 'Show Media' checkbox displays Image, Video, and Audio options with radio buttons",
+      "expected": "",
+      "raw": "TC_55ER Media UI and Functionality Verify that checking the 'Show Media' checkbox displays Image, Video, and Audio options with radio buttons 1. Navigate to the settings panel. 2. 'Show Media' checkbox will automatically checked. The Image, Video, and Audio options with their respective radio buttons are displayed."
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "UI and Functionality",
+      "description": "Verify that the text \"Upload format PNG , JPG and SVG\" is displayed for the image option",
+      "expected": "",
+      "raw": "TC_56ER Media UI and Functionality Verify that the text \"Upload format PNG , JPG and SVG\" is displayed for the image option 1. Show Media' checkbox enabled by default Image radio button will be select by default. 2. Select the Image radio button. The text \"Upload format PNG, SVG and JPG\" is displayed below the image upload option."
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can upload an image in PNG or JPG format",
+      "expected": "",
+      "raw": "TC_57ER Media UI and Functionality Verify that the user can upload an image in PNG or JPG format 1. Click on the 'Show Media' checkbox. 2. Select the Image radio button. 3. Upload an image in PNG,SVG or JPG format. The image is uploaded successfully without errors and display on the author page."
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can replace the uploaded image",
+      "expected": "",
+      "raw": "TC_58ER Media UI and Functionality Verify that the user can replace the uploaded image 1. Upload an image in PNG ,SVG or JPG format. 2. Click on the 'Replace Image' button. 3. Upload a new image. The previously uploaded image is replaced with the newly uploaded image."
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "UI and Functionality",
+      "description": "Verify that the uploaded image is displayed on the author page",
+      "expected": "",
+      "raw": "TC_59ER Media UI and Functionality Verify that the uploaded image is displayed on the author page 1. Upload an image in PNG , SVG or JPG format. 2. Navigate to the author page. The uploaded image is displayed on the author page."
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "UI and Functionality",
+      "description": "Verify that selecting the audio radio button displays the audio upload option",
+      "expected": "",
+      "raw": "TC_60ER Media UI and Functionality Verify that selecting the audio radio button displays the audio upload option 1. Click on the 'Show Media' checkbox. 2. Select the Audio radio button. The audio upload option is displayed."
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"",
+      "expected": "",
+      "raw": "TC_61ER Media UI and Functionality Verify that the \"Enter transcription text\" placeholder text is displayed inside the transcript box 1. Select the Audio radio button. 2. Observe the transcript box displayed below the audio upload option. The placeholder text \"Enter transcription text\" is displayed inside the transcript box."
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "UI and Functionality",
+      "description": "Verify that WAV and MP3 formats are accepted for audio upload",
+      "expected": "",
+      "raw": "TC_62ER Media UI and Functionality Verify that WAV and MP3 formats are accepted for audio upload 1. Select the Audio radio button. 2. Upload audio files in WAV and MP3 formats. 3. Try uploading an unsupported format (e.g., FLAC). WAV and MP3 files are uploaded successfully; unsupported formats display an error message. It should not allowed to upload."
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "UI and Functionality",
+      "description": "Verify that the uploaded audio file is displayed on the author page",
+      "expected": "",
+      "raw": "TC_63ER Media UI and Functionality Verify that the uploaded audio file is displayed on the author page 1. Upload a valid audio file. 2. Navigate to the author page with the time bar of audio. The uploaded audio file is displayed on the author page."
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can add a transcript inside the transcript box",
+      "expected": "",
+      "raw": "TC_64ER Media UI and Functionality Verify that the user can add a transcript inside the transcript box 1. Select the Audio radio button. 2. Enter text inside the transcript box. The user can successfully add text inside the transcript box, and the text is saved."
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "UI and Functionality",
+      "description": "Verify that clicking the \"Play in Background\" checkbox enables background playback in reader and preview",
+      "expected": "",
+      "raw": "TC_65ER Media UI and Functionality Verify that clicking the \"Play in Background\" checkbox enables background playback in reader and preview 1. Select the Audio radio button. 2. Check the \"Play in Background\" checkbox is enable by default. 3. Open the reader or preview mode. 4. Scroll through the content. It should play. The audio plays in the background during scrolling in reader and preview mode."
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "UI and Functionality",
+      "description": "Verify that the user can replace the uploaded audio file",
+      "expected": "",
+      "raw": "TC_66ER Media UI and Functionality Verify that the user can replace the uploaded audio file 1. Upload an audio file. 2. Click on the \"Replace Audio\" button. 3. Upload a new audio file. The previously uploaded audio file is replaced with the new audio file without errors."
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "UI and Functionality",
+      "description": "Verify that the audio file plays correctly after clicking the play button",
+      "expected": "",
+      "raw": "TC_67ER Media UI and Functionality Verify that the audio file plays correctly after clicking the play button 1. Navigate to the author page. 2. Click the play button on the uploaded audio file in edit preview and reader mode audio should play. The audio file plays correctly upon clicking the play button."
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "UI and Functionality",
+      "description": "Verify that the audio file can be played in the background after page scrolling",
+      "expected": "",
+      "raw": "TC_68ER Media UI and Functionality Verify that the audio file can be played in the background after page scrolling 1. Upload an audio file. 2. Navigate to the author page. 3. Ensure the \"Play in Background\" checkbox is selected. 4. Scroll the page and observe audio behavior. The audio file loads and plays in the background if the \"Play in Background\" checkbox is selected."
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Caption\" checkbox is unselected by default",
+      "expected": "",
+      "raw": "TC_69ER Media UI and Functionality Verify \"Show Caption\" checkbox is unselected by default 1. Open the author page select the audio option from media option page. 2. Check if the \"Show Caption\" checkbox is visible and unselected. The \"Show Caption\" checkbox is visible and unselected by default."
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "UI and Functionality",
+      "description": "The \"Show Caption\" checkbox is visible",
+      "expected": "",
+      "raw": "TC_70ER Media UI and Functionality The \"Show Caption\" checkbox is visible 1. Open the author page select the audio option from media option page. 2. Check if the \"Show Caption\" checkbox is visible and selected. 3.Once user click on the Show caption option 'Enter caption text here' informational text will show on the author page below the media. The \"Show Header\" checkbox is enabled and informational text should be visible."
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "UI and Functionality",
+      "description": "The \"Show Caption\" checkbox is visible and able to add data",
+      "expected": "",
+      "raw": "TC_71ER Media UI and Functionality The \"Show Caption\" checkbox is visible and able to add data 1. Open the author page select the audio option from media option page. 2. Check if the \"Show Caption\" checkbox is visible and selected. 3.Once user click on the Show caption option 'Enter caption text here' informational text will show on the author page below the media. 4.Type or paste data over there. The \"Show Header\" checkbox is enabled and user able to type content on the page."
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Header\" checkbox is enabled and highlighted in blue",
+      "expected": "",
+      "raw": "TC_72ER Media UI and Functionality Verify \"Show Header\" checkbox is enabled and highlighted in blue 1. Open Extended response step from steps. 2. Check if the \"Show Header\" checkbox is enabled and the background is blue when checked. The \"Show Header\" checkbox is enabled and highlighted in blue when selected."
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "UI and Functionality",
+      "description": "Verify \"Allowed Response\" radio button is visible",
+      "expected": "",
+      "raw": "TC_73ER Media UI and Functionality Verify \"Allowed Response\" radio button is visible 1. Open the page. 2. Check if the \"Allowed Response\" radio button is visible on the screen. The \"Allowed Response\" radio button is visible on the page."
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "UI and Functionality",
+      "description": "Verify the placeholder text for \"Allowed Response\" input field",
+      "expected": "",
+      "raw": "TC_74ER Media UI and Functionality Verify the placeholder text for \"Allowed Response\" input field 1. Select the \"Allowed Response\" radio button. 2. Check if the placeholder text for the text area is \"Enter expected response\" is present on the page below the allowed response text. The placeholder text in the input field is \"Enter expected response\" is present on the page."
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "UI and Functionality",
+      "description": "Verify user can type in answer panel when \"Allowed Response\" is selected",
+      "expected": "",
+      "raw": "TC_75ER Media UI and Functionality Verify user can type in answer panel when \"Allowed Response\" is selected 1. Select the \"Allowed Response\" radio button. 2. Check if the user can type in the answer text field for short and RTE(answer panel) in both Preview Mode and Reader Mode. The answer panel is enabled for typing when \"Allowed Response\" radio button is selected, in both Preview Mode and Reader Mode."
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "UI and Functionality",
+      "description": "Verify \"Exact Match\" checkbox functionality and behavior 1.Open the page.",
+      "expected": "",
+      "raw": "TC_76ER Media UI and Functionality Verify \"Exact Match\" checkbox functionality and behavior 1.Open the page. 2. Check if the \"Exact Match\" checkbox is present. 3. Click the \"Exact Match\" checkbox. 4.The informational text should appear below the checkbox. When \"Exact Match\" checkbox is selected, \"The input given by the user should exactly match the text in the answer field. This includes case sensitive, space and puntuations as added by the author\" the informational text should appear below the checkbox."
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "UI and Functionality",
+      "description": "Verify \"Exact Match\" checkbox functionality and behavior",
+      "expected": "",
+      "raw": "TC_77ER Media UI and Functionality Verify \"Exact Match\" checkbox functionality and behavior 1. Open the page. 2. Check if the \"Exact Match\" checkbox is present. 3. Click the \"Exact Match\" checkbox. 4.The informational text should appear below the checkbox. 5.Check if the input needs to type something in the answer field. When \"Exact Match\" checkbox is selected.user should be abe to type content inside the input box on the author page."
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "UI and Functionality",
+      "description": "Verify accessibility text for \"Alt Text\" is present",
+      "expected": "",
+      "raw": "TC_78ER Media UI and Functionality Verify accessibility text for \"Alt Text\" is present 1. Open the settings panel. 2. Check if the informational text about \"ALT text refers to invisible description of images which are read aloud to blind users on a screen reader\" is visible. The accessibility text \"ALT text refers to invisible description of images which are read aloud to blind users on a screen reader\" should be visible inside the settings panel."
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "UI and Functionality",
+      "description": "Verify \"Alt Text\" input box is present in the settings panel",
+      "expected": "",
+      "raw": "TC_79ER Media UI and Functionality Verify \"Alt Text\" input box is present in the settings panel 1. Open the settings panel. 2. Check if the \"Alt Text of image\" input box is visible. The input box \"Alt Text of image\" should be visible in the settings panel for users to add text inside the box"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can select the video media option and it highlights in blue after selection.",
+      "expected": "",
+      "raw": "TC_80ER Media UI and Functionality Verify if the user can select the video media option and it highlights in blue after selection. 1. Navigate to the Author page. 2. Click on the video media option. The video media option is selectable and highlights in blue."
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "UI and Functionality",
+      "description": "Verify the presence of \"Upload by System\" and \"Upload by URL\" options.",
+      "expected": "",
+      "raw": "TC_81ER Media UI and Functionality Verify the presence of \"Upload by System\" and \"Upload by URL\" options. 1. Navigate to the Author page. 2. Observe the video upload options available after selection of video Both \"Upload by System\" and \"Upload by URL\" options are present."
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "UI and Functionality",
+      "description": "Verify that \"Upload by System\" is selected by default.",
+      "expected": "",
+      "raw": "TC_82ER Media UI and Functionality Verify that \"Upload by System\" is selected by default. 1. Navigate to the author page. 2. Observe the default selection for video upload. \"Upload by System\" is selected by default."
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can click on the upload button to upload a video.",
+      "expected": "",
+      "raw": "TC_83ER Media UI and Functionality Verify if the user can click on the upload button to upload a video. 1. Click on the upload button. 2. Select a valid MP4 video. 3. Upload the video. The selected MP4 video is uploaded successfully."
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "UI and Functionality",
+      "description": "Verify the presence of MP4 format information text.",
+      "expected": "",
+      "raw": "TC_84ER Media UI and Functionality Verify the presence of MP4 format information text. 1. Navigate to the video upload section. 2.Informational text should be present on the setting panel. The text \"Upload format: MP4\" is displayed below the video option."
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "UI and Functionality",
+      "description": "Verify the presence of the YouTube icon on the page.",
+      "expected": "",
+      "raw": "TC_85ER Media UI and Functionality Verify the presence of the YouTube icon on the page. 1. Navigate to the author page. 2.Click on the extended response about media option and select the video option from the media to add 3.Click on the Upload by URL option and dropdown should be present on the page. The YouTube icon is present in the setting panel dropdown."
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "UI and Functionality",
+      "description": "Verify the dropdown for selecting video options (Vimeo and YouTube).",
+      "expected": "",
+      "raw": "TC_86ER Media UI and Functionality Verify the dropdown for selecting video options (Vimeo and YouTube). 1. Navigate to the page. 2. Open the video options dropdown. The dropdown contains options for Vimeo video and YouTube video."
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "UI and Functionality",
+      "description": "Verify the presence of \"",
+      "expected": "",
+      "raw": "TC_87ER Media UI and Functionality Verify the presence of \"Enter video ID\" placeholder text in the input box. 1. Navigate to the input box for uploading video. The placeholder text \"Enter video ID\" is displayed in the input box."
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can paste a valid YouTube URL and upload the video.",
+      "expected": "",
+      "raw": "TC_88ER Media UI and Functionality Verify if the user can paste a valid YouTube URL and upload the video. 1. Paste a valid YouTube URL in the input box. 2. Click on the \"Next\" button. The video is uploaded successfully and displayed on the page."
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "UI and Functionality",
+      "description": "Verify if only valid URLs are accepted for video uploads.",
+      "expected": "",
+      "raw": "TC_89ER Media UI and Functionality Verify if only valid URLs are accepted for video uploads. 1. Paste an invalid URL in the input box. 2. Click on the \"Next\" button. The system does not accept invalid URLs and displays an error."
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "UI and Functionality",
+      "description": "Verify if the system supports Vimeo media type.",
+      "expected": "",
+      "raw": "TC_90ER Media UI and Functionality Verify if the system supports Vimeo media type. 1. Select the Vimeo option from the dropdown. 2. Paste a valid Vimeo URL in the input box. 3. Click on the \"Next\" button. The Vimeo video is uploaded and displayed successfully."
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "UI and Functionality",
+      "description": "Verify if the system rejects short videos.",
+      "expected": "",
+      "raw": "TC_91ER Media UI and Functionality Verify if the system rejects short videos. 1. Upload a shorts of YouTube video The system does not accept the video and displays an error message."
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can replace an uploaded video.",
+      "expected": "",
+      "raw": "TC_92ER Media UI and Functionality Verify if the user can replace an uploaded video. 1. Upload a video. 2. Replace it with another valid MP4 video. The previous video is replaced successfully with the new video."
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "UI and Functionality",
+      "description": "Verify if the \"Full Width\" checkbox is present on the page.",
+      "expected": "",
+      "raw": "TC_93ER Media UI and Functionality Verify if the \"Full Width\" checkbox is present on the page. 1. Navigate to the video upload page. 2. Locate the \"Full Width\" checkbox. The \"Full Width\" checkbox should be present on the page."
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "UI and Functionality",
+      "description": "Verify if the user is able to click on the \"Full Width\" checkbox and it highlights in blue.",
+      "expected": "",
+      "raw": "TC_94ER Media UI and Functionality Verify if the user is able to click on the \"Full Width\" checkbox and it highlights in blue. 1. Navigate to the video upload page. 2. Click on the \"Full Width\" checkbox. The checkbox should be clickable and highlighted in blue upon selection."
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "UI and Functionality",
+      "description": "Verify if the \"Allowed Response\" option is available with correct subtext.",
+      "expected": "",
+      "raw": "TC_95ER Media UI and Functionality Verify if the \"Allowed Response\" option is available with correct subtext. 1. Navigate to the response settings section. 2. Locate the \"Allowed Response\" option. The \"Allowed Response\" option should be present with the subtext: \"Enter expected response."
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "UI and Functionality",
+      "description": "Verify if the \"Allowed Response\" option is available with correct subtext.",
+      "expected": "",
+      "raw": "TC_96ER Media UI and Functionality Verify if the \"Allowed Response\" option is available with correct subtext. 1. Navigate to the response settings section. 2. Locate the \"Allowed Response\" option. 3.Click on the checkbox. The \"Allowed Response\" option should be present with the subtext: \"Enter expected response. and after clicking on the checkbox user should able to type answer and if match it will show as correct."
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "UI and Functionality",
+      "description": "Verify if the \"Exact Match\" option is available with correct subtext.",
+      "expected": "",
+      "raw": "TC_97ER Media UI and Functionality Verify if the \"Exact Match\" option is available with correct subtext. 1. Navigate to the response settings section. 2. Locate the \"Exact Match\" option. The \"Exact Match\" option should be present with the subtext: \"The input given by the user should exactly match the text in the answer field. This includes case sensitive, space and punctuations as added by the author.\""
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "UI and Functionality",
+      "description": "Verify the presence and functionality of the \"Add Show Me\" checkbox.",
+      "expected": "",
+      "raw": "TC_98ER Media UI and Functionality Verify the presence and functionality of the \"Add Show Me\" checkbox. 1. Locate the \"Add Show Me\" checkbox. 2. Click on the checkbox. The checkbox should be enabled and highlighted in blue upon selection."
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Show Me\" icon and text appear on the author page when checkbox is selected.",
+      "expected": "",
+      "raw": "TC_99ER Media UI and Functionality Verify if \"Show Me\" icon and text appear on the author page when checkbox is selected. 1. Select the \"Add Show Me\" checkbox. 2. Navigate to the author page. The \"Show Me\" icon with text should be displayed on the author page."
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Show Me\" functionality works in preview mode.",
+      "expected": "",
+      "raw": "TC_100ER Media UI and Functionality Verify if \"Show Me\" functionality works in preview mode. 1. Select the \"Add Show Me\" checkbox. 2. Switch to preview mode. 3. Type some content and click on the \"Show Me\" icon. The correct answer should be displayed when clicking \"Show Me\" in preview mode."
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Show Me\" functionality works in reader mode.",
+      "expected": "",
+      "raw": "TC_101ER Media UI and Functionality Verify if \"Show Me\" functionality works in reader mode. 1. Select the \"Add Show Me\" checkbox. 2. Switch to reader mode. 3. Click on the \"Show Me\" icon. The correct answer should be displayed when clicking \"Show Me\" in reader mode."
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "UI and Functionality",
+      "description": "Verify the presence and functionality of the \"Reset\" checkbox.",
+      "expected": "",
+      "raw": "TC_102ER Media UI and Functionality Verify the presence and functionality of the \"Reset\" checkbox. 1. Locate the \"Reset\" checkbox. 2. Click on the checkbox. The checkbox should be enabled and highlighted in blue upon selection."
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Reset\" icon and text appear on the author page when checkbox is selected.",
+      "expected": "",
+      "raw": "TC_103ER Media UI and Functionality Verify if \"Reset\" icon and text appear on the author page when checkbox is selected. 1. Select the \"Reset\" checkbox. 2. Navigate to the author page. The \"Reset\" icon with text should be displayed on the author page."
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Reset\" functionality works in preview mode.",
+      "expected": "",
+      "raw": "TC_104ER Media UI and Functionality Verify if \"Reset\" functionality works in preview mode. 1. Select the \"Reset\" checkbox. 2. Switch to preview mode. Type spmething 3. Click on the \"Reset\" icon. The user should be able to reset and change answers before submission."
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "UI and Functionality",
+      "description": "Verify if \"Reset\" functionality works in reader mode.",
+      "expected": "",
+      "raw": "TC_105ER Media UI and Functionality Verify if \"Reset\" functionality works in reader mode. 1. Select the \"Reset\" checkbox. 2. Switch to reader mode. 3. Click on the \"Reset\" icon. The user should be able to reset and change answers before submission."
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "UI and Functionality",
+      "description": "Verify that \"Show Me\" and \"Reset\" options can be selected together.",
+      "expected": "",
+      "raw": "TC_106ER Media UI and Functionality Verify that \"Show Me\" and \"Reset\" options can be selected together. 1. Select both \"Show Me\" and \"Reset\" checkboxes. Both options should be selected and displayed on the author page correctly."
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can deselect the \"Show Me\" checkbox.",
+      "expected": "",
+      "raw": "TC_107ER Media UI and Functionality Verify if the user can deselect the \"Show Me\" checkbox. 1. Select the \"Add Show Me\" checkbox. 2. Click again to deselect it. The checkbox should be deselected, and the icon should disappear from the author page."
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can deselect the \"Reset\" checkbox.",
+      "expected": "",
+      "raw": "TC_108ER Media UI and Functionality Verify if the user can deselect the \"Reset\" checkbox. 1. Select the \"Reset\" checkbox. 2. Click again to deselect it. The checkbox should be deselected, and the icon should disappear from the author page."
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "UI and Functionality",
+      "description": "Verify if the entered answer is saved when the user closes and relaunches the activity before submission.",
+      "expected": "",
+      "raw": "TC_109ER Media UI and Functionality Verify if the entered answer is saved when the user closes and relaunches the activity before submission. 1. Launch the activity in reader mode. 2. Type an answer in the input field. 3. Close the browser/tab. 4. Relaunch the activity. The previously entered answer should be saved and displayed in the input field. The user should be able to add more data before submission."
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "UI and Functionality",
+      "description": "Verify if the user can add more data before submission after relaunching.",
+      "expected": "",
+      "raw": "TC_110ER Media UI and Functionality Verify if the user can add more data before submission after relaunching. 1. Launch the activity in reader mode. 2. Type an answer and close the tab. 3. Relaunch the activity. 4. Add additional text to the answer field. The user should be able to add more data to the answer field before submission."
+    },
+    {
+      "id": "TC_111",
+      "num": 111,
+      "type": "UI and Functionality",
+      "description": "Verify if the submitted data is saved and visible after relaunch.",
+      "expected": "",
+      "raw": "TC_111ER Media UI and Functionality Verify if the submitted data is saved and visible after relaunch. 1. Launch the activity in reader mode. 2. Type an answer in the input field. 3. Click on the \"Submit\" button. 4. Relaunch the activity. The submitted data should be saved and visible to both the student and teacher for review."
+    },
+    {
+      "id": "TC_112",
+      "num": 112,
+      "type": "UI and Functionality",
+      "description": "Verify that the student cannot edit the answer after submission.",
+      "expected": "",
+      "raw": "TC_112ER Media UI and Functionality Verify that the student cannot edit the answer after submission. 1. Submit the activity. 2. Relaunch the activity in reader mode. 3. Try to edit the answer field. The answer field should be disabled, preventing the student from editing it."
+    },
+    {
+      "id": "TC_113",
+      "num": 113,
+      "type": "UI and Functionality",
+      "description": "Verify that the teacher cannot edit the answer after submission.",
+      "expected": "",
+      "raw": "TC_113ER Media UI and Functionality Verify that the teacher cannot edit the answer after submission. 1. Submit the activity. 2. Relaunch the activity in teacher review mode. 3. Try to edit the answer field. The answer field should be disabled, preventing the teacher from editing it."
+    },
+    {
+      "id": "TC_114",
+      "num": 114,
+      "type": "UI and Functionality",
+      "description": "Verify that the student can view the submitted data after submission.",
+      "expected": "",
+      "raw": "TC_114ER Media UI and Functionality Verify that the student can view the submitted data after submission. 1. Submit the activity. 2. Relaunch the activity in student mode. The submitted data should be visible and not editable."
+    },
+    {
+      "id": "TC_115",
+      "num": 115,
+      "type": "UI and Functionality",
+      "description": "Verify that the teacher can view the submitted data after submission.",
+      "expected": "",
+      "raw": "TC_115ER Media UI and Functionality Verify that the teacher can view the submitted data after submission. 1. Submit the activity. 2. Relaunch the activity in teacher review mode. The submitted data should be visible and not editable."
+    },
+    {
+      "id": "TC_116",
+      "num": 116,
+      "type": "UI and Functionality",
+      "description": "Verify that the data is stored correctly across multiple relaunches.",
+      "expected": "",
+      "raw": "TC_116ER Media UI and Functionality Verify that the data is stored correctly across multiple relaunches. 1. Launch the activity, type an answer, and close the tab. 2. Relaunch and submit the answer. 3. Close and relaunch again. The submitted data should persist across multiple relaunches and remain visible."
+    },
+    {
+      "id": "TC_117",
+      "num": 117,
+      "type": "UI and Functionality",
+      "description": "Verify that partial answers are saved before submission.",
+      "expected": "",
+      "raw": "TC_117ER Media UI and Functionality Verify that partial answers are saved before submission. 1. Launch the activity. 2. Type a partial answer. 3. Close and relaunch the activity. The partial answer should be saved and available for continuation."
+    },
+    {
+      "id": "TC_118",
+      "num": 118,
+      "type": "UI and Functionality",
+      "description": "Verify the system allows submission when no data is entered.",
+      "expected": "",
+      "raw": "TC_118ER Media UI and Functionality Verify the system allows submission when no data is entered. 1. Launch the activity. 2. Leave the answer field blank. 3. Click the \"Submit\" button. The system should allows submission."
+    },
+    {
+      "id": "TC_119",
+      "num": 119,
+      "type": "UI and Functionality",
+      "description": "Verify if the user is prompted to confirm submission.",
+      "expected": "",
+      "raw": "TC_119ER Media UI and Functionality Verify if the user is prompted to confirm submission. 1. Type an answer in the input field. 2. Click the \"Submit\" button. A confirmation message should appear before submission."
+    },
+    {
+      "id": "TC_120",
+      "num": 120,
+      "type": "UI and Functionality",
+      "description": "Verify that if no media is added in extended response about media option, default media options are displayed in preview and reader mode",
+      "expected": "",
+      "raw": "TC_120ER Media UI and Functionality Verify that if no media is added in extended response about media option, default media options are displayed in preview and reader mode 1. Open an activity in edit mode. 2. Navigate to the extended response section. 3. Do not add any media in the media option. 4. Save the activity. 5. Open the activity in preview mode and check the media section. 6. Open the activity in reader mode and check the media section. Default media options should be displayed in both preview and reader modes."
+    },
+    {
+      "id": "TC_121",
+      "num": 121,
+      "type": "UI and Functionality",
+      "description": "Verify that the extended response about media component can be added in multipart",
+      "expected": "",
+      "raw": "TC_121ER Media UI and Functionality Verify that the extended response about media component can be added in multipart 1. Open an activity in edit mode. 2. Navigate to the multipart section. 3. Add the extended response component. 4. Save and preview the activity. 5. Open the activity in reader mode and verify the component. The extended response component should be successfully added in multipart and should function correctly in preview and reader modes."
+    },
+    {
+      "id": "TC_122",
+      "num": 122,
+      "type": "UI and Functionality",
+      "description": "Verify that the Answer field accepts multiple correct answers separated by the pipe",
+      "expected": "",
+      "raw": "TC_122ER Media UI and Functionality Verify that the Answer field accepts multiple correct answers separated by the pipe 1. Open an activity in edit mode. 2. Navigate to the multipart section. 3. Add the extended response component. 4. Save and preview the activity. 5. Open the activity in reader mode and verify the component. 1. Open the Authoring tool and create a new activity. 2. Add an Extended Response (ER) with Media step type. 3. In the Answer field, enter Orange | Apple | Mango. 4. Save the activity. 5. Preview the activity as a student. 6. Attempt by entering \"Apple\"."
+    },
+    {
+      "id": "TC_123",
+      "num": 123,
+      "type": "UI and Functionality",
+      "description": "Verify that the Answer field supports RTE formatting",
+      "expected": "",
+      "raw": "TC_123ER Media UI and Functionality Verify that the Answer field supports RTE formatting 1. Open the Authoring tool and create a new activity with ER Media step. 2. In the Answer field, type a sentence and apply Bold, Italic, and Underline formatting using the RTE toolbar. 3. Save and preview the activity. The formatted text should retain its styles in Author. Student entering the same plain text should be evaluated as correct."
+    },
+    {
+      "id": "TC_124",
+      "num": 124,
+      "type": "UI and Functionality",
+      "description": "Verify that the Answer field allows entry of long text paragraphs",
+      "expected": "",
+      "raw": "TC_124ER Media UI and Functionality Verify that the Answer field allows entry of long text paragraphs 1. Open the Authoring tool and add an ER Media step. 2. In the Answer field, paste a long paragraph (200+ words). 3. Save the activity. 4. Preview as student. 5. Enter the same paragraph as a response. Long answers should be saved without truncation. Student’s response should be evaluated correctly if it matches."
+    },
+    {
+      "id": "TC_125",
+      "num": 125,
+      "type": "UI and Functionality",
+      "description": "Verify error handling when the Answer field is left blank",
+      "expected": "",
+      "raw": "TC_125ER Media UI and Functionality Verify error handling when the Answer field is left blank 1. Open Authoring tool and create ER Media step. 2. Leave Answer field blank. 3. Click Save. Save should be prevented, and an error message such as “Answer cannot be empty” should display."
+    },
+    {
+      "id": "TC_126",
+      "num": 126,
+      "type": "UI and Functionality",
+      "description": "Verify that a single correct answer is accepted",
+      "expected": "",
+      "raw": "TC_126ER Media UI and Functionality Verify that a single correct answer is accepted 1. Enter Orange in Answer field. 2. Save and preview. 3. Student enters “Orange”. Student response should be marked correct."
+    },
+    {
+      "id": "TC_127",
+      "num": 127,
+      "type": "UI and Functionality",
+      "description": "Verify that multiple single-word answers are supported",
+      "expected": "",
+      "raw": "TC_127ER Media UI and Functionality Verify that multiple single-word answers are supported 1. Enter Orange | Apple | Mango. 2. Save. 3. Student enters “Mango”.Student response should be correct."
+    },
+    {
+      "id": "TC_128",
+      "num": 128,
+      "type": "UI and Functionality",
+      "description": "Verify that multiple full sentences can be added",
+      "expected": "",
+      "raw": "TC_128ER Media UI and Functionality Verify that multiple full sentences can be added 1. Enter Orange is a fruit | Orange is a color. 2. Save. 3. Student enters “Orange is a color”.Answer should be correct."
+    },
+    {
+      "id": "TC_129",
+      "num": 129,
+      "type": "UI and Functionality",
+      "description": "Verify that a paragraph can be entered as an answer",
+      "expected": "",
+      "raw": "TC_129ER Media UI and Functionality Verify that a paragraph can be entered as an answer 1. Enter paragraph text in Answer field. 2. Save. 3. Student enters same paragraph.Answer should be correct."
+    },
+    {
+      "id": "TC_130",
+      "num": 130,
+      "type": "UI and Functionality",
+      "description": "Verify that RTE formatted answers are matched correctly",
+      "expected": "",
+      "raw": "TC_130ER Media UI and Functionality Verify that RTE formatted answers are matched correctly 1. Enter **Orange** is a fruit in Answer field. 2. Save. 3. Student enters Orange is a fruit without formatting.Answer should still be correct."
+    },
+    {
+      "id": "TC_131",
+      "num": 131,
+      "type": "UI and Functionality",
+      "description": "Verify case-insensitivity in answers",
+      "expected": "",
+      "raw": "TC_131ER Media UI and FunctionalityVerify case-insensitivity in answers 1. Enter Orange. 2. Save. 3. Student enters orange.Should be marked correct."
+    },
+    {
+      "id": "TC_132",
+      "num": 132,
+      "type": "UI and Functionality",
+      "description": "Verify trimming of spaces in answers",
+      "expected": "",
+      "raw": "TC_132ER Media UI and FunctionalityVerify trimming of spaces in answers 1. Enter Orange. 2. Save. 3. Student enters Orange.Should be marked correct."
+    },
+    {
+      "id": "TC_133",
+      "num": 133,
+      "type": "UI and Functionality",
+      "description": "Verify unlimited number of answers allowed1.",
+      "expected": "",
+      "raw": "TC_133ER Media UI and FunctionalityVerify unlimited number of answers allowed1. Enter 50+ answers separated by ` `. 2. Save. 3. Preview."
+    },
+    {
+      "id": "TC_134",
+      "num": 134,
+      "type": "UI and Functionality",
+      "description": "Verify wrong answers are rejected",
+      "expected": "",
+      "raw": "TC_134ER Media UI and FunctionalityVerify wrong answers are rejected 1. Enter Orange | Apple. 2. Save. 3. Student enters Banana.Student response should be incorrect."
+    },
+    {
+      "id": "TC_135",
+      "num": 135,
+      "type": "UI and Functionality",
+      "description": "Verify partially correct multi-word answers are rejected",
+      "expected": "",
+      "raw": "TC_135ER Media UI and Functionality Verify partially correct multi-word answers are rejected 1. Enter Orange is a fruit. 2. Save. 3. Student enters Orange.Should be incorrect."
+    },
+    {
+      "id": "TC_136",
+      "num": 136,
+      "type": "UI and Functionality",
+      "description": "Verify extra words in student answer cause incorrect marking",
+      "expected": "",
+      "raw": "TC_136ER Media UI and Functionality Verify extra words in student answer cause incorrect marking 1. Enter Orange. 2. Save. 3. Student enters Orange fruit.Should be incorrect."
+    },
+    {
+      "id": "TC_137",
+      "num": 137,
+      "type": "UI and Functionality",
+      "description": "Verify blank student response is marked incorrect",
+      "expected": "",
+      "raw": "TC_137ER Media UI and Functionality Verify blank student response is marked incorrect 1. Enter valid answers. 2. Save. 3. Student leaves response empty.Should be incorrect."
+    },
+    {
+      "id": "TC_138",
+      "num": 138,
+      "type": "UI and Functionality",
+      "description": "Verify garbage characters are rejected",
+      "expected": "",
+      "raw": "TC_138ER Media UI and FunctionalityVerify garbage characters are rejected 1. Enter Orange. 2. Save. 3. Student enters ###.Should be incorrect."
+    },
+    {
+      "id": "TC_139",
+      "num": 139,
+      "type": "UI and Functionality",
+      "description": "Verify special characters are handled",
+      "expected": "",
+      "raw": "TC_139ER Media UI and FunctionalityVerify special characters are handled 1. Enter C++ | Java. 2. Save. 3. Student enters C+.Should be incorrect."
+    },
+    {
+      "id": "TC_140",
+      "num": 140,
+      "type": "UI and Functionality",
+      "description": "Verify multiple wrong answers entered by student are rejected",
+      "expected": "",
+      "raw": "TC_140ER Media UI and Functionality Verify multiple wrong answers entered by student are rejected 1. Enter Orange | Apple. 2. Save. 3. Student enters Banana | Grape.Should be incorrect."
+    },
+    {
+      "id": "TC_141",
+      "num": 141,
+      "type": "UI and Functionality",
+      "description": "Verify Show Label option",
+      "expected": "",
+      "raw": "TC_141ER Media UI and FunctionalityVerify Show Label option 1. Open ER Media step. 2. Enable Show Label. 3. Add label text. 4. Save and preview. Label text should display above answer field."
+    },
+    {
+      "id": "TC_142",
+      "num": 142,
+      "type": "UI and Functionality",
+      "description": "Verify Show Label disabled",
+      "expected": "",
+      "raw": "TC_142ER Media UI and FunctionalityVerify Show Label disabled 1. Disable Show Label. 2. Save. 3. Preview.Label should not display."
+    },
+    {
+      "id": "TC_143",
+      "num": 143,
+      "type": "UI and Functionality",
+      "description": "Verify background color application",
+      "expected": "",
+      "raw": "TC_143ER Media UI and FunctionalityVerify background color application 1. Open Settings. 2. Select a background color. 3. Save. 4. Preview. Background color applied to answer area."
+    },
+    {
+      "id": "TC_144",
+      "num": 144,
+      "type": "UI and Functionality",
+      "description": "Verify background color reset",
+      "expected": "",
+      "raw": "TC_144ER Media UI and FunctionalityVerify background color reset 1. Remove selected background color. 2. Save. 3. Preview.Default background restored."
+    },
+    {
+      "id": "TC_145",
+      "num": 145,
+      "type": "UI and Functionality",
+      "description": "Verify Show Label and Background color together",
+      "expected": "",
+      "raw": "TC_145ER Media UI and Functionality Verify Show Label and Background color together 1. Enable Show Label. 2. Apply background color. 3. Save. 4. Preview.Both should display correctly."
+    },
+    {
+      "id": "TC_146",
+      "num": 146,
+      "type": "UI and Functionality",
+      "description": "Verify Show Label and Media interaction",
+      "expected": "",
+      "raw": "TC_146ER Media UI and FunctionalityVerify Show Label and Media interaction 1. Enable Show Label. 2. Upload image in Media field. 3. Save. 4. Preview. Both should render correctly without overlap."
+    },
+    {
+      "id": "TC_147",
+      "num": 147,
+      "type": "UI and Functionality",
+      "description": "Verify correct single-word answer scoring",
+      "expected": "",
+      "raw": "TC_147ER Media UI and FunctionalityVerify correct single-word answer scoring 1. Enter Apple. 2. Save. 3. Student enters Apple. Score = 1 and should display as correct answer"
+    },
+    {
+      "id": "TC_148",
+      "num": 148,
+      "type": "UI and Functionality",
+      "description": "Verify correct sentence answer scoring",
+      "expected": "",
+      "raw": "TC_148ER Media UI and FunctionalityVerify correct sentence answer scoring 1. Enter Orange is a fruit. 2. Save. 3. Student enters same sentence. Score = 1 should display as correct answer"
+    },
+    {
+      "id": "TC_149",
+      "num": 149,
+      "type": "UI and Functionality",
+      "description": "Verify any one correct answer from multiple scoring",
+      "expected": "Score = 1 should display as correct answer",
+      "raw": "TC_149ER Media UI and Functionality Verify any one correct answer from multiple scoring 1. Enter Answer1 | Answer2. 2. Save. 3. Student enters Answer2. Score = 1 should display as correct answer"
+    },
+    {
+      "id": "TC_150",
+      "num": 150,
+      "type": "UI and Functionality",
+      "description": "Verify wrong answers score 0",
+      "expected": "",
+      "raw": "TC_150ER Media UI and FunctionalityVerify wrong answers score 0 1. Enter Orange. 2. Save. 3. Student enters Banana. Score = 0 should display as correct answer"
+    },
+    {
+      "id": "TC_151",
+      "num": 151,
+      "type": "UI and Functionality",
+      "description": "Verify multiple corrects still score 1",
+      "expected": "",
+      "raw": "TC_151ER Media UI and FunctionalityVerify multiple corrects still score 1 1. Enter 5 correct answers. 2. Save. 3. Student enters 2 correct answers.Score = 1 (not cumulative)."
+    },
+    {
+      "id": "TC_152",
+      "num": 152,
+      "type": "UI and Functionality",
+      "description": "Verify math equation scoring",
+      "expected": "",
+      "raw": "TC_152ER Media UI and FunctionalityVerify math equation scoring 1. Enter x^2+2x+1=0. 2. Save. 3. Student enters same equation. Score = 1 should display as correct answer"
+    },
+    {
+      "id": "TC_153",
+      "num": 153,
+      "type": "UI and Functionality",
+      "description": "Verify case-insensitivity in scoring",
+      "expected": "",
+      "raw": "TC_153ER Media UI and FunctionalityVerify case-insensitivity in scoring 1. Enter Apple. 2. Save. 3. Student enters apple. Score = 1 should display as correct answer"
+    },
+    {
+      "id": "TC_154",
+      "num": 154,
+      "type": "UI and Functionality",
+      "description": "Verify that the Thumb icon is visible in Style 2 layout",
+      "expected": "",
+      "raw": "TC_154ER Media UI and Functionality Verify that the Thumb icon is visible in Style 2 layout 1. Open Authoring tool. 2. Add an Extended Response step. 3. Switch to Style 2. 4. Save and preview the activity. Thumb icons ( ) should be displayed next to the response area."
+    },
+    {
+      "id": "TC_155",
+      "num": 155,
+      "type": "UI and Functionality",
+      "description": "Verify that Thumb icon works for Short Answer type",
+      "expected": "",
+      "raw": "TC_155ER Media UI and Functionality Verify that Thumb icon works for Short Answer type 1. Select Short in “Answer Type”. 2. Add a sample answer. 3. Preview the activity. 4. Enter a response and click Thumbs Up. Thumbs up should register as correct feedback."
+    },
+    {
+      "id": "TC_156",
+      "num": 156,
+      "type": "UI and Functionality",
+      "description": "Verify that Thumb icon works for RTE Answer type",
+      "expected": "",
+      "raw": "TC_156ER Media UI and Functionality Verify that Thumb icon works for RTE Answer type 1. Select RTE in “Answer Type”. 2. Add a formatted answer (bold/italic). 3. Preview and enter the same formatted answer. 4. Click Thumbs Up. Thumbs up should register positive feedback for RTE answers."
+    },
+    {
+      "id": "TC_157",
+      "num": 157,
+      "type": "UI and Functionality",
+      "description": "Verify background color change with Thumb icons",
+      "expected": "",
+      "raw": "TC_157ER Media UI and Functionality Verify background color change with Thumb icons 1. Enable Background Color from settings panel. 2. Apply a custom color. 3. Save and preview the activity. Thumb icons should remain visible and not overlap/merge with the background."
+    },
+    {
+      "id": "TC_158",
+      "num": 158,
+      "type": "UI and Functionality",
+      "description": "Verify Thumb icons functionality when background color is dark",
+      "expected": "",
+      "raw": "TC_158ER Media UI and Functionality Verify Thumb icons functionality when background color is dark 1. Apply a dark background color. 2. Preview and check Thumb icons. Icons should remain clearly visible (no blending with background)."
+    },
+    {
+      "id": "TC_159",
+      "num": 159,
+      "type": "UI and Functionality",
+      "description": "Verify alignment of Thumb icons when switching between Short and RTE",
+      "expected": "",
+      "raw": "TC_159ER Media UI and Functionality Verify alignment of Thumb icons when switching between Short and RTE 1. Switch from Short → RTE multiple times. 2. Observe position of Thumb icons. Thumb icons should stay properly aligned in both answer types."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "component": "Graphic Organizer (Image-based)",
+  "slug": "graphic-organizer",
+  "dataType": "graphicOrganizerImageHotSpot",
+  "directive": "graphic-organizer-template",
+  "widgetName": "Image GO",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "33-graphic-organizer-deep.spec.ts",
+  "qcSource": "Author Test Cases - Graphic Organizer (Image-based) .pdf",
+  "qcCount": 77,
+  "automated": 26,
+  "deferred": 51,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/graphic-organizer/graphic-organizer.html",
+    "closify/KITABOO_Authoring/templates/graphic-organizer/graphic-organizer-image-setting.html",
+    "closify/KITABOO_Authoring/templates/graphic-organizer/default/graphic-organizer.json",
+    "closify/KITABOO_Authoring/templates/graphic-organizer/scripts/graphic-organizer.js"
+  ],
+  "architectureNotes": [
+    "Image GO (widget name 'Image GO', dataType 'graphicOrganizerImageHotSpot') is an ELEMENT, NOT an assessment widget. 'graphicOrganizerImageHotSpot' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('graphicOrganizerImageHotSpot') (dropComponent matches the catalog widget by name OR dataType), not into a Generic Step column.",
+    "Canvas wrapper is .graphicOrganizerContainer.graphicOrganizerImageHotSpot.component-holder (attr graphic-organizer-template). Base image is #goImage.",
+    "'+ Add HotSpot' is button.hotspotBtn → scope.addHotSpot pushes a hotspot object onto fieldData.settings.inputBox; each hotspot renders as .inputDiv.hotspotDiv{n} with .hotspotTextarea (contenteditable, ng-model hotspot.inputAnswer), delete icon .hotspotTextarea-delete.icon-Delete (scope.deleteTextarea splices inputBox) and move handle .labelDiv-Drag-Icon.icon-Move. New-hotspot defaults: bgColor #FEFFFF, outlineColor #1E1E1E, height 10%, width 25%. Hotspots are DOM-assertable (add/delete/input).",
+    "Settings panel root is .graphic-organizer-setting.imgLabel (title 'Graphic Organizer', icon .icon-Image-labelling_number-01). It has NO unique id (unlike #text-settings-panel / #shortLongAns-setting) so selectors are class-scoped.",
+    "Show Label Type (#label-visibility, ng-model currSettings.isLabelTypeIamge) reveals Primary/Secondary radios; the question label fields (.questionNoText/.questionNoSecondaryText) render on the canvas only when isLabelTypeIamge.",
+    "Per-hotspot 'Text Input' settings (showTextSetting) render only after a hotspot is selected via scope.showSetting (click a hotspot textarea): Lock for Student, Input Answer, Header Label, Character Limit checkbox + number (number input is ng-disabled until the checkbox is checked), Apply for all Input, Background / Outline colour swatches (.bgr-style), Enable Advanced Formatting (#isjoditEnabled), Alt Text (maxlength 2000). The spec guards each of these with a body-presence check and logs+returns gracefully when the form is not mounted.",
+    "Base-image upload (#upload-comp-img uploadfiles) and the Replace Image button use the media/OS picker — control presence is automated, file selection is deferred. Hotspot drag/move + resize are jQuery-UI runtime behaviours (deferred).",
+    "QC TC_01–TC_03, TC_06–TC_13, TC_28 are login/activity/step-wizard bootstrap (handled by the harness, not the Image GO element). The bulk of the catalog (TC_40–TC_77) covers Save, Preview, Reader, Publish, Instructor evaluation, persistence-after-reload and a11y — all outside the authoring DOM and deferred (it.skip with reasons)."
+  ],
+  "notLiveVerified": true
+}

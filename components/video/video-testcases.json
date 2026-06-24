@@ -1,0 +1,564 @@
+{
+  "component": "Video",
+  "slug": "video",
+  "dataType": "video",
+  "source": "Author Test Cases - Video.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Video.pdf",
+  "pages": 2,
+  "extractedCount": 69,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Video UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Video FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Video FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Video FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Video FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Video Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Video Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Video Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Video Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Verify upload video by system",
+      "expected": "",
+      "raw": "TC_10 Video FunctionalityVerify upload video by systemSelect Upload by System, click Upload, choose a valid MP4 fileVideo preview appears with the uploaded file"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Verify upload video by URL (YouTube)",
+      "expected": "",
+      "raw": "TC_11 Video FunctionalityVerify upload video by URL (YouTube) Select Upload by URL, choose YouTube, enter a valid YouTube Video ID Video preview loads the YouTube video thumbnail"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Verify upload video by URL (invalid Video ID)",
+      "expected": "",
+      "raw": "TC_12 Video Functionality Verify upload video by URL (invalid Video ID)Select Upload by URL, enter an invalid Video ID Validation error displayed (e.g., Invalid Video ID)"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Verify switching from system upload to URL clears previous file Upload a video using Upload by System, then switch to Upload by URL Previously uploaded video is cleared; URL input field becomes active",
+      "expected": "",
+      "raw": "TC_13 Video Functionality Verify switching from system upload to URL clears previous file Upload a video using Upload by System, then switch to Upload by URL Previously uploaded video is cleared; URL input field becomes active"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Verify switching from URL to system upload clears URL",
+      "expected": "",
+      "raw": "TC_14 Video Functionality Verify switching from URL to system upload clears URLEnter a YouTube Video ID, then switch to Upload by SystemURL field clears, upload button becomes active"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Verify accepted upload formatTry uploading a non-MP4 file (e.g., AVI) Upload fails with an error (Unsupported Format)",
+      "expected": "",
+      "raw": "TC_15 Video FunctionalityVerify accepted upload formatTry uploading a non-MP4 file (e.g., AVI) Upload fails with an error (Unsupported Format)"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Verify dimension input enables/disables correctlyUncheck Keep Original, enter Width and Height Video placeholder updates to show entered dimensions",
+      "expected": "",
+      "raw": "TC_16 Video Functionality Verify dimension input enables/disables correctlyUncheck Keep Original, enter Width and Height Video placeholder updates to show entered dimensions"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Verify dimension fields disabled when Keep Original is checkedEnsure Keep Original is checkedWidth and Height inputs are disabled",
+      "expected": "",
+      "raw": "TC_17 Video Functionality Verify dimension fields disabled when Keep Original is checkedEnsure Keep Original is checkedWidth and Height inputs are disabled"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Verify full width toggleToggle Full Width on and off Video resizes to container width (on) or default size (off)",
+      "expected": "",
+      "raw": "TC_18 Video FunctionalityVerify full width toggleToggle Full Width on and off Video resizes to container width (on) or default size (off)"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify Show Header checkboxToggle Show Header on and offHeader text visibility updates accordingly",
+      "expected": "",
+      "raw": "TC_19 Video FunctionalityVerify Show Header checkboxToggle Show Header on and offHeader text visibility updates accordingly"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Verify Show Caption checkboxToggle Show Caption on and offCaption text visibility updates accordingly",
+      "expected": "",
+      "raw": "TC_20 Video FunctionalityVerify Show Caption checkboxToggle Show Caption on and offCaption text visibility updates accordingly"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Verify style selection",
+      "expected": "",
+      "raw": "TC_21 Video FunctionalityVerify style selectionSelect different Style options (bordered/outlined)Video style updates visually"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Verify outline and fill background color",
+      "expected": "",
+      "raw": "TC_22 Video FunctionalityVerify outline and fill background colorSelect Outline & Fill Background, choose a color Video container shows selected background color"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Verify switching between No Outline and Outline optionsToggle between No Outline and Outline & Fill BackgroundBorder/background updates accordingly",
+      "expected": "",
+      "raw": "TC_23 Video Functionality Verify switching between No Outline and Outline optionsToggle between No Outline and Outline & Fill BackgroundBorder/background updates accordingly"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functionality",
+      "description": "Verify entering HEX color value manuallyIn background color field, enter valid hex code (e.g., #FF0000)Background color updates to the entered color",
+      "expected": "",
+      "raw": "TC_24 Video FunctionalityVerify entering HEX color value manuallyIn background color field, enter valid hex code (e.g., #FF0000)Background color updates to the entered color"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functionality",
+      "description": "Verify entering invalid HEX color value",
+      "expected": "",
+      "raw": "TC_25 Video FunctionalityVerify entering invalid HEX color valueEnter invalid hex code (e.g., #XYZ)Validation error displayed"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functionality",
+      "description": "Verify dimension inputs with invalid characters",
+      "expected": "",
+      "raw": "TC_26 Video Functionality Verify dimension inputs with invalid charactersEnter letters into Width or Height fieldsValidation error or field rejects invalid input"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Functionality",
+      "description": "Verify partial dimensions (only width)",
+      "expected": "",
+      "raw": "TC_27 Video FunctionalityVerify partial dimensions (only width)Enter width but leave height blank Aspect ratio adjusts appropriately or validation prompts"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functionality",
+      "description": "Verify resetting dimensions Uncheck Keep Original, enter dimensions, then check Keep Original Custom dimensions clear, original video size restored",
+      "expected": "",
+      "raw": "TC_28 Video FunctionalityVerify resetting dimensions Uncheck Keep Original, enter dimensions, then check Keep Original Custom dimensions clear, original video size restored"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Functionality",
+      "description": "Verify accessibility ALT textScroll to Accessibility, enter ALT textALT text saved and associated with video",
+      "expected": "",
+      "raw": "TC_29 Video FunctionalityVerify accessibility ALT textScroll to Accessibility, enter ALT textALT text saved and associated with video"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functionality",
+      "description": "Verify entering long ALT text",
+      "expected": "",
+      "raw": "TC_30 Video FunctionalityVerify entering long ALT textEnter very long text into ALT fieldALT text accepted up to character limit"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functionality",
+      "description": "Verify uploading large video fileUpload a very large MP4 file Upload proceeds or system displays file size limit error",
+      "expected": "",
+      "raw": "TC_31 Video FunctionalityVerify uploading large video fileUpload a very large MP4 file Upload proceeds or system displays file size limit error"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functionality",
+      "description": "Verify cancelling video uploadStart video upload, click CancelUpload stops and no file is saved",
+      "expected": "",
+      "raw": "TC_32 Video FunctionalityVerify cancelling video uploadStart video upload, click CancelUpload stops and no file is saved"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functionality",
+      "description": "Verify preview after uploading videoUpload a video, click Preview Video plays or displays thumbnail in preview mode",
+      "expected": "",
+      "raw": "TC_33 Video FunctionalityVerify preview after uploading videoUpload a video, click Preview Video plays or displays thumbnail in preview mode"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functionality",
+      "description": "Verify preview after embedding video URL",
+      "expected": "",
+      "raw": "TC_34 Video FunctionalityVerify preview after embedding video URLEnter valid YouTube ID, click PreviewEmbedded video is playable in preview"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functionality",
+      "description": "Verify saving video configurationUpload video or embed URL, click Save, reload editorVideo remains configured correctly",
+      "expected": "",
+      "raw": "TC_35 Video FunctionalityVerify saving video configurationUpload video or embed URL, click Save, reload editorVideo remains configured correctly"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functionality",
+      "description": "Verify discarding unsaved changesUpload video but do not save, reload editorVideo configuration is reset to last saved state",
+      "expected": "",
+      "raw": "TC_36 Video FunctionalityVerify discarding unsaved changesUpload video but do not save, reload editorVideo configuration is reset to last saved state"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functionality",
+      "description": "Verify applying combination of Full Width and custom dimension (edge)",
+      "expected": "",
+      "raw": "TC_37 Video Functionality Verify applying combination of Full Width and custom dimension (edge)Enter dimensions, then enable Full Width System applies Full Width override or shows validation conflict"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functionality",
+      "description": "Verify toggling Keep Original after entering dimension",
+      "expected": "",
+      "raw": "TC_38 Video Functionality Verify toggling Keep Original after entering dimensionEnter custom Width/Height, then re-enable Keep OriginalVideo resets to original dimensions"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functionality",
+      "description": "Verify applying style after video uploadUpload video, then change Style Video container updates style without removing uploaded video",
+      "expected": "",
+      "raw": "TC_39 Video FunctionalityVerify applying style after video uploadUpload video, then change Style Video container updates style without removing uploaded video"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functionality",
+      "description": "Verify error handling for unsupported URL platform Choose Upload by URL, select platform other than YouTube, and enter a URL (if other platforms appear)Validation error if unsupported",
+      "expected": "",
+      "raw": "TC_40 Video Functionality Verify error handling for unsupported URL platform Choose Upload by URL, select platform other than YouTube, and enter a URL (if other platforms appear)Validation error if unsupported"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functionality",
+      "description": "Verify error handling for empty Video ID",
+      "expected": "",
+      "raw": "TC_41 Video FunctionalityVerify error handling for empty Video IDSelect Upload by URL, leave Video ID empty, try to previewValidation error shown"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Functionality",
+      "description": "Verify behavior of Full Width toggle with different layouts",
+      "expected": "",
+      "raw": "TC_42 Video Functionality Verify behavior of Full Width toggle with different layouts Enable Full Width, switch between Vertical and Horizontal layout Video adjusts to container width based on layout"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functionality",
+      "description": "Verify video caption display",
+      "expected": "",
+      "raw": "TC_43 Video FunctionalityVerify video caption displayEnter caption text, ensure Show Caption is checked, previewCaption appears below the video"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functionality",
+      "description": "Verify video caption hidden when uncheckedUncheck Show Caption, previewCaption area is hidden",
+      "expected": "",
+      "raw": "TC_44 Video Functionality Verify video caption hidden when uncheckedUncheck Show Caption, previewCaption area is hidden"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functionality",
+      "description": "Verify video accessibility ALT text appears in output metadata",
+      "expected": "",
+      "raw": "TC_45 Video Functionality Verify video accessibility ALT text appears in output metadataEnter ALT text, preview, inspect HTML or metadataALT attribute correctly included"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functionality",
+      "description": "Verify outline color changes",
+      "expected": "",
+      "raw": "TC_46 Video FunctionalityVerify outline color changesSelect Outline & Fill Background, pick different colors, previewBorder/background updates match selection"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functionality",
+      "description": "Verify persistence of video configuration when duplicating slideDuplicate the current slideNew slide retains same video settings",
+      "expected": "",
+      "raw": "TC_47 Video Functionality Verify persistence of video configuration when duplicating slideDuplicate the current slideNew slide retains same video settings"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functionality",
+      "description": "Verify clearing uploaded videoUpload video, then clear/removeVideo placeholder resets to empty",
+      "expected": "",
+      "raw": "TC_48 Video FunctionalityVerify clearing uploaded videoUpload video, then clear/removeVideo placeholder resets to empty"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functionality",
+      "description": "Verify multiple videos in different slidesAdd multiple slides, configure a different video in eachEach slide retains its own video settings",
+      "expected": "",
+      "raw": "TC_49 Video FunctionalityVerify multiple videos in different slidesAdd multiple slides, configure a different video in eachEach slide retains its own video settings"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functionality",
+      "description": "Verify publishing a video slide with default settings Upload MP4 video, leave default dimension, keep Keep Original and Full Width checked, click Publish Activity publishes successfully; Reader shows video with full widt",
+      "expected": "",
+      "raw": "TC_50 Video Functionality Verify publishing a video slide with default settings Upload MP4 video, leave default dimension, keep Keep Original and Full Width checked, click Publish Activity publishes successfully; Reader shows video with full width"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functionality",
+      "description": "Verify launching Reader after publishing video slideAfter publishing, open Reader Video loads with play controls, dimensions as configured, and caption if entered",
+      "expected": "",
+      "raw": "TC_51 Video Functionality Verify launching Reader after publishing video slideAfter publishing, open Reader Video loads with play controls, dimensions as configured, and caption if entered"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functionality",
+      "description": "Verify video playback in ReaderClick Play in ReaderVideo plays smoothly without error",
+      "expected": "",
+      "raw": "TC_52 Video FunctionalityVerify video playback in ReaderClick Play in ReaderVideo plays smoothly without error"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functionality",
+      "description": "Verify caption visibility in Reader",
+      "expected": "",
+      "raw": "TC_53 Video FunctionalityVerify caption visibility in ReaderEnter caption text, publish, launch ReaderCaption displays below video"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functionality",
+      "description": "Verify disabling Show CaptionUncheck Show Caption, publishReader video displays without caption",
+      "expected": "",
+      "raw": "TC_54 Video FunctionalityVerify disabling Show CaptionUncheck Show Caption, publishReader video displays without caption"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functionality",
+      "description": "Verify disabling Show HeaderUncheck Show Header, publishReader video displays without header text",
+      "expected": "",
+      "raw": "TC_55 Video FunctionalityVerify disabling Show HeaderUncheck Show Header, publishReader video displays without header text"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functionality",
+      "description": "Verify setting custom dimensions",
+      "expected": "",
+      "raw": "TC_56 Video FunctionalityVerify setting custom dimensions Enter width and height (e.g., W:640 H:360), uncheck Keep Original, publishReader video appears at specified dimensions"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functionality",
+      "description": "Verify Full Width overrides dimensions",
+      "expected": "",
+      "raw": "TC_57 Video FunctionalityVerify Full Width overrides dimensionsEnter custom dimensions, keep Full Width checked, publish Reader video stretches to full width regardless of dimensions entered"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functionality",
+      "description": "Verify outline and background style in Reader",
+      "expected": "",
+      "raw": "TC_58 Video Functionality Verify outline and background style in ReaderSelect Outline & Fill Background, pick color, publish Video container displays with outline and background color"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functionality",
+      "description": "Verify accessibility ALT text on video",
+      "expected": "",
+      "raw": "TC_59 Video FunctionalityVerify accessibility ALT text on video Enter ALT text, publish, inspect Reader with screen reader or alt text viewerALT text is present in video metadata"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify editing published video (change video file)Reopen published activity, upload a new MP4 file, republishReader shows updated video",
+      "expected": "",
+      "raw": "TC_60 Video Functionality Verify editing published video (change video file)Reopen published activity, upload a new MP4 file, republishReader shows updated video"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify editing published video (change dimensions)Reopen published activity, update W/H, republishReader video resizes to new dimensions",
+      "expected": "",
+      "raw": "TC_61 Video Functionality Verify editing published video (change dimensions)Reopen published activity, update W/H, republishReader video resizes to new dimensions"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify editing published video (toggle Full Width)Uncheck Full Width, republish Reader displays video with set dimensions or original size",
+      "expected": "",
+      "raw": "TC_62 Video Functionality Verify editing published video (toggle Full Width)Uncheck Full Width, republish Reader displays video with set dimensions or original size"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify editing published video (toggle Show Caption)Toggle Show Caption, republish Caption visibility updates in Reader accordingly",
+      "expected": "",
+      "raw": "TC_63 Video Functionality Verify editing published video (toggle Show Caption)Toggle Show Caption, republish Caption visibility updates in Reader accordingly"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify editing published video (change outline/background color)Change style to different background color, republishReader video shows updated styles",
+      "expected": "",
+      "raw": "TC_64 Video Functionality Verify editing published video (change outline/background color)Change style to different background color, republishReader video shows updated styles"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify republishing without any editsOpen published activity, click Republish without changesRepublishing completes; no changes in Reader",
+      "expected": "",
+      "raw": "TC_65 Video FunctionalityVerify republishing without any editsOpen published activity, click Republish without changesRepublishing completes; no changes in Reader"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functionality",
+      "description": "Verify Reader reflects updates immediately after republishingRefresh Reader after republishing Reader displays latest video settings and content",
+      "expected": "",
+      "raw": "TC_66 Video Functionality Verify Reader reflects updates immediately after republishingRefresh Reader after republishing Reader displays latest video settings and content"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functionality",
+      "description": "Verify error handling when video file missing after republishing Delete or rename uploaded video on server, republish, launch Reader Reader shows error message indicating video cannot be loaded",
+      "expected": "",
+      "raw": "TC_67 Video Functionality Verify error handling when video file missing after republishing Delete or rename uploaded video on server, republish, launch Reader Reader shows error message indicating video cannot be loaded"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functionality",
+      "description": "Verify video playback compatibility in Reader Publish video, test Reader in different browsers (Chrome, Firefox, Safari)Video plays consistently across browsers",
+      "expected": "",
+      "raw": "TC_68 Video Functionality Verify video playback compatibility in Reader Publish video, test Reader in different browsers (Chrome, Firefox, Safari)Video plays consistently across browsers"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functionality",
+      "description": "Verify dimension fields validation",
+      "expected": "",
+      "raw": "TC_69 Video FunctionalityVerify dimension fields validationEnter invalid values in W/H (e.g., negative, zero, letters)Validation prevents save or shows error"
+    }
+  ]
+}

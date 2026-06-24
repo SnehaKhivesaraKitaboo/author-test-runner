@@ -4,12 +4,14 @@
     "lib": ["ES6", "DOM"],
     "types": ["cypress", "node"],
     "strict": false,
+    "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
   "include": [
     "e2e/**/*.ts",
+    "components/**/*.ts",
     "support/**/*.ts",
     "cypress.config.ts"
   ]

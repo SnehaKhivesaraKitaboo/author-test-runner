@@ -1,0 +1,32 @@
+{
+  "component": "Text",
+  "slug": "text",
+  "dataType": "paragraph",
+  "directive": "paragraph-template",
+  "widgetName": "Text",
+  "module": "element (Instructions-for-Students canvas)",
+  "spec": "07-text-deep.spec.ts",
+  "qcSource": "Author Test Cases - Text.pdf",
+  "qcCount": 40,
+  "automated": 20,
+  "deferred": 20,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/paragraph/paragraph.html",
+    "closify/KITABOO_Authoring/templates/paragraph/paragraph_settings.html",
+    "closify/KITABOO_Authoring/templates/paragraph/default/paragraph.json",
+    "closify/KITABOO_Authoring/templates/paragraph/scripts/paragraph-directive.js",
+    "closify/KITABOO_Authoring/templates/stylepanel.html",
+    "closify/KITABOO_Authoring/templates/textEditor.html"
+  ],
+  "architectureNotes": [
+    "Text is an ELEMENT (widget name 'Text', dataType 'paragraph'), NOT an assessment widget. 'paragraph' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Text'), not into a Generic Step column.",
+    "Canvas wrapper is .customClass[data-type=\"paragraph\"] containing section[paragraph-template] (.component-holder.paragraph-select).",
+    "Main editable body is .paragraph-container.editables (contenteditable, ng-model fieldData.header) — set via cy.setContentEditableOn, never cy.type().",
+    "Settings panel id is #text-settings-panel with title 'Text' and icon .icon-Text_Paragraph.settingIcon.",
+    "Styles are data-driven from style_tab.stylesHolder; each <stylepanel> button is wrapped in .stylebgdiv[id] where id is the source style name: defaultText (Default, active by default), blockTextParagraph (Block Text), blockquote (Quote), dropCapflag (Drop Cap), emphasisText (Emphasis), buttontext (Button Text), buttonBorderText. Style 'applied' visual rendering is verified in Preview/Reader (deferred); presence/clickability is automated.",
+    "Settings actions: Upload Image (#inline-image), Insert Text (insertInlineText), Apply to all / Reset changes buttons, Show Label Type, Show Paragraph Number, Show Author Name (blockquote only).",
+    "Rich-text formatting (bold/italic/underline/align/math/special-char) lives in the floating textEditor.html toolbar (.editing-container .editor-list), mounted on focus. The spec degrades gracefully (log + return) when the overlay is not mounted in headless context.",
+    "QC TC_01–TC_09 are login/activity/step bootstrap (handled by the harness, not the Text element); TC_11 needs an Offline Step type; file pickers, math render, excessive-line-break limits, Preview/Reader/Publish, and persistence-after-reload are deferred."
+  ]
+}

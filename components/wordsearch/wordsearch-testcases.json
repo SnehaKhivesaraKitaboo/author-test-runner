@@ -1,0 +1,276 @@
+{
+  "component": "Wordsearch",
+  "slug": "wordsearch",
+  "dataType": "wordsearch",
+  "source": "Author Test Cases - Wordsearch.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Wordsearch.pdf",
+  "pages": 2,
+  "extractedCount": 33,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "Positive",
+      "description": "Verify adding a new word in Hidden Word section",
+      "expected": "",
+      "raw": "TC_001WordsearchPositiveVerify adding a new word in Hidden Word section 1. Login and navigate to the Word Search page. 2. Enter a word in the Hidden Word field. 3. Click the Add button. The new word appears in the WORDS section and is highlighted with a blue line in the grid.Pending"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Positive",
+      "description": "Verify blue highlight for added word1. Add a word .2. Observe the grid. The added word is highlighted with a blue line in the grid.Pending",
+      "expected": "",
+      "raw": "TC_002WordsearchPositiveVerify blue highlight for added word1. Add a word .2. Observe the grid. The added word is highlighted with a blue line in the grid.Pending"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Positive",
+      "description": "Verify Show Words checkbox default state",
+      "expected": "",
+      "raw": "TC_003WordsearchPositiveVerify Show Words checkbox default state 1. Login and navigate to the Word Search settings. 2. Observe the Show Words checkbox. Show Words checkbox is checked by default. WORDS section is visible.Pending"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Negative",
+      "description": "Verify removing Show Words hides WORDS section",
+      "expected": "",
+      "raw": "TC_004WordsearchNegativeVerify removing Show Words hides WORDS section 1. Uncheck the Show Words checkbox in settings. WORDS section disappears from the Author page.Pending"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Positive",
+      "description": "Verify Add Show Me, Add Header, and Add Instruction Text checkboxes default state",
+      "expected": "",
+      "raw": "TC_005WordsearchPositive Verify Add Show Me, Add Header, and Add Instruction Text checkboxes default state 1. Navigate to Settings panel. 2. Observe Add Show Me, Add Header, Add Instruction Text checkboxes. All three checkboxes are checked by default.Pending"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Positive",
+      "description": "Verify correct word selection in preview",
+      "expected": "",
+      "raw": "TC_006WordsearchPositiveVerify correct word selection in preview 1. Click Preview. 2. Select the correct word in the grid. The word in the WORDS section is shown with a strikethrough and highlighted in the grid.Pending"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Negative",
+      "description": "Verify incorrect word selection in preview",
+      "expected": "",
+      "raw": "TC_007WordsearchNegativeVerify incorrect word selection in preview 1. Click Preview. 2. Select a word in the grid not present in the WORDS section. No strikethrough occurs in the WORDS section. No highlight appears for that word.Pending"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Positive",
+      "description": "Verify shuffle functionality for grid1. Click the Shuffle button in Settings. Grid letters are shuffled. WORDS section and settings remain unchanged.Pending",
+      "expected": "",
+      "raw": "TC_008WordsearchPositiveVerify shuffle functionality for grid1. Click the Shuffle button in Settings. Grid letters are shuffled. WORDS section and settings remain unchanged.Pending"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Positive",
+      "description": "Verify persistence of words after saving",
+      "expected": "",
+      "raw": "TC_009WordsearchPositiveVerify persistence of words after saving 1. Add a new word in Hidden Word section. 2. Click Save. 3. Refresh or revisit the page. The added word remains in the WORDS section after refresh or revisit.Pending"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Negative",
+      "description": "Verify adding duplicate words",
+      "expected": "",
+      "raw": "TC_010WordsearchNegativeVerify adding duplicate words 1. Add a word that already exists in the WORDS section. System prevents duplicates or indicates an error. Duplicate is not added.Pending"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Negative",
+      "description": "Verify adding a blank word",
+      "expected": "",
+      "raw": "TC_011WordsearchNegativeVerify adding a blank word 1. Leave the Hidden Word input blank. 2. Click Add. System should not add a blank word and should show a validation message.Pending"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify deleting a word from WORDS section",
+      "expected": "",
+      "raw": "TC_012WordsearchPositiveVerify deleting a word from WORDS section 1. Add a word to WORDS section. 2. Delete the word using the provided option (if available). The word is removed from the WORDS section and not highlighted in the grid.Pending"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify correct word remains after grid shuffle",
+      "expected": "",
+      "raw": "TC_013WordsearchPositiveVerify correct word remains after grid shuffle 1. Add a word and verify highlight. 2. Click Shuffle. 3. Check highlight for the word. The same word remains highlighted after grid shuffle.Pending"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Negative",
+      "description": "Verify adding excessively long word",
+      "expected": "",
+      "raw": "TC_014WordsearchNegativeVerify adding excessively long word 1. Enter a word exceeding the allowed length (e.g. 50 characters) in Hidden Word. 2. Click Add. System rejects input and shows validation or error message.Pending"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify case-insensitive word addition",
+      "expected": "",
+      "raw": "TC_015WordsearchPositiveVerify case-insensitive word addition 1. Add a word in lowercase (e.g. \"test\"). 2. Add same word in uppercase (e.g. \"TEST\"). System treats both as the same word; no duplicates are created.Pending"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify word can be found along different directions",
+      "expected": "",
+      "raw": "TC_016WordsearchPositiveVerify word can be found along different directions 1. Add a word that can be placed horizontally, vertically, or diagonally. 2. Preview and select the word. The word can be correctly highlighted and strikethrough applied in all directions.Pending"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify undo action restores previous state",
+      "expected": "",
+      "raw": "TC_017WordsearchPositiveVerify undo action restores previous state 1. Make changes (add/remove word). 2. Click Undo (if available). The previous state of words/selection is restored.Pending"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Negative",
+      "description": "Verify input of duplicate word with different spacing",
+      "expected": "",
+      "raw": "TC_018WordsearchNegative Verify input of duplicate word with different spacing 1. Add a word with leading/trailing spaces. 2. Add same word without spaces. System trims spaces and prevents duplicate entry.Pending"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify preview mode disables editing",
+      "expected": "",
+      "raw": "TC_019WordsearchPositiveVerify preview mode disables editing 1. Click Preview. 2. Attempt to add or remove words in WORDS section.Editing is disabled in preview mode.Pending"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify focus moves to input after clicking Add",
+      "expected": "",
+      "raw": "TC_020WordsearchPositiveVerify focus moves to input after clicking Add 1. Enter a word. 2. Click Add. 3. Check if the input field is focused for next entry. Input field is focused and ready for the next word.Pending"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Negative",
+      "description": "Verify grid highlight not shown for partial matches",
+      "expected": "",
+      "raw": "TC_021WordsearchNegativeVerify grid highlight not shown for partial matches 1. Add a word (e.g. \"CAT\"). 2. Select only part of the word (e.g. \"CA\") in the grid during preview. No highlight or strikethrough is shown for partial matches.Pending"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify multi-word addition (if supported)",
+      "expected": "",
+      "raw": "TC_022WordsearchPositiveVerify multi-word addition (if supported) 1. Enter multiple words separated by comma or space (e.g. \"DOG, CAT\"). 2. Click Add. All unique valid words are added to the WORDS section.Pending"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify persistence after browser refresh",
+      "expected": "",
+      "raw": "TC_023WordsearchPositiveVerify persistence after browser refresh 1. Add a word. 2. Refresh the browser. 3. Verify words in WORDS section.Recently added words persist after refresh.Pending"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify order of words in WORDS section",
+      "expected": "",
+      "raw": "TC_024WordsearchPositiveVerify order of words in WORDS section 1. Add multiple words in sequence. 2. Check the order in WORDS section. Words appear in the order they were added.Pending"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify word highlight color for accessibility",
+      "expected": "",
+      "raw": "TC_025WordsearchPositiveVerify word highlight color for accessibility 1. Add a word. 2. Observe highlight color in grid. 3. Check with accessibility tools. Highlight color meets accessibility standards (contrast, visibility).Pending"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Positive",
+      "description": "Verify grid resize does not affect words",
+      "expected": "",
+      "raw": "TC_026WordsearchPositiveVerify grid resize does not affect words 1. Add words. 2. Resize grid (if available). 3. Check WORDS and highlights. Words and highlights remain correct after grid resize.Pending"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Negative",
+      "description": "Verify adding numbers as word",
+      "expected": "",
+      "raw": "TC_027WordsearchNegativeVerify adding numbers as word 1. Enter a number (e.g. \"123\") in Hidden Word. 2. Click Add. System should reject or not allow numbers as valid words.Pending"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Negative",
+      "description": "Verify adding word with only spaces",
+      "expected": "",
+      "raw": "TC_028WordsearchNegativeVerify adding word with only spaces 1. Enter spaces in Hidden Word. 2. Click Add. System should not add a word containing only spaces.Pending"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Negative",
+      "description": "Verify adding word with leading/trailing spaces",
+      "expected": "",
+      "raw": "TC_029WordsearchNegativeVerify adding word with leading/trailing spaces 1. Enter a word with spaces before or after (e.g. \" CAT \"). 2. Click Add. Spaces are trimmed and word is added only if not a duplicate.Pending"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify selecting all correct words in preview",
+      "expected": "",
+      "raw": "TC_030WordsearchPositiveVerify selecting all correct words in preview 1. Add multiple words. 2. Enter Preview. 3. Select all words in the grid. All words are shown with strikethrough in WORDS section.Pending"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Verify removing all words from WORDS section",
+      "expected": "",
+      "raw": "TC_031WordsearchNegativeVerify removing all words from WORDS section 1. Add several words. 2. Remove all words using delete option. WORDS section is empty and no highlights are present in grid.Pending"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify grid and WORDS section update after word removal",
+      "expected": "",
+      "raw": "TC_032WordsearchPositive Verify grid and WORDS section update after word removal 1. Add a word. 2. Remove that word. 3. Check grid and WORDS section. Word is removed from both grid highlight and WORDS section.Pending"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify adding and finding minimum length word",
+      "expected": "",
+      "raw": "TC_033WordsearchPositiveVerify adding and finding minimum length word 1. Enter a word with the smallest allowed length (e.g. 2 characters). 2. Click Add. 3. Preview and select the word. Word is added, visible in WORDS, and can be found/highlighted in grid.Pending"
+    }
+  ]
+}

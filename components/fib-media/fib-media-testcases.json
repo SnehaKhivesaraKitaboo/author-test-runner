@@ -1,0 +1,356 @@
+{
+  "component": "FIB Media",
+  "slug": "fib-media",
+  "dataType": "fib-media",
+  "source": "Author Test Cases - FIBMedia test cases.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - FIBMedia test cases.pdf",
+  "pages": 4,
+  "extractedCount": 43,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01FIB Media UI and FunctionalityVerify if user able to launch the URL 1. Hit the URL https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login 2. Login with valid credentials.User is successfully logged in."
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "UI and Functionality",
+      "description": "Verify author can add a single image to an individual FIB statement",
+      "expected": "",
+      "raw": "TC_02FIB Media UI and Functionality Verify author can add a single image to an individual FIB statement 1. Add a sentence to the FIB. 2. Click 'Add Media' for the sentence. 3. Upload/select a valid image. 4. Save and preview the FIB. The image is visible in the statement in both preview and eReader."
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "UI and Functionality",
+      "description": "Verify author can replace an image in a FIB statement",
+      "expected": "",
+      "raw": "TC_03FIB Media UI and Functionality Verify author can replace an image in a FIB statement 1. Add an image to a statement. 2. Click on replace image option. 3. Upload/select a new image. 4. Save and preview the FIB. The image in the statement is replaced with the new one."
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "UI and Functionality",
+      "description": "Verify author can remove an image from a statement",
+      "expected": "",
+      "raw": "TC_04FIB Media UI and Functionality Verify author can remove an image from a statement 1. Add an image to a statement. 2. Click on remove image icon. 3. Save and preview the FIB. The image is removed from the statement and not visible in preview or eReader."
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "UI",
+      "description": "Verify Audio/Video buttons are disabled in Settings panel when FIB with image is selected",
+      "expected": "",
+      "raw": "TC_05FIB MediaUI Verify Audio/Video buttons are disabled in Settings panel when FIB with image is selected 1. Select FIB with Image template. 2. Go to Settings panel. 3. Check the state of Audio and Video buttons. Audio and Video buttons are disabled and cannot be selected."
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "UI and Functionality",
+      "description": "Verify image dimension can be adjusted (width/height) when adding .",
+      "expected": "",
+      "raw": "TC_06FIB Media UI and Functionality Verify image dimension can be adjusted (width/height) when adding . 1. Add an image to text. 2. Adjust width and height .3. Save and preview. Image displays in adjusted heigt and width both in preview and eReader."
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "UI and Functionality",
+      "description": "Verify image dimension can be adjusted (width/height) when adding to statement",
+      "expected": "",
+      "raw": "TC_07FIB Media UI and Functionality Verify image dimension can be adjusted (width/height) when adding to statement 1. Add an image to a statement. 2. Adjust width and height. 3. Save and preview. Image displays in adjusted dimensions in the statement both in preview and eReader."
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "UI and Functionality",
+      "description": "Verify image can be positioned to the left or right of the statement",
+      "expected": "",
+      "raw": "TC_08FIB Media UI and Functionality Verify image can be positioned to the left or right of the statement 1. Add an image to a statement. 2. Use placement buttons to move image right. 3. Use placement buttons to move image left. 4. Save & preview after each change. Image appears to the left or right of the statement text as selected; text wraps properly."
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "UI and Functionality",
+      "description": "Verify image is not inserted in between text in Header or Statement",
+      "expected": "",
+      "raw": "TC_09FIB Media UI and Functionality Verify image is not inserted in between text in Header or Statement 1. Add image to Header or Statement. 2. Try to insert image between text. 3. Save and preview. Image is only positioned left or right; never in between text."
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify preview and eReader view matches authoring view with image placement and dimensions",
+      "expected": "",
+      "raw": "TC_10FIB Media UI and Functionality Verify preview and eReader view matches authoring view with image placement and dimensions 1. Add image tostatement. 2. Set placement and dimensions. 3. Save. 4. Preview and view in eReader. Image is shown in the same position and dimensions as in authoring view."
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Negative",
+      "description": "Verify error when uploading unsupported image format",
+      "expected": "",
+      "raw": "TC_11FIB MediaNegative Verify error when uploading unsupported image format 1. Try to upload an unsupported file format (e.g. .exe, .txt) as image instatement .2. Observe response. System shows error message and does not upload the unsupported file."
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Negative",
+      "description": "Verify error when uploading an excessively large image",
+      "expected": "",
+      "raw": "TC_12FIB MediaNegative Verify error when uploading an excessively large image 1. Upload an excessively large image file tostatement. 2. Observe response. System displays error message and does not upload the image."
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Negative",
+      "description": "Verify system behavior when removing an image and saving",
+      "expected": "",
+      "raw": "TC_13FIB MediaNegative Verify system behavior when removing an image and saving 1. Add image and then remove it fromstatement. 2. Save the FIB. 3. Preview/eReader. No image is visible where image was removed."
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Negative",
+      "description": "Verify system prevents adding image if no statement exists",
+      "expected": "",
+      "raw": "TC_14FIB MediaNegative Verify system prevents adding image if no statement exists 1. Create a new FIB .2. Do not add Header Text or any statement. 3. Try to add image. 4. Observe response. System prevents image addition and indicates to add text first."
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Negative",
+      "description": "Verify that re-sizing image to zero or negative dimensions is not allowed",
+      "expected": "",
+      "raw": "TC_15FIB MediaNegative Verify that re-sizing image to zero or negative dimensions is not allowed 1. Add image tostatement. 2. Try to set width or height to zero or negative. 3. Save and preview. System prevents setting zero/negative dimensions and shows an error or resets to minimum allowed."
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI",
+      "description": "Verify tooltips/help text for image placement and dimension controls",
+      "expected": "",
+      "raw": "TC_16FIB MediaUI Verify tooltips/help text for image placement and dimension controls 1. Hover over image placement and dimension controls. 2. Observe tooltips/help text. Tooltips/help text are present and describe the controls correctly."
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI",
+      "description": "Verify that after removing image, Add Media option reappears in Statement",
+      "expected": "",
+      "raw": "TC_17FIB MediaUI Verify that after removing image, Add Media option reappears in Statement 1. Add image to Statement. 2. Remove image .3. Check if 'Add Media' button is available again. Add Media' option is available again after image is removed."
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Negative",
+      "description": "Verify system does not allow uploading of corrupt/damaged image files",
+      "expected": "",
+      "raw": "TC_18FIB MediaNegative Verify system does not allow uploading of corrupt/damaged image files 1. Try to upload a corrupt or damaged image file. 2. Observe response. System displays error message and does not upload the file."
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI and Functionality",
+      "description": "Verify that only image upload is enabled and not audio/video in the Add Media popup",
+      "expected": "",
+      "raw": "TC_19FIB Media UI and Functionality Verify that only image upload is enabled and not audio/video in the Add Media popup 1. Click 'Add Media' instatement. 2. Observe upload options. 3. Try to upload audio/video files. Only image upload is enabled; audio/video upload is disabled."
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI",
+      "description": "Verify alignment of text and image in Statement after resizing image",
+      "expected": "",
+      "raw": "TC_20FIB MediaUI Verify alignment of text and image in Statement after resizing image 1. Add image and text in Statement. 2. Change image size. 3. Observe alignment in preview/eReader. Text wraps smoothly around image; alignment remains consistent after resizing."
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI and Functionality",
+      "description": "Verify upload progress indicator is displayed while uploading image",
+      "expected": "",
+      "raw": "TC_21FIB Media UI and Functionality Verify upload progress indicator is displayed while uploading image 1. Click 'Add Media' instatement. 2. Upload a large image. 3. Observe UI during upload. A progress bar or indicator is displayed until upload completes."
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Verify undo action after adding image instatement",
+      "expected": "",
+      "raw": "TC_22FIB Media UI and Functionality Verify undo action after adding image instatement 1. Add an image tostatement. 2. Use undo option (Ctrl+Z or UI button). The image addition is undone and no image appears."
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Verify redo action after undoing image addition instatement",
+      "expected": "",
+      "raw": "TC_23FIB Media UI and Functionality Verify redo action after undoing image addition instatement 1. Add an image, then undo. 2. Use redo option (Ctrl+Y or UI button). The previously undone image addition is restored."
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Verify image accessibility (alt text) for images added instatement",
+      "expected": "",
+      "raw": "TC_24FIB Media UI and Functionality Verify image accessibility (alt text) for images added instatement 1. Add image to statement. 2. Check if alt text can be added. 3. Preview/eReader and inspect image alt attribute. Author can set alt text for images and it is rendered in the output for accessibility."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Verify statement text correctly wraps around image when text is very long",
+      "expected": "",
+      "raw": "TC_25FIB Media UI and Functionality Verify statement text correctly wraps around image when text is very long 1. Add image. 2. Enter long text instatement. 3. Preview/eReader. Text wraps around the image without overflow or alignment issues."
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Verify user can resize image multiple times before saving",
+      "expected": "",
+      "raw": "TC_26FIB Media UI and Functionality Verify user can resize image multiple times before saving 1. Add image. 2. Change width/height multiple times. 3. Save and preview. Image displays with the last set dimensions."
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI and Functionality",
+      "description": "Verify that images are retained after browser refresh (autosave)",
+      "expected": "",
+      "raw": "TC_27FIB Media UI and Functionality Verify that images are retained after browser refresh (autosave) 1. Add image. 2. Wait for autosave (if available) or save. 3. Refresh browser. 4. Reopen the same FIB.Previously added image is still present."
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI and Functionality",
+      "description": "Verify image is not distorted when resizing beyond aspect ratio limits",
+      "expected": "",
+      "raw": "TC_28FIB Media UI and Functionality Verify image is not distorted when resizing beyond aspect ratio limits 1. Add image. 2. Resize disproportionally (e.g. extreme width/height) .3. Preview/eReader. Image does not appear distorted; aspect ratio is maintained or warning given."
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI and Functionality",
+      "description": "Verify keyboard navigation for adding/removing/replacing images",
+      "expected": "",
+      "raw": "TC_29FIB Media UI and Functionality Verify keyboard navigation for adding/removing/replacing images 1. Use Tab/Arrow keys to navigate to 'Add Media' button .2. Press Enter/Space to open dialog. 3. Upload/remove/replace image using keyboard only. All image actions can be performed using keyboard navigation."
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI and Functionality",
+      "description": "Verify the maximum allowed image size is documented in the UI",
+      "expected": "",
+      "raw": "TC_30FIB Media UI and Functionality Verify the maximum allowed image size is documented in the UI 1. Click 'Add Media'. 2. Observe UI for any note about max file size. 3. Try to upload an image larger than allowed. UI informs about max allowed image size."
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI and Functionality",
+      "description": "Verify multiple statements can each have distinct images",
+      "expected": "",
+      "raw": "TC_31FIB Media UI and Functionality Verify multiple statements can each have distinct images 1. Add several statements. 2. Add different image to each. 3. Preview/eReader. Each statement displays its own unique image as set by the author."
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI and Functionality",
+      "description": "Verify deleting a statement with image also deletes the associated image",
+      "expected": "",
+      "raw": "TC_32FIB Media UI and Functionality Verify deleting a statement with image also deletes the associated image 1. Add image to a statement .2. Delete the statement. 3. Save/preview. Image for deleted statement is also removed; no orphaned images."
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI and Functionality",
+      "description": "Verify that an image can be added after removing a previously added image instatement",
+      "expected": "",
+      "raw": "TC_33FIB Media UI and Functionality Verify that an image can be added after removing a previously added image instatement 1. Add image. 2. Remove image .3. Add a new image. 4. Save/preview. The new image is displayed; previous image is not present."
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Negative",
+      "description": "Verify system response when network connection is lost during image upload",
+      "expected": "",
+      "raw": "TC_34FIB MediaNegative Verify system response when network connection is lost during image upload 1. Start image upload. 2. Disconnect network. 3. Observe system behavior. 4. Reconnect and try again. System shows error or retry option; does not corruptstatement."
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Negative",
+      "description": "Verify system does not allow adding a statement image if Header Text image is still uploading",
+      "expected": "",
+      "raw": "TC_35FIB MediaNegative Verify system does not allow adding a statement image if Header Text image is still uploading 1. Add image to Header Text and do not wait for upload completion. 2. Try to add image to statement during upload. System blocks or queues statement image upload until Header Text image upload completes."
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Negative",
+      "description": "Verify system does not allow image upload when storage quota is exceeded",
+      "expected": "",
+      "raw": "TC_36FIB MediaNegative Verify system does not allow image upload when storage quota is exceeded 1. Fill storage quota (if possible) .2. Try to upload image tostatement. System shows error and prevents image upload."
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Negative",
+      "description": "Verify system prevents XSS or script injection in image alt text field",
+      "expected": "",
+      "raw": "TC_37FIB MediaNegative Verify system prevents XSS or script injection in image alt text field 1. Add image .2. Enter script tag or code in alt text. 3. Save and preview. System sanitizes input; no script is executed in preview/eReader."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Negative",
+      "description": "Verify system behavior when uploading a password-protected image file",
+      "expected": "",
+      "raw": "TC_38FIB MediaNegative Verify system behavior when uploading a password-protected image file 1. Try to upload a password-protected image file (e.g. protected PDF or image). System rejects the file and shows an error message."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI and Functionality",
+      "description": "Verify the removal of all images (from all statements) and saving",
+      "expected": "",
+      "raw": "TC_39FIB Media UI and Functionality Verify the removal of all images (from all statements) and saving 1. Add images to Header and statements. 2. Remove all images. 3. Save and preview. No images are displayed anywhere in preview/eReader."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI and Functionality",
+      "description": "Verify adding images to statements works regardless of the order statements are added",
+      "expected": "",
+      "raw": "TC_40FIB Media UI and Functionality Verify adding images to statements works regardless of the order statements are added 1. Add multiple statements in random order .2. Add images to each. 3. Save and preview. Images are correctly linked to each statement as added."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI and Functionality",
+      "description": "Verify that when duplicating a FIB, images instatement are also duplicated",
+      "expected": "",
+      "raw": "TC_41FIB Media UI and Functionality Verify that when duplicating a FIB, images instatement are also duplicated 1. Create FIB with images in Header and statements. 2. Duplicate the FIB. 3. Open duplicate and preview. All images from original FIB are present in duplicate."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI and Functionality",
+      "description": "Verify that images added are optimized for web and do not slow down eReader/preview",
+      "expected": "",
+      "raw": "TC_42FIB Media UI and Functionality Verify that images added are optimized for web and do not slow down eReader/preview 1. Add large image. 2. Save and preview. 3. Check load time and performance. Image is optimized; does not cause performance issues."
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Negative",
+      "description": "Verify that a corrupted or incomplete image upload does not break the FIB UI",
+      "expected": "",
+      "raw": "TC_43FIB MediaNegative Verify that a corrupted or incomplete image upload does not break the FIB UI 1. Interrupt image upload (close browser, kill process, etc.). 2. Reopen the FIB. FIB loads without errors; no broken image is displayed."
+    }
+  ]
+}

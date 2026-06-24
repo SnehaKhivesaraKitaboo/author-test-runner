@@ -1,0 +1,284 @@
+{
+  "component": "Edit Metadata",
+  "slug": "edit-metadata",
+  "dataType": "platform-edit-metadata",
+  "source": "Author Test Cases - Edit metadata.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Edit metadata.pdf",
+  "pages": 1,
+  "extractedCount": 34,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01 Step Metadata editUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02 Step Metadata edit FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03 Step Metadata edit FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04 Step Metadata edit FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05 Step Metadata edit FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06 Step Metadata edit Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07 Step Metadata edit Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08 Step Metadata edit Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09 Step Metadata edit Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify editing metadata of a step via “Edit Metadata” button in step menu",
+      "expected": "Click Save Metadata updates and reflects in step header and activity list",
+      "raw": "TC_10 Step Metadata editPositive Verify editing metadata of a step via “Edit Metadata” button in step menu 1. Click Step Menu (three dots) → Edit Metadata 2. Update Title, Description, Tags fields 3. Click Save Metadata updates and reflects in step header and activity list"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Negative",
+      "description": "Verify validation when required metadata field is blank1. Click Edit Metadata",
+      "expected": "Click Save Validation error: “Title is required” displayed in red below field",
+      "raw": "TC_11 Step Metadata editNegativeVerify validation when required metadata field is blank1. Click Edit Metadata 2. Clear Title 3. Click Save Validation error: “Title is required” displayed in red below field"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify publishing activity using Publish button",
+      "expected": "Confirm in Publish Confirmation Modal Activity status changes to “Published” and visible in Reader",
+      "raw": "TC_12 Step Metadata editPositiveVerify publishing activity using Publish button 1. Click Publish in top-right 2. Confirm in Publish Confirmation Modal Activity status changes to “Published” and visible in Reader"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify republishing after edit1. Edit published activity",
+      "expected": "Click Republish in headerUpdated content visible in Reader after refresh",
+      "raw": "TC_13 Step Metadata editPositiveVerify republishing after edit1. Edit published activity 2. Click Republish in headerUpdated content visible in Reader after refresh"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify adding plain text in “Instructions for Students” editor",
+      "expected": "Click SaveText saves and appears in preview",
+      "raw": "TC_14 Step Metadata editPositive Verify adding plain text in “Instructions for Students” editor 1. Go to Instructions for Students tab 2. Type in Rich Text Editor 3. Click SaveText saves and appears in preview"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify adding plain text in “Instructions for Teachers” editor",
+      "expected": "Click SaveText saves and appears in preview",
+      "raw": "TC_15 Step Metadata editPositive Verify adding plain text in “Instructions for Teachers” editor 1. Go to Instructions for Teachers tab 2. Type in Rich Text Editor 3. Click SaveText saves and appears in preview"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify applying bold, italic, underline using toolbar buttons B/I/U",
+      "expected": "SaveFormatting appears correctly in preview",
+      "raw": "TC_16 Step Metadata editPositive Verify applying bold, italic, underline using toolbar buttons B/I/U 1. Select text in editor 2. Click Bold (B), Italic (I), Underline (U) 3. SaveFormatting appears correctly in preview"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify applying bullet and numbered lists",
+      "expected": "SaveList structure preserved",
+      "raw": "TC_17 Step Metadata editPositiveVerify applying bullet and numbered lists 1. Select text 2. Click Bulleted List or Numbered List icon 3. SaveList structure preserved"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify line break using",
+      "expected": "SaveText breaks into a new line",
+      "raw": "TC_18 Step Metadata editPositiveVerify line break using Enter key1. Add text 2. Press Enter 3. SaveText breaks into a new line"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify font family, size, weight, line-height",
+      "expected": "Check applied styles in CSS Inspector or via design specMatches Roboto, 16px, weight 500, line-height 136%",
+      "raw": "TC_19 Step Metadata editPositiveVerify font family, size, weight, line-height 1. Enter text 2. Check applied styles in CSS Inspector or via design specMatches Roboto, 16px, weight 500, line-height 136%"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify embedding image using toolbar “Insert Image” icon1. Click Insert Image",
+      "expected": "SaveImage embedded in editor",
+      "raw": "TC_20 Step Metadata editPositive Verify embedding image using toolbar “Insert Image” icon1. Click Insert Image 2. Upload file 3. SaveImage embedded in editor"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Negative",
+      "description": "Verify error when unsupported component is dragged into editor1. Drag non-supported element into editorError toast: “Component not supported”",
+      "expected": "Drag non-supported element into editorError toast: “Component not supported”",
+      "raw": "TC_21 Step Metadata editNegative Verify error when unsupported component is dragged into editor1. Drag non-supported element into editorError toast: “Component not supported”"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functional",
+      "description": "Step Metadata editEdge Verify error when entering more than 10,000 characters1. Paste large text",
+      "expected": "SaveError: “Character limit exceeded”",
+      "raw": "TC_22 Step Metadata editEdge Verify error when entering more than 10,000 characters1. Paste large text 2. SaveError: “Character limit exceeded”"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify discarding changes using Cancel1. Edit instructions",
+      "expected": "Click Cancel in bottom toolbarChanges not saved",
+      "raw": "TC_23 Step Metadata editPositiveVerify discarding changes using Cancel1. Edit instructions 2. Click Cancel in bottom toolbarChanges not saved"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify navigation to next step using Next button1. Fill fields",
+      "expected": "Click NextLands on next step tab",
+      "raw": "TC_24 Step Metadata editPositiveVerify navigation to next step using Next button1. Fill fields 2. Click NextLands on next step tab"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Functional",
+      "description": "Step Metadata editEdgeVerify handling of simultaneous edits in two tabs1. Open same step in two tabs",
+      "expected": "Save in bothLast save overwrites earlier or conflict message",
+      "raw": "TC_25 Step Metadata editEdgeVerify handling of simultaneous edits in two tabs1. Open same step in two tabs 2. Save in bothLast save overwrites earlier or conflict message"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Positive",
+      "description": "Verify removing step via Delete in step menu1. Step Menu → Delete",
+      "expected": "Confirm in modalStep removed from activity",
+      "raw": "TC_26 Step Metadata editPositiveVerify removing step via Delete in step menu1. Step Menu → Delete 2. Confirm in modalStep removed from activity"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Positive",
+      "description": "Verify duplicating step using Clone New Level1. Step Menu → Clone New LevelNew step added after original",
+      "expected": "Step Menu → Clone New LevelNew step added after original",
+      "raw": "TC_27 Step Metadata editPositiveVerify duplicating step using Clone New Level1. Step Menu → Clone New LevelNew step added after original"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify switching between student & teacher tabs1. Click Students tab, then Teachers tab repeatedlyNo data loss when switching",
+      "expected": "Click Students tab, then Teachers tab repeatedlyNo data loss when switching",
+      "raw": "TC_28 Step Metadata editPositiveVerify switching between student & teacher tabs1. Click Students tab, then Teachers tab repeatedlyNo data loss when switching"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify saving 9,999 chars with formatting1.",
+      "expected": "SaveContent saves & formatting preserved",
+      "raw": "TC_29 Step Metadata editPositiveVerify saving 9,999 chars with formatting1. Enter long content 2. SaveContent saves & formatting preserved"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Negative",
+      "description": "Verify read-only mode restrictions1. Open activity without edit permissionsAll fields disabled",
+      "expected": "Open activity without edit permissionsAll fields disabled",
+      "raw": "TC_30 Step Metadata editNegativeVerify read-only mode restrictions1. Open activity without edit permissionsAll fields disabled"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Negative",
+      "description": "Verify save behavior when required fields are empty1. Clear Title or Instruction text",
+      "expected": "Click NextError blocking navigation",
+      "raw": "TC_31 Step Metadata editNegativeVerify save behavior when required fields are empty1. Clear Title or Instruction text 2. Click NextError blocking navigation"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify visibility of menu options1. Click Step MenuShows Clone, Edit Metadata, Delete",
+      "expected": "Click Step MenuShows Clone, Edit Metadata, Delete",
+      "raw": "TC_32 Step Metadata editPositiveVerify visibility of menu options1. Click Step MenuShows Clone, Edit Metadata, Delete"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functional",
+      "description": "Step Metadata editEdgeVerify layout responsiveness on browser resize1. Resize to tablet/mobileLayout adjusts without overlap",
+      "expected": "Resize to tablet/mobileLayout adjusts without overlap",
+      "raw": "TC_33 Step Metadata editEdgeVerify layout responsiveness on browser resize1. Resize to tablet/mobileLayout adjusts without overlap"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify undo/redo functionality in editor1. Apply formatting",
+      "expected": "Ctrl+Z / Ctrl+YActions revert/restore correctly",
+      "raw": "TC_34 Step Metadata editPositiveVerify undo/redo functionality in editor1. Apply formatting 2. Ctrl+Z / Ctrl+YActions revert/restore correctly"
+    }
+  ]
+}

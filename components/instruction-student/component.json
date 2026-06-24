@@ -1,0 +1,26 @@
+{
+  "component": "Instruction for Student",
+  "slug": "instruction-student",
+  "dataType": "instructionsstudents",
+  "verifiedPageType": "studentInstructions",
+  "tocLabel": "Instructions for Students",
+  "module": "fixed-toc-page (navigated, not dropped)",
+  "spec": "instructionsstudents-instruction-student-deep.spec.ts",
+  "qcSource": "Author Test Cases -  Instruction for Student.pdf",
+  "qcCount": 19,
+  "automated": 11,
+  "deferred": 8,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/index.html",
+    "closify/KITABOO_Authoring/editor/ngcontroller.js",
+    "closify/KITABOO_Authoring/config/config.js"
+  ],
+  "architectureNotes": [
+    "Instructions for Students is a FIXED page in the Table of Contents (grouptoc.studentInstructions), NOT a dropped component/widget. Tests reach it via cy.navigateToCanvasPage() which clicks the 'Instructions for Students' TOC entry and verifies the [new-toc] page attributes.",
+    "SOURCE AMBIGUITY: the QC catalog dataType is 'instructionsstudents', but that exact string is NOT present in config.js / index.html / ngcontroller.js. The real, source-verified identifier is the AngularJS pageType 'studentInstructions'. The catalog dataType is retained as a logical slug only; all selectors are derived from the verified 'studentInstructions' markup.",
+    "Canvas is #desktop_view (ng-drop / onDropComplete). Authored elements render as #desktop_view .sd-item. The flat-page placeholder reads 'Enter instructions for students here.' (index.html, gated on pageType==='studentInstructions').",
+    "config.studentInstructions permits ONLY element drops header, paragraph (Text), poetry, image, tablesNew (Table) — all assessment widgets/layouts are false. The deep spec adds a Text element (paragraph) to exercise the add-element / editable-content capability, then asserts the source-allowed element set (Image/Table/Header/Title family) for TC_09–TC_12.",
+    "Rich-text formatting (font, bold/italic/underline, bullets, colour) lives in the floating textEditor.html toolbar mounted on focus; the spec degrades gracefully when the overlay is not mounted in headless context. Applied-style rendering, Publish, Reader, republish, persistence-after-reload, and empty-publish validation are deferred.",
+    "Not yet live-verified against a running authoring instance; selectors are source-derived."
+  ]
+}

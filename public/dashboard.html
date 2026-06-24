@@ -1682,6 +1682,7 @@ body.run-active #globalStatus {
     <span class="nav-logo-text">Kitaboo Author<span class="nav-logo-sub">  Tests</span></span>
   </div>
   <div class="nav-spacer"></div>
+  <a href="/coverage.html" class="nav-signout" title="QC test case coverage matrix" style="text-decoration:none;display:inline-flex;align-items:center;">QC Coverage</a>
   <button type="button" class="nav-signout" id="btnSignOut" title="Sign out">Sign out</button>
   <span class="nav-badge" id="globalStatus">IDLE</span>
 </nav>
@@ -2992,7 +2993,7 @@ body.run-active #globalStatus {
       const noteEl = document.getElementById('componentPlanNote');
       if (selectedComponents.size > 1) {
         noteEl.style.display = 'block';
-        noteEl.textContent = 'Multiple components selected — runs shallow 09-component-deep for all selected.';
+        noteEl.textContent = `Multiple components selected (${selectedComponents.size}) — runs each component's deep spec from components/.`;
       } else if (plan.automationStatus !== 'deep') {
         noteEl.style.display = 'block';
         noteEl.textContent = 'Deep QC tests not automated yet — only basic drop + settings panel check will run.';
@@ -3196,9 +3197,15 @@ body.run-active #globalStatus {
         updateProgressBar(100, 'Run complete!');
         showResultPills(payload.summary);
         if (payload.files && payload.files.length) {
-          showFiles(payload.files);
-          const vid = payload.files.find(f => f.type === 'video');
-          if (vid) showPreviewVideo(vid.url);
+          if (payload.autoDownload) {
+            // Results are not kept in the project — save them to the user's
+            // machine now, then let the server clean up its copy.
+            autoDownloadArtifacts(payload.runId || currentRunId, payload.files);
+          } else {
+            showFiles(payload.files);
+            const vid = payload.files.find(f => f.type === 'video');
+            if (vid) showPreviewVideo(vid.url);
+          }
         }
         if (payload.summary) {
           showStats(payload.summary, payload.status);
@@ -3316,6 +3323,58 @@ body.run-active #globalStatus {
       <div class="pill pill-fail">✗ ${summary.failed || 0} failed</div>
     `;
     pills.style.display = 'flex';
+  }
+
+  // Save a single blob to the user's machine via a temporary <a download>.
+  function triggerBlobDownload(blob, filename) {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    // Revoke later so the browser can finish writing the file.
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    return url;
+  }
+
+  // Results are not kept in the project — fetch each artifact, save it to the
+  // user's Downloads, keep the video playable from a local blob, then tell the
+  // server it can delete its copy.
+  async function autoDownloadArtifacts(runId, files) {
+    const allowed = new Set(['pdf', 'html', 'video']);
+    const artifacts = (files || []).filter(f => allowed.has(f.type));
+    if (!artifacts.length) return;
+
+    appendLog(`Saving ${artifacts.length} result file(s) to your downloads…`, 'info');
+    let ok = 0;
+
+    for (const f of artifacts) {
+      try {
+        const res = await fetch(AtrApi.apiUrl(`${f.url}?download=1`), {
+          headers: AtrApi.getToken() ? { Authorization: `Bearer ${AtrApi.getToken()}` } : {},
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const blob = await res.blob();
+        const localUrl = triggerBlobDownload(blob, f.name);
+        if (f.type === 'video') showPreviewVideo(localUrl);
+        ok += 1;
+        appendLog(`Saved ${f.name}`, 'pass');
+      } catch (err) {
+        appendLog(`Could not save ${f.name}: ${err.message}`, 'fail');
+      }
+    }
+
+    // Show the (now local) artifacts list for reference, then confirm cleanup.
+    showFiles(artifacts);
+
+    if (ok === artifacts.length && runId) {
+      try {
+        await AtrApi.apiFetch(`/api/run/${encodeURIComponent(runId)}/downloaded`, { method: 'POST' });
+        appendLog('Results saved locally; server copy removed.', 'info');
+      } catch (_) { /* grace-period sweep will clean up */ }
+    }
   }
 
   function showFiles(files) {

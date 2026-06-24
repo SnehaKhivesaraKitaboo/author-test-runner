@@ -1,0 +1,34 @@
+{
+  "component": "Jodit Editor",
+  "slug": "jodit-editor",
+  "dataType": "platform-jodit",
+  "host": {
+    "widget": "Extended Response",
+    "dataType": "shortLongAns",
+    "directive": "shortlongans-template",
+    "module": "assessment-widget (Generic Step column)",
+    "mountCondition": "Answer Type = RTE AND Keyboard Type = Advance(JODIT), then click the component"
+  },
+  "spec": "51-jodit-editor-deep.spec.ts",
+  "qcSource": "Author Test Cases - Jodit Editor Test Cases.pdf",
+  "qcCount": 51,
+  "automated": 27,
+  "deferred": 24,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/js/jodit-init.js",
+    "closify/KITABOO_Authoring/templates/shortLongAns/shortLongAns.html",
+    "closify/KITABOO_Authoring/templates/shortLongAns/shortLongAns-settings-pannel.html",
+    "closify/KITABOO_Authoring/templates/shortLongAns/scripts/shortLongAns-directive.js",
+    "closify/KITABOO_Authoring/assets/externalModules/LiteracySEJodit050625/jodit.min.css"
+  ],
+  "architectureNotes": [
+    "The Jodit Editor is a PLATFORM rich-text editor with NO widget of its own. It is mounted by the Extended Response (shortLongAns) widget via Jodit.make(textareaId, …) in shortLongAns-directive.js, ONLY when currSettings.activeAns === 'RTE' AND currSettings.keyboardType === 'JODIT' (the 'Advance' keyboard option) and the component is clicked. The host is therefore Extended Response on a Generic Step — NOT the Text/paragraph element.",
+    "SOURCE AMBIGUITY (flagged): the task suggested the Text/paragraph element as the simplest host. Source review shows the Text element uses the LEGACY templates/textEditor.html overlay (.editing-container .editor-list — bold/italic/align/math/etc.), which is a separate editor and NOT Jodit. The only source-verified host that mounts Jodit is shortLongAns RTE+JODIT, so this suite uses Extended Response as the host.",
+    "Both the RTE answer-type radio and the Advance(JODIT) keyboard radio are gated by TOCFlag in shortLongAns-settings-pannel.html. In builds without TOCFlag the radios are absent and Jodit cannot mount — every test degrades gracefully (log + return).",
+    "Enabled toolbar buttons come from js/jodit-init.js joditToolbars.ELA: bold, italic, underline, strikethrough, eraser, ul, ol, font, fontsize, paragraph, lineHeight, spellcheck, speechRecognize, indent, outdent, align, brush, superscript, subscript, cut, copy, paste, selectall, hr, table, link, symbols, find, fullsize, preview, print, undo, redo. The directive adds removeButtons: ['file','image','video'], so no media-upload button is exposed.",
+    "Jodit build = jodit.min.js (Jodit 3/4 → standard BEM classes): container .jodit-container/.jodit, toolbar .jodit-toolbar__box, each button .jodit-toolbar-button_<name> with inner button.jodit-toolbar-button__button, editable .jodit-wysiwyg (iframe mode), fullscreen state .jodit_fullsize, dialogs .jodit-popup/.jodit-dialog.",
+    "jodit-init.js config: enter:'BR', cleanHTML (replaceNBSP/removeEmptyElements:false), showStatusbar:false, showCharsCounter:false, toolbarAdaptive:false. A processPaste/beforePasteInsert sanitizer strips Word/Google noise (meta/style/script, Mso classes, namespaced attrs). Live Word paste is deferred; sanitization is DOM-asserted for inert script/HTML (TC_20/37/44).",
+    "Automated (27): host drop + Jodit mount, Answer/Keyboard-type settings presence + mutual exclusion, toolbar button presence, formatting controls (undo/redo, align, lists, symbols, font-size/color, eraser), link/table dialog open + URL input, fullscreen toggle + content retention, toolbar responsiveness, security/sanitization. Deferred (24): runtime data integrity across editor switch, Preview/Publish, Reader/CLP/student, char-limit runtime + warning popup, keyboard shortcuts, read-only, network failure, large paste, persistence-after-reload, accessibility, math/Word-paste runtime.",
+    "NOT YET LIVE-VERIFIED against a running authoring instance — selectors are source-derived. Jodit toolbar button modifier classes (.jodit-toolbar-button_<name>) follow this Jodit build's BEM convention and the ELA button-name list; a single live run will confirm exact button DOM."
+  ]
+}

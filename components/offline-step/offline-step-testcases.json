@@ -1,0 +1,356 @@
+{
+  "component": "Offline Step",
+  "slug": "offline-step",
+  "dataType": "offline-step",
+  "source": "Author Test Cases - Offline step.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Offline step.pdf",
+  "pages": 1,
+  "extractedCount": 43,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Offline StepsUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Offline Steps FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03Offline Steps FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add offline step",
+      "expected": "Add Offline step User Should able add offline step",
+      "raw": "TC_04Offline Steps FunctionalityVerify if user is able to add offline step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step User Should able add offline step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05Offline Steps FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in offline step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Offline Steps Functionality Verify that the cancel button is clickable in offline step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in offline step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Offline Steps Functionality Verify that the change step button is clickable in offline step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Offline Steps Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Offline Steps Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify Offline Step page loads with all enabled Elements and Widgets visibleNavigate to Offline Step in Table of Contents All enabled Elements (Header, Title, Text, Image, Audio, Video, HTML Interactivity, Table, Callout",
+      "expected": "",
+      "raw": "TC_10Offline StepsPositive Verify Offline Step page loads with all enabled Elements and Widgets visibleNavigate to Offline Step in Table of Contents All enabled Elements (Header, Title, Text, Image, Audio, Video, HTML Interactivity, Table, Callout Box, Situation Header) and Widgets (CLIC, Carousel, Sidebar) are displayed in right panel"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Verify dragging and dropping each Element individuallyDrag each element from right panel to canvasElement appears on canvas in the dropped position",
+      "expected": "",
+      "raw": "TC_11Offline StepsPositive Verify dragging and dropping each Element individuallyDrag each element from right panel to canvasElement appears on canvas in the dropped position"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify dragging and dropping each Widget individuallyDrag each widget from right panel to canvasWidget appears on canvas and loads its configuration UI",
+      "expected": "",
+      "raw": "TC_12Offline StepsPositive Verify dragging and dropping each Widget individuallyDrag each widget from right panel to canvasWidget appears on canvas and loads its configuration UI"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify adding same Element multiple times Drag same element (e.g., Title) multiple times to canvas Each instance appears independently without overwriting previous",
+      "expected": "",
+      "raw": "TC_13Offline StepsPositiveVerify adding same Element multiple times Drag same element (e.g., Title) multiple times to canvas Each instance appears independently without overwriting previous"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify adding same Widget multiple timesDrag same widget (e.g., CLIC) multiple timesEach widget works independently with separate configs",
+      "expected": "",
+      "raw": "TC_14Offline StepsPositiveVerify adding same Widget multiple timesDrag same widget (e.g., CLIC) multiple timesEach widget works independently with separate configs"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Negative",
+      "description": "Verify dragging element to invalid area does not add itDrag element outside canvas area No element added; error/feedback message shown if applicable",
+      "expected": "",
+      "raw": "TC_15Offline StepsNegativeVerify dragging element to invalid area does not add itDrag element outside canvas area No element added; error/feedback message shown if applicable"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify Header element supports text entry & formatting Drop Header →",
+      "expected": "",
+      "raw": "TC_16Offline StepsPositive Verify Header element supports text entry & formatting Drop Header → Enter text → Apply bold, italic, underlineFormatting applies correctly"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify Title element supports text entry & large fontDrop Title →",
+      "expected": "",
+      "raw": "TC_17Offline StepsPositiveVerify Title element supports text entry & large fontDrop Title → Enter textTitle displayed in default large font"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify Text element supports bullets, numbering, line breaks Drop Text →",
+      "expected": "",
+      "raw": "TC_18Offline StepsPositive Verify Text element supports bullets, numbering, line breaks Drop Text → Enter multi-line text with bullets and numberingText is displayed as formatted"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify image upload and displayDrop Image → Upload valid image fileImage is displayed on canvas",
+      "expected": "",
+      "raw": "TC_19Offline StepsPositiveVerify image upload and displayDrop Image → Upload valid image fileImage is displayed on canvas"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Positive",
+      "description": "Verify audio file upload and playbackDrop Audio → Upload valid audio fileAudio plays in preview",
+      "expected": "",
+      "raw": "TC_20Offline StepsPositiveVerify audio file upload and playbackDrop Audio → Upload valid audio fileAudio plays in preview"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify video file upload and playbackDrop Video → Upload valid video fileVideo plays in preview",
+      "expected": "",
+      "raw": "TC_21Offline StepsPositiveVerify video file upload and playbackDrop Video → Upload valid video fileVideo plays in preview"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify HTML content embeddingDrop HTML Interactivity → Insert valid HTMLEmbedded content renders in preview",
+      "expected": "",
+      "raw": "TC_22Offline StepsPositiveVerify HTML content embeddingDrop HTML Interactivity → Insert valid HTMLEmbedded content renders in preview"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify table creation and formattingDrop Table → Add rows/columns → Format textTable appears with applied formatting",
+      "expected": "",
+      "raw": "TC_23Offline StepsPositiveVerify table creation and formattingDrop Table → Add rows/columns → Format textTable appears with applied formatting"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Positive",
+      "description": "Verify adding callout text and styling Drop Callout →",
+      "expected": "",
+      "raw": "TC_24Offline StepsPositiveVerify adding callout text and styling Drop Callout → Enter text → Change background colorStyled callout is displayed"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify situation header supports title & subtitleDrop Situation Header →",
+      "expected": "",
+      "raw": "TC_25Offline StepsPositiveVerify situation header supports title & subtitleDrop Situation Header → Enter both fieldsDisplays correctly in layout"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Positive",
+      "description": "Verify CLIC widget functionalityDrop CLIC → Configure → SaveCLIC activity works in Preview",
+      "expected": "",
+      "raw": "TC_26Offline StepsPositiveVerify CLIC widget functionalityDrop CLIC → Configure → SaveCLIC activity works in Preview"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Positive",
+      "description": "Verify carousel image navigationDrop Carousel → Add images → Navigate slidesCarousel displays and navigates",
+      "expected": "",
+      "raw": "TC_27Offline StepsPositiveVerify carousel image navigationDrop Carousel → Add images → Navigate slidesCarousel displays and navigates"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Positive",
+      "description": "Verify sidebar expands and collapsesDrop Sidebar → Add content → ToggleSidebar behaves as expected",
+      "expected": "",
+      "raw": "TC_28Offline StepsPositiveVerify sidebar expands and collapsesDrop Sidebar → Add content → ToggleSidebar behaves as expected"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify applying bold, italic, underline, font size",
+      "expected": "",
+      "raw": "TC_29Offline StepsPositiveVerify applying bold, italic, underline, font sizeSelect text → Apply formattingFormatting changes are visible"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Positive",
+      "description": "Verify bullet and numbering list creationApply bullets/numbering to textCorrect list style applied",
+      "expected": "",
+      "raw": "TC_30Offline StepsPositiveVerify bullet and numbering list creationApply bullets/numbering to textCorrect list style applied"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Positive",
+      "description": "Verify pressing",
+      "expected": "",
+      "raw": "TC_31Offline StepsPositiveVerify pressing Enter inserts a line breakEnter key in text elementLine break appears correctly"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify activity saves successfullyClick SaveSuccess confirmation displayed",
+      "expected": "",
+      "raw": "TC_32Offline StepsPositiveVerify activity saves successfullyClick SaveSuccess confirmation displayed"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functional",
+      "description": "Offline StepsEdgeVerify Save button when no changes madeOpen activity → Click Save without changesEither no action or confirmation shown",
+      "expected": "",
+      "raw": "TC_33Offline StepsEdgeVerify Save button when no changes madeOpen activity → Click Save without changesEither no action or confirmation shown"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Positive",
+      "description": "Verify activity opens correctly in preview modeClick PreviewActivity is displayed as learner would see",
+      "expected": "",
+      "raw": "TC_34Offline StepsPositiveVerify activity opens correctly in preview modeClick PreviewActivity is displayed as learner would see"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify publishing an activityClick Publish → ConfirmActivity is marked as published",
+      "expected": "",
+      "raw": "TC_35Offline StepsPositiveVerify publishing an activityClick Publish → ConfirmActivity is marked as published"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functional",
+      "description": "Offline StepsEdgeVerify publishing without changes after editPublish without editingStill publishes with same content",
+      "expected": "",
+      "raw": "TC_36Offline StepsEdgeVerify publishing without changes after editPublish without editingStill publishes with same content"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Positive",
+      "description": "Verify published activity launches in ReaderLaunch in ReaderActivity loads and displays correctly",
+      "expected": "",
+      "raw": "TC_37Offline StepsPositiveVerify published activity launches in ReaderLaunch in ReaderActivity loads and displays correctly"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Positive",
+      "description": "Verify editing published activity and republishingEdit → Save → Publish againUpdated content visible in Reader",
+      "expected": "",
+      "raw": "TC_38Offline StepsPositiveVerify editing published activity and republishingEdit → Save → Publish againUpdated content visible in Reader"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functional",
+      "description": "Offline StepsEdgeVerify performance with large text/imagesAdd large amount of contentEditor remains responsive",
+      "expected": "",
+      "raw": "TC_39Offline StepsEdgeVerify performance with large text/imagesAdd large amount of contentEditor remains responsive"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Negative",
+      "description": "Verify rejection of unsupported file formatsUpload .exe to Image elementUpload fails with error message",
+      "expected": "",
+      "raw": "TC_40Offline StepsNegativeVerify rejection of unsupported file formatsUpload .exe to Image elementUpload fails with error message"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Positive",
+      "description": "Verify duplicate elements/widgets behave independently Add multiple identical widgets → Configure differentlyEach retains its own configuration",
+      "expected": "",
+      "raw": "TC_41Offline StepsPositive Verify duplicate elements/widgets behave independently Add multiple identical widgets → Configure differentlyEach retains its own configuration"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "Positive",
+      "description": "Verify deleting an element from canvasAdd element → Delete itElement is removed from canvas",
+      "expected": "",
+      "raw": "TC_42Offline StepsPositiveVerify deleting an element from canvasAdd element → Delete itElement is removed from canvas"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Positive",
+      "description": "Verify undo/redo actionsPerform edit → Undo → RedoChanges revert and reapply correctly",
+      "expected": "",
+      "raw": "TC_43Offline StepsPositiveVerify undo/redo actionsPerform edit → Undo → RedoChanges revert and reapply correctly"
+    }
+  ]
+}

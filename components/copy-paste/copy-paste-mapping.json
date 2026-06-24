@@ -1,0 +1,31 @@
+{
+  "component": "Copy and Paste",
+  "slug": "copy-paste",
+  "spec": "45-copy-paste-deep.spec.ts",
+  "qcSource": "Author Test Cases - Copy and Paste.pdf",
+  "legend": {
+    "automated": "Verified in the authoring DOM by an it() block.",
+    "deferred": "Documented as it.skip() — requires Save/Publish, Reader (CLP), cross-program runs, undo, persistence, OS clipboard, or a11y flows outside the authoring DOM."
+  },
+  "mappings": [
+    { "qc": "TC_01", "status": "automated", "it": "TC_01/TC_02/TC_03 — Authoring canvas is launched and ready to copy/paste", "selectors": ["#desktop_view"] },
+    { "qc": "TC_02", "status": "automated", "it": "TC_01/TC_02/TC_03 — Authoring canvas is launched and ready to copy/paste" },
+    { "qc": "TC_03", "status": "automated", "it": "TC_01/TC_02/TC_03 — Authoring canvas is launched and ready to copy/paste", "note": "activity-creation bootstrap handled by openAuthoringTool + createTestStep" },
+    { "qc": "TC_04", "status": "automated", "it": "TC_04a / TC_04b/TC_10 / TC_04c / TC_04d / TC_04e/TC_07/TC_09 — copy + duplicate + paste round trip", "selectors": [".copy-widget-icon.icon-Copy-Icon", ".duplicate-widget-icon.icon-Page-duplication-01", ".generic-step-empty-droppable-text"] },
+    { "qc": "TC_05", "status": "automated", "it": "TC_05/TC_06 — Empty Generic Step slot exposes a \"Paste Here\" affordance on hover", "selectors": [".empty-droppable-border-paste.icon-Paste-Icon"], "note": "in-DOM paste-target presence; cross-layout move best confirmed in runtime" },
+    { "qc": "TC_06", "status": "automated", "it": "TC_05/TC_06 — Empty Generic Step slot exposes a \"Paste Here\" affordance on hover" },
+    { "qc": "TC_07", "status": "automated", "it": "TC_04e/TC_07/TC_09 — Copy then paste into an empty slot renders a pasted instance" },
+    { "qc": "TC_09", "status": "automated", "it": "TC_04e/TC_07/TC_09 — Copy then paste into an empty slot renders a pasted instance" },
+    { "qc": "TC_10", "status": "automated", "it": "TC_04b/TC_10 — Copying writes the component payload to the localStorage clipboard", "selectors": ["localStorage:copiedComponent", "localStorage:targetDataType"] },
+    { "qc": "TC_16", "status": "automated", "it": "TC_16 — Invalid zones (TOC / plain canvas) expose no paste handler", "selectors": ["[ng-click*=\"pastecomp\"]"] },
+    { "qc": "TC_18", "status": "automated", "it": "TC_18 — Repeated duplicate/copy actions all succeed without error" },
+
+    { "qc": "TC_08", "status": "deferred", "reason": "Copy complex/nested components (Thumbs Card / Worked Example) — requires those widgets provisioned; nested integrity best verified in Preview/Reader" },
+    { "qc": "TC_11", "status": "deferred", "reason": "Save reused components — Save flow + server round trip outside the authoring DOM" },
+    { "qc": "TC_12", "status": "deferred", "reason": "Publish reused content — Publish flow outside the authoring DOM" },
+    { "qc": "TC_13", "status": "deferred", "reason": "Launch activity in CLP and verify reused content — Reader flow" },
+    { "qc": "TC_14", "status": "deferred", "reason": "Edit reused content and republish — Publish/Reader flow" },
+    { "qc": "TC_15", "status": "deferred", "reason": "Copy-paste parity across ELA / WL / MATH programs — multi-program runs" },
+    { "qc": "TC_17", "status": "deferred", "reason": "Undo after pasting — undo affordance not exposed in the authoring DOM here (runtime)" }
+  ]
+}

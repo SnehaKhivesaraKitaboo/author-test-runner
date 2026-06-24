@@ -1,0 +1,892 @@
+{
+  "component": "Callout",
+  "slug": "callout",
+  "dataType": "sidebarComponent",
+  "source": "Author Test Cases - Callout.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Callout.pdf",
+  "pages": 2,
+  "extractedCount": 110,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01CalloutUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Callout Functionality Verify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New authoring page",
+      "raw": "TC_03Callout FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New authoring page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if the direction line style is displayed in the Callout Box styles panelOpen Callout Box settings → Go to “Styles” panel A new tile for “Direction Line” style should be visible",
+      "expected": "",
+      "raw": "TC_04Callout Functionality Verify if the direction line style is displayed in the Callout Box styles panelOpen Callout Box settings → Go to “Styles” panel A new tile for “Direction Line” style should be visible"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Apply direction line style and check UI display",
+      "expected": "",
+      "raw": "TC_05Callout Functionality Apply direction line style and check UI displaySelect the direction line tile → Add callout text Direction line style should be applied as per design (stroke, color, arrow icon)"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Check default scroll behaviorAdd long text in direction line callout Callout box height should increase, no scroll should appear",
+      "expected": "",
+      "raw": "TC_06Callout Functionality Check default scroll behaviorAdd long text in direction line callout Callout box height should increase, no scroll should appear"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify arrow (stroke) icon alignmentAdd direction line callout with contentArrow icon should always remain top-left aligned",
+      "expected": "",
+      "raw": "TC_07Callout Functionality Verify arrow (stroke) icon alignmentAdd direction line callout with contentArrow icon should always remain top-left aligned"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Validate RTE formatting (Bold, Italic, Underline, List) supportAdd RTE formatted content in direction line callout Formatting should be rendered correctly inside callout",
+      "expected": "",
+      "raw": "TC_08Callout Functionality Validate RTE formatting (Bold, Italic, Underline, List) supportAdd RTE formatted content in direction line callout Formatting should be rendered correctly inside callout"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Validate Math equation supportAdd math equation using equation editor in callout Math content should render correctly inside the callout box",
+      "expected": "",
+      "raw": "TC_09Callout Functionality Validate Math equation supportAdd math equation using equation editor in callout Math content should render correctly inside the callout box"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Functionality",
+      "description": "Test Alt Text textbox visibility in settings panelOpen settings panel of direction line calloutAlt Text textbox should be available",
+      "expected": "",
+      "raw": "TC_10Callout Functionality Test Alt Text textbox visibility in settings panelOpen settings panel of direction line calloutAlt Text textbox should be available"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functionality",
+      "description": "Check if Alt Text is saved and editable",
+      "expected": "",
+      "raw": "TC_11Callout Functionality Check if Alt Text is saved and editableEnter Alt Text → Save → Reopen settingsAlt text should persist and be editable"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Functionality",
+      "description": "Check background color checkbox default stateOpen direction line style settings Background color checkbox should be unchecked by default",
+      "expected": "",
+      "raw": "TC_12Callout Functionality Check background color checkbox default stateOpen direction line style settings Background color checkbox should be unchecked by default"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functionality",
+      "description": "Validate placement in all layout types Add direction line callout inside different layouts (Flexi, Center, Left, Right) Callout should render correctly inside all layout sections",
+      "expected": "",
+      "raw": "TC_13Callout Functionality Validate placement in all layout types Add direction line callout inside different layouts (Flexi, Center, Left, Right) Callout should render correctly inside all layout sections"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functionality",
+      "description": "Validate top text alignmentAdd multiline text to callout box Text should always be top-aligned with the arrow icon",
+      "expected": "",
+      "raw": "TC_14Callout Functionality Validate top text alignmentAdd multiline text to callout box Text should always be top-aligned with the arrow icon"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Functionality",
+      "description": "Save content after using direction line calloutAdd direction line callout → SaveSave should complete successfully without error",
+      "expected": "",
+      "raw": "TC_15Callout Functionality Save content after using direction line calloutAdd direction line callout → SaveSave should complete successfully without error"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Functionality",
+      "description": "Publish activity containing direction line calloutAdd content → Save → Publish activityActivity should publish successfully",
+      "expected": "",
+      "raw": "TC_16Callout Functionality Publish activity containing direction line calloutAdd content → Save → Publish activityActivity should publish successfully"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Functionality",
+      "description": "Launch CLP activity and verify direction line calloutLaunch published activity on CLP Callout should display with correct styles and content",
+      "expected": "",
+      "raw": "TC_17Callout Functionality Launch CLP activity and verify direction line calloutLaunch published activity on CLP Callout should display with correct styles and content"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Functionality",
+      "description": "Edit content in direction line callout and republishModify content → Save → Republish Updated content should be reflected post- republish",
+      "expected": "",
+      "raw": "TC_18Callout Functionality Edit content in direction line callout and republishModify content → Save → Republish Updated content should be reflected post- republish"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Functionality",
+      "description": "Verify data loss does not occur Add direction line callout → Save → Refresh → ReopenContent should persist without loss",
+      "expected": "",
+      "raw": "TC_19Callout Functionality Verify data loss does not occur Add direction line callout → Save → Refresh → ReopenContent should persist without loss"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Functionality",
+      "description": "Try adding direction line callout outside a layoutAttempt to drag callout outside layout sections Should not allow dropping outside valid layout areas",
+      "expected": "",
+      "raw": "TC_20Callout Functionality Try adding direction line callout outside a layoutAttempt to drag callout outside layout sections Should not allow dropping outside valid layout areas"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functionality",
+      "description": "Enter extremely long textPaste very long paragraph in callout Box should resize and content should remain readable",
+      "expected": "",
+      "raw": "TC_21Callout Functionality Enter extremely long textPaste very long paragraph in callout Box should resize and content should remain readable"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Functionality",
+      "description": "Attempt to apply scroll manually via code or CSSInject scroll behavior (Dev Tools or stylesheet)UI should restrict scroll behavior",
+      "expected": "",
+      "raw": "TC_22Callout Functionality Attempt to apply scroll manually via code or CSSInject scroll behavior (Dev Tools or stylesheet)UI should restrict scroll behavior"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Functionality",
+      "description": "Preview on different screen resolutionsPreview callout in responsive viewsUI should be consistent and responsive",
+      "expected": "",
+      "raw": "TC_23Callout Functionality Preview on different screen resolutionsPreview callout in responsive viewsUI should be consistent and responsive"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI",
+      "description": "Verify presence of Callout Box componentGo to right-side panel → Components → Settings tab Callout Box should be visible under component settings",
+      "expected": "",
+      "raw": "TC_24Callout UI Verify presence of Callout Box componentGo to right-side panel → Components → Settings tab Callout Box should be visible under component settings"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI",
+      "description": "Verify all available Callout Box stylesOpen Style section under Callout Box settings All four styles including Direction Line should be visible",
+      "expected": "",
+      "raw": "TC_25Callout UIVerify all available Callout Box stylesOpen Style section under Callout Box settings All four styles including Direction Line should be visible"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Functional",
+      "description": "Apply Direction Line style to callout box",
+      "expected": "",
+      "raw": "TC_26Callout FunctionalApply Direction Line style to callout boxSelect the last tile (bottom-right) under “Style” Direction Line style (with arrow icon and blue background) is applied"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI",
+      "description": "Validate Image settings under Callout BoxScroll to “Image” section Default icons such as “Take Note”, “Remember” etc., should be available",
+      "expected": "",
+      "raw": "TC_27Callout UI Validate Image settings under Callout BoxScroll to “Image” section Default icons such as “Take Note”, “Remember” etc., should be available"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Functional",
+      "description": "Select an image for the Callout boxChoose “Take Note...” iconSelected icon is displayed on callout",
+      "expected": "",
+      "raw": "TC_28Callout FunctionalSelect an image for the Callout boxChoose “Take Note...” iconSelected icon is displayed on callout"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI",
+      "description": "Verify text placeholder inside Callout boxInspect default text shownPlaceholder text is visible and editable",
+      "expected": "",
+      "raw": "TC_29Callout UI Verify text placeholder inside Callout boxInspect default text shownPlaceholder text is visible and editable"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Functional",
+      "description": "Edit text in callout boxClick inside callout →",
+      "expected": "",
+      "raw": "TC_30Callout FunctionalEdit text in callout boxClick inside callout → Enter custom textText should be editable and saved"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Functional",
+      "description": "Apply rich text formatting",
+      "expected": "",
+      "raw": "TC_31Callout FunctionalApply rich text formattingSelect text → Apply bold, italic, underline, list etc.Formatting should reflect inside callout"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Functional",
+      "description": "Enter math content in callout boxUse Math text button from RTE Math content should display properly inside callout",
+      "expected": "",
+      "raw": "TC_32Callout FunctionalEnter math content in callout boxUse Math text button from RTE Math content should display properly inside callout"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "UI",
+      "description": "Verify top-left alignment of iconAdd multiline text in Direction Line styleArrow/icon should remain fixed at top-left",
+      "expected": "",
+      "raw": "TC_33Callout UIVerify top-left alignment of iconAdd multiline text in Direction Line styleArrow/icon should remain fixed at top-left"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functional",
+      "description": "Validate size expansion with long textAdd a large paragraph inside callout boxCallout should auto-expand vertically, no scroll",
+      "expected": "",
+      "raw": "TC_34Callout FunctionalValidate size expansion with long textAdd a large paragraph inside callout boxCallout should auto-expand vertically, no scroll"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functional",
+      "description": "Save the page after editing callout",
+      "expected": "",
+      "raw": "TC_35Callout FunctionalSave the page after editing calloutClick on “Save” button Content should save successfully without data loss"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functional",
+      "description": "Preview the page",
+      "expected": "",
+      "raw": "TC_36Callout FunctionalPreview the pageClick on “Preview” Preview should display the callout content and style as authored"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "UI",
+      "description": "Verify only one “Drag Assessment widget...” message is visibleRemove all widgets from step Only one such message should appear (not repeated)",
+      "expected": "",
+      "raw": "TC_37Callout UI Verify only one “Drag Assessment widget...” message is visibleRemove all widgets from step Only one such message should appear (not repeated)"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Negative",
+      "description": "Attempt to drag component outside Generic Step Try dragging the callout box or widget outside the boundariesShould not allow component to go outside step",
+      "expected": "",
+      "raw": "TC_38Callout Negative Attempt to drag component outside Generic Step Try dragging the callout box or widget outside the boundariesShould not allow component to go outside step"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Functional",
+      "description": "Publish the activityClick “Save” → “Publish”Activity should be published successfully",
+      "expected": "",
+      "raw": "TC_39Callout FunctionalPublish the activityClick “Save” → “Publish”Activity should be published successfully"
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Functional",
+      "description": "Reopen and verify saved contentReload activityCallout box content and style should persist",
+      "expected": "",
+      "raw": "TC_40Callout FunctionalReopen and verify saved contentReload activityCallout box content and style should persist"
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "Functional",
+      "description": "Add callout box in another step and verify consistencyCopy → Paste in Step 2 → Save Direction Line style, icon, and text should remain intact",
+      "expected": "",
+      "raw": "TC_41Callout Functional Add callout box in another step and verify consistencyCopy → Paste in Step 2 → Save Direction Line style, icon, and text should remain intact"
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI",
+      "description": "Verify default image is \"Take Note\"Open Callout Box → Check selected image\"Take Note\" icon is selected by default",
+      "expected": "",
+      "raw": "TC_42Callout UIVerify default image is \"Take Note\"Open Callout Box → Check selected image\"Take Note\" icon is selected by default"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "Functional",
+      "description": "Switch to “Remember” image",
+      "expected": "",
+      "raw": "TC_43Callout FunctionalSwitch to “Remember” imageClick on “Remember...” option under Image Callout icon should update to \"Remember\" image (green bulb)"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "Functional",
+      "description": "Switch to “Think About” image",
+      "expected": "",
+      "raw": "TC_44Callout FunctionalSwitch to “Think About” imageClick on “Think About...”Callout icon should update to blue puzzle icon"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "Functional",
+      "description": "Switch to “Ask Yourself” image",
+      "expected": "",
+      "raw": "TC_45Callout FunctionalSwitch to “Ask Yourself” imageClick on “Ask Yourself...”Callout icon should update to question mark icon"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "Functional",
+      "description": "Switch to “Did You Know?” image",
+      "expected": "",
+      "raw": "TC_46Callout FunctionalSwitch to “Did You Know?” imageClick on “Did You Know?”Callout icon should update to lightbulb face icon"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "Functional",
+      "description": "Rapidly switch between all icon types",
+      "expected": "",
+      "raw": "TC_47Callout FunctionalRapidly switch between all icon typesClick on each icon in sequence quickly Component should update the image instantly without lag or delay"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "Functional",
+      "description": "Save after changing image type",
+      "expected": "",
+      "raw": "TC_48Callout FunctionalSave after changing image typeSelect “Think About...” → Click Save New image should persist after saving and reopening"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "Functional",
+      "description": "Preview after changing image",
+      "expected": "",
+      "raw": "TC_49Callout FunctionalPreview after changing imageSelect any icon → Click PreviewPreview should show updated icon correctly"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "Functional",
+      "description": "Publish with different icons",
+      "expected": "",
+      "raw": "TC_50Callout FunctionalPublish with different iconsSelect different icons in different steps → Publish Published activity should retain and display correct icons per step"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "Functional",
+      "description": "Verify that the Callout Box component can be added to the page",
+      "expected": "",
+      "raw": "TC_51Callout Functional Verify that the Callout Box component can be added to the pageDrag and drop the Callout Box from the right panel Callout Box should be added successfully to the page"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "Functional",
+      "description": "Verify different Callout Box styles are available",
+      "expected": "",
+      "raw": "TC_52Callout Functional Verify different Callout Box styles are availableClick on each style tile Corresponding preview of the style should be reflected in the authoring area"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "Functional",
+      "description": "Verify style selection changes the appearance of the Callout Box",
+      "expected": "",
+      "raw": "TC_53Callout Functional Verify style selection changes the appearance of the Callout BoxSelect any other styleThe layout should change per the selected style"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "Functional",
+      "description": "Verify Header color customization Change the Header color using color picker or hex code The header background color should update accordingly",
+      "expected": "",
+      "raw": "TC_54Callout FunctionalVerify Header color customization Change the Header color using color picker or hex code The header background color should update accordingly"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "Functional",
+      "description": "Verify Background color customization Change the background color using color picker or hexBackground color should reflect in real-time",
+      "expected": "",
+      "raw": "TC_55Callout FunctionalVerify Background color customization Change the background color using color picker or hexBackground color should reflect in real-time"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "Functional",
+      "description": "Verify Show Header toggle functionalityUncheck and recheck the “Show Header” checkboxHeader should hide/show based on selection",
+      "expected": "",
+      "raw": "TC_56Callout FunctionalVerify Show Header toggle functionalityUncheck and recheck the “Show Header” checkboxHeader should hide/show based on selection"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "Functional",
+      "description": "Verify Show Image toggleUncheck and recheck the “Show Image” checkboxImage container should hide/show accordingly",
+      "expected": "",
+      "raw": "TC_57Callout FunctionalVerify Show Image toggleUncheck and recheck the “Show Image” checkboxImage container should hide/show accordingly"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "Functional",
+      "description": "Verify Auto Colour functionality (if applicable)",
+      "expected": "",
+      "raw": "TC_58Callout Functional Verify Auto Colour functionality (if applicable)Enable Auto Colour Header and Background colors should update automatically based on predefined logic"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "Functional",
+      "description": "Verify Image Upload",
+      "expected": "",
+      "raw": "TC_59Callout FunctionalVerify Image UploadClick on \"Upload\" button and add an imageImage should display in the image placeholder"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functional",
+      "description": "Verify Image caption field behavior",
+      "expected": "",
+      "raw": "TC_60Callout FunctionalVerify Image caption field behaviorEnter text in “Enter caption text here” Text should be saved and visible properly below the image"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functional",
+      "description": "Verify RTE (Rich Text Editor) functionalities inside Callout Box Add formatted text (Bold, Italics, Underline, Bullet points, etc.) All formatting options should apply correctly in the Callout Box",
+      "expected": "",
+      "raw": "TC_61Callout Functional Verify RTE (Rich Text Editor) functionalities inside Callout Box Add formatted text (Bold, Italics, Underline, Bullet points, etc.) All formatting options should apply correctly in the Callout Box"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functional",
+      "description": "Verify Math Equation SupportAdd a Math Equation via the RTE Math equation should render correctly in the authoring area",
+      "expected": "",
+      "raw": "TC_62Callout FunctionalVerify Math Equation SupportAdd a Math Equation via the RTE Math equation should render correctly in the authoring area"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functional",
+      "description": "Verify Drag Assessment widget message at bottom Check visibility of “Drag Assessment widget from right panel” text Message should be displayed only once, not repeated",
+      "expected": "",
+      "raw": "TC_63Callout Functional Verify Drag Assessment widget message at bottom Check visibility of “Drag Assessment widget from right panel” text Message should be displayed only once, not repeated"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functional",
+      "description": "Verify Save button functionality",
+      "expected": "",
+      "raw": "TC_64Callout FunctionalVerify Save button functionalityClick on \"Save\" after making changesAll changes should be saved successfully"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functional",
+      "description": "Verify Preview functionality",
+      "expected": "",
+      "raw": "TC_65Callout FunctionalVerify Preview functionalityClick on \"Preview\" Preview mode should reflect exact authored Callout Box content"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Functional",
+      "description": "Verify Responsiveness of Callout BoxResize the window / try in different devices The layout should adapt to screen size without breaking",
+      "expected": "",
+      "raw": "TC_66Callout FunctionalVerify Responsiveness of Callout BoxResize the window / try in different devices The layout should adapt to screen size without breaking"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Functional",
+      "description": "Verify placeholder text is editableClick inside paragraph area and enter new content Default placeholder text should be replaced with user input",
+      "expected": "",
+      "raw": "TC_67Callout FunctionalVerify placeholder text is editableClick inside paragraph area and enter new content Default placeholder text should be replaced with user input"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Functional",
+      "description": "Verify Component Settings persist on save/refreshChange settings, save, and refresh the pageCallout Box should retain the applied settings",
+      "expected": "",
+      "raw": "TC_68Callout Functional Verify Component Settings persist on save/refreshChange settings, save, and refresh the pageCallout Box should retain the applied settings"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Functional",
+      "description": "Verify behavior on removing uploaded imageUpload an image, then remove itImage placeholder should return to default state",
+      "expected": "",
+      "raw": "TC_69Callout Functional Verify behavior on removing uploaded imageUpload an image, then remove itImage placeholder should return to default state"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Functional",
+      "description": "Verify default settings on adding new Callout Box",
+      "expected": "",
+      "raw": "TC_70Callout Functional Verify default settings on adding new Callout BoxDrag and drop a new Callout Box Default header and background colors, styles, and toggles should be pre-selected correctly"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "UI",
+      "description": "Verify default style is selectedLoad Callout Box componentDefault layout style should be selected",
+      "expected": "",
+      "raw": "TC_71Callout UIVerify default style is selectedLoad Callout Box componentDefault layout style should be selected"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functional",
+      "description": "Verify style selection updates layoutChange between different layout stylesLayout updates based on selected style",
+      "expected": "",
+      "raw": "TC_72Callout FunctionalVerify style selection updates layoutChange between different layout stylesLayout updates based on selected style"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functional",
+      "description": "Verify “Show Header” checkbox toggleEnable/disable headerHeader area should appear/disappear",
+      "expected": "",
+      "raw": "TC_73Callout FunctionalVerify “Show Header” checkbox toggleEnable/disable headerHeader area should appear/disappear"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functional",
+      "description": "Verify header color can be customizedClick color input and select new colorHeader background updates to new color",
+      "expected": "",
+      "raw": "TC_74Callout FunctionalVerify header color can be customizedClick color input and select new colorHeader background updates to new color"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functional",
+      "description": "Verify background color changeChange background color using color inputBackground should reflect selected color",
+      "expected": "",
+      "raw": "TC_75Callout FunctionalVerify background color changeChange background color using color inputBackground should reflect selected color"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Functional",
+      "description": "Verify “Show Image” checkbox toggleUncheck “Show Image”Image and caption areas should hide",
+      "expected": "",
+      "raw": "TC_76Callout FunctionalVerify “Show Image” checkbox toggleUncheck “Show Image”Image and caption areas should hide"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Functional",
+      "description": "Verify image upload functionalityUpload a valid image (JPG/PNG/SVG)Image preview should render correctly",
+      "expected": "",
+      "raw": "TC_77Callout FunctionalVerify image upload functionalityUpload a valid image (JPG/PNG/SVG)Image preview should render correctly"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Functional",
+      "description": "Verify image replacementUpload image A → upload image BImage B should replace image A",
+      "expected": "",
+      "raw": "TC_78Callout FunctionalVerify image replacementUpload image A → upload image BImage B should replace image A"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Negative",
+      "description": "Verify unsupported image uploadUpload invalid file (PDF/DOC)Show error message",
+      "expected": "",
+      "raw": "TC_79Callout NegativeVerify unsupported image uploadUpload invalid file (PDF/DOC)Show error message"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Functional",
+      "description": "Callout EdgeVerify uploading large image fileUpload >5MB imageShould resize or reject based on platform limits",
+      "expected": "",
+      "raw": "TC_80Callout EdgeVerify uploading large image fileUpload >5MB imageShould resize or reject based on platform limits"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Functional",
+      "description": "Verify “Image Placement – Below Text”",
+      "expected": "",
+      "raw": "TC_81Callout FunctionalVerify “Image Placement – Below Text”Select “Below Text”Image appears under text"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Functional",
+      "description": "Verify “Image Placement – Above Text”",
+      "expected": "",
+      "raw": "TC_82Callout FunctionalVerify “Image Placement – Above Text”Select “Above Text”Image appears above text"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Functional",
+      "description": "Verify “Image Placement – Left Side”",
+      "expected": "",
+      "raw": "TC_83Callout FunctionalVerify “Image Placement – Left Side”Select “Left Side”Image aligns left with text wrapping right"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Functional",
+      "description": "Verify “Image Placement – Right Side”",
+      "expected": "",
+      "raw": "TC_84Callout FunctionalVerify “Image Placement – Right Side”Select “Right Side”Image aligns right with text wrapping left"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functional",
+      "description": "Verify caption appears when enabledCheck “Show Caption”Caption text field becomes editable",
+      "expected": "",
+      "raw": "TC_85Callout FunctionalVerify caption appears when enabledCheck “Show Caption”Caption text field becomes editable"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Functional",
+      "description": "Verify caption hides when disabledUncheck “Show Caption”Caption input disappears",
+      "expected": "",
+      "raw": "TC_86Callout FunctionalVerify caption hides when disabledUncheck “Show Caption”Caption input disappears"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Functional",
+      "description": "Verify caption field accepts text",
+      "expected": "",
+      "raw": "TC_87Callout FunctionalVerify caption field accepts textEnter caption textText is retained and rendered"
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "UI",
+      "description": "Verify “No Outline” default selectionLoad component“No Outline” should be checked by default",
+      "expected": "",
+      "raw": "TC_88Callout UIVerify “No Outline” default selectionLoad component“No Outline” should be checked by default"
+    },
+    {
+      "id": "TC_89",
+      "num": 89,
+      "type": "Functional",
+      "description": "Verify “Outline & Fill Background” effect",
+      "expected": "",
+      "raw": "TC_89Callout FunctionalVerify “Outline & Fill Background” effectSelect option and colorBorder and background apply correctly"
+    },
+    {
+      "id": "TC_90",
+      "num": 90,
+      "type": "Functional",
+      "description": "Verify custom border color input",
+      "expected": "",
+      "raw": "TC_90Callout FunctionalVerify custom border color inputEnter valid hex code (e.g., #FF5733)Border color updates"
+    },
+    {
+      "id": "TC_91",
+      "num": 91,
+      "type": "Negative",
+      "description": "Verify invalid border color input",
+      "expected": "",
+      "raw": "TC_91Callout NegativeVerify invalid border color inputEnter #XYZ123Ignore input or show validation"
+    },
+    {
+      "id": "TC_92",
+      "num": 92,
+      "type": "UI",
+      "description": "Verify default font and size in text editorLoad componentOpen Sans Regular, 16px is shown",
+      "expected": "",
+      "raw": "TC_92Callout UIVerify default font and size in text editorLoad componentOpen Sans Regular, 16px is shown"
+    },
+    {
+      "id": "TC_93",
+      "num": 93,
+      "type": "Functional",
+      "description": "Verify font size selectionChange font size from dropdownText updates to selected size",
+      "expected": "",
+      "raw": "TC_93Callout FunctionalVerify font size selectionChange font size from dropdownText updates to selected size"
+    },
+    {
+      "id": "TC_94",
+      "num": 94,
+      "type": "Functional",
+      "description": "Verify text formatting optionsApply bold, italic, underline, strikethroughText formatting applies correctly",
+      "expected": "",
+      "raw": "TC_94Callout FunctionalVerify text formatting optionsApply bold, italic, underline, strikethroughText formatting applies correctly"
+    },
+    {
+      "id": "TC_95",
+      "num": 95,
+      "type": "Functional",
+      "description": "Verify text alignment optionsUse left, center, right alignText aligns correctly",
+      "expected": "",
+      "raw": "TC_95Callout FunctionalVerify text alignment optionsUse left, center, right alignText aligns correctly"
+    },
+    {
+      "id": "TC_96",
+      "num": 96,
+      "type": "Functional",
+      "description": "Verify link insertionAdd hyperlink to textLink should be clickable",
+      "expected": "",
+      "raw": "TC_96Callout FunctionalVerify link insertionAdd hyperlink to textLink should be clickable"
+    },
+    {
+      "id": "TC_97",
+      "num": 97,
+      "type": "Functional",
+      "description": "Verify image insertion via editorClick image icon and insertInline image should appear",
+      "expected": "",
+      "raw": "TC_97Callout FunctionalVerify image insertion via editorClick image icon and insertInline image should appear"
+    },
+    {
+      "id": "TC_98",
+      "num": 98,
+      "type": "Functional",
+      "description": "Verify math or special character inputUse equation or symbol toolbarSymbols should appear",
+      "expected": "",
+      "raw": "TC_98Callout FunctionalVerify math or special character inputUse equation or symbol toolbarSymbols should appear"
+    },
+    {
+      "id": "TC_99",
+      "num": 99,
+      "type": "Functional",
+      "description": "Verify Save functionalityClick “Save”All changes saved and retained",
+      "expected": "",
+      "raw": "TC_99Callout FunctionalVerify Save functionalityClick “Save”All changes saved and retained"
+    },
+    {
+      "id": "TC_100",
+      "num": 100,
+      "type": "Functional",
+      "description": "Verify Preview functionalityClick “Preview”Preview should reflect current component",
+      "expected": "",
+      "raw": "TC_100Callout FunctionalVerify Preview functionalityClick “Preview”Preview should reflect current component"
+    },
+    {
+      "id": "TC_101",
+      "num": 101,
+      "type": "Functional",
+      "description": "Verify ALT Text field allows entry",
+      "expected": "",
+      "raw": "TC_101Callout FunctionalVerify ALT Text field allows entryEnter accessibility textText is saved and persisted"
+    },
+    {
+      "id": "TC_102",
+      "num": 102,
+      "type": "Functional",
+      "description": "Callout EdgeVerify ALT Text field max lengthTry entering over 2000 charactersOnly 2000 chars accepted",
+      "expected": "",
+      "raw": "TC_102Callout EdgeVerify ALT Text field max lengthTry entering over 2000 charactersOnly 2000 chars accepted"
+    },
+    {
+      "id": "TC_103",
+      "num": 103,
+      "type": "Functional",
+      "description": "Verify ALT Text field clears on image removalRemove imageALT text should reset (as per design)",
+      "expected": "",
+      "raw": "TC_103Callout Functional Verify ALT Text field clears on image removalRemove imageALT text should reset (as per design)"
+    },
+    {
+      "id": "TC_104",
+      "num": 104,
+      "type": "Functional",
+      "description": "Verify Save after changing ALT text",
+      "expected": "",
+      "raw": "TC_104Callout FunctionalVerify Save after changing ALT textEnter ALT → Save → reloadALT text persists"
+    },
+    {
+      "id": "TC_105",
+      "num": 105,
+      "type": "UI",
+      "description": "Verify layout responsivenessResize screen (responsive test)Layout adapts (if supported)",
+      "expected": "",
+      "raw": "TC_105Callout UIVerify layout responsivenessResize screen (responsive test)Layout adapts (if supported)"
+    },
+    {
+      "id": "TC_106",
+      "num": 106,
+      "type": "Accessibility",
+      "description": "Verify tab order across controlsPress Tab key through UIFocus should move logically",
+      "expected": "",
+      "raw": "TC_106Callout AccessibilityVerify tab order across controlsPress Tab key through UIFocus should move logically"
+    },
+    {
+      "id": "TC_107",
+      "num": 107,
+      "type": "Accessibility",
+      "description": "Verify keyboard accessibilityTry toggling options with keyboardOptions are keyboard-accessible",
+      "expected": "",
+      "raw": "TC_107 AccessibilityVerify keyboard accessibilityTry toggling options with keyboardOptions are keyboard-accessible"
+    },
+    {
+      "id": "TC_108",
+      "num": 108,
+      "type": "Accessibility",
+      "description": "Verify screen reader reads ALT textUse screen reader on previewALT text is read aloud",
+      "expected": "",
+      "raw": "TC_108 AccessibilityVerify screen reader reads ALT textUse screen reader on previewALT text is read aloud"
+    },
+    {
+      "id": "TC_109",
+      "num": 109,
+      "type": "Negative",
+      "description": "Verify error handling for failed saveSimulate network loss → SaveShow appropriate error message",
+      "expected": "",
+      "raw": "TC_109 NegativeVerify error handling for failed saveSimulate network loss → SaveShow appropriate error message"
+    },
+    {
+      "id": "TC_110",
+      "num": 110,
+      "type": "Functional",
+      "description": "Verify undo-redo functionality in editorType and undo/redoText changes as expected",
+      "expected": "",
+      "raw": "TC_110 FunctionalVerify undo-redo functionality in editorType and undo/redoText changes as expected"
+    }
+  ]
+}

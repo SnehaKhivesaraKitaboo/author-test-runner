@@ -1,0 +1,332 @@
+{
+  "component": "Text",
+  "slug": "text",
+  "dataType": "paragraph",
+  "source": "Author Test Cases - Text.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Text.pdf",
+  "pages": 1,
+  "extractedCount": 40,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01TextUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal. kitaboo.com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Text FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03Text FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Text FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05Text FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Text Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Text Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Text Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Text Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Verify ability to drag and drop Text Component in Generic Step Open Generic Step → Drag Text Component into layoutText Component is placed successfully",
+      "expected": "",
+      "raw": "TC_10Text Positive Verify ability to drag and drop Text Component in Generic Step Open Generic Step → Drag Text Component into layoutText Component is placed successfully"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Positive",
+      "description": "Verify ability to drag and drop Text Component in Offline StepOpen Offline Step → Drag Text Component into layoutText Component is placed successfully",
+      "expected": "",
+      "raw": "TC_11Text Positive Verify ability to drag and drop Text Component in Offline StepOpen Offline Step → Drag Text Component into layoutText Component is placed successfully"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Verify ability to drag and drop Text Component in Student InstructionsOpen Student Instructions → Drag Text ComponentComponent appears in layout",
+      "expected": "",
+      "raw": "TC_12Text Positive Verify ability to drag and drop Text Component in Student InstructionsOpen Student Instructions → Drag Text ComponentComponent appears in layout"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Positive",
+      "description": "Verify ability to drag and drop Text Component in Teacher InstructionsOpen Teacher Instructions → Drag Text ComponentComponent appears in layout",
+      "expected": "",
+      "raw": "TC_13Text Positive Verify ability to drag and drop Text Component in Teacher InstructionsOpen Teacher Instructions → Drag Text ComponentComponent appears in layout"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Positive",
+      "description": "Verify style “Default” is applied",
+      "expected": "",
+      "raw": "TC_14Text PositiveVerify style “Default” is appliedSelect Text Component → Choose “Default” styleText appears in default font and color"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Positive",
+      "description": "Verify style “Block Text” is applied",
+      "expected": "",
+      "raw": "TC_15Text PositiveVerify style “Block Text” is appliedSelect Text Component → Choose “Block Text”Text appears in block format"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Positive",
+      "description": "Verify style “Quote” is applied",
+      "expected": "",
+      "raw": "TC_16Text PositiveVerify style “Quote” is appliedSelect Text Component → Choose “Quote”Text appears in quote format"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Verify style “Drop Cap” is applied",
+      "expected": "",
+      "raw": "TC_17Text PositiveVerify style “Drop Cap” is appliedSelect Text Component → Choose “Drop Cap”First letter appears enlarged"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Verify style “Emphasis Text” is applied",
+      "expected": "",
+      "raw": "TC_18Text PositiveVerify style “Emphasis Text” is appliedSelect Text Component → Choose “Emphasis Text”Text appears bold/italic"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Positive",
+      "description": "Verify style “Button Text” is applied",
+      "expected": "",
+      "raw": "TC_19Text PositiveVerify style “Button Text” is appliedSelect Text Component → Choose “Button Text”Text appears styled like a button"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Negative",
+      "description": "Verify invalid style selection",
+      "expected": "",
+      "raw": "TC_20Text NegativeVerify invalid style selectionSelect Text Component → Choose unsupported styleError or no change in style"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Positive",
+      "description": "Verify alignment “Left” for inserted textUse Insert Text → Choose “Align: Left”Text aligns to left in preview",
+      "expected": "",
+      "raw": "TC_21Text PositiveVerify alignment “Left” for inserted textUse Insert Text → Choose “Align: Left”Text aligns to left in preview"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Verify alignment “Right” for inserted textUse Insert Text → Choose “Align: Right”Text aligns to right in preview",
+      "expected": "",
+      "raw": "TC_22Text PositiveVerify alignment “Right” for inserted textUse Insert Text → Choose “Align: Right”Text aligns to right in preview"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Positive",
+      "description": "Verify Insert Text functionalityClick “Insert Text” → Type content → Click InsertText appears in component",
+      "expected": "",
+      "raw": "TC_23Text PositiveVerify Insert Text functionalityClick “Insert Text” → Type content → Click InsertText appears in component"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Negative",
+      "description": "Verify Insert Text with empty inputClick “Insert Text” → Leave blank → Click InsertError message shown",
+      "expected": "",
+      "raw": "TC_24Text NegativeVerify Insert Text with empty inputClick “Insert Text” → Leave blank → Click InsertError message shown"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "Positive",
+      "description": "Verify Upload Image functionalityClick “Upload Image” →",
+      "expected": "",
+      "raw": "TC_25Text PositiveVerify Upload Image functionalityClick “Upload Image” → Select valid image → UploadImage appears in component"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "Negative",
+      "description": "Verify Upload Image with unsupported formatClick “Upload Image” →",
+      "expected": "",
+      "raw": "TC_26Text NegativeVerify Upload Image with unsupported formatClick “Upload Image” → Select .txt file → UploadError message shown"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "Positive",
+      "description": "Verify line break functionality in textType text → Press",
+      "expected": "",
+      "raw": "TC_27Text PositiveVerify line break functionality in textType text → Press Enter → PreviewLine break appears correctly"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "Negative",
+      "description": "Verify excessive line breaksPaste 10+ line breaks → Preview Component handles gracefully or limits applied",
+      "expected": "",
+      "raw": "TC_28Text NegativeVerify excessive line breaksPaste 10+ line breaks → Preview Component handles gracefully or limits applied"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "Positive",
+      "description": "Verify math equation renderingType $$x^2 + y^2 = r^2$$ → PreviewEquation renders correctly",
+      "expected": "",
+      "raw": "TC_29Text PositiveVerify math equation renderingType $$x^2 + y^2 = r^2$$ → PreviewEquation renders correctly"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "Negative",
+      "description": "Verify invalid math syntaxType $$x^2 + $$ → PreviewPlaceholder or error shown",
+      "expected": "",
+      "raw": "TC_30Text NegativeVerify invalid math syntaxType $$x^2 + $$ → PreviewPlaceholder or error shown"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "Positive",
+      "description": "Verify publishing activity with Text ComponentAdd content → Click PublishActivity publishes successfully",
+      "expected": "",
+      "raw": "TC_31Text PositiveVerify publishing activity with Text ComponentAdd content → Click PublishActivity publishes successfully"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "Positive",
+      "description": "Verify launching activity in ReaderLaunch published activity → View in ReaderText and styles appear correctly",
+      "expected": "",
+      "raw": "TC_32Text PositiveVerify launching activity in ReaderLaunch published activity → View in ReaderText and styles appear correctly"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Positive",
+      "description": "Verify editing activity and republishingEdit content → Save → RepublishUpdated content appears in Reader",
+      "expected": "",
+      "raw": "TC_33Text PositiveVerify editing activity and republishingEdit content → Save → RepublishUpdated content appears in Reader"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Negative",
+      "description": "Verify data loss after republishAdd content → Republish → ReloadNo data loss; content persists",
+      "expected": "",
+      "raw": "TC_34Text NegativeVerify data loss after republishAdd content → Republish → ReloadNo data loss; content persists"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Positive",
+      "description": "Verify preview before publishingClick Preview → View layoutAll text, styles, and images appear correctly",
+      "expected": "",
+      "raw": "TC_35Text PositiveVerify preview before publishingClick Preview → View layoutAll text, styles, and images appear correctly"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Negative",
+      "description": "Verify publishing with missing metadataLeave required fields blank → Click PublishError prevents publishing",
+      "expected": "",
+      "raw": "TC_36Text NegativeVerify publishing with missing metadataLeave required fields blank → Click PublishError prevents publishing"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Positive",
+      "description": "Verify preview of text with all applied styles",
+      "expected": "",
+      "raw": "TC_37Text PositiveVerify preview of text with all applied styles 1. Apply various styles to text. 2. Click Preview.All formatting appears correctly in Preview."
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Positive",
+      "description": "Verify reset changes button",
+      "expected": "",
+      "raw": "TC_38Text PositiveVerify reset changes button 1. Make style or content changes. 2. Click 'Reset changes'.Text component resets to original state."
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "Positive",
+      "description": "Verify Apply to All functionality",
+      "expected": "",
+      "raw": "TC_39Text PositiveVerify Apply to All functionality 1. Edit one text component. 2. Click 'Apply to All'. Same style and formatting applied to all similar components."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "Positive",
+      "description": "Verify text component without any content",
+      "expected": "",
+      "raw": "TC_40Text PositiveVerify text component without any content 1. Add a text component. 2. Do not enter any content. 3. Publish the activity. Empty space is rendered or component is hidden."
+    }
+  ]
+}

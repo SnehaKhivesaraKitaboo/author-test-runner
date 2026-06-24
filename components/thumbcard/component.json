@@ -1,0 +1,32 @@
+{
+  "component": "Thumbs Card Header",
+  "slug": "thumbcard",
+  "dataType": "thumbs-card-header",
+  "directive": "thumbs-card-header-template",
+  "widgetName": "Thumbs Card Header",
+  "module": "element (Instructions-for-Students canvas) — FLAG-GATED",
+  "spec": "38-thumbcard-deep.spec.ts",
+  "qcSource": "Author Test Cases - Thumbcard.pdf",
+  "qcCount": 38,
+  "automated": 16,
+  "deferred": 22,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/thumbs-card-header/thumbs-card-header.html",
+    "closify/KITABOO_Authoring/templates/thumbs-card-header/thumbs-card-header-settings-pannel.html",
+    "closify/KITABOO_Authoring/templates/thumbs-card-header/default/thumbs-card-header.json",
+    "closify/KITABOO_Authoring/templates/thumbs-card-header/scripts/thumbs-card-header-directive.js",
+    "closify/KITABOO_Authoring/templates/thumbs-card-header/styles/thumbs-card-header-template.css"
+  ],
+  "architectureNotes": [
+    "VERIFIED against config.js: widget name is 'Thumbs Card Header' and dataType is 'thumbs-card-header' (NOT 'thumbcard' as the QC catalog states). The config widget catalog is the source of truth; the slug 'thumbcard' is the test-runner folder name only.",
+    "FLAG-GATED: config.js sets \"thumbs-card-header\": false for most subjects/modules and true for only a few. The drop helper and every canvas/settings test degrade gracefully (cy.log + return) when the widget is not offered in the active catalog.",
+    "Thumbs Card Header is an ELEMENT (not an assessment widget). 'thumbs-card-header' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Thumbs Card Header'), not into a Generic Step column.",
+    "Canvas DOM: section.thumbs-card-header[thumbs-card-header-template] > .thumbs-card-container (ng-style headerBgColor/headerStrokeColor) > .thumbs-card-header-div containing a fixed icon span (img.thumbs-card-header-icon) and a contenteditable heading (.thumbs-card-header-heading.editables, ng-model fieldData.introductionText).",
+    "The fixed icon src is data-driven from settings.thumbsCardIcons[thumbsCardActiveIcons].icon; the img has no contenteditable and no ng-click — it is not user-editable (TC_10).",
+    "Settings panel container is .thumbs-card-header-setting with title 'Thumbs Card Header' and icon .icon-Thumbs-Card-Header1.settings-icon. It exposes two selectable thumbs icons (.icons-item over currSettings.thumbsCardIcons), Background Color (#headerBgColorInput, default #FFF1D0), Stroke Color (#headerStrokeColorInput, default #FFFFFF), and an Alt Text textarea (maxlength 2000).",
+    "SINGLE-HEADER component: the source DOM is one icon + one heading. There is NO multi-card grid, NO 'add/remove card' action, NO per-card link, and NO 'Rounded Corners Text Box' in this source. QC wording referencing those is documented against the real single-header structure or deferred; addThumbcardCard logs that no such control exists.",
+    "Heading is wired to the shared floating textEditor toolbar (math-read-only-field). RTE formatting/math controls and their APPLIED render are verified in Preview/Reader (deferred); contenteditable presence + text/line-break entry is automated.",
+    "QC TC_01–TC_03 are login/activity bootstrap (handled by the harness). Persistence-after-reload (TC_12/17/18/19/26/31), Preview/Reader/CLP/Publish/saLTIre (TC_20–TC_28), cross-browser (TC_29/30), Figma match (TC_32), and math+formatted-text render (TC_33/34) are deferred."
+  ]
+}

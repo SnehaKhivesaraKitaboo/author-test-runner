@@ -1,0 +1,32 @@
+{
+  "component": "WL Multipart",
+  "slug": "wl-multipart",
+  "dataType": "group-interactivity-template",
+  "catalogName": "Multipart Question",
+  "catalogAlias": "Group Activity",
+  "directive": "group-interactivity (canvas) / group-interactivity-settings (panel)",
+  "module": "wl (single-page canvas — NOT a Generic Step column)",
+  "runNote": "Run with CYPRESS_AUTHORING_MODULE=wl so getAuthoringModule()==='wl' and resolveDropTarget routes the multipart to the Instructions canvas; cy.dropComponent only permits this assessment widget in the WL module.",
+  "spec": "42-wl-multipart-deep.spec.ts",
+  "qcSource": "Author Test Cases - WL - Multipart.pdf",
+  "qcCount": 205,
+  "automated": 22,
+  "deferred": 183,
+  "notLiveVerified": true,
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/group-activity/group-activity.html",
+    "closify/KITABOO_Authoring/templates/group-activity/group-activity-settings.html",
+    "closify/KITABOO_Authoring/templates/group-activity/default/group-activity.json",
+    "closify/KITABOO_Authoring/templates/group-activity/scripts/group-activity-directive.js"
+  ],
+  "architectureNotes": [
+    "WL Multipart IS the catalog 'Multipart Question' widget; both it and the alias 'Group Activity' share dataType 'group-interactivity-template'.",
+    "FLAG-GATED: config.js sets 'group-interactivity-template': true|false per subject; some subjects do not offer the widget. The drop helper probes the live widget registry and logs+returns gracefully when absent, and every test guards with a presence short-circuit.",
+    "Canvas wrapper = .group-interactivity-container; parts = .question-container; empty parts show .empty-droppable-text ('Drag Assessment widget from right panel'). Parts auto-grow (questionBank push, cap 35) after a widget is dropped — there is no standalone 'add part' button.",
+    "Settings panel id = #fib-settings-panel[group-interactivity-settings]; title 'Group Activity'. Exposes Interactive Component (yes/no), Tags (#metaTagsInput), Shuffle Questions (#add-shuftle-choices), Background Color (#grp-Background), Corner Radius (#grp-CornerRadius, maxlength 2), and Advance Setting Outline radios + Action Assets colour (#appearanceInput).",
+    "Try Again (#add-activity-restart) / Show Me (#add-show-me) / Reset (#btn-rest) render only when !isGradableActivity; Header Background Color + Hide/Show toggle render only for styleClass=='workedExample' (default style2). All gated cases are handled gracefully (log + skip).",
+    "The QC 'WL language / special-character keyboard' cases (TC_110–TC_152) concern assessment widgets dropped INTO the parts (Extended Response / FIB), not the multipart shell — there is no language markup in group-activity source, so they are deferred.",
+    "Preview/Reader runtime (play/submit/score icons/pagination/outlines/progress), persistence-after-reload, lifecycle (save/publish/data-patch), media upload validation, and accessibility are outside the authoring-shell DOM and are deferred."
+  ]
+}

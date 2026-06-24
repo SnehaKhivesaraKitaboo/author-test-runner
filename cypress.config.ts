@@ -519,7 +519,7 @@ ${specBlocks}
 // ---------------------------------------------------------------------------
 export default defineConfig({
   e2e: {
-    specPattern: 'e2e/**/*.spec.ts',
+    specPattern: '{e2e,components}/**/*.spec.ts',
     supportFile: 'support/index.ts',
     fixturesFolder: process.env['AUTHORING_FIXTURES_DIR'] || 'fixtures',
     videosFolder: process.env['AUTHORING_VIDEOS_DIR'] || 'e2e/videos',

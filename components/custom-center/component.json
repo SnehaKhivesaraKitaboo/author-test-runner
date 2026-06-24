@@ -1,0 +1,36 @@
+{
+  "component": "Custom Center",
+  "slug": "custom-center",
+  "dataType": "layout-6",
+  "widgetName": "Custom Center",
+  "directive": "layout-template",
+  "module": "layout (Instructions-for-Students canvas)",
+  "spec": "22-custom-center-deep.spec.ts",
+  "qcSource": "Author Test Cases - Custom Center.pdf",
+  "qcCount": 67,
+  "automated": 15,
+  "deferred": 52,
+  "columnCount": 2,
+  "verified": {
+    "dataType": "layout-6",
+    "widgetName": "Custom Center",
+    "source": "config/config.js (both catalogs agree)",
+    "ambiguityResolved": "Custom Center is UNAMBIGUOUSLY layout-6. layout-5 is 'Three Column' (a separate, out-of-scope widget). The docs' guess of layout-6 is correct."
+  },
+  "sourcePaths": [
+    "closify/KITABOO_Authoring/config/config.js",
+    "closify/KITABOO_Authoring/templates/layouts/layout6.html",
+    "closify/KITABOO_Authoring/templates/layouts/layout-setting-panel.html",
+    "closify/KITABOO_Authoring/templates/layouts/default/layout.json",
+    "closify/KITABOO_Authoring/templates/layouts/scripts/layout-directive.js"
+  ],
+  "architectureNotes": [
+    "Custom Center is a LAYOUT (widget name 'Custom Center', dataType 'layout-6'), NOT an assessment widget. 'layout-6' is absent from support/module-setup.ts ASSESSMENT_DATA_TYPES, so resolveDropTarget routes it to the canvas — it drops onto the Instructions-for-Students page (#desktop_view) via cy.dropComponent('Custom Center'), not into a Generic Step column.",
+    "Canvas wrapper is .customClass[data-type=\"layout-6\"] containing .layout-container.custome-layout.layout-6 ([layout-template]).",
+    "STRUCTURALLY DIFFERENT from layout-1..4: layout-6 has TWO .column.one-half columns, but each holds a .question-container-box with .question-container slots driven by fieldData.settings.questionBank (left) / questionBank2 (right). Drop zones are .column-content.first-box (left, onDropComplete boxNo=0) and .column-content.second-box (right, onDropComplete boxNo=1).",
+    "Clicking the .sd-item opens #layout-template-setting (.layout-setting-panel) with a Full Width checkbox (.layout-width-setup). Full Width sets data-pagemargin='fullwidth' on the layout .sd-item.",
+    "Nested child-drop business rules (one element/widget per column; no layout-inside-layout) are enforced in layout-directive.js at runtime and are NOT DOM-assertable here — deferred.",
+    "Preview/Reader/Publish, media/tables/math/special-languages, multipart, persistence-after-reload, refresh and CLP outline/separator display are deferred."
+  ],
+  "notYetLiveVerified": "Selectors are source-derived from layout6.html + layout-setting-panel.html + layout-directive.js but NOT yet run against a live authoring instance. A single headed run will confirm the drop + settings-panel selectors."
+}

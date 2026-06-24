@@ -1,0 +1,244 @@
+{
+  "component": "Annotation",
+  "slug": "annotation",
+  "dataType": "annotationHighlightOutline",
+  "source": "Author Test Cases - Annotation.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Annotation.pdf",
+  "pages": 1,
+  "extractedCount": 29,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01AnnotationUI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Annotation FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoring Should redirect to New Activity creation page",
+      "raw": "TC_03Annotation FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoring Should redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add Generic step",
+      "expected": "Add Generic step User Should able add Generic step",
+      "raw": "TC_04Annotation FunctionalityVerify if user is able to add Generic step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step User Should able add Generic step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step Title User Should able to Enter Data in Step Title",
+      "raw": "TC_05Annotation FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title User Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in generic step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Annotation Functionality Verify that the cancel button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in generic step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Annotation Functionality Verify that the change step button is clickable in generic step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Annotation Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Annotation Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "Positive",
+      "description": "Add annotation with normal text1.",
+      "expected": "SaveAnnotation is added successfully",
+      "raw": "TC_10AnnotationPositiveAdd annotation with normal text1. Select text2. Click 'Annotate'3. Type short text4. SaveAnnotation is added successfully"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "Functional",
+      "description": "AnnotationEdgeAdd annotation with long text1.",
+      "expected": "Save Full text is saved and displayed without truncation",
+      "raw": "TC_11AnnotationEdgeAdd annotation with long text1. Select text2. Click 'Annotate'3. Paste long paragraph4. Save Full text is saved and displayed without truncation"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "Positive",
+      "description": "Add annotation with math equation",
+      "expected": "SaveEquation is rendered properly in annotation",
+      "raw": "TC_12AnnotationPositiveAdd annotation with math equation 1. Select math text2. Click 'Annotate'3. Use equation editor or paste LaTeX4. SaveEquation is rendered properly in annotation"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "Functional",
+      "description": "AnnotationEdgeAdd annotation with special characters",
+      "expected": "SaveSpecial characters are displayed properly",
+      "raw": "TC_13AnnotationEdgeAdd annotation with special characters 1. Select text2. Click 'Annotate'3. Enter symbols/emojis4. SaveSpecial characters are displayed properly"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "Functional",
+      "description": "AnnotationEdgeCopy-paste formatted content into annotation",
+      "expected": "Save Formatting is preserved or handled gracefully",
+      "raw": "TC_14AnnotationEdgeCopy-paste formatted content into annotation 1. Copy formatted text (bold, italic)2. Paste into annotation3. Save Formatting is preserved or handled gracefully"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "Negative",
+      "description": "Exceed max limit of highlight labels (more than 5)1. Add 5 highlight labels2. Try adding 6th 6th highlight label should be restricted with a warning",
+      "expected": "Try adding 6th 6th highlight label should be restricted with a warning",
+      "raw": "TC_15AnnotationNegative Exceed max limit of highlight labels (more than 5)1. Add 5 highlight labels2. Try adding 6th 6th highlight label should be restricted with a warning"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "Negative",
+      "description": "Exceed max limit of outline labels (more than 5)1. Add 5 outline labels2. Try adding 6th 6th outline label should be restricted with a warning",
+      "expected": "Try adding 6th 6th outline label should be restricted with a warning",
+      "raw": "TC_16AnnotationNegativeExceed max limit of outline labels (more than 5)1. Add 5 outline labels2. Try adding 6th 6th outline label should be restricted with a warning"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "Positive",
+      "description": "Edit existing annotation1.",
+      "expected": "SaveChanges reflect correctly",
+      "raw": "TC_17AnnotationPositiveEdit existing annotation1. Click on existing annotation2. Modify text3. SaveChanges reflect correctly"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "Positive",
+      "description": "Delete annotation1. Hover over annotation2. Click delete3. ConfirmAnnotation is removed",
+      "expected": "ConfirmAnnotation is removed",
+      "raw": "TC_18AnnotationPositiveDelete annotation1. Hover over annotation2. Click delete3. ConfirmAnnotation is removed"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "Negative",
+      "description": "Annotation without selecting text1. Click 'Annotate' without text selectionError/warning shown",
+      "expected": "Click 'Annotate' without text selectionError/warning shown",
+      "raw": "TC_19AnnotationNegativeAnnotation without selecting text1. Click 'Annotate' without text selectionError/warning shown"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "Negative",
+      "description": "Annotation text left blank",
+      "expected": "SaveShould not allow saving blank annotations",
+      "raw": "TC_20AnnotationNegativeAnnotation text left blank 1. Select text2. Click 'Annotate'3. Leave textbox empty4. SaveShould not allow saving blank annotations"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "Functional",
+      "description": "AnnotationEdgeAdd multiple annotations on same selection1.",
+      "expected": "Add annotationsEither restrict or stack annotations logically",
+      "raw": "TC_21AnnotationEdgeAdd multiple annotations on same selection1. Select same text multiple times2. Add annotationsEither restrict or stack annotations logically"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "Positive",
+      "description": "Save annotation then switch to reader1. Add annotation2. Publish3. Check in ReaderAnnotation appears correctly in Reader",
+      "expected": "Check in ReaderAnnotation appears correctly in Reader",
+      "raw": "TC_22AnnotationPositiveSave annotation then switch to reader1. Add annotation2. Publish3. Check in ReaderAnnotation appears correctly in Reader"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "Negative",
+      "description": "Add annotation on embedded image1. Try selecting part of image2. Click 'Annotate'Should not allow (or show message)",
+      "expected": "Click 'Annotate'Should not allow (or show message)",
+      "raw": "TC_23AnnotationNegativeAdd annotation on embedded image1. Try selecting part of image2. Click 'Annotate'Should not allow (or show message)"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "Functional",
+      "description": "AnnotationEdgeHighlight + Add annotation on same text1.",
+      "expected": "Add annotation Both features coexist or system handles correctly",
+      "raw": "TC_24AnnotationEdgeHighlight + Add annotation on same text1. Select text2. Add highlight3. Add annotation Both features coexist or system handles correctly"
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Annotation accessibility with screen reader",
+      "expected": "Launch on reader Screen reader reads label and content correctly",
+      "raw": "TC_25AnnotationUI and FunctionalityAnnotation accessibility with screen reader 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher 8. Launch on reader Screen reader reads label and content correctly"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Check annotation persistence on reload",
+      "expected": "Launch on readerAnnotation persists after page reload",
+      "raw": "TC_26AnnotationUI and FunctionalityCheck annotation persistence on reload 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher 8. Launch on readerAnnotation persists after page reload"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI and Functionality",
+      "description": "Check annotation in Reader after publish",
+      "expected": "Launch on readerAnnotation visible correctly in Reader",
+      "raw": "TC_27AnnotationUI and FunctionalityCheck annotation in Reader after publish 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher 8. Launch on readerAnnotation visible correctly in Reader"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI and Functionality",
+      "description": "Edit annotation and re-publish",
+      "expected": "Launch on reader Changes in annotation reflected after re- publish",
+      "raw": "TC_28AnnotationUI and FunctionalityEdit annotation and re-publish 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher 8. Launch on reader Changes in annotation reflected after re- publish"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI and Functionality",
+      "description": "Check annotation not overlapping with UI",
+      "expected": "Launch on readerNo UI overlap or visual glitches",
+      "raw": "TC_29AnnotationUI and FunctionalityCheck annotation not overlapping with UI 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Generic step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher 8. Launch on readerNo UI overlap or visual glitches"
+    }
+  ]
+}

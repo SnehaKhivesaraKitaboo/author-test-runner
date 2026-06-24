@@ -1,0 +1,716 @@
+{
+  "component": "Table",
+  "slug": "table",
+  "dataType": "tablesNew",
+  "source": "Author Test Cases - Table.pdf",
+  "sourcePath": "D:/ELA/Author_Test_cases/Author_Test_cases/Author Test Cases - Table.pdf",
+  "pages": 3,
+  "extractedCount": 88,
+  "note": "Auto-extracted from QC PDF via pdf-parse. \"raw\" preserves verbatim PDF text per case for traceability; refine desc/steps/expected during component automation.",
+  "testcases": [
+    {
+      "id": "TC_01",
+      "num": 1,
+      "type": "UI and Functionality",
+      "description": "Verify if user able to launch the URL",
+      "expected": "",
+      "raw": "TC_01Table UI and FunctionalityVerify if user able to launch the URL Launch the Studio URL \"https://qapartnerportal.kitaboo. com/reader/CL-ELA-master/#/login\"Studio Listing page should display"
+    },
+    {
+      "id": "TC_02",
+      "num": 2,
+      "type": "Functionality",
+      "description": "Verify if user ia able to create math activity",
+      "expected": "Create activity by entering basic info Activity creation page should display with Basic info screen",
+      "raw": "TC_02Table FunctionalityVerify if user ia able to create math activity 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info Activity creation page should display with Basic info screen"
+    },
+    {
+      "id": "TC_03",
+      "num": 3,
+      "type": "Functionality",
+      "description": "Verify if user is able to start authoring",
+      "expected": "Click on start authoringShould redirect to New Activity creation page",
+      "raw": "TC_03Table FunctionalityVerify if user is able to start authoring 1. Launch the URL and Login with valid credentials 2.Click on \"create new\" 3.Click on math 4. Create activity by entering basic info 5. Click on start authoringShould redirect to New Activity creation page"
+    },
+    {
+      "id": "TC_04",
+      "num": 4,
+      "type": "Functionality",
+      "description": "Verify if user is able to add offline step",
+      "expected": "Add Offline step User Should able add offline step",
+      "raw": "TC_04Table FunctionalityVerify if user is able to add offline step 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step User Should able add offline step"
+    },
+    {
+      "id": "TC_05",
+      "num": 5,
+      "type": "Functionality",
+      "description": "Verify if user able to enter the step title",
+      "expected": "Enter the Step TitleUser Should able to Enter Data in Step Title",
+      "raw": "TC_05Table FunctionalityVerify if user able to enter the step title 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step TitleUser Should able to Enter Data in Step Title"
+    },
+    {
+      "id": "TC_06",
+      "num": 6,
+      "type": "Functionality",
+      "description": "Verify that the cancel button is clickable in offline step creation",
+      "expected": "click on cancel buttonThe step creation pop up should be closed",
+      "raw": "TC_06Table Functionality Verify that the cancel button is clickable in offline step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.click on cancel buttonThe step creation pop up should be closed"
+    },
+    {
+      "id": "TC_07",
+      "num": 7,
+      "type": "Functionality",
+      "description": "Verify that the change step button is clickable in offline step creation",
+      "expected": "click on change step button Clicking on Change step should redirect to Chosse step screen",
+      "raw": "TC_07Table Functionality Verify that the change step button is clickable in offline step creation 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.click on change step button Clicking on Change step should redirect to Chosse step screen"
+    },
+    {
+      "id": "TC_08",
+      "num": 8,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Students\"",
+      "expected": "Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student",
+      "raw": "TC_08Table Functionality Verify that user able to enter \"Instructions for Students\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.Click on next button 7.Enter Data in \" Instructions for Student \" User Should able to Enter Data in Instructions for Student"
+    },
+    {
+      "id": "TC_09",
+      "num": 9,
+      "type": "Functionality",
+      "description": "Verify that user able to enter \"Instructions for Teachers\"",
+      "expected": "Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher",
+      "raw": "TC_09Table Functionality Verify that user able to enter \"Instructions for Teachers\" 1. Launch the URL and Login with valid credentials 2.Create Math activity 3. Click on start authoring 4. Add Offline step 5.Enter the Step Title 6.Click on Next Button 7.Enter Data in \" instructions for Teacher \" User Should able to Enter Data in Instructions for Teacher"
+    },
+    {
+      "id": "TC_10",
+      "num": 10,
+      "type": "UI and Functionality",
+      "description": "Verify user is able to drag the table from elements section",
+      "expected": "",
+      "raw": "TC_10Table UI and Functionality Verify user is able to drag the table from elements section 1. Navigate to element panel 2. Try dragging the \"Table\" component from element.Table component from element should be draggable"
+    },
+    {
+      "id": "TC_11",
+      "num": 11,
+      "type": "UI and Functionality",
+      "description": "Verify after dropping table, “Create Table” label and properties are shown",
+      "expected": "Observe if \"Create Table\" label, rows (8), and columns (4) with icons appear Create Table label and table properties (Rows & Columns with icons) should appear",
+      "raw": "TC_11Table UI and Functionality Verify after dropping table, “Create Table” label and properties are shown 1. Drop the table on the author area 2. Observe if \"Create Table\" label, rows (8), and columns (4) with icons appear Create Table label and table properties (Rows & Columns with icons) should appear"
+    },
+    {
+      "id": "TC_12",
+      "num": 12,
+      "type": "UI and Functionality",
+      "description": "Verify Create button is highlighted in blue",
+      "expected": "",
+      "raw": "TC_12Table UI and FunctionalityVerify Create button is highlighted in blue 1. Drop table 2. Observe the Create button on authoring page.Create button should appear in blue (#005A9C)"
+    },
+    {
+      "id": "TC_13",
+      "num": 13,
+      "type": "UI and Functionality",
+      "description": "Verify user can select all styles from style options",
+      "expected": "",
+      "raw": "TC_13Table UI and Functionality Verify user can select all styles from style options 1. Drop table 2. Select \"Style Five\" from the setting panel.All styles should be selectable"
+    },
+    {
+      "id": "TC_14",
+      "num": 14,
+      "type": "UI and Functionality",
+      "description": "Verify table is created with proper heading and icon after clicking Create",
+      "expected": "",
+      "raw": "TC_14Table UI and Functionality Verify table is created with proper heading and icon after clicking Create 1. Click Create button 2. Check if the table renders with heading “Table” and with icon. Table should appear with header title “Table” and relevant icon"
+    },
+    {
+      "id": "TC_15",
+      "num": 15,
+      "type": "UI and Functionality",
+      "description": "Verify table header has background color #005A9C1. Inspect table header backgroundTable header should have background color #005A9C",
+      "expected": "Inspect table header backgroundTable header should have background color #005A9C",
+      "raw": "TC_15Table UI and Functionality Verify table header has background color #005A9C1. Inspect table header backgroundTable header should have background color #005A9C"
+    },
+    {
+      "id": "TC_16",
+      "num": 16,
+      "type": "UI and Functionality",
+      "description": "Verify row header has background color #C2E5FF",
+      "expected": "",
+      "raw": "TC_16Table UI and Functionality Verify row header has background color #C2E5FF 1. Inspect row header cells. 2.Header is visible with the proper color code and color code should display in the setting panel. Row headers should be filled with background color #C2E5FF"
+    },
+    {
+      "id": "TC_17",
+      "num": 17,
+      "type": "UI and Functionality",
+      "description": "Verify other cells have white background color (#ffffff)",
+      "expected": "Color code should display on the setting panel for thisTable cells should have background color #ffffff",
+      "raw": "TC_17Table UI and Functionality Verify other cells have white background color (#ffffff) 1. Inspect non-header cells 2.Other background cells display with the white background. 3.Color code should display on the setting panel for thisTable cells should have background color #ffffff"
+    },
+    {
+      "id": "TC_18",
+      "num": 18,
+      "type": "UI and Functionality",
+      "description": "Verify text color changes to #176299 when user click in cell",
+      "expected": "",
+      "raw": "TC_18Table UI and Functionality Verify text color changes to #176299 when user click in cell 1. Type into any table cell 2.Check text color is available as mentioned or not.Text should update with font color #176299"
+    },
+    {
+      "id": "TC_19",
+      "num": 19,
+      "type": "UI and Functionality",
+      "description": "Verify text appears in all table cells once user types",
+      "expected": "",
+      "raw": "TC_19Table UI and Functionality Verify text appears in all table cells once user types 1. Type in each cell 2.Check if user is able to type in all the cells or not.Typed content should appear properly in all cells"
+    },
+    {
+      "id": "TC_20",
+      "num": 20,
+      "type": "UI and Functionality",
+      "description": "Verify default stroke color is #B7B7BD",
+      "expected": "Check stroke colorDefault stroke color is #B7B7BD",
+      "raw": "TC_20Table UI and FunctionalityVerify default stroke color is #B7B7BD 1. Open table formatting UI 2. Check stroke colorDefault stroke color is #B7B7BD"
+    },
+    {
+      "id": "TC_21",
+      "num": 21,
+      "type": "UI and Functionality",
+      "description": "Verify user can change stroke color",
+      "expected": "",
+      "raw": "TC_21Table UI and FunctionalityVerify user can change stroke color 1. Open table formatting UI 2. Change stroke color 3. Apply changes and visible to user.Stroke color updates per selection"
+    },
+    {
+      "id": "TC_22",
+      "num": 22,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Vertical Lines\" checkbox functions correctly",
+      "expected": "Verify checkbox is enabled by defaultVertical lines should appear by default on the table",
+      "raw": "TC_22Table UI and Functionality Verify \"Show Vertical Lines\" checkbox functions correctly 1. Open settings panel 2. Verify checkbox is enabled by defaultVertical lines should appear by default on the table"
+    },
+    {
+      "id": "TC_23",
+      "num": 23,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Vertical Lines\" checkbox functions correctly when uncheck that box",
+      "expected": "Check UI table Vertical lines should disappear when checkbox is unchecked",
+      "raw": "TC_23Table UI and Functionality Verify \"Show Vertical Lines\" checkbox functions correctly when uncheck that box 1. Open settings panel 2. Verify checkbox is enabled by default 3. Uncheck the checkbox 4. Check UI table Vertical lines should disappear when checkbox is unchecked"
+    },
+    {
+      "id": "TC_24",
+      "num": 24,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Horizontal Lines\" checkbox functions correctly",
+      "expected": "",
+      "raw": "TC_24Table UI and Functionality Verify \"Show Horizontal Lines\" checkbox functions correctly 1. Open settings panel 2. Verify checkbox is enabled by default Horizontal lines should appear by default on the screen."
+    },
+    {
+      "id": "TC_25",
+      "num": 25,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Horizontal Lines\" checkbox functions correctly when that checkbox is not enable",
+      "expected": "Check UI table Horizontal lines should disappear when checkbox is unchecked",
+      "raw": "TC_25Table UI and Functionality Verify \"Show Horizontal Lines\" checkbox functions correctly when that checkbox is not enable 1. Open settings panel 2. Verify checkbox is enabled by default 3. Uncheck the checkbox 4. Check UI table Horizontal lines should disappear when checkbox is unchecked"
+    },
+    {
+      "id": "TC_26",
+      "num": 26,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Caption\" checkbox functions correctly",
+      "expected": "Verify checkbox is enabled by default \"Enter caption text here\" should appear by default",
+      "raw": "TC_26Table UI and Functionality Verify \"Show Caption\" checkbox functions correctly 1. Open settings panel 2. Verify checkbox is enabled by default \"Enter caption text here\" should appear by default"
+    },
+    {
+      "id": "TC_27",
+      "num": 27,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Caption\" checkbox functions correctly after uncheck the checkbox",
+      "expected": "Check UI table \"Enter caption text here\" should disappear when checkbox is unchecked",
+      "raw": "TC_27Table UI and Functionality Verify \"Show Caption\" checkbox functions correctly after uncheck the checkbox 1. Open settings panel 2. Verify checkbox is enabled by default 3. Uncheck the checkbox 4. Check UI table \"Enter caption text here\" should disappear when checkbox is unchecked"
+    },
+    {
+      "id": "TC_28",
+      "num": 28,
+      "type": "UI and Functionality",
+      "description": "Verify \"Top\" is selected by default in Vertical Align checkbox",
+      "expected": "Check Vertical Align options\"Top\" should be preselected",
+      "raw": "TC_28Table UI and Functionality Verify \"Top\" is selected by default in Vertical Align checkbox 1. Open settings panel 2. Check Vertical Align options\"Top\" should be preselected"
+    },
+    {
+      "id": "TC_29",
+      "num": 29,
+      "type": "UI and Functionality",
+      "description": "Verify user can select \"Center\" and \"Bottom\" in Vertical Align checkbox",
+      "expected": "Verify alignment on UIUI content aligns as per selection",
+      "raw": "TC_29Table UI and Functionality Verify user can select \"Center\" and \"Bottom\" in Vertical Align checkbox 1. Open settings panel 2. Select \"Center\" 3. Verify alignment on UI 4. Select \"Bottom\" 5. Verify alignment on UIUI content aligns as per selection"
+    },
+    {
+      "id": "TC_30",
+      "num": 30,
+      "type": "UI and Functionality",
+      "description": "UI content aligns as per selection",
+      "expected": "Check outline selection\"No Outline\" should be preselected",
+      "raw": "TC_30Table UI and FunctionalityUI content aligns as per selection 1. Open table formatting UI 2. Check outline selection\"No Outline\" should be preselected"
+    },
+    {
+      "id": "TC_31",
+      "num": 31,
+      "type": "UI and Functionality",
+      "description": "Verify selecting \"Outline with Fill Background\" updates color to #daebed",
+      "expected": "Verify UI reflects the changeUI updates with #daebed color",
+      "raw": "TC_31Table UI and Functionality Verify selecting \"Outline with Fill Background\" updates color to #daebed 1. Open table formatting UI 2. Click \"Outline with Fill Background\" 3. Verify UI reflects the changeUI updates with #daebed color"
+    },
+    {
+      "id": "TC_32",
+      "num": 32,
+      "type": "UI and Functionality",
+      "description": "Verify user can change stroke and fill colors from available options",
+      "expected": "Verify UI reflects selectionUI updates with chosen colors",
+      "raw": "TC_32Table UI and Functionality Verify user can change stroke and fill colors from available options 1. Open table formatting UI 2. Change stroke/fill color from options 3. Apply changes 4. Verify UI reflects selectionUI updates with chosen colors"
+    },
+    {
+      "id": "TC_33",
+      "num": 33,
+      "type": "Functional",
+      "description": "TableFunctinality Verify user can add a math equation in the table cells",
+      "expected": "",
+      "raw": "TC_33TableFunctinality Verify user can add a math equation in the table cells 1. Open table UI 2. Click on a cell 3. Select equation from math keyboard. 4. Enter a math equation (e.g., \\x^2 + y^2 = r^2\\) 5. Apply changes and math equation should visible in table cells. Math equation is properly inserted and displayed in the table cell"
+    },
+    {
+      "id": "TC_34",
+      "num": 34,
+      "type": "Functional",
+      "description": "TableFunctinality Verify user can paste data from external sources",
+      "expected": "Verify data appears correctly Pasted data should be visible and properly formatted in the cell",
+      "raw": "TC_34TableFunctinality Verify user can paste data from external sources 1. Copy data from an external source 2. Click on a cell 3. Paste data 4. Verify data appears correctly Pasted data should be visible and properly formatted in the cell"
+    },
+    {
+      "id": "TC_35",
+      "num": 35,
+      "type": "Functional",
+      "description": "TableFunctinalityVerify user can manually type content in cells",
+      "expected": "Verify text appears correctly Manually entered text should be visible and properly formatted",
+      "raw": "TC_35TableFunctinalityVerify user can manually type content in cells 1. Open table UI 2. Click on a cell 3. Type text manually 4. Verify text appears correctly Manually entered text should be visible and properly formatted"
+    },
+    {
+      "id": "TC_36",
+      "num": 36,
+      "type": "Functional",
+      "description": "TableFunctinality Verify proper scrolling appears when large data is entered",
+      "expected": "Verify scrolling appears or data fits in cells Proper scrolling should appear or cells should auto- adjust",
+      "raw": "TC_36TableFunctinality Verify proper scrolling appears when large data is entered 1. Open table UI 2. Click on a cell 3. Enter large data 4. Verify scrolling appears or data fits in cells Proper scrolling should appear or cells should auto- adjust"
+    },
+    {
+      "id": "TC_37",
+      "num": 37,
+      "type": "Functional",
+      "description": "TableFunctinality Verify entered data is properly visible in preview mode",
+      "expected": "Check visibility of entered content Data should be clearly visible and correctly formatted in preview mode",
+      "raw": "TC_37TableFunctinality Verify entered data is properly visible in preview mode 1. Enter data in table 2. Switch to preview mode 3. Check visibility of entered content Data should be clearly visible and correctly formatted in preview mode"
+    },
+    {
+      "id": "TC_38",
+      "num": 38,
+      "type": "Functional",
+      "description": "TableFunctinality Verify entered data is properly visible in reader mode",
+      "expected": "Check visibility of entered content Data should be correctly formatted and visible in reader mode",
+      "raw": "TC_38TableFunctinality Verify entered data is properly visible in reader mode 1. Enter data in table 2. Switch to reader mode 3. Check visibility of entered content Data should be correctly formatted and visible in reader mode"
+    },
+    {
+      "id": "TC_39",
+      "num": 39,
+      "type": "UI and Functionality",
+      "description": "Verify the table component is not draggable when the \"Table\" component is non-existent or disabled",
+      "expected": "",
+      "raw": "TC_39Table UI and Functionality Verify the table component is not draggable when the \"Table\" component is non-existent or disabled 1. Navigate to the element panel 2. Attempt to drag a non-existent or disabled \"Table\" component Table component should not be draggable and not create a table."
+    },
+    {
+      "id": "TC_40",
+      "num": 40,
+      "type": "UI and Functionality",
+      "description": "Verify that the \"Create Table\" label and properties do not appear when the table is dropped in an incorrect or unsupported area",
+      "expected": "",
+      "raw": "TC_40Table UI and Functionality Verify that the \"Create Table\" label and properties do not appear when the table is dropped in an incorrect or unsupported area 1. Drop the table on an incorrect/unsupported area. 2. Check for the presence of the \"Create Table\" label, rows, and columns \"Create Table\" label, rows, and columns should not appear."
+    },
+    {
+      "id": "TC_41",
+      "num": 41,
+      "type": "UI and Functionality",
+      "description": "Verify that the Create button does not highlight in blue when an invalid configuration is presented",
+      "expected": "",
+      "raw": "TC_41Table UI and Functionality Verify that the Create button does not highlight in blue when an invalid configuration is presented 1. Drop the table 2. Check if the Create button should disable for invalid configration.Create button should disable."
+    },
+    {
+      "id": "TC_42",
+      "num": 42,
+      "type": "UI and Functionality",
+      "description": "Verify that the table does not render with the proper heading and icon when the Create button is clicked without proper configurations",
+      "expected": "Click the Create button without first setting up proper table configurations Table should not render correctly (missing heading or icon)",
+      "raw": "TC_42Table UI and Functionality Verify that the table does not render with the proper heading and icon when the Create button is clicked without proper configurations 1. Click the Create button without first setting up proper table configurations Table should not render correctly (missing heading or icon)"
+    },
+    {
+      "id": "TC_43",
+      "num": 43,
+      "type": "UI and Functionality",
+      "description": "Verify that the table header does not display the background color #005A9C when misconfigured 1.Inspect the table header background after intentionally misconfiguring the settings Table header should not have the backgro",
+      "expected": "Inspect the table header background after intentionally misconfiguring the settings Table header should not have the background color #005A9C if misconfigured",
+      "raw": "TC_43Table UI and Functionality Verify that the table header does not display the background color #005A9C when misconfigured 1.Inspect the table header background after intentionally misconfiguring the settings Table header should not have the background color #005A9C if misconfigured"
+    },
+    {
+      "id": "TC_44",
+      "num": 44,
+      "type": "UI and Functionality",
+      "description": "Verify that row header cells do not display the background color #C2E5FF when provided with incorrect settings 1.Inspect row header cells after applying misconfigured background color settings Row headers should not disp",
+      "expected": "Inspect row header cells after applying misconfigured background color settings Row headers should not display the background color #C2E5FF if misconfigured",
+      "raw": "TC_44Table UI and Functionality Verify that row header cells do not display the background color #C2E5FF when provided with incorrect settings 1.Inspect row header cells after applying misconfigured background color settings Row headers should not display the background color #C2E5FF if misconfigured"
+    },
+    {
+      "id": "TC_45",
+      "num": 45,
+      "type": "UI and Functionality",
+      "description": "Verify that non-header cells do not display a white background (#ffffff) when background settings are misconfigured",
+      "expected": "Inspect non-header cells after applying the wrong background color settings Non-header cells should not display the white background color (#ffffff) if misconfigured",
+      "raw": "TC_45Table UI and Functionality Verify that non-header cells do not display a white background (#ffffff) when background settings are misconfigured 1. Inspect non-header cells after applying the wrong background color settings Non-header cells should not display the white background color (#ffffff) if misconfigured"
+    },
+    {
+      "id": "TC_46",
+      "num": 46,
+      "type": "UI and Functionality",
+      "description": "Verify that the placeholder text \"Typing\" (in color #B7B7BD) is not rendered correctly when cell settings are misconfigured",
+      "expected": "Inspect table cells configured with missing/incorrect placeholder text settings Placeholder text \"Typing\" (or its color #B7B7BD) should not appear as expected if misconfigured",
+      "raw": "TC_46Table UI and Functionality Verify that the placeholder text \"Typing\" (in color #B7B7BD) is not rendered correctly when cell settings are misconfigured 1. Inspect table cells configured with missing/incorrect placeholder text settings Placeholder text \"Typing\" (or its color #B7B7BD) should not appear as expected if misconfigured"
+    },
+    {
+      "id": "TC_47",
+      "num": 47,
+      "type": "UI and Functionality",
+      "description": "Verify default stroke color is #B7B7BD",
+      "expected": "Open table formatting UI and check stroke color if it is not #B7B7BD Stroke color should not be #B7B7BD if it is misconfigured",
+      "raw": "TC_47Table UI and FunctionalityVerify default stroke color is #B7B7BD 1. Open table formatting UI and check stroke color if it is not #B7B7BD Stroke color should not be #B7B7BD if it is misconfigured"
+    },
+    {
+      "id": "TC_48",
+      "num": 48,
+      "type": "UI and Functionality",
+      "description": "Verify user can change stroke color",
+      "expected": "Open table formatting UI and attempt to change stroke color with unavailable color options Stroke color should not change if the color options are not available or not applied correctly",
+      "raw": "TC_48Table UI and FunctionalityVerify user can change stroke color 1. Open table formatting UI and attempt to change stroke color with unavailable color options Stroke color should not change if the color options are not available or not applied correctly"
+    },
+    {
+      "id": "TC_49",
+      "num": 49,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Vertical Lines\" checkbox functions correctly",
+      "expected": "Open settings panel and uncheck \"Show Vertical Lines\" checkbox Vertical lines should not appear if checkbox is unchecked",
+      "raw": "TC_49Table UI and Functionality Verify \"Show Vertical Lines\" checkbox functions correctly 1. Open settings panel and uncheck \"Show Vertical Lines\" checkbox Vertical lines should not appear if checkbox is unchecked"
+    },
+    {
+      "id": "TC_50",
+      "num": 50,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Vertical Lines\" checkbox functions correctly when uncheck that box",
+      "expected": "Open settings panel and uncheck the checkbox with UI malfunction Vertical lines should not disappear if the checkbox state does not reflect properly",
+      "raw": "TC_50Table UI and Functionality Verify \"Show Vertical Lines\" checkbox functions correctly when uncheck that box 1. Open settings panel and uncheck the checkbox with UI malfunction Vertical lines should not disappear if the checkbox state does not reflect properly"
+    },
+    {
+      "id": "TC_51",
+      "num": 51,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Horizontal Lines\" checkbox functions correctly",
+      "expected": "Open settings panel and uncheck \"Show Horizontal Lines\" checkbox Horizontal lines should not appear if checkbox is unchecked or malfunctioned",
+      "raw": "TC_51Table UI and Functionality Verify \"Show Horizontal Lines\" checkbox functions correctly 1. Open settings panel and uncheck \"Show Horizontal Lines\" checkbox Horizontal lines should not appear if checkbox is unchecked or malfunctioned"
+    },
+    {
+      "id": "TC_52",
+      "num": 52,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Horizontal Lines\" checkbox functions correctly when checkbox is not enabled",
+      "expected": "Open settings panel and uncheck the checkbox with a UI issue Horizontal lines should not disappear if the checkbox does not function correctly",
+      "raw": "TC_52Table UI and Functionality Verify \"Show Horizontal Lines\" checkbox functions correctly when checkbox is not enabled 1. Open settings panel and uncheck the checkbox with a UI issue Horizontal lines should not disappear if the checkbox does not function correctly"
+    },
+    {
+      "id": "TC_53",
+      "num": 53,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Caption\" checkbox functions correctly",
+      "expected": "Open settings panel and uncheck the \"Show Caption\" checkbox \"Enter caption text here\" should not appear if the checkbox is unchecked",
+      "raw": "TC_53Table UI and Functionality Verify \"Show Caption\" checkbox functions correctly 1. Open settings panel and uncheck the \"Show Caption\" checkbox \"Enter caption text here\" should not appear if the checkbox is unchecked"
+    },
+    {
+      "id": "TC_54",
+      "num": 54,
+      "type": "UI and Functionality",
+      "description": "Verify \"Show Caption\" checkbox functions correctly after uncheck the checkbox",
+      "expected": "Open settings panel and uncheck the checkbox with a malfunction \"Enter caption text here\" should still appear if the checkbox does not work as expected",
+      "raw": "TC_54Table UI and Functionality Verify \"Show Caption\" checkbox functions correctly after uncheck the checkbox 1. Open settings panel and uncheck the checkbox with a malfunction \"Enter caption text here\" should still appear if the checkbox does not work as expected"
+    },
+    {
+      "id": "TC_55",
+      "num": 55,
+      "type": "UI and Functionality",
+      "description": "Verify \"Top\" is selected by default in Vertical Align checkbox",
+      "expected": "Open settings panel and check for \"Top\" alignment, but it is not selected by default \"Top\" should be preselected by default, if not, the test fails",
+      "raw": "TC_55Table UI and Functionality Verify \"Top\" is selected by default in Vertical Align checkbox 1. Open settings panel and check for \"Top\" alignment, but it is not selected by default \"Top\" should be preselected by default, if not, the test fails"
+    },
+    {
+      "id": "TC_56",
+      "num": 56,
+      "type": "UI and Functionality",
+      "description": "Verify user can select \"Center\" and \"Bottom\" in Vertical Align checkbox",
+      "expected": "Open settings panel and select \"Center\" or \"Bottom\", but alignment does not reflect UI should not align content incorrectly if selection fails",
+      "raw": "TC_56Table UI and Functionality Verify user can select \"Center\" and \"Bottom\" in Vertical Align checkbox 1. Open settings panel and select \"Center\" or \"Bottom\", but alignment does not reflect UI should not align content incorrectly if selection fails"
+    },
+    {
+      "id": "TC_57",
+      "num": 57,
+      "type": "UI and Functionality",
+      "description": "UI content aligns as per selection",
+      "expected": "Open table formatting UI and the \"No Outline\" should not be preselected \"No Outline\" should always be preselected, if not, the test fails",
+      "raw": "TC_57Table UI and FunctionalityUI content aligns as per selection 1. Open table formatting UI and the \"No Outline\" should not be preselected \"No Outline\" should always be preselected, if not, the test fails"
+    },
+    {
+      "id": "TC_58",
+      "num": 58,
+      "type": "UI and Functionality",
+      "description": "Verify selecting \"Outline with Fill Background\" updates color to #daebed",
+      "expected": "Open table formatting UI and select \"Outline with Fill Background\", but the color does not update The UI should not display the color #daebed if the feature fails to apply",
+      "raw": "TC_58Table UI and Functionality Verify selecting \"Outline with Fill Background\" updates color to #daebed 1. Open table formatting UI and select \"Outline with Fill Background\", but the color does not update The UI should not display the color #daebed if the feature fails to apply"
+    },
+    {
+      "id": "TC_59",
+      "num": 59,
+      "type": "UI and Functionality",
+      "description": "Verify user can change stroke and fill colors from available options",
+      "expected": "Open table formatting UI and change stroke/fill color to an unavailable option UI should not reflect the changes if color options are invalid or unselected",
+      "raw": "TC_59Table UI and Functionality Verify user can change stroke and fill colors from available options 1. Open table formatting UI and change stroke/fill color to an unavailable option UI should not reflect the changes if color options are invalid or unselected"
+    },
+    {
+      "id": "TC_60",
+      "num": 60,
+      "type": "Functionality",
+      "description": "Verify user can add a math equation in the table cells",
+      "expected": "Open table UI and attempt to add a math equation in a disabled or unsupported cell Math equation should not be inserted if cell input is disabled or unsupported",
+      "raw": "TC_60TableFunctionality Verify user can add a math equation in the table cells 1. Open table UI and attempt to add a math equation in a disabled or unsupported cell Math equation should not be inserted if cell input is disabled or unsupported"
+    },
+    {
+      "id": "TC_61",
+      "num": 61,
+      "type": "Functionality",
+      "description": "Verify user can paste data from external sources",
+      "expected": "Copy data from an external source and paste in a disabled or unsupported cell Data should not be pasted if the paste functionality is disabled",
+      "raw": "TC_61TableFunctionality Verify user can paste data from external sources 1. Copy data from an external source and paste in a disabled or unsupported cell Data should not be pasted if the paste functionality is disabled"
+    },
+    {
+      "id": "TC_62",
+      "num": 62,
+      "type": "Functionality",
+      "description": "Verify user can manually type content in cells1. Try typing into a locked or non-editable cell Text should not be manually entered if the cell is locked or non-editable",
+      "expected": "Try typing into a locked or non-editable cell Text should not be manually entered if the cell is locked or non-editable",
+      "raw": "TC_62TableFunctionalityVerify user can manually type content in cells1. Try typing into a locked or non-editable cell Text should not be manually entered if the cell is locked or non-editable"
+    },
+    {
+      "id": "TC_63",
+      "num": 63,
+      "type": "Functionality",
+      "description": "Verify proper scrolling appears when large data is entered",
+      "expected": "Enter large data but ensure scrolling does not appear or data overflows Scrolling should not appear or data should not overflow if scrolling fails to appear",
+      "raw": "TC_63TableFunctionality Verify proper scrolling appears when large data is entered 1. Enter large data but ensure scrolling does not appear or data overflows Scrolling should not appear or data should not overflow if scrolling fails to appear"
+    },
+    {
+      "id": "TC_64",
+      "num": 64,
+      "type": "Functionality",
+      "description": "Verify entered data is properly visible in preview mode",
+      "expected": "Enter data and switch to preview mode where data is not visible or incorrectly formatted Data should not be visible or formatted correctly in preview mode if UI malfunctions",
+      "raw": "TC_64TableFunctionality Verify entered data is properly visible in preview mode 1. Enter data and switch to preview mode where data is not visible or incorrectly formatted Data should not be visible or formatted correctly in preview mode if UI malfunctions"
+    },
+    {
+      "id": "TC_65",
+      "num": 65,
+      "type": "Functionality",
+      "description": "Verify entered data is properly visible in reader mode",
+      "expected": "Enter data and switch to reader mode where data does not appear or format is lost Data should not be visible or properly formatted in reader mode if UI malfunctions",
+      "raw": "TC_65TableFunctionality Verify entered data is properly visible in reader mode 1. Enter data and switch to reader mode where data does not appear or format is lost Data should not be visible or properly formatted in reader mode if UI malfunctions"
+    },
+    {
+      "id": "TC_66",
+      "num": 66,
+      "type": "Positive",
+      "description": "Verify inserting a row above the selected rowRight-click on a cell → Rows → Insert Above A new row is inserted above the selected row with empty/default cells",
+      "expected": "",
+      "raw": "TC_66TablePositiveVerify inserting a row above the selected rowRight-click on a cell → Rows → Insert Above A new row is inserted above the selected row with empty/default cells"
+    },
+    {
+      "id": "TC_67",
+      "num": 67,
+      "type": "Positive",
+      "description": "Verify inserting a row below the selected rowRight-click on a cell → Rows → Insert Below A new row is inserted below the selected row with empty/default cells",
+      "expected": "",
+      "raw": "TC_67TablePositiveVerify inserting a row below the selected rowRight-click on a cell → Rows → Insert Below A new row is inserted below the selected row with empty/default cells"
+    },
+    {
+      "id": "TC_68",
+      "num": 68,
+      "type": "Positive",
+      "description": "Verify deleting the selected rowRight-click on a cell → Rows → DeleteSelected row is removed and table re-adjusts layout",
+      "expected": "",
+      "raw": "TC_68TablePositiveVerify deleting the selected rowRight-click on a cell → Rows → DeleteSelected row is removed and table re-adjusts layout"
+    },
+    {
+      "id": "TC_69",
+      "num": 69,
+      "type": "Positive",
+      "description": "Verify inserting a column to the left of the selected columnRight-click on a cell → Columns → Insert Left A new column is inserted to the left with empty/default cells",
+      "expected": "",
+      "raw": "TC_69TablePositive Verify inserting a column to the left of the selected columnRight-click on a cell → Columns → Insert Left A new column is inserted to the left with empty/default cells"
+    },
+    {
+      "id": "TC_70",
+      "num": 70,
+      "type": "Positive",
+      "description": "Verify inserting a column to the right of the selected columnRight-click on a cell → Columns → Insert Right A new column is inserted to the right with empty/default cells",
+      "expected": "",
+      "raw": "TC_70TablePositive Verify inserting a column to the right of the selected columnRight-click on a cell → Columns → Insert Right A new column is inserted to the right with empty/default cells"
+    },
+    {
+      "id": "TC_71",
+      "num": 71,
+      "type": "Positive",
+      "description": "Verify deleting the selected columnRight-click on a cell → Columns → Delete Selected column is removed and table re-adjusts layout",
+      "expected": "",
+      "raw": "TC_71TablePositiveVerify deleting the selected columnRight-click on a cell → Columns → Delete Selected column is removed and table re-adjusts layout"
+    },
+    {
+      "id": "TC_72",
+      "num": 72,
+      "type": "Functional",
+      "description": "TableEdgeVerify inserting a row above the first row",
+      "expected": "",
+      "raw": "TC_72TableEdgeVerify inserting a row above the first rowSelect first row → Insert AboveNew row is inserted at the top"
+    },
+    {
+      "id": "TC_73",
+      "num": 73,
+      "type": "Functional",
+      "description": "TableEdgeVerify inserting a row below the last row",
+      "expected": "",
+      "raw": "TC_73TableEdgeVerify inserting a row below the last rowSelect last row → Insert BelowNew row is inserted at the bottom"
+    },
+    {
+      "id": "TC_74",
+      "num": 74,
+      "type": "Functional",
+      "description": "TableEdge Verify inserting a column to the left of the first column",
+      "expected": "",
+      "raw": "TC_74TableEdge Verify inserting a column to the left of the first columnSelect first column → Insert LeftNew column is inserted as first column"
+    },
+    {
+      "id": "TC_75",
+      "num": 75,
+      "type": "Functional",
+      "description": "TableEdge Verify inserting a column to the right of the last column",
+      "expected": "",
+      "raw": "TC_75TableEdge Verify inserting a column to the right of the last columnSelect last column → Insert RightNew column is inserted as last column"
+    },
+    {
+      "id": "TC_76",
+      "num": 76,
+      "type": "Negative",
+      "description": "Verify deleting rows until only one row remainsRepeatedly delete rows until one remainsDelete option disabled when only one row remains",
+      "expected": "",
+      "raw": "TC_76TableNegative Verify deleting rows until only one row remainsRepeatedly delete rows until one remainsDelete option disabled when only one row remains"
+    },
+    {
+      "id": "TC_77",
+      "num": 77,
+      "type": "Negative",
+      "description": "Verify deleting columns until only one column remainsRepeatedly delete columns until one remainsDelete option disabled when only one column remains",
+      "expected": "",
+      "raw": "TC_77TableNegative Verify deleting columns until only one column remainsRepeatedly delete columns until one remainsDelete option disabled when only one column remains"
+    },
+    {
+      "id": "TC_78",
+      "num": 78,
+      "type": "Positive",
+      "description": "Verify undo after inserting a rowInsert Above/Below → Press UndoRow insertion is reversed",
+      "expected": "",
+      "raw": "TC_78TablePositiveVerify undo after inserting a rowInsert Above/Below → Press UndoRow insertion is reversed"
+    },
+    {
+      "id": "TC_79",
+      "num": 79,
+      "type": "Positive",
+      "description": "Verify undo after inserting a columnInsert Left/Right → Press UndoColumn insertion is reversed",
+      "expected": "",
+      "raw": "TC_79TablePositiveVerify undo after inserting a columnInsert Left/Right → Press UndoColumn insertion is reversed"
+    },
+    {
+      "id": "TC_80",
+      "num": 80,
+      "type": "Positive",
+      "description": "Verify undo after deleting a rowDelete row → Press UndoDeleted row is restored",
+      "expected": "",
+      "raw": "TC_80TablePositiveVerify undo after deleting a rowDelete row → Press UndoDeleted row is restored"
+    },
+    {
+      "id": "TC_81",
+      "num": 81,
+      "type": "Positive",
+      "description": "Verify undo after deleting a columnDelete column → Press UndoDeleted column is restored",
+      "expected": "",
+      "raw": "TC_81TablePositiveVerify undo after deleting a columnDelete column → Press UndoDeleted column is restored"
+    },
+    {
+      "id": "TC_82",
+      "num": 82,
+      "type": "Positive",
+      "description": "Verify table data remains intact after inserting rows",
+      "expected": "",
+      "raw": "TC_82TablePositive Verify table data remains intact after inserting rowsEnter data → Insert Above/BelowExisting data remains unchanged; new row is empty"
+    },
+    {
+      "id": "TC_83",
+      "num": 83,
+      "type": "Positive",
+      "description": "Verify table data remains intact after inserting columns",
+      "expected": "",
+      "raw": "TC_83TablePositive Verify table data remains intact after inserting columnsEnter data → Insert Left/Right Existing data remains unchanged; new column is empty"
+    },
+    {
+      "id": "TC_84",
+      "num": 84,
+      "type": "Positive",
+      "description": "Verify header row style remains after adding rowsAdd row above/below headerHeader styling is preserved for top row",
+      "expected": "",
+      "raw": "TC_84TablePositive Verify header row style remains after adding rowsAdd row above/below headerHeader styling is preserved for top row"
+    },
+    {
+      "id": "TC_85",
+      "num": 85,
+      "type": "Functional",
+      "description": "TableEdge Verify inserting rows/columns in merged cell areasMerge cells → Insert row/column affecting merged areaMerged cells split logically, table layout remains valid",
+      "expected": "",
+      "raw": "TC_85TableEdge Verify inserting rows/columns in merged cell areasMerge cells → Insert row/column affecting merged areaMerged cells split logically, table layout remains valid"
+    },
+    {
+      "id": "TC_86",
+      "num": 86,
+      "type": "Positive",
+      "description": "Verify when switching between the styles the data's are retainedAdd table with data's and change the stylesData's should retained",
+      "expected": "",
+      "raw": "TC_86TablePositive Verify when switching between the styles the data's are retainedAdd table with data's and change the stylesData's should retained"
+    },
+    {
+      "id": "TC_87",
+      "num": 87,
+      "type": "Positive",
+      "description": "Verify ablle to copy and paste the table1. Copy and paste table Copy and paste should done successfully and data's should retained.",
+      "expected": "",
+      "raw": "TC_87TablePositiveVerify ablle to copy and paste the table1. Copy and paste table Copy and paste should done successfully and data's should retained."
+    },
+    {
+      "id": "TC_88",
+      "num": 88,
+      "type": "Positive",
+      "description": "Verify able to add table inside Instruction for student, Instruction for Teacher, offline step and Generic step",
+      "expected": "",
+      "raw": "TC_88TablePositive Verify able to add table inside Instruction for student, Instruction for Teacher, offline step and Generic step 1. Navigate to element panel 2. Try dragging the \"Table\" component from element.Table component from element should be draggable"
+    }
+  ]
+}
